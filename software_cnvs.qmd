@@ -1,0 +1,18 @@
+---
+title: "CNVs"
+---
+
+# CNV Analysis
+
+**Title**: How to Run Copy Number Variation (CNV) analysis
+
+**Presenter(s)**: Daniel Howrigan
+
+**Level**: Intermediate
+
+**Length**: 20:03
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=Lg2k2BEQIy4")
+```

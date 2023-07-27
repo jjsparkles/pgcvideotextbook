@@ -1,0 +1,747 @@
+---
+title: "5.1 Quality Control (Video Transcript)"
+---
+
+------------------------------------------------------------------------
+
+# Quality control: Introduction {#sec-video1}
+
+**Title**: Quality control
+
+**Presenter(s)**: Katrina Grasby (katrina.grasby\@qimrberghofer.edu.au) and Lucía Colodro Conde (Lucia.ColodroConde\@qimrberghofer.edu.au), from the 2021 International Statistical Genetics Workshop hosted by the Institute for Behavioral Genetics at the University of Colorado, Boulder.
+
+Thanks for joining me for this session on Quality Control. In this recording I'm going to be talking about the quality control or QC steps that we apply to genetic data. So this is in the very early stages of a study. We've collected our DNA, it's being transformed into data. We're going to clean that data up and then we will impute and then we can do our statistical analyses. So there's many points in a study that will be applying QC, but these steps that we'll be discussing here and in the tutorial, are the quality control steps that we apply to our genetic data.
+
+*Why do quality control?*
+
+So why do quality control? Essentially, poor quality data is going to contribute to false positives and false negatives in our results. So we want robust results. We're going to need to clean our data up. So we'll be removing essentially genotyping errors. These can be errors in the calling of genotypes, or the translation of DNA into data. They can be due to lots of different factors. One of the pictures that I like to bring to my own mind was a story given to me by a woman that I work with who was involved in a project where they posted out two spit kits to a couple who were participating in a project, and somewhere in that delivery one of the kits went missing or was damaged. And the couple thought or were trying to be helpful and both of them spat into the same kit and posted that back to us \--to her. In doing so they also included a letter to say what they had done, but it was a classic example of DNA contamination. It's an example of human error. After all, we ended up with no usable data from two people instead of having usable data from one person. There is no way that we can disentangle that DNA in that spit kit and say this belongs to that person and this belongs to that person. It's also an example of contaminated DNA, and even if they had not included a letter to say what they had done, the steps that we will go through in the tutorial would be able to identify a problem like this. So we can actually go OK, this isn't a clear indication of data from a person, a specific person. We can remove that it doesn't interfere with our analyses.
+
+So one of the other things that will be doing in the tutorial is, after we've cleaned up our data, we're going to have a look at the relationship structure within our data, and whilst that's not necessarily a quality control step, it is a necessary aspect of coming to understand our data so that we can apply appropriate analyses and that is going to be important for minimizing our false positives and false negatives. So how do we go from DNA to data?
+
+*DNA to data*
+
+I'm a behavior geneticist. I use statistics to analyze data. I have no experience working in a laboratory, actually processing the DNA into data. But it is still useful for me to have an idea of these many different steps that are involved and an appreciation of what are the possible sources of error and what exactly does my data represent. So we are able to post out spit kits to participants who can spit into that kit at home and post it back. The sample is then processed so that the DNA is fragmented, it's chopped up into little pieces. And then it's amplified, so we've got more of it. And then DNA is extracted. We can store some and then we can plate some on to SNP chips or genotyping arrays. For it to be then further analyzed. So this down the bottom here. These images come from the Illumina website. This is an example here at A of a SNP chip or a genotyping array. So there are many different forms of SNP chips. The technology has improved overtime and I'm sure it will continue to improve. This here is an example of the bead technology. On this particular chip, there is space for information, DNA, from 12 different individuals. These horizontal bars here are each \[for\] a different individual. Now, if you're thinking then, looking at this SNP chip, then if you got information from multiple individuals, and you'll have many chips and they might be sent off to a DNA a genotyping company for processing in different batches. If you are thinking from an experimental point of view, and when you've got cases and controls, you want to have your cases and controls randomly allotted to both the chips and the batch runs that they're being processed under. In a similar way, if you have males and females you want to randomized them across your chips and also your batch runs. That way we can ensure that we can actually pick up any particular batch effects in our data once we've got our data at the end.
+
+So back to the chip. For each of these individuals, there will be hundreds of thousands of probes in order to test the alleles at hundreds of thousands of points in the genome. Many many many loci. So each of these wells have has a bead. This here is a schematic of a bead. So this bead is targeting an allele at a locus. So it has a particular sequence here, an address, so this is the order of bases. And then this here is the locus of interest. So once you've got your fragmented DNA, it's going to come along, if it's the right location in the genome, it will bind to this bead and then depending on if this allele here bonds to this C, so G will bond to C, this bead will fluoresce green. A different bead it might bond to, if there's an A at that location and a T here, then it will bond this way and it will fluoresce red. So this is how we're establishing at that locus. You might have a G or you might have a T and if it's a G it's going to bond to the C and fluoresce green. If it's a T it will bond to the A and fluoresce red. So this is translating the DNA into a color, it is called an intensity. So if you've got you've got DNA coming from your biological father from your biological mother. You've got two alleles at that locus. If your two alleles are the same, you have two G alleles. They're both going to be fluorescing green. Nice solid green color. If they both, if you've got two T alleles, they're both going to be bonding to these A beads. They're both going to be a nice solid red color. If you've got a G coming from one parent and a T coming from the other, then some of the beads that are C you're going to fluoresce green. Some of the beads that are A are going to fluoresce red and that person is going to be heterozygous and they'll have this yellow color. So these colors are then representing the three possible genotypes at that locus in the genome. And then these here are for hundreds of thousands of different loci in the genome. What I've got in this particular slide are examples of genotyping intensities. genotyping intensities So this is how we're going to look at the color clusters representing the different genotypes. And see whether or not there are any problems. Now, this will likely, this is typically done by a genotyping company, you will probably not be doing this. But they will give you information about these first steps of quality control at this stage so you know what's going on with your data. It'll be there in a report from the company.
+
+This top left-hand corner is a really good example of what we're looking for. We have three nice, separated clusters. This is a homozygous A allele, This is a heterozygous group of individuals, and this is homozygous for the other allele. And in these two examples, with their little black Xs they are representing missing data. So missing data may not be terribly problematic if there's just a little bit of missingness and it's across all the different genotypes. However, if it is biased to one allele or one genotype, then that's going to interfere with our allele frequencies in our sample, and that is going to mean that it's not going to be representative of the population, it's not representative in terms of how we can actually test for this genotype against this phenotype. We don't want to have biased information about allele calling or genotype calling. Down here in the bottom left hand corner of it we have an example of a very rare allele. Sorry, a rare genotype, or it is a rare allele as well as a rare genotype. So there's only one individual here who's homozygous for the A allele. Very few heterozygous. In the middle down the bottom, this would be an example of a monomorphic group at this locus, so it really isn't a useful locus for us to have genotyped. Or it could be that just this population is, there's no variation in this population at this locus. And in the right hand bottom corner we have an example where there's really been a failure to call the genotypes correctly. There is no indication of any red color, which is representing the heterozygous group of people. We've got these two kind of green clusters and the missingness is all off on this cluster it's a complete fail.
+
+*Checking the data*
+
+So the steps that we're going to be going through with our quality control tutorial is we're going to start off by checking the data. We're going to have a look at the file format. How is data coded? How is missingness coded? We're going to look at the build, so that we know what assembly our data is on. The genotyping company would have provided us with that, but you might not always have access to that information, so there are ways that we can check that out ourselves. This is a very useful resource, which we will use in the tutorial to do that. And\... Knowing what build your data is on is very important, particularly for meta-analysis, but also if you're going to do any follow-up analyses with, or follow-up work with, your results. We'll be doing a sex check, which is to check that the sex that we can infer from the genetic sex check information is matching the sex reported by the individuals. So this check is looking at the heterozygosity of the X chromosome. And we have different expectations depending on whether an individual has one or two X chromosomes. So if the individual is reporting their sex and the genetic information comes back and it doesn't match, and that happens for a lot of your sample, then you might have a problem with the information that is, matching your genetic information that has been returned after genotyping to your participant IDs. Bear in mind this is about biological sex and not about gender.
+
+*Genotyping call rate*
+
+We will be checking for missingness. So there's two types of missingness that will check for. One is this one, the genotyping call rate. This is where SNPs are missing information on individuals. So for each SNP we want to have information coming from most of our individuals. If there is too much missing data for that SNP, so too many individuals did not have information that was called correctly for that SNP, then that SNP might not be a good SNP for us to be using in our analyses.
+
+*Hardy Weinberg equilibrium*
+
+We will have a look at the Hardy-Weinberg equilibrium, to see whether or not our allele frequencies are matching what we expect. So this can highlight whether we've got some bias in terms of the frequency of alleles, or perhaps in our terms of calling genotypes appropriately, thinking back to those genotype Gwise intensities. Will be checking the minor allele frequency. So this is to make sure that we have enough information to do statistical analyses. If it's too rare, then our GWAS is not the appropriate tool to use perhaps for this particular locus.
+
+*Sample Call Rate*
+
+We'll be having a look at sample call rate. So this is another form of missingness. This is to say, do all of our individuals have information across almost all of their SNPs. So we don't want individuals to be missing too much information across many SNPs.
+
+*Heterozygosity*
+
+We'll be looking at the proportion of heterozygosity. So this is a way of checking\-- Think back to that sample where we had two people spitting into the same kit. That's going to give us too much variation. There will be way too much variation in that DNA sample. So heterozygosity would be excessive. Inversely, reduced heterozygosity could be an example of inbreeding, but it could also just be that we had lots of missing data.
+
+*Reduced Heterozygosity*
+
+So that's one of the reasons we're going to check out our missingness first before we do our heterozygosity check. Because we don't want to be making, or we don't want to be setting ourselves up, to potentially making inferences that have social consequences that are negative. So if you've got missing data and that's the reason you have reduced heterozygosity, you don't want to end up looking at your sample going "oh, there's lots of inbreeding here".
+
+*Relationship structure*
+
+Towards the end of the tutorial, after we cleaned it will then have a look at the relationship structure in our data. So we might have lots of families or we might have extended families. We want to know whether or not our individuals are related so that we can apply the right type of statistical analyses.
+
+*Population structure*
+
+And finally, we'll be having look at population structure or stratification. So that will be talked about more in another one of the sessions, but this is when we have a look at a little frequencies. There is differences in allele frequencies across different groups or different populations and that is an important thing for us to be aware of and to be including appropriately in our analysis. Elsewise, we're going to get false positives and false negatives. If your population structure is also correlated in some way with your outcome of interest, that's where we're going to get a problem. And that's when we're going to talk about it in terms of population stratification.
+
+So these are going to be out checklist for our key steps in QC that will be running through the tutorial.
+
+------------------------------------------------------------------------
+
+# Running Quality Control on Genotype Data {#sec-video2}
+
+**Title**: How to run Quality Control on Genome-Wide Genotyping Data
+
+**Presenter(s)**: Jonathan Coleman (jonathan.coleman\@kcl.ac.uk)
+
+hello, i'm johnny coleman and in this brief presentation i'm going to discuss some key points concerned with running quality control on genome-wide genotype data which is a common first step in running a g was i'm going to provide a theoretical overview addressing the overarching reasons why we need to do qc highlighting some common steps and discussing a few pitfalls the data might throw up
+
+i'm not going to talk about conducting imputation or g-was analyses or secondary analyses nor am i going to talk at great length about the process of genotyping and ensuring the quality of genotyping calls i'll simply not go into any deep code or maths however if you are starting to run your own qc and analyses i recommend the pgc's rikipili automated pipeline as a starting point there are also some simple scripts on my group's github that may be useful as well they follow a step-by-step process with codes and explanations we're currently updating this repository so look out for some video tutorials there as well
+
+so here is our starting point i'll be using this graph on the top right several times through this talk and this is a genotype calling graph with common homozygotes in blue heterozygotes in green and rare homozygotes in red hopefully your data will already have been put through an automated genotype calling pipeline and if you're really lucky and overworked and under-appreciated bioinformatician might have done some manual recalling to ensure the quality of the data is as high as possible but in point of fact the data you will be using won't be in this visual form but rather as a numeric matrix like the one below with snips and individuals this might be in the form of a blink genotype file or it's binary equivalent or it's in some similar form that can be converted to the plink format and where we want to go is clean data with variants that are called in the majority of participants in your study and won't cause biases in downstream
+
+analyses that should give a nice clean manhattan pot from g was like the one below rather than the starry night effect of this poorly qc'd manhattan plot above however something i'd like to emphasize across this talk is that qc is a data informed process and what works for one cohort won't necessarily be exactly right for another good qc requires the analyst to investigate and understand the data often the first step is to remove rare variants and this is because we cannot be certain of variant calls consider the variance in the circle on the right are these outlying common homozygotes or are they heterozygotes we cannot really tell because there aren't enough of them to form a recognizable cluster typically we might want to exclude variants with a low minor allele count for example five there are many excellent automated calling methods to increase the amount of certainty you have in these variants but it's also worth noting that many analytical methods don't deal well with rare variants anyway again the demands of your data determine your qc choices it may be more useful for you to call rare variants even if you're uncertain of them or you may wish to remove them and be absolutely certain of the variants that you retain
+
+next we need to think about missing data genotyping is a biochemical process and like all such processes it goes wrong in some cases and a call cannot be made this can be a failure of the genotyping probe or poor quality of dna or a host of other reasons but such calls are unreliable and they need to be removed missingness is best dealt with iteratively
+
+to convince you of that let's examine this example data we want to keep only the participants which are the rows in this example with complete or near-complete data on the eight variants we're examining which here are shown in the columns so we could remove everyone with fewer than seven snips but when we do that oh dear we've obliterated our sample size so instead let's do things iteratively so we'll remove the worst snip again variant seven goes and then we remove the worst participant bye bye dave then we remove the next first snip so that's snip two and now everyone has near complete data and we've retained nearly all of our cohort so this was obviously a simple example how does this look with real data
+
+so here we have some real data and it's it's pretty good data most variants are only missing in a small percentage of the cohort but there are some that are missing in as much as 10 of the cohort so let's do that initiative thing removing variants missing in 10 of the individuals and then individuals who have more than 10 missing variants and then 9 and so on down to one percent when we do this the data looks good nearly all of the variants are zero percent missingness and those that aren't are present in at least 578 to the 582 possible participants and we've lost around 25 participants for about 22 and a half thousand snips but what if we didn't do the iterative thing and we just went straight for 99 complete data so when we do that the distribution of variance looks good again arguably it looks even better and we've retained an additional 16 000 variants but we've lost another 40 participants which is about six percent more of the original total than we lost with the iterative method typically participants are more valuable than variants which can be regained through imputation anyway but this again is a data-driven decision if coverage is more important than cohort size in your case you might want to prioritize well-genotyped variants over individuals
+
+so we've addressed rare variants where genotyping is uncertain and missingness where the data is unreliable but sometimes calling is simply wrong and again there are many reasons that could be we can identify some of these implausible genotype calls by using some simple population genetic theory so from our observed genotypes we can calculate the allele frequency at any bioluelic snip we've called so here the frequency of the a allele is twice the frequency of the aa cools those are our common homozygotes in blue plus the frequency of av cores are heterozygotes in green and we can do the equivalent as you see on the slide for the frequency of the blade knowing the frequency of the ae and the b allele we can use hardy and weinberg's calculation for how we expect alleles at a given frequency to be distributed into genotypes to generate an expectation for the genotypes we expect to observe at any given allele frequency we can then compare how our observed genotypes i.e the blue green and red clusters fit to that expectation and we can test that using a chi-squared test now harley-weinberg equilibrium is an idealized mathematical abstraction so there are lots of plausible ways it can be broken most notably by evolutionary pressure as a result in case control data it's typically best to assess it just in controls or to be less strict with defining violations of harley-weinberg cases that said in my experience genotyping errors can produce very large violations of hardly weinberg so if you exclude the strongest violations you tend to be removing the biggest phenotyping errors the previous steps are mostly focused on problematic variants but samples can also be erroneous one example is the potential for sample swaps either through sample mislabeling in the lab or correctly entered data in phenotypic data
+
+these are often quite hard to detect but one way to detect at least some of these is to compare self-reported sex with x chromosome homozygosity which is expected to differ between males and females in particular males have one x chromosome they're what's known as hemizygous so when you genotype them they appear to be homozygous on all snips on the x chromosome females on the other hand have two x chromosomes they are holozygous and they have a normal x distribution centered around zero which is the sample mean in this case you could also look at chromosome y snips for the same reason however y-chromosome genotyping tends to be a bit sparse and is often not of fantastic quality so there are benefits to using both of these methods it's also worth noting that potential errors here are just that potential where possible it's useful to confirm these with further information for example if there isn't a distinction between self-reported sex and self-reported gender in your phenotype data then known transgender individuals may be being removed unnecessarily the aim here is to determine places where the phenotypic and genotypic data is discordant as these may indicate a sample swap and this might indicate the genotype to phenotype relationship has been broken and that data is no longer useful to you
+
+average variant homozygosity can also be applied across the genome where this metric is sometimes referred to as the breeding coefficient it's called that because high values of it can be caused by consanguinity related individuals having children together which increases the average homozygosity of the genome there can also be other violations of expected homozygosity so it's worth examining the distribution of values and investigating or excluding any outliers that you see
+
+examining genetic data also gives us the opportunity to assess the degree of relatedness between samples for example identical sets of variants implied duplicates or identical twins 50 sharing implies a parent offspring relationship or siblings and those two things can be separated by examining how often both alleles of a variant are shared specifically we would expect parents and offspring to always share one allele at each variant whereas whereas siblings may share no alleles they may share one allele or they may share to it lower amounts of sharing imply uncles and aunts and their cousins and grandparents and so on down to more and more distant relationships in some approaches to analysis individuals are assumed to be unrelated so the advice used to be to remove one member of each pair of related individuals
+
+however as mixed linear models have become more popular in gbos and mixed linear models are able to retain and include related individuals in analyses related individuals therefore should be retained if the exact analysis method isn't known again it's worth having some phenotypic knowledge here unexpected relatives are a potential sign of sample switches and need to be examined confirmed and potentially removed if they are truly unexpected and once again it's important to know your sample the data shown in this graph does not despite what the graph appears to suggest come from a sample with a vast amount of cousins instead it comes from one in which a minority of individuals were from a different ancestry and that biases this metric i'll talk a little more about that in just a moment
+
+relatedness can also be useful for detecting sample contamination contamination will result in a mixture of different dnas being treated as a single sample and this results in an over abundance of heterozygote calls this in turn creates a signature pattern of low level relatedness between the contaminated sample and many other members of the cohort these samples should be queried with the genotyping lab to confirm whether or not a contamination event has occurred and potentially be removed if an alternative explanation for this odd pattern of intersample relatedness can't be found
+
+finally a word on genetic ancestry because of the way in which we have migrated across our history there is a correlation between the geography of human populations and their genetics this can be detected by running principal component analyses on genotype data pruned for linkage to equilibrium for example this is the uk biobank data you can see subsets of individuals who cluster together and who share european ethnicities other subsets who share african ethnicities and subsets who share different asian ethnicities and in a more diverse cohort you will be able to see other groupings as well this kind of 2d plot isn't the best way of visualizing this for example here it isn't really possible to distinguish these south asian and admixed american groupings and you don't get the full sense of the dominance of european ancestry data in this cohort the europeans in this case account for around 95 of the full cohort but because of over plotting i.e the same values being plotted on top of each other in this 2d plot you don't really appreciate that looking across multiple principal components helps for that ancestry is important to qc many of the processes i've talked about rely on the groups being assessed fairly of being fairly homogeneous as such if your data is multi-ancestry it's best to separate those ancestries out and re-run qc in each group separately so that was a brief run-through of some of the key things to think about when running qc
+
+i hope i've got across the need to treat this as a data informed process and to be willing to re-run steps and adjust approaches to fit cohorts although we've got something resembling standard practice in genotype qc i think there are still some unresolved questions so get hold of some data look online for guides and automated pipelines and enjoy your qc
+
+thank you very much for listening i'm doing a q a at 9 30 est otherwise please feel free to throw questions at me on twitter where i live or at the email address on screen which i occasionally check thank you very much
+
+------------------------------------------------------------------------
+
+# Considerations for Genotyping QC {#sec-video3}
+
+**Title**: Considerations for genotyping, quality control, and imputation in GWAS
+
+**Author**: Ayşe Demirkan (a.demirkan\@surrey.ac.uk)
+
+**hello everyone my name is aisha demerka i'm affiliated at the university of**
+
+roningam from the netherlands and university of surrey from the uk this is a pre-recorded lecture
+
+in the second lecture of on-demand sessions introduction to the statistical analysis of genome-wide association
+
+studies i will be talking about considerations for genotyping quality control and
+
+imputation in genomic association studies jivas
+
+so here you see an overview of the lecture we will shortly go over genotyping platforms
+
+Lecture outline
+
+and options quality control then i will talk about definition and purpose of imputation and how it is done
+
+and this is going to include reference data tools analysis of imputed data
+
+imputation accuracy and accusing
+
+Genotyping and platforms Genotyping is the process of determining differences in the genetic make- up (genotype) of an individual by examining the individual's DNA Sequence
+
+what we call is genotyping is the process of determining differences in the genetic makeup
+
+hence the genotype of an individual by examining the individual's dna sequence
+
+of course the technology used for genotyping depends on the structural properties of the genetic variation
+
+whether it is a single nucleotide polymorphism or a copy number variation or other structural variations
+
+it also depends on the project rationale or scientific question and your budget
+
+mainly and related to that of course how many snips
+
+you want to genotype if it is a genomic association study and number of individuals you would like to include
+
+depending on your study design you will also be limited with your dna
+
+sample quality and quantity
+
+so here on this slide you see the most common approach used for genotyping
+
+Common approaches
+
+synips and depending on your study you will be most likely using one of these what are those illuminati matrix arrays
+
+so on the y-axis you see the number of snips that are easily captured by the arrays and on the x-axis you see the
+
+number of individuals and then what do we have we have pcr rflp sequence
+
+pyrosequencing and fluidicum platforms and tacman
+
+um for instance one of the best examples are the illuminae arrays for whole
+
+genome scans um whole genome genotyping by these arrays provide an overview of the entire
+
+genome and enable you know white discoveries and associations so you using a high throughput
+
+next generation sequencing and microarray technologies you can obtain a deeper understanding of the genome
+
+because you are covering a very wide proportion of the genome so you can use
+
+one of their selection of this illumina or f metrics arrays which you think may be suitable for your study
+
+there are many options and so for s4 illumina there are genome-wide genotyping is for 18 species
+
+at the moment so number of markers on each array it changed by products for human up to four minion markers per
+
+sample are possible now and then there is an infinium low cost screening
+
+array so for this one for example includes 600 000 markers on it
+
+you can use start from 200 nanogram genomic dna and what you can also do you
+
+can add some custom marker panels there is an add-on capacity up to
+
+50 50k markers
+
+and then there is this omni family of illumina arrays
+
+Omni family of Illumina arrays
+
+here you see a simple description of their coverage and the inclusion of genetic markers in relation to their
+
+minor alleged frequencies so these expressed chips on the left include only common variation with minor
+
+life frequencies higher than five percent some include cmes and some include snips with lower minor allied
+
+frequencies so which one to choose among those will depend on your question research
+
+question and population you want to screen for instance are you looking for a rare or common variation in terms of
+
+snips are you looking for cmes are you looking are you working with a rare or common disease and what is your sample
+
+size and your budget now
+
+i listed some websites here please take 10 20 minutes to check on
+
+the technologies mentioned in the first section using these websites
+
+Quality control (QC) of genotyping From machine to dataset: genotype calling
+
+now let's talk about genotyping quality control qc you designed your study you chose a
+
+proper array platform service you used or you used a service from your institute
+
+so one critical initial step from chemically induced intensity signals and data analysis is a transfer and
+
+qc of genotypes determined towards your computer this critical step is called genotype
+
+calling so genotype calling algorithms are always implemented in the probability
+
+software accompanying the genotyping platform you choose so you don't need to invent them yourself
+
+so it's typical calling software uses a sort of mathematical clustering
+
+algorithm to inter to analyze the row intensity data and it estimates the probability that
+
+their genotype is one of the a a a b or bb for a given individual for a given b
+
+allelic marker locus so one method of checking initial synopquality is visually inspecting the
+
+intensity clustering of a particular snip in the overall population and depending on this one can decide
+
+whether a snip is characterized by a clear signal or not so
+
+here on the left of these figures you see a clear intensity clustering of a
+
+scene in the population so you see that the common variant is
+
+depicted by red on the left there is some hetero heterozygous in the middle
+
+depicted by purple and the homozygous um people for the less common allele are
+
+depicted as blue and the table on the right it shows the row values that this plot
+
+is figured from so here the plot shows a tight
+
+clustering of genotypes and there is not moist much noise in the measurement of
+
+this cinema following that there are imputed the
+
+important data qc steps one of them is
+
+to work on uh replicates so for inspecting plating issues and by
+
+looking at you know type concordance this would be a a good thing to do to include the same
+
+dna sample on different batches of experiments and then there are mendelian areas to
+
+control for for instance transmission and the inconsistencies for example snips with more than 10 percent manual
+
+area rate can be excluded this would be based on the number of trios that you would include in your
+
+experiment unfortunately this option obviously is only available for family
+
+based and trio designs only another thing another qc measure we use
+
+is snip call rate this is basically the missing genotype rate
+
+1 minus the missing genotype rate per snip so this can depend on the quality of tsa
+
+and this is generally between 95 percent and 99 is this is a very standard thing
+
+to include in your qc another thing is the hardy weinberg
+
+equilibrium uh deviance of your snip so this is another method for checking the quality and
+
+exclusion of this of your snips this will be explained in the next slide another one is the sample call right so
+
+this is a sample based uh qc method this is a good indication of sample
+
+success so different platforms have different thresholds but this will this is will be mainly
+
+determined by your initial dna quality and uh it will somehow will be in
+
+relation to with a snip color so once you do snip call rate you could do sample call rate and you may want to
+
+repeat snip call rate depending on that and another thing to do is sample gender
+
+check for this quality measure you need x chromosome information to calculate this
+
+and you may want to add this as an additional sanity check in your data to make sure that there is
+
+a perfect overlap with your phenotype files in terms of sex and
+
+another important one is sample heterozygosity this is to check for example outliers
+
+for example samples with more heterozygosity than expected um can be an indication of contamination
+
+in your samples and you also want to do something in on top of all of that you
+
+you need to check samples cryptic relatedness and unexpected uh twinning
+
+and whether there is actually a relatedness and structure in the data
+
+but this will be more covered in the lecture of redik magi
+
+so let's talk about hard wineback equilibrium shortly so as occurrence of uh two allies of a
+
+Hardy-Weinberg equilibrium
+
+snip in the same individual are two independent events the distribution of the genotypes across
+
+individuals should be more or less in equilibrium with the frequencies of the alas of a b allelic snip
+
+so this is only possible in ideal conditions of course which would be random mating
+
+no selection equal survival no migration no mutation and selection based on
+
+mutation no inbreeding and large population size
+
+so under these conditions above deviations from high divine back equilibrium is an indication of
+
+genotyping calling problems and a commonly used threshold for
+
+genotypes variance is a p value of hardy weinberg equilibrium uh that is less than ten to the minus five
+
+is an indication of a deviation from hardy weinberg equilibrium and you may
+
+want to take a look at these snips or you you may want to exclude them from your
+
+data set another important thing to always
+
+Genome builds and alignments
+
+consider is genome bills and alignments so the characterization of the human
+
+genome is an ongoing effort and a genome build tells us the positions of the snips in the genome on
+
+the genome so the latest build is called build 38 but the most commonly used one at the
+
+moment is still built 37 for instance the head map was released on build 35
+
+and bill 36 so you need to be aware of issues relating to merging and meta-analyzing
+
+data from different genome builds also for when preparing your data for
+
+imputation this is very important because you need to make sure that your data is coded according to the same
+
+genome build between the target set and the reference data set
+
+so there are tools uh for that one they are called liftover tools for instance there is one from oxford that we use for
+
+purpose and i provide the link to that here
+
+Commonly used software for QC plink\...
+
+so all of these qc steps i shortly went over here are pretty standard and there
+
+are a couple of widely used tools one very commonly used tool that we also
+
+use for data storage analysis and qc is called plink
+
+here on this slide i made snapshot of some of the blink
+
+options that i also covered during the lecture and these functions are implemented in
+
+the plink software and you can use it for the qc of
+
+your genetic data so first thing to be able to use bling
+
+to obviously install plink and you will need to read your genotype call data in plink in the form of a map or pad files
+
+and then you can perform qc at the snip level remove or extract snips and you
+
+can perform qc at the sample level you can remove or extract individuals and under the summary statistics option
+
+here there are functions listed to check for call rate missingness hardy-weinberg
+
+equilibrium highlight frequencies and mandel errors you can also perform
+
+sex checks what billing can also do is to extract genetic principle components and
+
+identify cryptically related individuals or twinnings in the data
+
+and and the genetic structure of the data and uh can be which you can then use to determine ethnic outliers in your
+
+data sets i will not talk about this because this is a part of the lecture of redick muggy
+
+of the next session now
+
+Intermezzo
+
+here i put two websites here one of them is for
+
+blink and how to use blink for qc and the other one is
+
+for a beat studio which i mentioned is one of the algorithms that you could
+
+use for a genotype calling so now take 10-20 minutes to have a look at
+
+this website and try to grasp what you can do with them
+
+Genetic data missingness
+
+now let's talk about imputation why do we need imputation we need imputation to
+
+address missingness in the genetic data this is all about missing values in the genetic data where do the missing values
+
+come from so during the qc we already set some values to missing right and also during
+
+genotype calling you could set some data points to missing but actually most of
+
+the missing values come from the initial targeted coverage of the genotyping
+
+chips and platforms we used so remember that there are many types of arrays some of more dense less dense
+
+there are arrays made specifically for oncological studies like onco arrays there is a metabolic
+
+chip that is designed for metabolic disease especially and there are areas focused on focusing
+
+on mainly snips with higher minor area frequency or their whereas focusing on cnvs
+
+but even the dense snip areas do not cover all of the genetic variation they
+
+cover much less than you would imagine and in addition to that snips included in one array may not be included in the
+
+other one and for many variable positions on the genome we do not have
+
+matching information across genotype set of individuals for instance
+
+look what i try to depict here i think of three individuals
+
+first two are typed on the array x and the third one is typed on array y
+
+so hence they have different missing data points and when you try to
+
+pull their data for a pooled analysis or to be using meta-analysis you're going
+
+to have even more missingness in this data because of the non-overlapping positions
+
+and you will not be able to replicate findings from one of data set and in the
+
+other one so additionally we will be analyzing only half of the
+
+genetic variation and we may miss causal variance in the analysis this is this is
+
+because of all these reasons we use a genetic data imputation
+
+Imputation principle
+
+so what do we do in principle in principle it means estimating the most likely genotypes in
+
+an individual at the missing positions by looking at the correlated snip values
+
+from a more complete data set and based on that writing the
+
+writing over the missing values in the target data set so how does it work
+
+first of all we need a data set where dense genotypes are directly measured this can be a density array or it could
+
+be a set of sequence individuals this we call a reference panel
+
+then we use an imputation software or service and by looking at the correlation structure of the density
+
+types or sequence snips we estimate them in the target data set
+
+so at the end these are probabilities and we end up with dosage information for alleles or
+
+genotypes rather than hard genotypes calls and this dosage information
+
+which accounts for the immunity in the estimation is then included in the
+
+genomic association study analysis so to sum up the purpose of imputation
+
+Purpose of imputation
+
+is to increase power because obviously the reference panel is more likely to contain the causal
+
+variance than a less dense geos array to improve fine mapping because
+
+imputation provides a higher resolution overview of an association signal across
+
+a locus and then to enable meta-analysis because imputation is going to allow viewers
+
+typed with different arrays to be combined up to variance in the reference panel
+
+Historical milestones 2010-2018
+
+going over the historical milestones in terms of imputation also summarizes the
+
+theoretical and technological advancements in human data immune genetic data imputation
+
+so one important advance in all of these was the generation of reference panels so the first reference panel was hepmap
+
+and the headmap2 was the most commonly used release of hapmap it consists of a limited sample of individuals from
+
+diverse genetic backgrounds 60 yoruba indians 90 hein chinese and japanese and six
+
+individuals that were utah residents descending of european ethnic origin
+
+now it sounds funny to think that we imputed thousands of people based on the genetic material of 60 euro residents
+
+only talking about the europeans but actually this yielded a lot of success and actually this is what we had um only
+
+for a long time so we could only impute up to 3 million
+
+snips with headmap at the time and then came the 1000 genome reference panel which included at the
+
+end 2500 individuals from multiple ethnic groups
+
+and later on and currently the most widely used reference panel is the panel
+
+of haplotype reference consortium hrc recall shortly this is a combined set of
+
+whole genome and exome sequence data for more than 30 000 individuals and use 39 million
+
+snips after imputation of course this this is going to depend uh this on the
+
+scaffold that you use for imputation as well many of these snips will not be include imputed with the good quality
+
+but in the ideal conditions you can go up to 39 million and finally we now have a reference
+
+panel from the transomics for precision medicine topmed program and this consists of almost 100k deeply sequenced
+
+human genomes and it can yield up to 308 genetic variants
+
+to be identified one technical milestone is mentioning
+
+was prefacing of haplotypes so genetic imputation is a highly
+
+computationally intensive process because of the probabilistic framework and high rate of missing data that we
+
+are trying to deal with one of the major milestones is to reduce the computational
+
+burden was introduction of prephasing so this idea involves a two-step
+
+imputation process so there is one initial step of previousing which is actually haplotype
+
+estimation of the geos genotypes and a subsequent step of imputation into the estimated steady haplotypes
+
+so this reduces complexity of the imputation process and speeds it up the current version of all imputation
+
+software can deal with the prefacing approach
+
+and what is very important is a choice of reference panel
+
+so it is shown that making use of the all ancestry's reference panels rather than
+
+ethnic specific reference panel improves imputation accuracy for rare variants in
+
+any population and formatted reference panels for impude and minimax can be
+
+downloaded from the software websites and it's very important to make sure
+
+that genotype scaffold and reference panels are aligned to the same build of the human genome i will get back to that
+
+later as well
+
+so another and very important and current technological advancement that makes our
+
+lives easier is the imputation services these are freely available services such
+
+as the michigan and sanger imputation services you can simply format and upload your data in a secure way to this
+
+server and get the data imputed and face genotypes back in a few days
+
+and this depends on the speed and how busy the server is and depending on the
+
+sample size you are trying to impute of course
+
+Historical milestones -Sanger
+
+so in parallel to michigan imputation server uh there is also a sanger institute uh has
+
+a similar service in this service also you can upload your data in a vca format and optionally
+
+perform pre-phasing using beagle or shaping software and current reference panels
+
+in the sanger imputation server includes hrc uk 10k and 1000 genomes
+
+as i said there is also a server dedicated to the
+
+topmat this is all very self
+
+explanatory uh this is how uh the sanger imputation server would like
+
+you to prepare the data so there is a whole a bunch of instructions there that you would like to use
+
+um so the use of these services comes with instruction and manuals so feel free to make an account there and run
+
+some test data says in there you will need to qcn format the data as required
+
+in the instructions you will need to match the coordinates and reference level of the genome bills and prepare one file for each chromosome this is for
+
+sanger imputation server and another important thing in terms of imputation is of course the speed
+
+Speed-Impute 5 PLOS GENETICS
+
+so increasing reference panel size improves accuracy of markers with low minor allele frequencies but
+
+this positive every increase in computational challenges for imputation methods so recently a new imputation software
+
+input 5 was introduced from the same group so it does memory efficient imputation by selecting haplotypes using
+
+the positional borrows wheeler transform so using hrc reference panel
+
+the developers of the software uh showed that input 5 is up to 30 times faster
+
+than minimax 4 and up to 3 times faster than a beagle
+
+5.1 and uses less memory than both of these methods
+
+Example framework
+
+so using all the mentioned considerations up until now you can
+
+build an insico framework similar to this one so you can use for instance blink functions for the first two steps
+
+of genetic data qc then you can check cheap information and
+
+strength issues using rhino tools and if needed you can update your genome
+
+build by using leftover tool and you can then preface by using shape it and
+
+finally imputed in-house or using one of the servers are mentioned so two links
+
+to this software are given here
+
+now take time
+
+probably hours to explore these three imputation services uh of
+
+sanger michigan and topmatz uh you will be asked to make an account
+
+and perhaps it will be need to be improved so take your time to do so
+
+Imputation QC
+
+and the next topic is imputation related qc so there are two qc steps um
+
+around imputation one is pre-imputation qc um so we have already discussed standard
+
+qc after genotyping and on top of that you you may want to exclude snips with less than one percent minor allyl
+
+frequency and a post imputation quality is assessed
+
+by information measures which is in some value in the range of 0
+
+to 1 and it is typical to filter snips by this
+
+value less than 0.8 for a strict filtering or less than 0.4
+
+and in the impute software this is called infoscore and in the minimax
+
+imputation software this is called r square per snip so it's important to check quality of
+
+type snips in the scaffold in the region also by visual inspection of cluster
+
+plots and you may also want to produce quality plots per chromosome
+
+varying by minor allele frequency strata and a position
+
+on the chromosomes for instance is an example figure this
+
+Imputation quality vs MAF
+
+shows a typical relationship between minor allyl frequency and imputation quality
+
+so on the y-axis you see the imputation accuracy as a determined by imputation
+
+quality as by r square on infoscore from different softwares and on the
+
+x-axis you see the minor allele frequency you see that the accuracy is top when
+
+the minor alarm frequency is high when the allyl is common and more common and then the accuracy
+
+goes lower where the minority frequency goes lower as well you still have some
+
+snips which you still have some well-imputed snips
+
+among the rare ones as well but most of the low quality snips are going to come from a low minor added frequency
+
+snips so keep in mind that when you filter by imputation quality you will be filtering out a lot of rare snips as
+
+well so what are the factors affecting imputation quality
+
+Factors affecting imputation
+
+so at the genome-wide level the number of individuals imputed has something to
+
+do with it for this reason we merge scaffold data sets before imputation if we are going to impute
+
+more than one so the the more the merrier
+
+and the second factor is the reference panel
+
+the choice of the reference panel as well as the whole idea is to use the correlation between snips
+
+across different populations and this may be different from population to population
+
+you want to go for a large multi-ethnic panel if you're not able to go for a
+
+large ethnic specific panel and uh finally at the snip level uh the
+
+lower the minor life frequency the lower the quality of the imputation
+
+is going to be and how to analyze the imputed data
+
+Analysis of imputed genotypes
+
+so for each individual imputation provides probability distribution of
+
+possible genotypes for each untyped variant these properties can be converted into
+
+best guest genotypes but this is not something really generally recommended as it increases false
+
+positives and it reduces power but also you want to filter your best
+
+best guess genotypes you want to put a strict filtering on the best uh guest genotypes and this would result
+
+more nas in your data set so it's better to convert the uh
+
+probabilities to expected allele counts and analyze uh by taking the uncertainty
+
+in the imputation into account that's really important and to do that you need to match the
+
+data formats to the software not all software uses all types of data and you may need to do
+
+data conversions um and um software called epex snip test to
+
+and link to supports the knowledge information and you need to check the lecture from
+
+medic magi for analysis of genome-wide data
+
+Messages
+
+um so this is the last slide of this lecture so the take-home message is that
+
+is we are dealing with hypothesis free approaches here unfortunately it all comes down to the bittersweet money and
+
+uh resources we have so you need to think what is the best and most cost effective way of getting
+
+genetics done in large sample size and the answer is combining a dense genome scan array with imputation as the reference panels are free at the moment and cost of arrays are going lower as well but you really need to think as the in silico part of doing so also will cause staff and a computational resources to some level and what else should you consider so in comparison you want to know depending on your research question of course whether there is a better array for you or perhaps an array or a metabold chip if you are going to conduct your research in a in a very restricted field and the most importantly what are the future uses of this data because obviously you don't want to build something that you're going to use only a couple of for only a couple of years and finalize the research on that you want to you ideally want to invest in big data uh so are you gonna invest in population based cohort or disease-based cohort is it going to be a short-term project or is it going to be a follow-up study that's going to be likely build up and extended extended throughout the years and by inclusion of new phenotypes so and finally who do you want to collaborate with which consortia which disease
+
+um yeah so i hope this lecture will be useful for your research and future studies and for the people who are interested and to have a better and in-depth understanding of imputation every year two times we have a jivas course organized by university of surrey in collaboration with imperial college and university of tartu from estonia this is a hands-on this includes a hands-on workshop as well as theoretical uh lectures where we teach these concepts and matters in more detail so the last one was in five to ten july 2021 and for information there is an email address you can connect to thank you very much and have a nice conference of the remaining time

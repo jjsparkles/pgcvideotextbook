@@ -1,0 +1,19 @@
+---
+title: "Chapter 1.2: Epidemiology (Video Transcript)"
+---
+
+**Till Andlauer**:
+
+Most of the work of the psychiatric genomics consortium is about genome-wide association studies, or GWAS in short. But, what is a GWAS?
+
+So first you need to consider that complex disorders, like most psychiatric disorders, are polygenic. So we don't have single causal mutations that confer risk as is the case for monogenic disorders, but many many genetic variants with small individual contributions to disorder risk.
+
+GWAS typically analyze single nucleotide variants or polymorphisms, SNVs or SNPs in short, such a SNP is a position in the genome where the genotype can vary. In this example, the majority of people in a given population carry a "G", and the minority an "A", so "A" is the minor allele. The frequency of the minor allele can also differ between patients suffering from a disease and healthy controls. So that's what GWAS is all about. So you take a group of patients and a group of healthy controls, and you determine the genotype of hundreds of thousands of SNPs using microarrays.
+
+Then you compare the frequency of alleles for each of these variants between cases and controls using logistic regression. You could also conduct the GWAS for a quantitative trait, for example body mass index or brain volume, and analyze associations using linear regression.
+
+GWAS results are presented as a Manhattan plot. Here you see one on Depression from the PGC. All the analyzed SNPs are shown on the x-axis, ordered by chromosome. And on the y-axis you see the minus log10 association p-value. Thus, the smaller the p-value, the higher the tower in the Manhattan plot. In this GWAS, you can see 44 such towers reaching above the red line. This red line is the genome-wide significance threshold, a p-value of 5 x 10-8, which corresponds to Bonferroni correction for multiple testing of 1 million variants.
+
+And why do you get these towers? Because of linkage disequilibrium. Nearby SNPs are correlated. They get inherited together more often than expected by chance. Thus, clusters of correlated variants show similar associations leading to the towers in the Manhattan plots.
+
+Now, published GWAS results typically don't come from a single analysis; instead separate GWAS are conducted in dozens of cohorts, and the results of each of them is combined using meta-analysis. And that's what the PGC does. In this manner, over the last years, hundreds of genetic loci associated with psychiatric disorders have been identified. And the list is constantly increasing. However, a lot of the work only begins after the GWAS has been conducted, and that is trying to annotate the function of the identified SNPs. There are many books and articles that provide you more information about GWAS and this book on psychiatric genetics is a good example.

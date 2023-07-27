@@ -1,0 +1,302 @@
+---
+title: "Chapter 9: Advanced Topics"
+---
+
+------------------------------------------------------------------------
+
+# 9.1 Copy Number Variation {#sec-section1}
+
+Goals of this section:
+
+> 1.  
+
+**Title**: How to run Copy Number Variation (CNV) analysis
+
+**Description**: Explanation of the interaction term Part 1. This two-part short video series briefly describes how to use and interpret interaction terms.
+
+**Presenter(s)**: Daniel Howrigan, Broad Institute
+
+**Level**: Intermediate
+
+**Length**: 20:03
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=Lg2k2BEQIy4")
+```
+
+Link to video transcript [here](chapter9.1_transcript.qmd).
+
+------------------------------------------------------------------------
+
+# 9.2 Mendelian Randomization {#sec-section2}
+
+Goals of this section:
+
+> 1.  
+
+**Title**: A two minute primer on Mendelian Randomization
+
+**Description**:
+
+**Presenter(s)**: George Davey Smith, TARG Bristol
+
+**Level**: Beginner
+
+**Length**: 2:16
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=LoTgfGotaQ4")
+```
+
+Link to video transcript [here](chapter9.2_transcript.qmd).
+
+------------------------------------------------------------------------
+
+# 9.3 Genomic Structural Equation Modeling {#sec-section3}
+
+Goals of this section:
+
+> 1.  
+
+## Genomic SEM Introduction
+
+**Title**: Genomic Structural Equation Modeling: A Brief Introduction
+
+**Description**:
+
+**Presenter(s)**: Andrew Grotzinger
+
+**Level**: Beginner
+
+**Length**: 10:43
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=FV7tFV1p7JQ&list=PL-A34BVyxWtV2q5COofdmLJAntQKbiKYW")
+```
+
+Link to video transcript [here](chapter9.3_transcript.qmd#sec-video1).
+
+------------------------------------------------------------------------
+
+## Running Genomic SEM
+
+**Title**: Short Primer on Structural Equation Modeling (SEM) in Lavaan
+
+**Description**:
+
+**Presenter(s)**: Andrew Grotzinger
+
+**Level**: Intermediate
+
+**Length**: 11:34
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=eulJrhGTBgc&list=PL-A34BVyxWtV2q5COofdmLJAntQKbiKYW&index=3")
+```
+
+Link to video transcript [here](chapter9.3_transcript.qmd#sec-video2).
+
+------------------------------------------------------------------------
+
+**Title**: GenomicSEM: Input/Explaining how S and V are estimated and what they are
+
+**Description**:
+
+**Presenter(s)**: Michel Nivard
+
+**Level**: Intermediate
+
+**Length**: 23:18
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=35NrsTiTpFg&list=PL-A34BVyxWtV2q5COofdmLJAntQKbiKYW&index=4")
+```
+
+Link to video transcript [here](chapter9.3_transcript.qmd#sec-video3).
+
+------------------------------------------------------------------------
+
+**Title**: Working through examples on the Genomic SEM wiki one by one: munge, ldsc, usermodel functions
+
+**Description**:
+
+**Presenter(s)**: Michel Nivard
+
+**Level**: Intermediate
+
+**Length**: 22:54
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=Paf2JfWES6I&list=PL-A34BVyxWtV2q5COofdmLJAntQKbiKYW&index=5")
+```
+
+Link to video transcript [here](chapter9.3_transcript.qmd#sec-video4).
+
+------------------------------------------------------------------------
+
+**Title**: Multivariate GWAS in Genomic SEM
+
+**Description**:
+
+**Presenter(s)**: Andrew Grotzinger
+
+**Level**: Intermediate
+
+**Length**: 30:08
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=KreSR2CMims&list=PL-A34BVyxWtV2q5COofdmLJAntQKbiKYW&index=6")
+```
+
+Link to video transcript [here](chapter9.3_transcript.qmd#sec-video5).
+
+------------------------------------------------------------------------
+
+**Title**: Using Genomic SEM to Understand Psychiatric Comorbidity
+
+**Description**:
+
+**Presenter(s)**: Andrew Grotzinger
+
+**Level**: Intermediate
+
+**Length**: 1:01:02
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=2Qyg7toEEDc")
+```
+
+Link to video transcript [here](chapter9.3_transcript.qmd#sec-video6).
+
+------------------------------------------------------------------------
+
+# 9.4 Interactions with Environmental Factors {#sec-section4}
+
+## Statistics of the Interaction Term
+
+Goals of this section:
+
+> 1.  Understand the statistical basis of the interaction term
+
+**Title**: Dummy variables: interaction terms explanation
+
+**Description**: Explanation of the interaction term Part 1. This two-part short video series briefly describes how to use and interpret interaction terms.
+
+**Presenter(s)**: Ben Lambert
+
+**Level**: Beginner friendly
+
+**Length**: 4:35
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=ScKL40dp8M4&ab_channel=BenLambert")
+```
+
+Link to video transcript [here](chapter9.4_transcript.qmd#sec-video1).
+
+------------------------------------------------------------------------
+
+**Title**: Continuous variables: interaction term interpretation
+
+**Description**: Explanation of the interaction term Part 2. This two-part short video series briefly describes how to use and interpret interaction terms in the case of continuous variables.
+
+**Presenter(s)**: Ben Lambert
+
+**Level**: Beginner friendly
+
+**Length**: 4:53
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=HyA_Vgbc0t4&ab_channel=BenLambert")
+```
+
+Link to video transcript [here](chapter9.4_transcript.qmd#sec-video2).
+
+------------------------------------------------------------------------
+
+## Gene environment interaction in psychiatric genetics
+
+Goals of this section:
+
+> 1.  Understand how gene environment interactions can be detected in statistical population genetics.
+>
+> 2.  Understand how statistical power impacts detecting gene by environment interactions.
+>
+> 3.  Understand additive vs multiplicative interactions.
+
+**Title**: Gene-environment interaction analysis
+
+**Description**: MPG Primer: Introduction to gene-environment interactions in the context of statistical genetics. Introduces gene environment interactions, statistics, variant prioritization, variance-QTLs, and different types of interactive effects.
+
+**Presenter(s)**: Kenny Westerman, Broad Institute
+
+**Level**: Intermediate (content will be easier to those with a statistical genetics background)
+
+**Length**: 42:28
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=wDxeO73q5k0&list=PLEEE2A91B09B77B4A&index=44&ab_channel=BroadInstitute")
+```
+
+Link to video transcript [here](chapter9.4_transcript.qmd#sec-video3).
+
+------------------------------------------------------------------------
+
+# 9.5 Family-based analysis {#sec-section5}
+
+Goals of this section:
+
+> 1.  Understand
+
+**Title**: Univariate/MonoPhenotype Twin Modeling in OpenMx
+
+**Description**:
+
+**Presenter(s)**: Hermine H. Maes
+
+**Level**: Intermediate
+
+**Length**: 18:21
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=XPv80fzzfKw")
+```
+
+Link to video transcript [here](chapter9.5_transcript.qmd).
+
+------------------------------------------------------------------------
+
+# 9.6 Therapeutic Implications {#sec-section6}
+
+Goals of this section:
+
+> 1.  
+
+**Title**: Pharmacogenomics knowledge for personalized medicine
+
+**Description**:
+
+**Presenter(s)**: Cristina Rodriguez-Antona, Michelle Whirl-Carrillo
+
+**Level**: Intermediate
+
+**Length**: 44:27
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=YngN2Ie26PM&list=PLi2PVGG1ibsaHSzE3tmaaBiJ725e7RxsM&index=1")
+```
+
+Link to video transcript [here](chapter9.6_transcript.qmd).

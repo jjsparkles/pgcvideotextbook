@@ -1,0 +1,967 @@
+---
+title: "Chapter 8.5: Fine-mapping (Video Transcript)"
+---
+
+**Title**: Introduction to fine-mapping methods
+
+**Presenter(s)**: Hilary Finucane
+
+good morning everyone and welcome to the MGP primer for today it's 8:30 so we'll go ahead and get
+
+started with the introductions so this is our penultimate primer for the season
+
+and we are very happy today to have dr. Hillary Hillary then who can today to
+
+speak to us about fine math dating methods her background includes bachelor's in Harvard in math from
+
+Harvard she then followed that up with a master's in theoretical computer science
+
+him went on to then complete a PhD in applied math at MIT she was selected for
+
+a very prestigious and IH director's early independence award and has been
+
+doing wonderful work here at the broad she's now co-director of the program in
+
+medical and population genetics and she's also a assistant investigation at
+
+the analytic and translational genetics unit at MGH and is about to being the
+
+assistant professor at HMS and we are so thankful for her today for sharing this presentation with us she's happy to take
+
+questions and has natural pauses built in her talk but I will also keep an eye on any raised hands and Q&A and so we
+
+welcome your participation thank you very much thanks very much Sarah for
+
+that lovely introduction and hi everyone I'm happy to be talking today about
+
+Bayesian fiying mapping methods and this isn't going to be a comprehensive review I'm going to try to give an overview to
+
+some of the main ideas in the field but as Sarah said I'm very happy to take questions as I go and answer I'll be
+
+moderating those questions so let me start by talking about the context for
+
+affine mapping so in a genome-wide Association study we see often these
+
+days many genome-wide associated regions so here's an example of a Manhattan plot from the 2014 schizophrenia to us where
+
+every green diamond is now Janome its locus that's past genome-wide significance and that naturally invites
+
+the question was actually going in the locust and there's a lot of
+
+questions that that we can ask about a particular locus that can mean a lot of things and what I'm gonna focus on now
+
+is what are the actual variants that are driving the Association at the locus and
+
+so typically when we zoom in on a locus we might see something like this so here
+
+we've got your moment coordinates on the x-axis and then level of significance on the y-axis and this is an example from
+
+Highland Kwan's IBD analysis and what we imagine is going on is that there's
+
+actually a simple underlying causal structure or maybe there's only two causal variants in the locus and it's
+
+only because of patterns of LD and then the noise due to finite sample size that we see all of these many variants coming
+
+up as associated in this in this way and so the goal of statistical affine
+
+mapping is to take the Jewess data that shows this complex Association at the
+
+locus and to try to you know detangle it and figure out what's the actual simple
+
+story that's underlying it what are the causal variants that are underlying this association and so why might we want to
+
+do something like this well one reason is if we're interested in genes if we
+
+can identify the causal variants and these variants sometimes implicate genes for example the variants may be coding
+
+variants that directly implicate a gene or they may be regulatory variants that
+
+that we can then tie to a gene and so so
+
+so if I'm mapping can often help us with this goal of finding causal genes and another reason might be even once we've
+
+got the name of the gene we want the variant to gene mechanism and that for example might enable us to do an
+
+experiment that more realistically recapitulates the disease relevant
+
+biology then knocking out the gene altogether and then there's a another
+
+set of reasons having to do with a genetic architecture and so for example by looking at many fine mapping results
+
+across many low sigh or by building models that are based on online mapping models you might be able to do enrichment analyses which
+
+types of variants tend to be associated or causal for disease moving from
+
+association to find mapping can also enable cross population and cross trait comparisons and has the potential to be
+
+particularly useful in prediction and so there's a lot of a lot of things that
+
+we're trying to do that become easier once we have some model that lets us get
+
+not just Association but rather to make some inference about causal structure
+
+and so today I'm gonna focus mostly on
+
+different aspects of statistical methods for fine map and this is the outline I'll start by talking about posterior
+
+inclusion probabilities incredible sets and then I'll go through a few different methods points and then I'll close with a some thoughts on evaluate and find
+
+mapping methods and so and I'll pause after each section here and so maybe
+
+I'll just start by pausing after that brief introduction if there are any questions so far
+
+great so then let me continue with PII
+
+keys incredible sets what what are these kind of basic concepts so our goal in
+
+fine mapping is to recover the causal variants but of course we can't always with precise accuracy and perfect
+
+competence recover exactly what the fine mapping with it with the causal variants are and so what does the output of
+
+affine mapping algorithm typically look like well there's two aspects that I'll focus on here we'll take each variant in
+
+the locus and then we can plot it now with the y axis being the posterior inclusion probability so each variant
+
+gets a P IP and then we can also identify sense of variance called credible set so here one credible set is
+
+red and one credible set is blue so what are P IPS and what are credible sets the
+
+posterior inclusion probability for a variant is the posterior probability that the variant is causal and this
+
+courses according to the model so once you've bought into all of the
+
+assumptions of your model then the p IP reflects the causality there the causal probably the probability that the
+
+variant is causal and so a p IP of one would be the most confident you can
+
+possibly get and then as the gets lower that means you're less and less you think it's less and less likely that
+
+this is actually a causal variance driving the signal and this has a couple of different names posterior inclusion
+
+probability is the most standard one that i've seen but some people call this posterior probability of causality or
+
+you may see other acronyms in the literature and then a credible set
+
+typically we talk about 95% credible sets is a set of variants that contains
+
+a causal variant with at least 95 percent probability and so and this has
+
+also been defined in some alternative ways and in some places in the literature but this is now to my
+
+understanding the most standard use and so if we go back and look at this
+
+particular locus you can see that the blue credible set is a set of variants that contains exactly one variant and
+
+that variant has a very high p IP and so that means that there's one signal
+
+that's been really resolved very well so the blue credible set says i think that one of the causal variants is here and
+
+i'm pretty confident about it and then there's a red credible set and so that means there's a second causal variant i
+
+think it's one of these five red variants i'm not quite sure which of the five and my posterior inclusion
+
+probability is going to quantify exactly what do i think is the probability that
+
+each one of these variants is is the causal variant for this second signal
+
+and so you can think of each credible set as corresponding to one putative causal variant and it's reflecting the
+
+uncertainty around which variant is that actual putative causal variant so so
+
+typically when we think about fine mapping methods what we're interested in is getting a p IP per variant and then a
+
+credible perd you know variant in the locus and then a credible set each one of which
+
+flex one causal variant and the uncertainty around where that causal variant might be so let me again ask if
+
+there are questions so far on P ip's and credible sets
+
+okay so then with that I'll dig into some of how do we actually try to compute these P IPs and credible sets
+
+and I'll start with the case of single causal variant fine mapping so so you
+
+can imagine you've done a gos you've got a particular locus you're interested in you've got the data on the locus and
+
+I'll discuss later on whether by that I mean summary statistics and LD or genotypes and phenotypes and now what
+
+you'd like to get are some p IP s and some credible sets and you have a choice
+
+now which is are you going to figure there's probably only one causal variant in the locus or there may be multiple
+
+causal variants in the locus and the there's increasingly good evidence in
+
+the field that many loci Harbor multiple causal variants and so that's going to be an important point but single causal
+
+variant fine mapping is very robust and
+
+and statistically straightforward and it's also a building block for a couple of the different multiple causal variant
+
+message so first I'm going to talk about single causal variant find mapping so here we have our locus we'd like to know
+
+is what's the p IP for each variant and then there's only going to be up one
+
+credible set here because we're assuming one causal variant and so which variants
+
+should we put into our credible set and the p IP now these p IPS will sum to one
+
+we're saying there's actually one causal variant we just don't know which one it is and so now I'm gonna talk in a little
+
+bit of technical detail for a few slides on how we actually go about doing this
+
+so what is the p IP at snip j let's
+
+start by computing the p IP it's NF j and we can write this as the probability under our models it sniffing j is causal
+
+given the data that we have and we're being bayesian and so let's say that we
+
+have a flat prior on which variant is causal and so then Bayes rule allows us to say
+
+to rewrite this probability as the probability of the data given J is causal divided by the sum over all
+
+variants in the locus of this probability of the data given with the variant is causal and this is a pretty
+
+straightforward application of Bayes rule and then a trick comes in saying that well in order to make the
+
+computation easier let's just divide everything into both the numerator and the denominator by this null probability
+
+the likelihood of the data under a null model in which none of the variants is causal and now we can call this new
+
+quantity that we've got a Bayes factor so the Bayes factor is the likelihood of
+
+the data given the variant K is causal divided by this null probability and
+
+this just allows us to rewrite our p IP is the base factor person FJ divided by the sum over all variants of the Bayes
+
+factors and the reason that this is a nice thing is because this Bayes factor
+
+turns out to be pretty simple to compute and so Tamala at all showed that the
+
+Bayes factor you don't actually need to model all of the data at the locus to compute the Bayes factor for a single
+
+variant you only care about what the genotypes are at that particular variant and then Wakefield and others showed
+
+that this base factor can in fact be computed or approximated depending on the model that you're fitting from
+
+summary statistics and so it can computing this Bayes factor you can just
+
+go one variant at a time and compute a pretty straightforward transformation of
+
+what the of the summary statistics that you've seen so in particular this
+
+doesn't depend on LD at all and is a linear time computation so this is how
+
+for simple causal variant fine mapping you might compute P IPs and so how about
+
+credible sets well let's first remember how we defined a credible set s is a set
+
+of variants that we'll call a 95% credible set if the probability that it
+
+harbours the causal variant because we're in a single causal variant land is at least 95 percent so we now have a
+
+probability for each one of our very that it's the causal variant and we want to know which causal variant should be
+
+put together so that we are covering at least 95% of the probability space and
+
+because we only are assuming the single causal variant assumption the probability that the causal variance in
+
+s is just the sum of the p IPS of the variance in s and so to construct the
+
+smallest 95% incredible set we can just add the variant that has the highest P
+
+IP and then add the variant that has the second-highest VIP and just keep on going until our p IP son to 95 to 95%
+
+and typically I shouldn't I should know there's a lot of different ways to construct credible sets you could always
+
+just throw all of the variants in and that'll some to more than 95 percent and so usually the goal is to construct the
+
+smallest possible credible set because what you'd like is to have as much
+
+resolution as possible and to be able to say we really narrowed down our signal
+
+to as few as possible variance then the question yes asking what values are part
+
+of the flat prior and what assumptions are made in order to calculate that flat prior absolutely absolutely so so when I
+
+say flat prior yeah your I should have clarified this better what I mean is a flat prior over which variant is causal
+
+which is also something that I'll come back to so the flat priors here is saying a priori before I seen the G
+
+Wasps data in my locus at all I'm gonna say that every bearing is equally likely to be causal there's another prior that
+
+has to be defined that has to do with what's the effect size of each variant in the locus and there you do have to
+
+specify it and that there's different ways that different folks do that and it
+
+turns out that that might actually be pretty important but for the sake of time I'm leaving that out of this
+
+particular presentation and so here in order for what I said on this slide to hold all what you need is for the prior
+
+on which variant is causal to be uniform across the different variants does that
+
+answer the question yeah there is a follow-up one whether a
+
+single causal variant is a prior that there is only one or no causal variant
+
+or a constraint in this case it's a constraint so in this case when I say
+
+single causal variant fine mapping what I mean is the model that you write down says there is exactly one variant and
+
+it's gonna be one of these so under the prior you know if you have M variants your probability is 1 over m that your
+
+first variant is causal and it's 1 over m that your second variant is causal and that sums to 1 across the whole locus
+
+when in in subsequent work that I'll talk about in the next section we put
+
+priors on the number of causal variants and those my top waiter down weight you
+
+know well\--there's tend to up wait sparse sparse solutions like single causal variant solutions but in this
+
+case there's been hard constraint there is only one causal variant at the locus
+
+and does LD structure affects the p IP there's a lot of questions coming into
+
+bed great no so that's kind of the magical thing about single causal variant fine mapping
+
+so this was first shown in 2012 and the smaller a tall paper but for one single
+
+causal variant there's a couple different ways to see it and if I had a white board then I would show some of
+
+them but the fact that these Bayes factors that you can actually compute
+
+the probability of all of the data given that a snip is causal divided by the probability of the data under the null
+
+model that that no longer depends on all of the other variants in the locus you
+
+can see this for example if you're looking at like a linear model a
+
+spanning of the standard model for quantitative traits them usually write down you can actually write down the normal likelihoods and watch the you
+
+know watch things cancel and then a bunch of stuff disappears and you wind up with something pretty simple but there's also probabilistic arguments in
+
+both mama at all and wing at all that show that whether you're conditioning on X or consider X to be part of your data
+
+I it actually again you get this this
+
+cancelling and so it doesn't your Bayes factors don't depend on any
+
+variant except the variant that you're computing the Bayes factor for and I think that's part of why people like
+
+single causal variant fine mapping so much is that means there's no way to miss specify your LD it's it's super
+
+simple and straightforward I think a related question just to finish up is
+
+just whether there are any other methods that then prefer proximity so whether if you have a you know a clustering of
+
+variants instead of a single variant i'ma that adjacency is considered in any alternative models interesting so the
+
+question there is now you're modeling multiple causal variants and you want to put a prior that your causal variants
+
+are likely to be close together but you don't want to up wait or down with any particular variant is that right well so
+
+that was my interpretation of the question but I'll read the I'll read the question which was does your candidate set select our selection require that
+
+variants are adjacent or is there a method that prefers proximity so this is about credible sets now so with credible
+
+sets it doesn't there's nothing explicit about adjacency I think that typically
+
+if you have a single causal variant then the variants that have the highest P IPS
+
+are going to tend to be an LD with each other and so typically credible sets tend to consist of variants that are and
+
+at least a medium amount of LD with each other and it can this is even used as a diagnostic and susi method if you're
+
+credible set contains a bunch of variants that are in very loose LD with each other then there's a sense in which
+
+things didn't work and you should become suspicious so I would say that if the
+
+model is well specified then you might expect a credible set to consist of variants and I'll deal with each other but there's nothing explicit here that
+
+enforces that thank you so much so to recap how might
+
+you do the single causal variant fine mapping well first you can take your summary statistics and compute a
+
+proximate bayes factors or base vectors transform these into P IPs and then compute credible sets from your p IPS
+
+one nice thing about single causal variant side mapping is it also allows us to build some intuition about some
+
+basic concepts and fine mappings so one thing that we might be very interested
+
+in is what factors affect our ability to find math effectively so we're happy if
+
+we get a few variants with high P IP and other the other variants are with low p IP and that means we've really been able
+
+to you know zoom in on the on the causal variance another way to think about so
+
+so I'm using power in quotes because it's a very frequent test idea but intuitively we're trying to say with
+
+what confidence have we been able to identify these causal variance and you can imagine that if there's a lot of LD
+
+in your locus then it's gonna be harder to identify the causal variant if you
+
+know in the extreme if you have two variants in perfect LD then it doesn't matter what your sample size is or what
+
+your algorithm is you're never going to be able to tease apart which of those variants is causal without bringing in
+
+some extra information and then the less LD there is and the locus the easier it becomes to kind of tease apart that
+
+which variant is causal in which variant which variants are non causal and then similarly as with to a sample size and
+
+effect size are both both very important for being able to confidently zoom in on a small number of most likely causal
+
+variants and so in this work by shaded
+
+all the authors wrote down kind of a
+
+approximate expected p IP at a causal snip under a simplified model and so
+
+here's an example you can imagine you have a locus with ten snips all snips
+
+have equal LD they're correlated to each other at level R there's a single causal
+
+simple that explains 1% of the variance in your phenotype and so now the authors
+
+wrote down an analytic expression for roughly under this scenario what would you expect the P IP of the causal
+
+variant to be and and they created this figure so here high values are good that
+
+means we'd when we were able to narrow in with a lot of confidence on the causal variant and you can see that on
+
+the x-axis as the amount of LD among variants in the locus changes you're
+
+less and less confident that the causal variant is actually causal and then the colored lines show how as you increase
+
+your sample size you're more and more confident and so being able to get this
+
+you know kind of quantitative sense of what's the trade-off between LD and
+
+sample size as you're trying to zoom in on particular causal variants can be a
+
+useful way to build an intuition and one comment I want to make here is that when
+
+we think about cross population by mapping one reason that it's that it can
+
+be particularly effective to combine information across multiple populations
+
+and fine mapping is because it changes the LD structure so the relevant LD is
+
+related to the average LD between the two populations and so even if you're
+
+not so if you compare let's say the same sample size but you can choose to have
+
+it either all in one population or all in another population re or
+
+half-and-half two populations then because there are differences in LD structure among the two populations
+
+combining across populations can help you move to the left in this plot which
+
+is as you can see a good way to also move up which means you're more
+
+confident in the causal variant so that's an overview of single causal
+
+variant fine mapping and so now I'll give kind of a high-level introduction
+
+to a multiple causal variant evasion fine mapping and maybe I'll pause one more time for questions we had some in
+
+the middle but not just because I'm at the outline slide again are there other questions
+
+great so we we know that there's often
+
+not just a single causal variant in a locus and so that's usually not an assumption that we'd like to hard-code
+
+and especially as our sample sizes increase that this becomes more and more relevant and is reflected more and more
+
+clearly in the G loss data that we see so now if we think about multiple causal variant fine mapping there's two main
+
+approaches and the first one is to say okay there's multiple causal variants let's split our locus up in some way and
+
+then apply single causal variant by mapping because that's a really robust tool that we can use well so then how
+
+does this typically work what does it mean to split the locus up there's a lot
+
+of different ways to do this one standard way is conditional analysis and so here's a figure describing
+
+conditional analysis let's say that this is your locus in the top left here and in conditional analysis you take the top
+
+signal and then you include the genotypes at that variant as a covariant
+
+in your Association and if that variant is in high LD with a causal variant and
+
+there's only one causal variant then that variant explains the that variant explains all of the other associations
+
+in the locus and so by conditioning on that variant you get this you know you
+
+kill all the signal and you get this modal pattern here so if there's a single causal variant and if the top variant is in high LD with that causal
+
+variant then conditioning on the top variant will kill all of your signal on the other hand if you've got two causal
+
+variants then conditioning on the top variant is unlikely to kill all of your signal and in particular if that top
+
+variant is in high LD with a causal variant then after you've conditioned on it then there's a sense in which you've
+
+you know accounted for the effect of that causal variant and now you've got a locus that's got one fewer causal
+
+variant than before and so you can iterate this and then get these a set of
+
+index snips and so conditional analysis is one
+
+commonly used way to break complex locusts into multiple signals and then
+
+to you know one way you might then use simple causal variant fine mapping would be to find map each each of these
+
+signals conditioning on the other so once you've got all of your index variants that you got by a conditional
+
+analysis and maybe you'll include all but one as covariance and apply single causal variant fine mapping and then
+
+repeat that excluding each signal one at a time so that's a commonly used type of
+
+approach conditional analysis and it has some limitations one limitation is that
+
+you might why there's no there's no guarantee that your top variant is in
+
+high LD with a causal variant so here's an example from the susi paper where
+
+they did a simulation where snips 1 and snip 2 are the causal snips but because
+
+the yellow snip tags both of the two red snips it comes out as most associated
+
+even though it's not in particularly high LD with either one of these causal snips and so this would be a case where
+
+if you did conditional analysis you start by conditioning on the yellow snip but that wouldn't properly kill either
+
+of your signals because this idea that your top variant is an high LD with a
+
+causal variant if is violated in this particular case and so conditional
+
+analysis is you know one one approach but examples like this motivate instead
+
+writing down a Bayesian model to jointly model the effects of multiple variants
+
+at the same time and so that's what I'm calling you know approach number two how
+
+might we jointly model multiple causal variants in one Bayesian model for the
+
+locus the way there are two questions about that that last approach yes oh not
+
+three uh-huh what do you mean by top variance is that defined by the G wife's score yes yes
+
+sorry by marginal significance and then when you iterate for variants conditionally there's an assumption that
+
+it's not done manually what's the process like and sorting out hits so
+
+there's a software to do this and it's pretty automatic right at each case at
+
+each step you want to take the so okay so I guess typically you you have to
+
+kind of manual parts you have to decide when you're gonna stop and that's often done by setting a threshold of
+
+significance at what point are you going to say you killed all of the signals and so you know you take the most
+
+significant variant you include it as a covariant if any variant passes whatever
+
+your predetermined level of residual significance is then you'll do that again you'll take the most significant
+
+variant condition on it and then and then iterate and then you consider yourself done when no variant passes
+
+your predetermined level of significance set answer the question I think so great
+
+thank you great so then I'll move on to how we
+
+might jointly model multiple causal variants so here let's start by analogy
+
+to single causal variant fine mapping but here instead of one variant we're
+
+gonna look at sets of variants so let's let SJ be a set of variants and we want
+
+to know what's the probability that this set of variants is causal given the data and we can again apply Bayes rule and
+
+and then start to try to compute some likelihoods but we get stuck very quickly and the reason is before we were
+
+only summing over variance in in the locus and so we could say like what is
+
+the space of all things that could possibly happen well variant one could be caused variant two could be causal variant three could be caused when
+
+there's only number of variants possible choices but now what's the space of all things that could possibly happen
+
+well variant one could be causal or variant 1 and 2 could be causal or variance one 3 and 10 could be causal
+
+and so now if you want to just naively apply Bayes rule you're summing over all
+
+double configurations of causal variants and that's large but you know to to the
+
+size of the locus and so that's for a typical locus way too many terms to be
+
+tractable and so there are a number of different methods to do joint modeling
+
+of multiple causal variants and each one of them approaches this challenge differently so caviar which to my
+
+knowledge was I think the first work to write down this model in this way limits
+
+the maximum number of causal variants and is typically applied to a smaller loose I and and once you limit the
+
+maximum number of causal variants then that limits the you know the total number of configurations as well in a
+
+pretty you know direct way and then there are methods such as fine map and
+
+Apogee that sum over what their algorithm thinks is the most likely
+
+configurations and then more recently the susi method takes a different
+
+approach based on variational inference for those of you can know what that is it's analogous to iterative conditional
+
+analysis where instead of just doing conditional analysis once through the locusts they then go back and redo the
+
+conditional analysis multiple times until convergence and this has some nice
+
+theoretical properties as well and so this isn't you know a comprehensive overview of multiple causal variant fine
+
+mapping but just to give a sense that when you want to do joint modeling of multiple causal variants there's kind of
+
+a fundamental challenge to the first way we would think of to do it and then there's been a series of really nice
+
+work making that more and more efficient in these different and in other works so
+
+I'm not going to go into the details of exactly how these different methods work
+
+so that's something that I find very interesting and instead I'm gonna touch on two other methods topics and one of
+
+them is we informed by mapping so let me pause again for questions before I move on to functionally informed by mapping there
+
+is one question do you need to take into account effect size when you when you do this either assume effect size of each
+
+causal variance in the same or weight causal variance by effect sense yeah that's um a really subtle point that the
+
+different methods deal with differently so you have to put a prior on effect size as the usual
+
+way to do it and then integrate out the prior and so and then the question is well how do you figure out what the
+
+prior should be and some methods do this
+
+by having the prior be you know a mixture of normals or learning the prior
+
+from the data in some cases it's shared across all variants in some cases it's different for the different variance and
+
+so that's an important point that different methods deal with differently
+
+you
+
+so let me sorry is there another question I might be looking at the wrong
+
+place just popped up um mention that there's evidence that there are multiple causal variants for Jia slow side you're
+
+curious he um and just curious as to which studies have confirmed that yeah
+
+there's a couple of different ways to see that I guess I mean one way to see
+
+that is if you look at the applications of multiple causal variant methods that
+
+then give you a posterior on how many variants there are then that posterior
+
+is often concentrated away from one another way to see that is doing conditional analysis if there's a single
+
+causal variant then conditional analysis should kill your signal pretty well and it very often doesn't another is
+
+depending on how you define your locus sometimes you can just look at the you know the locus zoom plot and it's pretty
+
+clear that there's more than one signal for example if you've got a variance
+
+with a high marginal effect that are in low LD with your top variant that's not really consistent with more than one
+
+variant at the locus there's been some
+
+work from on actually estimating amounts
+
+of allelic heterogeneity from far farhad and others reskin where they try to you
+
+know model this specifically but i'd say that there's just for the fact that it
+
+often happens that there are multiple causal variants um that seems to be something when you can see in a lot of
+
+different ways and then the question for how often and how many causal variants i think is a much the subtler and more
+
+difficult thing to get at thank you
+
+when we're just popped up yes oh so
+
+caviar Susie and Daphne each you've different models is there a way to judge a priori which method best suits our
+
+users data so that's something that I'll get into towards the end evaluating fine
+
+mapping methods and I in my opinion one
+
+of the things that this field really needs more of is benchmarking in in realistic settings and so I'll talk a
+
+little bit about about that at the end but you can also base it a bit on
+
+intuition based on just the assumptions that the methods make
+
+but I but I think actually rather than go into that I think that empirical like more empirical evaluation is really
+
+needed a common thing is also to apply more than one method and then when they agree to have more confidence so that's
+
+something that art has done where we apply both sine map and Susie and then
+
+one way of evaluating the methods is to look at functional enrichments of the variants that get prioritized by these
+
+two different methods and if you look at the enrichment when they agree versus the enrichment when they disagree and
+
+you go with either method then you can see much stronger functional enrichment at the low site where the two methods
+
+agreed and when they disagree but in our hands at least they mostly agree which
+
+is I think Cosford thank you okay so I
+
+got a question earlier about flat priors and and what I was saying was the
+
+methods that I've described so far assume that before you look at the G Weiss data in the locus you think every
+
+variant is equally likely to be causal but intuitively of course that's not the case if you look you haven't looked at
+
+your gos data yet you just know which variants are in the locus but some of them are coding and some of them are
+
+non-coding then a coding variant is is more likely to drive disease than a
+
+non-coding variant and because we're doing Bayesian analysis here that can be
+
+incorporated into a prior so a functionally informed prior is one where
+
+you take into account the functional annotations that are variant to up weight and down weight certain variants
+
+according to which ones are more or less likely to be causal a priori and then
+
+the question is how do you set that prior do you have to just kind of trust
+
+your own intuition that I don't know enhancer variants are five times more likely than then you know they're not
+
+coding variants to be causal and one way to get around this question is to learn
+
+the prior from the data so there are so a lot of the methods that I described so far if you want to just say what the
+
+prior that can actually be done pretty simply and what makes this difficult is learning from the data by looking across
+
+many low sigh what prior it would make sense to set and so now what you'd like
+
+to do is say ok I've got several different low say I'm gonna find max I'm simultaneously but I want to learn by
+
+looking at these low sigh are they consistent with like what how much enrichment are they consistent with and
+
+so different methods again have have done this in different ways FQs is a
+
+functionally informed single causal variant find mapping method and then painter allows for a functionally
+
+informed fine mapping at multiple causal variants and then caviar BF allows for
+
+many annotations in a multiple causal variant framework and most recently poly fun leverages polygenic enrichment in a
+
+by leveraging stratified LD score regression and so to give um just a
+
+example of how this works sometimes I've pulled a pig or a figure from the puffin paper and so here if you first focus
+
+only on the squares then you can see that so the squares reflect here the P
+
+IPS that are not functionally informed and if you look only at the squares then
+
+what you can see is the none of the P IPS are bigger than 0.4 and this are s 2
+
+8 8 3 2 6 the Red Square gets a p IP that's you know somewhere below point 4
+
+but that particular variant turns out to be mountain synonymous and so the
+
+functionally informed fine mapping results which are displayed in circles here up wait that in the prior and so
+
+then if you look at the posterior inclusion probability or the posterior causal probability here then you can see
+
+that incorporating this functional information has bumped up that nonsynonymous variant to a posterior
+
+probability closer to one which might map our match our intuition better from
+
+the combination of the data together with our understanding that this is an onsen
+
+variant so this is this is you know an example of the kinds of ways that
+
+functional information can be incorporated into fine mapping and this has pretty clear advantages for example
+
+you know if your prior reflects true biology then you'll get a more accurate
+
+posterior and one disadvantage would be
+
+if you want to use functional information downstream to for example evaluate your fine mapping method or if
+
+you sometimes it can be useful to say my fine mapping results don't actually have
+
+what I haven't incorporated the functional information yet and so then I can do for example enrichment analyses
+
+but I think that especially as these methods become more efficient and robust
+
+as they have recently then this is going to be an important direction as well a
+
+lot of very useful type of information to be incorporating into fine mapping so
+
+there any questions on functionally informed fine mapping you
+
+I'm great so then um sorry was that sure
+
+it was just a question about variants that might be in trans and how that complicates this analysis yeah for sure
+
+for sure so in order to do functionally informed find mapping you need a set of
+
+annotations so when when you say so so
+
+what you're taking advantage of is you know how to characterize variants if you don't know how to characterize the
+
+variants then you can't take advantage of that anymore so typically you first start by writing down a set of
+
+functional annotations here are my coding variants here are my promoter variants and one thing that's different among the different methods is how many
+
+of those can write down but if something is regulatory and trans in a way that hasn't been well characterized or that
+
+you can't work into your model then yeah then that's not something that you can take advantage of with these types of
+
+methods and how specific is polyphen to a particular cell type disease or
+
+phenotype and can that be customized so actually Omer feel this question but but
+
+in general if you think about functionally informed find mapping it again depends on which annotations get
+
+used and so if you only incorporate annotations from a certain cell types
+
+and it'll be cell type specific my understanding is the default for poly fun is not cell type specific and that
+
+it uses annotations that don't correspond to a particular phenotype which makes it pretty widely applicable
+
+to polygenic phenotypes where you can only pick enrichment estimates I don't
+
+know if I'll merge on the call but if he is then he shouldn't feel free to chime in and then does do those annotations
+
+and include features like promoters and enhancers yeah yeah coding is just one
+
+example but there's depending on which method you're looking at typically a
+
+large number of annotations that can be incorporated and then this is testing
+
+the limits of my zoom abilities but Lela would like has a hand up
+
+I will thank you so much great all right
+
+so then maybe I'll say a few words about summary statistics so many of the
+
+methods that I've described I haven't been differentiating so far but many of them rather than requiring your full
+
+genotype matrix and phenotype vector can actually be run given only your LD matrix and summary statistics and this
+
+is convenient because depending on what your sample size is and how you're
+
+defining your lo site the LD matrix can be a bit bit smaller but it's particularly convenient if you can
+
+estimate patterns of LD from a reference panel and so I'll get into that in the
+
+next slide but let me first point out that this isn't actually a coincidence if we call our genotype matrix X in our
+
+phenotype vector Y rld matrix is then up to normalization proportional to X transpose X and our summary statistics
+
+allow us to recover X transpose Y X transpose X and X transpose Y are actually sufficient for me in the linear
+
+model that most of these methods are based on and so what that means is that X transpose X and X transpose Y
+
+statistically have the all the information about being that you would want to get from x and y and so the fact
+
+that there continues to be summary statistics based methods is based on
+
+this very nice fact as long as we're starting from this y equals x people see model then it's gonna be possible to do
+
+it from summary statistics although here the only guarantee is if you have the actual x transpose x from your entire
+
+genotype matrix so this is full in sample exact LD and of course it doesn't
+
+apply to you know logistic regression there are things like that and so so
+
+when do you actually need so the statistical guarantees come from in sample LD and when is it okay to use a
+
+subset of your samples or LD that you've estimated from a different population and so
+
+Benner it all have written about this particular question and this is their
+
+schematic of what is the question that we're asking here so starting from the right you can do fine mapping from
+
+summary statistics and LD information if your LD information comes from your G wass data traits and genotypes then
+
+that's optimal and then the question is if you have a reference panel then can it work to compute LD from the reference
+
+panel instead and their conclusion is that it depends on the size of the
+
+reference panel and the size of your gos and so as your gos gets bigger you have
+
+to have a bigger and bigger reference panel and of course the population has to match as well and so for uh I think
+
+what they say is for a Jewess of over 10,000 variants of 10,000 individuals you need a reference panel of at least
+
+1,000 individuals or something like that and then I think this question of the population must match as well to my
+
+understanding I haven't seen much work exploring exactly how well do you have to have chosen a perfectly random subset
+
+of the individuals you did your gos in or is it okay to get the right continent or is it something in between there and
+
+and I think that the fact that you know a small perfectly matched subset doesn't
+
+suffice means that as your gos gets bigger and bigger you have to really be getting the LD very close to to perfect
+
+and so I think that continuing to explore exactly in what situations
+
+reference panel LD is okay and gives accurate answers is something that it
+
+would be helpful to still have more work to understand that set of kind of
+
+constraints because then you know know if it did work that would be very good
+
+so that's some summary statistics versus
+
+full data and now move on to with my last small number of minutes oops to evaluating find method methods
+
+and it looks like I don't actually have time to talk about evaluating fine mapping methods so maybe I'll actually
+
+conclude there and just say the high level of evaluating fine mapping methods
+
+is that it's important to to try to
+
+break them in all of the ways that we think they're broken I'll show you just this one slide by mapping methods tend
+
+to assume that all the causal variants in the locus are modeled there's no imputation noise you have exactly
+
+between one and five or one and ten causal variants and that your phenotype
+
+is normally distributed and conditional and your genotype you know things like that and then typically when fine
+
+mapping methods are evaluated all of these assumptions are satisfied in the evaluation and so one thing that my
+
+group has been working on that we think is very important is trying to find other ways to evaluate fine mapping
+
+methods both in simulations that might break some of these assumptions and also
+
+buy real data analyses that can give us insight into what's working and what's
+
+not so with that I will conclude because
+
+we're out of time if there's any final questions maybe I could take one first was that omer wrote and didn't
+
+completely agree with you that pali thein can be customized but isn't by default and then I'll just take one
+
+question I think this is an interesting one I've been actually wondering is summary statistics preserve privacy but
+
+is there a way to publish the true underlying LD matrices or approximations
+
+there AB it will also preserve adequate participant privacy I think that's a
+
+super interesting thing to look into and I don't know the answer to that I I'm
+
+pretty sure that you can release approximate LD while preserving privacy because approximate LD should be the
+
+same in different samples from the same population but I'm not sure whether you
+
+can whether or not it's possible to publish you know infinite precision exact LD while preserving privacy that's
+
+not something I've worked on myself and I don't know of any work on that in particular if someone
+
+else on the call does they should chime in good this was a wonderful session thank you so much Hillary this was our
+
+most interactive timer yes clearly a topic of great interest very well presented but thank you all and we'll
+
+see you in just a few minutes for the mpg session

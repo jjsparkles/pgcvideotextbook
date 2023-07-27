@@ -1,0 +1,123 @@
+---
+title: "GWAS"
+---
+
+------------------------------------------------------------------------
+
+# Genome-wide Association Studies
+
+**Title**: Genome-wide Association Studies
+
+**Presenter(s)**: Hailiang Huang
+
+**Level**: Intermediate
+
+**Length**: 15:47
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=z7QIRbXcbDw")
+```
+
+Link to video transcript [here](software_gwas_transcript.qmd#sec-video1).
+
+[Link to tutorial GitHub and datasets](https://github.com/thehuanglab/gwas-tutorial).
+
+------------------------------------------------------------------------
+
+# Genotype QC 
+
+**Title**: How to run quality control on genome-wide genotyping data
+
+**Presenter(s)**: Joni Coleman
+
+**Level**: Intermediate
+
+**Length**: 16:19
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=koHuMAeWQ5E")
+```
+
+Link to video transcript [here](software_gwas_transcript.qmd#sec-video2).
+
+------------------------------------------------------------------------
+
+# Tractor: GWAS with admixed individuals
+
+**Title**: Tractor: Enabling GWAS in admixed cohorts
+
+**Presenter(s)**: Elizabeth Atkinson
+
+**Level**: Intermediate
+
+**Length**: 18:38
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=UUviC0u54rE")
+```
+
+Link to video transcript [here](software_gwas_transcript.qmd#sec-video3).
+
+[Link to tutorial GitHub and datasets](https://atkinson-lab.github.io/Tractor-tutorial/).
+
+------------------------------------------------------------------------
+
+# Genotype Calling and Imputation with MoChA
+
+**Title**: Genotype calling/imputation on the cloud: MoChA pipleine
+
+**Presenter(s)**: Giulio Genovese
+
+**Level**: Intermediate
+
+**Length**: 15:13
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=QWECuWknTVY")
+```
+
+Link to video transcript [here](software_gwas_transcript.qmd#sec-video4).
+
+------------------------------------------------------------------------
+
+# SAIGE: Family-based GWAS
+
+**Title**: Genetic association studies in large-scale biobanks and cohorts
+
+**Presenter(s)**: Wei Zhou
+
+**Level**: Intermediate
+
+**Length**: 27:17
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=ZrWFOSAdc74")
+```
+
+Link to video transcript [here](software_gwas_transcript.qmd#sec-video5).
+
+------------------------------------------------------------------------
+
+# CC-GWAS
+
+**Title**: Tutorial to use CC-GWAS to identify loci with different allele frequency among cases of different disorders.
+
+**Presenter(s)**: Wouter Peyrot
+
+**Level**: Intermediate
+
+**Length**: 21:46
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=Hr1upC0U8Q8")
+```
+
+Link to video transcript [here](software_gwas_transcript.qmd#sec-video6).
+
+[Link to tutorial GitHub and datasets](https://github.com/wouterpeyrot/CCGWAS).

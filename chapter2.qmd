@@ -1,0 +1,159 @@
+---
+title: "Chapter 2: The Genome"
+---
+
+------------------------------------------------------------------------
+
+## 2.1 Organization of the genome {#sec-section1}
+
+**Title**: An Introduction to the Human Genome
+
+**Description**: A brief overview of the human genome: What is DNA? How is DNA organized? How is DNA regulated? What are genes?
+
+**Presenter(s)**: HMX Genetics, Harvard University
+
+**Length**: 5:35
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=jEJp7B6u_dY")
+```
+
+Link to video transcript [here](chapter2.1_transcript.qmd).
+
+------------------------------------------------------------------------
+
+## 2.2 Genetic variation {#sec-section2}
+
+**Title**: Genetic Variation and Mutation
+
+**Description**: A brief overview on genetic variation (SNPs, CNVs)
+
+**Presenter(s)**: Precision Health
+
+**Length**: 4:59
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=7W17xH62MVA")
+```
+
+Link to video transcript [here](chapter2.2_transcript.qmd).
+
+------------------------------------------------------------------------
+
+## 2.3 Evolutionary signatures {#sec-section3}
+
+### Origins of Genetic Variation
+
+**Title**: Origins of Genetic Variation
+
+**Description**: A brief overview on genetic variation (SNPs, CNVs)
+
+**Presenter(s)**: Jessica Pamment, Professor, DePaul University
+
+**Length**: 4:47
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=mblvxhkXjXA")
+```
+
+Link to video transcript [here](chapter2.3_transcript.qmd#sec-origins).
+
+------------------------------------------------------------------------
+
+### Natural Selection & Human Genetic Variation
+
+**Title**: MPG Primer: Natural selection & human genetic variation
+
+**Description**: A brief overview on genetic variation (SNPs, CNVs)
+
+**Presenter(s)**: Stephen Schaffner, Computational Biologist, Broad Institute
+
+**Length**: 54:09
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=QerLgeslHdI")
+```
+
+Link to video transcript [here](chapter2.3_transcript.qmd#sec-selection).
+
+------------------------------------------------------------------------
+
+## 2.4 Linkage disequilibrium {#sec-section4}
+
+### What is linkage disequilibrium?
+
+**Title**: What is linkage disequilibrium?
+
+**Description**:
+
+**Presenter(s)**: Gábor Mészáros, PhD
+
+**Length**: 12:52
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=C3MYoasLSHQ")
+```
+
+Link to video transcript [here](chapter2.4_transcript.qmd#sec-video1).
+
+------------------------------------------------------------------------
+
+### Measuring linkage disequilibrium
+
+**Title**: How to measure linkage disequilibrium?
+
+**Description**:
+
+**Presenter(s)**: Gábor Mészáros, PhD
+
+**Length**: 11:31
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=vJZUnflN7kk")
+```
+
+Link to video transcript [here](chapter2.4_transcript.qmd#sec-video2).
+
+------------------------------------------------------------------------
+
+### (Advanced) Measuring linkage disequilibrium
+
+**Title**: How to measure linkage disequilibrium? (ADVANCED)
+
+**Description**:
+
+**Presenter(s)**: Gábor Mészáros, PhD
+
+**Length**: 9:28
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=65R1qUmXleg")
+```
+
+Link to video transcript [here](chapter2.4_transcript.qmd#sec-video3).
+
+------------------------------------------------------------------------
+
+### Computing linkage disequilibrium
+
+**Title**: Compute linkage disequilibrium (Part 1)
+
+**Description**:
+
+**Presenter(s)**: Gábor Mészáros, PhD
+
+**Length**: 10:18
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=3cNmTwm-x-Q&t=6s")
+```
+
+Link to video transcript [here](chapter2.4_transcript.qmd#sec-video4).

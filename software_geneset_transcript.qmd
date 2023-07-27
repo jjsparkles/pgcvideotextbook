@@ -1,0 +1,601 @@
+---
+title: "Software Tutorials: Gene Set Identification (Video Transcript)"
+---
+
+# MAGMA {#sec-video1}
+
+**Title**: Gene- and gene-set analysis in MAGMA
+
+**Presenter(s)**: Christiaan de Leeuw
+
+------------------------------------------------------------------------
+
+# H-MAGMA {#sec-video2}
+
+**Title**: Annotating Genetic Variants to Target Genes Using H-MAGMA
+
+**Presenter(s)**: Nancy Y.A. Sey, University of North Carolina at Chapel Hill
+
+Introduction
+
+hi everyone my name is Nancy and today
+
+I'll be talking to you about annotating
+
+genetic variants to Target genes using
+
+high C corporate magma or hmagmap for
+
+short
+
+Background
+
+so before I get started I would just
+
+like to credit doctors um Christian and
+
+Danielle for developing magma Gene set
+
+analysis
+
+so magma is widely used in our field and
+
+this is for various reasons with a few
+
+being that the tool is pretty
+
+revolutionary in that it's aided in
+
+making sense of guas Finance by
+
+identifying the target genes of genetic
+
+variants identified from guas
+
+additionally magma is very easy to use
+
+in that you do not have to be
+
+computationally Savvy to use the tool
+
+also it is very efficient compared to
+
+other tools in the field so it's it
+
+takes a very short time to run magma
+
+however despite all of these benefits
+
+there are a few limitations to the tool
+
+namely magma relies on positional
+
+mapping to link variants to Target genes
+
+we know from prior studies that the gene
+
+regulatory landscape is complex and it's
+
+therefore possible for variants
+
+especially non-coin invariants to
+
+interact with and regulate the install
+
+genes so additionally
+
+um the regulatory landscape can be
+
+tissue or cell type specific so we have
+
+to take into account the tissue or cell
+
+type that's most relevant to the trait
+
+or disease that we're interested in
+
+understanding
+
+so these two limitations served as the
+
+foundation for developing High c-coupled
+
+magma or H magma for short
+
+so H magma complements magma by using
+
+high C data
+
+Materials
+
+so as mentioned previously um H magma
+
+complements magma so the materials are
+
+needed to run H magma are the same as
+
+the ones needed to run magma where the
+
+only difference being the gene2 variant
+
+annotation file so in this tutorial I
+
+will walk you through how to generate
+
+The hmac muscativic annotation file
+
+which links non-coding um variants to
+
+their target genes using high C
+
+interaction
+
+so again I will um just walk you through
+
+how to generate The annotation file for
+
+hmagma
+
+Required files
+
+so the materials needed to run hmagma
+
+are similar to the ones needed to run
+
+magma with the only difference being The
+
+annotation file so to generate the H
+
+magma annotation file you need a few
+
+other files namely you need bed files
+
+for Gene Exxon and promoter coordinates
+
+Additionally you need a high C data set
+
+in the bedp file format you will also
+
+need an ancestry reference genome and
+
+for the sake of this protocol we'll be
+
+using the European ancestry
+
+and once you have The annotation file
+
+generated you need a Gua summary
+
+statistics to run hmagmap
+
+so again um the focus of this tutorial
+
+will be on Steps A and B which walks you
+
+through how to generate the hmag margin
+
+to variant annotation file
+
+Step 1 Load libraries and required data
+
+so I have broken The annotation files
+
+into seven different steps with code for
+
+each step provided as part of this
+
+recording
+
+so the first step is to load your
+
+libraries and all required data into a
+
+work directory
+
+the next step is to read in your Exon
+
+and promoter batch files and create
+
+genomic range objects for the Exxon and
+
+promoter using the Exxon and promoter
+
+coordinates from gen code version 26.
+
+once you have this loaded and the
+
+g-range object generated you will save
+
+then as an R file
+
+so similarly um you would generate a
+
+genomic range object for all Snips using
+
+the reference genome from the European
+
+ancestry and you will save you also save
+
+this as an R file in the work directory
+
+for later use
+
+Step 2 Overlap Snips to Gene
+
+so in the following step um we will
+
+overlap Snips to Gene starting with the
+
+Exotic snips
+
+so as a reminder the Exotic Snips are
+
+assigned to your target genes using
+
+positional mapping and this is because
+
+they are more likely to impact the genes
+
+in which they reside
+
+so to assign the Exotic Snips to your
+
+target genes we will overlap the gene
+
+range for objects for Exon with
+
+engineering objects for Snips that was
+
+created in steps two and three
+
+respectively
+
+so similarly we will also overlap the
+
+g-range object for promoters with the
+
+g-range object that was created for the
+
+snips
+
+so once you have both g-range objects
+
+created for the exons and the promoters
+
+um these will be saved as an R file for
+
+later use
+
+Intergenic Snips
+
+foreign so after um after we've assigned
+
+the Exotic and promoter snaps to their
+
+target genes there will be a subset of
+
+snips that do not overlap with either so
+
+these are known as the intergenic or the
+
+intronic Snips so in the following steps
+
+I will walk you through how to match
+
+those Snips to your target jeans using
+
+high C interaction and this is shown
+
+here in this diagram
+
+so to achieve this we will first
+
+identify those in intergenic and
+
+intronic Snips and save them as an R
+
+file
+
+then we will load our high C data so for
+
+the sake of this tutorial we'll be using
+
+high C data from the adult brain as an
+
+example
+
+so once you load the high C data in the
+
+bedpie format you will generate a
+
+g-range object for it
+
+so we will next find snip.physically
+
+interact with excellence and with these
+
+set of codes similarly we will also find
+
+snip that physically interact with
+
+promoter with the promoter regions
+
+so next we will combine those g-range
+
+outlets for the exons and the promoters
+
+to retrieve a unique um with to retrieve
+
+unique items
+
+so lastly we will overlap the intergenic
+
+and the intronic Snips with high C to
+
+identify their target genes
+
+so once we have all these Snips um
+
+namely the exonic the promoter the
+
+intergenic and the intronic Snips map to
+
+your target genes
+
+um the last few codes that I will show
+
+you in Step seven will be used to
+
+generate The annotation file that is
+
+compatible with Magma
+
+so to achieve this we will structure The
+
+annotation file so that it has the genes
+
+in The Ensemble format the chromosomal
+
+location and followed by the Snips that
+
+is assigned to each particular Gene
+
+so this is how you you will have um so
+
+following these seven steps you will
+
+have your hmac vibrant to Gene
+
+annotation file that can be used to run
+
+each magma for any trait or disease
+
+so with this um you can run hmadmav for
+
+any trade um so for here I will I'll use
+
+an example using p um Parkinson's
+
+disorder as an example
+
+so this is the portion of the magma um
+
+file the magma code that you place your
+
+hmag margin to variant annotation file
+
+Output files
+
+so here I am showing you one of the
+
+output files that you get from running
+
+hmagma so this is the dot genes.out file
+
+so with this file um you can actually
+
+extract the significant genes at various
+
+FDR thresholds for Downstream analysis
+
+Limitations
+
+so as I mentioned previously in the
+
+beginning of this tutorial magma has
+
+transformed the field of psychiatric
+
+genetics and with each magma we can
+
+address some of its limitations
+
+however it is important to note that
+
+there are still some pendant limitations
+
+that aren't addressed using H magma
+
+namely the directionality of effect so
+
+even though H magma can assign Snips to
+
+their target genes I'm using higher C
+
+data we do not know whether the Snips
+
+the variants are upregulating the gene
+
+or they are doing regular down
+
+regulating the gene so to address this
+
+you can use various eqtl data sets to
+
+to analyze the directionality of effect
+
+additionally we know that not all not
+
+all Snips are actually implicated in a
+
+trait or disease so you need to do
+
+further functional validation to further
+
+prune down the list of genes
+
+and then we also know that the sample
+
+size of a g was greatly impacts the
+
+number of Target genes that is
+
+identifiable so this H magma also
+
+suffers from this
+
+and lastly
+
+um lack of diversity in genetic studies
+
+most of the analysis that we've done
+
+with h magma has mostly been from
+
+European ancestry however it's important
+
+to note that you can also run H magma
+
+for other ancestries
+
+Conclusion
+
+so with that um in the last slide here I
+
+would just like to acknowledge where we
+
+currently are with h magma so previously
+
+we have generated H magma for brain
+
+tissues including adult and Fetal brain
+
+we have also added various salty
+
+specific annotation files including
+
+cortical
+
+ipsc derived neurons and ipsc derived
+
+astrocytes as well as midbrain
+
+endopliminergic neurons however H magma
+
+is more versatile than just brain
+
+related cells so to expand the two we
+
+have created additional annotation files
+
+for 28 different cells and tissue types
+
+to allow other researchers to use the
+
+tool
+
+and these cell types um are listed here
+
+and
+
+most of all of these annotations files
+
+can be drum can be derived from our
+
+GitHub page
+
+and with that I would just like to thank
+
+my lab as well as my funding sources
+
+additionally I'll be hosting um a q a
+
+section
+
+um on October 15 2021 at 3 45 PM Eastern
+
+Standard Time so if you have any
+
+questions or you would just like to say
+
+hi please drop by to see um and ask any
+
+questions thank you
+
+------------------------------------------------------------------------
+
+# E-MAGMA {#sec-video3}
+
+**Title**: E-MAGMA: an eQTL-informed method to identify risk genes using genome-wide association study summary statistics
+
+**Presenter(s)**: Zac Gerring, Eske Derks
+
+thank you for attending my talk entitled e-magma an eqtl-informed method to identify risk genes using genome-wide association studies summary statistics magma was initially developed to extract biological insights from g-was by linking risk variants to their nearby genes
+
+the method assigns single nucleotide polymorphism associations to gene level associations while correcting the confounding factors such as gene length minor allele frequency and gene density while magma is a reliable and commonly used tool there is room for alternative approaches for how snips are assigned to genes for example conventional magma assigns snips to the nearest gene which is not always the most accurate approach non-coding snips can affect the expression of distal genes known as expression quantitative trait loci eqtr magma or heat magma is a modified version of conventional magma that leverages tissue specific eqtl information to assign snips to genes the genotype tissue expression project or gtex is an ongoing effort to build a public resource to study tissue-specific gene expression and regulation the current version of gtex contains samples collected from 53 non-disease tissue sites across nearly 1 000 individuals including 13 brain tissues from around 200 individuals
+
+this diagram gives an example of how gtex can be used for the functional interpretation of genome-wide association signals the expression quantitative quantitative trait losse annotation from various tissues can be used to propose one or more potential causal genes whose regulation is either tissue shared shown in green or tissue specific shown in yellow for a
+
+trait associated variant these associations would not be identified assigning snips to genes based on proximity alone e magma largely adopts the magma pipeline which consists of three broad steps gene annotation to assign snips to genes gene analysis to compute gene-based p-values and gene-level analysis to test the enrichment of gene-based results in curated gene sets e-magma only modifies the annotation step this is achieved by mapping significant eqtls from gtex to nearby genes in a tissue-specific manner rather than a single annotation file containing the mappings of snipster genes e-magma uses 48 annotation files one for each tissue and gtex after running gene annotation e-magman generates all intermediary files required for the gene level analysis
+
+this slide shows the basic code for each step of conventional magma with alterations for e-magma outlined by red boxes in the gene annotation step the snip location file is altered to include significant eqtls for one of 48 tissues in gtx the tissue-specific eqtail annotation files are used in the gene analysis to generate gene-based p-values in addition to generating gene-based p-values we also generate intermediary or raw files for the gene set and biological pathway analysis
+
+we tested the performance of e magma against other gene-based approaches including conventional magma aspertic scan fusion and summary based mendelian randomization using a simulation experiment the simulations use snip genotype information from the qimr adult twin study we excluded non-founders snips with more than one percent missingness and snips with a minor alarm frequency of less than 0.05 and we only analyze snips on chromosome this resulted in 7138nbc with around 60 000 snips eqt information was derived from gtx whole blood which included some 650 000 eqtl gene combinations for around 8200 genes phenotypes were simulated using gcta using gender type and eqtl reference data from chromosome 1. only genes with at least one significant ukchel were included in the analysis giving 651 genes and we performed 10 simulations per gene gbos on the 6510 generated phenotypes were performed using plink and we corrected the results for the number of genes in the eqtl reference set
+
+we first evaluated the type 1 error rate across methods by calculating the proportion of genes that were significant in the absence of a true association between eqtls and phenotypic values the figure on the left shows all methods had good control of the type 1 error rate we subsequently evaluated statistical power to detect associations at a gene level for varying levels of phenotypic variants explained by uqtls we assess the proportion of significant associations relative to both the total number of causal genes in figure a and when accounting for the total number of causal genes included in each method shown in figure b e magmat have performed all methods across different proportions of variants explained by gene expression after correcting for the number of genes included in each gene based method e magma is still outperformed the other approaches
+
+we estimated statistical power as a function of the number of eqtls per gene with one percent phenotypic variants explained by eqtls power significantly increased with the number of eqtls per gene as shown in this figure \[Music\] it should be noted that there was a significant association between the number of ekgles per gene and statistical power for all methods however e magma was less sensitive to the number of eqtls compared to the other approaches
+
+we compared three gene-based methods e magma conventional magma and the t-was approach aspertic scan using g-wasps for major depressive disorder shown in the red circle identified 137 genes e magma the results of which are shown on the green circle identified 99 genes and desperadic scan shown in blue identified 57 genes a total of 16 genes were identified across all three methods the figure on the right shows aspertic scan minus log term p values on the y axis and e magma p-values on the x-axis with the color of the points indicating the tissue for which the gene-based dissociation was found as you can see there is good overlap between e-magma and esperidic scan and the overlap included established risk genes such as any gr-1 and team m106b
+
+in conclusion e-magnet is an equity home formed extension to conventional magma and can be applied to any trait with g1 summary statistics e-magma map maintains appropriate controls with type 1 error rate while outperforming other methods in detecting causal associations a tutorial and input files can be found using the following github repository thank you
+
+------------------------------------------------------------------------
+
+# PRSet {#sec-video4}
+
+**Title**: How to run pathway specific Polygenic Risk Scores
+
+**Presenter(s)**: Judit García-González
+
+Hello, my name is Judit. I'm a doctoral fellow at the iconic school of medicine at Mount Sinai today I will walk you through how to run pathway specific polygeneries course a tool that has been recently developed in the polygenic lab either by Paul O'Reilly so first of all uh it's important to know what are and why it's interesting to use pathway polygenic risk scores for that I'm going to use one example that most of you might be familiar with which is the ability to give us for the schizophrenia
+
+so we know that psychiatric disorders like schizophrenia have complex ideologies where different environmental and genetic factors contribute to the liability of these sales when we talk about genetic factors we can imagine that the US is a composite of signals where each signal might represent functional roots to disease for example uh there might be some genomic reasons that Harbor genetic degrees associated with abnormal synaptic pruning there might be other regions that are associated with biological Pathways and processes related to immune activation and other regions in the genome that pick up signal associated with cannabis consumption
+
+so the idea behind by the way a specific polygenic scores is that instead of aggregating effects across the entire genome we will aggregate them after those relevant pathways and because we are separating the genetic contribution of a trade accounting for the genomics and structure we hope that pathway polygenic scores might be more useful for patient stratification or to investigate the disease heterogeneity because now one single individual instead of having one single polygenic score will have as many exports as Pathways we investigate
+
+so to calculate these pathway scores uh I will walk you through the tool reset which is an expansion of the precise software uh which uses a glamping and p-value responding method um and it's important to know that the pathways that can be any type of Gene set that reflects the encoding of different biological functions so this tool is quite flexible to Define pathways uh preset as well as the newest version of precise have been developed by Dr Sam Choi and you can find a software on the manual in this website precise.info and they're in the website you will find a quick star how to download it and also some more detail guy about what are the available commands and what is the method how the method works
+
+so how to use preset um percent is very similar to precise in terms of use where we need as an input the Dual summary statistics and individual level data for genotype and phenotype but four percent uh we also require information about the pathways or they didn't sets that we want to use um as I say the two the tool is quite flexible uh Pathways can be defined in a variety of ways including but always defined by existing canonical databases like Gene Anthology or reactone but also by experimental perturbations or some functional outputs like Ginkgo expression or protein protein interactions
+
+so I'll go in a bit more detail on the different input options that are available to Define pathways One is using EMT and gdf files using the commands mcdv and DDF the commands that are for preset will be shown in green um so MC will contain information related to pathways so that is the genes that form each pathway and you will need a file where each pathway is specified in a different row with all the units that compose that pathway file will contain the position coordinates for each gene so in general GTA files contain different features and by default preset uses the features Exon gain protein coding or CDs but this can be modified with the command feature the second option that can be used is a bad file in this case you will need to include one bad fiber pathway so if you want to include multiple Pathways then I bet files can be included separated by a comma uh in the web file three columns are required and those are chromosome name start position and end position one important thing to know when using that files is that they are indexed uh differently as being files so whereas for Blink files are one base the web files are zero base
+
+so you can see in this example that we have a sequence of nucleotides I'm gonna ask for the one base indexing one nucleotide is uh one position the zero base indexing will use a range around each in nucleotide so you will need to subtract uh -1 in the zero base indexing for that values the input option 3 is an Smith list so similar as debit files each pathway will be a different file and they can be separated by comma as in this example here so when you download precise for preset there is Android data that you can use and this is the the commands that you can use like you define the keywords uh your target sample in this case I'm using the first uh option to define the pathways then you can set the number of permutations that you want to run and also the name of the output
+
+so after walking you through the input uh we can see a step-by-step how preset calculates the pathway polygenic scores to do that I will compare it with the genome white parents so whereas for the genome-wide PLS you clamp in mp value stressful in for a given address for a linkage equilibrium for pi vprs this will be done for each pathway separately then similarly with us for the genome ybrs each individual will have only one polygenic score for pathway PRS each individual will have KS course 4K number of pathways and for the results whereas for genome-wide PRS uh what is reported is the association method which is like the phenotype variance explained by the genome-wide PRS in the case of the pathways course there will be the same the association of phenotype variances explained by each pathway PLS but you can also report enrichment of geost signal in the pathway which is based on the RS versus the pathways
+
+so I'll go a bit in more detail about these two different methods that preset can output so when we are talking about Association what preset will output is the self-contained p-value so it's just the regression of the phenotype on pathway PRS and covariates so um Pathways that have many genes containing a Snips that are associated with the phenotype are highlighted here in pink and those will be significant but it's important to note that for these results the self-contained p-value does not account for pathway sites and for example Avid pathway will be more likely to be significant because it's easier to have a larger number of snips associated with the phenotype but the second output that we can have is this enrichment uh that will be output as competitive p-value this is resulting from a permutation procedure and this will test whether a pathway is more associated with the phenotype compared to null Pathways that have the same size so in this case with the competitive P value we'll be accounting for uh the size of each pathway
+
+uh in this plot I'll illustrate how we calculate this competitive p-value that accounts for uh the pathway size we can imagine a pathway a that has some Snips in the unit region of the pathway and for which we will calculate an observed the value then we will calculate as many null Pathways as permutations we run and these null Pathways will have the same number of false clampede Snips as pathway a but they will have been this isn't it will be randomly allocated so we will obtain a distribution of null P values because it's power will give us a value for Association and the competitive p-value will be defined as the number of tests under the null that have a p-value is smaller than our observe p-value plus one divided by the number of tests performed plus one
+
+so this is how the competitive competitive P values are calculated this approach and this output is similar to the type of enrichment analysis that are performed by magma and LDS Corporation but pathway PLS have the advantage that they provide individual level data that can be used for other applications
+
+so let's see how the output of preset looks like similar to precise for every preset run we will have a log file with extension.log and this will contain the commands used for the analysis and all the information regarding the filtering the fields that were selected Etc then we will have another file with extension precise and this will contain the polygenic model for each pathway across thresholds so in the in this case I was running only address for one which contains all these names but you can see that um there is information for each pathway the R square the self-contained p-value coefficient for the regression standard error a number of its names you will always see this base pathway which is the background uh pathway that will is used for the competitive p-value calculation then we have um the best file which will give us the scores for each individual and each pathway uh so here each row will be one individual and then the score for each pathway will be indicated in a separate column
+
+so there will be as many columns as Pathways you are using in this case we see four examples from the care database if you wanted all the scores at all the people in response because this best file will report only the one with the best people in threshold uh you can use the command code finally we will have another file with extension summary that will have the information of the best model fit of each phenotype um pathway and in this case each pathway will be a row and then it will contain again information on the R square Ruby value coefficient and also this competitive p-value that I was talking about that will indicate the enrichment of this pathway compared to other Pathways of similar science
+
+finally I would like to leave some heads up and useful commands um so for example some commands that might be useful for the user is the window size uh which is like for example if you are defining um a Snips that are within a game you can extend that window and so you can include some number and bases to the three prime region of the ranges region or to the five Prime region of his skin you can also exclude within a certain range with the common X range so for example the MHC complex or the Apple region if you want to do some Alzheimer's analysis and you want to Absolute that one
+
+if you want to improve the computational efficiency or preset you can parallelize the process using the thread command you can also speed up a little bit uh preset um at the expense of increase in the memory using um the ultra command and um you can also use the keep and the extract commands uh to exclude individuals or its names from the analysis if you are doing permutations to calculate the competitive P values this can be computational intensive so it might be useful to adjust for the covariance like sex or age beforehand on your phenotype and then use the receivers as the phenotype because this will speed up the process
+
+so this was this quick introduction to preset uh thank you for listening if there is anything that is not here or you have any questions uh there is a q a session uh the 15th of October at 11 30 and this is the soon meeting ID so I'll be happy to clarify or answer any questions thank you

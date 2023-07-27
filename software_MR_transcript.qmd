@@ -1,0 +1,7 @@
+---
+title: "Software Tutorials: Mendelian Randomization (Video Transcript)"
+---
+
+**Title**: Examine causality using Mendelian randomization
+
+**Presenter(s)**: Jie Zheng

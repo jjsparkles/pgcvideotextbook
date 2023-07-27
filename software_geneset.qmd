@@ -1,0 +1,83 @@
+---
+title: "Gene Set Identification"
+---
+
+------------------------------------------------------------------------
+
+# MAGMA
+
+**Title**: Gene- and gene-set analysis in MAGMA
+
+**Presenter(s)**: Christiaan de Leeuw
+
+**Level**: Intermediate
+
+**Length**: 12:09
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=nOxHTYz-z7s")
+```
+
+Link to video transcript [here](software_geneset_transcript.qmd#sec-video1).
+
+------------------------------------------------------------------------
+
+# H-MAGMA
+
+**Title**: Annotating Genetic Variants to Target Genes Using H-MAGMA
+
+**Presenter(s)**: Nancy Y.A. Sey, University of North Carolina at Chapel Hill
+
+**Level**: Intermediate
+
+**Length**: 10:09
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=mhQ5WQ2HrUc")
+```
+
+Link to video transcript [here](software_geneset_transcript.qmd#sec-video2).
+
+[Link to GitHub tutorial and datasets](https://github.com/thewonlab/H-MAGMA).
+
+------------------------------------------------------------------------
+
+# E-MAGMA
+
+**Title**: E-MAGMA: an eQTL-informed method to identify risk genes using genome-wide association study summary statistics
+
+**Presenter(s)**: Zac Gerring, Eske Derks
+
+**Level**: Intermediate
+
+**Length**: 7:16
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=NEk-h070AbU")
+```
+
+Link to video transcript [here](software_geneset_transcript.qmd#sec-video3).
+
+[Link to GitHub tutorial and datasets](https://github.com/eskederks/eMAGMA-tutorial).
+
+------------------------------------------------------------------------
+
+# PRSet
+
+**Title**: How to run pathway specific Polygenic Risk Scores
+
+**Presenter(s)**: Judit García-González
+
+**Level**: Intermediate
+
+**Length**: 15:28
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=IrriXu26h_E")
+```
+
+Link to video transcript [here](software_geneset_transcript.qmd#sec-video4).

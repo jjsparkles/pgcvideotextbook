@@ -1,0 +1,22 @@
+---
+title: "Genomic SEM"
+---
+
+## Genomic SEM Tutorial
+
+**Title**: Genomic SEM Tutorial
+
+**Presenter(s)**: Andrew Grotzinger
+
+**Level**: Intermediate
+
+**Length**: 14:59
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=tBWkC2wCYuA")
+```
+
+Link to video transcript [here](software_genomicSEM_transcript.qmd).
+
+[Link to tutorial scripts and datasets](https://utexas.app.box.com/s/nmkyfd17lq0aux2vuo735ohy00tl74qt).

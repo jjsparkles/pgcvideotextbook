@@ -1,0 +1,71 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "PGC Video Textbook"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - text: About
+        file: about.qmd
+      - text: Contact us
+        file: contact.qmd
+      - text: PGC Website
+        href: https://pgc.unc.edu/
+  sidebar:
+    logo: pgc_logo_website_v3.jpeg
+    tools: 
+      - icon: github
+        menu: 
+          - text: Source code
+          - text: Report a bug
+    style: docked
+    search: true
+    contents:
+      - welcome.qmd
+      - toc.qmd
+      - section: "Chapters"
+        contents: 
+          - chapter1.qmd
+          - chapter2.qmd
+          - chapter3.qmd
+          - chapter4.qmd
+          - chapter5.qmd
+          - chapter6.qmd
+          - chapter7.qmd
+          - chapter8.qmd
+          - chapter9.qmd
+          - chapter10.qmd
+      - section: "Software Tutorials"
+        contents: 
+          - software_cnvs.qmd
+          - software_conditional.qmd
+          - software_crossdisorder.qmd
+          - software_ewas.qmd
+          - software_geneset.qmd
+          - software_gwas.qmd
+          - software_genomicSEM.qmd
+          - software_imaging.qmd
+          - software_MR.qmd
+          - software_prs.qmd
+          - software_correlation.qmd
+      - section: "Additional Resources"
+        contents: 
+          - glossary.qmd
+          - resources.qmd
+          - addreading.qmd
+          - text: PGC Summary Statistics
+            href: https://pgc.unc.edu/for-researchers/download-results/
+    
+format:
+  html:
+    link-external-icon: true
+    link-external-newwindow: true
+    theme: yeti
+    css: styles.css
+    toc: true
+
+editor: visual
+

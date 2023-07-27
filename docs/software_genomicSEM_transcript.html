@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>PGC Video Textbook - Software Tutorials: Genomic SEM (Video Transcript)</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">PGC Video Textbook</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html" rel="" target="">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./contact.html" rel="" target="">
+ <span class="menu-text">Contact us</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://pgc.unc.edu/" rel="" target="">
+ <span class="menu-text">PGC Website</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Software Tutorials: Genomic SEM (Video Transcript)</li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./pgc_logo_website_v3.jpeg" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main">
+    <div class="dropdown">
+      <a href="" title="" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label=""><i class="bi bi-github"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="">
+            Source code
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="">
+            Report a bug
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./welcome.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome to the PGC Video Textbook!</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./toc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Table of Contents</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Chapters</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 1: Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 2: The Genome</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 3: Technologies</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 4: Study designs</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 5: GWAS analysis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 6: Polygenic Scores</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 7: Ancestry-Specific Analyses and Considerations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 8: Post-GWAS bioinformatics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter9.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 9: Advanced Topics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 10: Other Considerations</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Software Tutorials</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_cnvs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CNVs</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_conditional.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Conditional Analysis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_crossdisorder.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cross-disorder Analysis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_ewas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">EWAS</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_geneset.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Gene Set Identification</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_gwas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">GWAS</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_genomicSEM.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Genomic SEM</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_imaging.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Imaging</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_MR.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mendelian Randomization</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_prs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">PRS</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_correlation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SNP Heritability and Genetic Correlation</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Additional Resources</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Glossary</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./resources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Software Resources</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./addreading.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Additional Reading</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://pgc.unc.edu/for-researchers/download-results/" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">PGC Summary Statistics</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Software Tutorials: Genomic SEM (Video Transcript)</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p><strong>Title</strong>: Genomic SEM Tutorial</p>
+<p><strong>Presenter(s)</strong>: Andrew Grotzinger</p>
+<p>I’m Andrew Grotzinger and in this video we’re going over how to run genomic SEM using psychiatric traits as examples genomics stem is a general framework for modeling genetic covariance matrices produced by methods like LD score regression to then estimate any number of structural equation models that can be used to test hypotheses about the processes that gave rise to the data that we observe it only requires you want summary statistics and those summary statistics can come from samples with unknown and varying degrees of sample overlap what that means is that you can now estimate models for really rare traits that you would not otherwise observe in the same sample it’s going to be split into two parts for the Practical</p>
+<p>the first is how to estimate a user-specified model using genome-wide estimates the second part is how to incorporate the effects of individual Snips to do things like estimated multivariate g-was all the Practical materials are available at this box link here and this includes an R script and all the files needed to run that on screen the top of that our script is going to include some code to actually download genomics Sam if you haven’t done so already throughout the presentation we’re going to be using gy summary statistics for schizophrenia bipolar major depressive disorder and I’m moving on to how to actually estimate user specified model this takes three primary steps the first is munging the summary statistics the</p>
+<p>second is running Elder Scroll regression and the third is using that output from LD score regression to then run the model that you specify munge is a general procedure to format the summary stats in the way the LD score regression is expecting for the sake of this practical we’re using a subset of 10 000 steps for schizophrenia bipolar major depression in general you can download and use a full set of summary stats on a personal laptop for the purpose of the Practical and restricting file size to produce using a subset here it takes four arguments the first is the name of the files the second is a reference file that you to a lot to the same reference allele across trades third is the name of the traits and the force is the total sample size and putting it all together in this last line here where I’m specifying all these arguments and running munch</p>
+<p>again to really highlight that we are only using the restricted subset for the purpose of the Practical when munge runs it’s going to produce a DOT log file that you should inspect to make sure things like column headers are interpreted correctly and in particular I’ve highlighted this section here where it prints how the effect column was interpreted for schizophrenia it’s an odds ratio and it’s interpreted correctly but you’ll want to make sure to read the corresponding readme files for the summary statistics and then look at this log file to cross-reference whether or not that effect column is being interpreted right in this second</p>
+<p>step we run LD score regression within the context of genomics M the first argument is traits and that’s the name of these now munge summary stats which will all enter that.sumstats.gc ending then for binary traits we do the liability threshold correction that requires inputting the sample prevalence which reflects the cases over the total sample size and then the population prevalence which you can get from either epidemiological papers or from looking at the paper from the corresponding unit variate G was the fourth and fifth argument are the holder of LD scores and the LD score weights in almost all cases this is going to be the same folder and here we’re using the European LD scores because we’re using the European only summary stats and then finally we specify the names of the traits and this is how the traits are going to be named in your actual model and on this last line of code we are at ldscore aggression in The Next Step we’re actually going to specify the model but before we do that I want to switch over to R and actually run through the codes you can see it first</p>
+<p>I’m going to load in this package and I’m going to set the working directory to where I downloaded those Workshop materials and then for munge I’m going to set those files the Hat map 3 list that reference file the trade names the sample size and then run Munch and the Second Step I’m going to take those month summary stats and put the sample on population prevalence for the liability correction the folder of LD scores and all the score weights which are the same and then the trade names and finally actually run reality score aggression this is going to produce results that are actually interpretable because we use that subset of 10 000 Snips so when we now go on to step three of running the model I’ve created an LD score regression object that uses the full set of summary statistics that we’re now going to load in so you can actually produce integral results in the context of the model we’re gonna load that in and now switch back over to the PowerPoint to talk about how you specify a model in genomic stem we use the little Bond Syntax for running the model and in this case we would specify a regression relationship of a using a tilde b or for those of you that think of it in the format of Y till DX or outcome till the predictor for covariances you would specify two and of course for a variance of a variable it would be the covariance with itself so a totally tilde a for a factor you specify the factored name here followed by equal sign utility and then the factor indicators to fix a parameter you would put a number followed by an asterisk on the right hand side of the parameter</p>
+<p>that you’re estimating so this would fix the covariance between A and B to 1 and to name a parameter you would write the parameter label using some set of letters here I’m naming the covariance between A and B Cove a b and what this does is it allows you to use models transfer this parameter let’s say the covariance is estimating as negative but you have some really sense that it should be positive so you put them as parameter constraint to keep it above zero we loaded in that pre-made ldsc data which again is using the full set of summary statistics this is not simulated data because we’re using summary stats this is often something you can readily download online than to actually run the model this takes two necessary arguments and two optional arguments the first is Cove struck which is that output from LD score regression the second is the model so we’re running a common factor model here and we’re telling Lavon using this n a star that we want to freely estimate the first loading and then we want to fix the variance of the factor to one so we’re using what’s known as unit variance identification for this model an optional third argument is what estimation method you want to use we offer DWS at maximum likelihood but the default is DWS and then another optional argument is std.lb and that’s whether or not you want to automatically specify the variances of variable sort of one and you would run the model so this is going to produce this set of results and</p>
+<p>I’ll show that in R here in a second but to walk you through what those results mean this first three columns or the parameters being estimated the fourth and fifth column here the unstandardized estimate and standard error for those parameters so it’s the senator applied to the genetic covariance Matrix and the standardized estimate in standard error is the estimate standard error for the model applied to the genetic correlation Matrix where the heritabilities are scaled to one the model fit here is all going to print as an a because when you’re estimating a common factor divided by three indicators uses it up all of your degrees of freedom so it perfectly fits the model but I want to walk through how you would interpret these model fit statistics more generally so chi-square is the model chi-square that reflects the exact index of fit I’m in the degrees of freedom and p-value for the model chi-square in the next two columns note that this will almost always be highly significant for your model because chi-square is sensitive to sample size which by definition is massive in G wasp space the next piece is AIC which can be used to compare models regardless of whether they are nested with lower values indicating better fit CFI is the comparative fit index which has these General heuristic cutoffs with higher being better and then finally SMR is the standardized rootme Square residual or lower is better going back over to R we’re going to specify that argument specify the model the estimation method and std.lb we’re going to run the model and you’ll see that we produce the same results that we produce over here not in the slides but in the code I’ve included some alternative ways that you could specify this model so for example if you wrote scd.lb equals true you don’t have to write that n a star F1 star F1 or you could use what’s the common factor function to estimate the same model and produce the same results moving on to part two I want to talk about how you would ride multivariate gwas and genomics n and to be clear you don’t have to do both of these parts you can certainly run a genome-wide model in part one and publish that alone you don’t have to bring in these individual simple facts but I did want to show that because oftentimes for people the multivariate G wasp space is what’s of</p>
+<p>most interesting this includes four primary steps the first two of which mirror what we already did which is to write a monginelli score regression and you don’t need to redo that we’re only going to go over the last two steps of running the sunsets function and the multivariate gwas functions common factor g w acid user G was some stats takes a number of different arguments it can be a little bit confusing and I’ll note that we have a flow chart on our GitHub to help you figure out how the argument should be specified again we’re using the drastically subset Snips for the purpose of the presentation and we’re also using a subset of reference file which is used to align the alleles and to pull out the snip minor allele frequency the third argument is the trait names and then the fourth argument here we’re letting the subsets function know the standard errors for these traits are on the logistics scale and you’ll want to be really careful with this because oftentimes for binary traits they might be effect column on an odds ratio scale but then the standard error will be on a logistic scale and that’s something that you can determine oftentimes from the readme file if you have continuous traits or binary traits analyzed using a continuous model it’s going to be a different set of arguments for the sake of time I’m not going to go over all of that here but we do have that flowchart on the GitHub and of course you can reach out to us if you’re confused or getting strange results so putting that all together you’d run the subsets function here and much like the Munch function this will produce a log file that you want to make sure you go over to make sure everything’s interpreted correctly and then once that’s done you can use that output in combination with the LD score regression output to run models that include the effects of individual Snips I’m going to go over both the common factor G was at user gwas functions starting with the common factor G bus function this takes two necessary arguments the first is the output from LD score regression and the second is the output from the substance function and then finally once again you can specify dwbls or ml for the estimation method and then you can also specify whether you want to run in parallel so in practice if you’re running a g-was bat you cannot run on a laptop unlike the models that we were showing in part one so for this you really will want to be running in parallel on a Computing cluster but for the purposes of this because we’re using a small subset of the Snips we’re going to run not in parallel so you get a sense of how these functions work I’m going to switch now over to R to go through that substance function where again we read the files the reference file the trait names whether the standard errors on a logistics scale we’re writing t for true for all three running some stats and now taking that output and specifying the LD score regression output the output from some sets that we created and actually running the common factor gwas function</p>
+<p>so this is going to produce output that looks like this there’s a lot of columns it’s got the sent chromosome base pair monolithal frequency A1 and A2 the parameter being estimated which is the effect of the snip on the factor and the estimate sandwich corrected Standard air Z estimate p-value and then this other metric that we call qsnip which indexes whether or not that snip really does not fit the model so this is the chi-square distributed test assist with degrees of freedom they’re going to depend on the number of indicators in your model so that indexes the extent to which a common factor model is insufficient for accounting for the pathways from an independent Pathways model so if this common pathway of the snip on the factor is really a poor representation of the independent effects of the Snips on these individual indicators then Q is going to be significant so that’s going to happen when you have things like a simp that has directionally opposing effects on the indicators or let’s say the Sim has a really strong effect on one of the indicators but not the other if we go now over to these results you’ll see the estimates here one thing you want to inspect is these last two columns of fail and warning zero means it’s good to go but if you look at the warning messages you’ll see that a handful of the variances are estimated as negative</p>
+<p>I want to use this as an opportunity to talk about how you might troubleshoot a warning like this and then also go over how you would use user G was in this context for user gwas it takes those same first two arguments of the output from multi-score regression and the subsets output but then you’re also going to specify the actual model that you want to run that’s now going to include the effect of this individual snip so we’re running that same model of the common factor model the common factor G was is automatically specifying behind the scenes where the stand predicts that common factor but then we’re additionally adding in these model constraints we’re renaming these parameter labels at the residual variances your schizophrenia bipolar and MDD and we’re constraining them to be above zero because of that warning that we got when running common factor G bus</p>
+<p>if we now go over and run that I want to mentioned that another optional argument for user G wasp is this sub-argument this is whether or not you want to save a particular piece of the model output the common factor guas is automatically only saving the effect of the sniff on the common factor what the sub argument does is it allows you to tell user gwas that look for each of these Snips I don’t want to save all of the model output including the factor loadings and the residual variances are really for the sake of memory I want you to save the effect of this snip on the common factor so sub does not change at all how the model is estimated it changes how large the output file is and I would highly recommend setting this argument so now we’re going to run this and while that’s running I’d want to make some final notes that parallel processing are available for both user gwas and common factor g-was parallels executing the exact same code serial processing except that it takes advantage of additional cores an ideal runtime scenario you would split your jobs across Computing nodes on a cluster and run in parallel there is also MPI functionality available so again all runs are completely independent of one another I’ve listed a number of resources here including the GitHub and I’m not going to go through this but I’ve included some slides about some things to keep in mind so the final</p>
+<p>thing I’d want to go back over here and show you that this produces the same set of results common factor Gus are very nearly so now that we’ve added those residual variance constraints but now if we look at the warnings we see that those warnings are now gone so with that I’ll add it you can reach out to us with questions and I hope this was helpful to you</p>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          // default icon
+          link.classList.add("external");
+      }
+    }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

@@ -1,0 +1,18 @@
+---
+title: "Cross-disorder Analysis"
+---
+
+# Multi-trait Analysis of GWAS (MTAG)
+
+**Title**: MTAG: Multi-trait Analysis of GWAS
+
+**Presenter(s)**: Patrick Turley
+
+**Level**:
+
+**Length**: 1:32:04
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=qTzj1aCPDhM")
+```

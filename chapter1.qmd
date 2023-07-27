@@ -1,0 +1,354 @@
+---
+title: "Chapter 1: Introduction"
+---
+
+------------------------------------------------------------------------
+
+## 1.1 What are psychiatric disorders? {#sec-section1}
+
+**Title**: Psychiatric Disorders
+
+**Description**: A very brief overview of Psychiatric disorder genetics.
+
+**Presenter(s)**: Broad Institute
+
+**Level**: Beginner
+
+**Length**: 2:42
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=7j29y8uQc5E")
+```
+
+Link to video transcript [here](chapter1.1_transcript.qmd).
+
+------------------------------------------------------------------------
+
+## 1.2 Epidemiology {#sec-section2}
+
+**Title**: What is a genome-wide association study?
+
+**Description**: A brief overview of genome-wide association studies.
+
+**Presenter(s)**: Till Andlauer
+
+**Level**: Beginner
+
+**Length**: 3:15
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=LxUXinawAv0")
+```
+
+Link to video transcript [here](chapter1.2_transcript.qmd).
+
+------------------------------------------------------------------------
+
+## 1.3 History {#sec-section3}
+
+**Title**: History of Psychiatric Genetics (Part 1)
+
+**Description**:
+
+**Presenter(s)**: Ken Kendler
+
+**Length**: 21:44
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=ikJ7zyo4Spk")
+```
+
+Link to video transcript [here](chapter1.3_transcript.qmd#sec-part1).
+
+------------------------------------------------------------------------
+
+**Title**: History of Psychiatric Genetics (Part 2)
+
+**Description**:
+
+**Presenter(s)**: Ken Kendler
+
+**Length**: 43:41
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=Xwhd-rTPXvg")
+```
+
+Link to video transcript [here](chapter1.3_transcript.qmd#sec-part2).
+
+------------------------------------------------------------------------
+
+## 1.4 Psychiatric genomics: State-of-the-science {#sec-section4}
+
+Below are state-of-the-science videos/papers for psychiatric disorders, which were recorded for the PGC by early career researchers, with accompanying papers in Psychological Medicine (Vol 51, issue 13). Alzheimer and Suicidal behaviour videos recorded separately.
+
+### The Psychiatric Genomics Consortium
+
+**Title**: PGC: Future Perspectives
+
+**Presenter(s)**: Patrick Sullivan, University of North Carolina at Chapel Hill (USA), Karolinska Institutet (Sweden)
+
+**Length**: 33:33
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=ZhqMgazsRXM")
+```
+
+Link to video transcript [here](chapter1.4_transcript.qmd#sec-psychgen).
+
+------------------------------------------------------------------------
+
+### *ADHD*
+
+**Title**: Insights into Attention-Deficit/Hyperactivity Disorder from Genetic Studies
+
+**Presenter(s)**: Joanna Martin, Christie Burton, Isabell Brikell, Nina Roth Mota
+
+**Length**: 14:24
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=I1X6Ce23buk")
+```
+
+Link to video transcript [here](chapter1.4_transcript.qmd#sec-adhd).
+
+------------------------------------------------------------------------
+
+### *Alzheimer's Disease*
+
+See @sec-dementia
+
+------------------------------------------------------------------------
+
+### *Anxiety Disorders*
+
+**Title**: Genetic contributions to anxiety disorders: Where we are and where we are heading
+
+**Presenter(s)**: Helga Ask, Rosa Cheesman, Daniel Levey, Kristin Purves, Heike Weber
+
+**Length**: 11:32
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=4Cn2TFSzIz4")
+```
+
+Link to video transcript [here](chapter1.4_transcript.qmd#sec-anxiety).
+
+------------------------------------------------------------------------
+
+### *Autism Spectrum Disorder*
+
+**Title**: Genetic contributions to Autism Spectrum Disorder
+
+**Presenter(s)**: Alexandra Havdahl
+
+**Length**: 16:42
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=TFyjn-gFCt8")
+```
+
+Link to video transcript [here](chapter1.4_transcript.qmd#sec-asd).
+
+------------------------------------------------------------------------
+
+### *Bipolar disorder*
+
+**Title**: Genetics of Bipolar Disorder
+
+**Presenter(s)**: Brandon Coombes, Kevin O'Connell
+
+**Length**: 16:35
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://youtu.be/Z4e0SagGncY")
+```
+
+Link to video transcript [here](chapter1.4_transcript.qmd#sec-bipolar).
+
+------------------------------------------------------------------------
+
+### *Dementia* {#sec-dementia}
+
+**Title**: Genetic Risk for Dementia
+
+**Presenter(s)**: Malia Rumbaugh
+
+**Length**: 58:02
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=PBiDpFaV5_g&t=1337s")
+```
+
+Link to video transcript [here](chapter1.4_transcript.qmd#sec-dementia).
+
+------------------------------------------------------------------------
+
+### *Eating Disorders*
+
+**Title**: Genetics of Eating Disorders
+
+**Presenter(s)**: Hunna Watson, Alish Palmos, Avina Hunjan, Jessica Baker, Zeynep Yilmaz, Helena Davies
+
+**Length**: 21:30
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=VyNaE02UW20")
+```
+
+Link to video transcript [here](chapter1.4_transcript.qmd#sec-eatingdisorders).
+
+------------------------------------------------------------------------
+
+### *Major depression*
+
+**Title**: Major Depressive Disorder: Introduction and General Epidemiology
+
+**Presenter(s)**: Kim Kendall, Evelien Van Assche, Till Andlauer, Karmel Choi, Jurgen Luykx, Eva Schulte, Yi Lu
+
+**Length**: 32:13
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=-NQ5-MJaea0")
+```
+
+Link to video transcript [here](chapter1.4_transcript.qmd#sec-mdd).
+
+------------------------------------------------------------------------
+
+### *Obsessive Compulsive Disorder*
+
+**Title**: Genetics of Obsessive-Compulsive Disorder: What we know in 2020
+
+**Presenter(s)**: Christie Burton
+
+**Length**: 15:28
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=_VVdqHOr7v0")
+```
+
+Link to video transcript [here](chapter1.4_transcript.qmd#sec-ocd).
+
+------------------------------------------------------------------------
+
+### *Post-traumatic Stress Disorder*
+
+**Title**: Posttraumatic Stress Disorder: From Gene Discovery to Disease Biology
+
+**Presenter(s)**: Frank Wendt
+
+**Length**: 15:33
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=jy2StAoWjzs")
+```
+
+Link to video transcript [here](chapter1.4_transcript.qmd#sec-ptsd).
+
+------------------------------------------------------------------------
+
+### *Schizophrenia*
+
+**Title**: Genetic Architecture of Schizophrenia
+
+**Presenter(s)**: Kaarina Kowalec, Niran Okewole, Sophie Legge, Marcos Santoro, Sathish Periyasamy
+
+**Length**: 29:52
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=NMr5sLt3U4o")
+```
+
+Link to video transcript [here](chapter1.4_transcript.qmd#sec-schizophrenia).
+
+------------------------------------------------------------------------
+
+### *Shared genetic architecture*
+
+**Title**: Shared Genetic Architecture across Psychiatric Disorders
+
+**Presenter(s)**: Andrew Grotzinger
+
+**Length**: 14:04
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=XwBoFzdz3ts")
+```
+
+Link to video transcript [here](chapter1.4_transcript.qmd#sec-sharedgenetic).
+
+------------------------------------------------------------------------
+
+### *Substance Use Disorder*
+
+**Title**: The Genetics of Substance Use Disorders: A Review
+
+**Presenter(s)**: Joseph Deak, Emma Johnson
+
+**Length**: 17:38
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=NdOR9NxMH2Q")
+```
+
+Link to video transcript [here](chapter1.4_transcript.qmd#sec-sud).
+
+------------------------------------------------------------------------
+
+### *Suicidal Thoughts and Behaviours*
+
+**Title**: Insight into the Genetics of Suicide
+
+**Presenter(s)**:
+
+-   Hilary Coon, Professor, University of Utah
+
+-   Anna Docherty, Assistant Professor, University of Utah
+
+-   Douglas Ruderfer, Assistant Professor, Vanderbilt University
+
+-   Niamh Mullins, Assistant Professor, Mount Sinai School of Medicine
+
+**Length**: 58:54
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=uQAO_XwN9Fk&t=80s")
+```
+
+Link to video transcript [here](chapter1.4_transcript.qmd#sec-suicide).
+
+------------------------------------------------------------------------
+
+### *Tourette Syndrome*
+
+**Title**: Genetics of Tourette Syndrome
+
+**Presenter(s)**: Matt Halvorsen
+
+**Length**: 15:23
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=SpRczJwXkpc")
+```
+
+Link to video transcript [here](chapter1.4_transcript.qmd#sec-tourette).

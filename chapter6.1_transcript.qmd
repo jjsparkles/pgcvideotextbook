@@ -1,0 +1,715 @@
+---
+title: "Chapter 6.1: Polygenic Risk Scores (Video Transcript)"
+---
+
+------------------------------------------------------------------------
+
+# *Polygenic Risk Scores* {#sec-video1}
+
+**Title**: Polygenic Risk Scores
+
+**Presenter(s)**: CPM Oxford
+
+our genes provide valuable insight into our family history our ancestry and also our health as we learn more about our dna we identify new opportunities for healthcare one such opportunity comes from using polygenic risk scores in this video you will learn what a polygenic risk score is see how they can be used in healthcare and find out how you can participate in research studies that use them
+
+polygenic risk scores why might you care about whatever they are knowing our risk of developing particular diseases can be a really powerful way to help us live healthier lives imagine you knew that you were at a high risk of having a heart attack that's pretty clear motivation to do something about it such as changing your diet or taking risk lowering medication but how could you know that you're at a high risk a major risk factor for common diseases such as heart disease cancer and diabetes is our own genetic makeup new studies show that we can now analyze an individual's genes and actually measure that risk using something called polygenic risk scores
+
+our genes vary from person to person it's why we're not all the same but some of these genetic differences can contribute to our risk of complex diseases there are a few rare diseases that are caused by changes in a single gene but we now know that for the most common diseases such as heart disease and diabetes it's often not just one or two of these genetic changes that are important it's many of them each having a small effect on the polygenic risk hence poly many genic to do with genes risk scores scoring a risk scientists have compared dna among gigantic groups of people with and without disease and have identified thousands of genetic variations that influence risk for hundreds of diseases this important reference dna from the studies can then be compared with individual patients dna to calculate their risk
+
+so how could polygenic risk scores actually help you? a doctor's usual assessment of a patient might indicate one course of action but when armed with a polygenic risk score a different approach may become the better way to go these scores could help doctors better identify specific medicines or therapies a patient is likely to respond well to or whether they're likely to benefit from earlier screening for specific cancers and because our genes don't change as more of these variations are identified your polygenic risk scores can be updated without having any more tests also remember this same genetic information can be used to give you a polygenic risk score for lots of different diseases
+
+so we're stuck with the genes we have all throughout our lives but even when they do mean our polygenic risk score of a particular disease is high that doesn't mean our fate is sealed there's lots we all can and should do to reduce our overall risk of disease particularly if our polygenic risk is high for example patients with a high polygenic risk of type 2 diabetes can significantly reduce their overall risk to exercise and eating a healthy diet so what's next well you can see how much promise polygenic risk scores have but there's still work to be done further studies are needed to assess the clinical impact of prs in improving the diagnosis treatment or prevention of specific diseases also studies must be extended to cover a wider global population but already polygenic risk scores are a promising new tool by taking them into consideration along with other risk factors they have the potential to help us live longer healthier and happier lives to learn more about polygenic risk ors and how you can take part in research studies involving prs please visit us at cpm.well dot ox dot ac dot uk forward slash prs
+
+------------------------------------------------------------------------
+
+# *What is a Polygenic Risk Score?* {#sec-video2}
+
+**Title**: What is a polygenic risk score?
+
+**Description**: A brief introduction to polygenic risk scores
+
+**Presenter(s)**: Till Andlauer
+
+in this video i'm going to introduce you to polygenic risk scores prs also often now called only polygenic scores pgs because you can also calculate them on quantitative traits like for example brain volumes
+
+*Polygenic disorders*
+
+all complex common disorders are polygenic if you want to quantify genetic risk for a complex disorder you thus have to assess the effects of many genetic variants at the same time the basis for appears is a g was and there's a separate video explaining what that is
+
+*Calculating PRS*
+
+for the calculation of prs this gmas is considered the discovery or training data set the jiva's effect size are used as the weights when calculating a prs to get stable effect size estimates you need gmail's generated on large samples as for example conducted by the pgc but
+
+*Problem with PRS*
+
+there's one problem neighboring variants are correlated because they get inherited together and thus show similar associations the snip density could thus bias the pure s at any given locus classical prs thus only use the variant with the lowest p value correlated snips are removed using a method called ld clumping
+
+*LD clumping*
+
+how many snips to use that's a difficult question you might only want to use the snips that show do you know my significance 44 in this study on depression but what about these ones here are they not relevant likely they would get significant if a larger sample size was used for the gmas therefore typically p-values of 0.05 or 0.01 are used as thresholds for the calculation of classical prs
+
+*Other methods*
+
+in recent years many other methods have been published that use bayesian regression frameworks to model the linkage disequilibrium and thereby calculate ld corrected weights these methods like ld pratt pier scs and sbazar they have been benchmarked in a recent manuscript and they perform much better than classical prs
+
+no matter how you choose your weights the next step is always the same for each snip you multiply the weight by the number of effect alleles if a is the effect allele then the multiplication factor would be 0 in this case here one and here two you do this multiplication for each snip and you sum over all variants to get a single score a prs by itself for a single person is just an arbitrary number that cannot be interpreted well in order to be able to interpret the prs you need a large group of people that share the same ancestry and possibly even the same socio-demographic background among each other and with the people used for the training divas and only with this group you're able to interpret the prs of an individual relative to that group and if you calculate prs for many people you will see that the scores follow a normal distribution the prs of a single individual may then map to a lower an average or a higher percentile within that distribution patients suffering from a disorder will on average have higher prs for that disorder than healthy controls but only on average individual level risk predictions from prs thus have a very poor sensitivity and specificity basically you can only say anything about the people mapping to the lowest or highest percentiles they have significantly lower or higher risk for the disorder and for everyone in between you can't say much you can however get fairly good predictions if you contrast the extreme ends of the distribution but the odds ratios achieved are of course still much lower than for monogenic disorders nevertheless prs can be used for risk stratification to identify people at high risk that might need more medical attention
+
+*Applications*
+
+in research prs have many highly useful applications from the assessment of the polygenic risk load for common variants in families especially affected by psychiatric disorders to the genetic characterization of bipolar disorder subtypes and of course many many more also many reviews and methods articles on prs have been published recently and you will easily find a lot of material to keep on reading
+
+------------------------------------------------------------------------
+
+# Polygenic Risk Scores: In detail {#sec-video3}
+
+**Title**: Polygenic Risk Scores
+
+**Presenter(s)**: Adrian Campos, Adrian.Campos\@qimrberghofer.edu.au
+
+Hello, my name is Adrian Campos and today I'm going to talk to you about polygenic risk scores for the Boulder Workshop 2021. Special thanks to Sarah Medland, Lucia Colodro Conde, and Baptiste, Couvy-Douchesne, for all the input for preparing these slides.
+
+*Outline*
+
+This is the layout for today's talk. We're going to start with a brief introduction on GWAS and allele effect sizes. Then I will give a brief overview of what a PRS is and how it's calculated with the graphical example. After that, we will discuss which variants to include and how to account for linkage disequilibrium when estimating a polygenic risk score. We will dicuss the more traditional approach named clumping and thresholding which is widely used in the area. Then we will discuss some applications for polygenic risk scores, other methods for polygenic risk scores and a brief summary at the end.
+
+*GWAS*
+
+So without further ado, let me get out of the picture and let's start with this talk. As we have previously seen, a Genome Wide Association Study (GWAS) allows us to identify which genetic variants are linked to a trait of interest. A GWAS allows us to identify not only which genetic variants are linked to a trait of interest, but also their effect size. If we imagine, for example, this to be a height GWAS and we focus on the highlighted genetic variant, we would identify an effect size of two centimeters per copy of G allele. So the effect size of this variant would be approximately 2, which is also the slope of a linear regression between the mean height and the genotype groups. What this basically means is that if we had access to a new sample with Genotype data and height data, we would expect AG individuals to be an average 2 centimeters taller than AA individuals and two centimeters shorter than GG individuals. But we know that complex traits like height, are highly polygenic. There are many genetic variants that contribute to the phenotype. Furthermore, we know that common variants have a small effect size and that the example that we were using was an exaggeration. This would cause this single \[locus\] based prediction to be basically useless. However, we can combine the information that we gain from several genetic variants to estimate an overall score and gain a better estimate of the trait. This is essentially what a PRS does.
+
+Now let's keep using this example to understand what a PRS really is. In our previous example, we started by focusing on this genetic variant. Which had an effect size of two centimeters per \[copy of the\] G allele. So if we were to score this participant based on this genetic variant, we would sum 0 given that he has no copies of the G allele. The same would be true for all participants that are homozygous for the A allele at this \[locus\]. Participants that are heterozygous at this \[locus\], have one copy of the G allele. So in order to score them we multiply 2, which is the effect size times the number of copies of the G allele, which is one. Finally, we score participants with two copies of the effect \[allele\] by two times the effect size, which also happens to be two in this example. For polygenic risk scores we want to aggregate the information of several genetic variants. So now let's focus on another one. This one has an effect size of minus one per effect allele. Following the same process, we would score participants by weighting the number of copies of the T allele they have, times the effect size of that allele. So in this example, participants with a TT genotype will have a score of minus two for this \[locus\]. Participants with a CT genotype will have a score of minus one and participants with the reference CC Genotype will have a 0. We can do that for a third genetic variant. This one has an effect size of 0.5 per G allele. Again, we proceed to score this \[locus\] by multiplying the effect size times the number of copies of the effect allele. We can repeat this process, including all other variants and sum across all loci. These will give you an estimate of the polygenic risk for the trait of interest.
+
+So a working definition of polygenic risk score is a weighted sum of alleles which quantifies the effect of several genetic variants on an individual's phenotype. As a word of caution, the sample for which PRS will be calculated should be independent from that of the discovery GWAS. That means there has to be no sample overlap between the sample with which you calculated the effect sizes for the variants, and the sample in which you were calculating a polygenic risk score. Although in this example we have focused on a quantitative trait, which is height, it is important to mention that polygenic risk scores can also be used to calculate the genetic risk for a disease or a binary trait. It is important to remember that genetic material is organized on two complementary strands of DNA, which is made up by nucleotide bases. These bases are four: basically A T C G, but they are complementary to each other. That means that if one of the strands has an A, the other strand will have a T in the position that is complementary to that A. The same is true for C and G. Whenever the reference and alternative alleles of a genetic variant are not complementary to each other, we can tell which strand they came from. However, when the reference and alternative alleles are complementary to each other, it is hard to tell which of the strands we are actually measuring and therefore which is the effect allele. That can have severe consequences on polygenic risk scores. Sometimes it is possible to solve this ambiguity using information on allele frequency, but this can be tricky if the allele frequencies are close to 0.5. Now we're going to discuss how to decide which variants to include for a PRS, and also how to account for linkage disequilibrium. I know that I previously said that we should repeat including all the other variants and sum across all loci. However, there are things to consider. The first one is that we know that there are many GWAS that are underpowered. That means that there are many more true associations that those that are reaching genome wide significance. The second one is that linkage disequilibrium creates a correlation structure within the variants and it is important to use independent SNPs for polygenic risk scores, or to account for their correlation somehow. To do this, we try to identify near independent SNPs using a method called clumping. Clumping basically selects all the SNP are significant at a certain P value threshold and forms clumps of SNPs within a certain distance to the index SNP only if they are in LD with the index SNP.
+
+After clumping, genetic variants are approximately independent, but there's still a question of whether we \[should\] include only genetic variants that reach genome wide significance, or do we relax the P value threshold for including them? One solution is to calculate many PRS, including more and more variants, by becoming more lenient on the P value threshold that we use to filter them out. Here is an example of eight P value thresholds, starting with the most strict, which would be just genome wide significant variants, all the way to the most relaxed which would be including all variants. After "solving" the problem of which genetic variants to include, the polygenic risk score can proceed as we previously saw and then we will end up with a set of scores that depict the genetic liability or the genetic risk. in an independent \[population\] (sample) for a certain trait of interest, then we can perform PRS-trait association analysis. For this, it is important to think about your sample. If it is a family based sample like a twin registry, it is important to adjust for relatedness. If it is homogeneous in terms of ancestry, even then it is always a good idea to adjust for genetic principal components to make sure you're getting rid of population stratification effects. It's also important to think whether the target sample matches the GWAS \[sample\] ancestry, because there are known issues of portability between ancestries.
+
+Then you also have to consider your trait of interest. Is it continuous? Then you can use a linear regression to perform PRS-trait association. If it is binary, you can rely on logistic or probit regressions and if it is ordinal, you will have to find something like a cumulative linked model or cumulative linked mixed models for family based samples. Always remember that there are potential confounders of the trait and of the discovery GWAS and you have to think about them and adjust for them. Before performing a polygenic risk score analysis is important to keep in mind that the power of PRS depends on the power of the GWAS that will be used to estimate the PRS. In this example. The same target sample was used to calculate polygenic risk scores for depression. And they are comparing the variance explained \[by\] a polygenic risk score based on the first MDD PRS by the PGC and a subsequent update; and what they found is that there was a substantial increase on variance explained which was sample size dependent. The clumping and thresholding approach allows us to explore the pattern of variance explained and its relationship to the number of genetic variants that we are including. For example, here we can see that using the most strict cutoff is not having a significant variance explained, and the more variants we include, the more variance explained we are getting. This is a typical pattern \[of a GWAS\] of a PRS. constructed from a GWAS that was that still not fully powered upon a fully powered GWAS we expected a pattern were including just the genomewide SNPs performs really well in terms of variance explained and then when we start including more and more noisy SNPs, we are losing variance explained.
+
+*Applications*
+
+Now we will discuss some of the applications for polygenic risk scores. I have listed here some of them, but I think you can use your imagination and think of others. The first one is something very typical. To test for the GWAS association and quantify variance explained. It is basically a safety check in a genome wide association study where you want to demonstrate that your GWAS is really predictive of the trait of interest. Polygenic risk scores can also be used for risk stratification, which would be identifying people to test later for a specific disease. That should reduce the burden to a health service system. It can also help in clinical diagnosis of rare diseases. We can also use polygenic risk scores for testing genetic overlap between traits. For example, is a genetic risk for depression predictive of cardiovascular disease and vice versa?
+
+We could also think of using PRS for trait imputation when a trait is not measured. For example, if you wanted to impute a smoking phenotype in a \[population\] sample. This is obviously imperfect and dependent on the heritability of the trait, but it might start gaining traction as polygenic risk scores become more and more predictive of the trait of interest. As there are many more GWASes of treatment response and they're gaining power, personalized treatment based on polygenic risk scoring could become a reality. And basically any hypothesis where you rely on a genetic risk or a genetic liability. There's been many publications where polygenic risk scores are used to examine gene by environment interactions.
+
+*Software*
+
+So far we have discussed the traditional clumping and thresholding approach. However, there are other methods that are worth mentioning. But first, let me mention the software that you can use to calculate clumping and thresholding polygenic risk scores. The first one is PLINK \[and PLINK2\]. The second one is PRSice2, and then there is an R library called bigsnpR which contains not only clumping and thresholding, but many other options. There are other types of PRS which we will discuss briefly like LDpred2, which is implemented in bigsnpR BbaseR which is implemented in GCTB. Lasso sum and lasso sum two, which are implemented also in bigsnpR and there's PRS-CS, and JAMPred. Which I believe are standalone software, but I'm not quite sure. All of these methods share a common motivation, which is to substitute the clumping step with something more elegant. We basically want to approximate the effect sizes that we would obtain if we would have run a multiple linear regression GWAS. That is, a GWAS that simultaneously estimated the joint effects of all the SNPs. The problem is that we cannot do that. So what we do in a GWAS is we run m regressions. And we obtain the SNP 'marginal' effect sizes, that is, the effect size of each SNP without taking into account the correlation with other SNPs. And the lack of adjustment for these correlation is obvious from the Manhattan plots having these well defined towers.
+
+To solve this problem, we need to find a method that approximates the multiple linear regression results based on the GWAS summary statistics. There are many methods that implement estimating the multiple regression, SNP effect sizes, and we really don't have time to cover them all in detail. So today I'm going to quickly mention some of them, and then I'm going to give a couple of details in the two that I considered the most commonly being used in the area, which is LDPred2 and SBayesR. LDpred2 is implemented in bigsnpR, and it uses a Gibbs sampler to estimate the joint SNP effects. SBayesR is implemented in GCTB and it estimates the joint SNP effects using Bayesian, multiple regression. Lasso sum and lasso sum two are also implemented in bigsnpR and they are based on performing a penalized regression that basically shrinks the SNP effect sizes. Then there's PRS-CS, which also uses a Bayesian regression to estimate the joint SNP effects and then JAMPred, which uses a two step Bayesian regression framework. In SBayesR they combine a likelihood function that connects the joint effect sizes with the GWAS summary statistics coupled with a finite mixture of normal distribution priors Underlying the marker \[variant\] effects. This basically means that we are modeling the SNP effect sizes as a mixture of normal distributions with mean zero and different variances. This is typically done using four normal distributions all with mean zero and distinct variances. The first one is variance of zero, which basically captures all the SNPs with a 0 effect, and then from there we allow increasing values of effect sizes to exist in this model. What this does then is performing Markov chain Monte Carlo Gibbs sampling for the model parameters which are basically: The joint effect sizes, the probabilities of the mixture components and error terms. Of course, the parameter that is of our main interests are those joint effect sizes that then we can use \[for\] as effect sizes or weights in our polygenic risk score analysis.
+
+*LDPRED II*
+
+LDpred2 is a recent update to LDpred, which was a method that also derived an expectation of the joint effects given the 'marginal effects' and the correlation (LD) between SNPs. This method assumes that there is a proportion P of causal variants on that trait of interest, and then assumes that the joint effect sizes are normally distributed with mean zero and variance proportional to the heritability of the trait. Importantly, the proportion of causal variants and the heritability of the trait are estimated independently, at least in the classical approach and for P there is a grid of values that are explored, whereas for heritability or SNP based heritability, it is estimated using LD score regression. Then it uses a Bayesian Gibbs sampler to also estimate the joint effect sizes for the GWAS. However, LDpred2 adds 2 new models to the traditional LDpred approach. The first one estimates P and the heritability from the model. Instead of testing several values and using LD score regression. This is useful because before P and h2 squared were estimated through a validation data set and this new approach which is called 'LDPred2 auto', doesn't require this intermediate validation data set anymore. And there is another one called LDpred2 sparse which allows for effect sizes to be exactly 0, which would be similar to the first mixture component of SBayesR. LDPred2 is also good for modeling long range linkage disequilibrium such as that that is found near the HLA region. Other methods rely on removing these regions to account for this problem. However this method (it's authors) adequately points out that these regions are important for certain traits, and that removing them would reduce power in them.
+
+*Key take home messages*
+
+As key take home messages, these approach is usually perform better than, or at least as well as, clumping and thresholding; and when they don't, it is important to be weary as sometimes the models don't converge and they might fail silently. Performing better PRS is still an area of active research and there is a clear battle between complexity and power versus scalability and ease of use. There's many publications comparing across these methods, so try to read them and pick one that best fits your needs.
+
+*Summary*
+
+So in summary: A polygenic risk score is a weighted sum of alleles. It's basically a tool that estimates the genetic liability or risk to traits. It can be done for both quantitative and binary traits. Before performing PRS, it is essential to have quality controlled your GWAS (discovery) summary statistics. To have quality controlled the (target) genotype dataset and to be wary of the potentially problematic ambiguous SNPs. Furthermore, practically you find that you need to match the SNP identifiers between your GWAS data and the genotype data. Remember that discovery and target samples need to be independent and to consider statistical power before starting any analysis. When using polygenic risk scores do remember to be aware of related individuals in the sample and to properly adjust for them. As well as for population stratification. Also consider that differences in ancestry might underlie differences in predictive ability of a polygenic risk score and always be wary of jumping too fast to conclusions. Always consider potential biases in the discovery GWAS and in the target sample.
+
+*Further reading*
+
+If you're interested, here are some further reading on polygenic risk scores. Some of these are historical papers that mark the milestones of actually achieving polygenic prediction in complex traits, and some of them are discussion on the possible biases and the different methods that exist for polygenic risk scoring. And that's it for the intro to polygenic risk scores. Thank you and see you next time.
+
+------------------------------------------------------------------------
+
+# Polygenic Scoring Methods {#sec-video4}
+
+**Title**: Polygenic Scoring Methods: Comparison and Implementation
+
+**Presenter(s)**: Oliver Pain
+
+hello my name is oliver payne and i'm a postdoctoral researcher working with professor catherine lewis at king's college london today i'll be talking about polygenic scoring methods comparing various methods to one another and also describing resources we've developed for the calculation of polygenic scores for research and clinical purposes i have no conflicts of interest to declare so my presentation is split into three sections first i'll give a brief introduction to polygenic scoring then describe our work comparing different polygenic scoring methods and finally introduce an easy and reliable pipeline for polygenic scoring that we've developed called genopred pipe
+
+so first a brief introduction to polygenic scoring a polygenic score is a way of summarizing an individual's genetic risk or propensity for a given outcome typically calculated based on an individual's genetic variation and genome-wide association studies summary statistics referred to as g-words sum stats polygenic scores are a useful research tool and could also be useful for personalized medicine as their predictive utility increases for polygenic scoring the dual summary statistics are typically processed to identify variants overlapping with the target sample account for linkage to equilibrium between variants and adjust the g word's effect sizes to optimize the signal to noise ratio in the geoserum statistics therefore an individual's polygenic score can vary due to the genetic variance considered and the alloy of frequency and linkages equilibrium estimates used to adjust the dual sumstats often in research these factors vary depending on the target sample using the intersective variance between the target sample and the g was and using estimates of linkages equilibrium and alloy frequency from the target sample itself now this isn't ideal and an alternative strategy is to use a reference standardized approach whereby a common set of variants are considered for all target samples and the linkage and algebra frequency estimates are derived using a common ancestry matched reference sample this reference standardized approach is advantageous when using polygenic scores in both clinical and research contexts as it allows polygenic scores to be calculated for a single individual and it avoids variation in an individual's polygenic score due to target sample specific properties which might influence the result
+
+now i'll be presenting our work comparing polygenic scoring methods this table shows the leading polygenic scoring methods as reported in the literature the pt plus clump approach is the traditional approach whereby ld based clumping is used to remove the linkage to equilibrium between lead variants and g-was and a range of p-value thresholds are used to select the variants considered the others are more recently developed methods that use ld estimates to jointly model the effect of genetic variants and typically perform shrinkage to account for the different genetic architectures like the p-value thresholding approach several of the newer methods apply multiple shrinkage parameters to optimize the polygenic score when multiple parameters used a validation procedure such as 10-fold cross-validation is required to avoid overfitting whereby the variance explained estimate is artificially high due to trying many different p-value thresholds or shrinkage parameters in contrast some methods provide a pseudo-validation approach whereby the optimal parameter is estimated based on the g-word summary statistics alone not requiring a validation sample another approach that doesn't require a validation sample is to assume an infinitesimal genetic architecture though this approach works best for highly polygenic phenotypes a third option is to model multiple polygenic scores based on a range of parameters using methods such as elastic net to account for the correlation between the polygenic scores
+
+we compared methods using a range of outcomes measured in two target samples uk biobank and the twins early development study referred to as teds we used two samples to ensure our results not target sample specific and we selected the traits on the right as they have a well-powered publicly available g was and represent a range of genetic architectures as i described previously we used the reference standardized approach when calculating the polygenic scores ld and allele frequencies were estimated using two reference samples of differing sample size to evaluate the importance of reference sample size across methods and these reference samples were the european subsets of 1000 genomes phase 3 and an independent random subset of 10 000 european uk biobank participants hatmap three variants we used the route as these variants are typically well captured by genome-wide arrays after imputation provide good coverage of the genome and also reduce the computation times several methods already provide ld matrices including only hatmap 3 variants for use with their software in line with the reference standardized approach the predictive utility of each polygenic score approach was evaluated based on the pearson correlation between the observed outcome and predicted values the statistical significance of differences between predicted and observed correlations was determined using the williams test which counts for the correlation between predictions from each method this figure shows the average performance of each method compared to the best pt plus clump polygenic score as identified using 10-fold cross-validation the transparent points in the figure show the results for each target phenotype separately i'm only showing the results based on the uk biobank target sample when using the thousand genomes reference as the results were highly concordant when using teds or the larger reference when comparing methods that you use 10-fold cross-validation to optimize parameters shown in red you can see that the best methods are ld probe 2 lasso sum and pure scs all outperforming the pt plus clump approach providing a 16 to 18 relative improvement in prediction ld pro 2 showed further nominally significant improvements over the su-sum and pure scs on average when comparing methods that use a pseudo-validation approach or infinitesimal model not requiring a validation sample highlighted in blue and purple you can see that pscs and dbs lmm methods perform well providing at least a five percent relative improvement over the other pseudo-validation methods pure scs is better than dbs lmm providing a four percent relative improvement over dbs lmm it's worth mentioning that especially's
+
+performance improved when using a larger ld reference on average then doing as well as dvs lmm when comparing the pseudo-validated pscs performance to 10-fold cross-validation results in red the prcs polygenic score performs only three percent worse than the best polygenic score identified by 10-fold cross-validation for any other method and performs better than the pt plus comp approach for all phenotypes tested highlighting the reliability of this approach the multi-prs approach shown in green which uses an elastic net model to model to model multiple polygenic scores based on a range of p-value thresholds or shrinkage parameters consistently outperforms the single best polygenic score selected by tenfold cross foundation shown in red with the largest improvement for the pt plus clump approach of 13
+
+lastly we tested whether fitting polygenic scores across multiple methods improved prediction and we found it did to a small degree though the
+
+computational burden is obviously substantial because then you have to run all of the methods in terms of runtime these methods very substantially this graph shows the number of minutes to run the method on chromosome 22 alone without any parallel computing you can see the prcs and ld pro 2 take a lot longer than other methods however since our study ld pro 2 developers have substantially improved the efficiency of their software halving the runtime moving that down to around here just under 25 minutes for chromosome 22. it's worth noting that the time taken for pure scs when using a single shrinkage parameter is one-fifth of the time shown here meaning its pseudo-validation approach is actually reasonably quick dbs lmm is by far the fastest of the newer methods taking just a few minutes when run genome-wide without any parallel computing which is impressive considering how well it performed against other methods in terms of prediction something i wanted to highlight is that when using sbaza i've been using the robust parameterization option available in the newest version of esbazar as i found sbasal was not converging properly for some g was using this robust parameterization was most reliable and did not make the esbaza performance worse except for depression using the smaller 1000 genomes european reference you can see this here in the figure the second point is that since our published study i've also compared prcs methods using geosummary statistics for 17 different phenotypes derived using only the uk biobank sample avoiding possible quality control issues that occur from large scale meta analyses the results are highly concordant to the results when using the largest publicly available meta was results which is reassuring that our findings are are reliable however the performance of essbase r did improve again highlighting that especially is more sensitive to g1's quality than other methods but when the quality is good esposa performs very well appears to be the best method in this analysis we were also interested to see whether one particular method did better when predicting across ancestries as some methods might highlight causal genetic effects better than others using the same 17 g was i briefly mentioned on the previous slide within the uk biobank sample alone i've tested the performance of prs methods across populations
+
+so using the european g-wars but predicting in non-european subsets of uk biobank as you can see the results are very similar in each population with the best method identified in a european target sample also being the best method in a non-european target sample
+
+so the advice for the future research regarding polygenic score methods is for optimal prediction we recommend modeling multiple parameters from ld pred 2 lasso sum or pure scs but if you're looking for a simpler option for looking at genetic overlap perhaps i'd recommend using the pure scs pseudo-validation method also referred to as its fully bayesian method alternatively if you need to compute polygenic scores for many g-words or have limited time or computer power then dbs lmm is a fast and good alternative although especially does very well when the g was summary statistic's quality is good its sensitivity to that quality means it doesn't always perform well when using the largest meta g was results
+
+okay so now i'm going to move on to the last section of my talk which describes our recently developed pipeline for polygenic scoring called genome pred pipe so most of the work i've just presented is contained in the study shown in the top left where we also described the reference standardized approach polygenic scoring in the study we provide a schematic representation of this reference standardized approach shown in the figure on the right whereby target genetic data is first imputed if it hasn't been already then only happened three variants are retained as these are typically well imputed and provide decent coverage of the genome and then the sample is split into ancestral superpopulations determined by comparison to the thousand genomes phase three reference and lastly polygenic scores are then calculated based on jewish summary statistics processed in advance using a g was ancestry matched reference when we were carrying out this study and writing the code for the reference standardized approach we wanted to ensure the results were fully reproducible and we wanted to develop a resource that other researchers could use to calculate reference standardized polygenic scores so we used a combination of our markdown git github and github pages to create a publicly available website containing a series of readable documents describing the code and results of our various studies
+
+the website is called genopred as it focuses on genotype-based prediction and there is a qr code here if you would like to take a look i'll now briefly show you the website so this is the home page of the website which shows a list of the pages available i'll now click on the link describing how to prepare the reference data for the reference standardized approach at the top it provides some information and then lists the required software below that and then it goes through each step uh one by one with code chunks for users to use to reproduce the results or create their own data now whilst we think this is a great resource for others to see what we've done and replicate the results you can see there are many steps and many separate code chunks to follow making its use quite lengthy and possibly prone to user error so i've recently written all of the steps to calculate reference standardized polygenic scores into a pipeline using snakebig along with what is called a condor environment which will automatically download and install all of the required software meaning it'll create fully reproducible results the pipeline just requires three input files first a list of g was summary statistics that you want to use indicating the population in which they were derived and optionally information regarding the distribution of phenotype in the general population i.e prevalence or mean and standard deviation then you provide a list of target samples you want to polygenic scores four with the pipeline currently accepting pink one binaries so bed bim fam or b gen files and also the 23andme format lastly you'll need a file called config.yaml which describes the location of the gwas
+
+and target list files then actually running the whole pipeline just takes a single line of code i provided some test data for new users to experiment with which can be downloaded and then step two here is where the pipeline is actually run just writing snake make then two parameters indicating the computational resources you want to use and that you want to use condor environments and then the name of the output that you want in this example i'm requesting the final output which is an r markdown report of the ancestry identification and polygenic score results for all target samples which involves running the full pipeline
+
+here is an updated version of the schematic i showed you earlier based on what is implemented in the geno pred pipeline the only difference is that at the end now we generate a report summarizing the results of the ancestry identification and polygenic scoring i'll show you these reports briefly now this is the report produced to describe the results of a single individual first there are some descriptives about the number of snips before and after invitation and the number of reference snips available then the report describes the results of the ancestry identification analysis first showing the probability of being from each suit population in 1000 genomes reference in this example the individual has a probability of almost 100 of being from a european population you can also see the individual's position on the first few reference projected principal components relative to the thousand genomes population i'm showing now and the individual individual in this case is that black circle then the individual's ancestry is broken down into more specific populations within the assigned superpopulation in this case showing the individual was most similar to the great british population and individuals broadly from northern and western europe and at the bottom shows the individual's polygenic scores in this case for body mass index and cardiovascular disease showing the results in relative terms compared to an ancestry matched reference and then in absolute terms for improved interpretation by considering the variance explained by the polygenic scores and the distribution of the phenotype in the general population then this is an example of the report produced to summarize the results for a sample of individuals again starting with some descriptives about the overlap with the reference snips then showing the number of individuals assigned to each superpopulation using a hardcore threshold of 50 with the underlying probabilities shown as a histogram below again you can see the position of these individuals on projected principal components compared to the thousand units reference and then each individual is assigned to specific populations within each assigned super population i'll skip past these though and show you the polygenic scores which is summarized at the bottom just simply using histograms to show the distribution of polygenic scores for each population and g was
+
+so i'll conclude with why i think people should use this pipeline first it performs ancestry classification which is really important as non-europeans are often discarded from studies and as sample sizes increase usable non-european populations can be identified and analyzed also it's important to consider the ancestor of an individual when calculating the polygenic score second it provides reference standardized polygenic scores which are scaled according to an ancestry matched reference and are independent of any target sample specific properties which is useful for research and clinical prediction purposes third it can efficiently implement any of the top performing polygenic scoring methods using a single line of code saving time and reducing user error fourth it's been tried and tested i've put uk biobank through it and other samples and compared the prs to the observed phenotypes assuring me that it's working as it should finally it's well documented online and produces fully reproducible results both of which are important for progressing science i'm showing the qr code again for the juno pro website on the right please do check it out if you're interested lastly i'd like to thank my amazing colleagues for their help with this work in particular catherine for her brilliant supervision throughout thank you for listening
+
+------------------------------------------------------------------------
+
+# Polygenic risk scores: PGS comparison {#sec-video5}
+
+**Title**: Polygenic risk scores: PGS comparison
+
+**Presenter(s)**: Guiyan Ni
+
+welcome the topic of this video is how
+
+to run polygenic risk score comparison
+
+until now we already have watched the
+
+individual talk on prscs LD Pro 2 and
+
+spsr and other methods I believe you all
+
+have a good understanding about
+
+polygenic score and each of those
+
+methods
+
+so this slides here is just to set up
+
+the scene to make sure that we are on
+
+the same page
+
+collagen risk score of an individual is
+
+a weighted sum of the counties of risk
+
+allele So based on the jivas summer
+
+statistical results the basic method for
+
+polygen resource score is pwalu clamping
+
+on the thresholding
+
+this method is simple but it doesn't
+
+firmly model different genetic
+
+architecture so there are many new
+
+methods try to model the genetic
+
+architecture for the trade of Interest
+
+for example using different paraders in
+
+the base in regression like our LD
+
+printing infinitesimal model LD Pro 2 SP
+
+SBC
+
+prscs and acid base arm
+
+and also matter like La Susan is using
+
+the lasso regression
+
+a mega PRS is another method is runs on
+
+different prayers for example if it runs
+
+on a probably using a mixture of four
+
+normal distribution it will be the same
+
+like a space r
+
+or similar
+
+and if a zoom order snip have a
+
+contribution to the phenotype variance
+
+then it will be similar to LD product
+
+infinitesimal model or S block it can
+
+also run a prayer like both a similar
+
+like both LM and also can run also some
+
+regression
+
+so the difference between Mega PRS and
+
+other method is the expected first name
+
+heritability can vary between
+
+um can vary by LD and manual frequency
+
+so in this talk we will compare all
+
+those message and we know that when the
+
+method is proposed they already compared
+
+with other methods but the fundamental
+
+question we are trying to answer here is
+
+which method should we use in the PGC
+
+data
+
+then we use the course validation we
+
+want a cohort out of course validation
+
+to
+
+um to answer this question and to
+
+compare the performance of different
+
+um methods here's the toy example
+
+showing uh for the course of validation
+
+each cell here is one cohort and the
+
+pink cell is for the discovery cohort
+
+and the target cell is as green cell is
+
+for the Target cohort
+
+and in first uh first round of the
+
+analysis we're using the four pinks
+
+discover cohort as a discovery says and
+
+then while it is a performance of each
+
+method in in the Target
+
+sample and then we repeat this process
+
+into each of those cells or each of
+
+those cohorts serve as a Target cohort
+
+if it's needed by the by the um some
+
+method we have another cohort will serve
+
+as a tuning sample to select the optimal
+
+hyper parameters
+
+so in the real data analysis we use the
+
+Geo summer statistic from schizophrenia
+
+2 as a discover sample and all those
+
+data we actually have access to uh
+
+through a service through cohort where
+
+the individual level genotype is
+
+available and we use each of them as a
+
+Target sample
+
+for the tuning cohort we use uh these
+
+four cohorting term to tune the hyper
+
+parameters
+
+and then we can predict the polygenic
+
+score
+
+into each of the targets sample
+
+here we used a search statistic to
+
+measure the performance of different
+
+methods one is AUC another one is
+
+proportion explaining
+
+in the liability scale and third one is
+
+all the ratio
+
+I will go through each of them to show
+
+how to calculate each of those
+
+statistics
+
+so first start with AUC here is a toy
+
+example
+
+on how to calculate AUC back hand
+
+so AUC is actually a short for the area
+
+under the RC curve which is shaded by
+
+the Ping here so the ROC curve is made
+
+by plotting
+
+um
+
+against the true positive rate to the
+
+false positive rates at each possible
+
+cut off
+
+so what that mean
+
+it means as
+
+assume that
+
+um this is the density of plot for the
+
+polygenic score in the control sample
+
+and here is for the case samples
+
+and this vertical line is the current
+
+cutoff
+
+and in this case this graph can be
+
+divided into four groups and true
+
+negative
+
+false negative
+
+true positive
+
+and a false positive and true positive
+
+and then we can calculate the proportion
+
+of each each group and then we can
+
+calculate the true positive rates and
+
+the false positive positive rate
+
+which other coordinates used in the RC
+
+curve so in the in the current cutoff we
+
+use here it means that we have roughly
+
+about 17 percent of cases the the uh
+
+correctly classified as case
+
+and then there are about 10 percent of
+
+control they are running classified as
+
+case
+
+and which give us the coordinates
+
+for this dot here
+
+and then we'll vary the this vertical
+
+line This cut off we will uh we will get
+
+this Roc curve as shown in this slides
+
+here
+
+and this you see the first statistic we
+
+use to measure the performance of
+
+different methods
+
+and the second one is variance explained
+
+in the liability scale when using a
+
+certain case control studies
+
+so this variance is a function of
+
+variance explaining the observed scale
+
+this r squared observed
+
+case control study and another two
+
+parameters C and Theta
+
+so the variance explained on The
+
+observed scale is actually a function of
+
+two likelihoods from the new model and
+
+the phone full mode which is designed
+
+in this two equation
+
+and this parameter C is a function of k
+
+z and P and this K parameter is actually
+
+the proportion of the population that
+
+are diseased
+
+is also means the prevalence of the
+
+disease and Z parameter is a density at
+
+this threshold T here and this curve is
+
+a standard normal distribution
+
+and the p is a proportional case in your
+
+G was a result or in your case control
+
+study
+
+and Theta parameter is a function of the
+
+same
+
+kzt and threshold T but with different
+
+combination
+
+so in this slides I just give the final
+
+result of how to calculate the variance
+
+explained in the liability scale the
+
+full Direction with of this equation can
+
+be found in this reference
+
+foreign
+
+statistic is called Oz ratio
+
+and also ratio is a ratio between two OS
+
+and the OS is a probability being a case
+
+over the probability being a control
+
+so here is a toy example showing how to
+
+calculate all the visual backhand
+
+and that
+
+saying that we are ordering the
+
+individual based on their polygen risk
+
+score from a lowest to highest and we
+
+are interested in the observation
+
+between the uh 10 stairs and
+
+um first day so with a number of cases
+
+and the controls show in this table so
+
+the always being a case in the first day
+
+so is 23 over 103 and us being a case in
+
+the 10 states of is 83 divided by the
+
+43\. the old ratio of between the two
+
+decimals is 9.3
+
+so this this value means um when we
+
+order individual based on their
+
+polygender score
+
+the individual in the top 10 days in the
+
+top 10 percent or in the 10 states or
+
+have 9.3 Times Higher of us being a case
+
+compared to the individual in the bottom
+
+10 percent
+
+and this this old version can be easily
+
+estimated from the logistical version
+
+using the logic link function
+
+so using the U1 cohort strategy we can
+
+access the AUC variance plan and also
+
+ratio for each of those Target cohort
+
+and here show the result for AUC and for
+
+cohort of each method and different
+
+colors here stand for different method
+
+we used and the y-axis here is a UC
+
+difference compared to the P plus T
+
+which is a benchmark we used
+
+and as you can see of course different
+
+validation cohorts there are lots of
+
+variations
+
+and
+
+that's why we think our comparison is
+
+more robust compared to other comparison
+
+when they are only use one target cohort
+
+if we summarize these uh bar products
+
+by each group by method
+
+we can see we can observe this bar plot
+
+the y-axis here is AUC and
+
+each of the group stands for each of the
+
+method we compared and each of the bar
+
+in each of the group stands for
+
+different tuning cohort we use
+
+and we noticed that the methods that
+
+have formally modeled different genetic
+
+architecture they actually have quite
+
+similar performance this is because the
+
+genetic architecture of psychiatric
+
+disorders they are quite polygenic
+
+if we look at the results for the
+
+Alzheimer's disease Which is less
+
+polygenic compared to psychiatric
+
+disorder we will observe a big
+
+difference across different methods
+
+and then we also observed the similar
+
+pattern for our various explained in the
+
+laminate scale and also ratio between
+
+the top 10 percent and bottom 10 also
+
+the alteration between top 10 medium
+
+but uh we observed that LD player 2 as
+
+base R and mega PRS they rank the
+
+highest amount in most of the comparison
+
+and to summarize in this talk I show how
+
+to calculate AUC various explaining
+
+liability skill and also ratio backhand
+
+and based on the comparison we made we
+
+observed that
+
+for security disorders which are very
+
+polygenic all the methods are perform
+
+similar but some are rank higher than
+
+others for example I would refer to as
+
+base R and mega PRS
+
+so the result actually here is part of
+
+this study which is published recently
+
+published and in this paper we also did
+
+the comparison for major depression and
+
+also other sensitivity analysis and we
+
+also provide the code for each to run
+
+each other method and for each
+
+comparison and also each of the
+
+statistics
+
+statistic use for comparison
+
+and with this I would like to give a big
+
+thank you to Professor Norman Ray who
+
+always give me a huge support of
+
+whatever I needed and thanks to all
+
+other pccg members
+
+and thank you all
+
+foreign

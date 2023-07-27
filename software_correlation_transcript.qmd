@@ -1,0 +1,13 @@
+---
+title: "Software Tutorials: Genetic Correlation and SNP Heritability (Video Transcript)"
+---
+
+# LAVA
+
+# LDSC
+
+# GCTA-GREML
+
+**Title**: Estimating SNP-based heritability with GCTA-GREML
+
+**Presenter(s)**: Jian Yang

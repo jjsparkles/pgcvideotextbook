@@ -1,0 +1,150 @@
+---
+title: "PRS"
+---
+
+------------------------------------------------------------------------
+
+# Comparison of PRS methods
+
+**Title**: Comparison of PRS methods
+
+**Description**:
+
+**Presenter(s)**: Guiyan Ni, Program in Complex Trait Genomics, Institute for Molecular Bioscience, University of Queensland
+
+**Level**: Intermediate
+
+**Length**: 13:52
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://youtu.be/H18i2Oe05Gw")
+```
+
+Link to video transcript [here](software_prs_transcript.qmd).
+
+------------------------------------------------------------------------
+
+# PRS-CS and PRS-CSx
+
+## PRS-CSx to perform PRS analysis
+
+**Title**: Hands-on tutorial of using PRS-CSx to perform multi-ancestry PRS analysis
+
+**Description**:
+
+**Presenter(s)**: Tian Ge, Yunfeng Ruan, Stanley Center, Broad Institute
+
+**Level**: Intermediate
+
+**Length**: 8:28
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=ERAuCaoJ4Wk")
+```
+
+Link to video transcript [here](software_prs_transcript.qmd).
+
+## PRS in Ancestrally-diverse Populations
+
+**Title**: PRS-CSx: Improving Cross-Population Polygenic Prediction using Coupled Continuous Shrinkage Priors
+
+**Presenter(s)**: Tian Ge
+
+**Level**: Intermediate
+
+**Length**: 56:46
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=UM554Hi_v-Y")
+```
+
+Link to video transcript [here](software_prs_transcript.qmd).
+
+------------------------------------------------------------------------
+
+# LDpred2
+
+**Title**: How to run LDpred2
+
+**Description**:
+
+**Presenter(s)**: Florian Privé
+
+**Level**: Intermediate
+
+**Length**: 15:00
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=aya8WsNAu6U")
+```
+
+Link to video transcript [here](software_prs_transcript.qmd).
+
+Link to tutorial test datasets here.
+
+------------------------------------------------------------------------
+
+# PRSice2 and LASSOSUM
+
+**Title**: PRSice: Basic Polygenic analysis
+
+**Description**:
+
+**Presenter(s)**: Shing Wan Choi
+
+**Level**: Intermediate
+
+**Length**: 25:35
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=Q-hRBQ7kAPM")
+```
+
+Link to video transcript [here](software_prs_transcript.qmd).
+
+------------------------------------------------------------------------
+
+# SBayesR
+
+**Title**: How to run SBayesR
+
+**Description**:
+
+**Presenter(s)**: Jian Zeng
+
+**Level**: Intermediate
+
+**Length**: 8:09
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://youtu.be/nUNU7TZMui4")
+```
+
+Link to video transcript [here](software_prs_transcript.qmd).
+
+------------------------------------------------------------------------
+
+# Vertical Transmission and Genetic Nurture with PRS
+
+**Title**: Estimating Vertical Transmission and Genetic Nurture using Polygenic Scores
+
+**Description**:
+
+**Presenter(s)**: Jared Balbona, Yongkang Kim, Matthew Keller
+
+**Level**: Intermediate
+
+**Length**: 21:30
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=w7wB0HsGAJE")
+```
+
+Link to video transcript [here](software_prs_transcript.qmd).

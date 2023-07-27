@@ -1,0 +1,18 @@
+---
+title: "EWAS"
+---
+
+# Epigenome-Wide Association Studies
+
+**Title**: How to Perform Epigenome Wide Association Studies
+
+**Presenter(s)**: Adam Maihofer
+
+**Level**:
+
+**Length**: 21:17
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=uTEfOTHfHpk")
+```

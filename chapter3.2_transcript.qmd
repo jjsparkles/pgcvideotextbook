@@ -1,0 +1,97 @@
+---
+title: "Chapter 3.2: Next Generation Sequencing (Video Transcript)"
+---
+
+# *How to sequence the human genome* {#sec-video1}
+
+**Title**: How to sequence the human genome
+
+**Presenter(s)**: Mark J. Kiel
+
+You've probably heard of the human genome,the huge collection of genes inside each and every one of your cells. You probably also know that we've sequenced the human genome, but what does that actually mean? How do you sequence someone's genome?
+
+*What is a genome*
+
+Let's back up a bit. What is a genome? Well, a genome is all the genes plus some extra that make up an organism. Genes are made up of DNA, and DNA is made up of long, paired strands of A's, T's, C's, and G's. Your genome is the code that your cells use to know how to behave. Cells interacting together make tissues. Tissues cooperating with each other make organs. Organs cooperating with each other make an organism, you!
+
+So, you are who you are in large part because of your genome. The first human genome was sequenced ten years ago and was no easy task. It took two decades to complete, required the effort of hundreds of scientists across dozens of countries, and cost over three billion dollars. But some day very soon, it will be possible to know the sequence of letters that make up your own personal genome all in a matter of minutes and for less than the cost of a pretty nice birthday present. How is that possible? Let's take a closer look. Knowing the sequence of the billions of letters that make up your genome is the goal of genome sequencing. A genome is both really, really big and very, very small. The individual letters of DNA, the A's, T's, G's, and C's, are only eight or ten atoms wide, and they're all packed together into a clump, like a ball of yarn. So, to get all that information out of that tiny space, scientists first have to break the long string of DNA down into smaller pieces.
+
+*DNA binds to DNA*
+
+Each of these pieces is then separated in space and sequenced individually, but how? It's helpful to remember that DNA binds to other DNA if the sequences are the exact opposite of each other. A's bind to T's, and T's bind to A's. G's bind to C's, and C's to G's. If the A-T-G-C sequence of two pieces of DNA are exact opposites, they stick together. Because the genome pieces are so very small, we need some way to increase the signal we can detect from each of the individual letters. In the most common method, scientists use enzymes to make thousands of copies of each genome piece. So, we now have thousands of replicas of each of the genome pieces, all with the same sequence of A's, T's, G's, and C's.
+
+*Reading the genome*
+
+But we have to read them all somehow. To do this, we need to make a batch of special letters, each with a distinct color. A mixture of these special colored letters and enzymes are then added to the genome we're trying to read. At each spot on the genome, one of the special letters binds to its opposite letter, so we now have a double-stranded piece of DNA with a colorful spot at each letter. Scientists then take pictures of each snippet of genome. Seeing the order of the colors allows us to read the sequence. The sequences of each of these millions of pieces of DNA are stitched together using computer programs to create a complete sequence of the entire genome. This isn't the only way to read the letter sequences of pieces of DNA, but it's one of the most common. Of course, just reading the letters in the genome doesn't tell us much. It's kind of like looking through a book written in a language you don't speak. You can recognize all the letters but still have no idea what's going on.
+
+*Interpreting the sequence*
+
+So, the next step is to decipher what the sequence means, how your genome and my genome are different. Interpreting the genes of the genome is the part scientists are still working on. While not every difference is consequential, the sum of these differences is responsible for differences in how we look, what we like, how we act, and even how likely we are to get sick or respond to specific medicines. Better understanding of how disparities between our genomes account for these differences is sure to change the way we think not only about how doctors treat their patients, but also how we treat each other.
+
+# *Next Generation Sequencing: A Step-by-Step Guide to DNA Sequencing* {sec-video2}
+
+**Title**: Next Generation Sequencing: A Step-by-Step Guide to DNA Sequencing
+
+**Presenter(s)**: ClevaLab
+
+The Human Genome Project uncovered all 3.2 billion bases of the human genome. This project started in 1990 and took until 2003  to complete 85 percent of the first genome. But, in 2022, the gaps got filled and the sequence  became complete. So in total, sequencing the human genome took 32 years. Now, with Next Generation sequencing or NGS, it takes only a day to sequence a person's entire genome.
+
+*NGS vs Sanger Sequencing*
+
+One day is a dramatic speed increase compared to 32 years! The difference is due to the number of DNA strands sequenced at once. Billions of DNA strands get sequenced simultaneously using NGS. However, only Sanger sequencing was available for the Human Genome Project. With Sanger Sequencing, only one strand can get sequenced at a time. However, NGS only works because the Human Genome Project created a human reference DNA sequence.
+
+*The Basic Principle of NGS*
+
+The basic principle behind NGS is that DNA can be cut into small pieces and sequenced. The sequences of these small pieces then get assembled based on the reference genome. NGS can be used to sequence both DNA and RNA. First, samples get collected, and the DNA or RNA gets purified.
+
+*DNA and RNA Purification and QC*
+
+Next, the DNA or RNA gets checked to ensure it's pure and undergraded. RNA first needs to be reversed-transcribed into DNA before it can get sequenced. A library then gets prepared from the DNA.
+
+*Library Preparation - The First Step of NGS*
+
+A library is a collection of short DNA fragments from a long stretch of DNA. Libraries get made by cutting the DNA into short pieces of a specified size. This cutting gets done by using high frequency sound waves or enzymes. Then sequences of DNA called adapters get added to each end of a DNA fragment. These adapters contain the information needed for sequencing. They also include an index to identify the sample. Finally, any non-bound adapters get removed, and the library is complete. Depending on the application, there can be a PCR step to  increase the library amount. A successful library will be of the correct size. It will also be of a high enough concentration for sequencing. The main sequencing instruments used in NGS are from Illumina.
+
+*Sequencing by Synthesis and The Sequencing Reaction*
+
+These instruments use a method called sequencing by synthesis. The sequencing occurs on a glass surface of a flow cell. Short pieces of DNA, called oligonucleotides, are bound to the surface of the flow cell. These oligonucleotides match the adapter sequences of the library. First, the library gets denatured to form single DNA strands. Then this Library gets added to the flow cell, which attaches to one of the two aligos. The strand that attaches to the oligo is the forward strand. Next, the reverse strand gets made, and the forward strand gets washed away. The library is now bound to the flow cell. If sequencing started now the fluorescent signal would be too low for detection.
+
+*Cluster Generation From the Library Fragment*
+
+So each unique library fragment needs to get amplified to form clusters. This clonal amplification is by a PCR that happens at a single temperature. Annealing, extension and melting occur by changing the flow cell solution. First, the strands bind to the second oligo on the flow cell to form a bridge. The strands get copied. Then these double-stranded fragments get denatured. This copying and denaturing repeats over and over. Localized clusters get made, and finally, the reverse strands get cut. These strands get washed away, leaving the forward strand ready for sequencing.
+
+*Sequencing of the Forward Strand*
+
+The sequencing primer binds to the forward strands. Next, fluorescent nucleotides G, C, T and A get added to the flow cell along with DNA polymerase. Each nucleotide has a different color fluorescent tag and a terminator. So only one nucleotide can get sequenced at a time. First, the complementary base binds to the sequence. Then the camera reads and records the color of each cluster. Next, a new solution flows in and removes the terminators. The nucleotides and DNA polymerase flowing again, and another nucleotide gets sequenced. These read cycles continue for the number of reads set on the sequencer. Once complete, these read sequences get washed away.
+
+*The First Index is Read*
+
+Then the first index gets sequenced, and washed away. If only a single read is needed, the sequencing ends here. But, for paired-end sequencing, the second index is sequenced, as well as the reverse strand of the library.  
+
+*The Second Index is Read*
+
+There is no primer for the second index read. Instead, a bridge gets created so that the second oligo acts as the primer. The second index is then sequenced. These two index reads use unique dual indices. These allow the use of up to 384 samples in the same flow cell.
+
+*Sequencing of the Reverse Strand*
+
+Next, the reverse strand gets made, and the forward strands are cut and washed away. The reverse strands are then sequenced. Once the sequencing is complete, any bad reads get filtered out.
+
+*Filtering and Mapping of the Reads*
+
+These include the clusters that overlap, lead or lag with sequencing or are of low intensity. The clusters cannot overlap on a patent flow cell, but there can be more than one library fragment per nanowell. These polyclonal wells will also get filtered out. Next, the reads passing the filter get demultiplexed.
+
+*Demultiplexing and Mapping to the Reference*
+
+Demultiplexing uses the attached indexes to identify and sort reads from each sample. Finally, the reads get mapped to the reference genome. The different reads align to the reference genome, overlapping each other. Paired-end sequencing creates two sequencing reads from the same library fragment. During sequence alignment, the alogarithm knows that these reads belong together. Longer stretches of DNA or RNA can get analyzed with greater confidence that the alignment is correct.
+
+*What is Read Depth in NGS?*
+
+Read depth is an essential metric in sequencing. Read depth is the number of reads for a nucleotide. Average read depth is the average depth across the region sequenced. For whole genome sequencing, a 30x average read depth is good. A 1500x average read depth is suitable for detecting rare mutation events in cancer. Another essential metric is coverage. The aim is to have no missing areas across the target DNA.
+
+*How is NGS being used?*
+
+NGS gets used in a wide variety of applications. In diagnosing cancer and rare disease, treatment guidance for cancers, and many research areas from ecology to botany to medical science.
+
+*What Types of NGS Applications Are There?*
+
+Both DNA and RNA can be sequenced. It could be the whole genome or transcriptome, just the coding regions (called exomes) of the DNA, or target genes in the DNA or RNA. All types of RNA can be sequenced including non-coding RNAs such as microRNAs and long non-coding RNA. In addition, cell-free DNA, single cells, as well as methylation or protein binding sites can also get sequenced.

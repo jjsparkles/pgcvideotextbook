@@ -1,0 +1,60 @@
+---
+title: "Chapter 7: Ancestry-Specific Analyses and Considerations"
+---
+
+------------------------------------------------------------------------
+
+# Chapter 7.1: Cross-ancestry analysis {#sec-section1}
+
+**Title**: Cross-ancestry PTSD and Polygenic Findings, and the Cross-Population SIG of the PGC
+
+**Description**:
+
+**Presenter(s)**: Laramie Duncan
+
+**Length**: Video starts at 00:00 and goes until 13:39 (13:39 total)
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=p3m6MM5b-UU&t=148s")
+```
+
+Link to video transcript [here](chapter7_transcript.qmd#sec-video1).
+
+------------------------------------------------------------------------
+
+# Chapter 7.2: Ancestry-specific PRS {#sec-section2}
+
+**Title**: Clinical use of current polygenic risk scores may exacerbate health disparities
+
+**Description**:
+
+**Presenter(s)**: Alicia Martin
+
+**Length**: Video starts at 32:39 and goes to 47:06 (15:45 total)
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=p3m6MM5b-UU&t=2321s")
+```
+
+Link to video transcript [here](chapter7_transcript.qmd#sec-video2).
+
+------------------------------------------------------------------------
+
+# Chapter 7.3: Local Ancestry and Admixed Populations {#sec-section3}
+
+**Title**: Tractor: A framework enabling the well-calibrated genomic analysis of psychiatric traits across admixed populations
+
+**Description**:
+
+**Presenter(s)**: Elizabeth Atkinson
+
+**Length**: Video starts at 14:50 and ends at 32:38 (total 19:28)
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=p3m6MM5b-UU&t=890s")
+```
+
+Link to video transcript [here](chapter7_transcript.qmd#sec-video3).

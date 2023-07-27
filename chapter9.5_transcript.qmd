@@ -1,0 +1,79 @@
+---
+title: "Chapter 9.5: Family-based analysis (Video Transcript)"
+---
+
+**Title**: Univariate/MonoPhenotype Twin Modeling in OpenMx
+
+**Description**:
+
+**Presenter(s)**: Hermine H. Maes
+
+to help you understand how to go about modeling twin data in terms of estimating sources of variance in a phenotype of interest. Now this presentation, as well as various of the slides wouldn't have been possible without help from a variety of my colleagues, including Drs Nick Martin, Elizabeth Prom-Wormley, Lindon Eaves, Tim Bates, Mike Neale, and many others. You can find the files as well as the code with the openMx scripts on this website here that you can freely access and we'll talk more about how it's organized and how to get to the various bits and pieces later on in this talk.
+
+*Question*
+
+So what are we going to address? Question is, does the trait of interest run in families and if so, can this familial resemblance be explained by genetic or by environmental effects, or both? Which sources of variance contribute significantly to the variance of the trait and how much of that trait variation is accounted for by either genetic or environmental factors?
+
+*Road map*
+
+Here I'll provide a little road map for what we call univariate or mono-phenotype analysis. These are analysis of a single phenotype using twin data, so there are basically different steps in this process. The first step is used the data to test some basic assumptions about the models, including whether or not means and variances between twin 1 and twin 2, as well as for MZ and DZ pairs. mono- and dizygotic twin pairs can be equated. We call this a saturated model. Next, we will want to estimate the contributions of genetic versus environmental factors on the total variance of a phenotype. So we'll delve into both ACE or ADE models? And I'll just explain in a minute what these acronyms stand for and then finally we test various sub models of these ACE and ADE models to identify and report significant genetic and environmental contributions. So these would be considered an AE, CE or E only model. Hopefully this will become clear during the rest of this presentation.
+
+*Data*
+
+The practical example that we'll be using relies on a data set from the NH&MRC twin registry in Australia, kindly provided by Dr Martin. Data come from the 1981 questionnaire and we will focus on data of BMI which stands for Body mass index and is measured as weight divided by height squared and it's a measure of obesity. Today we will focus on the young female cohort. Those are between the ages of 18 and 30 years old and you see the sample sizes here. We have 534 monozygotic female twin pairs and 328 by dizygotic female twin pairs.
+
+*Variables*
+
+This is what a data set looks like, and this is obviously straight from R where we just are showing the first top rows of this data set, representing in each row a pair of twins. As you can tell by the list of variables where we have, for example, wt1, wt2, representing the weight measured in twin 1 and twin 2 of the same pair. Of course we also have zygosity as well as age. part indicates participation, so we include both pairs were both have been completed measurements as well as those were only one completed measurements.
+
+*Naming conventions*
+
+Here are some of my naming conventions and these are my naming conventions, which means that you can change them and you can use your own, but I've tried to use a number of consistent ways to explain these scripts and use the same ones across, so it makes it easier to translate from one script to the next. So the name of variables is called vars and nv stands for the number of variables and nth for number of twin variables, because most of the analyses here will deal with twin data. selVars for the vars or the variables that are selected for the particular analysis, or covers for definition variables which typically are used to include covariates, and sv for start values, lb for lower bounds. I mean, these are pretty obvious. Also, the model names are quite important as you'll see and so we will try to name them specifically to the kind of model that we're applying, and so we will change name with something that is more descriptive about each of the models.
+
+*Classical twin study*
+
+So today we're going to fit some basic twin models, so it makes sense to talk a little bit about the classical twin study and provide you a little bit of background for those who are not that familiar with it. The Classical Twins Study, CTS is sometimes also referred to as the classical twin design or CTD uses MZ and DZ twin pairs reared together where MZ or monozygotic twins share 100% of their genes while DZ twins share on average only 50% of their genes. So, given that we know this information, there is the expectation that genetic factors are assumed to contribute to a phenotype when MZ Twins or more similar for a trait than DZ twins. Let's unpack that a little bit.
+
+*Variance*
+
+So what we're interested in is the variance, how much people differ from one another and better. Those differences can be ascribed to either genetic or environmental factors, so we want to partition the phenotypic variance into genetic and environmental components, where the total variance of V is the sum of the variance components assuming that these effects can be added up and are independent of one another and we'll talk about some ways in which that can be evaluated or tested later on. You will often hear about the concept of heritability denoted as h\^2, which is the proportion of this total variance that's due to genetic influences. It's important to remember that this is a property of the group not an individual, and as it's also specific to that group in place and in time.
+
+*Sources of variance*
+
+So you'll hear me talk a lot about different sources of variance in the rest of this talk, and I've color coded them consistently. Such as the red refers to the genetic factors where we have additive genetic factors as the majority of the genetic factors, they basically are the sum of all the average effects of single alleles at all the individual loci. But there could potentially be some dominance resulting from the interaction between alleles at the same locus, which we refer to as D or VD or d\^2. These are alternative ways in which people refer to them with they typically mean the same thing. The environmental factors can also be broken down into two sources, one that we refer to as C, the common environment. These are aspects of the environment that are shared by family members which contribute to similarity between relatives, and that's the key part here. So they are shared and they increase similarity. In contrast, the other environmental factors that I denote in yellow here, the E component, these are unique environmental factors, unique to an individual that contribute to variation even within a family. They are also referred to as the specific, unique, or within family factors.
+
+*Assumptions*
+
+Now what we'll be doing is fitting models today, but every model comes along with a variety of assumptions, and so does the classical twin study design. And some of these will list here. The equal environment assumption is quite critical, and it assumes that MZs and DZs experience the same degree of environmental factors or that they create the same level of similarity in MZs and DZs, with respect to factors that have a direct impact of the trait of interest. Other assumptions include those of random mating, no genotype by environment correlation, no genotype by environment interaction, no sex limitation or no genotype by age interaction. Several of these can be addressed with more complicated models that we will address in future videos.
+
+*Classical twin assumptions*
+
+Now, in addition, there are some basic data assumptions associated with the classical twin study. We assume that monozygotic and dizygotic twins are sampled from the same population. Therefore, we expect equal means and equal variances in twin 1 and twin 2, which are supposed to be randomly assigned. We also expect to find equal means and variances in monozygotic and dizygotic twins. Now there could be further assumptions needed that we will introduce when we introduce more complicated models that include other for example, male twins or opposite sex twins or a variety of other variables.
+
+*Descriptive statistics*
+
+Now let's have a look at some actual numbers that you could get out of collecting data from twins. So what we have here is some descriptive statistics we could come up. We could calculate the means for both twin 1 and twin 2 in MZ twins as well as in DZ twins and we can workout what the expected covariance matrix looks like. Of course a covariance matrix is always symmetric with variances on the diagonal, and the covariances on the off-diagonal elements. Now when we look at these observed values, the question is, does it look like the means can be equated across twin 1 and twin 2 and across MZs and Dis, and the same for variances? We can do some old fashioned data checking, but we really need to test this properly, which is what we're going to do next.
+
+*Saturated model*
+
+So how do we test this? We do this by fitting what we call is a saturated model that basically just estimates the means, the variances and the covariances in our data, and so because we're dealing with two groups of data that potentially have different expectations, at least with respect to their covariance, we are inherently fitting a multigroup model, and so we have a separate group for MZs and for DZs. In each group we estimate the mean of twin 1 and twin 2, the variance of twin 1 and twin 2, as well as the covariance. This model is described in the code called oneSATc.R, indicating we're having one phenotype, sat for saturated model and c because currently we're dealing with continuous data. These models can also be applied to ordinal or binary data, but we'll talk about that later.
+
+*Fitting models*
+
+Now before we go on and look at the script, let's talk just a tiny little bit about how we go about fitting models and you've seen a little bit of this in a different video that introduces the various concepts of likelihood and parameter estimation. But just a quick refresher. Likelihood is the probability that an observation or data point is predicted by a specified model, which is basically what we're doing here. So what we're doing is trying to estimate by maximum likelihood, the best values for the parameters in the model. In this case for a saturated model, the mean, the variances and covariances, possibly some covariates as well. So how do we go about this? We typically define a model first. We then define the probability of observing a given event conditional on a particular set of parameters, and then we choose the set of parameters which are most likely to have produced the observed results.
+
+*Likelihood ratio test*
+
+After calculating a likelihood, we can also use this likelihood to compare it to the likelihood of a different model and construct what we call a likelihood ratio test, which is a simple comparison of the likelihoods under the separate models, and actually, in practice, it typically is a comparison of the log-likelihoods under two models, because that has slightly better properties. So we typically have an unconstrained model, which we call here Mu that has more parameters than the constraint model which has fewer parameters. And then the likelihood ratio statistic equals the difference or basically twice the difference between the likelihoods. or the log-likelihood of the unconstrained and the constrained model. And this likelihood ratio is asymptotically distributed as a Chi square with its degrees of freedom equal to the number of constraints. Hopefully this will make more sense when we use this in practice.
+
+*Probability density function*
+
+So it's also useful to remember is that this is based on the probability density function, which describes the distribution of a range of values of a continuous measure that are considered to be normally distributed. So Phi of xi is the likelihood of a data point, for example xi, for a particular set of mean and variance estimates. So based on the values that we provide for the mean and the variance, we can workout the likelihood of any particular data point and then we can sum across all these likelihoods of all the different data points to get the total likelihood of our model. And basically for any particular data point, it's the height of this probability density function that provides us the likelihood of that particular data point.
+
+*Multivariate situation*
+
+Now remember that we're dealing here with not a single distribution of a single variable, but we have variables for twin 1 and twin 2, and so we're talking about the likelihood of a pair of data points X & Y, that we will work out in the context of a particular set of means, variances and correlation estimates, so we're talking here about the multivariate situation or the height of the multi normal probability density function which is described here.
+
+*Conclusion*
+
+So this is our quick basic introduction with some background as to how we go about fitting or setting up models in openMx and the next video will show you the specific steps we go through in the code to set up a saturated model that estimates the means, variances, and covariances of continuous data in MZ and DZ Twins. Thank you very much.

@@ -1,0 +1,112 @@
+---
+title: "Chapter 10: Other Considerations"
+---
+
+------------------------------------------------------------------------
+
+# 10.1 A Career in Psychiatric Genetics {#sec-section1}
+
+**Title**: How does Genetics Affect our Mental Health?
+
+**Description**:
+
+**Presenter(s)**: Cathryn Lewis, Alex Curmi
+
+**Level**: Beginner
+
+**Length**: 58:54
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=8jtoLRmC5F4")
+```
+
+Link to video transcript [here](chapter10.1_transcript.qmd).
+
+------------------------------------------------------------------------
+
+# 10.2 Caution in Genetic Prediction {#sec-section2}
+
+**Title**: Predicting the likelihood of future psychiatric disorders: a closer look, and some cautions.
+
+**Description**:
+
+**Presenter(s)**: Howard Edenberg
+
+**Level**: Beginner
+
+**Length**: 4:30
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=P8Odk5HuY50")
+```
+
+Link to video transcript [here](chapter10.2_transcript.qmd).
+
+------------------------------------------------------------------------
+
+# 10.3 Small Effect Sizes {#sec-section3}
+
+**Title**: Small effect sizes
+
+**Description**:
+
+**Presenter(s)**: Howard Edenberg
+
+**Level**: Beginner
+
+**Length**: 4:05
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=l5tsUyhXjt4")
+```
+
+Link to video transcript [here](chapter10.3_transcript.qmd).
+
+------------------------------------------------------------------------
+
+# 10.4 Language in Genetics Research {#sec-section4}
+
+**Title**:
+
+**Description**:
+
+**Presenter(s)**: Carina Seah, Kayla Townsley
+
+**Level**: Beginner
+
+**Length**:
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=bxCV2Z5i_yI&t=8s")
+```
+
+Link to video transcript
+
+------------------------------------------------------------------------
+
+# 10.5 Equitable Collaboration for LMIC Researchers {#sec-section5}
+
+------------------------------------------------------------------------
+
+# 10.6 GDPR for Dummies: A Survival Guide for Genetics Research {#sec-section6}
+
+**Title**: GDPR for dummies: A survival guide for genetics research
+
+**Description**:
+
+**Presenter(s)**: Heidi Beate Bentzen
+
+**Level**: Beginner
+
+**Length**: 23:46
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=bxCV2Z5i_yI&t=8s")
+```
+
+Link to video transcript [here](chapter10.6_transcript.qmd).

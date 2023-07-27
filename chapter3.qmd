@@ -1,0 +1,62 @@
+---
+title: "Chapter 3: Technologies"
+---
+
+------------------------------------------------------------------------
+
+## 3.1 SNP array genotyping {#sec-section1}
+
+**Title**: SNP Chips (Introduction to genomics theory)
+
+**Description**: This part is focused on understanding the SNP chip technology. We talk about the general idea behind them, and how they work and why are they useful.
+
+**Presenter(s)**: Gábor Mészáros, Genomics Boot Camp
+
+**Length**: 28:05
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=PeFOjLEJkrA")
+```
+
+Link to video transcript [here](chapter3.1_transcript.qmd).
+
+Powerpoint slides for this video are available [here](https://github.com/GenomicsBootCamp/IntroductionToGenomics).
+
+------------------------------------------------------------------------
+
+## 3.2 Next Generation Sequencing {#sec-section2}
+
+### *How to sequence the human genome*
+
+**Title**: How to sequence the human genome
+
+**Description**: Your genome, every human's genome, consists of a unique DNA sequence of A's, T's, C's and G's that tell your cells how to operate. Thanks to technological advances, scientists are now able to know the sequence of letters that makes up an individual genome relatively quickly and inexpensively. Mark J. Kiel takes an in-depth look at the science behind the sequence.
+
+**Presenter(s)**: Mark J. Kiel
+
+**Length**: 5:04
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=MvuYATh7Y74")
+```
+
+Link to video transcript [here](chapter3.2_transcript.qmd#sec-video1).
+
+### *Next Generation Sequencing: A Step-by-Step Guide to DNA Sequencing*
+
+**Title**: Next Generation Sequencing: A Step-by-Step Guide to DNA Sequencing
+
+**Description**: Next Generation Sequencing (NGS) is used to sequence both DNA and RNA. Billions of DNA strands get sequenced simultaneously using NGS. Whereas with Sanger Sequencing, only one strand is sequenced at a time. While the Human Genome Project took over 30 years to sequence the human genome for the first time. Now with Next Generation Sequencing, a whole human genome can be sequenced in just one day. This video describes the library preparation process, cluster generation, the sequencing reaction and filtering and alignment of the sequencing data. This video focuses on the primary sequencing method used by Illumina, Sequencing by Synthesis (SBS).
+
+**Presenter(s)**: ClevaLab
+
+**Length**: 7:37
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=WKAUtJQ69n8")
+```
+
+Link to video transcript [here](chapter3.2_transcript.qmd#sec-video2).

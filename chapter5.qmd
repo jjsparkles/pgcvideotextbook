@@ -1,0 +1,218 @@
+---
+title: "Chapter 5: GWAS analysis"
+---
+
+------------------------------------------------------------------------
+
+# 5.1 Quality Control {#sec-section1}
+
+Goals of this section:
+
+> 1.  Understand the basis of genotyping quality control and why it is important.
+>
+> 2.  Understand the basic pre-imputation quality control steps (missingness, Hardy-Weinberg outliers, heterozygosity, relatedness, population stratification).
+>
+> 3.  Understand various considerations for each step of quality control, based on your data.
+
+## Quality control: Introduction
+
+**Title**: Quality control
+
+**Description**: This video provides a brief introduction to the logic of the steps of QC (how genetic data are generated for subsequent QC, briefly what each step of the QC does, and why these steps are useful and necessary for future analyses of cleaned-up data)
+
+**Presenter(s)**: Katrina Grasby (katrina.grasby\@qimrberghofer.edu.au) and Lucía Colodro Conde (Lucia.ColodroConde\@qimrberghofer.edu.au), from the 2021 International Statistical Genetics Workshop hosted by the Institute for Behavioral Genetics at the University of Colorado, Boulder.
+
+**Level**: Beginner friendly
+
+**Length**: 16:34
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=xkA0qRxfDLs")
+```
+
+Link to video transcript [here](chapter5.1_transcript.qmd#sec-video1).
+
+------------------------------------------------------------------------
+
+## Running Quality Control on Genotype Data
+
+**Title**: How to run Quality Control on Genome-Wide Genotyping Data
+
+**Description**: Another nice QC guide which provides overviews of dealing with missingness, relatedness, and population stratification.
+
+**Presenter(s)**: Jonathan Coleman (jonathan.coleman\@kcl.ac.uk)
+
+**Level**: Beginner friendly
+
+**Length**: 16:19
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=NitxWRvNCWs")
+```
+
+Link to video transcript [here](chapter5.1_transcript.qmd#sec-video2).
+
+------------------------------------------------------------------------
+
+## Considerations for Genotyping QC
+
+**Title**: Considerations for genotyping, quality control, and imputation in GWAS
+
+**Description**: This video provides key steps of QC for the GWAS data, similarly to videos above, but it additionally discusses steps of quality controlling imputed data and factors affecting imputation (starting at 25:57)
+
+**Author**: Ayşe Demirkan (a.demirkan\@surrey.ac.uk)
+
+**Level**: Beginner friendly
+
+**Length**: 33:21
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=oFFWFWXEOhA&list=PLi2PVGG1ibsYfE8ZCJf1ZfYHs0rhHORPY&index=2")
+```
+
+Link to video transcript [here](chapter5.1_transcript.qmd#sec-video3).
+
+------------------------------------------------------------------------
+
+# 5.2 Imputation {#sec-section2}
+
+Goals of this section:
+
+> 1.  Be
+
+## Imputation Introduction
+
+**Title**: Haplotypes and Imputation
+
+**Description**: Introduction to haplotypes and imputation. This video explains the concepts of phasing and imputation in an easily understandable way.
+
+**Presenter(s)**: Dr. Gábor Mészáros, University of Natural Resources and Life Sciences, Vienna.
+
+**Level**: Beginner friendly
+
+**Length**: 19:25
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=BlA8lXnnzAw")
+```
+
+Link to video transcript [here](chapter5.2_transcript.qmd#sec-video1).
+
+------------------------------------------------------------------------
+
+## Imputation Steps
+
+**Title**: Imputation
+
+**Description**: This video talks about the steps needed for imputation, including the imputation reference panels, common softwares for phasing and imputation, imputation servers, content in the output files from imputation, and brief explanation of imputation accuracy parameters (r2 or INFO).\
+\
+**Presenter(s)**: Dr. Sarah Medland, Queensland Institute of Medical Research.
+
+**Level**: Beginner friendly
+
+**Length**: 16:21
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=Lxw_gb3VPPo&t=623s")
+```
+
+Link to video transcript [here](chapter5.2_transcript.qmd#sec-video2).
+
+------------------------------------------------------------------------
+
+## Imputation Deep-Dive
+
+**Title**: An Introduction to Genotype Imputation
+
+**Description**: This video talks about the details and math behind imputation, for example, why choosing imputation when you can sequence, as well as the Hidden Markov Model for imputation. *Note*: The imputation-related content ends at 32:07. After this, the speaker talks about best programming practice.
+
+**Presenter(s):** Dr. Brian Browning, University of Washington.
+
+**Level:** Intermediate/Advanced level.
+
+**Length**: 44:37
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=-oUvXXg6tl8")
+```
+
+Link to video transcript [here](chapter5.2_transcript.qmd#sec-video3).
+
+------------------------------------------------------------------------
+
+# 5.3 Association Testing {#sec-section3}
+
+Goals of this section:
+
+> 1.  Understand
+
+## The Biometrical Model & Basic Statistics
+
+**Title**: Biometrical Model and Basic Statistics
+
+**Decription**: This video presents an overview of a biometrical model.
+
+**Presenter(s)**: Benjamin Neale (bneale\@partners.org)
+
+**Level**: Beginner friendly
+
+**Length**: 34:09
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=f6qJBEAjDLE")
+```
+
+Link to video transcript [here](chapter5.3_transcript.qmd#sec-video1).
+
+------------------------------------------------------------------------
+
+## Hypothesis Testing, Effect Sizes, and Statistical Power
+
+**Title**: Hypothesis Testing, Effect Sizes, and Statistical Power
+
+**Description**: An introduction to association testing, effect sizes, statistical power, and how to calculate power
+
+**Presenter(s)**: Brad Verhulst: bverhulst\@vcu.edu
+
+**Level**: Intermediate
+
+**Length**: 35:52
+
+```{r, echo=FALSE}
+library("vembedr") 
+embed_url("https://www.youtube.com/watch?v=YjrbXEG_ps4")
+```
+
+Link to video transcript [here](chapter5.3_transcript.qmd#sec-video2).
+
+------------------------------------------------------------------------
+
+# 5.4: Meta-Analysis {#sec-section4}
+
+Goals of this section:
+
+> 1.  Understand
+
+**Title**: Genome-wide association study design and interpretation
+
+**Description**:
+
+**Presenter(s)**: Gina Peloso, Broad Institute
+
+**Level**:
+
+**Length**: 55:39
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=xw419NKqMqw")
+```
+
+Link to video transcript [here](chapter5.4_transcript.qmd).

@@ -1,0 +1,23 @@
+---
+title: "Chapter 8.6: Quantitative Trait Loci (Video Transcript)"
+---
+
+# General Introduction to GWAS Studies and eQTL Analysis
+
+## GWAS Studies and eQTL Analysis {#sec-video1}
+
+# Expression Quantitative Trait loci (eQTLs)
+
+## Introduction to expression quantitative trait loci
+
+### MPG Primer {#sec-video2}
+
+TItle: MPG Primer: Introduction to expression quantitative trait loci (2021).
+
+Description: This video introduces expression quantitative trait loci (eQTL) analysis, discusses how to address batch effects and covariate correction, and control for false discovery rate.
+
+Presenter(s): Francois Auget - Broad Institute
+
+### eQTLs, genes, and molecular networks {#sec-video3}
+
+# From SNPs to Genes {#sec-video4}

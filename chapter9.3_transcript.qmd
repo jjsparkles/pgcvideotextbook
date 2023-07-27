@@ -1,0 +1,2241 @@
+---
+title: "Chapter 9.3: 9.3 Genomic Structural Equation Modeling (Video Transcript)"
+---
+
+------------------------------------------------------------------------
+
+# Genomic SEM Introduction
+
+## Genomic Structural Equation Modeling: A Brief Introduction {#sec-video1}
+
+**Title**: Genomic Structural Equation Modeling: A Brief Introduction
+
+**Presenter(s)**: Andrew Grotzinger
+
+*Introduction*
+
+In this first video, I want to provide a brief overview of genomic structural equation modeling, including some of the background and motivations that led us to develop this package.
+
+*Graphs*
+
+I'm going to start here by showing these two different graphs that show on the X axis, the discovery sample size from different GWAS studies and on the Y axis, the number of hits identified in this studies. And what you'll notice is that as the sample size have increased, we have begun to identify hundreds if not now, thousands of different genetic variants associated with both complex traits like height and BMI and disease traits, like Crohn's disease and prostate cancer, which really reflects this gradual realization that we've had in human complex trade genomics, that many of the outcomes that we're interested in are highly polygenic, meaning that they are associated with many genes and not just some small handful of core genes. For those of us that are interested in the shared genetic relationships across traits this comes with the caveat that it's not simply a matter of identifying the five or six overlapping genes.
+
+*Limitations*
+
+So for my self, as somebody who's interested in clinical psychology outcomes, I couldn't simply look at these two Manhattan plots for schizophrenia and depression, which just to orient you to these, to the chromosome on the X axis and the negative log 10 P values with values that are higher up over here indicating genetic variants that are more significant. That I can't just count up the ones that are above this red dash line here for genome-wide significance. Cause there's simply too many. So we needed at some point to develop methods that find ways to estimate the aggregate shared information across these really polygenic outcomes.
+
+*LD Score Regression*
+
+And thankfully A team from the Broad, including some people who are talking at this workshop developed this method called LD score regression which can be used to estimate genetic correlations across participants samples with varying degrees of sample overlap, using what is often publicly available, GWAS summary data. As in, you can go online right now and directly download that data without going through any sort of strenuous request process or going through an IRB.
+
+*Genetic Heat Maps*
+
+When LD score regression is applied, it can be used to produce what is often referred to as genetic heat maps. Two of which are shown here. So on the left, we have the genetic correlations estimated across psychiatric phenotypes with the squares that are shown with darker shading, indicating stronger levels of genetic overlap. And of course the squares on the diagnoal and all are shown in dark blue because that indicates the genic overlap of the phenotype with itself. So you see that across a number of these disorders, that there are high levels of genetic correlation. And that this is also reflected in general brain and behavioral, cognitive phenotypes shown this heat map over here on the right. And so this reflects one of the second things thatwe've realized in human complex trait, genetics, which is that there is both pervasive, polygenicity, which is say that the traits are affected by many genetic variants and there's pervasive pleiotropy, which is to say that many of those variants are actually shared across traits. And this shared genetic architecture that we can see depicted here in these heat maps is really what motivated myself and others to come together and develop methods that allow us to actually analyze that joint genetic architecture. So again, genome-wide methods are clearly suggestive of these two things, high polygenicity necessity, and pervasive pleiotropy. And we've viewed genetic correlations as data to be modeled. We want it to be able to ask what kind of data generating processes give rise to these correlations and how can we use publicly available data, to examine systems of relationships, to really start to interrogate that data more. And so that what led us to develop genomic structural equation modeling, which we introduced in this nature, human behavior paper that involved a lot of key members on the team. But I'll specifically highlight Michel Nivard and Elliot Tucker-Drob, who supervise this project and continue to work with me to develop extensions on it and of course, Michel is also one of the people presenting here.
+
+*Genomic SEM*
+
+So our solution to this problem of how we model the genetic correlation matrix is genomic SEM which applies structural equation models to these estimated genetic covariance matrices, and then allows the user to examine traits that oftentimes could not be measured in the same sample and it provides a flexible framework for really estimating a limitless number of models using only these GWAS summary statistics. That again, can be applied to summary stats or what is often referred to as sumstats with varying and unknown degrees of sample overlap.
+
+*Example*
+
+I just want to focus on one specific example for time reasons related to my main interest in clinical psychology and this reflects our most recent application of genomic SEM to psychiatric outcomes, where we produce this genetic heat map across 11 major psychiatric disorders. And what you see is there's a pretty high level of genetic overlap across these disorders. And what is really unique about this is that many of these disorders cannot be measured in the same sample. So bipolar disorder and schizophrenia, the way that we structured our clinical diagnoses, you can't have that same set of disorders within the same person. You're either assigned one or the other based on your presentation. And so that means we've been limited in clinical psychology research to making inferences about what is shared across these disorders based on patterns of findings from separate samples. Where now for the first time, genomic SEM offers this unique opportunity to actually model the set of relationships across these rare and even mutually exclusive clinical presentations. Because again, The summary statistics that were used to produce this heat map are not from the same sample, but instead reflect the aggregate summary level data from these different cohorts . When we then applied genomic SEM to model these relationships, we found that a four factor model fit the data best. And this actually mapped on pretty well too some level of what we might expect based on the clinical presentations of these disorders. So for factor one, we have anorexia obsessive compulsive disorder and Tourette's syndrome that we might characterize as being really defined by this kind of compulsive, like presentation. With the psychotic disorders of schizophrenia and bipolar disorder. What we're calling a neurodevelopmental disorders factor because it's defined primarily by ADHD and autism, but also notably includes PTSD and alcohol use disorder. And then this internalizing disorders factor over here that includes MDD, anxiety and PTSD. And I would note that these factors are all correlated, but they also segregate into these more tightly defined clusters of sets of disorders, giving rise to some level of understanding about what is shared across these specific subsets of psychiatric presentations. We can also use genomic SEM to examine individual SNP effects on the factors. And so when we then apply what we referred to, as multi-variate GWAS to these factors, it can be used to produce these 4 Miami plots here. Where I'm depicting with the black triangles, the GWAS hits that overlap with the univariate hits and in red triangles, the GWAS hits that were actually not hits for the individual disorders. And this is reflecting that by leveraging the shared information across the disorders that define the factor, without collecting any new data, we can actually discover new genetic variants associated with these factors. On the bottom half of these Miami plods, I'm showing the effect of Q SNP which is a heterogeneity index that we've developed that is designed to pick out those genetic variants that do not fit the factor model. As a classic example, we generally pull out the ADH1b gene that is associated with alcohol use disorder, specifically as something that is a Q SNP variant, which is to say that this is something that does not operate via these more general factors, but it's highly specific to alcohol use disorder. And we'll talk more about Q SNP in some of these later videos it was. And so sales pitch to genomic SEM I think one of the really. Amazing opportunities that genetics and genomics SEM building on methods like LD score regression presents is the ability to examine systems of relationships across a wide array of rare traits that could not be measured in the same sample. To give an example of research question, you might have that you could not do outside of a genetic space.
+
+Let's say that you're interested in the genetics of early and late onset schizophrenia and anorexia nervosa. You have some sense of research literature that indicates that a particular onset stage of anorexia nervosa can sometimes contain a psychotic like presentation and you also recognize that these things can have distinct developmental onset periods that means something about the course of these diseases. And so you want to look at this cross-lagged model that examines the systems or relationships across these presentations within the disorder and across these two disorders.
+
+You could collect a sample where you look at the relationship between early onset schizophrenia and anorexia nervosa and in the same vein, late onset schizophrenia and later onset anorexia nervosa. But that would take you a long time to collect just because of how rare these two disorders are. What you could not do is look at the relationship outside of a genetic space between the early and late onset versions of the same disorder. But again, when GWAS summary data, you could split the GWAS data by age of onset and then you could estimate the genetic overlap of the signal between the early and late onset versions of this disorder and so now with genomic SEM You can actually estimate this model and answer these sorts of research questions that again, would not even be possible outside of a genetic space.
+
+*Summary*
+
+This final slide is just to highlight the different ways in which genomic SEM has been used. Including some work that I've been involved in, but also works from other outside research groups that are published in high-impact journals, like molecular psychiatry, nature genetics, cell, and nature human behavior. I really hope that some of you see some opportunity to use genomic SEM in your own research. In the next videos, we'll talk more about how structural equation modeling works and provide some hands-on examples of how to apply genomic SEM to actual genetic summary data.
+
+------------------------------------------------------------------------
+
+# Running Genomic SEM
+
+------------------------------------------------------------------------
+
+## Short Primer on Structural Equation Modeling (SEM) in Lavaan {#sec-video2}
+
+**Title**: Short Primer on Structural Equation Modeling (SEM) in Lavaan
+
+**Presenter(s)**: Andrew Grotzinger
+
+In this video, we're going to talk about some of the basics of structural equation modeling and more specifically how to do  structural equation modeling and Lavaan which is the art package that genomic SEM uses to estimate the models.
+
+To start, let's go over some of the basic model syntax for Lavaan, beginning with how to specify a regression relationship, which you could write as Y till the X, which visually depicted as a path diagram would mean X predicting Y with this single headed area. And depending on how you think about variables in your model, you might think of that as reflecting a \~ DB. Dependent \~ the independent outcome \~ predictor. But of course he would name these according to the actual names of the variables in your data set. This is just to drive home the point that the outcome is on the left-hand side of this equation and the predictor is on the right-hand side of the, \~ the over here. To specify a variance of a variable. You would write the name of that variable twice with two \~ in between. So X \~\~ the X would specify the variance of X or the covariance of X with itself to specify the covariance between two different variables you would also use two \~ and on the right-hand side, you would write the name of that second variable in this case, Y. Which is a path diagram would reflect this two headed arrow between X and Y. And then the standardized case would of course reflect the correlation between these two variables.
+
+To specify factor loadings which refers to the regression relationships between this unobserved lightened factor and these observed variables, a through E, which we'll talk a little bit more about later in this presentation, you would write F and then equal sign \~ and then a through E you can name the latent factor however you want. In this case, we've just called it F and of course, A-E should again, reflect whatever the names of the actual variables are in your data set but this is generally speaking the schematic for how you would specify the factor loadings in a model. Just a note to say that the default behavior in Lavaan  is to fix the loading of the first variable to one and this is necessary because since F is not a variable in your dataset, Lavaan and structural equation modeling more generally needs some sort of anchoring point so that it knows what kind of scale to put this latent factor on. So again, unless you tell it to do otherwise, Lavaan we'll fix that loading for the first variable to one. So it knows how to scale the latent factor. And as another note, just in general and structural equation, modeling squares are used to depict observed variables, such as the variables here for A through E and circles are used to depict an observed or what is often referred to as latent variables. And that can include latent factors like the latent factor F over here or, for example, the residual variances of observed variables where the observed variable is something that is observed in your data set and the residual variance is not. And so for that reason is generally depicted as a circle.
+
+To fix a parameter in a Lavaan model, you would write the value that you're fixing it to on the right-hand side of the equation, followed by an asterisks, and then whatever variable name comes on that side. You always put the value you're fixing into on the right-hand side. So you would not write one star X, \~\~ Y but what this specifically does here is it fixes the covariance in between X and Y to one. You can also name a parameter in lavaan and to do that, you also put an asterisks on the right hand side of the equation, but then, you would also include whatever you're naming that parameter, which should just be some set of letters. So I could call this dog, cat, a, rain drop. You just have to name it something that doesn't overlap with the actual names of the variables in your dataset. So this names, the covariance between X and Y to be a, and that's useful because then you can, in the later part of your model use what is referred to as model constraints for a particular parameter. So let's say that for some reason, you know, that X and Y is covariance should be above zero, but you don't know exactly what that number should be. So you're not fixing the value to anything in particular, but you are telling the lavaan that that value should be above this particular number of .001. Just a cautionary note on naming parameters, I've seen a number of people use the same parameter label for multiple parts of the model and oftentimes this was done unintentionally on their part and the reason that that can is a problem is because when you name it with the same label, a here, that's not just naming the covariance between X and Y. And the covariance is between Y and Z. It's also telling Lavaan that you want to fix these two covariances to be estimated at the same value. So if you do want to name multiple parameters in the model. You just want to make sure to name them different things, unless you are intentionally trying to use what is referred to generally as inequality constraint. So this is a, what not to do unless you are trying to make these parameters be the same. Having reviewed all of these Lavaan basics. And I just want to go through some of the concepts and basics of structural equation modeling, and then continue to use this lavaan syntax along the way as we review those basics.
+
+To start, I want to Begin in this hypothetical space where we're talking about a situation that we would not run into in which we actually know what the relationships are between the variables. So here let's say that we know that the regression relationship between X and Y is 0.4 and that Y as a residual variance of 0.84, which would imply this particular set of relationships were Y equals 0.4 times X plus this residual U. If we extend that out to say that, right we know that Y causes Z of 0.6 that would add on this additional notation of Z equals 0.6 times Y plus U. And so this would imply a particular covariance matrix in the population. This set of relationships where this isn't a standardized space on the diagonal we have the variances of the variables, which are one. And then on the off diagonals, we have the Relationship between X and Y at 0.4, between Y and Z of 0.6 and the relationship between X and Z in a structural equation model. And this case would be 0.4 times 0.6 or .24. In practice, we, of course don't have access to the covariance matrix in the population, but instead we have a particular covariance matrix within a sample, which is intended to be a rough approximation of the population that we're interested in studying.
+
+And so again, in practice, we have this observed covariance matrix in our sample. Instead of knowing these relationships, we're then flipping that process on its head. And we're saying that we want the model to pick the values within this system of relationships that we've specified that most closely, approximate the covariance matrix in our sample. With an structural equation modeling. You'll hear people talk about the degrees of freedom at the model, and that refers to how many parameters you estimated relative to how many parameters you could have estimated given the unique elements in the covariance matrix. So for three variable covariance matrix, you have six unique elements which refers to the three variances on the diagonal and the three covariances on the off diagonal. And in our model, we've only estimated five of those parameters where specifically we did not estimate the regression or covariance relationship between X and Z. So that means we have one degree of freedom and can be thought of as specifying a model that provides a more parsimonious or simplified set of relationships relative to what we observe in the data. To specify this model Lavaan using that notation that we just went over for the regression relationship between X and Y. We would write Y \~ X over here in blue and for Y and Z the same thing, but Z \~Y.
+
+So in practice again, what lavaan and what SEM softwares are doing more generally is they're taking this observed covariance matrix and the system of relationships that you've specified and they're picking the numbers that get as close as possible to that observed covariance matrix, which in this case would be.35, and 0.61. And that would imply a certain covariance matrix. And the level of difference between these two matrices is often what is used to produce what is referred to as model fit, which  is something we'll talk about in later videos. As we talked about earlier, you can also specify latent factors in a data set, which reflects the shared variation across a certain set of variables, such as Y one through Y five here. And I would just note that we're actually employing a different notation than we used earlier, where were specifying the factor loadings again with the name of the factor F =\~ And then the name of the variables that define the factor, but we're overriding that default Lavaan behavior to fix the indicator the first variable to one by writing NA\*Y1, and then we're instead anchoring that part of the model or scaling it by telling Lavaan that we want to fix the latent variance of the factor to one. So we're using what is referred to as unit variance identification instead of what we used before, when we fixed the loading of Y1 to one, which is referred to as unit loading identification. Not something that you need to keep in your working memory at all times, but just something for you to know as an option. And this particular part can be important if you're specifying, let's say correlations between factors, where if you set the variance of the factor to one, then that means they're on a standardized scale and you can interpret those relationships as correlations.
+
+Now here, we're just showing what if you want to expand this out to include the relationships between two latent factors. And so again, in Lavaan syntax, you would right for the latent factor F1 here this part of the model here in blue F1 =\~Y1+Y2+Y3+Y4+Y5 the regression relationship between F2 and F1 this part here in purple and for the latent factor model for Factor 2, F2=\~Z1+Z2+Z3+Z4+Z5. What genomic SEM does is it uses the principles of structural equation modeling to fit a model to the genetic covariance matrix. So it's a two-stage process where in stage one, that genetic, covariance matrix and its associated matrix of standard errors and their co-dependencies are estimated where we specifically use LD score regression and stage two, we fit that structural equation model to the matrices from stage one using Lavaan and the basic principles of structural equation modeling. I know this was a fairly brief overview, but hopefully it provided the basic notation to use Lavaan syntax and understand a little bit about what the SEM process looks like. And so in the next talk, we'll go over how it is that we actually estimate this genetic covariance matrix and that set of standard errors.
+
+### 
+
+------------------------------------------------------------------------
+
+## GenomicSEM: Input {#sec-video3}
+
+**Title**: GenomicSEM: Input/Explaining how S and V are estimated and what they are
+
+**Presenter(s)**: Michel Nivard
+
+What goes into genomic SEM before you can actually fit a structural equation model. So it's basically a class on how the sausage  is made, right? So some of these things are details that are good as background, Good for you to understand, once you use genomic SEM. But basically stuff that's largely handled by internal functions of genomic SEM. so it means you don't have to do   anything like this by hand and to discuss what goes into genomic SEM. It's good to discuss two other things. Namely, what kind of information goes into a structural equation model in general? Right. You can use raw data, but you could also use the covariance matrix of the raw data to fit the structural equation model or a regression model, as we'll see in the example. And it's good to discuss what LD score aggression is exactly. It's a very commonly used technique to estimate genetic co-variance and or heritability. And it actually is one of the main ways genomic SEM can estimate from raw GWAS data. So raw, summary statistics the genetic covariance between traits and the heritabilities, which you can then use to fit a structural equation model too. Okay. So first we'll discuss what kind of information goes into a structural equation model. And, show you that basically you can either use raw data to get a structural equation model to work, but you can also use, the covariance matrix of that raw data. And that's an important conceptual step, right? Because if you understand that you can later understand why we can fit structural equation models while we don't observe any raw data in genomic SEM. And with raw data. I mean, phenotypic observations, we don't observe those at all in genomic SEM. The only thing that goes in is the GWAS summary data.
+
+So now we'll switch over to, R and i'll through a little example in which I create a dataset and then fit a structural equation model. And then I'll take only the covariance matrix of the dataset and fit the same structural equation model to illustrate. what goes on in such an example, I didn't really clear my workspace before, so let's do that so we have a fresh start. The first thing we'll do in this, R script this we'll will require some, packages I need to generate some data and to fit structural equation model. So the mass package allows me to generate data from distributions and lavaan will allow me to fit structural equation models. Okay, then we'll run these, we'll also run this line, which States that variable N is 10,000 we'll use the variable N for sample size all throughout the example. Then we'll generate three random variables, X one X, two, and X three. And we'll also generate random variable, Y which is a function of X one X, two X three, and some residual variance that's not attributable to all those variables. So what does variable Y look like something like this, what does X one look like? Well X one was normal, right? This, we just generated from a random, normal variable. This is what it looks like. Okay. We'll combine all those variables into a dataset, right? The dataset just keeps together all the variables in one place. Now the variables also have a relationship because that's the way we define them. Right. So we could make a plot of Y against X one, and we'd see there be some sort of  relationship where if X one is higher, Then Y is also, which is exactly what we expect given that we just made Y a function of X one. Right? Okay. Now on these data, we can fit linear regression model, which I do right here in which we regress Y on X one on X two, and X three. And we know what will come out of the linear regression model. Why? Because we just defined the relationship between Y and X. Right. We defined the relationship as Y being equal to 0.4 times X one, .5 times X two and minus 0.2 times X three. So if you run the model, Oh, I forgot to run the 'dataset' line, this is instructive. You know, when you, when you, when you're programming, you'll always make mistakes. I'm not going to cut it out of the video. Cause I think it's instructive to know just that we also had just, you know, messed this up all the time. Maybe it's not that instructive, but I messed this up all the time. Okay. So now I've run the lines we need to, to run a linear model, as you can see, this is the way you would define a model in R Andrew has a video up on how you can define Models in lavaan, but in R, the regression model uses a tilde as an equation sign and "+" to add additive terms. And so this linear model using the function, LM it's fit, linear regression, and we can get a summary using the summary function, applied to the object in which the linear model is stored. Now, as you  may expect the coefficients we get from the model are very close to the values we use to generate the data their not exact because generating random data, also introduce a slight bits of noise. so X one gets an estimate of point 40, which is its true value. Thereabouts, X two gets point 49 , while the true value is 0.5 and then X three gets minus point 16 while the true value is minus 0.2 so they're all close to there, true value, which is great. the linear model works, which is, I guess not entirely unexpected, you can fit the linear model. The same model; whoops, spelling error. You'll get this code by the way. I'll make sure it's available. You can fit the same model in lavaan using dis as a, as a descriptor of the model. Okay. Andrew went through the syntax for lavaan. So you should be able to understand this, but I'm going to read it out. Anyway. It basically defines one regression. Y is regressed on X one X, two and X three, and then explicitly defines the covariance between X one X two X one X three. And actually I just noticed it should also include the covariance between X two and X three okay. And then using "sem()", which is the lavaan function and adding the dataset, we created, the raw data the the observed data, to the data argument we can fit the SEM model and let's have a look. Now, a structural equation model is capable of estimating the same parameters as  a regression model. So here you go. Y regressed on X 1, 0.4 Y regressed on X 2 point 49 and Y regressed on X 3 minus 0.16.
+
+So, this is just a very convoluted, indirect way to fit the same model. Now notice, because this is a, this is a structure equation model we could fit many, many more models with these, four variables, we'd be flexible. We could, we could say: "well, actually, Y is an outcome of X one, two and three, but we suspect X two to be an outcome of X three." Right. And we could fit a mediation model in which Y is regressed on all three variables. And the X two was regressed on X three. we could define that model and we could see what the parameter fit is. That's the flexibility you have in lavaan or a structural equation model, or later in genomic SEM, but which you don't have in a linear regression model. That's not the point of this tutorial. So let's get back to the point.
+
+I can create the covariance between the variables in the dataset using cov() function in R right? And I'll get this object Sigma, which has the covariance in it. Now, if we look at Sigma, we'll see a matrix with covariances between Y and X one and X two and X three. Okay. We can actually feed that covariance matrix. To lavaan so we use the same SEM function, the same model. Now, instead of giving it raw data, we're giving it the covariance matrix and we're giving it the number of observations because it needs to know how precisely all the elements in the covariance matrix are fit. And we can run these and we'll get exactly the same or very similar outputs.  Right. It is, I am running this on SEM model 2. Right. So is this the model that doesn't know about the raw data just knows about the covariance and, you get the same regression parameters. Now, this works because in A SEM model you defined a covariance, the cells of the covariance matrix in terms of the regression parameters. And then you ask the model to seek out the regression parameters that minimize the distance between the observed covariance matrix in the data and the covariance matrix implied by the model. And so we don't need the raw data we could do with the covariance. Now it's nice to have the raw data, because sometimes you have missing data points or other sort of things going on where there's extra information hidden in the raw data. That's not hidden in the covariance matrix. So it many cases it's, it's far more valuable to have to raw data, but if you don't, you can fit these kinds of models on the covariance matrix.
+
+Okay. Let's go back to the presentation. So when you go over to that, you can, fit structural equation model based on the covariances only. And that's a valid input for, a structural equation model. Now the input for genomic SEM are genetic covariances, which we get from GWAS summary data, right? So only from a vector of each SNP "rs" number the effect alllel, so which of the two alleles is actually increasing or decreasing the trades the Z statistic associated with that allele so that's the statistic of the linear regression association in the GWAS, and that's all, all we're puttingin to getting the covariances. Now we'll get those genetic covariances and heritabilities. Using LD score regression now, what is LD score regression? LD score regression actually tries to explain the signal that is created in a GWAS. So this is a Manhattanplot of a GWAS of schizophrenia and these hits highlighted in green. They only explained 4% of variability, but the heritability, according to twin studies, Is 80%. So how do we go about explaining the rest? So if we visualize the same GWAS as a QQ-plot, we'd see that the observed P values are much smaller.so therefore the minus log P values are bigger than what is expected under the expected distribution of a Z statistic, and so the question we ask is, is this, this inflation right? Is this true signal or is it type one error that we'd like mess something up that we're getting all these false positives. And that's the question we're asking ourselves when we're using LD score regression. And so just really important ingredient for LD score regression is the, the LD structure of the genome. So what I've tried to depict here is a part of the genome and each dark. Blue square is a SNP and the lighter blue squares depict the correlations between the adjacent SNPs and LD introduces correlations between adjacent SNPs, which I'm sure has been covered in the days before this person, patient. This also is what creates these towers in, in Manhattan plots right? Because. If one of these SNPs is associated truly with the trait, then then do to LD other ones become correlated with the trade. So you can summarize these LD patterns into a score, which is basically for every SNP, just the sum of its LD with all its neighbors. That's basically to reflect how well the SNP is correlated to all the SNPS around it, and then consider there is a true genetic effect. Right, so on the left you can see I called this beta. So it's a true effect. So none of these SNPs has an effect, except for this one, it has a tiny effect. If this were the true effect and we were to do a GWAS, we would get estimated betas, and so we get something like this where we estimate the beta  for the SNP with the true effect to be non-zero, but also for all the SNPs that are in LD with the SNP, with the true effect, we'd expect a estimate of beta. Those are sort of raised. Now, what happens on the genome wide scale is that those test statistics you could derive from, from the linear regression of a trait on every SNP, they go up for SNPs that have more LD and they'd go up precisely because. So many SNPs in the genome are associated with the traits, right? " that if you "tag" more SNPs as a SNP, you are more likely to tag more true causal SNPs, and therefore your that's, your signal goes up and your test statistic goes up and it goes up in a very specific fashion. It goes up proportional to the heritability, to the number of with a true effect M, and with the sample size, right? Because Power goes up when the N goes up. And so if the sample size goes up, the relationship between test statistics and LD scores goes up as well.
+
+So, and by the way down, there are Hilary Finucane, Brandon Bulik-Sullivan, Ben Neale, and Alkes Price, who basically wrote the first few papers on this relationship. So going back to the little squares i made the Chi square statistics you get from your GWAS they are regressed on LD scores, which reflect how well each SNP tags it's neighbors SNPs that tag more neighbors are expected to have higher test statistics. And then the slope of that regression is reflective of the heritability because the other big unknowns in that equation sample size and M are known to us, right, because we know how big the GWAS was, and then there's an intercept which actually reflects things that do not correlate with LD scores such as population stratification. Which is a very neat feature. So now we can separate the true signal from the signal introduced by population stratification.
+
+So how did they go about validating this? They actually did a GWAS of Swedish controls versus UK controls. So neither of these sets of people have this disease, but they different mainly in their ancestry. And as you can see on the right hand side the QQ plot of the GWAS, it does look inflated. It does look like there is signal there that is inconsistent with the distribution of test statistics under the null, however, if they plot the LD score, Of all the SNPs, in bins against the death statistic in these bins, then there's no relationship. In other words, the test statistic doesn't go up with the LD, which means the signal is probably not a function of heritability, but a function of something else in this case, population stratification.
+
+Now, if you do it with the real  GWAS, like the schizophrenia GWAS we've discussed you see that there is a steep and consistent correlation between the LD score bin a SNP is in the mean chi square the SNPs in each of these bins have. So the relationship is strong and it's actually consistent with a SNP heritability for schizophrenia of like 40% and 90% of the signal is true. Okay. So that's how we get an estimate of heritability, GWAS summary statistics, the slope estimates, the heritability. And if we have two traits, we get two slopes, but can also, instead of using chi square test statistic, used a product of the Z statistics of the two traits, regress that on the LD score to get an estimate of genetic covariance between traits. So, this is an example where the rg is 0.5. We got a slope consistent with that RG genetic correlation. And this is an example of why the RG is zero. We get a slope consistent with there being zero correlation. Okay. And it's robust, this, this entire technique to sample overlap between the GWAS. Now, why is that? Because this intercept in the case of genetic covariance will actually absorb the sample overlap. So it's  great. We can use GWASes from the same sample to estimate genetic correlation between traits or we can use entirely different samples, so we can correlate some MRI study to some metabolite study. Right. And that's insightful because it's really expensive to measure MRI and metabolites in the same. People and not always feasible.
+
+Okay. Phase three of this lecture, what kind of information goes into a genomic structure equation model? Well, so these heritabilities and genetic covariances, we have estimated are actually assembled into a matrix S which holds the genetic variance covariance matrix. So the top left entry is the heritability, the first trait and all across the diagonal, we get heritabilities of the other traits and the off diagonal entries are the covariances between the traits. Now as we've seen at the very beginning of this lecture, a covariance matrix is sufficient to estimate a structural equation model. However, if we use a covariance matrix to estimate a structural equation model in lavaan, we need the sample size. Now these estimates don't necessarily really have a sample size. Yes, the underlying GWAS has a sample size, but that doesn't translate directly into a precision or standard error for these heritabilities. And so we need that information to be presented in a different way. So for every entry in this matrix, S we actually need to know it's standard error or its variance, and we also need to know the covariance between the different estimates. Right. So imagine I estimate the heritability off height and BMI in one sample then those two heritability estimates are interdependent, right? Because it's the same people in that sample that feed into those two estimates, and that dependency needs to be taken account off. That's what we do in constructing this matrix V which basically has the squared standard errors or the variances off the heritabilities and genetic covariances on, on the diagonal. So all the elements of S have a diagonal element in V that corresponds to their standard error or their squared standard error, or variance. And then the off diagonal elements in V are actually the dependencies between the elements of S at this matrix takes a while to compute, but it's basically computed in a very smart fashion that's called Jack knifing in which we basically estimate the LD score regression in chunks of the genome, 200 chunks of the genome. And then we sample from those 200 chunks of the genome. We sample combinations of 199 chunks, and we estimate the matrix S 200 times. Each time omiting a different part of the genome, which gets us an estimate of the variance of all these elements in S and their covariance. Those, we store in V and then S and V are the matrices that actually go into genomic SEM now that sounds really hard and complex and computationally it is luckily others have solved the wonders of how to compute this for us. And so we can very easily implement it let me just show you.
+
+In a browser. How is this done in genomic SEM it's in the Wiki page of the genomic SEM GitHub chapter three: models without individual SNP effects. And it basically starts by preparing the GWAS summary data we get, which is couple of lines of code. Right, which gets us like the summary statistics in a standardized format. So LD score will know how to read them. And then after that's done all, we need to tell LD score regression within genomic SEM is where to find, in this case, the summary statistics for psychiatric diseases. What the sample prevalence is of these diseases are in the respective GWASes what the population prevalence of the traits are in the population where it can find these, these LD scores I've been discussing what I want my traits to be named. And then I just run the function "ldsc()" and everything we just discussed. The estimating of S the estimating of V is done automatically, and it's stored in an object, which you can then use to start running genomic SEM models. It also means you don't need to rerun all those steps. You can store the object, you create it, so you don't need to rerun LD score all the time.
+
+Okay. Thank you for joining us for this lecture And catch you in the next one.
+
+------------------------------------------------------------------------
+
+## Examples on the Genomic SEM wiki {#sec-video4}
+
+**Title**: Working through examples on the Genomic SEM wiki one by one: munge, ldsc, usermodel functions
+
+**Presenter(s)**: Michel Nivard
+
+Introduction
+
+**Hi. And welcome to this tutorial on   genomic SEM and specifically a tutorial**
+
+on fitting genomics and models without  an individual snip effect. And today's  
+
+video is on. how to perform those models. We also  have written a Wiki page on the GitHub. Right.  
+
+So navigate to Github.com/GenomicSEM/GenomicSEM  then click on the header Wiki. And you'll find.  
+
+A number of tutorial, pages or pages with  instructions, how to perform analyses in  
+
+GenomicSEM. And actually the third chapter of the  Wiki is models without individual snip effects.  
+
+And that's what we're discussing. In this video  and actually we're running the code from this  
+
+tutorial. Right. And what the code will do it  will. First download GWAS a summary data for,  
+
+for a number of psychiatric disorders,  specifically bipolar schizophrenia,  
+
+depression. PTSD and anxiety disorder.  We'll clean those summary statistics   
+
+in, in the sense that , we'll take them from their  format as they'r oploaded by the authors in those  
+
+formats can vary quite a bit between authors.  And groups and put them into a single uniform.  
+
+format This step we call munching. Then we'll  take a step in which we'll compute The genetic  
+
+covariance matrix using LD score regression  and we'll compute the matrix of. Standard  
+
+errors associated with. Genetical variances and  covariances as discussed in a previous video,  
+
+right. We had a video about computing, the  matrix , S, the covariance matrix and the  
+
+matrix V. Which is the covariance matrix of all   the elements in the covariance matrix once those  
+
+two steps are done. We can actually start fitting  models. Well first fit the Common factor model.  
+
+And then we'll manually fit a model with a  common factor that loads on to schizophrenia.  
+
+Bipolar MDD, PTSD and anxiety and add a second  factor. As an illustration. And basically allow  
+
+you guys at home to follow along now to follow  along. You'll need to download Summary data.  
+
+And this is a neat trick. If you're on  a Mac or Linux machine. You can actually  
+
+run. Command line scripts. In a terminal  in "R" right. So I've written this script.  
+
+To download the LD scores we'll need for LD score  regression, a list of HapMap SNPs. Which is the  
+
+list of high-quality SNPs. We'll use for LD score  regression. And also, the GWAS summary data from  
+
+either the PGC website or from James Walters  group. Who did a Cloz UK? GWAS of schizophrenia.  
+
+And unzip all those GWAS summary data. Now, this  will take quite a while to run across. It's like  
+
+three gigabytes of data you have to pull  in from the internet. I've already ran it.  
+
+So that's the step we're going to assume you do  
+
+yourself at home Okay. Without further ado,  let's move over to the script for this video.  
+
+And as a first step in this script, I'll  require genomic SEM and the package data.Table.  
+
+And I will require data table because one  of the files. Has a column. That's sort of.  
+
+Not easy to work with in it's SNP column.  It actually has RSID and basepair and   
+
+chromosome and allele A1 and allele A2  concatenated together as one variable.  
+
+And that's not what we want. We want. A  specific variable. That's only the RSID  
+
+for the SNP. And so step zero is to prepare.  Specifically that schizophrenia GWAS and   
+
+pull out the rs id's from that one column. And  I've written a bit of code here to do that.  
+
+And it will take quite a while to run and it will  heat up my computer a bit. So there. We go and  
+
+I'll. Then have to patiently wait for this code  to run before we can actually take the next step.  
+
+munge
+
+Okay. That code has managed to run and we've  prepared the summary data for further processing.  
+
+Now we are ready to munge. So the munge function  takes a number of arguments. Let's look at the  
+
+help page real quickly. And we try to be good  about updating the help pages, but all of us.  
+
+Developer for Genomic SEM, have an actual career  on the side in which you have to do science. So  
+
+they may lag behind Sometimes . Or they miss.  Certain information. So basically munge is a   
+
+function that processes. GWAS data and prepares  them for LD score regresison. So we'll take  
+
+in those large GWAS summary data files and it'll  write out. Smaller processed. Files, which are.  
+
+Ready for use in LD score regression. Okay. So the  first. Arguments is called files and it actually  
+
+just is a vector of file names. Which are the  names of the Gus files you're going to process.  
+
+Right. And the second argument is  HM3, HapMap3. And it's basically.  
+
+I don't know why we call it. HM3. We could have  called it filter or, you know SNPs or selection  
+
+or whatever, but it's argument you use too provide  a list of SNPs you think are high quality,  
+
+sNPs or highly efficiently imputed SNPs. And  for LD score regression people have commonly  
+
+used those HapMap3 SNPs. Because they're well  imputed. They behave well So we trust. LD score  
+
+regression analyses based on these SNPs will  be. Good reflection of heritability or genetic  
+
+correlation between traits. Okay. The next  argument. Is a vector of names for your traits.  
+
+Gotta be said: pick memorable names because  you'll need those names later. They'll The prefix  
+
+for the file names. Okay. So very long strings of  unintelligible things are probably not useful.  
+
+Especially if you return to a project in  seven months and you've called something  
+
+flip flop, flip. Then you won't know what  it is, whereas if you call it. SCZ for  
+
+schizophrenia or BIP for bipolar. You might  still recall. What the file was you processed,  
+
+though? It's better to rely on scripts. then too  rely on file names then. A vector of sample sizes.  
+
+An info filter. For. Files that if these, GWAS   files, have an info column. It will filter SNPs   
+
+with an info below 0.9. And a minor allele  frequency filter. If these files have a minor  
+
+allele frequency column, it will filter SNPs  with an minorly frequency. Below 0.01. Now I say  
+
+if, because not all GWASes come with info  and MAF. Columns. And so you will have to.  
+
+Work with what you've got. Right. And this  is another reason to consider those high  
+
+quality HapMap3 SNPs, because sometimes you are  simply unable to filter. On things like info,  
+
+which reflects imputation quality. Or minor  allele frequency. Okay. Let's run this code.  
+
+I should have started running it. While I was  talking, but I didn't. So. Now we'll have to wait  
+
+a bit to. And as you can see. While its running  it will keep you up to date via the terminal.  
+
+And it will also write. A log file. And. Usually  takes a few minutes. About a minutes per file.  
+
+Which isn't that long, but if you're  fitting models with like 50 traits,  
+
+it will take 50 minutes. Right. So as a, as a  rule of thumb, As many minutes , as you have  
+
+traits and depending on how many traits you   have, he may go for a cup of coffee. You may just  
+
+check your Twitter, or you may just want  to, you know, take the afternoon off.  
+
+And have a nice long hike. Okay. So the munge. in  LD score regression is done it took. 12 minutes.  
+
+A bit longer than I expected, but that's probably  because I'm screen recording at the same time. And  
+
+if you scroll back up a bit and, or look at  the log file, it has produced. You'll see. It  
+
+tells you what it's doing and munging five.  summary statistics files. Time it started.  
+
+Names of the files, which may be important if  you have a lot of file names that are similar,  
+
+make sure the right files are read in and it  will then tell you for each column in each file.  
+
+What it's interpreted in it as so it finds a  column. "SNP". And it says I'm interpreting   
+
+that as the SNP. And other files. I  may find something like SNPID. And it  
+
+will actually know that that's probably SNP.  Makes sense for you to go through this file  
+
+and check whether the things. It's doing. Are  correct right So important to check whether these  
+
+column names are? What you want them to be?  Or are interpreted as you want them to be.  
+
+Then it will start filtering. remove rows  that are in. The summary statistics file,  
+
+but not in the HapMap3 SNP lists , the snips  we think are high quality SNP of want to  
+
+keep. It will then determine effect Column. To  either be an odds ratio or a beta, it will do  
+
+this by determining the mean or the median of the  column. Overall snips of the median is around one  
+
+or two meanness around one and we'll  think, well, that's an alternate show.  
+
+If the mean, or the median is around zero. it  will asuume that that's actually a. Beta. Right.  
+
+And. Makes sense for you to double check   whether it's doing this correctly. Okay.  
+
+And. So usually for a paper. You would take  an hour, half an hour to go through these.  
+
+Log files and make sure everything's done  correctly. Once you've run. LD score regression.  
+
+Your working directory will contain sumstats.gz  files which are like 12 or 13 megabytes. They're  
+
+far smaller than GWAS summary statistics  because they only contain five columns.  
+
+Removing all the excess information you don't  need. And they only contained 1.3 million SNPs.  
+
+Now mind you, if the overlap between yourGWAS  and the HapMap SNPs is only like 150,000 SNPS.  
+
+You don't want to run LD score regression. You  want to figure out why the overlap is so small.  
+
+Right. So it's also one of the things,   the log will report to you. It's how many.  
+
+SNPS are deleted for what reason? Now. This  example I'm in here. Three and 260,000 SNPs  
+
+where removed from the bipolar GWAS because  the info. Doesn't cross the threshold of 0.6.  
+
+Right. So that's. The reason for exclusion.  You can go back to the bipolar file and  
+
+manually check whether that's true. If, if  you somehow suspect. There's something amiss  
+
+with your bipolar file or your analysis. For LD  score regression needed to find some arguments.  
+
+First for argument is which traits we're going  to use. The sample prevalences of the GWASes,  
+
+Now Andrew has been so kind. At some point  to check these out and look this up and.  
+
+Well, he had to. We were using them in the   original genomics SEM paper. And then,  
+
+then also the associated population  prevalence of these disorders. So here,  
+
+we're assuming schizophrenia as a 1% population  prevalence bipolar has a 1% population prevalence.  
+
+And for example, MDD, has a 16%? Population  preference. And then you will also need to point  
+
+LD score regression to where it can actually  find the LD scores, which as we've shown before,  
+
+have been downloaded from the internets and  then you define trait names. at this step,  
+
+the trait names you define will be your variable  names in your model later. So definitely here you  
+
+want to choose. Memorable names. Okay, let's run  this. Which again will take a few minutes. But,  
+
+you know, But the magic of video editing, I can  omit those minutes and make this video move along  
+
+rapidly. But you may want to go an have cup of  coffee. Okay, that finished running. And if you  
+
+scroll back up a bit, you can see that. It will  produce sort of information for you to consider,  
+
+right. It will tell you. Okay You mean chi- square  across the SNPs for the MDD sumstats is one  
+
+point in 26, Lambda GC, a metric off genome-wide  inflation. The LD score intercept, which is   
+
+supposed to be one, an excess of one is actually a  metrical population stratification in your GWAS.  
+
+It will report the heritability. On the observed  scale and the heritability's Z statistic now.  
+
+It will do so for all the heritabilities   and genetic covariances right. And at the  
+
+bottom. I will report Genetic correlations and  heritabilities. All of this is those are written  
+
+to a log. Which you can consider at your leisure   and make sure that everything's correct. Before  
+
+you consider even publishing. Genomic SEM results.  Now let's have a look at what was created by this  
+
+LD score regression function. So we're going to  do some ad hoc. Inspection of this R object the  
+
+LDSCoutput is where you've stored. the output a  few of your LD score regression and it contains  
+
+a matrix V. And the matrix S and the matrix Five  by five and it's a genetic governance matrix.  
+
+So let's have a look. The row names of the matrix  are the variable names and on the diagonal,  
+
+you'll find the heritabilities of the  traits on the liability scale, because it  
+
+converted the observed scale heritabilities to   reliability scale using the population. And.  
+
+Sample prevalences. You can find the details of  that in Grotzinger et al on how that does that.  
+
+And on the offdiagonal elements, you'll   find the covariances between these traits.  
+
+No. As Andrew was discussed in another video.  And I have discussed in the other video as well.  
+
+Structural equation model actually takes the  covariance matrix as observed in the data. And  
+
+the covariance matrix implied by your model and  tries to pick the parameters for the model such.  
+
+That it minimizes the distance between those two  covariance matrices. And that's what we're going  
+
+to do right now. The first model will fit. I'm  going to safe. This output. Right. So we don't  
+
+common factor
+
+have to rerun all those slow steps again. The  first model will fit. is a common factor , which  
+
+is basically the model you'll see here. Which  says that a single latent factor explains.  
+
+The covariance between the psychiatric  disorders we're considering now such a model.  
+
+In some people's eyes. And I think that's  a really reasonable perspective. carries a  
+
+strong causal implication named me that there  is a shared cause. of these traits. Right.  
+
+And we can get into how you can actually test  whether that's a reasonable hypothesis. Later.  
+
+Now we're just going to run the model okay. Let's  run the common factor now running. Muddle doesn't  
+
+model output
+
+really take that long. 0.7 seconds to be  exact. Now you can imagine if you run   
+
+a GWAS with 10 million SNPs. 0.7 seconds. times  ten million. It's actually quite a bit of time.  
+
+And then we'd want to parallelize it and   run it on, on a cluster computer perhaps.  
+
+But right now for this. SNP less model. It doesn't  matter. And so the output you get from. Let me  
+
+just resize the window here so we can like check  the output out. From. LD score regression is.  
+
+No object within it. some model fits. That you  can consider. To compare two models. For example,  
+
+the difference in chi-squares and degrees of  freedom. You can test significance, test. I'm  
+
+different than your models. If the mdeols are not  nestedit. You can consider the AIC. To compare  
+
+models and then there is the CFI. and SRMR,  which are. Not relative metrics of two models,  
+
+but absolute metrics. And I refer you to the  literature or the Wiki page or our articles for  
+
+details on how to interpret. These metrics and  wherher you consider something good. This will  
+
+also depend on your application. And many factors.  I also encouraged you to be strict on yourself.  
+
+And not just consider something good   cause you wants the model to be good, but  
+
+I can only encourage you to do so. And if you  pick me as a reviewer, I will compel you to do  
+
+so. So, you know, Careful what you wish for in  listing me as a reviewer on your genomic SEM.  
+
+Article. I'm pretty sure the other Genomic   SEM authors are similarly inclined. So,  
+
+you know, you'll have to deal with someone's.  Neuroses about fit statistics. Then the other.  
+
+Part of the model. Output is actually the  parameters, right? So this is the loading  
+
+of Schizophrenia the first factor F1.  And this is the value of the loading.  
+
+It's a standard error and this is the  standardized loading.. Standardized loading   
+
+also has standard error. And there's a B value.  Very significant parameter. If you are too.  
+
+You were interested in. Destiny department  you'll get factor loadings. But you also get  
+
+residual variances. And so.residual variances, are  variances in the traits that are not explained.  
+
+by. The factor and they're on the scale of the  original heritability. So 9% of the variance. in  
+
+bipolar disorder is not explained by the latent  factor. Okay. Good to know. Goods let's move on.  
+
+This was a single common factor model. And we've  been so kind to define a function specifically.  
+
+fitting models
+
+For you to use to fit the common   factor model, but in many cases you  
+
+may want to fit a different model.  Right. So to get into, get into the   
+
+habits or fitting our own models. We're going to  start by defining a common factor model. Now. You  
+
+should really, if you haven't watched Andrew's  video on lavaan syntax, you should pause now  
+
+and go watch that video. And then come back  because we're going to use lavaan syntax,  
+
+and I'm going to assume you understand  it because he has already explained it.  
+
+Right. So please do that and comeback. Okay, well,  If you're still here. You had watched the video  
+
+ready? You're just back. Welcome back. Here we  define a common factor model we define it as.  
+
+latent factor F1. Which is measured by that's  what this, this. Equal sign plus tilde means   
+
+measured by schizophrenia, bipolar, MDD, PTSD, and  anxiety. Right. factor causes variance in those.  
+
+Disorders. And then we also define factor  variance. to be one. We fix it to be one. Now  
+
+it's an identifying characteristic. We need  to fix the variance of the factor to one,  
+
+or we need to fix one of the loadings on one of  the indicator for disorders to one. And let's  
+
+run. common factor model. Using. The code for user  model. . The codes are actually designed to read  
+
+your model. Which may be different than a single   factor model and fit it to the data. And so  
+
+we've already seen the fit of the model and  those of you who've seen, seen model fits  
+
+before will know. That's. S R M R Point 22 is  pretty high in a CFI. point 85 pretty low. So  
+
+the fit of the model to the data is not great.  And we can try and improve the fit to the model.  
+
+Okay, so we can try and fit. Another model.  And to determine what kind of model we should  
+
+fit. We should definitely try and check out  what the, what the residual co-variants is, are.  
+
+In the model. And so one of the arguments we  can add to udermodel. Is imp_cov and it will give  
+
+us the implied covariance matrix. We'll set that  argument to true. And we'll rerun the model. Now.  
+
+Doing so. gives us. The model implied covariance  matrix and a difference between the model implied  
+
+and the observed covariance matrix, right. Which  we calculate as observed minus implied. And it  
+
+will tell us. Where there is still covariance   between traits that is not explained well by the  
+
+model. And if we look at this matrix, we'll see  that there's actually. Slides. Well, actually,  
+
+maybe a substantial residual correlation between  MDD and anxiety, which are very similar disorders.  
+
+And their covariance isn't explained by only the  common factor. And so a model we could consider.  
+
+Is a model in which we allow a residual   covariance to exist between MDD. And.  
+
+Anxiety. And we'll call it.common factor model  two. We'll call it output. common factor self  
+
+two. Right. To distinguish it from the previous  model. And we can check whether this model fits  
+
+the data better. lets go, lets run it and scroll  up and figure out. Whether there's anything. In  
+
+terms of model fit tat improves. Well, Wow.  So the CFI of this model, it was point 98,  
+
+which is way higher than the one before.  Right. We can look back was like point 85. And  
+
+S R M R is . Way lower. So that those are in   the correct direction. That's what you want.  
+
+The model fits the data better. If we allow for  residual covariance between MDD and anxiety.  
+
+So the last bit of this video went a bit chaotic.  But that's what you get. If you ad hoc try to  
+
+fit a new model. You can. Try and improve the  model further. Or yourself you could consider.  
+
+Whether they are still residual. A genetic  correlation between schizophrenia bipolar.  
+
+Maybe you removed to genetic residual correlation  between anxiety and MDD, all kinds of things you  
+
+can consider. And I encourage you to try.  And some of those things we may introduce  
+
+**in life practicals in June. Thank you for  watching and catch you in the next one.**
+
+------------------------------------------------------------------------
+
+## Multivariate GWAS in Genomic SEM {#sec-video5}
+
+**Title**: Multivariate GWAS in Genomic SEM
+
+**Presenter(s)**: Andrew Grotzinger
+
+**In this video, we'll be talking   about how to perform multi-variate GWAS   using genomic SEM. Multivariate GWAS  consists of four primary steps. The first**
+
+one being munging the summary statistics,  which we'll talk about in just a second,   the second to run multi-variable LD score  regression within genomic structural equation   
+
+modeling to obtain the genetic covariance and  sampling covariance matrices across the GWAS  
+
+summary statistics. And note to say that these  first two steps mirror the steps that you would  
+
+go through to estimate a model without individual  SNP effects. Including for the user model and   
+
+common factor functions that Michel talked about  in the previous video and do not need to be   run again. Just for the purposes of running a  multi-variate GWAS. And the third step you'll  
+
+prepare the summary statistics for multi-variate  GWAS using the sumstats function. And finally,  
+
+you'll actually run the multi-variate  GWAS using common factor or userGWASs.  
+
+For this example, we're going to use the five  psychiatric traits from the GitHub example for the   P factor across schizophrenia, bipolar disorder,  major depressive disorder, PTSD, and anxiety.  
+
+And these are all publicly available summary  stats that are directly available for download   The first step again is to manage the data  where munge literally just refers to the general  
+
+process of converting raw data from one form to  another. Munge primarily converting the summary  
+
+statistics, Z statistics. It's aligning all  the summary stats, the same reference, allele.  
+
+And it's restricting them to hapmap3 SNPs, both  because these tend to be well imputed and even  
+
+with just those 1.1 million hapmap3 SNPs you tend  to get a reasonable estimate of the heritability.  
+
+So sometimes people will be really   concerned when they have this large set   of eight to 10 million SNPs and then they run  it through munge and they only have about one  
+
+million SNPs left, but this   isn't cause for concern,   because that is enough to get an accurate  estimate of heritability using the LDSC equation.  
+
+When you run munge it's going to produce   a dot log file for each of your traits.   And this is something that's important to check,  just to make sure all of your columns are being  
+
+interpreted correctly. I think in general, there  can be this push to plug forward with the results  
+
+and not really take a look at your data or some  of these log files that are produced by different  
+
+packages, but you definitely want to make sure  before going through all of the additional steps  
+
+that the data is being read in appropriately.  And one particular thing that I've highlighted   here is for case control traits, you really  want to make sure that that effect column  
+
+is being interpreted correctly  as either an odds ratio or not.   So for MDD I know that this is an odds ratio and  I see that the munge function is interpreting that  
+
+as such. I just want to go over to R now just  to walk through this code as we go along.  
+
+So up here, I've just set the working directory  to where I've stored all of these files. This will  
+
+look a little bit different in terms of how you  do this if you're on something that's not a Mac   operating system and then I load in genomic  SEM and also this function data dot table.  
+
+Before running munge something I want to  highlight is that I actually have to do something   to this schizophrenia summary statistics so  that munge can read this data appropriately.  
+
+So I've already read in the schizophrenia   summary statistics using F read. And if you  
+
+look at a particular row within schizophrenia,  you'll see that within that SNP column, it's    not just the RSID identifier for that SNP but it's  in the format of RSID. Colon based pear colon   
+
+a one colon eight two. And that's not something  that munge is going to know how to read. So   prior to actually running munge I use these two  lines of code to first split that SNP column so  
+
+it's just pulling out the RSID using string split  and sapply, and then writing out a new GWAS file  
+
+titled scz_withRS. And then for munge we list the  files, the hpmap3 lists the names of the traits  
+
+and then the total sample size before running  munge this is not something I'm going to do right   now just for time reasons and because Michel will  have gone over it in the previous video, but just  
+
+to show you what the code looks like for this  first step. Switching back over to our slides,   
+
+the next step is, is going to be to run  LD score regression, which computes that   genetic covariance and sampling covariance matrix  that was discussed in one of Michel's videos.  
+
+So this is The level of genetic overlap across  these different traits is estimated using LD  
+
+score regression. And then also the standard  errors and dependencies across those estimates  
+
+as will be the case when there is sample  overlap. And this sampling covariance matrix    is what allows genomic SEM to produce accurate  estimates, even in the face of unknown levels of  
+
+sample overlap across your traits. I'll just note  that before going on to steps three and four,  
+
+I would highly recommend pausing at step two  and actually fitting what I sometimes call  
+
+the base model using the user model or common   factor functions, that model that doesn't include  
+
+the effect of an individual SNP on different  parameters in the model, just to make sure that   you're getting reasonable estimates, that it fits  well and that lavaan or genomic SEM don't produce  
+
+any warnings or errors about this particular  model, because odds are when you then carry   that model forward to multivariate GWAS a lot of  the same problems are going to start to show up.  
+
+So you just want to diagnose that right. Make  sure you've got this solid base model and then   carry that forward to multi-variate GWAS and  step four. So going back over to the R script.  
+
+LD score regression takes the names of the month  summary statistics for the case control trades. It  
+
+takes the sample prevalence of cases over the  total sample size, the population prevalence,  
+
+which can be pulled from the research literature,  the LD scores and the weights used for LD score  
+
+regression. Oftentimes this will be the same   folder for both of these and the trait names for  
+
+your summary statistics. This particular argument  trade names is important because this is how  
+
+you're going to name these traits when you  specify the model in lavaan. So you want to   make sure you don't name it something with  a bunch of upper and lowercase characters,   
+
+something that's easy to write out when  you go to write your model on later steps,   and then you just run. LDSC this'll take  about a minute with only five trades. Again,  
+
+I'm just not going to do it here for time reasons  and I'm going to load in that LDSC output that  
+
+I created before which is something that I just  saved using this command here. The third step is  
+
+sumstats and before I go back over to the slides  to talk about some of the arguments for sumstats,   I just want to reading these arguments and set  sumstats up to run. So we're going to just let  
+
+this run and go back over to the slides to  talk about what sumstats is actually doing.  
+
+So just like munge sumstats to make sure that  in all cases that the GWAS summary statistics  
+
+are aligned to the same reference to allele  and further the coefficients and their standard   errors are transformed so that they're scaled  relative to unit variance scaled phenotypes.  
+
+What that means is that it makes sure that  the GWAS estimates are scaled relative to  
+
+a standardized outcome. Or what is sometimes  referred to as STDY or partially standardized  
+
+regression, coefficients and standard errors.  We are not standardizing with respect to the   predictor. I E the SNP, but just to the outcome.  And the reason that's important is because  
+
+we're going to take this some steps output, and  we're going to add it to the genetic covariance   matrix from LD score regression that we just  created in step two. And that genetic covariance  
+
+matrix from LD score regression is itself on a  standardized scale where the heritabilities on  
+
+the diagonal are by definition scaled relative to  a standardized phenotype. So we want to make sure  
+
+that when we add this, sumstats out, put to that  LSDC matrix, which I'll show you visually in just   a couple of slides that they're on the same scale  so that we can produce the appropriate estimates.  
+
+In order to do that rescaling appropriately.  sumstats needs to know a little bit of    information about the scale of the outcome and  how the GWAS was specifically run. So this takes  
+
+a number of arguments in order to make sure  things are done appropriately. And I just want   to walk through those arguments here. So the  first argument for sumstats is the name of the  
+
+summary statistics files. This is not the munged  files and should be the same as the name of the  
+
+files used for the munge function. So it's the  raw summary stats that you provide to munge.  
+
+And it should be listed in the same order that  you listed them for the LDSC function in step two.  
+
+The second argument is the reference file that's  used to calculate SNP variance and aligned to a   single reference allele across traits. Here  we're going to use an a thousand genomes  
+
+referenced file from a European population.  The third argument is the name of the traits.  
+
+This'll probably be the same as how you've been  naming the traits for the ldsc and munge function.   And the fourth argument is se.logit, which  is a vector of that includes TRUE or FALSE  
+
+for each trait that indicates whether or not the  standard errors in those GWAS summary statistics  
+
+are on a logistic scale. The reason that we make  this a required argument is because oftentimes  
+
+GWAS summary statistics somewhat   counter-intuitively will list an odds ratio,  
+
+but then they will list a standard error of a  logistic beta and so we want to make sure that  
+
+the user is being sure to double check this. And  this information, if you're unsure, can often be  
+
+found in the readME file for the GWAS summary  statistics for those case control outcomes.  
+
+The fifth argument is whether the phenotype  was a continuous outcome analyzed using an   observed least squares or what is referred to  as an OLS or more commonly linear estimator.  
+
+The following the argument is linprob, which  refers to an instance where a phenotype was a  
+
+dichotomous outcome analyzed using an OLS  estimator. This is referred to as a linear   
+
+probability model and is often run just for  simplicity sake, becauseis computationally  
+
+much easier to analyzea dichotomous outcome  using OLS, but in order to do that rescaling,  
+
+we need to know whether or not this   particular situation is occurring. Proportion  
+
+is something that is specified in  conjunction with the lineprobargument   and it's necessary in order to perform the  linear probability model I E LPM conversion above.  
+
+So it takes the proportion of cases over the  total sample size. N is a provided sample size  
+
+in the order the traits are listed and as only  needed when OLS or linprob is true for any of the  
+
+traits. Info and MAF filter are standard filters  use to filter on amputation quality for info  
+
+and to filter on the minor of legal frequency  with package defaults of 0.6, 0.01. Keep indel  
+
+refers to whether you want to retain insertion  deletions with the default being FALSE. Parallel  
+
+refers to whether or not the function should be  run in parallel and utilize multiple cores on the  
+
+computer with the default be to run FALSE and if  you are running in parallel, you can specify the  
+
+core's argument that's indicates whether you want  the computer to use a certain number of cores.   The summary statistics or sumstats argument  will typically only take in this case,  
+
+it'll take about eight minutes for 30 trades it  might take. Upwards of an hour. So you certainly  
+
+can run in parallel and speed things up, but it's  not necessary to run in parallel by any means.  
+
+So I know that the, sumstats argument can be  a little bit confusing and for that reason,  
+
+I've created a schematic on the GitHub Wiki.  So this is on the second page of the Wiki   
+
+important resources and key information, that just  walks you through how to think about specifying   these arguments. And it starts with this first  question is the GWAS outcome binary continuous,  
+
+and just lets you know, what, how you   should specify these different arguments.  
+
+If we go back over here to R you can see that  I've specified those file names. The name of  
+
+that reference file, which is available in a  box link listed on our Wiki. The trait names,  
+
+for all of these, these are case  control outcomes and they are   reporting standard errors and logistic scales  so I set se.logit to TRUE for all of them and  
+
+I use the default info filters. For completeness,  I've listed all of the different arguments here,  
+
+but you can certainly write this in a more  compact form, you don't have to write OLS   equals NULL linprob NULL prop equals NULL if  you don't have any OLS or linprob outcomes.  
+
+And here I am running in parallel using four  cores. We're just going to let this finish up    here and while that's happening we'll  move on to talking about the functions.  
+
+Before doing that a note that the, sumstats  function will also produce a log file like munge  
+
+and so, again, it's imperative that you look at  these log files and just make sure everything's    interpreted correctly and much like major  depression that I showed you for munge we   
+
+want to check here that for bipolar, the effect  column is in fact, appropriately interpreted as  
+
+an odds ratio. So I'm going to first talk about  common factor GWAS a function and then I'll   end by talking about the userGWAS function. What  commonfactorGWAS is doing is it's automatically  
+
+specifying a common factor model where the SNP  is specified to predict the common factor.  
+
+What's happening behind the scenes for both of  the GWAS functions is it's automatically combining   the output from step two from LD score regression  and step three, which we're running right now  
+
+from sumstats. So what it does is it one by one  takes the LDSC matrix, it takes a particular row  
+
+for an individual SNP from sumstats, and it  adds it to that matrix. So now that you've got  
+
+the LDSC matrix and then this appended  column or vector of individuals SNP  
+
+covariance affects between the SNP and these  five psychiatric traits. And what it's going   to do is it's going to create this matrix,  run the model, and then discard the matrix.  
+
+And so it's going to create as many covariance  matrix sees as there are SNPs across the trait.  
+
+So effectively, if we then take that matrix  and run the model, it's then specifying this   model where the SNP is predicting this general  factor that indexesrisk sharingacross these five  
+
+psychiatric traits. So this is an example of  just one model that's being run, but again,  
+
+this first vector here is swapped  out as many times as there are SNPs   and it's re estimated to get that updated   estimate of the SNP effect on the factor  
+
+commonfactorGWAS takes a couple of arguments.  The first is covstruc, which is the output  
+
+from LD score regression. The second is  SNPs, which is the output from sumstats.  
+
+The third optional argument is estimation,  which specifies whether models should be   estimated using DWLS, which refers to diagonally  weighted least squares, or ML, which refers to  
+
+maximum likelihood estimation where the package  default is DWLS. The way to think about the  
+
+difference between these two is DWLS will look  to produce model estimates that are trying to  
+
+recapture the parts of the observed covariance  matrix that are estimated with greater precision.  
+
+This does not mean that DWLS is going   to automatically produce things like  
+
+larger factor loadings for the GWAS   traits with a larger sample size.  
+
+Instead if you've got a particularly   well powered GWAS that goes into this model   and that GWAS does not correlate very highly  with the other traits, then the model will  
+
+actually prioritize producing, in the context of  a common factor model, a particularly low factor   
+
+loading for that well powered trait. So again,  it doesn't mean that the well powered trait  
+
+dominates the model per se, in the sense  that it's producing larger estimates,  
+
+it just means that DWLS is taking into account   the information that's available. Depending on  
+
+how you think about statistical modeling, you  might have a different preference between them,    but to our mind, if you've got more information  about a particular cell in that covariance  
+
+matrix, that's going to reflect a GWAS that's  better powered, why not use that information   appropriately and let the model appropriately  favor reproducing that part of the matrix.  
+
+Cores is how many computer cores   to use when running in parallel,   where the default is to use one less core than  it's available in the local computing environment.  
+
+But you can specify as many cores you want  using this argument. Tolerance is only relevant  
+
+if you start getting errors or warnings  about matrix inversion, but beyond that,   it's not something that you need to be concerned  about . Parallel is an optional argument  
+
+specifying whether you want the function to be   run in parallel or to be run serially. GCs, the  
+
+level of genomic control you want the function  to use. The default is to adjust the univariate   GWAS standard errors by multiplying them by the  square root of the univariate LDSC intercept.  
+
+What that does is it takes this univariate LDSC  intercept, which is intended to index uncontrolled  
+
+for population stratification and that it  appropriately corrects those standard errors by   the intercept so that you're producing estimates  that pull out that uncontrolled for pop Strat.  
+
+If the LDSC intercept is below one, I'll just  note that what the package is going to do is   not correct for the intercept at all. So it's  never going to produce more liberal estimates  
+
+than a univariate GWAS going in, but it's  going to be more conservative as a default.  
+
+MPI is whether the function should   use message passage interfacing which   allows you to use multi-node processing. Which  we'll talk a little bit more at the very end,  
+
+when we talk about runtime considerations   for these different functions.   So now if we go back over to R we can see that  the sumstats function has finished up running.  
+
+It took about seven minutes . And now going on  to step four of actually running the common factor  
+
+GWAS just for the purposes of this exercise,  I'm just going to subset to the first 100 rows.  
+
+So that's sumstats output just so we can see how  the common factor GWAS functions are running. So  
+
+we're just going to let this run here. And as it's  doing that, I'll just show you that we've got.   covstruc that lists the LDSC output, SNPs,  that list, that subset output from sumstats  
+
+that we're using DWLS we're using four cores  and we don't need to set the tolerance lower.  
+
+We're not changing the SNP standard error that  it uses. We're running in parallel. We're using   the standard GC correction and we're not using  MPI. SNP standard error just refers to whether or  
+
+not you want to change the standard error of the  SNP, this is just set to a really small value to  
+
+reflect the fact that that's coming from our  reference panels, so we essentially treat it   as fixed. But it is not something that   really affects your model estimates out to  
+
+the fifth decimal place. So that finished running.  So let's just take a look at the first five rows.  
+
+And what you can see here is that it's pulling  the SNP RSID, the chromosome, the base pair,  
+
+the minor allele frequency from the reference  file that you fed to sumstats, A1 and A2,  
+
+just the run number, the particular estimate from  the model that was saved, which for common factor  
+
+GWAS is always going to be the effect of the SNP  on the common factor. The corresponding estimate  
+
+for that parameter, the sandwich corrected  standard error, the Z statistic, the P value. And  
+
+then this Q statistic and it's degrees of freedom  and P value. There's also this fail and warning  
+
+column at the end. That can be good to check  using something like the table argument in R   just to see if any warnings or runs were   just failing to produce any output. Zero  
+
+indicates that there was no warnings run. And  we can see here that for these a hundred SNPs,   that there were no issues that were raised before  I switched back over to the slides to talk about  
+
+Q some more. I'll just highlight that for a lot   of this code I'm just including for completeness,  
+
+the arguments that are listed, including their  defaults. So MPI is automatically set to false   
+
+GCs, automatically set to standard. So we could  produce the same output in a much more compact  
+
+form, writing this code here below. So this  will just produce the same results. And it's   just a highlight that , if you're setting  the arguments to the default behavior,  
+
+you don't have to list them. So what you saw on  that output was three columns related to this  
+
+Q SNPs statistic, which is an estimate of SNP  level heterogeneity. And the way to think about  
+
+Q SNP is it asked the extent to which the effect  of a SNP operates through a common factor. It's  
+
+a chi-square distributed test statistic that is  essentially comparing the fit of a common pathways  
+
+model in which this SNP operates strictly via the  common factor to an independent pathways model in  
+
+which the SNP directly predicts the indicators of  that common factor. If this independent pathways  
+
+model fits much better than this common pathways  model, then that suggests that the SNP is not   really operating through the common factor,  that this single regression relationship is  
+
+not sufficient for capturing the pattern of the  relationships across these five indicators here.  
+
+Instances where you might expect Q  SNP to be significant include when,   for example, there are directionally opposing  effects of the SNP on different indicators.  
+
+So let's say the SNP is risk conferring   for the first two indicators  
+
+and is actually protective for the last three  indicators . In that case, it's clearly not   operating through some general common factor  and we would expect Q SNP to be significant.  
+
+Another instance might be at the SNP has a  really strong effect on one of the indicators.   And I sort of null or at least a much weaker  effect across the remaining indicators.  
+
+As a canonical example of this if we ever include  alcohol use disorder or any alcohol use phenotype,  
+
+really within a genomic structural equation  model, we often find that the variants that    exist within the alcohol dehydrogenase genes  will pop a significant for Q SNP. And that's  
+
+because those tend to be genetic variants that  are not associated with the general factor that  
+
+alcohol use is loading on but are instead of  highly specific to that alcohol use phenotype.  
+
+And what is cool about Q SNP is that when you've  got a set of really highly correlated trades,   In fact, what might be more interesting is  what actually causes these traits to diverged.  
+
+Is to identify via this Q SNP statistic, what  it is that really genetically differentiates  
+
+this disorders. Wouldn't it be nice if we  could use Q SNP to gain some novel insight  
+
+about what causes these things to have   a slightly different presentation.  
+
+if you're a specifying a model that is   something that is not a common factor model,   then you're going to want to use userGWAS, which  allows the user to specify any model that includes  
+
+the effect of individual SNPs, such as a SNP,  predicting multiple correlated factors in the  
+
+model. userGWAS takes all of the same arguments  that I just showed you for commonfactorGWAS,  
+
+along with two additional arguments. One of  those is the model that you're estimating   written using lavaan syntax. And for this model,  the way that you're going to include the SNP in  
+
+the model is just to literally refer to it as SNP  or SNP in all capital letters. And I'll show that  
+
+model over in the R script. in just a second.  The second is the sub argument and this is an  
+
+optional argument specifying whether or not you're  going to request to save only specific components   of the model output. The reason I would recommend  almost always setting this argument to something  
+
+is that there's a lot of different rows for any  given model that lavaan is going to produce. So  
+
+for example, for the common factor model, there's  the five factor loadings, the five residual   variances of the indicators, all of which are  going to be fairly similar across all of the SNPs.  
+
+And it would take up a lot of space to save all  of that output for each individual SNP. And what  
+
+we're really interested is just the effect of the  SNP on the common factor. And so what sub allows   us to do is say, I just want you to save that  output for the SNP effect on the common factor.  
+
+And if you're specifying a model in which you're  interested in multiple different parameters,   you can also set sub to include more than just  one parameter, but again, it's rarely going to  
+
+be the case that you're interested in saving every  single piece of the model output for each SNP.  
+
+And instead you should think about just  saving those pieces that you're interested in.  
+
+If we switch back over to Rstudio to run  userGWAS, what I'm going to do is I'm going to   run the userGWAS, but for the exact same model as  common factor, GWAS is automatically specifying.  
+
+So here we've written the common factor model  with the factor regressed on the SNP here on the  
+
+bottom and we're also setting that sub argument  to just save the effect of the SNP on the factor.  
+
+So let's set that up to run. And what this should  do is produce the exact same estimates that we  
+
+saw for common factor GWAS. And I'll show that  to you in just a second, when this finishes up.  
+
+So if we look at the first five rows from the  user GWAS output and the first five rows from  
+
+the common factor, GWAS output, you can  see that these are exactly the same 0.413.  
+
+And so on the user, GWAS, output's going to look  a little bit different. It's not going to include  
+
+the Q statistic, but instead it's going to  include model fit statistics. What's the overall   fit of that model. So it's going to include Chi   square, Chi square degrees of speed, chi-square P  
+
+value, and AIC. And those can be used to compare  to what are referred to as nested models.  
+
+So you could examine a independent pathways  model where that SNP is predicting each of  
+
+the five indicators and then if you did a  model comparison across those two models,   
+
+you would find that that produces the same thing  as Q SNP down here. So if we take a look at the  
+
+run times across this. I know for the first two   steps, I didn't run them now. But if you look at   the output files, you'll find that for munch  on my own laptop and took about eight minutes.  
+
+LDSC took a little over a minute. sumstats took  about seven minutes. The common factor GWAS took  
+
+about 17 seconds and the user GWAS 10 seconds.  For those GWAS functions, of course, we only ran  
+
+it on the first a hundred SNP and we did run it in  parallel. This is not necessarily indicative of   
+
+how long it would take for a million SNPs  you wouldn't just multiply these numbers  
+
+by a certain amount because there's certain  initial steps that the GWAS functions need   to go through. At the same time, the GWAS   functions do take a while. How long that takes  
+
+exactly. It's going to depend on the number of   traits and how complicated your model is. So,  
+
+I never know exact runtime considerations,  but these are things that you are going to  
+
+ideally be running on a computing cluster and I  want to talk finally about how to really speed  
+
+this up so that you can get results as quick as  possible. So both parallel and MPI processing  
+
+are available for userGWAS and commonfactorGWAS.  Where parallel and serial processing are doing  
+
+the exact same thing with the exception  that parallel processing is utilizing   the core is available in your computing  environment to send off different chunks of SNPs,  
+
+to the different cores, to then run the GWAS on  those cores. MPI takes advantage of a multi-node  
+
+computing environment. It does require that Rmpi  is already installed on the computing cluster,  
+
+but that then adds this additional layer that  it sends the output off to multiple nodes and  
+
+then often multiple cores within those nodes.  And then finally, you can speed this up just  
+
+that much more by sending off separate jobs that  then themselves use MPI processing, where they  
+
+send it off to different nodes in different  cores within those nodes. The important thing   to know is that all runs are independent of one  another. So you can dice up that sumstats output,  
+
+however you want, and you'll still get the  same output. So for me, anytime I run a GWAS  
+
+on the computing cluster , I will send off 40  jobs that then run in MPI. And for this common  
+
+factor, GWAS example for two ish million SNPs  that only ends up taking about two to three hours.  
+
+So again, if you reach out to me and ask, what's  the exact runtime I should expect for this model,   I'm not going to know because it's really gonna  depend on the type of model you're running.  
+
+For sure there are indicators that something is  going wrong. Like if you submit a hundred SNPs   
+
+and it's taking 12 hours to run that suggests that  something is just breaking apart on the computing  
+
+cluster. And you're certainly welcome to reach  out on the Google group to see if we have any   input about how best to speed things up. So with  that, I'll just end here and in the next videos,  
+
+we'll talk about some of the newer functionality  available in genomic SEM including the ability to   examine multi-variate enrichment, using   what we call stratified genomic SEM.
+
+### 
+
+------------------------------------------------------------------------
+
+## Using Genomic SEM to Understand Psychiatric Comorbidity {#sec-video6}
+
+**Title**: Using Genomic SEM to Understand Psychiatric Comorbidity
+
+**Presenter(s)**: Andrew Grotzinger
+
+so andrew thanks so much for coming we are just super excited to hear about your work many of us know about genomics sound but
+
+really want to get a more in-depth knowledge so uh very very
+
+uh happy to have you here and welcome thank you um yeah it's a real pleasure to be speaking
+
+to this group in particular um and today i'm gonna be talking about
+
+genomics sem overall um but i really want to focus the second half of my talk on the application of
+
+genomic sem to psychiatric traits um and i know a number of you have heard me talk about
+
+genomics and before so i'll try to keep this first part relatively brief and more just a refresher
+
+um but there is a new package update within the last couple months that i've put on the github for
+
+stratified genomics m so hopefully that'll be kind of a new thing for some people here
+
+um so just to start giving an overview of genomics them and kind of the motivation for developing this package um
+
+i'm just showing here a old plot from kendler at all 2012 showing g was hits on the y-axis
+
+and different traits on the x-axis and what this is demonstrating is something that's well known to
+
+everyone here that as the sample sizes have increased for different gewa studies that the
+
+number of hits that we've identified has increased in a corresponding way pretty rapidly where we're now identifying
+
+hundreds of different genetic variants under underlying complex traits that are of interest to people
+
+and so for me as someone who's interested in psychiatric outcomes like schizophrenia and depression if we
+
+look at these two manhattan plots from some of the more recent efforts from these groups these traits are so
+
+polygenic that if you're trying to figure out what actually is shared across these two traits it's not just a matter of
+
+identifying um five or ten overlapping genes or loci that are shared across these manhattan
+
+plots and it really required people to think about how we could actually quantify the level of genetic overlap
+
+and that was done really beautifully in 2015 when the group from the broad introduced
+
+ld score regression and more specifically bivariate ld score regression for examining
+
+shared genetic overlap across traits which allows you to estimate genetic correlations between samples
+
+with varying degrees of sample overlap using what is often publicly available gwas summary data
+
+and when people apply genomic sem like they did in the brainstorm consortium paper in 2018 you can produce these genetic
+
+heat maps across different sets of traits where on the left you've got psychiatric phenotypes
+
+and on the right across a wider range of kind of brain disorders and behavioral cognitive phenotypes where the darker
+
+shading indicates higher levels of genetic overlap um and unsurprisingly we see that
+
+there's certain clusters of traits within these heat maps where for example psychiatric disorders tend to show
+
+a pretty strong level of genetic overlap which is something we might expect based on high levels of comorbidity that
+
+we observe among psychiatric disorders well at the same time some genetic correlations were maybe
+
+particularly or even surprisingly high such as genetic correlations between bipolar disorder and schizophrenia
+
+and the range of 0.6 or 0.8 as you can kind of see indicated by this particularly dark blue box
+
+between those two disorders um so when these sorts of papers were coming out i was
+
+in the midst of running twin models and helping um navigate and manage a twin study down
+
+at ut austin and running different multivariate models of twin correlation matrices and
+
+so seeing these correlation matrices coming out based on genomic patterns of convergence
+
+there seemed to be this kind of strong need to really develop and apply multivariate methods to actually model
+
+these constellations of genetic overlap and so that led us to develop and
+
+publish this paper that introduced genomic structural equation modeling in 2019 and nature human behavior which is kind
+
+of broadly speaking a framework for modeling patterns of genetic associations
+
+across wide constellations of traits and so in general genomic sem uses a
+
+two-stage estimation procedure where in stage one you estimate the genetic covariance matrix
+
+and associated sampling covariance matrix of standard errors and their code dependencies we use ld
+
+score regression within the context of the package but you could hypothetically use any sort of
+
+genetic covariance matrix such as you might get from greml um and then in stage two we actually fit
+
+the structural equation model to the matrices that are estimated from stage one
+
+and so just to kind of show you visually what those stages look like and so in stage one we'd create this
+
+genetic covariance matrix or what we call s that has the heritabilities estimated from the genome-wide data
+
+on the diagonal and those genetic covariances are cohered abilities on the off diagonal and then critically
+
+we're also estimating this sampling covariance matrix v that contains the squared standard
+
+errors on the diagonal and the sampling dependencies on the off diagonal which indexes
+
+the dependencies between estimation errors and that's what allows us to apply genomic sem
+
+for samples that have different levels of sample overlap and that doesn't need to be known that
+
+is directly estimated from the data using a block jackknife procedure but again
+
+if you have different sets of summary statistics and you're worried about some level level of overlapping controls
+
+this sampling covariance matrix is going to allow you to produce unbiased standard errors even in the presence of that
+
+sample overlap and then in stage two you take those two matrices
+
+and feed it into the genomics mr package and specify some sort of model like this genetic
+
+multiple regression model in which we have schizophrenia and bipolar disorder as correlated predictors of
+
+educational attainment and then parameters are estimated that fit the observed genetic covariance
+
+matrix as close as possible and since this is a fully saturated model and the model parameters are
+
+simply a transformation of the observed matrix um one thing that i like to highlight
+
+when i'm talking about this and i know that this kind of first part of this phrase is not
+
+applicable to this group but even if you are not interested in genetics i think genomic sem offers some kind of valuable tools
+
+because it allows you to look at systems of relationships across a wide array of rare traits that could not be
+
+measured um in the same sample and so if we think about just a case example of what that might look like
+
+let's say that as someone interested in clinical phenotypes you have a real interest in the relationships between
+
+schizophrenia and bipolar disorder you've read the research literature and see a lot of convergence across
+
+different risk factors for these disorders you have a pretty good understanding that these phenotypically can often look pretty similar
+
+and you also notice pretty similar kind of age of onset distributions for these two disorders so in that case you might
+
+be interested in looking and quantifying um in a sort of cross-leg panel like this
+
+the relationships between both early and late onset versions of schizophrenia bipolar disorder
+
+the issue is that these two disorders are actually not you can't diagnose them together in
+
+the dsm these would be rule outs of one another so you couldn't in a phenotypic sample actually observe these two disorders
+
+within the same individual \[Music\] and so you wouldn't be able to estimate
+
+this part of the model using phenotypic data and of course you also can't observe
+
+both early and late onset versions of a disorder within the same person so you couldn't look at this part of the
+
+model but with genomics m you can actually stratify the g was
+
+summary statistics by early and late onset versions of these disorders and you could actually fit this sort of model
+
+and actually start to test the sorts of relationships that we've been left to really just hypothesize about and make
+
+qualitative conclusions around based on convergence from different separate univariate studies
+
+at this point stratified genomic sem can be used to look at convergence at three main levels of
+
+analysis and i just want to walk through those so at the genome-wide level um this is actually just a
+
+recapitulation of that multiple regression model i showed earlier as an example of stage two
+
+estimation where we're just looking at the system of relationships between schizophrenia and bipolar and
+
+educational attainment but this is just to highlight that for people who are interested in sort of
+
+mediation type hypotheses that within genomic sem you can kind of quantify things like a total indirect and direct
+
+effect um between different disorders um within genomic sem
+
+you can also get standard model fit indices like aic model chi square cfi and srmr
+
+and that allows you to go through kind of classic model fitting procedures to try and decide between different
+
+competing models \[Music\] and decide what kind of patterns of relationships best fit the data
+
+so in that original paper we looked at a series of models fit to the covariance matrix estimated across
+
+these 12 neuroticism items and what we found is that a common factor model fit the data pretty well a
+
+two factor model did a little bit better but a three factor model really seemed to balance
+
+that um relationship between fit and parsimony in terms of how we were representing the data
+
+and what i would highlight here is that the way that the items kind of segregated across these factors actually does make a lot of post-hoc
+
+theoretical sense so you see on factor one this kind of mood misery and irritability items
+
+maybe on this kind of negative affect factor guilt hurt and embarrassment around
+
+maybe this kind of social reactivity factor and nervous worry tense and nerves maybe this kind of more
+
+anxiety type factor and while these factors are still highly correlated they are somewhat
+
+dissociable and in fact when we run multivariate g wasps to look at snip
+
+effects on these factors we do find somewhat divergent biological pathways that we might miss
+
+if we were we were to employ approach where say we just kind of sum across these items and run a g was on a
+
+sum score of the 12 neuroticism items so i think this really highlights the ability of these sort of model
+
+fitting procedures to pull out some pretty interesting patterns in the data
+
+moving on to this new level of analysis stratified genomic stem that we introduced in a paper that's
+
+currently on meta-archive and out for review right now but the code for that is live on the github
+
+along with a tutorial page for that um is really designed to think about how we can start to make sense
+
+of gwas findings characterized by thousands of genes that really individually explain only a
+
+very small portion of the phenotypic variants so just as sort of a kind of hypothetical example let's think
+
+about these future manhattan plots where the gy sample sizes are getting in the millions and now we're starting to see
+
+that um basically the entire genome is somehow associated with the phenotype again i know this is just sort of a case
+
+example but it just highlights that you know at an individual snip level we're going to get to a point where the
+
+picture is so complicated that it's really hard to make sense of what's going on just based on a manhattan plot
+
+already a number of methods out there that in the univariate case can be used to
+
+basically partition heritability by using collateral gene expression data such as
+
+what you might get from rna sequencing methods to try to lump associated genetic variants um and
+
+portions of heritability into meaningful categories so in this partitioned ld score regression
+
+paper um from 2015 they showed that disorders like schizophrenia and bipolar disorder
+
+are enriched in the central nervous system which you can see here based on these orange bars for that
+
+annotation including for years of education as well which of course um makes a lot of sense
+
+um so we extend that same model to be able to look at partitioned coherent ability
+
+um so this will look familiar to anyone who's um worked with the bivariate ld score
+
+equation before and really all we're doing now is that instead of using
+
+um the ld scores here we're using the partitioned ld scores so the ld scores within a particular functional annotation so
+
+we develop this and validate it um as a means to an end for really being able to then feed these
+
+partitioned covariance matrix matrices into genomic sem to then be able to examine
+
+genetic enrichment of any model parameter estimated in genomics m for this kind of new extension that we're calling stratify genomics m
+
+so you can look at enrichment of residuals in a structural equation model enrichment of correlations between
+
+factors and i think what people would typically be interested in enrichment of the factor variances
+
+to see where these kind of overarching factors that explain variance in the indicators
+
+are really enriched so in that way we can take a manhattan plot of
+
+these common factors and start to look at these kind of top peaks and ask whether or not these hits are really enriched within
+
+genes that are expressed during certain developmental periods such as during early kind of even prenatal periods or
+
+later in life whether they're enriching specific brain regions or even in certain neuronal subtypes um and this
+
+method really starts to and you know any kind of partitioning method starts to become increasingly
+
+exciting as the gene expression work starts to move at a rapid pace and our ability to build
+
+these categories um in meaningful ways starts to also really increase and become quite
+
+exciting so again this method is about asking whether there are certain biological
+
+functions that can characterize genetic variants with plyotropic effects which you know there's a lot of kind of
+
+convergence of findings across disorders that tend to cluster together unsurprisingly psychiatric disorders
+
+tend to be enriched within brain regions but now we're really trying to quantify that using this multivariate method
+
+for stratified analyses and at the most fine-grained level of analysis genomicsum can be used to
+
+perform multivariate g wasps to look at snip effects on any model parameter that you would
+
+estimate in genomics m and the way we do that is that we extend that s matrix i showed you earlier
+
+when walking through the two-stage process we've got that same genetic covariance matrix from ld score
+
+regression here in blue and then we append this snip column
+
+that include the snip variance from a reference panel and the betas from the g-was summary statistic scaled to covariances
+
+using that same snip variance from the reference panel and so what you would do is the package
+
+builds this matrix as many times as there are snips present across the indicators and then runs
+
+any particular model that you might specify that includes an individual snip um so for example we look at snip
+
+effects on a p factor that's defined by these five psychiatric indicators of schizophrenia bipolar major depression
+
+ptsd and anxiety we take this ld score regression matrix and append
+
+the snip column and then we're able to look at the effects of an individual snip such as this particular snip that
+
+we find is genome-wide significant with respect to its effect on the p-factor
+
+in the context of multivariate g-wasps we also have developed this snip heterogeneity metric which we call
+
+q-snip because of its similarity to the meta-analytic cue statistic that really ask whether or not the
+
+associations between a given snip and the individual disorders like i'm showing here in panel a
+
+is sufficiently captured by a model that posits a single association between the snip and the factor so really is it
+
+kind of if you just fit this one relationship is that obscuring the relationships that
+
+you might get if you fit all of these individual relationships so we compare this common and independent pathways model
+
+and if this model and panel a fits much better then that suggests that this snip is not really operating through the
+
+factor and an instance where you might see that is if for example there's highly disorder specific effects so if a snip
+
+really is specific to one of the indicators and has a null effect or an opposite effect on
+
+the other indicators then you would expect to get a significant q-snip metric and this really highlights that
+
+genomics and is not about boosting power for the individual traits and the way that some other multivariate methods are
+
+designed like mtag but it's really about finding the snips that operate through the factors
+
+and the snips that are highly specific to the disorders so we can start to get a sense of the multivariate picture
+
+across the different disorders that we include in the model
+
+um this is one particular application of a model that you could fit in genomic sem that
+
+people have shown some interest in namely g wasps by subtraction where you fit this sort of koleski model
+
+for two traits and then you have the snip predict the two latent factors within the
+
+koleski model so in this particular example we're looking at the effects of
+
+a snip on cognitive performance and on educational attainment minus the genetic overlap with cognitive
+
+performance for what we've called this kind of non-cognitive element so that then you can start to
+
+kind of break apart something that's really multifaceted like educational attainment and ask what snips underlie this overall
+
+genetic signal that are separate from the cognitive component this is in a paper that is currently on
+
+bioarchive but is forthcoming and this is just a highlight that then you can produce these manhattan plots
+
+for the cognitive um phenotype and the non-cognitive phenotype down here
+
+and identify these kind of dissociable genetic signals and then in the paper they also look at
+
+kind of polygenic score prediction for these two different phenotypes and find divergent patterns of prediction and also genetic correlations with outside
+
+traits so this is just kind of one way that you can apply genomic sem
+
+in interesting ways um in general it's just a kind of sales pitch for genomics
+
+m the different groups that have used it and using the open source r package have
+
+been fairly successful in publishing um in a lot of different outlets
+
+so this is just kind of a flavor of the different ways that people have been using it and the outlets that they have been
+
+publishing in using genomic sem um so with that i want to transition as
+
+someone who's trained in clinical psychology to my main interest in psychiatric phenotypes
+
+and how i've used genomics m to really understand the multivariate genomic architecture across psychiatric traits so
+
+i just want to kind of start by explaining why i think um multivariate work and
+
+psychiatric disorders is so important to begin with even ignoring the genomic piece so in this orange circle i'm just
+
+showing kind of all individuals with mental disorders um that will meet criteria for a
+
+disorder in their lifetime and among that group of people about two-thirds are going to meet criteria
+
+for a second disorder half will meet criteria for a third disorder and 41
+
+will meet criteria for a fourth disorder and while we know that um our just our categories are not
+
+perfect we do kind of think of them as sort of these mutually exclusive things where i think when clinicians
+
+sometimes talk about people having multiple disorders there's this sense that they've just kind of
+
+had bad luck in terms of maybe the environments or genetic risk factors that they've been exposed
+
+to but really at the end of the day i think this speaks to how much our categories overlap pretty substantially
+
+and how much we should think about kind of refining future versions of our diagnostic manuals so that we can create
+
+more mutually exclusive categories and i think there's a lot of really compelling reasons to think about why we would want
+
+to do that um but before i get to that this is just kind of depicting the extent to which
+
+we might kind of loosely think about um these patterns of comorbidity and
+
+kind of the loose um rough borders that we've drawn between the disorders as being somewhat
+
+genetic in nature so on the x-axis here we have parent disorders across depression
+
+generalized anxiety panic substance use and antisocial personality disorder and on the y-axis the odds ratio for
+
+their child developing a particular disorder and what we see is that the children are really at risk for any disorder and not
+
+just the disorder present in the parent now of course that could just mean that a parent having a mental disorder is
+
+sort of generally stressful through an environmental component that kind of generally leads you at risk to any disorder or
+
+it could mean that the genetics passed down from the parents are really kind of unspecific in terms of how they convey
+
+risk but at the very least that suggests that the boundaries between the disorders are pretty blurry
+
+at the end of the day um and so again that's important because um as someone who also um
+
+currently practices it can be very stressful to meet with someone and tell them that they've got every disorder in the book i think this
+
+has real clinical implications in terms of the message that sends to the patient in the room and also what it means for a treatment
+
+provider to think about what kind of intervention to give somebody when they're meeting criteria for multiple
+
+categories and from a scientific perspective i think this also has
+
+a lot of important ramifications where if you have scientists a studying bipolar disorder scientists be studying
+
+schizophrenia um and this fellow is studying ocd but at the end of the day we know that these
+
+disorders are all related in some pretty substantial way it probably isn't the best use of grant
+
+funding money to give all these people a separate pool of money and then just kind of send them off in separate directions when they're really
+
+studying these phenomena that are actually interrelated in pretty substantial ways in some level
+
+um and so that is why as a kind of backstory i'm particularly interested in
+
+understanding the genomic architecture across different disorders which i think
+
+doing it in a genomic space has a number of advantages one it can give us insight into what we know is a pretty important
+
+component of these disorders since they're all estimated to be pretty heritable but one limitation when people are
+
+understanding what's called as this general psychopathology factor a trans
+
+diagnostic p factor is family-based research on p is inherently limited to relatively common
+
+disorders because it's going to be next to impossible to obtain genetically informed samples on
+
+rare disorders and in just a basic cross-sectional sample again i noted that some of the disorders actually disallow one another
+
+so it would be not possible to actually examine disorders within the same sample
+
+so for the first time methods like genomic sem building off ld score regression allow us to look at the
+
+genetic structure across both common and rare disorders because ld score regression is able to
+
+estimate the genetic relationships across samples that are potentially independent
+
+at the end of the day um i want to walk through the different iterations of these factor models that
+
+we've done now so i showed you this earlier in the context of the snip model but um at the base model
+
+we modeled in that initial paper the relationships across these five disorders and pulled out what we called at the
+
+time this kind of general psychopathology factor um i kind of am referring to it as a
+
+so-called general psychopathology factor because um we also only had five disorders at
+
+the time that were sufficiently powered to put in the model and as we started to
+
+include more disorders this model started to look a little bit more nuanced than just a single common factor so in the second major iteration of this
+
+we worked with the cross disorder group from the psychiatric genomics consortium to publish this paper in cell where we
+
+looked at the genomic relationships across these eight disorders of anorexia ocd tourettes
+
+schizophrenia bipolar mdd adhd and autism and what we found is that these kind of segregated into these three factors
+
+that we loosely call a compulsive disorders factor a psychotic disorders factor and a
+
+neural developmental disorders factor and let's briefly mention too that um
+
+you know things like an ocd and tourette's loading under the same factor is very consistent with what we might
+
+expect based on comorbidity rates and kind of convergent patterns across different research groups same thing for
+
+schizophrenia and bipolar um one kind of lone wolf here is mdd
+
+and we were able to improve on that when we in our most recent iteration of this
+
+model now include 11 major disorders now with alcohol use disorder here in red ptsd and anxiety and with the
+
+inclusion of ptsd anxiety we're now pulling this fourth internalizing disorders factor
+
+um but i would highlight also that for a number of these disorders the sample size is updated pretty substantially
+
+relative to the previous iteration and even with that update we were still pulling out the same
+
+three factors when we going through the exploratory factor analyses um so again this kind of indicates that
+
+there is a lot of intercorrelations across these disorders but there is some kind of nuance in terms of how these disorders
+
+kind of segregate into these subgroups and in fact if you just kind of look at the genetic correlation matrix across
+
+these 11 disorders you can kind of see these factors kind of pop out when you
+
+order the matrix according to the factors that we modeled where you've got this kind of subcluster up here factor one this really tight cluster
+
+between schizophrenia bipolar and factor two and in particular this really um apparent cluster between ptsd and mdd
+
+and anxiety on that internalizing fourth factor because there were you know correlations
+
+across these factors and because of the kind of growing interest in this overall p factor we did model
+
+an overarching p factor that explained the genetic relationships between these four
+
+different factors and found that this fit the data pretty well but given these kind of partially
+
+competing models of either kind of four correlated factors or an overarching factor we wanted to go on to do
+
+some other analyses to really evaluate the utility of each of these factors for understanding shared biology
+
+across their indicators and we did that in a number of ways one is we took
+
+the same logic that we developed for q-snip and applied it to examining the relationships between
+
+relevant external correlates for psychiatric disorders and so again in a very similar manner to
+
+q-snip we ask whether or not the associations between an external trait and the individual disorder shown
+
+in panel a is sufficiently captured by a model that just shows a single relationship between
+
+the external trait and factor one and we compare the fit of these models and would expect there to be
+
+a really significant decrease in fit by just modeling this common pathways model when these associations are really
+
+discrepant across one another um we fit these sorts of models for 49
+
+different external traits and i just want to walk through um a number of these findings so
+
+i'm showing a couple different things here and color-coded at the top are the four different factors from the correlated
+
+factors model and then the p factor in turquoise and then whether or not the bar is shown with a solid or dashed
+
+outline indicates whether or not it was significant for that cute trait metric where bars with a dashed out line
+
+we found to be significantly heterogeneous across the indicators so within socioeconomic outcomes we see
+
+that there's a relatively homogeneous relationship between a lot of these outcomes and the compulsive disorders
+
+factor in the positive direction when we look at health and disease we see
+
+a lot of positive correlations the internalizing disorders factor
+
+um and these health disease outcomes which is very consistent with phenotypic work
+
+and within anthropomorphic traits we do see i think a particularly interesting finding for the compulsive disorders
+
+factor of a negative correlation between body mass index and waist to hip ratio
+
+and i mark that as interesting because anorexia loads on that factor and you might think that that is really
+
+driving the relationship between bmi and waist to hip ratio given low weight status as
+
+a diagnostic prerequisite for meeting criteria for anorexia but in fact we see
+
+that there are actually shared pathways with ocd and tourette's between
+
+um these external correlates indicating that there's some sort of shared general risk between um kind of these
+
+anthropomorphic traits and this compulsive disorders factor and then finally we see that there's a lot of homogeneous relationships
+
+with neuroticism but not with this internalizing factor in neuroticism which might come as some surprise but
+
+it's largely driven by a much higher genetic correlation with
+
+the mdd indicator and if we look at these correlations overall
+
+we see that in particular um there's the significant q trait metric for the
+
+neurodevelopmental and p factor indicating that a lot of the relationships with external traits are not
+
+operating through these factors and suggesting somewhat limited clinical utility for these two factors relative to these
+
+compulsive psychotic and internalizing disorders factor
+
+we when then went on to perform multivariate wasps and sort of two main steps um in the
+
+first one we looked at the snip effect as it concurrently predicted these four correlated factors and then a snip predicting this
+
+overarching general psychopathology factor um just to orient you to these miami
+
+plots i'm showing on the top half the factor snip effects and on the bottom half the q snip
+
+effects um that i've talked about earlier in this talk in black triangles i'm showing the 132
+
+hits across these four factors that were nld with hits that were identified for the individual disorders
+
+that defined the factors in red i'm showing 20 novel hits that were not significant
+
+for any of the individual disorders which highlights the ability of genomic stem to make novel discovery even without
+
+collecting any new data and again i'll say that with the caveat that i really
+
+try to be careful to not frame genomic sam as a method for boosting power but for ultimately looking at
+
+shared genetic signal and divergent genetic signal across different traits but at the same time because you are
+
+leveraging shared power you are going to get some kind of boost in signal for a lot of these disorders and then in
+
+purple i'm showing the purple diamonds the significant q snip effects so for the compulsive disorders factor
+
+these particular disorders were not super well powered so there's not much signal we see a lot of shared signal for
+
+the psychotic disorders factor for the neurodevelopmental disorders factor we see a sort of
+
+um somewhat even balance of factor and q snip signal and internalizing disorders factor a
+
+much stronger signal for the factor and if we look at the qq plots for these different disorders
+
+what i'm showing here in blue is the signal for the factor and in pink the signal for q-snip and
+
+what we would expect if the factor is generally capturing the relationship between the individual
+
+snips and the individual disorders that define the factor is that this blue line would sit kind of nicely above this pink line
+
+and that is what we observe for the compulsive psychotic and internalizing disorders factor but
+
+on the other end we see that the qcnt metric is actually much stronger
+
+than the factor signal for the neural developmental disorders factor which indicates that a lot of the
+
+genetic signal is not operating through the factors so similar to what we observed for the patterns with external traits
+
+for individual steps we find that they are often not operating through that neurodevelopmental factor
+
+and if we look at the individual snip effects for some of the snips that were particularly q snip significant we see
+
+that a lot of that is due to divergent effects for autism which also loads on that factor it may
+
+come as no surprise so that's not to say that a neurodevelopmental factor in a kind of
+
+hypothetical sense might not prove to be useful but at least in the way that we've defined it based on the data that we had it doesn't
+
+seem to be sufficiently kind of explaining the shared signal across its disorders
+
+and then if we look at the signal for the p factor we see a really striking imbalance
+
+between the factor signal and the q snip sniggle where we see only one hit um that was in ld with an individual
+
+disorder hit no new loci and 69 cue snip hits and just a really
+
+elevated pink line relative to that blue line indicating that almost none of the snip effects are
+
+operating through that p factor which really suggests that there is kind of limited utility
+
+to a p factor for actually understanding shared biology across disorders
+
+um finally i just want to kind of go over the um stratified genomic stem findings
+
+for this particular 11 disorders model and i want to focus on
+
+some findings for enrichment of brain cell types so we know that psychiatric disorders
+
+are generally enriched for genes expressed in the brain which is sort of i feel like more of a
+
+sanity check to see that it's not expressed in you know the spleen or the stomach but is really
+
+in the central nervous system like we'd expect but with more recent single cell sequencing
+
+um efforts coming out people have been able to pair that up with gywas summary data to actually look
+
+at enrichment of specific brain cell subtypes which gives us maybe a little bit better target in terms of
+
+where that signal is coming from within the brain we also know that protein truncating
+
+variant intolerant genes which is referring to specific genes that
+
+generally do not show mutations are enriched across disorders so these
+
+genes might be particularly relevant for just kind of functioning in general and so what we did is we created annotations
+
+for pi genes brain cell subtypes and their intersection to examine whether or not prior
+
+enrichment patterns actually reflect some sort of pliotropic signal across disorders
+
+and so here i'm showing those stratified genomic sem findings for examining enrichment of the factors in
+
+orange i'm sewing the glial cell category in dark blue
+
+slash purple the excitatory brain cell subtypes and then the gabaergic subtypes the pi
+
+genes and then their intersection over here in the right most part of the plot for the different factors
+
+and what we see is that there's a really unique signal for the psychotic disorders factor with an excitatory and
+
+gabaergic um genes um within the pi genes and a signal that is particularly enriched for
+
+their intersection and so i think this starts to give us some real traction
+
+in terms of being able to understand what it is that the psychotic disorders factor is capturing in terms of where
+
+that genetic signal is coming from and also starts to point towards some reasons that these disorders might
+
+actually diverge and actually look both phenotypically different and not share genetic signal at the level of this p
+
+factor over here um \[Music\] and i also would just highlight that if
+
+you were to go into google scholar right now and type in any of these um sub neuronal sub cell types for
+
+bipolar disorder schizophrenia you could really make a case based on the prior literature that really any of these are relevant to
+
+the factor and of course this is just one study among many um but we're using a pretty high powered
+
+set of g-was summary statistics paired with some pretty cutting-edge rna-seq data that shows that really these glial cells
+
+are not particularly relevant for the psychotic disorders factor as we've defined it here
+
+so in conclusion um we've really expanded the genetic factor model of psychiatric risk to identify
+
+four major factors of genetic risk sharing we find relatively high utility of the
+
+psychotic and internalizing disorders factor when we go on to really kind of stress test these factors
+
+using different follow-up analyses including those q-snip and q-trait findings i talked about earlier
+
+where we find that the associations between relevant external traits and individual snips
+
+are generally captured by the factor for the compulsive disorders factor i
+
+would really frame this as a factor where the jury is still out in terms of its utility
+
+namely because the gwas summary statistics that define that factor are still relatively low powered
+
+we do see that it does a pretty good job of explaining relationships with external traits but at the level of
+
+individual snips there's just not really the signal there to see whether or not it's operating through the factor or through the
+
+individual disorders and for the neurodevelopmental factor we really see
+
+some pretty low utility where a lot of the relations and the disorders that define this
+
+factor are relatively unique in terms of their patterns of genetic correlations with external traits and a lot of the snip
+
+associations did not operate through the factor in a way that seemed largely attributable attributable to
+
+a signal that was unique to autism relative to ptsd and adhd that also
+
+loaded on this factor um we also know that we can model a p
+
+factor using a genetic correlation matrix um in line with a lot of phenotypic and family based work that's been done
+
+but when we stress test this factor we find that this in particular has incredibly low utility to the extent
+
+that it obscures relationships with external correlates and sniff associations
+
+this might be due to the fact that there are sort of kind of unique um bivariate associations between
+
+different factors that are not captured across the factors as a whole so for example there might be some sort of
+
+shared signal between the psychotic disorders factor and compulsive disorders factor
+
+that results in that genetic correlation between those two factors that is really dissociable from the signal between a psychotic disorders
+
+factor and an internalizing disorders factor um so it's kind of this
+
+complex venn diagram across these factors that does not include this kind of p factor at the center at
+
+least in the way that we've examined it here which we think has pretty broad implications for a pretty rapidly expanding p factor
+
+literature with um a lot of articles coming out all the time about this p factor
+
+using stratified genomic sem which is that new genomics sum edition that is live on our
+
+github we find that prior enrichment findings generally reflect broad pathways of risk and we find in particular the
+
+intersection of pi excitatory and gabaergic genes are in which for this psychotic disorders
+
+factor which gives some real insight into the biological pathways that might underlie the really high
+
+genetic correlation between these two very debilitating disorders of bipolar disorder and schizophrenia
+
+and again as rna-seq methods get even better and the corresponding univariate g-wasps become even better powered
+
+we're going to be able to make these categories even more refined and even put them within developmentally specific windows such as excitatory
+
+neurons expressed during a specific period of development which i think is
+
+you know just at face value could be a really exciting set of findings
+
+um and just to end on a kind of sales pitch note um a lot of you have heard me talk about genomic sem but i hope that
+
+it's clear that this is a pretty flexible method in terms of its ability to ask a number
+
+of different interesting questions whether you're looking at something like g was by subtraction just doing some general factor modeling
+
+um or trying to examine systems with relationships across traits that you might not be able to otherwise examine
+
+because of how rare or mutually exclusive they are it is an open source r package that's publicly available with
+
+a github um and a uh google group that you can ask
+
+questions on and stratify genomics m is now live on the github and
+
+you know one of the reasons that it's exciting to talk to a group like this is not just to talk about the work that i'm doing which in and of
+
+itself is you know fun to do but it's also great to hear what kind of questions people have and also
+
+potentially develop collaborations projects or grant ideas and
+
+just as an aside i'm on my internship my clinical internship year at mass general hospital in boston but i will be
+
+starting as an assistant professor at cu boulder in the fall so again if people have projects or grants that they want to
+
+work on this is obviously a group that i would be particularly interested in collaborating with
+
+and so i'll just end by um \[Music\] naming and thanking a number of different people in in particular elliot
+
+tucker drove and michelle navarre who have been really central to working with me to develop genomics
+
+its extensions and a number of different people named here and of course also thanking groups like the
+
+psychiatric genomics consortium isec and uk biobank that really contributed to the data sets that i presented here
+
+in terms of the application of genomic stem to psychiatric traits so that's all i
+
+have um but again i just want to thank everyone for inviting me and for your time and curious to hear what
+
+questions people may have andrew thank you for a fascinating talk how i'd like to structure it
+
+the q a is that sam trejo who suggested you come talk to us and we really appreciate that suggestion will give us
+
+the first question and for those who have follow-up questions in that conversation i suggest you jump
+
+right in but for those who have other questions if you could just queue up in the chat i'll moderate that to tell who
+
+to tell us who's next so sam's going to give us the first question and then we'll go from there sounds great hey andrew really cool talk
+
+i sam thank you um my question is is kind of about this idea that i think is true for this earlier
+
+stuff you talked about with the geos by subtraction and the sort of non-cognitive cognitive
+
+parts of educational attainment but but it seems like it extends later on into the stuff that you're doing with um
+
+like the p factor and all these different sort of um kind of like psychiatric factors uh so so the first
+
+question is like with did you us by subtraction if like if i were just to take the linear
+
+difference between the uh ea some steps like you know beta weights and the um
+
+iq beta weights uh you know i would do like a less sophisticated version of i think what you guys do in that paper
+
+right like i'm just sort of taking the bits in one g-wash that aren't in the other gus and i was kind of curious like how
+
+similar of an answer would i get do you think or do you know to you know what the genomics m model fits
+
+um and then what are the advantages using genomic sams and then my kind of second question that's related to all
+
+this is like um well actually i'll just let you into that one
+
+first yeah now that's a great question um so michelle navarre actually has
+
+an alternative method that people are probably aware of um geoist you know wide inferred summary statistics that
+
+does something very similar to what you're describing that just kind of takes the summary statistics
+
+and i'm at that level just kind of pulls out um the shared and unique genetic signal i think the advantage of
+
+genomics m is that um is two things one that you
+
+can kind of actually depict the relationship between these two different sets of traits within like a classic
+
+koleski model in a way that's sort of intuitive in terms of how the genetic relationships are shared
+
+across these different traits that you're including um and the other is that my sense is
+
+that if you do um just kind of what you're describing
+
+you're potentially gonna get biased results because of that sample overlap piece that
+
+genomic sem is able to account for using the v matrix so if you know that you have two
+
+entirely independent samples and you have no concern about that then i don't know i think it's kind of
+
+an open question whether or not the the answer would be pretty similar but my sense is that people are generally
+
+pretty concerned about some level of unknown sample overlap and genomic stem is going to give you
+
+um some ease of mind in that case that you're actually appropriately accounting for that
+
+yeah that's helpful that's helpful and so then kind of the next question is like in both cases i think with the cognitive
+
+non-cognitive and then all these psychiatric factors like we're now able to basically you know isolate and generate polygenic scores
+
+for traits that just don't exist and and i guess i mean by that i mean they don't exist it's like they don't they've never been measured and it's not
+
+clear that we would ever able to be able to measure them um and i was just curious if you you know what you thought about that and
+
+whether those sort of apologetic scores um should we like you know we should use them differently or think about them differently
+
+um yeah that's another great question i mean i think about that too in terms of the factors that we pull out
+
+too i mean this reflects some sort of shared genetic signal across these disorders that isn't actually directly observed and so
+
+i think it's always really important to kind of do some follow-up just for yourself um
+
+and for the people who are reading this kind of hypothetical article that you're putting together to actually characterize what that
+
+kind of new polygenic score looks like so for example by taking non-cognitive
+
+summary statistics and looking at the genetic correlation between a bunch of external correlates so you get a sense of what that signal
+
+is actually picking up on in a sort of kind of multi-dimensional space so um
+
+i totally agree i don't think we should just start like kind of removing things from one another and just start kind of kitchen sinking things without
+
+any kind of hypothetical guiding force or sense of what these these new summary statistics are picking
+
+up on at the end of the day but i do think there's a number of things within genomics m um that you can do to kind of clarify
+
+that thanks super helpful yeah thank you everyone
+
+oh yes um thank you for the talk it's really comprehensive pretty much covered everything about genomicsm um so so i have questions
+
+about some technical details but for the follow-ups probably you can continue in our
+
+individual session after this but for now i i'm very interested in this annotation stratified janome icm so i'm
+
+wondering because if you're interested in the heritability enrichment of factors in certain regions you actually
+
+don't have to fit annotation stratified version of genomic sem right you can just run the standard xiaomi sem and get the
+
+juva summary set for those factors and then test if their herd ability uh is enriched in
+
+in certain annotation categories i wonder empirically do you actually see differences when you run the annotation stratified
+
+version of gsem and then characterize you know annotation enrichment
+
+um you do see some differences in general you just see kind of
+
+deflation of signal um i think that's a great question you know i think that's one thing that comes
+
+up a lot is just this general idea of like couldn't you do this in a much simpler kind of more straightforward way um by
+
+yeah just taking the summary statistics for the factors and um running partitioned heritability
+
+on that um the reason that you see deflated signal is that the factor summary statistics are estimated with
+
+error and what i mean by that is those summary statistics are going to include some of that q signal
+
+or signal that is not actually operating through the factor itself so you could think
+
+about kind of pruning based on significant q-snips and then feeding those summary statistics into
+
+partitioned heritability um but i think it's kind of unclear what threshold to use when you do that
+
+whereas if you're doing it strictly within a genomic sam sem framework by looking
+
+at enrichment using partition covariance matrices you're not including that kind of error
+
+that gets introduced into the summary statistics in that way um another thing i would say
+
+is that you can also look at enrichment of the uniquenesses and enrichment of things like factor
+
+correlations so that is sort of a tangent to the question that you're asking but just to
+
+say that stratified genomic stem i think is kind of more broadly useful in the sense that you can look at things
+
+that you couldn't really feed into a partitioned heritability analysis like enrichment of factor correlations
+
+um or kind of concurrently looking at enrichment of the uniquenesses within the same model
+
+yeah this is very helpful so a quick follow-up would be that um do you have a sense about how big the
+
+annotation need to be for this to work because my intuition would be that if you have a very small function annotation
+
+um the the annotation stratified genetic covariance estimate will become very noisy so then when you fit a separate genomic
+
+sem in in that you know genomic region alone maybe maybe it will be challenging to
+
+converge right so empirically based on the sample size in your analyze summary stats how big can annotation be
+
+um one thing as far as the model converging is that and the way that the estimation procedure is coded
+
+is that we kind of fix the estimates from the annotation that includes all snips
+
+and then re-estimate the model with those fixed estimates and the partition specific covariance matrices
+
+so that helps a little bit with just kind of wonky model estimation in terms of just like um genetic
+
+covariance estimates that are really imprecise you know i know that this is i'm clear
+
+to you but just to sort of um put out there that you know we have the partitioned sampling covariance
+
+matrices too so you don't run a danger of false positives in the sense that if a covariance estimate
+
+and the partition space is really imprecise then it's also going to have a huge standard error that ports over to the enrichment
+
+estimate so there are certain annotations that are really small where you get like a huge enrichment estimate but with
+
+a a confidence interval around it that is humongous at the same time um
+
+so big point estimate but not significant in that sense in terms of annotation size i don't have
+
+like a great sense of how small um it needs to be
+
+i mean these pi by brain cell subtype annotations are not humongous um
+
+\[Music\] but um yeah i don't i don't have a concrete answer for that
+
+the other thing i'll say is that when we first started this project my interest was in actually looking at whether or not the factor structure changes across
+
+annotations and that we are not powered to do for the reason that you're
+
+kind of highlighting that there's a lot of just kind of random noise in the covariance estimates so that you get these kind of fluctuating
+
+factor structures that don't actually reflect something that seems to actually be changing in the population
+
+so that's why we're not doing kind of partition specific factor structures but
+
+more kind of fixing the model in the genome-wide sense and then looking at enrichment of particular model parameters
+
+yes great thank you of course we had an overlapping question that
+
+philip and james asked about modelfit i think the general question is how you think about model fit
+
+but maybe james could fill in a more precise targeted question
+
+sure yeah thanks for the talk andrew that was extremely helpful and informative and exciting um
+
+so my question i i think it's similar to phillips although he can certainly jump in here is
+
+is that when we've tried to fit these more complicated models in gsam
+
+where we have more than just the five right like you did with the 11 the problem that we ran into was that
+
+the the more complicated your model gets the harder it is to actually produce a strong fitting model
+
+so i'm just wondering since you didn't really talk about it in your slide is is uh when you were able to successfully
+
+extract these uh four different latent factors how well would you say that the overall
+
+model actually fit the data to the extent that you feel confident that this neurodevelopmental factor is
+
+in fact a truly unique factor can you speak a little bit about that yeah so um
+
+that four factor model does fit the data well by conventional standards so cfi i think is
+
+like .96 um \[Music\] srmr is i think .06 for that model so
+
+using like these kind of arbitrary cutoffs um we find that the model fits pretty well
+
+we see really clear increase in model fit as we kind of move from a common factor model to this more nuanced four
+
+factor model um of course you know there's the trade-off of
+
+you know a more complicated factor model is always going to fit the data better um but it it kind of hit this point
+
+where hypothetically the factors that we were pulling out made a lot of sense um it seemed to fit the data pretty well
+
+and as we kind of included you know updated summary statistics we were consistently pulling
+
+out the same factors using um a kind of restarted exploratory procedure
+
+so you know at the same time i think that you can have genetic correlations
+
+are such a broad kind of 10 000 foot metric that in the way that we showed with these kind of q
+
+follow-up analysis that's important to really stress test these factors because you know we can model a p factor we can
+
+model a neural developmental factor but that might be that it's kind of aggregating across these really
+
+dissociable pathways um at different levels of analysis so i think that model fit is just one
+
+piece of this puzzle i agree entirely and i'll follow up with you in our individual meeting but
+
+one one additional thing i just wanted to add was was the the alignment of the models that you
+
+extracted and with theoretical uh alignment with our theory of what these
+
+factors should be so for instance in your neural developmental factors disorders you had ptsd
+
+autism adhd and i think tourette's right so you know to what extent does that align
+
+with for instance high top models of neurodevelopmental disorders or or even dsm
+
+perspectives of what neurodevelopmental disorders are classified as not that we necessarily agree with the dsm but
+
+but i'm just saying that you know there's this the quantitative piece in which the the disorders fit these this type of
+
+structure but then there's also how well does that fit with our theoretical understanding of how these disorders should look or how they
+
+present yeah i mean um it's sort of a mix of
+
+both and i think that that's you know in some ways kind of nice like you would hope that after spending
+
+millions of dollars to do genomics we don't just recapitulate what we already knew in some way but actually get some kind
+
+of novel insight and the real interesting thing within this neurodevelopmental factor is ptsd
+
+and the reason i highlight that is we actually see that ptsd and adhd are correlated
+
+greater than 0.7 across multiple separate cohorts which is not something that you would
+
+get from reading the dsm or just from practicing clinically i don't think
+
+and so there's sort of a separate project going on that's really trying to tease that apart adhd and autism i would argue you know
+
+there's some good reason to think they would load together um but in a purely kind of exploratory sense that particular factor
+
+i think is is the odd one out particularly because ptsd is is loaded so strongly due to its
+
+relationship with adhd but that relationship is there and we
+
+feel pretty confident that it's there because of how consistently we see that across independent cohorts
+
+is one of your questions short enough that it would be a minute or two long um oh my god
+
+i'm not really sure but but anyways let me just briefly say andrew i'm so glad that i that i heard that you accepted this job
+
+offer from boulder so i i know that matt keller is like super excited about you know that that you're coming there
+
+and i only heard it from him like very recently that this is finally working out so thumbs up congratulations
+
+so actually i had a lot of like very far drifting like comments and questions that may actually be really better if
+
+i talk to you separately about this but maybe just one very concrete thing so um i was just wondering if genomic
+
+sem actually makes use of the standard errors that uh ld score regression rg estimates spit
+
+out or are you only losing using the point estimates themselves we're also using the standard errors
+
+in that in that v matrix okay well so then there is this um there is a
+
+slightly weird thing that um if you construct the the genetic correlation matrix with a bivariate
+
+method that doesn't take the entire multivariate structure into account like lesd ldsc right so that's
+
+really just bivariate by variant then the resulting um matrix may actually not be a
+
+positive semi-definite and the uh the standard errors are actually not necessarily theoretically correct
+
+so um i mean there is a way how you can actually uh uh get the correct standard errors but
+
+it would be a completely different method it will basically be a multivariate version of of grammar
+
+uh which would have some advantage of some disadvantages but i'm just thinking is it theoretically
+
+possible that you fit that that you built your genomic sem model
+
+based on standard errors and rg estimates that are not coming
+
+from ldsc but let's say from multivariate grammar um it is and i think at one point
+
+ronald was maybe working on that even um exactly yes this is where this is
+
+coming from exactly yeah yeah um and you know there's it's sort of
+
+like this um kind of constant thing that is like you know these different kind of bivariate methods come out
+
+to how we could maybe incorporate that to kind of build out these matrices i will say that we
+
+um you know the sampling covariance matrix is estimated within our multi-variable
+
+version of ldsc um but and the block jackknife kind of precedes
+
+in a way that is similar but different in that we're also populating those off diagonal elements but that actually doesn't answer your
+
+question so your point still holds um and i think yeah um
+
+trying to incorporate some of the stuff that ronald's been working on as a real interest cool all right thanks of course
+
+i think we could keep you for a long time with these uh with this question some answers andrew but we thank you again for coming i know you're going to
+
+stick around for the beginning of your individual meetings yes i want to just on behalf of the group thanks for such a clear
+
+and interesting uh discussion and presentation yeah thanks everyone really great
+
+questions and it was a real privilege to present to you all.

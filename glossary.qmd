@@ -1,0 +1,227 @@
+---
+title: "Glossary"
+---
+
+Below are common terms and acronyms used within this book and across the field of Psychiatric Genetics.
+
+------------------------------------------------------------------------
+
+# A
+
+Admixture:
+
+Allele:
+
+Area under the ROC curve:
+
+AUC: see "Area under the ROC curve"
+
+Autosome:
+
+------------------------------------------------------------------------
+
+# B
+
+Biallelic:
+
+Bonferroni adjustment:
+
+------------------------------------------------------------------------
+
+# C
+
+Chromosome:
+
+Common variant:
+
+Copy Number Variant (CNV):
+
+------------------------------------------------------------------------
+
+# D
+
+------------------------------------------------------------------------
+
+# E
+
+Effect estimate:
+
+Elastic Net Regression:
+
+EWAS:
+
+------------------------------------------------------------------------
+
+# F
+
+False Discovery Rate (FDR):
+
+------------------------------------------------------------------------
+
+# G
+
+Genetic Correlation:
+
+Genomic Inflation factor (lamda):
+
+Genotype:
+
+Genome-Wide Association Study (GWAS): Chapter X (What is a GWAS?):
+
+------------------------------------------------------------------------
+
+# H
+
+Haplotype:
+
+Hardy-Weinberg Equilibrium
+
+Heterogeneity
+
+Horizontal pleiotropy:
+
+Hyperparameters
+
+------------------------------------------------------------------------
+
+# I
+
+Identity-by-decent (IBD):
+
+Imputation:
+
+Indel:
+
+------------------------------------------------------------------------
+
+# J
+
+------------------------------------------------------------------------
+
+# K
+
+Kinship:
+
+------------------------------------------------------------------------
+
+# L
+
+Lasso regression:
+
+LDSC
+
+Linkage disequilibrium
+
+------------------------------------------------------------------------
+
+# M
+
+Manhattan plot:
+
+Mendelian Randomization
+
+Minor allele frequency
+
+------------------------------------------------------------------------
+
+# N
+
+Null hypothesis:
+
+------------------------------------------------------------------------
+
+# O
+
+Odds ratio:
+
+------------------------------------------------------------------------
+
+# P
+
+Phenome
+
+Phenome-wide Association Study (pheWAS)
+
+Phenotype:
+
+Pleiotropy:
+
+Polygenic Risk Score (PRS):
+
+Population stratification:
+
+Power analysis:
+
+Principal Component Analysis (PCA):
+
+------------------------------------------------------------------------
+
+# Q
+
+qqplot:
+
+------------------------------------------------------------------------
+
+# R
+
+R2 (Genetic Correlation):
+
+Rare Variant:
+
+REF/ALT:
+
+------------------------------------------------------------------------
+
+# S
+
+Sensitivity
+
+Single Nucleotide Polymorphism (SNP):
+
+Single Nucleotide Variant (SNV):
+
+SNP Heritability (H2SNP)
+
+Specificity
+
+Structural variant:
+
+------------------------------------------------------------------------
+
+# T
+
+Transcriptome:
+
+Transcriptomic Imputation:
+
+Type I error:
+
+Type II error:
+
+------------------------------------------------------------------------
+
+# U
+
+------------------------------------------------------------------------
+
+# V
+
+Variant
+
+Variance explained
+
+Vertical pleiotropy:
+
+------------------------------------------------------------------------
+
+# W
+
+WES:
+
+WGS:
+
+------------------------------------------------------------------------
+
+# XYZ
+
+X-linked:

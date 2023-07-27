@@ -1,0 +1,139 @@
+![](pgc_logo_website_v3.jpeg){fig-align="center"}
+
+Welcome to the PGC Video Textbook!
+
+Here, we've pulled videos from our PGC experts to give a comprehensive overview of Psychiatric Genetics: From its history, current state of research, and resources for conducting analyses in Psychiatric genetics.
+
+Each video is embedded into the textbook webpage, and a link to the video transcript has been provided below the video.
+
+### Table of Contents:
+
+#### [**Welcome and Introduction**](welcome.qmd)
+
+#### [Chapter 1: Introduction](chapter1.qmd)
+
+> [1.1: What are psychiatric disorders?](chapter1.qmd#sec-section1)
+>
+> [1.2: Epidemiology](chapter1.qmd#sec-section2)
+>
+> [1.3 History](chapter1.qmd#sec-section3)
+>
+> [1.4 Psychiatric Genomics: State-of-the-Science](chapter1.qmd#sec-section4)
+
+#### [Chapter 2: The Genome](chapter2.qmd)
+
+> [2.1: Organization of the genome](chapter2.qmd#sec-section1)
+>
+> [2.2: Types of genetic variation](chapter2.qmd#sec-section2)
+>
+> [2.3: Evolutionary signatures](chapter2.qmd#sec-section3)
+>
+> [2.4: Linkage disequilibrium](chapter2.qmd#sec-section4)
+
+#### [Chapter 3: Technologies](chapter3.qmd)
+
+> [3.1: SNP array genotyping](chapter3.qmd#sec-section1)
+>
+> [3.2: Next Generation Sequencing](chapter3.qmd#sec-section2)
+
+#### [Chapter 4: Study designs](chapter4.qmd)
+
+> [4.1: Epidemiological study design](chapter4.qmd#sec-section1)
+>
+> [4.2: Confounding, Chance, and Bias](chapter4.qmd#sec-section2)
+>
+> [4.3: Genetic study designs](chapter4.qmd#sec-section3)
+
+#### [Chapter 5: GWAS analysis](chapter5.qmd)
+
+> [5.1: Genotyping Quality Control](chapter5.qmd#sec-section1)
+>
+> [5.2: Imputation](chapter5.qmd#sec-section2)
+>
+> [5.3: Association testing](chapter5.qmd#sec-section3)
+>
+> [5.4: Meta-analysis](chapter5.qmd#sec-section4)
+
+#### [Chapter 6: Polygenic Scores](chapter6.qmd)
+
+> [6.1: Polygenic Risk Scores](chapter6.qmd)
+
+#### [Chapter 7: Ancestry-specific analysis](chapter7.qmd)
+
+> [7.1: Cross-ancestry analysis](chapter7.qmd#sec-section1)
+>
+> [7.2: Ancestry-specific PRS](chapter7.qmd#sec-section2)
+>
+> [7.3: Local ancestry and Admixed populations](chapter7.qmd#sec-section3)
+
+#### [Chapter 8: Post-GWAS Bioinformatics](chapter8.qmd)
+
+> [8.1: SNP Heritability](chapter8.qmd#sec-section1)
+>
+> [8.2: Genetic correlations and partitioned LDSC](chapter8.qmd#sec-section2)
+>
+> [8.3: Gene-association analysis](chapter8.qmd#sec-section3)
+>
+> [8.4: Gene-set analysis](chapter8.qmd#sec-section4)
+>
+> [8.5: Fine-mapping](chapter8.qmd#sec-section5)
+>
+> [8.6: Quantitative Trait Loci (QTLs)](chapter8.qmd#sec-section6)
+>
+> [8.7: TWAS/PWAS/MWAS](chapter8.qmd#sec-section7)
+>
+> [8.8: pheWAS](chapter8.qmd#sec-section8)
+
+#### [Chapter 9: Advanced Topics](chapter9.qmd)
+
+> [9.1: Copy Number Variation](chapter9.qmd#sec-section1)
+>
+> [9.2: Mendelian Randomization](chapter9.qmd#sec-section2)
+>
+> [9.3: Genomic Structural Equation Modeling](chapter9.qmd#sec-section3)
+>
+> [9.4: Interactions with Environmental Factors](chapter9.qmd#sec-section4)
+>
+> [9.5: Family-based analysis](chapter9.qmd#sec-section5)
+>
+> [9.6: Therapeutic Implications](chapter9.qmd#sec-section6)
+
+#### [Chapter 10: Other considerations](chapter10.qmd)
+
+> [10.1: A Career in Psychiatric Genetics](chapter10.qmd#sec-section1)
+>
+> [10.2: Caution in Genetic Prediction](chapter10.qmd#sec-section2)
+>
+> [10.3 Small Effect Sizes](chapter10.qmd#sec-section3)
+>
+> [10.6 GDPR for Dummies](chapter10.qmd#sec-section6)
+
+#### Software tutorials
+
+> [CNVs](software_cnvs.qmd)
+>
+> [Conditional Analysis](software_conditional.qmd)
+>
+> [Cross-Disorder Analysis](software_crossdisorder.qmd)
+>
+> Datasets
+>
+> [Epigenome-Wide Association Studies](software_ewas.qmd)
+>
+> [Gene Set Identification](software_geneset.qmd)
+>
+> [Genome-Wide Association Studies](software_gwas.qmd)
+>
+> [Genomic SEM](software_genomicSEM.qmd)
+>
+> [Mendelian Randomization](software_MR.qmd)
+>
+> [Polygenic Risk Score](software_prs.qmd)
+>
+> [SNP Heritability and Genetic Correlation](software_correlation.qmd)
+
+#### [Glossary](glossary.qmd)
+
+#### [Software Resources](resources.qmd)
+
+#### [Additional Reading](addreading.qmd)

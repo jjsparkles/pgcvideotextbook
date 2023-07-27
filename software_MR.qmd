@@ -1,0 +1,18 @@
+---
+title: "Mendelian Randomization"
+---
+
+**Title**: Examine causality using Mendelian randomization
+
+**Description**:
+
+**Presenter(s)**: Jie Zheng
+
+**Level**:
+
+**Length**: 9:26
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=_MJLRM7xjug")
+```

@@ -1,0 +1,23 @@
+---
+title: "Chapter 10.2: Caution in Genetic Prediction (Video Transcript)"
+---
+
+**Title**: Predicting the likelihood of future psychiatric disorders: a closer look, and some cautions.
+
+**Presenter(s)**: Howard Edenberg
+
+Predicting the likelihood of future psychiatric disorders sounds very appealing, particularly if there's the possibility of an effective early intervention.
+
+But let's take a closer look and look and look at some cautions before jumping ahead too quickly.
+
+HI. I\'m Howard Edenberg from Indiana University. \[These are my personal views.\]
+
+Psychiatric and substance use disorders are complex genetic disorders. The risk is affected by both the genes and the environment. Neither works alone and they interact, sometimes in complex ways. For many disorders, including the substance use disorders, the total genetic contribution to risk is about equal to the environmental contribution, and for substance use disorders there's a required environmental component: consumption or use of the substance. Thus genetics will never fully predict future psychiatric disorders, particularly the substance use disorders.
+
+Even the best powered genetic studies to date are far from being able to make confident predictions. We're only beginning to identify the genetic variations that affect risk. For the substance use disorders, for example alcohol use disorders, at this moment, the common variants measured across the entire genome predict only a small fraction of the risk, about 10 percent, so current attempts at prediction are at best premature. What makes such attempts even more problematic is the risk that people may experience stigma associated with being labeled as having a substance use disorder or psychiatric disorder.
+
+There are, however, some claims of very high accuracy in predicting risk for a complex disorder such as opioid dependence. We learned of a company claiming that they have a test to advise physicians whether someone is likely to become opioid-dependent before that physician prescribes opioids for pain relief. The company's prediction is based on training a machine learning model on a small set of cases and controls using a handful of genetic variants, only 15, that are purportedly from brain reward pathways, and they claim an extraordinarily high accuracy. We examined their claims and found serious problems. The chosen brain reward system SNPs differ in allele frequencies in different populations, and machine learning models based on those chosen SNPs turned out to predict genetic ancestry much better than they predicted risk. In fact, we found that random SNPs matched to the same minor allele frequencies performed the same way as these brain reward system SNPs. Thus there are serious problems with the purported accuracy of this test. The first problem, of course, is that prediction is not accurate and can therefore lead to poor medical decisions. In particular, this may lead to the undertreatment of pain in those individuals who are flagged as being at increased risk for opioid dependence. Because the test picks up differences in ancestry, it may lead to increased medical discrimination against those of some ancestries and it may stigmatize those predicted to be at risk. Having that marked in one's medical records could affect treatment down the line, and of course stigmatization can go beyond just medical treatment into the wider society. We've posted our analyses of these particular tests on medRxiv for those who'd like to know how we came to some of the conclusions that I just relayed to you. \[Now published: PMID: 34710714; PMCID: [PMC9358969](http://www.ncbi.nlm.nih.gov/pmc/articles/pmc9358969/)\]
+
+So this has been a cautionary tale. Although our study focused on one example of a predictive test for opioid use disorder, similar issues are likely to arise in tests for other substance use disorders and psychiatric disorders in general. Particularly because these kinds of disorders are often accompanied by stigma, we have to be especially careful that our tests are accurate, that our tests don't discriminate against people from different ancestries, and that the good that they do outweighs the potential for the stigmatization.
+
+Thanks for listening to my comments.

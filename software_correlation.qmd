@@ -1,0 +1,40 @@
+---
+title: "SNP Heritability and Genetic Correlation"
+---
+
+# LAVA
+
+**Title**: LAVA Tutorial
+
+**Presenter(s)**: Josefin Werme
+
+**Level**: Intermediate
+
+**Length**: 16:08
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=ovfYfcVLLO0")
+```
+
+# LDSC
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=nOxHTYz-z7s")
+```
+
+# GCTA-GREML
+
+**Title**: Estimating SNP-based heritability with GCTA-GREML
+
+**Presenter(s)**: Jian Yang
+
+**Level**: Intermediate
+
+**Length**: 18:28
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=kk9Fkg0trT8")
+```
