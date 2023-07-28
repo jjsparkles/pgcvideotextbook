@@ -1,8 +1,8 @@
 ---
-title: "Chapter 7.1: Trans-ancestry analysis (Video Transcript)"
+title: "Chapter 7: Trans-ancestry analysis (Video Transcript)"
 ---
 
-# Cross-ancestry analysis {#sec-video1}
+# 7.1: Cross-ancestry analysis {#sec-video1}
 
 **Title**: Cross-ancestry PTSD and Polygenic Findings, and the Cross-Population SIG of the PGC
 
@@ -20,7 +20,69 @@ this I'll just show one bit of information here we looked at 10 years worth of p
 
 Roseanne Peterson had a really great idea to write a best practices paper describing the ways in which genetic analyses ought to be modified for different samples of diverse ancestry and in particular admin samples and just mixtures of different different samples and so some of the topics that are addressed in this paper include specific recommendations for how to modest and to modify quality control steps which parameters should be modified and how and why as well there are recommendations for imputation and for how to analyze samples that issue us or mixed model context and this is absolutely a huge team effort um I want to just say thank you to this group I think that the reason that such a best practices paper doesn't already exist is that they're actually you know really isn't any one person in the world that could have written a best practices paper and it's really thanks to the analysts in this group especially that have expertise in particular areas that we were able to cover these different components of analysis and really write about the different approaches and what the pros and cons are for taking one approach versus another so that's what's in this best practices paper I'm highly eggs spoke to an editor at sell and they were very interested in this paper and so they suggested that we write it up as a primer so that's the current format of the paper we'll be submitting in on Monday and so that's our first work product and the special interest group is open to anyone it's technically within the stats group but if you're interested we have meetings on the first Wednesday of the month at 1:00 p.m. currently and you can get in touch with us and just thanks to the group all these groups for these incredible collaborative efforts so
 
-# Local Ancestry and Admixed Populations {#sec-video3}
+------------------------------------------------------------------------
+
+# 7.2: Ancestry-specific PRS {#sec-video3}
+
+**Caroline Nievergelt**:
+
+Our third speaker is Alicia Martin. Alicia is a instructor at MTH and an affiliate researcher at the Broad in Harvard. She received her PhD in genetics from Stanford University, and her current research focus is on developing novel statistical methods to improve the generalizability of genetic risk prediction from your Eurocentric genetic studies. So, her talk today is entitled "Clinical Use of Current Polygenic Risk Scores may exacerbate Health Disparities." Go ahead, Alicia.
+
+**Alicia Martin**:
+
+Thanks, Caroline. Um, sorry, try to move this other way. Well, hopefully this goes away. So I'm excited to talk to you guys today, and thanks for having me here. Can you guys all see this part of the zoom screen, on the screen?
+
+**Caroline Nievergelt**:
+
+We can see your slides.
+
+**Alicia Martin**:
+
+You can see my slides, okay? Perfect.
+
+So, I think an important point to start at is in thinking about human population history. So all of our genetic differences across populations are sort of shaped by how we originated and how we migrated and mixed as we moved out of Africa. So of course, humans originated in Africa. This has been shown through genetic evidence as well as archaeological and linguistic evidence. So many sources showing this, and then humans migrated Out of Africa, and as they did so, they took a subset of genetic diversity with them as they populated Europe, Asia, Australia, and into the Americas.
+
+Another point that I think is worth talking about---sorry, here is the fact that GOS are becoming super increasingly powerful, and so that's very, very exciting because we're making so many more biomedical discoveries these days. Some drugs are even being developed out of this, and this has been growing at such an exponential rate that it's been really, you know, impressive and somewhat challenging even to keep track of all of this progress. So that's been really, really awesome to watch.
+
+Unfortunately, however, as Laramie mentioned earlier, and Elizabeth did as well, genetics has this diversity problem. So now, shading the same growth and progress in genetics by the populations that are represented in these genetic studies, at the individual level, you can see, of course, that the vast majority of participants in genetic studies, about 80% these days, are of European descent. And this is far out of step with the global population, where about 16% of the world is of European ancestry. And perhaps even more troublingly, if we look at the fraction of individuals that have been in these GWAS studies as an overall proportion, the progress in diversifying genomics has somewhat stalled or perhaps slid a little bit since about 2014. And so this is a really big issue if we're trying to generalize studies to everybody.
+
+And so one of the nuances I want to mention here is that it's not that the studies have been getting smaller; studies have generally been either staying the same or have been growing in different populations. But one thing that we've seen is that studies have been growing much, much, much more rapidly in European descent populations than elsewhere. And so one question that I really focus on is in understanding how to do ancestry study biases in genetics impact the generalizability of the knowledge that we can learn from these studies. And so I break that down in a few ways in different aspects of our work. But in general, I want to highlight a few key points that I think are worth keeping in mind throughout all of these questions.
+
+So one of these is that the fundamental biology is really shared across different populations. So one person from one population will probably have, if they're gonna have a heart attack, it's probably for the same underlying reasons, for example, as an individual with another ancestry. And that's true in genetics, too; in genetics, this is true as well. So when we've looked across many different biomedical domains and tried to understand what causal variant effects are in different populations, these really tend to be mostly shared. So it's not that there's anything special about genetics that's different from other biology in general. The causal genetic variants seem to be the same and shared across populations.
+
+But there are some complications in interpreting genetics across populations for several different reasons. So, of course, there's---it's also worth keeping in mind that there's more genetic variation within than between populations. So populations are not substantially genetically differentiated to the point where we're finding completely distinct genetic populations. In fact, most of the genetic variation is shared; that's common across populations, and there's more genetic variation within than between.
+
+Another point that I think is really worth keeping in mind is the LD structure, this correlation structure of the genome, is one driving factor that's created a lot of challenges because this really differs across population as a function of human history going back to the first map that I showed you.
+
+So, to try to address this question of how generalizable our genetic studies are, I started with computing polygenic risk scores. So Laramie talked about this earlier, this great enthusiasm in polygenic risk score space, and how it's been really impressive to see the growth in this area in the past few years. Just so we're all on the same page, I think most of you are familiar with a polygenic score. But in general, this is just predicting an individual's phenotype from genotype. So we're basically taking genotypes from some target individual, some effect size estimates from GWAS that exist, multiplying these together, summing them up across the genome, and that's basically our phenotypic prediction. That's a very simplistic method; there are other methods. But some considerations that sort of cut across all of these different methods for computing polygenic scores are which SNPs we should include, what weights we should use, and one thing that we always need to address in terms of the utility of our polygenic scores is how accurate is the score. And this is really going to vary a lot with sample size, the heritability, the genetic architecture of the trait, and a number of different factors. So definitely worth keeping in mind all of these complexities and interpreting polygenic scores across the literature.
+
+So a study that we had done previously showed that population history really impacts genetic risk prediction across diverse populations. And so a few points here are the genetic prediction accuracy decays with increasing genetic divergence between the discovery and target populations. So, in this figure on the right, I'm showing you a polygenic score distribution computed in the thousand genomes project. So you can see that we predicted European populations, for example, to be taller than American and South Asian populations, and we predicted East Asian and African populations to be the shortest globally. But these differences really don't line up with anthropometric studies and they're rather misleading. These distributional shifts are really, really massive, and so this is clearly not necessarily reflecting reality.
+
+We also set up some coalescence simulations alongside some statistical genetics simulations and showed that these polygenic scores can differ across populations arbitrarily, and these are not necessarily meaningful. And we also showed that neutral human evolution alone can be sufficient to explain these differences. We don't necessarily rule out selection, but we do say that neutral evolution and drift, in particular, may be driving some of these differences. There's a really interesting couple of papers that I want to point out by Michelle Sohail, Jeremy Berg, and colleagues that were published in Elife yesterday on this topic.
+
+So we wanted to look at this in a large-scale setting, and so to do that, we looked at the UK Biobank data. The UK Biobank is, of course, mostly consisting of European descent individuals, and so we used those individuals to conduct GWAS for several different traits, 17 traits that were all quantitative, so things like height and BMI, and then a number of blood panel traits. And then we used the diversity in the UK Biobank in this non-European subset to try to understand how generalizable prediction accuracy is.
+
+In general, what we saw is that if we normalize prediction accuracy across all of these 17 traits to how accurately we predicted in Europeans, we saw a pretty substantial drop-off in prediction accuracy across these different populations. So, for example, on the rightmost part of this graph, we saw a four and a half-fold improvement in prediction accuracy in Europeans with respect to how well we're doing in African descent populations. We're also doing about twice as well predicting in European populations as in East Asians, and you can see how well we're doing in these other populations. So these are really, really quite large disparities here.
+
+So why is this happening? A lot of people have written about this before, and it's been well-covered in the literature, but in general, there's a pretty predictable basis of polygenic risk for disparities, and it obviously relates to who we're studying. So why, though? Well, as you know, GWAS are best powered to discover variants that are common in the population. So if we're studying European populations over and over again, in general, we're detecting variants that are most common in European populations, which are then able to explain more of the phenotypic variation in European populations than those variants that are less common in other populations. Additionally, the LD differences across populations mean that we are probably getting better tagged SNPs in the GWAS in European populations than in other populations. And then there are other really much more complex topics that are influencing this generalizability---differences in environment, selection, and other more complicated differences.
+
+But I want to emphasize that there's a lot of consistent promise from diversifying efforts so far. So, for example, the PGC schizophrenia working group, led by Hi-Liang Wong and with a first author Max Lam, have been working to really increase the sample size of East Asian individuals in schizophrenia studies. So right now, the European case-control studies in schizophrenia are still about threefold larger than the East Asian Studies, but the progress in the East Asians has been really, really rapid and massive lately. And so when we looked at how well we were able to predict East Asian schizophrenia risk in these case-control cohorts. In general, what we saw was that we were much better able to predict East Asian schizophrenia risk using the ancestry-matched East Asian data, despite the fact that the European training data was about threefold larger. So that indicates that there's really a lot of promise and value in doing ancestry-specific studies here.
+
+So lastly, I want to turn to this effort that we did to try to compare some biobank-scale analyses. So generally, what we were really interested in was doing equal-size GWAS in the UK Biobank and in the Biobank Japan, where we have a lot of overlapping traits that have been deeply studied. Then, we're interested in predicting in the European populations and in the Japanese population to try to understand what prediction accuracy looks like, to see if this was symmetric and comparable across populations. We also tested prediction accuracy in the UK Biobank African descent populations.
+
+So in general, what we saw was that ancestry-matched disease prediction was most accurate. So on the Left, I'm showing you along the x-axis the disease, and on the y-axis, I'm showing you the prediction accuracy, and the ancestry-matched results are indicated by matching colors. So on the y-axis is the target of prediction, and the summary statistics that we've used to generate the predictors are shown in blue for the Biobank Japan individuals and in red for the UK Biobank individuals. And so in general, we did better in both scenarios with the ancestry-matched disease prediction. One thing that's sort of interesting that we learned was the overall disease prediction was more accurate in Japan, and that was sort of a consequence of how these cohorts were constructed. So the Biobank Japan cohort is a more hospital-based disease-ascertained cohort, whereas the UK Biobank is a healthier and wealthier than average population-based cohort.
+
+A similar finding emerges from the quantitative traits. So for these general health measures---anthropometric and blood panel traits---in general, the ancestry-matched quantitative trait prediction is also most accurate. Taking a look at these y-axes, you can again see notable differences in how accurate prediction is in each of these populations, and the quantitative traits are predicted most accurately overall in general in the UK European samples, and that's again because of this ascertainment in the UK Biobank.
+
+Okay, so I want to stop here and wrap up and think about next steps. So in general, I think polygenic scores are really exciting and interesting and may have some power to improve clinical models, but right now I'm a little concerned or kind of a lot concerned that they're likely to increase health disparities due to these vast Eurocentric GWAS cohorts. So I see this as a call for a few pushes that we really need to make concerted efforts. One is we need much more diverse GWAS studies, and another is that we need new statistical methods to address these major issues. And on this topic, since it can be a bit sensitive, I just want to urge everyone that's working on these cross-cultural, you know, widespread topics to communicate their research responsibly and widely and anticipate the implications of your research, thinking about the potential negative consequences that will happen.
+
+I also wanted to point out that there are large efforts, for example, going on in Africa to scale up GWAS there, especially in psychiatric space, for, for example, developmental disorders and for schizophrenia, and I think this is really exciting and it's taught us a lot about how to do cross-cultural research and an ethically responsible way that accompanies some capacity-building efforts.
+
+So I want to acknowledge that this is a huge effort involving a ton of really awesome people, including my advisor and mentor, Marc Daly.
+
+------------------------------------------------------------------------
+
+# 7.3: Local Ancestry and Admixed Populations
 
 **Caroline Nievergelt**:
 
@@ -346,532 +408,4 @@ scans of selection so with that I'll acknowledge my collaborators and
 
 advisers and I guess I'll take questions at the very end but thank you for your attention
 
-# Ancestry-specific PRS {#sec-video2}
-
-**Caroline Nievergelt**:
-
-thank you so much Elizabeth that was really interesting Thanks our third speaker is Alesha Martin a militia is main structure at mth and affiliate researcher at the board in Harvard she received her PhD in genetics from Stanford University and her current research focus is on developing novel statistical methods to improve the generalizability of genetic risk prediction from your centric genetic studies so her talk today is entitled clinical use of current Polytechnic whiskers may May X activate health disparities go ahead Alicia
-
-**Alicia Martin**:
-
-thanks Caroline um sorry try to move this other way well hopefully this goes away so I'm excited to talk to you guys today and thanks for having me here can you guys all see this part of the
-
-zoom screen on the screen you can see your slides you can see my slides okay
-
-perfect so I think an important point to start
-
-at is in thinking about human population history so all of our genetic
-
-differences across populations are sort of shaped by how we originated and how
-
-we migrated and mixed as we moved out of Africa so of course humans originated in Africa this has been shown through
-
-genetic evidence as well as archaeological and linguistic evidence so many sources I'm showing this and
-
-then humans migrated Out of Africa and as they did so they took a subset of genetic diversity with them as they
-
-populated Europe Asia Australia and into
-
-the Americas another point that I think is worth talking about sorry here is the
-
-fact that gos are becoming super increasingly powerful and so that's very very exciting because we're making so
-
-many more bio medical discoveries these days some drugs are even being developed out of this and this has been growing it
-
-such an exponential rate that it's been really you know impressive and somewhat challenging even to keep track of all of this progress so that's
-
-been really really awesome to watch unfortunately however as laramie
-
-mentioned earlier and Elizabeth did as well genetics has this diversity problem
-
-so now shading the same growth and progress in genetics by the populations
-
-that are represented in these genetic studies at the individual level you can see of course that the vast majority of
-
-participants in genetic studies about 80% these days are of European descent and this is far out of step with the
-
-global population where about 16% of the world is of European ancestry and
-
-perhaps even more troubling Lee if we look at the fraction of individuals that have been in these jiwa studies as an
-
-overall proportion the progress in diversifying genomics has somewhat stalled or perhaps slid a little bit
-
-since about 2014 and so this is a really big issue if we're trying to generalize studies to everybody and so one of the
-
-nuances I want to mention here is that it's not that the studies have been getting smaller studies have generally
-
-been either staying the same or have been growing in different populations but one thing that we've seen is that
-
-studies have been growing much much much more rapidly in European descent populations than elsewhere and so one
-
-question that I really focus on is in understanding how to do ancestry study
-
-biases in genetics impact the generalizability of the knowledge that we can learn from these studies and so I
-
-break that down in a few ways in different aspects of our work but in general I want to highlight a few key
-
-points that I think are worth keeping in mind throughout all of these questions so one of these is that the fundamental
-
-biology is really shared across different populations so one person from
-
-one population will probably have if they're gonna have a heart attack it's probably for the same underlying reasons
-
-for example as an individual with another ancestry and that's true in genetics face as well so when we've
-
-looked across many different biomedical domains and tried to understand what causal variant effects are in
-
-different populations these really tend to be mostly shared so it's not that there's anything special about genetics
-
-that's different from other biology in general the causal genetic variants seem to be the same and shared across
-
-populations but there are some complications and interpreting genetics across populations for several different
-
-reasons so of course there's it's also worth keeping in mind that there's more genetic variation within than between
-
-populations so populations are not substantially genetically differentiated
-
-to the point where we're finding completely distinct genetic populations in fact most of the genetic variation is
-
-shared that's common across populations and there's more genetic variation within than between another point that I
-
-think is really worth keeping in mind is the LD structure this correlation structure of the genome is one driving
-
-factor that's created a lot of challenges because this really differs across population as a function of human history going back to the first map of
-
-slaw that I showed you so to try to address this question of how
-
-generalizable generalizable our genetic studies are I started with computing
-
-polygenic risk scores so laramie talked about this earlier this great enthusiasm in polygenic risk score space and how
-
-it's been really impressive to see the growth in this area in the past few
-
-years just so we're all on the same page I think most of you are familiar with a polygenic score but in general this is
-
-just predicting an individual's phenotype from genotype so we're basically taking genotypes from some
-
-target individual some effect size estimates from aji wasps that exists multiplying these together summing them
-
-up across the genome and that's basically our phenotypic prediction that's a very simplistic method there
-
-are other methods but some considerations that sort of cut across all of these different methods for computing polygenic scores are which
-
-snips we should include what weights we should use and one thing that we always
-
-need to address in terms of the utility of our polygenic scores is how accurate
-
-is the score and this is really going to vary a lot with sample size the heritability the genetic architecture of
-
-the trait and a number of different factors so definitely worth keeping in mind all of
-
-these complexities and interpreting polygenic scores across the literature so a study that we had done previously
-
-showed that population history really impacts genetic risk prediction across
-
-diverse populations and so a few points here are the genetic prediction accuracy
-
-decays with increasing genetic divergence between the discovery and target populations so and this figure on
-
-the right I'm showing you a polygenic score distribution computed in the thousand genomes project so you can see
-
-that we predicted European populations for example to be taller than American and South Asian populations and we
-
-predicted East Asian and African populations to be the shortest globally but these differences really don't line
-
-up with anthropometric studies and they're rather misleading these distributional shifts are really really
-
-massive and so this is clearly not necessarily reflecting reality we also
-
-set up some coalescence simulations alongside some statistical genetics
-
-simulations and showed that these polygenic scores can differ across populations arbitrarily and these are not necessarily meaningful and we also
-
-showed that neutral human evolution alone can be sufficient to explain these differences we don't necessarily rule
-
-out selection but we do say that neutral evolution and drift in particular may be driving some of these differences
-
-there's a really interesting couple of papers that I want to point out by Michelle Sohail Jeremy Berg and colleagues that were
-
-published in Elife yesterday on this topic so we wanted to look at this in a
-
-large-scale setting and so to do that we looked at the UK biobank data the UK
-
-biobank is of course mostly consisting of European descent individuals and so
-
-we used those individuals to conduct G wasps for several different traits 17
-
-traits that were all quantitative so things like height and BMI and then a number of blood panel traits and then we
-
-used the diversity in the UK biobank in this non European subset to try to
-
-understand how generalizable prediction accuracy is and so in general what we saw is that if we normalize prediction
-
-accuracy across all of these 17 traits to how accurately we predicted in europeans we
-
-saw a pretty substantial drop-off and prediction accuracy across these different populations so for example on
-
-the rightmost part of this graph we saw a four and a half fold improvement in
-
-prediction accuracy in Europeans with respect to how well we're doing in African descent populations we're also
-
-doing about twice as well predicting in European populations as in East Asians and you can see how well we're doing in
-
-these other populations so these are really really quite large disparities here so why is this happening a lot of
-
-people have written about this before and it's been well covered in the literature but in general there's a
-
-pretty predictable basis of polygenic risk for disparities and it obviously relates to who we're studying so why
-
-though well as you know G wasps are best powered to discover variants that are common in the population so if we're
-
-studying European populations over and over again in general we're detecting variants that are most common in
-
-European populations which are then able to explain more of the phenotypic variation in European populations than
-
-those variants that are less common in other populations additionally the LD differences across populations mean that we are probably
-
-getting better tagged snips in the G wasps in European populations than in
-
-other populations and then there are other really much more complex topics
-
-that are influencing this generalizability so difference is an environment selection and other more complicated differences but I want to
-
-emphasize that there's a lot of consistent promise from diversifying efforts so far so for example the pgc
-
-schizophrenia working group led by hi Liang Wong and with a first author max
-
-Lam have been working to really increase the sample size of East Asian individuals and schizophrenia studies so
-
-right now the European case control studies in schizophrenia are still about
-
-three fold larger than the East Asian Studies but the progress in the East Asians have been really really rapid and
-
-massive lately and so when we looked at Paulo were able to predict east-asian
-
-schizophrenia risk in these case control cohorts in general what we saw was that
-
-we were much better able to predict east-asian schizophrenia risk using the
-
-ancestry matched east-asian data despite the fact that the European training data was about three fold
-
-larger so that indicates that there's really a lot of promise and value in doing ancestry specific studies hearing
-
-so lastly I want to turn to this effort that we did to try to compare some bio Bank scale analyses so generally what
-
-we're really interested in was doing equal size G wasps in the UK biobank and in the bio Bank Japan where we have a
-
-lot of overlapping traits that have been deeply studied then we're interested in predicting in the European populations
-
-and in the Japanese population to try to understand what prediction accuracy looks like to see if this was symmetric
-
-and comparable across populations we also tested prediction accuracy in the UK biobank African descent populations
-
-so in general what we saw was the ancestry match disease prediction was most accurate so on the Left I'm showing
-
-you along the x-axis the disease and on the y-axis I'm showing you the prediction accuracy and the ancestry
-
-matched results are indicated by matching colors so on the y axis is the target of prediction and the summary
-
-statistics that we've generated that we've used to generate the predictors are shown in blue for the biobank Japan
-
-individuals and in red for the UK biobank individuals and so in general we
-
-did better in both scenarios with the ancestry matched Disney use prediction one thing that's sort of interesting
-
-that we learned was the overall disease prediction was more accurate in Japan and that was sort of a consequence of
-
-how these cohorts were constructed so the biobank Japan cohort is a more Hospital based disease ascertained
-
-cohort whereas the UK biobank is a healthier and wealthier than average population-based cohort a similar
-
-finding emerges from the quantitative traits so for these general health
-
-measures anthropometric and blood panel traits in general the ancestry match quantitative trait prediction is also
-
-most accurate taking a look at these y axes you can again see notable differences and help predict how
-
-accurate prediction is in each of these populations and the quantitative traits are predicted most accurately overall in
-
-general in the UK European samples and that's again because of this ascertain
-
-montano the\-- populations of individuals
-
-okay so I want to stop here and wrap up and think about next steps so in general
-
-I think polygenic scores are really exciting and interesting and may have some power to improve clinical models
-
-but right now I'm a little concerned or kind of a lot concerned that they're likely to increase health disparities
-
-due to these vast Eurocentric gee wasp IOC's so I see this as a call for a few
-
-pushes that we really need to make concerted efforts on one is we need much more diverse jiwa studies and another is
-
-that we need new statistical methods to address these major issues and on this topic since it can be a bit sensitive i
-
-just want to urge everyone that's working on these cross-cultural you know widespread topics to communicate their
-
-research responsibly and widely and anticipate the implications of your research thinking about the potential
-
-negative consequences that will happen I also wanted to point out that there are large efforts for example going on in
-
-Africa to scale up jiya studies there especially in psychiatric space for for
-
-example developmental disorders and for schizophrenia and I think this is really exciting and it's taught us a lot about
-
-how to do cross-cultural research and an ethically responsible way that a company
-
-is some capacity-building efforts so I want to acknowledge that this is a huge
-
-effort involving a ton of really awesome people including my advisor and mentor
-
-Marc Daly and with that I'm happy to stop and have everyone take questions I
-
-suppose excellent presentation Alicia very
-
-interesting thank you so much all right so Tammy can you make sure
-
-that people can unmute themselves yes it
-
-looks like they can and they can also ask questions in the chat box or the Q&A box at the bottom of their screens okay
-
-let's see are there any questions
-
-so I see people raising their hand let's see um según would you like to go ahead
-
-okay so thank you very much my name is chef at sumo so today I'm I'm just
-
-calling from the South Floyd on that Monica I have many questions but I would
-
-just ask them the most important one to me today so I have one question each for each presenter but my but what my fall
-
-special goes to Elizabeth so I want to answer is that the method design which
-
-is called structure and she has implemented this method by evaluating
-
-its battle with the common way of checking for for population structure
-
-that's the principle principle component I wanted to parks Elizabeth are you also
-
-a compare method with other other model that is used to control for population
-
-structures such as the linear linear mixed model which was implemented in
-
-many software so I would like to know how if your model is much more better
-
-than endodermis model which is commonly used now in Africa to do Cheevers sure yeah
-
-thanks so much for your question so yeah we started off kind of doing the simulations with a case control
-
-framework and I guess it's also important to note that in all the comparisons that I showed you today for
-
-tractor versus the traditional GUI smart we do include principal components in
-
-both so that is you know improvements even beyond the sort of incorporation of
-
-global ancestry this really is like a local ancestry specific game but yeah
-
-we're also hoping to kind of think about other you know phenotype contexts beyond
-
-the case control framework so yeah some some things were to be done but I think
-
-we should expect similar power gains across contexts that answers your
-
-question all right
-
-next sem Leah Davies hey can you hear me
-
-yes okay great thanks so much these were great presentations and I guess so one
-
-question you know we've been struggling with this in the context of the biobank
-
-in terms of performance of polygenic risk scores and trying to think about
-
-ways to potentially squeeze out more information from the european central GA
-
-us that would be translatable to non-european populations and one thing
-
-that we've thought about but haven't yet tried and i'm curious if any of the panelists have tried this is instead of
-
-taking a clumping approach that's based on p-values which will be in part driven
-
-by the allele frequency in the discovery sample using a comb perch that's
-
-basically based on the effect size so that you're retaining the snip was the
-
-largest effect but also the highest allele frequency in the target
-
-population I'm wondering if that could possibly coming of course it's not going
-
-to solve the problem certainly but could it possibly improve the predictions a little bit anybody looked at that we've
-
-looked at it a little bit yeah um so I guess in terms of two different thing
-
-both in terms of prediction accuracy and then also in terms of Alicia showed the
-
-slide where the different thousand genomes populations have apparently different distributions apologetic
-
-wrists courts mm-hmm so when we clump on all the ancestry is instead of clumping
-
-on European ancestry and when we use a smaller set of snips that accounts for a
-
-greater LD across all the populations we actually see pretty much normalized distributions across all ancestors so
-
-that was kind of interesting we we tried to look at how well the predictions
-
-worked across ancestry groups doing a you know clumping ideas like you mentioned and I think unfortunately in
-
-what we looked at we didn't have enough power to really determine if it was making a difference so I can't say for
-
-sure but it seems like a great idea to look into an adequately powered datasets yeah adding to what Laramie said there
-
-are a bunch of different approaches with how you would do clumping and how you would potentially evaluate even in you
-
-know sort of other methods and they can you know various methods can improve on
-
-prediction accuracy across populations so for example LD pred does a little bit better than printing a threshold
-
-approach but not as much as we would like and so one issue I think is that
-
-there's no method currently that I'm aware of that looks at multiple LD
-
-panels across populations to try to translate sort of the effect size the
-
-marginal effect sizes from one population to a marginal effect size to another population and so that's an area
-
-that we're actively working on developing new methods in and so stay tuned and hopefully we'll have some new
-
-new method that you can try out there yeah awesome well if you if you are looking for a biobank size test case
-
-that was a lot of diversity let us know that's great thanks created all right we
-
-can take a few more questions I see you David correct yes
-
-yeah hi so I guess people know me so two things really one is where I'm coming from is that I think
-
-quite likely that polygenic risk scores will never ever be committee useful so with that as the context my question is
-
-really it is don't don't we think there's a risk that in African populations because of the structure
-
-that diverse the diversity and lack of linkage disequilibrium that the kind of phenomena that we see with gee wisest in
-
-population have been through the Out of Africa bottleneck in East Asia in Europe the that that stuff just won't work in
-
-African populations the polygenic risk scores not work in African populations all would require at least sample sizes
-
-of ten times a hundred times what we're using to generate progenitor scores now
-
-and I think the question is if polishing it with scores are gonna be clinically useful are we gonna massively invest in
-
-getting these huge African samples and seeing whether they work or not or are we at this point can I look at it carefully and think maybe there won't be
-
-crimpy useful and therefore will deal with other things in Africa but not that
-
-yeah David that's an interesting question and we have also been kind of thinking along the same lines like how
-
-would you improve things for everybody the fastest and so clearly the way that
-
-the you know way that you would improve things for everybody is by starting to look at the most genetically diverged
-
-group from what's already been studied the most so looking at the most genetically diverged group from
-
-Europeans means looking in Africa and so the way that we would generally help African populations have higher
-
-prediction accuracy East Asian South Asians you know admixed populations everybody would be to start in Africa to build up
-
-these very very large cohorts and so I think that's part of the reason we've had such a concerted effort with trying
-
-to push much larger studies in Africa because it's been so vastly underrepresented in genetic studies to
-
-kind of your first point will they ever be useful there has so I mentioned super
-
-briefly that there is some promise from diversifying efforts so the ancestry matched results do a whole lot better in
-
-non-european populations than just using a larger European population even when there's several fold the sample size and
-
-sort of a meta-analysis approach might improve things even more so I think in general having a
-
-very very large African cohort is probably like step one and I'm diversifying and meda analyzing a lot of
-
-different groups together is probably step two and yeah we're you're right we're a long ways off I think that's
-
-kind of the direction we need to move in thank you Alicia that kind of and also
-
-fit into the question that Geeta sent ill and posted what kind of sample size
-
-is do we need across various populations to compute and just a specific PRS so do
-
-you have any idea of it's probably very difficult to say right yeah that'll
-
-depend a lot on genetic architecture of the traits you're looking at how shared the genetic like what the genetic
-
-correlation across ancestries is yeah it's a hard question to answer without
-
-without some more specifics unfortunately for sure some more funding would help right alright so I see we
-
-have time for one more question Monica do you wanna sure excuse me can
-
-everyone hear me yeah great well first of all I'd like to compliment our three presenters today for doing a fabulous
-
-job and in particular bringing to a larger audience our attention on this
-
-very important problem that you know it sounds like you individually and collectively been working on for some
-
-time but sometimes I don't think the larger scientific community is as plugged into this as they need to be so
-
-you're doing a great service today by presenting what you've been working on so so well my question is I think really
-
-for Elizabeth and in particular in relation to something that Laramie
-
-mentions so Larry mentioned that our abilities to sort of detect these
-
-ancestry differences was informed a little bit by the PGC ptsds more diverse
-
-cohorts that included a larger proportion of individuals from African ancestry in particular and so these
-
-methods have been developed using those data if I understand correctly that Elizabeth presented well those methods
-
-be available soon for other pgc cohorts to use or even for other cohort
-
-that focus specifically on psychiatric outcomes sure so thanks so much for the
-
-comment to us all and for the question yeah certainly so we're using a you know
-
-PTSD in an african-american demographic context as kind of our our initial use
-
-case just to test the performance of this method but it certainly could be applied to any complex you know type you
-
-know it's built around psychiatric phenotype so certainly psychiatric you ties phenotypes but even kind of more
-
-broadly and medical genetics complex traits in general should be all served well by by attractor it's also it should
-
-also perform well provided local ancestry performs well its perform well in other populations so I'm starting to
-
-do some work looking at more complex demographic scenarios so for example and you know three-way add mixed Hispanic
-
-Latino individuals are a little bit of a trickier situation when a two-way admixed population so I'm scaling it up
-
-now and making sure that it'll still perform well in those contexts as well but yeah basically any any time that you
-
-can accurately call local ancestry which depends mostly on divergence between the component populations doctors should be
-
-should be able to to handle it and so do you have a timeline for making the code
-
-available I know you said we could email you but to deploy it on the broad website or something like that
-
-yeah I'm working with some developers for this you know Hale software which is a hosted by the
-
-Broad Institute and is uh you know going to make it a lot fancier and run faster
-
-and work in every computational environment so I think the timeline for that is certainly within six months it's
-
-uh it's currently a set of Python scripts that runs but probably will run nicer once I get the Hale developers to
-
-pretty it up so yeah within six months there should be a bi archive paper with
-
-with the software attached to it I would say thanks so much everybody I think we
-
-are past the hour now and I would like to thank all the speakers and all the
-
-many participants this was a really world late meeting thanks so much thanks
-
-Caroline guy thanks everyone yeah thanks so much
+#  {#sec-video2}

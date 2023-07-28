@@ -25,7 +25,7 @@ Link to video transcript [here](software_gwas_transcript.qmd#sec-video1).
 
 ------------------------------------------------------------------------
 
-# Genotype QC 
+# Genotype QC
 
 **Title**: How to run quality control on genome-wide genotyping data
 

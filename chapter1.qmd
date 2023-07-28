@@ -50,7 +50,7 @@ Link to video transcript [here](chapter1.2_transcript.qmd).
 
 **Title**: History of Psychiatric Genetics (Part 1)
 
-**Description**:
+**Description**: A brief overview of some of the prominent players in psychiatry and psychiatric genetics, starting from the late 1700s through the mid-1900s.
 
 **Presenter(s)**: Ken Kendler
 
@@ -67,7 +67,7 @@ Link to video transcript [here](chapter1.3_transcript.qmd#sec-part1).
 
 **Title**: History of Psychiatric Genetics (Part 2)
 
-**Description**:
+**Description**: A deeper dive into a single episode in the history of Psychiatry: "The Beginnings of the Debate Between the Mendelians and the Biometricians in Psychiatric Genetics", focusing on four individuals: David Herron, Carl Pearson, Abraham Rosenoff, and Charles Davenport during 1913 to 1914.
 
 **Presenter(s)**: Ken Kendler
 
@@ -90,7 +90,7 @@ Below are state-of-the-science videos/papers for psychiatric disorders, which we
 
 **Title**: PGC: Future Perspectives
 
-**Presenter(s)**: Patrick Sullivan, University of North Carolina at Chapel Hill (USA), Karolinska Institutet (Sweden)
+**Presenter(s)**: Patrick Sullivan
 
 **Length**: 33:33
 
@@ -183,7 +183,7 @@ Link to video transcript [here](chapter1.4_transcript.qmd#sec-bipolar).
 
 **Presenter(s)**: Malia Rumbaugh
 
-**Length**: 58:02
+**Length**: 58:02 (Frontotemporal dementia starts at 17:55)
 
 ```{r, echo=FALSE}
 library("vembedr")

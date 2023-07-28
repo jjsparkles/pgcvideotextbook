@@ -16,3 +16,5 @@ title: "CNVs"
 library("vembedr")
 embed_url("https://www.youtube.com/watch?v=Lg2k2BEQIy4")
 ```
+
+Link to video transcript [here](chapter9.1_transcript.qmd).

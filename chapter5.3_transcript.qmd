@@ -6,575 +6,63 @@ title: "Chapter 5.3: Association Testing (Video Transcript)"
 
 **Title**: Biometrical Model and Basic Statistics
 
-**Presenter(s)**: Benjamin Neale (bneale\@partners.org)
+**Presenter(s)**: Benjamin Neale
 
-Hello, I'm Ben Neale. I'm one of the course directors for the International Statistical Genetics Workshop and I'm here today to talk to you about the biometrical model and basic
+Hello, I'm Ben Neale. I'm one of the course directors for the International Statistical Genetics Workshop, and I'm here today to talk to you about the biometrical model and basic statistics. Some really core theoretical underpinnings of how we think about twins and families, heritability estimation. All of this stretches back to an intellectual tradition that goes, you know, to Mendel and Galton and Fisher, all people that we'll talk about over the course of, say, from the mid-1800s. You know, forward to today.
 
-statistics. Some really core theoretical underpinnings of how we think about twins and families,
+Now a number of the scientists that I'm going to refer to are also eugenicists. I'm not going to talk about eugenics here. I know that can be very triggering for many. If you would like to learn more about eugenics or understand the relationship between polygenic inheritance and polygenicity and eugenics theory, I'd refer you to Lea Davis' talk in the 2021 workshop about precisely that. But nevertheless, let's move on and focus on the science in this particular session.
 
-heritability estimation. All of this stretches back to an intellectual tradition that goes,
+So a natural starting point when thinking about Human Genetics or, really any genetics, is to start with Mendel and start with this idea of inheritance of physical characteristics, and that was what Mendel was really interested in - working out and understanding how parents and offspring share some kinds of traits. In Mendel's case, he was doing breeding experiments using pea plants, and here we've got the little picture of this sort of toy example of a yellow smooth-skinned pea crossed with a green wrinkly-skinned pea. And if you cross peas of those particular phenotypic characteristics, all you end up with in the first generation are smooth peas that are yellow. That is denoted here by a kind of imagined genotype of AABB - "AA" "BB" for yellow and smooth and then little \"aa\" "bb" for green and wrinkly. This particular phenotype is operating in a recessive fashion. If you think about green or wrinkly, that is to say, you have to be homozygous or identical at the genotype. You have to have two copies of the genetic variant - one from your mom and one from your dad  to express the green wrinkly phenotype for the green or the wrinkly, they are on independent chromosomes. This is the law of independent assortment that Mendel was also getting at. You can juxtapose that against the yellow smooth pea, which will behave in a dominant gene action form where that is to say the big A or big B means that if you have just one copy of that particular genetic variant that is governing the phenotype that you\'re looking at, the trait of yellow or the trait of smooth-skinned pea, you end up with an F1 generation that has all the same phenotypes - all yellow peas and all smooth-skinned. And then if you cross within that F1 generation, so you take the F1 generation and you mate across the different plants in that fashion, you end up with 3/4 of the time being a yellow pea and 1/4 of the time being a green pea, and 3/4 of the time being a smooth-skinned pea and 1/4 of the time being a wrinkly-skinned pea. Now this wrinkly, smooth, yellow, green is operating either in a dominant fashion for the yellow or recessive fashion for the green. And it's a really single genetic variant that's governing this trait in this particular toy example of a pea plant.
 
-you know, to Mendel. And Galton and Fisher all people that we'll talk about, \[working\]
+And Mendel experimentally showed this. He bred a bunch of peas and did the analysis to get to a place where we arrive at Mendel's laws of independent assortment and segregation. Half of your genetic material comes from your mom, and half comes from your dad. Now, Mendel did this when there wasn't really much of an appreciation of statistics, but we're going to spend a lot of time talking about statistics in this course and throughout the rest of this lecture. So as a result, his sums came out exactly at the proportion, so they stopped the experiment when they got to the place where they thought the answer was because there wasn't really a notion of randomness in the context of this particular experiment. But nevertheless, those kinds of laws - Mendel's laws that I'm sure you learned about in your introduction to biology course - are still governing how genetic variation is transmitted from parent to offspring in humans and basically every other species in the population.There are lots of different mechanisms of reproduction in biology, and so you can get into all of that complexity. But we're going to focus our attention on the way things work in humans during this course because I think we're interested in understanding a little bit more about trait variation in the population or populations that we're studying.
 
-over the course of, say, from the mid 1800s. You know, forward to today. Now a number of
+Now,wWhen thinking about Mendelian genetics, you can also think about this sort of interesting intermediate case, where you have white flowers and you have red flowers, and you cross them. And then in the first generation after that, you see nothing but pink flowers. So you see no flowers like either the white flower side or the red flower side. You only see pink flowers. And then if you take that pink flower generation and cross it with another white flower, then what you end up with is a 50/50 mix of pink flowers and white flowers. Whereas if you cross within just the pink flowers, you end up with a quarter white flowers, half pink flowers, and a quarter red flowers.
 
-**the scientists that I'm going to refer to are also eugenicists. I'm not going to talk about eugenics here. I know that can be very triggering for many. If you would like to**
+Now, this is a sort of co-dominance, the sort of intermediate circumstance for Mendelian genetics, right? So there's this idea that the phenotype is not one of two forms but actually maybe slightly more on a continuum of white to red, and you get the halfway point in that sort of space when you cross with red flowers and white flowers. So it could be that the two genetic variants are, in a sense, equally balancing one another rather than necessarily purely expressing or not expressing their particular phenotype.
 
-learn more about eugenics or understand the relationship between polygenic inheritance and polygenicity and eugenics theory, I'd refer you to Lea Davis talk in 2021 workshop
+Now, that's a complicated case, but let's take something that's also sort of intuitive and important. And let's talk about height. If we think about height in the population, this guy over here, Francis Galton, has been doing a great many different things scientifically. But perhaps one of his most important contributions was this observation that parents who are tall or parents who are short tend to have kids that are tall or have kids that are short. And actually, not only do they tend to have tall parents have tall kids and short parents have short kids, but the kids don't seem to be quite as short as the parents are when you look at the mid-parental height (which is this line from A to B on this picture). That's the distribution of heights for parental pairs, taking the midpoint of those. And then if you look at the kids of those parents with the shortest stature, they don't have kids that are short. They have this C to D line, so they actually tend to regress a little bit towards the mean. So that's actually where we get our term regression from. So when we do a linear regression, it's actually from this kind of drawing a line concept that Galton was doing when he was writing about height and stature and parents and offspring.
 
-about precisely that. But nevertheless, let's move on and and focus on the science in this
+But there's a natural question that arises when you think about something like height. If you think about your own height, do you think there's like a single genetic variant that tells you how tall you are? I don't. That doesn't seem to make so much sense for something that's like genetics. Why would you have a single variant that ends you up at, say, 6\'4 inches, like my height? No, it's actually a little bit more complicated than that, right? Just intuitively, this idea that there's this kind of continuous variation in height in the population. There's the kind of distribution of height sort of almost looks like a normal distribution, and so how do we square this inheritance of discrete physical characteristics that Mendel observed with this idea of continuous variation?
 
-particular session. So a natural starting point when thinking about Human Genetics or
+Now, Galton was also heavily influenced by Charles Darwin. You know they were relatives. There was a lot of sort of intellectual curiosity around trait variation and kind of genetics and biology, more generally, right? Like this was all happening again in that kind of mid-1800s, so a huge amount of change in the scientific literature, and a lot of data being collected about things like people's heights and their kids and their families, and these ideas of how do we take something like height? How do we take a continuous trait like height and integrate that with what we understand about discrete inheritance of characteristics from Mendel? Because that was really Mendel's main point, is that there was something - some discrete thing being transmitted from parent to offspring.
 
-Mendel
+So in 1915, there's a really beautiful paper by East looking at Corolla length in Nicotiana longiflora, or the tobacco plant. And the experiment that East did was he concentrated the longest Corolla length and the shortest Corolla length plants and then made those the founding parental generations and then crossed those and ended up with a distribution. This F1 distribution was sort of in the midpoint, you know, sort of between those two distributions of Corolla length from the long Corolla length and the short Corolla length tobacco plants, and he had this F1 distribution. And then he mated within that F1 generation to get the F2 generation. Same sort of thing as with the peas or the flowers, and what you can see quite distinctly is that the distribution spreads out quite a bit from F1 to F2. And that observation, like the increase in the variability of the distribution from F1 to F2, points to the idea that there is maybe more than one genetic factor being inherited here. That there's maybe something that's adding a little bit of jumbling up and actually, you know, what's actually happening that we can know and appreciate now and obviously indicate is that amongst the tall parents, you've homozygosed, or you've taken the two alleles that are the long form of whatever it is, particular allele it is. And in the shorter length plants, you've homozygosed, the short form. And so when you do the F1 generation, you get a lot of heterozygous sites. So that is to say, instances where you have one of the long form and one of the short form of the particular genetic variant that is having an impact on corolla length in the tobacco plant. And as a result of them all being homozygosed, they're actually very similar genetically in F1. And then when you go to F2, you then have the binomial resampling, so some of the heterozygous sites are now turning into the homozygous long form or the homozygous short form in that F2 generation.
 
-really any genetics is to start with Mendel and start with this idea of inheritance of
+Now, not content with simply looking at the increase in the distribution as you get to the F2 generation, East then went and sampled from different points across that distribution and then. In a sense, created an F3 generation, so just take a bunch of plants with a similar sort of height and then see what happens there. And there you can see that the mean more or less tracks with the mean of where the sampling was happening in that subsequent F3 generation. And so that's the idea that there is actually a genetic contribution to the phenotypic variance in Corolla length in the tobacco plant, and that you could see it through these kinds of breeding experiments.
 
-physical characteristics. And that was what Mendel was really interested in. Sort of working out and figuring out and understanding was how is it that, you know, parents and offspring
+This is very important work, and it kind of articulated this idea that polygenic inheritance was, you know, perhaps the most natural explanation, but there wasn't really a clear mathematical formulation that made everything sort of airtight and coherent. And for that to hit the scene was a paper that Ronald Fisher wrote in 1916, and actually submitted to the Royal Society in London in 1916. It was rejected, and then it kind of got passed around in the academic publishing press of the day into this paper in 1918 where it was described in the Royal Society of Edinburgh instead.
 
-share some kinds of traits and. In Mendel's case he was doing breeding experiments using
+And as a result of the sort of observations that Lee is talking about, and many others were making throughout the scientific literature at the time, Fisher wrote this treatise on the correlation between relatives on the supposition of Mendelian inheritance, and this paper is an extremely rich, dense text. It has a huge number of ideas that are still relevant today, a century on. So this is more than a century ago, the theoretical underpinnings of quantitative genetic theory were really articulated and laid out in a very, very clear and precise mathematical framework by Fisher. And in, you know, just something like 30 pages or so, there's all kinds of ideas about how to think about genetic variance, the definition of genetic variance, the definition of variance that we use today, the idea of partitioning variance indeed, prior to this paper, partitioning variance, and even like ANOVA-like ideas hadn't really been invented, and that's Fisher's clear contribution here. How do we try and disentangle really complicated ideas? What can we maybe partition? Now, again, this is a statistical tool. This is a scientific tool. It is a model description of the world. It is not a complete and rich description of the world, and whenever we talk about partitioning variance, it's important that it is a statement that genetic variation influences a phenotype. But it is by no means the only mechanism by which a particular phenotypic value can arise, and indeed the environment may matter a great deal. Changes in the environment can have massive changes on phenotypes, and that's not really captured in a kind of idealized toy model that Fisher was talking about in the context of the biometric model. But nevertheless, additive genetic variance, dominance, worries about a sort of mating epistasis, how to think about multiple alleles, how to think about all kinds of different forces that would shape the genetic landscape of a phenotype in a population were really given some deep thorough mathematical treatment by Fisher, and this paper is so important that it's still the sort of primary way that we think about the definition of heritability. Indeed, the definition of heritability goes back to precisely this paper.
 
-pea plants, and here we've got the little picture of this sort of toy example of a yellow
+OK, so how did Fisher get there? How did he reconcile this idea of discrete inheritance from Mendel with continuous variation like height? And what Galton was doing with the looking at the parents and kids and measuring their height and showing that they were the same? Well, what Fisher did was he invoked something called the central limit theorem, and what the central limit theorem states is that if you have a bunch of independent factors that sort of are summing together to create some outcome, then a normal distribution will emerge. And we can see this if we create a sort of toy example of thinking about coin tosses. And what we're going to do when we think about coin tosses, we're going to think about just the binomial chance. And in a sense, if you think about your parents, they have genetic variation. They have a lot of places where they're heterozygous, where they have one form of a genetic variant and another form of a genetic variant, and it's a random toss of the coin. Which form of that genetic variant you yourself get, and so thinking about that coin toss, well if there's just one coin like there was for like wrinkly or smooth in terms of the peas or yellow skin or green skin for the peas, then that might you know just be a binomial chance exactly like this. But what happens when we start to add coins? Well when we start to add coins we see different distributions of outcomes in those coin tosses coming. And if you keep adding coins, what you see is, and you know, a distribution emerge, and that distribution that emerges is this normal distribution that was written about by de Moivre in the 18th century and Gauss in the 19th century, and this normal distribution here. That's like if you have an infinite number or a very large number of outcomes, you end up with that normal distribution, but it's worth remembering that if you just look at ten coin tosses as your outcomes, you're already getting pretty close to a normal-ish distribution in the population.
 
-smooth skinned pea crossed with a green wrinkly skinned pea. And if you cross peas of those
+OK, so how do we relate the normal distributions to something like diabetes or schizophrenia? Well, we invoke something called the liability threshold model that was really articulated in advance of the Fisherian idea of the quantitative genetic theory, the biometrical model that I'm talking about. So Pearson, working with Alice Lee in 1901, sort of articulated this idea that if you have an underlying distribution of liability, of you know some sort of risk for a phenotype like schizophrenia or diabetes, then if you're above that threshold, then suddenly you'll have, you'll present with that illness or that disease or that binary trait. And if you're below it, then you won't have that trait. And so you can actually think about some discrete binary phenotype as really having an underlying continuous distribution. Now, Pearson sort of elevated Alice Lee in the early 20th century. It was not often the case that women co-authored scientific papers because of gatekeeping by many different male scientists and institutions, and a lot of institutionalized sexism. But Pearson, I think, was a little bit more of a let the sort of people who actually created the ideas get the credit, and so he advocated for Alice Lee to be recognized in the scientific papers, and I think there's a lot of contributions that have gone unspoken in history, and so it's nice to sort of recognize one where there was actually the co-authorship extended to the key intellectual partner for developing these ideas. Now, the way that Pearson and Lee got to this set of ideas was actually thinking about horses and thinking about horse coat color, which you could see as discrete characteristics ranging from like a Black Horse all the way to a White Horse. But if you lined up all of those horses from the lightest shades to the darkest shades or the dark shades, the lightest shades, then there might be some underlying distribution of horse coat color that was maybe slightly more normally distributed in the population, and that was the whole idea. That was how they got to this notion that there could be some hidden distribution that we can't see, but that we just see this kind of binary outcome at the end. And this liability threshold model is still a very powerful tool for modeling discrete outcomes, particularly when they are multifactorial, when they have lots of contributing causes, just as we saw with the central limit theorem ideas with Fisher.
 
-particular phenotypic characteristics, all you end up with in the first generation are smooth peas that are yellow. That kind of denoted here by a kind of imagined genotype
+OK, so Fisher didn't just define, you know, variance and partitioning genetic variance and the analysis of variance in the 1918 paper. He also set forth a model to describe how genetic action might operate in the population, and these are slides that Manuel Ferreira made many years ago that I'm still using because I just find them so exquisitely clear. And so what we've got here are three genotype classes: "aa," "Aa," and "AA," and they are attached to different means in the population: the white circle, the yellow circle, and the red circle have different means in the population conditional on what your genotype is that you have. And that's because this genetic variant, if you hold like everything else constant, has some impact on the phenotype. It has some mild change that will maybe make you slightly taller or shorter, thinking about Galton's example dataset. And you can see that the genetic effect here that Fisher wrote down is "little a," and "little a" is like really not the best naming convention, as it's a really difficult collision of terms, but it is what it is. That's the way it's written. So here's how we're teaching it. And so the kind of genotype mean in the population is "minus a" for the "aa" \[genotype\], "d" for "Aa" \[genotype\], and this is in a context where D or the dominance deviation, which is to say how far away from the midpoint value of the two homozygote classes you are, the "aa" or "AA" where is that "Aa" genotype in relation to that midpoint. It's well, in this instance, it's dominance equals zero, and so the "Aa"  has a mean of 0, and then "AA" has a mean of "plus a," and those are the sort of genotype conditional means. So here's now a picture of normal distributions layered on top of the genotype distribution, so we see the red "aa" distribution has some mean trait value. The blue "Aa" distribution has some mean trait value, and the green "AA" has some trait value in there, you know separated by an "a's" worth of distance, and they are now a source of variation in the trait in the overall population, which is actually quite a big source of variation in this particular example.
 
-of AABB. For "AA" "BB" for yellow and smooth and then little a "b" for green and wrinkly.
+Now, what happens if we have some dominance deviation, right? So maybe everything isn't purely additive. Maybe additivity doesn't explain the universe perfectly well. Well, in that circumstance, we'll see this "d" now move the genotype mean of "Aa." Note that the midpoint is still term 0, is the midpoint between the two homozygote classes, and Fisher did that to make the algebra a little tidier, and I think we all appreciate the tidiness of the algebra when we get there. OK, so this is the dominance deviation, so this is allowing for non-additivity in the genetic effect, and there are a lot of supporters of non-additivity in the Biological Sciences because there are a lot of recessive-acting phenotypes, sort of like we saw with the yellow-green pea color, and the green peas are sort of a recessive mode of action, and so that necessity is an important observation in biology, and so this non-additivity has got a long strong intellectual tradition in this space. OK, so that's what happens under additivity. That's what happens under dominance. Now let's talk a little bit about some of the statistics that are used, and these are really just your elementary first-level statistics. Very, very basic statistics ways of describing distributions of traits, and so here we've got some idealized simulated trait on the X-axis on the right, and then this red line of mean, it's got a mean of zero that, you know, I've artificially fixed to be 0, based on R, and then the frequency is the count of the number of individuals with the trait value, and here we have it in normal units on the X-axis, and the mean is just simply defined as the sum of the observations that Xi, those individual trait values, divided by the total number of individuals or n. Pretty pretty simple. Pretty basic statistics. Hopefully, you all remember how to calculate a mean.
 
-Now this particular phenotype is operating in a recessive sort of fashion. If you think
+Now let's talk about the variance. The measure of spread in the distribution. Well, the variance is now summing up the deviations from the mean and collecting those and aggregating those over the entire distribution. And Fisher used the deviation from the mean squared because he found that that was the most consistent estimator when thinking about trying to define the measure of the spread. So what that means is that it has the least variability of an estimator of the spread of the distribution, which is why we favor X minus the mean quantity squared for each individual divided by now "n - 1". And the reason that we have an "n - 1" there is that we've had to give up a degree of freedom to the mean, and I'm not going to go much further into that. But degrees of freedom are a bit fiddly like that, but this is a way to make the estimator unbiased.
 
-about green or wrinkly, that is to say you have to be homozygous or identical at the
+OK, so the covariance of a distribution is now thinking about not just one trait but two traits, which is to say that we've got trait one on the X-axis here and trait two on the Y-axis. And these traits have some relationship to each other. There's some, you know, you can see this red line. That's the regression line that I fit on this particular dataset, and they are a bit correlated or have some covariance. Now, all the covariances is it's just a way of again summing up the deviations from the mean. But now instead of doing it in one dimension, we're doing it in two dimensions. So we've got the Xi minus Mu of X, which is the individual trait value of X for the i-th individual minus the mean of that for the overall dataset. And then we do the same thing for the Y trait as we did for the X trait, and then we multiply those deviations for each individual together, and we divide that by the number of paired entries that we have minus one, and that gives us just the covariance, and so this is just in the scale that X is on or Y is on when X and Y are standard normals. When they are, have, you know means of 0 and variance of 1. This turns into the correlation, but there's also a way to turn the covariance into correlation as well.
 
-genotype. You have to have two copies of the genetic variant 1 from your mom and one from your dad to express the green wrinkly phenotype for the green or the wrinkly. Going to type
+OK, so how much mean and variance? Well, we can think about the contribution of the QTL to the mean, and really, that's just a way of making sure that the mean squares with how we've defined our genotype classes, and so we take the number of individuals with a given Trait value times the frequency of individuals with that trait value. And you might remember how there were different means for the different traits that we saw in the picture a little while ago, with the "AA," "Aa," and "aa". Really well, those mean points we're going have to come up with a grand mean for our total dataset.
 
-there on independent chromosomes and this is the law of independent asortment that Mendel
+Now. This might be something like cholesterol levels in the population or something like height. You know any continuous phenotype. And really, it can have any shape, be any distribution, and it will still have some mean. Now, here we've got our "AA," "Aa," "aa" genotypes. The effect of the QTL, the quantitative trait locus. That's the genetic variant that is having an impact on the trait or phenotype, and that effect here is for the "AA" genotype, just a. For "Aa," it's D, and then for "aa," it's -a. That's the conditional mean. That's the mean of the phenotype conditional on carrying that genotype, and then there are the frequencies of those genotype classes. Another bit of notation introduced. So we have a tendency to define the frequency of the genotype as "p" and "q" for the other allele. So one allele, one form of the genetic variant gets the frequency of "p," the other form of the genetic variant gets a frequency of "q," which equals "1-p," and you end up with "p\^2," "2pq," and "q\^2" for the frequency of the genotype classes, if the Hardy Weinberg rules follow, and the Hardy Weinberg is basically just a way of saying that there isn't an unexpected amount of correlation amongst your parents in terms of their genotype. So if you have random mating in the population more or less, then you'll have that sort of frequencies be p\^2 for "AA," 2pq for "Aa," and q\^2 for "aa."
 
-was also getting at. You can juxtapose that against the yellow smooth pea, which will behave in a dominant gene action form where that is to say the big A or big B means that
+Now the mean is just going to be taking those conditional genotype means times the frequency of the genotype and summing those all together. And so that's what we see down here in the mean of X, and that gives us a grand mean that we're going to use in the context of our calculation of the variance. OK, so when we calculate the variance again, we're looking at the squared deviation from the mean. Now note, this is in the population, and so we don't have to worry about the "n-1". It's funny because it's thinking about everybody rather than thinking about an estimate, and that little estimator thing is just a little bit of nuance around statistics. But again, we have this (xi minus mu)\^2, so the ith individual's trait value of X minus the mean squared times the frequency of that genotype class. And so here we just work through some more algebra. So the variance is taking this effect mean for "AA" multiplying it, you know, taking off the grand mean that we calculated on the previous slide, and multiplying it by the frequency of that genotype in the population. So we have (a - mu)\^2 \* p\^2 + (d - mu)\^2 \* 2pq + (-a - mu)\^2 \* q\^2. And that's how we define the variance of the QTL. That's what Fisher partitioned as the variance of the QTL, all the way back in 1918. Again, before there was the structure of the genome, before the nucleic acids were really understood, before we had any real notion of what was actually going on with DNA itself. But we understood that there were genetic variants operating in the population, that they were a source of variation, and this source of variation could be a tractable, quantifiable thing. This VQTL, this variance of the QTL. And the heritability of trait X at this locus is just simply taking the variance of the QTL divided by the total variance of the phenotype. Now this is all worked out for just one genetic effect, but remember, we could have many, many genetic effects, and so if we sum up all of those genetic effects together, then that might get us to the sum total of the variance of QTL, which is VA, and then divide that by the sum total of the phenotypic variance. Just the variance of the trait in the population more generally. And that's how you get to your heritability.
 
-if you have just one copy of that particular genetic variant that is governing the phenotype,
+OK, so let's work through a bit more of the algebra, so we've got this variance. Here we get this (a - m)\^2 \* p\^2 + (d - m)\^2 \* 2pq + (-a - m)\^2 \* q\^2, and we can actually partition the variance of the QTL into a part that is additive and a part that is dominance, and so that's what's been done here through rearranging is taking the VA of the QTL, and that's the main effect that if you take a genotype and just run a regression, the genotype against a phenotype, you will end up with this additive genetic variance as your estimator. Fisher made it really convenient and really nice for us in the derivation of the math and kind of thought it through that way, and then if you add that second term and you encode a dominance deviation from that additivity, then you can get this VD of the QTL, or the dominance contribution to variance. So that's just the deviation from the purely additive model, all predicated on where that heterozygous class goes.
 
-that you're looking at the trait of yellow or the trait of smooth skin pea. You end up,
+OK, now that's one genetic effect, but remember for something like height, things are a bit more complicated, right? We don't have a single genetic effect necessarily. We actually maybe have many, many genetic effects, and so we can kind of develop those ideas a bit further and say that there might be some distribution to the genetic effects. This isn't what you know. This is what Fisher implied in his work. He said that let's assume that there are polygenes. We can assume a distribution of those single nucleotide polymorphisms, those specific genetic effects that you're going to learn about a little bit later on in the course. We can then use that to generate an estimate of the heritability, and that's exactly what the tool GCTA does. It's also what we did in the context of the LD score regression. So this has just been an introduction to heritability, additive genetic variance, dominance genetic variance, means, variances, and covariances. These are the most fundamental basic building blocks that the rest of the two weeks will be built on, and I hope you've enjoyed this introduction to how we think about partitioning phenotypic variance and a little bit on why we do it so as to try and understand a little bit more about the world around us. Thank you.
 
-you know, with crossing those getting an F1 generation that has all the same phenotypes
-
-that are all yellow peas and they're all smooth skin. And then if you cross within that F1 generation, so you take the F1 generation and you mate across the different plants in
-
-that fashion you end up with the 3/4 of the time being a yellow pea and 1/4 of the time
-
-being a green pea and 3/4 of the time being a smooth skin pea and 1/4 of the time. Being
-
-a wrinkly skin pea. Now this wrinkly, smooth and yellow green is operating either in a
-
-dominant fashion for the yellow or recessive fashion for the green. And it's a really single
-
-genetic variant that's governing this trait in this particular toy example of a pea plant.
-
-And Mendel experimentally showed this, you know, like actually, you know, bred a bunch of peas and did the you know, analysis to get to a place where we arrived at Mendel's
-
-laws. Of independent assortment and segregation, but also that like half your genetic material
-
-is coming from your mom and half your genetic material is coming from your dad. Now Mendel
-
-did this when there wasn't really much of an appreciation of statistics, but we're going to spend a lot of time talking about as well in this course and throughout the rest of
-
-this lecture. And so as a result his sums came out exactly at the proportion, so they
-
-stopped the experiment. When they got to the place where they thought the answer was, because there wasn't really a notion of randomness. In the context of this particular experiment,
-
-but nevertheless, those kinds of laws, Mendel's laws that I'm sure you learned about in your introduction to biology course. Those Mendelian laws are still governing how genetic variation
-
-is transmitted from parent to offspring in humans in basically every other species in
-
-the population, there are lots of different mechanisms of reproduction in biology, and
-
-so you know you can get into all of that that complexity, but we're going to focus our attention on the way things work in humans during this course because I think we're interested in
-
-understanding a little bit more about trait variation in the population or populations
-
-that we're studying now. When thinking about Mendelian genetics. You can also think about
-
-Mendelian Genetics
-
-this sort of interesting intermediate case. This case where you have white flowers, and you have red flowers, and you cross them. And then in the first generation after that
-
-you see nothing but pink flowers, so you see no flowers like either the white flower side
-
-or the red flower side. You only see pink flowers and then if you take that pink flower generation and cross it with another white flower then what you end up with is a 50/50
-
-mix of pink flowers and white flowers. Whereas if you cross within just the pink flowers
-
-you end up with a quarter white flowers, half pink flowers and a quarter red flowers. Now
-
-this is a sort of co-dominance, the sort of intermediate circumstance for Mendelian genetics,
-
-right? So there's this idea that the phenotype is not one of two forms, but actually maybe.
-
-Slightly more on a continuum of white to red and like you get the halfway point in that
-
-sort of space when you cross with, you know red flowers and and white flowers, and so
-
-it could be that the two genetic variants are, in a sense equally balancing one another rather than necessarily purely expressing or not expressing their particular phenotype.
-
-Now that's a you know, complicated case, but let's take something that's also sort of intuitive
-
-Height
-
-and important. And let's talk about height and if we think about height in the population,
-
-this guy over here, Francis Galton is, you know, been he did a great many different things
-
-scientifically. But perhaps one of his most important contributions was this observation
-
-that parents that are tall, or parents that are short tend to have kids that are tall
-
-or have kids that are short and actually not only do they tend to have, you know, tall
-
-parents tend to have tall kids, and short parents tend to have short kids, but the kids don't seem to be quite as short. As the parents are when you look at the mid parental height,
-
-which is this line from A to B on this picture, that's the distribution of heights for parental
-
-pairs. Taking the midpoint of those, and then if you look at the kids of, you know, those
-
-parents with sort of the shortest stature. They don't have kids that are short that they
-
-have this C to D line, so they actually tend to regress a little bit towards the the mean
-
-and. So that's actually where we get our term regression from. So when we do a linear regression,
-
-it's actually from this kind of drawing a line concept that that Galton was doing when
-
-he was writing about height and stature and parents and offspring. But there's a natural
-
-question that arises when you think about something like height. If you think about your own height, do you think there's like a single genetic variant that tells you how
-
-tall you are? I don't, that doesn't seem to make so much sense for something that's like. Genius, why would you have a single variant that like ends you up at say 64 like I like
-
-my height. No, it's actually a little bit more complicated than that, right? Just intuitively,
-
-this idea like there's this kind of continuous variation in height in the population. There's
-
-the kind of distribution of height sort of. Almost looks like a normal distribution, and
-
-so how do we square this inheritance of discrete physical characteristics that Mendel observed
-
-with this idea of continuous variation now Galton was also heavily influenced by Charles
-
-Darwin. You know they were relatives. There was a lot of sort of. You know, kind of intellectual
-
-curiosity around trait variation and kind of genetics and biology. More generally, right,
-
-like this was all happening again in that kind of mid 1800s, so a huge amount of of
-
-change in the scientific literature, and a lot of data being collected about things like you know people's heights and their kids and their families, and these ideas of how do
-
-we take something like height? How do we take a continuous trait like height and you, you know, integrate that with what we understand about discrete inheritance of characteristics
-
-from Mendel because that was really Mendel's main point is that there was something - some discrete thing being transmitted from parent to offspring. So in 1915, there's a really
-
-beautiful paper by east looking at Corolla length in nicotiana longiflora, or the tobacco
-
-plant, and the experiment that East did. Was he concentrated the longest Corolla length
-
-and the shortest Corolla length plants, and then made those the founding parental generations
-
-and then crossed those and ended up with a distribution. This F1 distribution there was sort of in the midpoint. You know, sort of between those two distributions of Corolla
-
-length from the kind of long Corolla length and the short Corolla length tobacco plants,
-
-and he had this F1 distribution. And then he mated within that F1 generation to get the F2 generation. Same sort of thing is with the peas or the flowers and what you can see
-
-quite, you know distinctly is that the distribution spreads out quite a bit from F1 to F2, and
-
-that observation. That, like the increase in the variability of the distribution from
-
-F1 to F2, points to the idea that there is maybe more than one genetic factor being inherited
-
-here, that there's maybe something that's adding a little bit of, you know, jumbling up and and actually you know what's actually happening that we can know and appreciate
-
-now and sort of obviously indicate is that amongst the tall parents you've homozygozed, or you've taken the two alleles that are the long form of whatever it is. Particular allele
-
-it is. And in the shorter length plants you've homozygozed, the short form. And so when you
-
-do the F1 generation you get a lot of heterozygous sites, so that is to say one instances where
-
-you have one of the long form and one of the short form of the particular genetic variant
-
-that is having an impact on corolla length in the tobacco plant. And as a result of them
-
-all being homozygozed, they're actually very similar genetically in F1. And then when you
-
-go to F2 you then have the binomial resampling, so some of the heterozygous sites are now turning into the homozygous long form, or the homozygous short form in that F two generation
-
-now not content with simply of looking at the increase in the distribution as you get to the F2 generation East then went and sampled from different points across that distribution
-
-and then. In a sense created an F3 generation, so just take a bunch of plants with a similar
-
-sort of height and then see what happens there and there. You can see that the mean more
-
-or less tracks with the mean of where the sampling was happening in that subsequent
-
-F3 generation, and so that's the idea that there is actually a genetic contribution to the phenotypic variance in Corolla length in the tobacco plant, and that you could see
-
-it through these kinds of breeding experiments. This is very important work and it kind of
-
-articulated this idea that polygenic inheritance was, you know, perhaps the most natural explanation,
-
-but there wasn't really a clear mathematical formulation that made everything sort of airtight
-
-and coherent, and for that to hit the scene was a paper that Ronald Fisher wrote in 1916
-
-Fisher
-
-and actually submitted to the Royal Society in London in 1916. It was rejected, and then
-
-it kind of got passed around in the academic publishing press of the day into this paper
-
-in 1918 where it was. Described in the Royal Society of Edinburgh instead. And as a result
-
-of the sort of observations that Lee is talking about, and many others were making throughout
-
-the scientific literature at the time, Fisher wrote this treatise on the correlation between
-
-relatives on the supposition of Mendelian inheritance, and this paper is an extremely rich, dense text. It has a huge number of ideas that are still relevant today, a century
-
-on, so this is more than a century ago, the theoretical underpinnings of quantitative genetic theory were really articulated and laid out in a very, very clear and precise
-
-mathematical framework by Fisher. And in you know, just something like 30 pages or so.
-
-There's all kinds of ideas about how to think about genetic variance, the definition of
-
-genetic variance, the definition of variance that we use today, the idea of partitioning variance indeed, prior to this paper, partitioning variance, and even like ANOVA like ideas hadn't
-
-really been invented, and that's Fisher's clear contribution here. How do we try and disentangle really complicated ideas? What we can maybe partition? Now again, this is
-
-a statistical tool. This is a scientific tool. It is a model description of the world. It
-
-is not a complete and rich description of the world, and whenever we talk about partitioning variance, it's important that it is a statement that genetic variation influences a phenotype.
-
-But it is by no means the only mechanism by which a particular phenotypic value can arise,
-
-and indeed the environment may matter. a great deal changes in the environment can have massive changes on. Phenotypes, and that's not really captured in a kind of idealized toy model
-
-that Fisher was talking about in the context of the biometric model. But nevertheless,
-
-additive genetic variance, dominance, worries about a sort of mating epistasis. How to think
-
-about multiple alleles? How to think about all kinds of different forces that would shape
-
-the genetic landscape of a phenotype in a population were really given some deep thorough
-
-mathematical treatment by Fisher and this paper is so important that it's still the sort of primary way that we think about the definition of heritability. Indeed, the definition
-
-of heritability goes back to. Precisely this paper. OK, so how did Fisher get there? How
-
-Central Limit Theorem
-
-did he reconcile this idea of discrete inheritance from Mendel with continuous variation like
-
-height? And what Galton was doing with the looking at the parents and kids and measuring
-
-their height and showing that they were the same? Well, what Fisher did was he invoked something called the central limit theorem and what the central limit theorem states
-
-is that if you have a bunch of independent factors, that sort of are summing together
-
-to create some outcome then a normal distribution will emerge and we can see this if we create
-
-a sort of toy example of thinking about coin tosses and what we're going to do when we
-
-think about coin tosses, we're going to think about just the binomial chance, and in a sense, if you think about your parents, they have genetic variation. They have a lot of places
-
-where they're heterozygous where they have one form of a genetic variant and another form of a genetic variant, and it's a random toss of the coin. Which form of that genetic
-
-variant. You yourself get and so thinking about that you know coin toss. Well if there's
-
-just one coin like there was for like wrinkly or smooth in terms of the peas or yellow skin
-
-or green skin for the peas then that might you know just be a binomial chance exactly
-
-like this. But what happens when we start to add coins? Well when we start to add coins we see different distributions of outcomes in those coin tosses coming. And if you keep
-
-adding coins. What you see is, and you know a distribution emerge and that distribution
-
-that emerges is this normal distribution that was written about by de Moivre in the 18th
-
-century and Gauss in the 19th century, and this normal distribution here. That's like
-
-if you have an infinite number or a very large number of outcomes, you end up with that normal distribution, but it's worth remembering that if you just look at ten coin tosses as your
-
-outcomes, you're already getting pretty close to a normal-ish distribution in the population.
-
-OK, so how do we relate the normal distributions to something like diabetes or schizophrenia?
-
-Well, we invoke something called the liability threshold model that was really articulated
-
-in advance of the Fisherian idea of the quantitative genetic theory, the biometrical model that
-
-I'm talking to about so Pearson working with Alice Lee in 1901. Sort of articulated this
-
-idea that if you have an underlying distribution of liability. Of you know some sort of risk
-
-for phenotype like schizophrenia or diabetes then and you're above that threshold. Then
-
-suddenly you'll have. You'll present with that illness or that disease or that binary trait. And if you're below it then you won't have that trait and so you can actually think
-
-about some discrete binary phenotype as really having an underlying continuous distribution.
-
-Now. Pearson sort of elevated Alice Lee in the early 20th century. It was not often the
-
-case that women coauthored scientific papers because of gatekeeping by many different male
-
-scientists and institutions, and a lot of institutionalized sexism, but Pearson, I think,
-
-was a little bit more of a let the sort of people who actually created the ideas get
-
-the credit, and so he advocated for Alice Lee to be recognized, in the scientific papers and I think there's a lot of contributions that have gone unspoken in the history, and
-
-so it's nice to sort of recognize one where there was actually the Coauthorship extended
-
-to the key intellectual partner for developing these ideas. Now the way that Pearson and
-
-Lee got to this set of ideas was actually thinking about horses and thinking about horse coat color, which you could you know, see as discrete characteristics ranging from like
-
-a Black Horse all the way to a White Horse. But if you lined up all of those horses from
-
-the lightest shades to the darkest shades or the dark shades, the lightest shades. Then there might be some underlying distribution of horse coat color that was maybe slightly
-
-more normally distributed in the population, and that was the whole idea. That was how they got to this notion that there could be some hidden distribution that we can't see,
-
-but that we just see this kind of binary outcome at the end, and this liability threshold model is still very powerful tool for modeling discrete outcomes, particularly when they are multifactorial
-
-when they have lots of contributing causes. Just as we saw with the central limit theorem
-
-ideas with Fisher. OK, so Fisher didn't just define you know variance and partitioning
-
-Genetic Action
-
-variance and the analysis of variance in the 1918 paper. He also set forth a model to describe
-
-how genetic action might operate in the population and these are slides that Manuel Ferreira made many years ago that I'm still using because I just find them so exquisitely clear. And
-
-so what we've got here are three genotype classes, "aa" "Aa" and "AA" and they are Attached
-
-to different means in the population, the white circle, the yellow circle, and the red circle have different means in the population conditional on what your genotype is that
-
-you have. And that's because this genetic variant. If you hold like everything else constant, has some impact on the phenotype. It has some mild change that will maybe make
-
-you slightly taller or shorter. Thinking about Galton's example data set. And you can see
-
-that the genetic effect here that Fisher wrote down is "little a" and "little a" is like
-
-really not the best naming convention, As it's a really difficult collision of terms, but it is what it is. That's the way it's written. So here's how we're teaching it.
-
-And so the kind of genotype mean in the population is "minus a" for the "aa" \[genotype\] "d" for
-
-"Aa" \[genotype\] and this is in a context where D or the dominance deviation, which is to
-
-say how far away from the midpoint value. Of the two homozygote classes, you are the
-
-"aa" or "BB". Where is that "Aa" genotype in relation to that midpoint. It's well in this instance it's dominance equals zero, and so the "Aa" \[genotype\] has a mean of of
-
-0 and then "AA" has a mean of "plus a" and those are the sort of genotype conditional
-
-means and. So here's now a picture of normal distributions layered on top of the genotype.
-
-Distribution, so we see the red "aa" distribution has some mean trait value. The Blue "Aa" distribution
-
-has some mean trait value and the green "AA" has some trait value in there, you know separated
-
-by an "a's" worth of distance and they are now a source of variation in the trait in
-
-the overall population is actually quite a big source of variation. In this particular example. Now, what happens if we have some dominance deviation, right? So maybe everything
-
-isn't purely additive. Maybe additivity doesn't explain the universe perfectly well. Well,
-
-in that circumstance we'll see this d. Now move the genotype mean of "Aa". Note that
-
-the midpoint is still term 0 is the midpoint between the two homozygotes. classes and Fisher
-
-did that to make the algebra a little tidier, and I think we all appreciate the tidiness of the algebra When we get there. OK, so this is the dominance deviation, so this is allowing
-
-for non-additivity in the genetic effect and there is a a lot of supporters of non-additivity
-
-in the Biological Sciences because there are a lot of sort of recessive acting phenotypes sort of like we saw with the yellow green pea color and the green peas are sort of recessive
-
-mode of action and so that necessity is an important observation in biology and so this
-
-non additivity has got a long strong. Intellectual tradition in in this space. OK, so that's
-
-Basic Statistics
-
-what happens under additivity. That's what happens under dominance. Now let's talk a little bit about some of the statistics that are used, and these are really just your elementary
-
-first level statistics. Very, very basic statistics ways of describing distributions of traits,
-
-and so here we've got some idealized simulated trait on the X axis on the right, and then this red line of mean it's got a mean of zero that you know I've artificially fixed to be
-
-0, based on R, and then the frequency is the count. Of the number of individuals with the
-
-trait value, and here we have it in normal units on the X axis, and the mean is just
-
-simply defined as the sum of the observations that X_i those individual trait values divided
-
-by the total number of individuals or N. Pretty pretty simple. Pretty basic statistics. Hopefully
-
-you all remember how to calculate a mean. Now let's talk about the variance. The measure of spread in the distribution. Well, the variance is now summing up the deviations from the
-
-mean and collecting those and aggregating those over the entire distribution. And Fisher
-
-used the deviation from the mean squared because he found that that was the most consistent
-
-estimator when thinking about trying to define the measure of the spread. So what that means
-
-is that it has the least variability of an estimator of the spread of the distribution.
-
-Which is why we favor X minus the mean quantity squared for each individual divided by now
-
-"N - 1". And the reason that we have an "N - 1" there is because we've had to give up a degree of freedom to the mean, and I'm not going to go much further into that. But degrees
-
-of freedom are a bit fiddly like that, but this is a way to make the estimator unbiased.
-
-OK, so the covariance of a distribution is now thinking about not just one trait, but
-
-two traits, which is to say that we've got trait one on the X axis here and trait two on the Y axis. And these traits have some relationship to each other. There's some you
-
-know you can see this red line. That's the regression line that I fit on this particular data set and they are a bit correlated or have some covariance. Now all the covariances
-
-is it's just the way of again summing up the deviations from the mean. But now instead
-
-of doing it in one dimension, we're doing it in two dimensions. So we've got the X_i minus Mu of X, which is the individual trait value of X for the i-th individual minus the
-
-mean of that for the overall data set. And then we do the same thing for the Y trait
-
-as we did for the X trait, and then we multiply those deviations for each individual together,
-
-and we divide that by the number of paired entries that we have minus one, and that gives us just the covariance, and so this is just in the scale that X is on or Y is on when
-
-X and Y are standard normals. When they are, have, you know means of 0 and variance of
-
-1\. This turns into the correlation, but there's also a way to turn the covariance into correlation
-
-as well. OK, so how much mean and variance? Well, we can think about the contribution
-
-Mean Variance
-
-of the QTL to the mean, and, really, that's just a way of making sure that the mean squares
-
-with how we've defined our genotype classes and so we take the number of individuals with
-
-a given Trait value times the frequency of individuals with that trait value. And you
-
-might remember how there were different means for the different traits that we saw in the picture a little while ago, with the "AA", "Aa" and "aa". Really well, those mean points
-
-we're going have to come up with a grand mean for our total data set. Now. This might be something like cholesterol levels in the population, or to be something like height. You know any
-
-continuous phenotype. And really it can have any shape be any distribution and it will
-
-still have some mean. Now here we've got our "AA" "Aa" "aa" genotypes. The effect of the
-
-QTL, the quantitative trait locus. That's the genetic variant that is having an impact
-
-on the trait or phenotype, and that effect here is For the "AA" genotype is just +a For
-
-"Aa" it's D and then for "aa" it's -a. That's the conditional mean. That's the mean of the
-
-phenotype Conditional on carrying that genotype and then there are the frequencies that those
-
-genotype classes. Another bit of notation introduced. So we have a tendency to define the frequency of the genotype as "p" and "q" for the other allele. So one allele, so one
-
-form of the genetic variant gets the frequency of "p", the other form of the genetic variant gets a frequency of "q" which equals "1-p" and you end up with "p\^2" "2pq" and "q\^2"
-
-for the frequency of the genotype classes, if the. You know, Hardy Weinberg rules follow,
-
-and the Hardy Weinberg is basically just a way of saying that there isn't an unexpected amount of correlation amongst your parents in terms of their genotype. So if you have
-
-random mating in the population more or less, then you'll have. That sort of frequencies
-
-be p\^2 "AA" 2pq for "Aa" And q\^2 for "aa". Now the mean is just going to be taking those
-
-conditional genotype means times the frequency of the genotype and summing those all together.
-
-And so that's what we see down here in the mean of X and that is gives us a grand mean that we're going to use in the context of our calculation of the variance. OK, so when
-
-we calculate the variance again, we're looking at the squared deviation from the mean. Now
-
-note this is in the population and so we don't have to worry about the "n-1". It's funny because it's thinking about everybody rather than thinking about an estimate and that little
-
-estimator thing is just a little bit of nuance around statistics. But again, we have this
-
-(x_i minus mu)\^2, so the ith individual's trait value of X minus the mean squared times
-
-the frequency of that genotype class. And so here we just work through some more algebra. So the the variance is taking this effect mean for "AA" multiplying it, you know taking
-
-off the grand mean that we calculated on the previous slide and multiplying it by the frequency of that genotype in the population. So we have (A - mu)\^2 \* p\^2 + (d - m)\^2 \* 2pq (-a
-
-\- m)\^2 \* q\^2. And that's how we define the variance of the QTL. That's what Fisher partitioned
-
-as the variance of the QTL, all the way back in 1918. Again, before there was the structure
-
-of the genome before the nucleic acids were really understood before we had any real notion of what was actually going on with DNA itself. But we understood that there were genetic
-
-variants operating in the population that they were. A source of variation and this
-
-source of variation could be a a tractable, quantifiable thing. This Vqtl this variance
-
-of the QTL. And the heritability of trait X at this locus is just simply taking the
-
-variance of the QTL divided by the total variance of the phenotype. Now this is all worked out
-
-for just one genetic effect, but remember, we could have many, many genetic effects, and so if we sum up all of those genetic effects together, then that might get us to the sum
-
-total of the variance of QTL, which is VA and then divide that by the sum total of the
-
-phenotypic variance. Just the variance of the trait in the population more generally. And that's how you get to your heritability. OK, so let's work through a bit more of the
-
-algebra, so we've got this variance. Here we get this (a - m)\^2 \* p\^2 + (d - m)\^2 \* 2pq
-
-\+ (-a - m)\^2 \* q\^2, and we can actually partition the variance of the QTL into a part that is
-
-additive and a part that is dominance, and so that's what been done here through rearranging is taking the VA of the QTL, and that's the main effect that if you take a genotype and
-
-just run a regression. The genotype against a phenotype you will end up with this additive
-
-genetic variance as your estimator. Fisher made it really convenient and really nice for us in the derivation of the math and kind of thought it through that way and then if
-
-you add that second term and you encode a dominance deviation from that additivity,
-
-then you can get this VD of the QTL, or the dominance contribution to variance. So that's
-
-just the deviation from the purely additive model all predicated on where that. Heterozygous
-
-class goes. OK, now that's one genetic effect, but remember for something like height, things
-
-Genetic Distribution
-
-are a bit more complicated, right? We don't have a single genetic effect necessarily. We actually maybe have many many genetic effects, and so we can kind of develop those ideas
-
-a bit further and say that there might be some distribution to the genetic effects. This isn't what you know. This is what Fisher implied in his work. He said that let's assume
-
-that there are polygenes we can assume a distribution of those single nucleotide polymorphisms.
-
-Those specific genetic effects that you're going to learn about. A little bit later on, in the course we can then use that to generate an estimate of the heritability, and that's
-
-exactly what the tool GCTA does. It's also what we did in the context of the LD score regression. So this has just been an introduction to heritability, additive, genetic variance
-
-dominance, genetic variance, means variances, and covariances. These are the most fundamental
-
-basic building blocks that the rest of the two weeks will be built on, and I hope you've
-
-enjoyed this introduction to how we think about partitioning, phenotypic variance, and a little bit on why we do it so as to try and understand a little bit more about the
-
-world around us. Thank you.
-
-English
-
-AllFrom International Statistical Genetics WorkshopStatisticsBiologyRelatedListenableWatched
+------------------------------------------------------------------------
 
 ### Hypothesis Testing, Effect Sizes, and Statistical Power {#sec-video2}
 
 **Title**: Hypothesis Testing, Effect Sizes, and Statistical Power
 
-**Presenter(s)**: Brad Verhulst: bverhulst\@vcu.edu
+**Presenter(s)**: Brad Verhulst
 
 Hello and welcome to the 2022 Boulder Workshop where we're going to discuss hypothesis testing, effect sizes and statistical power. My name is Brad Verhulst from Texas A&M University and I'm going to walk you through some of the important components of these concepts.
 
