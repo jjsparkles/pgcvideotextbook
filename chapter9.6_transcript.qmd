@@ -4,828 +4,120 @@ title: "Chapter 9.6: Therapeutic Implications"
 
 **Title**: Pharmacogenomics knowledge for personalized medicine
 
-**Presenter(s)**: Michelle Whirl-Carrillo
-
-**Michelle Whirl-Carrillo:**
-
-director of the pharmacogenomics knowledge base from jkb at the Stanford University she leads the farm jkb team and is responsible for develop the development of new content projects and futures for the last 20 years she has led pharmacogenomics research on its application to personalize medicine and personal genomics she has leadership roles in multiple nih-funded pharmacogenomic projects and in addition from Farm jkb including the clinical pharmacogenetics implementation Consortium and the pharmacodynamics clinical annotation tool and has served on multiple national International pharmacogenomic working groups and steering committees so her research interests include the translation of human genome sequencing data to clinical implementation using curated pharmacogenomics knowledge so
+**Presenter(s)**: Michelle Whirl-Carrillo, Cristina Rodriguez-Antona\[Host\]
 
 **Cristina Rodriguez-Antona:**
 
-Michelle thank you thank you thank you so much for the introduction and thank you for the opportunity to speak with you all
+Director of the Pharmacogenomics Knowledge Base from PharmGKB at Stanford University. She leads the PharmGKB team and is responsible for the development of new content, projects, and futures. For the last 20 years, she has led pharmacogenomics research and its application to personalized medicine and personal genomics. She has leadership roles in multiple NIH-funded pharmacogenomic projects and, in addition, formed PharmGKB, including the Clinical Pharmacogenetics Implementation Consortium and the Pharmacodynamics Clinical Annotation Tool. She has served on multiple national and international pharmacogenomic working groups and steering committees. So, her research interests include the translation of human genome sequencing data to clinical implementation using curated pharmacogenomics knowledge. Michelle, thank you.
 
-today I really appreciate it and I'm well aware that I'm standing between you
+**Michelle Whirl-Carrillo:**
 
-and dinner for most people so I'll try to move it along
+Thank you, thank you so much for the introduction, and thank you for the opportunity to speak with you all today. I really appreciate it, and I'm well aware that I'm standing between you and dinner for most people, so I'll try to move it along.
 
-oh just a disclosure really fast I I don't I don't really have anything to disclose other than my um Public Funding
+Oh, just a disclosure really fast, I don't really have anything to disclose other than my public funding.
 
-so we had an excellent overview of pharmacogenomics um from the previous speaker munir did a
+So we had an excellent overview of pharmacogenomics from the previous speaker, Munir did a great job explaining it, so I'm just going to start with talking about how the amount of pharmacogenomic information that we've had over the past 20 years has really gone up. This is almost a very similar diagram to what Munir showed, where I just started in the year 2000, there were only about 387 publications for pharmacogenomics that were found in PubMed for that year, versus in 2021, in that year alone, we've got over 2,600 publications. So we are accumulating knowledge all the time. There are over 35,000 publications in total in PubMed right now about pharmacogenomics and genetics.
 
-great job explaining it so um just going to start with uh talking about how
+So it's great to have all this information. More and more information means that we are more informed, but just the information alone can be tricky. What do we do with that? So, this raises some issues about how do we organize all this information and how can we standardize it across all these different publications? People use different terminologies or are measuring different things, and it's not standardized currently. It also leads to questions about how can we use this information for clinical actionability. So, we really need centralized resources to help us be able to organize this information, standardize it, so we can easily search across it. So, I'm going to talk to you today about a few resources that are available that help centralize this information.
 
-the amount of pharmacogenomic information that we've had over the past 20 years has really gone up and this is
+But first, I'm going to talk about a few sources of pharmacogenomic knowledge that we can accumulate together in order to get a better picture of the field. One is the peer-reviewed published studies. I already showed you what's in PubMed right now -- thousands and thousands of studies. We also know that there is some information in regulatory agency-approved drug labels. You heard a little bit about that from Munir as well, that some labels from the EMA, for example, from FDA, do have information on them about testing for particular genetic variants or having a metabolizer status and how you can choose a drug or change the dosage accordingly. But that's very few drug labels that have that information on them currently, although it is getting more and more all the time.
 
-almost a a very similar diagram to what munir showed where I just started in the
+We also have published guidelines, so there are different groups that write actual clinical guidelines for clinicians on how to go from the genotype to dosing the patient. Most of those guidelines are derived from the peer-reviewed published literature, though, so they're kind of a derivative of that data source. We also know there's a lot of unpublished data out there, right? There are clinical trials and other experiments that may be proprietary from pharmaceutical companies. That information is more difficult to use and to standardize and also to vet as a public resource. It's hard to deal with that information, but we know that a lot of that information is used in those regulatory agency-approved drug labels as well. A lot of that is submitted to these agencies when the drugs are going for approval.
 
-year 2000 there were only about 387 Publications for pharmacogenomics that
+So, one of the centralized sources for dealing with organizing this type of information that I just discussed is PharmGKB, which is the Pharmacogenomics Knowledge Base. This is a website with a database backend. It's publicly available. It's probably the biggest resource that's publicly available in the world right now. And we started this around the year 2000. It's based at Stanford University, but our mission is basically to collect, encode, and disseminate pharmacogenomic knowledge for uses ranging from research and discovery all the way through clinical actionability and implementation.
 
-were found in PubMed for that year versus in 2021 in that year alone we've
+So, what do we do at PharmGKB? We take the information that is out there that I kind of already went over: guidelines, drug labels, what's published in the literature, and we think of this as our knowledge information stream. This is all publicly available right now for everyone. But at PharmGKB, we have a team of scientists that extract information from these sources, and using expert manual curation, we take the relevant parts of what drug, what genotype, what gene, etc., what variants, we standardize the terminologies, and we aggregate this information together. We're always working towards clinical implementation and adoption, and in the end, we present some resources that I'm going to show you in a minute to actually go back out into this knowledge stream, and we hope enrich it and make it a better source of information for people who are trying to implement pharmacogenomics in their clinics.
 
-got over 2 600 Publications so we are accumulating knowledge all the time
+So, one source of information at PharmGKB are these guidelines that I mentioned earlier. The two groups that probably publish the most information about clinical implementation of pharmacogenomics would be CPIC and the Royal Dutch Pharmacists Association's Dutch Pharmacogenetics Working Group (KNMP) out of the Netherlands.
 
-there's over 35 000 Publications in total in PubMed right now about pharmacogenomics and genetics so it's
+So, PharmGKB, this is just an example webpage. I don't expect you to read it. That's just an example. But, for example, the Dutch working group has some guidelines about the use of amitriptyline and how CYP2D6 variants can affect the implementation or affect dosage of this particular drug. The Dutch working group puts out a PDF that is text-based, that people can read and get this information themselves. But what we tried to do at PharmGKB is make this a little bit simpler presentation through tables and by using all the information available from the Dutch group itself.
 
-great to have all this information more and more information means that we are more informed but
+We have on the web page a way for people to input what the particular variants are of a specific patient or an example. And pull up what the recommendation is for that specific genotype. So just a little bit of an aid for people to be able to take the information from the Dutch group and get right to the source without having to understand the mapping from the actual genotype in the gene to the metabolizer phenotype, such as poor metabolizer, etc., to the actual recommendation.
 
-just the information alone can be tricky what do we do with that so this raises some issues about how do we organize all
+So, we have on our website just the broken-down information from multiple groups, including CPIC, the Dutch group, and there are a few other groups that have some one-off recommendations as well. You can compare across these, and due to resource issues and so forth, not all the same drugs have been have guidelines written about them from both organizations. And so, sometimes one organization may have something about a drug that the other one doesn't. Most of the time, the recommendations agree or at least are very similar, but sometimes there's a little bit of differences, and you can compare those at the PharmGKB to see what the differences or similarities are. We also highlight where guidelines tell you whether to give you testing guidance -- what to test and when to test.
 
-this information and how can we standardize it across all these different Publications people use
+So, another source of information that we organize would be drug labels. We annotate drug labels from FDA but also from EMA, Canada, and we've had a couple of collaborations with groups in both Japan and Switzerland. So, we have some labels that have been annotated from those groups as well, and we're always keen to collaborate with others. So, if anybody is interested in working with us on that, please let me know. But yes, our biggest group of drug labels would be from FDA, and then followed by EMA.
 
-different terminologies or are measuring different things and it's not standardized currently
+So, we saw an example of a drug label earlier from Munir, and so sometimes on drug labels, they do highlight that there is information, but much of the time, the language on drug labels can be not precise or somewhat vague. And so, we had feedback from many of our users that what they really wanted to know from these drug labels is, "Just tell me which labels say I need to test, which one is recommended testing, and which ones have any kind of information that I can use." So, we came up with this labeling system where we can tag these labels that we curate with those categories. And also we get very specific if there is prescribing information based on pharmacogenetics on a drug label, such as changing the dose or changing the drug, we highlight that as well.
 
-it also leads to questions about how can we use this information for clinical
+This is just an example screenshot (I don't expect you to read it) of annotation of the EMA label for abacavir and HLA-B. You heard a little bit about this earlier. So yes, this is a very kind of famous example of pharmacogenomics, very well understood. And so yes, testing is required according to the label. The label gives you specifics about what variant it is, specifically in HLA-B, that you should be interested in, and gives you advice about what to do. This is an example of a nicely laid out drug label, and we were able to capture this information very easily. But not all drug labels are quite so simple.
 
-actionability so we really need centralized resources
+So, again we have a page at PharmGKB. Please go ahead and check it out for yourself at some point if you are able and inclined. We have drug labels from FDA, EMA, and a few other groups as well, and you can use this table to compare across, and you can drill down to see that exact annotation like I just showed you for the EMA one in abacavir. But what's interesting is that some regulatory agencies have different information on their labels, depending on either they may be lacking information altogether about pharmacogenomics on that label, whereas other countries or groups have a very high level of actionability for pharmacogenomics. So, it's kind of interesting to look at this webpage to see overall, again, where the similarities and differences are, and it just has to do with what is submitted to these regulatory agencies and what is deemed actionable at the time.
 
-to help us be able to organize this information standardize it so we can
+We also heard from Munir a little bit about randomized controlled trials. Again, yes, this is considered the gold standard, and a lot of clinicians prefer to have information that comes from RCTs, and this is where they would like to see any kind of proof of clinical actionability. But as was pointed out, it's really not feasible. A lot of times, we have small populations in these studies. Again, when you mentioned that we don't have huge cohorts like in diabetes, etc. So, the small populations do often make statistical significance difficult. But we do know that statistical significance is not always just the same as clinical significance anyway. And there is a lack of standardization again across all of these studies and publications that come out. But we can use replication of data from multiple different sources to help us address some of these issues, right?
 
-easily search across it so I'm going to talk to you today about a few resources
+So, we can take an article like this (this is from the New England Journal of Medicine) and is talking about a particular association between a variant and SLCO1B1 and a reaction to Simvastatin. And if we take this and manually curate it at PharmGKB, again we're standardizing across all the publications, the gene names, the gene variants. There are many different names for genetic variants, as I'm sure you're all aware, right? People can use RSIDs, they can use cDNA changes, protein, amino acid changes, etc. So, we can standardize so that we can see across all publications which ones are talking about the same variant. We can standardize the drug terms, etc. And we take a bunch of information out about you know statistics and what type of study and the study size. We can collect the information from each article.
 
-that are available that help centralize this information but first i'm going to talk about a few
+And over time, there are more and more articles, right, about a particular association that can be published. Many times, these articles replicate the original findings, but sometimes they do not. So, sometimes an association is published, and the next paper that comes out might refute actually that association. But if you look at a large enough cohort of papers and like I said, you're able to compare across because of the standardization, we can start seeing the bigger picture and write summaries about the association based on the corpus of evidence. And then we can also take the information from those drug labels and the guidelines that I referenced earlier that are published and annotated at PharmGKB as well, and we can get an even bigger and better picture of what's going on with a particular association. Once we have all this evidence together, we can not only write a summary about what's going on, but we can assign a level of evidence about how confident we are and the strength of this particular association.
 
-sources of pharmacogenomic knowledge that we can accumulate together in order to get a better picture of the field so
+So, this is just a screenshot again for a particular association with the same variant with simvastatin, and down here, we can see that there are two dosing guideline annotations available in PharmGKB -- one from CPIC and one was from the Dutch group. And you know, in this case, we only have nine publications, but there can actually be many, many more publications depending on the phenotype that's studied.
 
-one is the peer review published studies I already showed you what's in PubMed right now thousands and thousands of
+So, based on that grouping of information, we can come up with different levels of evidence. You can read more about the system that we have come up with for standardizing when we're trying to collect evidence together or visit the webpage. I can't go into a lot of detail here because it would take a while to explain. But basically, we score the information that we take from every single publication. We take that information and we add it together across all the different publications, taking into account if any regulatory labels are available and the information on those labels, and also guidelines if their information is available. We come up with a total score for that particular summary annotation. Then, based on that score for the summary annotation, we can figure out which cutoff for a level that it meets and assign accordingly. So, for all of these summaries, you can go, if you're on a PharmGKB page, you can get a feeling for how much support there is for a particular association based on the little labels on the left-hand side that are color-coded and also have the level written in them. In most cases, as a level one or instances where we know of a guideline or a label that really confirms basically actionability or clinical implementation can be instituted for a particular association. Level two would be those that are very close but maybe don't have a guideline or a label yet, but there's a lot of information published and the association looks very strong. Some people, on the other hand, are very interested in low-level associations if they're not looking to implement clinically but they're looking at it from a research perspective.
 
-studies we also know that there are some information and Regulatory agency
+Okay, so I'm going to switch gears for just a couple of minutes to tell you a little bit more about CPIC. Again, this is one of the groups that writes guidelines for how to implement pharmacogenomics in the clinic. The Dutch group also writes guidelines as well. I happen to be involved in CPIC. I'm going to give you a little bit of the background of that particular group. The goal of CPIC is not to tell people whether or not to test or even what to test, per se, but if you are a clinician and you have genetic results in hand, we want you to be able to understand and quickly be able to know what you can do with that information. Preemptive genotyping is becoming more widespread. There are direct-to-consumer genotyping companies out there, and some patients are going to their doctors, at least in the states, with information about their genetic variants, and they want their doctors to be able to understand that information and act on it. But most clinicians, as we heard, they don't have the time for patients to sit and really research for themselves what a particular genetic variation might mean or might imply for a particular drug prescription. So, they need a facile way to access information that can tell them upfront what it is that they should do.
 
-approved drug labels so you heard a little bit about that from munir as well that some labels from the EMA for
+So, these guidelines are written by expert groups put together. These groups include clinicians, gene experts, pharmacists, and, in some cases, just research scientists as well. And again, we start with a PubMed literature review. So, these guidelines are based on PubMed literature reviews. But the information is collated together and graded for every single outcome by the clinical authors, the authors of the guideline. And so, a consensus is reached from that particular group, and then a statement about what you could do with a particular genetic test result.
 
-example from FDA do have information on them about testing for particular
+So, as part of this process, we have to understand for every genetic allele what the functional implication is. Somebody had mentioned that before. So yes, we do have to care about what the function is for all of these variants. And that's part of the process for creating CPIC guidelines -- to basically do a deep dive literature review of every allele for the particular gene in that guideline and see if we can come to an agreement about what the function of that allele is.
 
-genetic variants or having a metabolizer status and how you can choose a drug or
+Then, once we have a function defined for an allele, we can put the two alleles together and map to a phenotype, such as a poor metabolizer or an ultra-rapid metabolizer that you heard about in the previous talk. Once we have the metabolizer status for a given genotype for a given patient, then we can come up with what the therapeutic recommendation would be for that particular phenotype.
 
-change the dosage accordingly but that's a very few drug labels that have that
+CPIC also makes available clinical decision support flow charts and wording for CDS alerts to help aid with clinical implementation for groups that don't have the resources to do that as well. So, these are just example charts and CDS language that people could use if they want to implement in their institution.
 
-information on them currently although it is getting more and more all the time
+There's a bunch of CPIC guidelines right now. The last count was 26, but that might have changed really recently because we're always publishing. But please go and check out the website for yourself. We also have a database and API for people that are interested to access the information computationally and import it into their own databases.
 
-we also have published guidelines so there are different groups that write
+So, another challenge with implementing pharmacogenomics would be our nomenclature. You heard a little bit about the star nomenclature already. I get people ask me all the time who aren't in the pharmacogenomics field but more in clinical genomics, "What's the deal with the star alleles? Why do you guys have them, and what do they mean?" So, just really briefly, right? We have the gene symbol and that star with the number after it is just an allele designation. And so, for example, this CYP2D6 star 8. This is HGVS representation for it. So, there are, you know, three different variants across the gene that define this allele. In pharmacogenomics, with most of the cytochrome P450s, we're interested in what the combination of variants are across the entire allele. It's not necessarily one particular variant or another, but what's the combination of variants across the entire gene? It's the haplotype that matters. And so, to define the haplotypes, the star allele shorthand was born. And these variants, these are SNPs, so that's quite simple. But in many cases, the variation across the gene can include repeats or indels, there can be structural variants and copy number variations as well. The variation occurs not just in the exons but also introns or upstream or downstream of the genes, sometimes. And they all have functional effects and are very important to capture and understand what the variation is across. And so, this shorthand helps the community understand what the variation is.
 
-actually clinical guidelines for clinicians so how to go from the
+I've been asked many times, "Well, can the star alleles just go away?" from people who are clinicians but deal with Mendelian diseases many times or other kinds of genetics. Unfortunately, I don't think that's going to happen. It's used throughout the literature, lab tests, and assays, test reports all refer to the star allele nomenclature right now. And it's used by many of the prescribing guidelines. And this started in the 1990s, and it was organized to a great extent in the early 2000s by the Human Cytochrome P450 Allele Nomenclature Database in Sweden. And they, I think, were the first group to really start tracking these alleles and defining them as what variation is in each allele, and they're the ones that started naming them with the star alleles. That transitioned in 2017 to a group called PharmVar.
 
-genotype to dosing the patient most of those guidelines are derived from the
+The PharmVar group has taken over the reins there. So, PharmVar, please check out this group as well. So when we're talking about standardization, PharmVar is critical to standardization for these pharmacogenetic alleles, and it is the central repository. People who find new allelic variation can submit that variation to the PharmVar group, and there's a very rigorous process and rules that must be followed for a new star allele to be assigned. But if that's the case, if the submission reaches the level of a new star allele, it will be assigned.
 
-peer-reviewed published literature though so they're kind of a derivative of that data source we also know there's a lot of
+Just to show you a little bit about this -- this is not the most complicated example by any means, but just to show you a little bit what I'm talking about -- so this is again a CYP2D6 illustration. We're looking at the star alleles star 10, 36, 37, etc., and then this is a list of variants down the side. And so, what we see here is the 100C\>T variant is a part of all of these different alleles. So is this variation down here. So, if you, for example, were just going to test this 100C\>T, you might not really know which star allele you're talking about. For simplicity's sake, many times people just call it a star 10 because okay, that's the defining variant in that particular star allele. But you can see that there are many other star alleles that also contain that variant and then other variants as well. So, it can get much more complicated than this as well, and some genes, such as CYP2D6, have structural variants, and it gets crazy. But these star alleles really are important for understanding what the variation is, and that all has functional implications. So, the functionality of these different star alleles can and do differ.
 
-unpublished data out there right so there's clinical trials and other experiments that may be proprietary from
+That leads to one of the other challenges of pharmacogenomics and implementation -- the type of the test, what is tested, can affect your results, right? There have been studies done where they've sent the same samples out to different labs and gotten different results back, and a lot of times, that has to do with whether you're talking about a panel or an exome or whole genome sequencing, as someone had brought up earlier. And it's true that if you have a panel and not everything is on that panel that you can see in whole genome sequencing, you could potentially miss genetic variation that exists in that particular patient. And that's why we have to be really careful with this. Often in the field, if you don't see any variation, it is defaulted to what's called a star 1 allele, which implies that you don't have any genetic variation or wild type. But of course, depending on what's tested, that may or may not be true. So, just something to keep in mind when people are trying to implement pharmacogenomics -- that transparency about the tests and the test results can be very important. There can be situations where a patient is tested for pharmacogenomic alleles and none are found, and it goes into their EMR or their record that they have no genetic variation in a particular gene. But we know that that may not always be 100% true, right? For example, there are some known existing genetic variations where we know of the genetic change, but we don't know what the function is. We don't know what to do with that change. But over time, you know, research is going to eventually elucidate that for us. Also, there's new variation out there that may not be covered, so, the current star allele nomenclature can't cover everything that's not known yet. So, as new discoveries happen, they're submitted and we have new star alleles that may not have been tested for previously. So, at the very least,
 
-pharmaceutical companies that information is more difficult to to use
+\[audio cuts out\]
 
-and to standardize and also to vet as a as a public resource it's hard to deal
+knowing what the results are can be very key to both clinicians and patients, especially going forward in the future. Another project that I'm involved in is called the Pharmacogenomics Clinical Annotation Tool. This is a software where the goal is to take the output from a genetic test result report -- sorry, the output from a genetic test, such as a panel test or whole genome or exome sequencing -- and come up with the star allele designations for those genes, which can be very complicated, as was mentioned earlier. So, this software aims to be able to take whole genome sequencing and determine that without using those tag alleles that are used on the SNP panel, and then connect the resulting genotypes with clinical guidance. And we've started with the clinical guidance from CPIC, but we'll be expanding that to other groups as well, such as the Dutch guidelines and also what's available on regulatory agency drug labels. That's the goal.
 
-with that information but we know that a lot of that information is used in those regulatory agency approved drug labels
+So basically, the way this tool works is it takes a VCF file, which is just a way that genetic variation can be output from testing. And then we take those allele definitions from PharmVar, which has the definitions of what variants are in each star allele, and the information from the guidelines that can be accessed via the API in the database. And then we also have some messaging from the PharmCAT tool as well, with caveats and disclaimers, etc. We take all of that together. So, what the user supplies is the actual genetic variation that is detected, and we come up with a genotype summary, which tells you what the star alleles, what the diplotypes are or genotypes for that particular patient based on that VCF file, and give you a summary of the output. Then, the recommendations by drugs -- so you may be a CYP2D6 star 4 star 8, for example. What does that mean? We have recommendations for each drug that we know can be affected or have guidelines showing that the drug response can be affected by CYP2D6. And then we would tell you exactly what the recommendations are for that particular genotype.
 
-as well a lot of that submitted to these agencies when they're the drugs are going for approval
+And then there's a section of the report that is very key but not necessarily, you know, first and foremost in any clinician's mind or patient's, for that matter. But very importantly, we highlight what variation was given to us in the VCF file versus what is known to date. So, we can easily see in this section of the report if not every known genetic variant that could be part of a star allele, etc., was tested. In this way, we can see with an assigned genotype at the end if information was essentially missed -- if there were known star alleles that were not tested for. In this case, you would know then if, say, a patient is a star 1 star 1 as the result, whether or not there are potentially variations that that patient is carrying in that gene that was not covered by that test.
 
-so one of the sources centralized sources for dealing with organizing this
+It's great to have this as a report. You get a report out of PharmCAT, and that's a report that a patient could have and take to their doctor, or a clinician could look at. But in many cases, as we know, clinicians don't have the time to sit and read reports either. So having this information go automatically into an EMR or EHR system is extremely important, and that is a big challenge since they are not standardized across all hospitals and hospital systems. And so, that's another area that we're working on for the future.
 
-type of information that I just discussed is Farm gkp which is the pharmacogenomics knowledge base
+One of the final challenges I'm going to talk about today would be allele frequency, and this again was mentioned a little bit earlier. But the issue is that in many cases, in Mendelian disease, a low frequency is a sign of maybe pathogenicity, right? So, frequency can be used as a way to figure out if something might be very important in a particular gene. But unfortunately, in pharmacogenomics, some of these variations can be quite common, up to, you know, 30 percent or even more in certain populations. So, you cannot use frequency the same way in pharmacogenomics as a sign for what could be effective function. And yet, you know, knowing the frequency of the alleles is very helpful. To know, for example, if we can only test a handful of alleles, which ones should you be testing? Unfortunately, we don't know the frequency for many of the defined alleles. They may be undiscovered in a particular patient, submitted to PharmVar, for example, gotten a star allele, now we know we can test for them. But if people haven't tested for them previously, we don't really know what the frequency in any given population is. So many times we think in pharmacogenetics, in the field, we think certain star alleles are rare because it's not published much in the literature, we can't find statistics about it. But that's not necessarily the case. So, we do have to be careful there. Also many populations around the globe are understudied. So again, we want to make pharmacogenomics available for all diverse populations, but we haven't done a lot of studies yet in many of the populations around the globe - lot of them have been focused on European populations or perhaps Asian populations as well. So, research is needed there to understand what the frequency is for these variants. But we always must remember that when we're trying to implement this, the population frequency is never a proxy for what a patient actually has. So, testing the individual patient is really important.
 
-this is a website with a database backend it's publicly available it's probably the biggest resource that's
+So, the last challenge I'm going to talk about is just the separation of pharmacogenomics from the rest of clinical genomics. So, I gave you a little bit of an overview of all these four resources: PharmGKB, PharmCat, PharmVar, and CPIC. These resources talk to each other all the time, they trade information back and forth. In the US, we have very big projects for clinical genomics. ClinVar and ClinGen are huge resources that are funded through the NIH, but they're kind of isolated from pharmacogenomics. I should say pharmacogenomics is isolated from them because they are very large and capture most of the genetic clinical genomics that are documented today. But pharmacogenomics kind of exists as a silo. We are trying to address that by depositing information from both CPIC and PharmGKB into both ClinVar and ClinGen. There are some issues with trying to take pharmacogenomic information and wedge it into a clinical genome database, and so it's a little bit tricky at times, and the deposition of this information is slow. But in addition to depositing it, we are looking forward to being able to exchange information with ClinVar and ClinGen as well. So what we really want to do is not have pharmacogenomics be isolated and siloed from clinical genomics overall and genomic medicine.
 
-publicly available in the world right now and we started this around the year
+And our vision, right, would be full integration of pharmacogenomics with genomic medicine. And this is just a diagram to try to illustrate that all those pharmacogenomic resources, and more, could, you know, eventually be combined together in some way to have a much easier interface, maybe one place that people can go, and that group could interact very closely with both ClinVar and ClinGen. And efforts are underway. We have a panel that we're starting within the ClinGen group to address pharmacogenomics and how to better cross-talk between pharmacogenomics and genomic medicine in general.
 
-2000 it's based at Stanford University but our mission is basically to collect
+So, in many cases, we don't know the implications of pharmacogenomic discoveries for clinical implementation, but we definitely know that the clinical utility is there for a couple of dozen examples, at least. And then we know that integrating this together with the risk of genomic medicine is going to push implementation forward. Having to try to address this separately is slow going, as Munir described. It's not being implemented across as many places as we'd like pharmacogenomics to be yet. It does differ from genomics disease models. The haplotypes and those star alleles, and the fact that you have to be aware of the diplotypes and map that to metabolizer phenotypes in many cases is very different, and we are aware of that. So, we do still need some specialized resources, but integrating would be the way to go in the future. And as of right now, we have a few centralized knowledge sources that people can use in the meantime.
 
-encode and disseminate from code genomic knowledge for uses ranging from research
+And with that, I'd like to just thank all my colleagues. There are many different projects that I was talking about today, and that takes many people in many different institutions to help make all these projects a reality. So, I'd like to thank them and thank you for your attention, your time.
 
-and Discovery all the way through clinical actionability and implementation
+\[Applause\]
 
-so what do we do at Farm gkb we take the information that is out there that I
+**Cristina**: We have questions. I will start from the chat. One question regards SLCO1B1 and statins, and basically what they ask is, are there studies regarding drug adherence and pharmacogenetic testing or genotyping? I mean, does it influence adherence of the patients?
 
-kind of already went over guidelines drug labels what's published in the literature and we think of this as our
+**Michelle**: Adherence, yes. I'm not aware of specific studies about adherence to drugs, but we know colloquially, just anecdotally, that this is true, and that patients who have adverse effects that are not as severe as what we saw in the previous talk, but just myopathy, maybe, you know, pain or some other kind of nausea, etc., can lead patients to stop taking their medication. And so yes, it has been shown that because of the myopathy that's associated with a particular genetic variation, there have been cases, like I said anecdotally, where patients just stop taking their medicine because of it. Yeah.
 
-knowledge information stream this is all publicly available right now for everyone but at from gkb we have a team
+**Audience member**: Hi Michelle, over here. Thank you for a great presentation. Fabulous resources, I think incredibly useful for the community. Can I just ask, are there plans or thoughts about translating those resources into different languages to make them more accessible?
 
-of scientists that extract information from these sources and using expert
+**Michelle**: That is an excellent question. We would love to do that, unfortunately, resource-wise, being government-funded, we don't have the resources to pay for that, but if there are people that would like to collaborate with us, we could see what we could do. Yes, that's a question we get a lot. You know, can this be in multiple languages? And we're happy to do it, it's just a resource issue right now.
 
-manual curation we take the relevant parts of of uh like what
+**Cristina**: Okay, another question from the chat is, despite the fact that pharmacogenomics data is growing rapidly and the importance of testing is clear, the integration in the clinics is very slow. So maybe you could comment on the barriers or the reasons for that.
 
-what drug what genotype What gene
+**Michelle**: Right, yes, I think a lot of the reasons for the slow uptake were just mentioned previously, just having the education, I think, of clinicians, for them to be familiar with this type of data, familiar with how to use it. Also, there are issues putting this kind of information in medical records, so getting this into the EHR system, I think, would be key. That's one barrier we know to uptake. And then just also, you know, testing and reimbursement. What are you supposed to test for? When should you test? Who's going to pay for it? These kinds of issues definitely affect implementation as well.
 
-Etc what variance we standardize the terminologies and we aggregate this information together and we're always
+**Cristina**: Last question.
 
-working towards clinical implementation and adoption and in the end we present some resources that I'm going to show
+**Audience member**: Yeah, thank you as well for a great presentation. We, in our company, started testing the PharmCat, and I'd like to ask how many drugs are, in this moment, supported? Because we have only a limited number, and also if it can be adjusted by the users, the parameters, and what are you going to expand it?
 
-you in a minute to actually go back out into this knowledge stream and we hope enrich it and make it a a better source
+**Michelle**: Yeah, absolutely. So yes, if you check out pharmcat.org, we've updated a lot of the documentation, maybe since you last checked it out. All of the drugs that are covered by CPIC guidelines are currently covered by PharmCat and they're in the report. All the genes, and yes, you can alter---well, first of all, it's freely accessible, so if you want to download the tool and branch off, you can change the code however you like. But it is also customizable in terms of if you have genes that you want to include and you have the definition files for those, you can add those as you want, and same with the recommendations as well. And we are going to be expanding those within the next year, is the goal, to include drugs and recommendations from the Dutch Pharmacogenetic Working Group and also what information we can find on the FDA labels. We'll probably start with FDA, but then ultimately can expand from there as well.
 
-of of information for people who are trying to implement pharmacogenomics in their clinics
+**Audience member:** Okay, those are bioinformatics that I work in our company on, so I'm not completely familiar, but is it possible to speak to your IT staff?
 
-so one source of information at Pharmacy KB are these guidelines that I mentioned earlier and the two groups that are
+**Michelle**: Yeah, sure, sure. You know, send---I didn't have the email up here, but if you send an email to just feedback\@pharmgkb.org, we will make sure it gets to PharmCat. I think there's also pharmcat\@pharmgkb.org, but I can't swear to that. So, if you send it to feedback\@farmgkb.org and you say, "This is a question about PharmCat," we can deal with that. We're a very small team, and we are the same people working on many projects at once, but yeah, but yes, definitely.
 
-probably published the most information about clinical implementation of pharmacogenomics would be cpic and the
-
-Royal Dutch pharmacists association's Dutch pharmacogenetics working group out of Netherlands
-
-so I'm from gkb we this is just an example web page I don't expect you to
-
-read it that's just an example but so for example the Dutch working group has some guidelines about the use of
-
-amitriptyline and how sub 2d6 variants can affect implementation of effect dosage of this
-
-particular drug and uh the Dutch working group puts out a PDF that is Tech space that people can
-
-read and get this information themselves but what we tried to do it from dkb is make this a little bit simpler
-
-presentation through tables and by using all the information available from the
-
-Dutch group itself we have um on the web page a way for people to
-
-input what the particular variants are of a specific patient or an example
-
-and pull up what the recommendation is for that specific genotype so uh just a
-
-little bit of an aid for people to be able to take the information from the Dutch group and um and uh get right to
-
-the source without having to understand the mapping from the actual genotype in the gene to the metabolizer phenotype
-
-such as poor metabolizer Etc to the actual recommendation so we have on our website uh just the
-
-broken down information from multiple groups including cpic the Dutch group and there are a few other groups that
-
-have some one-off recommendations as well and you can compare across these
-
-um due to Resource issues and so forth not all the same drugs have been
-
-um have guidelines written about them from from both organizations and so sometimes one organization may have
-
-something about a drug that the other one doesn't most of the time the recommendations agree or at least are
-
-very similar but sometimes there's a little bit of differences and you can compare those at the at Farm gkb to see
-
-what the differences or similarities are and we also highlight where guidelines tell you whether give you testing
-
-guidance what to test and when to test so another source of information that we
-
-organize would be drug labels we annotate drug labels from FDA but also
-
-from EMA Canada and we've had a couple of collaborations with groups in both
-
-Japan and Switzerland so we have some labels that have been annotated from those groups as well and we're always
-
-Keen to collaborate with others so if anybody is interested in working with us
-
-on that please let me know but yes but our biggest group of drug
-
-labels would be from FDA and Then followed by with email so
-
-we saw an example of a drug label earlier from munir and so sometimes on
-
-drug labels they do highlight that there is information but much of the time the
-
-language on drug labels can be not precise or somewhat vague and so we
-
-had feedback from many of our users that what we they really wanted to know what these drug labels is just tell me which
-
-labels say I need to test which one is recommend testing and which ones have any kind of information that I can use
-
-so we came up with this a labeling system where we can tag these labels
-
-that we curate with um with those categories and also we get very specific
-
-if there is prescribing information based on pharmacogenetics on a drug label such as changing the dose or
-
-changing the drug we highlight that as well so this is just an example screenshot I
-
-don't expect you to read it of annotation of the EMA label for abacavir and hlab you heard a little bit about
-
-this earlier so yes this is a very kind of famous example of pharmacogenomics
-
-very well understood and so yes testing is required according to the label the
-
-label gives you specifics about what variant it is specifically in HLA B that
-
-you should be interested in and gives you advice about what to do so this is an example of a nicely laid out drug
-
-label and we were able to capture this information very easily but not all drug labels are quite so simple
-
-so um again we have a page at farm gkb please go ahead and check it out for
-
-yourself at some point if you are able and inclined we have drug labels from FDA EMA and a few other groups as well
-
-and you can use this table to compare across and you can drill down to see
-
-that exact annotation like I just showed you for the EMA one in a Bakka beer but what's interesting is that some
-
-Regulatory Agencies have different information on their labels depending on either they may have be lacking
-
-information altogether about pharmacogenomics on that label whereas other countries or groups have a very
-
-high level of actionability for pharmacogenomics so it's kind of interesting to look at this webpage to
-
-see overall again where the similarities and differences are and it just has to do with what is submitted to these
-
-Regulatory Agencies and what is deemed actionable at the time
-
-so we also heard from you near a little bit about randomized control trials
-
-again yes this is considered the gold standard and a lot of um clinicians prefer to have information
-
-that comes from rcts and this is where they would like to see any kind of proof
-
-of clinical actionability but as was pointed out it's really not feasible a
-
-lot of times we have small populations in these studies again when you mentioned that you know we don't have
-
-huge uh cohorts like in diabetes Etc so the small populations do often make
-
-statistical significance difficult and but we do know that statistical significance significance is not always
-
-just the same as clinical significance anyway um and there is a lack of standardization again across all of
-
-these studies and Publications that are uh that come out but we can use a replication of data
-
-from multiple different sources to help us address some of these issues right so we can take an article like this this
-
-is from New England Journal of Medicine and is talking about a particular
-
-association between a variant and slcl1v1 and a reaction to Simvastatin
-
-and if we take this and manually curate it at Farm gkb again we're standardizing
-
-across all the Publications the gene names the gene variants there are many different names for genetic variants as
-
-I'm sure you're all aware right people can use rsids they can use cdna changes
-
-um protein amino acid change Etc so we can standardize so that we can see
-
-across all Publications which ones are talking about the same variant we can standardize in drug terms Etc and we
-
-take a bunch of information out about you know statistics and what type of
-
-study and the study size we can collect the information from each article and
-
-over time there are more and more articles right about a particular Association that can be published
-
-many times these articles replicate the original findings but sometimes they do not so sometimes an association is
-
-published and the next paper that comes out might refute actually that Association but if you look at a large
-
-enough cohort of papers and like I said you're able to compare across because the standardization we can start seeing
-
-the bigger picture and write summaries about the association based on the Corpus of evidence and then we can also
-
-take the information from those drug labels and the guidelines that I referenced earlier that are published in
-
-an annotated at Pharmacy KB as well and we can get an even bigger and better picture of what's going on with a
-
-particular Association once we have all this evidence together we can not only write a summary about
-
-what's going on but we can assign a level of evidence about how confident we
-
-are and the strength of this particular Association so this is just a screenshot again for a
-
-particular association with the same variant with simvastatin and down here
-
-we can see that there are two dosing guideline annotations available in farm gkb one from cpic and one was from the
-
-Dutch group and you know in this case we only have nine Publications but there can actually be many many more
-
-Publications depending on the phenotype that's studied so based on that grouping of information
-
-we can come up with a different levels of of evidence you can read more
-
-about the system that we have come up with for standardizing when we're trying to collect evidence together or visit
-
-the web page I can't go into a lot of detail here because it would take a while to explain but basically we score
-
-the information that we take from every single publication we take that information and we add it together
-
-across all the different Publications and taking into account if any
-
-regulatory labels are available and the information on those labels and also guidelines of their information if
-
-they're available and we come up with a total score for that particular summary annotation then based on that score for
-
-the summary annotation we can figure out which cutoff for a level that it meets
-
-and assign accordingly so for all of these summaries you can go if you're on a farm gkb page you can see uh get a
-
-feeling for how much support there is for a particular Association based on the little labels on the left
-
-hand side that are color coded and also have the level um written in them
-
-for in most cases as a level one or instances where we know of a guideline
-
-or a label that really confirms basically actionability or clinical
-
-implementation can be instituted for a particular Association and level two
-
-would be those that are very close but maybe don't have a guideline or a label
-
-yet but information on a label but there's a lot of information published and the association looks very strong
-
-some people on the other hand are very interested in low-level associations if they're not looking to implement clinically but they're looking at from
-
-research perspective okay so I'm going to switch I'm just
-
-years for just a couple minutes to tell you a little bit more about cpic again this is one of the groups that writes
-
-guidelines for how to implement uh pharmacogenomics in the clinic the Dutch
-
-group also writes guidelines as well I happen to be involved in cfix I'm going
-
-to give you a little bit of the background of that particular group so the goal of cpic is not to tell people
-
-whether or not to test or even what to test per se but if you are a clinician
-
-and you have genetic results in hand we want you to be able to understand and quickly be able to know what you can do
-
-with that information preemptive genotyping is becoming
-
-more widespread there are direct to Consumer genotyping companies out there
-
-and some patients are going to their doctors at least in the states with information about their their genetic
-
-variants and they want their doctors to be able to understand that information
-
-and act on it but most clinicians as we heard they don't have the time for
-
-patient to sit and and really research for themselves what a
-
-particular genetic variation might mean or might imply for a particular drug prescription
-
-so they need a facile way to access information that can tell them up front what it is that they should do
-
-so these guidelines are written by expert groups put together these groups involve a clinician include
-
-clinicians Gene experts Pharmacists
-
-and sometimes in some cases just research scientists as well
-
-and again we start with a PubMed literature review so these guidelines are based on PubMed literature reviews
-
-but the information is collated together
-
-and graded for every single outcome by the the
-
-um the clinical authors the authors of the guideline and so a consensus is reached from that particular group and
-
-then a statement about what you could do with a particular genetic um
-
-um test result so as part of this process we have to
-
-understand for every genetic allele what the functional implication is somebody
-
-had mentioned that before so yes we do have to care about what the function is for all of these variants and so that's
-
-part of the um the process for creating stupid guidelines is to look at the
-
-basically do a deep dive literature review of every allele for the particular Gene and that guideline and
-
-see if we can come to agreement about what the function of that allele is then once we have a function defined for an
-
-allele we can put the two alleles together and map to a phenotype such as
-
-a poor metabolizer or an ultra rapid metabolizer that you heard about in the previous talk
-
-once we have the metabolizer status for a given genotype for a given patient
-
-then we can come up with what the therapeutic recommendation would be for that particular phenotype
-
-so cpic also makes available clinical decision support flow charts and
-
-um and wording for CDs alerts to help aid with clinical implementation for
-
-groups that don't have the resources to do that as well so this is just example charts and CDs language that people
-
-could use if they want to implement in their Institution so there's a bunch of Civic guidelines
-
-right now the last count was 26 but that might have changed really recently
-
-because we're always publishing but please go and check out the website for
-
-yourself we also have a database and API for people that are interested to access the information computationally and
-
-import it into their own databases so another challenge with
-
-implementing pharmacogenomics would be our nomenclature you heard a little bit
-
-about the star nomenclature already I get people ask me all the time who
-
-aren't in the farm codes next field but more clinical genomics what what's
-
-what's the deal with the star wheels why do you guys have them and what do they mean so just really briefly right we
-
-have the the symbol the gene symbol and that star with the number after it is just an allele designation and so for
-
-example this uh D6 star 8. this is hgbs representation for it so there are you
-
-know three different um uh three different variants across the gene that Define this allele so in
-
-pharmacogenomics with the most of the cytochrome p450s we're interested in
-
-what the combination of variants are across the entire allele it's not necessarily one particular variant or
-
-another but what's the combination of of uh variance across the entire Gene it's
-
-a haplotype that matters and so to define the haplotypes the the star
-
-allele shorthand was um was born and these variants these are Snips so that's
-
-quite simple but in many cases the the variation across the gene can include repeats or indels there can be
-
-structural variants and copper number variation as well and the variation occurs not just in the
-
-exons but also in trons or upstream or Downstream of the genes sometimes and they have all have functional effect and
-
-are very important to to capture and understand what the variation is across
-
-and so this shorthand helps the community understand what the variation
-
-is I've been asked many times well the star alleles just can they just go away from
-
-from people who are you know clinicians but deal with a mendelian disease many
-
-times or other kinds of genetics and unfortunately I don't think that's going to happen so it's used throughout the
-
-literature lab tests and assays test reports all refer to the start allele nomenclature right now and it's used by
-
-many of the prescribing guidelines and this started in the 1990s and it was
-
-organized to a great extent in the early 2000s by the human cytochrome p450 allele
-
-nomenclature database in Sweden and they I think they were the first group to really start tracking these alleles and
-
-defining them as what's in what variation is in each allele and they're the ones that started naming them with
-
-the star alleles that has transitioned in 2017 to a group called Farm bar
-
-the farm far group has taken over the reins there and so Farm bar please check
-
-out this group as well so when we're talking about standardization Farm fire is critical to standardization for these
-
-pharmacogenetic alleles and it is the central repository people who find new allelic variation can submit that
-
-variation to the farm bar group and uh and there's a a very rigorous process
-
-rules that must be followed for a new star allele to be assigned but if uh if
-
-that's the case if the submission reaches the level of a new star allele it will be assigned
-
-so just to show you a little bit about the this is not the most complicated example by any means but just to show
-
-you a little bit what I'm talking about so this is again a sip 2d6 illustration
-
-um we're looking at the star alleles star 10 3637 Etc and then this is a list
-
-of variants down the side and so what we see here is the the 100 C to T variant
-
-is um is a part of all of these different alleles so is this variation
-
-down here so if you for example we're just going to test this 100 C to t you
-
-might not really know which star allele you're talking about for simplicity's
-
-sake many times people just call it a star 10 because okay that's the defining variant in that particular star allele
-
-but you can see that there's many these other star alleles also contain that variant and then other variants as well
-
-so it can get much more complicated than this as well and some genes such as 2d6
-
-of structural variance and it gets it gets crazy but these star alleles really are important for understanding what the
-
-variation is and that all has functional implications so the functionality of
-
-these different star alleles can and do differ so that leads to one of the other
-
-challenges of uh of pharmacogenomics and implementation is that the type of the
-
-test what is tested can affect your results right so there have been studies done where they've sent the same samples
-
-out to different labs and gotten different results back and and that a lot of times has to do with whether
-
-you're talking about a panel or an exome or a whole genome sequencing is someone had brought up earlier and it's true
-
-that if you have a panel and not everything is on that panel that you can see in whole genome sequencing you could
-
-potentially miss genetic variation that exists in that particular patient and
-
-that's why we have to be really careful with this often in the field if you
-
-don't see any variation it is defaulted to what's called a star one allele which
-
-implies that you don't have any genetic variation or wild type but of course depending on what's tested
-
-that may or may not be true so just something to keep in mind when people are trying to implement pharmacogenomics
-
-that transparency about the tests and the test result can be very important there can be situations where a patient
-
-is tested for pharmacogenomic alleles and none are found and it goes into
-
-their the EMR or their record that they have
-
-no genetic variation in a particular Gene but we know that that may not always be 100 True right for example
-
-there are some non-existing genetic variations where we
-
-know of the genetic change but we don't know what the function is we don't know what to do with that change but over
-
-time you know research is going to eventually elucidate that for us also there's new variation out there
-
-that may not be covered so the current star allele nomenclature can't cover everything that's not known yet so as
-
-new discoveries happen they're submitted and we have new star alleles that may not have been tested for previously so
-
-at the very least
-
-and what the results are is can be very key to both clinicians and patients
-
-especially going forward in the future so a um another project that I'm
-
-involved in is called the pharmacogenomics clinical annotation tool this is a software where the goal
-
-is to take the output from a genetic test result report sorry the output from
-
-a genetic test such as a panel test or whole genome or exome sequencing
-
-come up with the star allele designations For Those Jeans which can be very complicated as was mentioned
-
-earlier so this software aims to be able to take whole genome sequencing and
-
-determine that without using those tag alleles that are used on the snip panel and then connect the resulting genotypes
-
-with clinical guidance and we've started with the clinical guidance from cpic but we'll be expanding that to other groups
-
-as well such as the Dutch guidelines and also what's available on a regulatory
-
-agency drug labels that's the goal so basically the way this tool works is
-
-it takes a VCF file which is just um a way that genetic variation can be output
-
-from testing and then we take those allele definitions like from Farm bar
-
-what that has the definitions of what variance are in each star allele and the information from the guidelines
-
-that can be accessed via the API in the database and then we also have some messaging
-
-from the farm cat tool as well with caveats and disclaimers Etc and we take
-
-all of that together so the what's the user supplies is the actual genetic
-
-variation that are detected and we come up with a genotype summary which tells
-
-you what the star alleles what the diplotypes are or genotypes for that particular patient based on that VCR
-
-VCF file and give you a summary of the output then the recommendations by drugs so you
-
-may be a sip2d6 star 4 star 8 for example what does that mean we have
-
-recommendations for each drug that we know that can be affected or have guidelines showing that the drug
-
-response can be affected by sip2d6 and then we would tell you exactly what the recommendations there are for that
-
-particular genotype and then there's a section of the report
-
-that is uh very key but not necessarily you know first and foremost in any
-
-clinician's mind or patient for that matter but very importantly we highlight what variation was given to us in the
-
-VCF file versus what is known to date so we can easily see in this section of the
-
-report if not every known genetic variant that could be part of a star allele Etc was tested so in this way we
-
-can see with an assigned a genotype at the end if information was essentially missed if
-
-there was a known star alleles that were not tested for in this case you would know then if say a patient is a star one
-
-star one as the result whether or not there are potentially
-
-variation that that patient is carrying in that Gene that was not covered by
-
-that test so um it's great to have this as a report you
-
-get a purport out of farm cat and that's a report that a patient could have and take to their doctor or a clinician
-
-could look at but in many times as we know clinicians don't have the time to sit and read reports either so having
-
-this information go automatically into an EMR or EHR system is extremely important and that is a a big challenge
-
-since they are not standardized across all hospitals and or Hospital systems
-
-and so that's another area that we're working on for the future
-
-um one of the final challenges I'm going to talk about today would be allele frequency and this again was mentioned a
-
-little bit earlier but the issue is that in many cases a mendelian disease a
-
-frequency a low frequency is a is a sign of maybe pathogenicity right so
-
-frequency can be used as a way to figure out if something might be very important in a particular Gene but unfortunately
-
-in pharmacogenomics some of these variations can be quite common up to you
-
-know 30 percent or even more in certain populations so
-
-so you cannot use frequency the same way and pharmacogenomics is a sign for what could be effective function
-
-and yet um you know knowing the frequency of the alleles is very helpful to know for
-
-example what are the if we can only test a handful of alleles which ones should you be testing unfortunately we don't
-
-know the frequency for many of the defined alleles they may be undiscovered in a particular patient submitted to
-
-farmvar for example gotten a star allele now we know we can test for them but if people haven't tested for them
-
-previously we don't really know what the frequency in any given population is so
-
-many times we think of in pharmacogenetics in the field we think certain star alleles are rare because
-
-it's not published much in the literature we can't find statistics
-
-about it but that's not necessarily the case so we do have to be careful there also
-
-um you know many populations around the globe are understudied so again we want to make pharmacogenomics available for
-
-all a diverse populations but we haven't done a lot of studies yet in many of the
-
-populations around the global a lot of them have been you know focused on European populations or perhaps Asian
-
-populations as well so research is needed there to understand what the frequency is for
-
-these for these variants but we always must remember that when we're trying to implement this the population frequency
-
-is never a proxy for what a patient actually has so testing the individual patient is really important so the last
-
-challenge I'm going to talk about is just the separation of pharmacogenomics from the rest of clinical genomics so I
-
-gave you a little bit of an overview of all these four resources farm gkb farm cat Farm bar and C pick these resources
-
-talk to each other all the time they trade information back and forth
-
-in the US we have very big projects for clinical genomics clinvar and Clinton are a huge resources
-
-that are funded through the NIH but they're kind of uh isolated these are
-
-isolated from pharmacology I should say pharmacogenomics is isolated from them because they are very large and and
-
-capture most of the genetic clinical genomics that are documented today but
-
-pharmacogenomics kind of exists as a silo we are trying to address that by
-
-depositing information from both cpic and farm gkb into both clinvar and Clinton
-
-there are some issues with trying to take a pharmacogenomic information and
-
-wedge it into a clinical genome database and so it's a little bit tricky at times
-
-and the deposition of this information is slow but in addition to depositing it we are
-
-looking forward to being able to exchange information with clinvar and Clinton as well so what we really want
-
-to do is not have pharmacogenomics be isolated and siled from Clinical genomics overall and genomic medicine
-
-and our vision right would be full integration of pharmacogenomics with
-
-genetic genomic medicine and this is just a diagram to try to to illustrate
-
-that all those pharmacogenomic resources and more could you know eventually be
-
-combined together in some way to have a much easier interface maybe one place that people can go and that that group
-
-could interact very closely with both clinvar and Clinton and efforts are
-
-underway we we have a panel that we're starting within the Clinton group to
-
-address pharmacogenomics and how to better crosstalk between pharmacogenomics and genomic medicine in
-
-general so um in many cases we don't know the um
-
-the implications of pharmacogenomic discoveries for clinical implementation
-
-but we definitely know that the clinical utility is there for for a couple dozen
-
-examples at least and then we know that integrating this together with the risk of genomic mess
-
-and is going to push implementation forward having to try to address this separately is slow going as meniere
-
-described it's not being implemented across as many places as we'd like pharmacogenomics to be yet
-
-um it does differ from genomics disease models the haplotypes and those star
-
-alleles and the fact that you have to be aware of the diplotypes and map that to metabolizer phenotypes in many cases is
-
-very different and we are aware of that so we do still need some specialized resources but integrating would be the
-
-way to go in the future and as of right now we have a few knowledge centralized
-
-knowledge sources that people can use in the meantime and with that I'd like to just thank all my colleagues there's
-
-many different projects that I was talking about today and that takes many
-
-people in many different institutions to help make all this all these projects a
-
-reality and so I'd like to thank them and thank you for your attention your time \[Applause\]
-
-we have questions I will start from the chat one question regards
-
-sclo1b1 and statins and basically what they they ask is are there studies uh
-
-regarding drug adherence and pharmacogenetic testing or genotyping I
-
-mean does it influence adherence of the patients adherence yes
-
-um I'm not aware of specific studies about adherence to drugs but we know
-
-colloquially just anecdotally that this is true and that patients who have
-
-adverse effects that are not as severe as like what we saw in the previous talk but just myopathy maybe uh you know pain
-
-or some other kind of nausea Etc can lead patients to stop taking their
-
-medication and so yes it has been shown that because of the myopathy that's
-
-associated with a particular genetic variation um there there have been cases like I
-
-said anecdotally where patients just stop taking their medicine because of it yeah
-
-hi Michelle over here thank you a great presentation fabulous resources I think
-
-incredibly useful for the community can I just ask are there plans or thoughts
-
-about translating those resources into different languages to make them more
-
-accessible to do that unfortunately resource wise
-
-being government funded we don't have uh the resources to pay for that but if
-
-there are people that would like to collaborate with us we could see what we could do yes that we get that question a
-
-lot you know can this be in multiple languages and we're happy to do it uh just a resource issue right now
-
-okay another question from the chat is despite the fact that pharmacogenomics data is growing rapidly and importance
-
-of testing is clear the integration in the clinics is very slowly so maybe you
-
-could comment on on the barriers or the reasons for that right um yes I think um a lot of the reasons
-
-for the slow uptake we just were mentioned previously just having
-
-um the education I think of clinicians to for them to be familiar with this
-
-type of data familiar with how to to use it also there are issues putting this kind
-
-of information in medical records so getting this into the ahr system I think would be key that's one barrier we know
-
-to uptake and then just also you know testing and reimbursement what are you
-
-supposed to test for when should you test who's going to pay for it these kinds of issues definitely in effect
-
-implementation as well last question yeah thank you as well for a great
-
-presentation we in our company started testing the
-
-farm cat and I'd like to ask how many drugs are in this moment
-
-supported because we have a only a limited number and also if it can be adjusted by the
-
-users the parameters and what are you going to expend it yeah absolutely so
-
-yes so if you um check out farmcat.org so we've updated a lot of the
-
-documentation maybe since you have checked it out so all of the drugs that
-
-are covered by cpic guidelines are currently covered by Farm cat and their end report all the genes and yes you can
-
-you can you can alter well first of all it's freely accessible so if you want to
-
-download the tool and Branch off you can change the code however you like but it
-
-is also a customizable in terms of if you have jeans that you want to include
-
-and you have the definition files for those you can add those as you want and same with uh with the recommendations as
-
-well and we are going to be expanding those within the next year is the goal to to include
-
-drugs and recommendations from the Dutch pharmacogenetic working group and also
-
-what information we can find on the first the FDA labels we'll probably start with FDA but then ultimately can
-
-expand from there as well okay uh those are bioinformatics that I
-
-work in in our company on it so I'm not completely familiar but is it possible
-
-to speak to your its yeah sure sure um you know send um I didn't have the
-
-email up here but if you send email to just feedback at farmgkb.org we will make sure it gets to
-
-farm cat I think there's also Farm cat at Farm gkb.org but I can't swear to
-
-that so if you send it to feedback at farmgkb.org and you say this is a question about Farm cat we can deal with
-
-that we're a very small team and we are the same people working on many projects
-
-at once but um yeah but yes definitely thank you thanks
-
-okay thank you so I I want just to remind you that if you continue
+**Audience member:** Thank you. Thanks.

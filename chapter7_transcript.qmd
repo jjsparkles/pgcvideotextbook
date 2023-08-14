@@ -86,326 +86,48 @@ So I want to acknowledge that this is a huge effort involving a ton of really aw
 
 **Caroline Nievergelt**:
 
-thank you thank you very much Naomi and thanks for being on time this was a really nice presentation and I'm sure that there are many comments and questions but let's keep them until the end we are now moving on to our next speaker and it's Elizabeth Atkinson who is currently a postdoc at MGH in that broad with Mark Daly and peniel Elizabeth did her PhD at Washington University in st. Louis and is currently developing resources that allow for improved genetic analysis in admixed populations Clemmy she's a member of the PTC PTSD group and she has developed local ancestry analysis for us today Elizabeth will be talking about her framework enabling well-calibrated genomic analysis of psychiatric traits across admixed populations then the slides are up let's see okay I'll see you then so take it away Lisa B
+Elizabeth Atkinson - Postdoc at MGH in that Broad with Mark Daly and Peniel. Elizabeth did her PhD at Washington University in St. Louis and is currently developing resources that allow for improved genetic analysis in admixed populations. She's a member of the PGC PTSD group, and she has developed local ancestry analysis framework that enables well-calibrated genomic analysis of psychiatric traits across admixed populations.
 
 **Elizabeth Atkinson**:
 
-all right thank you so much again for inviting me to talk about this project I'm really excited to hear the feedback so yeah this Caroline said today I'm going to tell you about a project I've been working on hoping to improve the ability to do sophistical genomic
+All right, thank you so much again for inviting me to talk about this project. I'm really excited to hear the feedback. So, yeah, this Caroline said, "Today, I'm going to tell you about a project I've been working on, hoping to improve the ability to do sophisticated genomic analyses on admixed populations."
 
-analyses on admixed populations so to start off there we go a whole reiterate
+So, to start off, there we go. A whole reiterate a point that you know, we're hoping is now becoming common knowledge in the GWAS community, and that Laramie just spoke deeply about. The vast majority of our association studies are conducted on European cohorts. And if we look more closely at this sort of wedge of the pie that is non-European, we'll notice that only a few handful of percent are populations that are admixed. Just to make sure that we're all on the same page, starting off when I say "admixed," I'm talking about an individual whose ancestry is not homogeneous but rather is comprised of several ancestral populations.
 
-a point that you know we're hoping is now becoming common knowledge in the GOS community and that laramie just spoke deeply about the vast majority of our
+So importantly, there are actually many more samples out there who have been genotyped or sequenced alongside phenotypes, but they're not actually making it into this figure. They're being excluded from analysis due to being too admixed. And there are also several significant large-scale efforts to collect psychiatric phenotypes alongside genomic data in diverse populations, some of them led right here at the Stanley Center. So there really is a pressing need for the development of novel methods that will allow the easy inclusion of admixed people into association studies. We really can't afford to kind of leave large swaths of our data on the table anymore, and you know, let alone the other problematic aspects of leaving entire ethnic groups understudied.
 
-association studies are conducted on European cohorts and if we look more closely at this sort of wedge of the pie
+So, admixed individuals are generally removed due to the challenges of accounting for their complex ancestry. So there are kind of concerns about population structure infiltrating analysis and biasing results, which can lead to false positive associations. Studies that do include admixed individuals tend to generally only correct for PCs. So PCs, actually, I think I can make a laser pointer here. Let me do that. All right, so PCs generally only correct for kind of average ancestry. So if somebody is, say, you know, 75% African, 25% European, or vice versa, and they actually, you know, can't really consider a lot of the more fine-scale population structure that can still be present on the data, and this is important which, you know, this sort of fine-scale pattern might be different, for example, in one case in control cohorts and still leave the door open for false positives.
 
-that is non-european we'll notice that only a few handful of percent are populations that are admixed and just to
+So here, I'm going to present a novel analytical framework to hopefully rectify this issue and allow for the easy incorporation of admixed people into association studies. We specifically do this by accounting for local ancestry, which takes into account this finer scale of population structure. So to get a little bit more into the actual kind of method, we're calling this method "tractor" for the moment. The core feature of the proposed framework relies on inferring population structure, as I said, informed by local ancestry. So the first step is this automated pipeline to call local ancestry tracts in your sample. Just in case you know you haven't seen any painted karyogram figure before, here's an example of a Latino individual. The autosomes are along the x-axis, position along the chromosomes on the ,Y and then the two strands of each chromosome are painted according to the ancestral origin of that tract.
 
-make sure that we're all on the same page starting off when I say admix I'm talking about an individual whose ancestry is not homogeneous but rather
+So we use this information after we collect it to kind of improve long-range phasing and haplotype tract recovery, which I'll go into in a lot more detail in coming slides. And then the end goal is basically to be able to extract out the component ancestries of interest. For example, if you have a large European cohort and you have this admixed population, you could use tractor to scoop out the European bits of your admixed cohort to include alongside your European individuals. And, you know, the same goes for the African and Native American components in this example. So, in this way, you can kind of leverage the information in admix people; you don't have to exclude them from analysis anymore.
 
-is comprised of several ancestral populations so importantly there's actually many more samples out there who
+Since the first step in this pipeline involves calling local ancestry, I wanted to validate that it was performing well and kind of the target populations that we had in mind. So the use case I'll be talking about for the rest of this talk is the African-American demographic context, and we modeled this after PGC PTSD African-American cohorts. So to test local ancestry inference using one of the very worthy existing methods to call local ancestry, RFmix, I simulated a truth dataset that resembles these realistic PGC PTSD populations using real haplotype data. This will retain the LD patterns and, you know, other genomic features present in real data that are sometimes hard to simulate. And using this truth dataset with known phase and local ancestry, I then ran tractor step one, calling, you know, local ancestry, and quantified how often we got it correct. And, hardeningly, about 98% of the time, no matter how you slice it, we were getting correct slope lines, which recall, so this seems to perform very well.
 
-have been genotyped or sequenced alongside phenotypes but they're not actually making it into this figure they're being excluded from analysis due
+Next, I wanted to see how the pipeline would work in kind of a more real-looking dataset. So usually, we don't have perfect phase; we have statistically phased data. So I took our truth dataset and ran it through a standard phasing pipeline, SHAPEIT2, using a thousand genomes as a reference panel. And I noticed something that we hadn't initially expected to see, which is that a lot of the originally long tracks were really broken up by these switch errors in phasing. So even though local ancestry inference is performing really well, you know, if it's calling well if we have zero, one, or two African tracks at a given position, these long-range haplotypes are being disrupted due to switch errors. So we ended up building in an additional step in tractor to find and unkink, as we're calling it, this garden hose, to recover these long-range haplotypes.
 
-to being too admixed and there's also several significant large-scale efforts
+So here's our karyogram again. Now, after this unkinking step has been implemented, we noticed that there were still sort of stretches where due to the local ancestry, you know, we painted the chromosomes on the statistically phased data. So there are some overhang areas that were still not able to be recovered. So we decided to implement one more iteration of RFmix on this sort of ironed-out dataset to see if this could help recover these full haplotypes. And indeed, this did dramatically improve the situation.
 
-to collect psychiatric phenotypes alongside genomic data in diverse populations some of them led right here
+So just to convince you that not only did this, you know, make our karyograms look prettier, but this actually made the data look more realistic. I modeled the track distributions using a poisson waiting time centered at nine, which was the number of generations ago that the pulse of admixture occurred. So given this, this is what we would expect the European tracts in our data set, in this, you know, the European tracks of these African American individuals to look like, you know, given all things being correct. And we can use this to put a p-value on how likely it is to get the distributions in the various treatments of the data. So in our truth dataset, again focusing on these red tracks, which are the European segments, we do see pretty close to expectations distribution here, almost around nine. After statistical phasing, however, the tracks get extremely short; they're actually P times 10 to the negative 28 likely to observe a distribution of this many tiny tracks, so very, very unlikely. After unkinking, it's about twice as improved, and with one iteration of the pipeline, we have gotten things almost back up to where they should be. And just to sort of zoom out and put this all into perspective another way you can see, you know, how we really dramatically improved things from this original purple phased situation back down to this yellow line, which is as close to the truth dataset in black here as we've gotten it so far. So we are indeed making the situation look statistically significantly more realistic by recovering these long-range haplotypes, which can be important too if you're concerned with things like LD, for example, in your dataset.
 
-at the Stanley Center so there really is a pressing need for the development of novel methods that will allow the easy
+We've also tested this in a bunch of other demographic scenarios, and it performs, you know, similarly well. So with different admixture fractions, putting a different, you know, demographic models in, so pulse times at different points in the past and also between different ancestries with varying kind of divergence times.
 
-inclusion of admix people into association studies we really can't afford to kind of leave large swaths of
+So in the last couple of minutes here, I'd like to kind of take a step back and look at one of the main applications of this framework, which is really to show that it improves performance in GWAS context. So not only should we better correct for population structure by using this local ancestry information, but we can actually identify a new locus through an increase in power from local ancestry as well. The statistical model that's built into tractor basically tests each SNP for an association with the phenotype using the logistic regression model that I've shown here, where X is the number of copies of the risk allele from the, you know, the first of your ancestries, X2 is the number of copies from your second ancestry, and then you can put in whatever other covariates, importantly including global PCs, you know, as for the rest of your parameters. You also notice that this is currently written as a two-way admix context, but it could be scaled up to an arbitrary number of ancestries, and you can further test if the risk allele is ancestry-specific by evaluating the difference between beta1 and beta2 using AZ test.
 
-our data on the table anymore and you know let alone the other problematic aspects of leaving entire ethnic groups
+So we wanted to see if there were any kind of power gains using this model, and I want to acknowledge Adam here, who heroically ran a whole lot of these simulations with me. So to do this, we simulated again a realistic African-American demographic scenario. We drew a biallelic disease variant with the probability of each genotype copy drawn from the minor allele frequency. We then simulated a disease phenotype assuming a 10% disease prevalence, and an individual's risk of developing the phenotype was modified basically by their percent admixture and the presence of the minor allele on the African genetic background. So this is basically assuming no effect in a European genetic context but an effect on an African genetic context, which would be, you know, equivalent to modifying effect sizes due to a tagged SNP being present in African background and not in Europeans for a shared causative mutation.
 
-understudied so at mixed individuals are generally
+So we ran a whole lot of simulations varying all of these kind of parameters to sort of characterize the landscape of how tractor would improve your power. This is the simplest context, just showing the allele frequency held constant at a 20 percent minor allele frequency. In all of these plots, the dotted line or the dash line is tractor, and the solid line is sort of the traditional GWAS method which does incorporate PCs. And you'll notice that both the same sample size is shown in blue and black, we do see a significant power gain using local ancestry, and this can get very large, and, you know, this gain can get really big in different genomic contexts. So, for example, when you introduce a minor allele frequency difference between the ancestries, now shown in this red line, this sort of gap between the methods grows very dramatic. And I kind of want to dwell in this for a moment just to show how much, you know, how significant this power improvement is. So if you pick your favorite power, let's say 80%, you'd be able to detect variants that are of an odds ratio of about 0.1 lower using our local ancestry incorporating method compared to your traditional GWAS. Or if you pick your favorite odds ratio, let's say 1.2, you would basically have very little power to find this variant in a normal context, but we'd be able to detect it at very high power from using our method.
 
-removed into the challenges of accounting for their complex ancestry so that there are kind of concerns about
+So we've also done a lot of sort of tests characterizing other aspects of the genomic landscape. Since I'm running a little low on time, I'll just sort of briefly mention the most significant one, which is the effect size difference across ancestries. So now we've introduced an effect in both backgrounds, not only in the African genetic context, and the sort of major take-home point is that, you know, if you have the effects, so on the right-hand side here, we have the effect now swapped only in the European background rather than the African background, and you'll notice that we would have effectively zero power to detect it using a traditional model but can detect it at reasonable power with Tractor. This is because European ancestry only makes up about 20% of the sample, so the signal would really have gotten swamped out if we hadn't deconvolved the local ancestry tracts. And importantly, in a context where we would actually expect no improvement from local ancestry, the effect is the same, everything is the same in both ancestries, we don't see much of a power loss, a very minimal power loss from using Tractor. So there doesn't seem to be, you know, a major hit from including this in your analyses. So, you know, if you're uncertain of the effect of ancestry, it seems like it's not a massive problem to incorporate this. And importantly, we're talking about, you know, the perceived effect of this tag SNP, not the real causative mutation. So, you know, even if the shared causative mutation is the same across ancestries, what you actually would detect in your GWAS could differ depending on the minor allele frequency or LD patterns or environmental interactions or many other factors that could be different across these ancestries.
 
-population structure infiltrating analysis and biasing results which can lead to false positive associations
+Alright, to sum up, today I've talked about this readily implemented pipeline that should allow you to be able to include admixed individuals in your GWAS studies in a well-calibrated manner. I am currently optimizing it with members of the Hale team from the Broad Institute, so it should be very quick and work in all systems once it's finalized. But it's already written up in Python, and I can, you know, distribute it to whoever's interested.
 
-studies that do include admixed individuals tend to generally only correct for PCs so pcs actually I think
+We have also built in these extra features to improve long-range phasing, and I've shown you today that we not only boost your sample size by allowing inclusion of admixed individuals, but we can actually further boost your power by leveraging this information from admixed populations to find novel variants. We're also hoping to take this in a few kind of directions. I'm starting testing on an empirical dataset that has a very well-established, you know, ancestry-specific hit, so blood lipids in African-American individuals, to make sure this really does work not only in simulation but in real empirical data as well.
 
-I can make a laser pointer here let me do that all right so pcs generally only collect correct
+We're hoping that, since recently admixed individuals have disrupted LD blocks, we should be able to leverage this to more kind of fine-scale pinpoint causal variants, so we're sort of diving into this now too and developing a heterogeneity test to try to automatically suggest and eliminate candidate sites based on your admixed populations. And I'm also working with Alicia Martin, who's speaking immediately next, and some other collaborators here at the Broad and MGH to try to build a polygenic risk score framework that would actually produce reliable estimates for admixed populations, which remains another kind of notable gap in current methods.
 
-for kind of average ancestry so if somebody is say you know 75% African 25%
+And I'll just close with saying, not only is this procedure useful in the GWAS context, but it could really be applied to any situation where you need to control for population structure at a very fine-scale manner. So, for example, even things such as, you know, evolutionary studies doing genome-wide scans of selection.
 
-European or vice versa and they actually you know can't really consider a lot of the more fine scale population structure
-
-that can still be present on the data and this is important which you know this this sort of fine scale pattern
-
-might be different for example in one case in control cohorts and still leave the door open for false positives so here I'm going to present a novel
-
-analytical framework to hopefully rectify this issue and allow for the easy incorporation of admix people into
-
-association studies we specifically do this by accounting for local ancestry
-
-which takes into account this finer scale of population structure so to get
-
-a little bit more into the actual kind of method we're calling this method
-
-tractor for the moment the core feature of the proposed framework relies on a
-
-certain population structure as I said informed by local ancestry so the first step is this automated pipeline to call
-
-local ancestry tracts in your sample so just in case you know you haven't seen
-
-any painted carry grim figure before here's an example of a Latino individual the autosomes are along the x axis
-
-position along the chromosomes on the Y and then the two strands of each chromosome are painted according to the
-
-ancestral origin of that tract so we use this information after we collect it to
-
-kind of improve long-range phasing and haplotype tract recovery which I'll go
-
-into in a lot more detail in coming slides and then the end goal is basically to be able to extract out the
-
-component ancestries of interest so for example if you have a large European cohort and you have this admixed
-
-population you could use tractor to scoop out the European bits of your admixed cohort to include alongside your
-
-European individuals and you know same goes for the African and Native American components in this example so in this
-
-way you can kind of leverage the information and add mix people you don't have to exclude them from analysis anymore so since the first step in this
-
-pipeline involves calling local ancestry I wanted to validate that it was performing well and kind of the target populations that we had in mind so the
-
-use case I'll be talking about for the rest of this talk is the african-american demographic context and
-
-we modeled this after PGCE PTSD african-american cohorts so to test
-
-local ancestry inference using one of the very worthy existing methods to call local ancestry our F mix I simulated a
-
-truth dataset that resembles these realistic pgz PTSD populations using
-
-real haplotype data so this will retain the LD patterns and you know other genomic features present and real data
-
-that are sometimes hard to simulate and using this truth dataset with known
-
-phase and local ancestry I then ran chapter step one calling you know local
-
-ancestry and quantified how often we got it correct and hardening ly about 98% of
-
-the time no matter how you slice it we were getting correct slope lines which recall so this seems to perform very
-
-well next I wanted to see how the pipeline would work in kind of a more
-
-real looking data set so usually we don't have perfect phase we have statistically phase data so I took our
-
-truth data set and ran it through a standard phasing pipeline shape at two
-
-using a thousand genomes as a reference panel I mean noticed something that we kind of hadn't initially expected to see which
-
-is that a lot of the originally long trucks were really broken up by these
-
-switch errors and phasing so even though local industry inference is performing really well you know if it's calling
-
-well if we have zero one or two African tracks at a given position these long range
-
-haplotypes are being disrupted due to switch errors so we ended up building in an additional step in tractor to find
-
-and unkink is the way we're using as if you know I'm kicking this garden hose to recover these long range chaplet types
-
-so here's our karyogram again now after this I'm kinking step has been
-
-implemented we noticed that there were still sort of stretches where due to the local ancestry you know we painted the
-
-chromosomes on they statistically phase data so there's some overhang areas that were still not able to be recovered so
-
-we decided to implement one more iteration of our F mix on this sort of
-
-ironed out data set to see if this could help recover these full Apple types and
-
-indeed this did dramatically improve the situation so just to convince you that not only
-
-did this you know make our carry grams look prettier but this actually made the data look more realistic I modeled the
-
-track distributions using a plus sign waiting time centered at nine which was the number of generations ago that the
-
-pulse of admixture occurred so given this this is what we would expect the European tracts in our data set in this
-
-you know the European tracks of these African American individuals to look like you know given given all things
-
-being correct and we can use this to put a p-value on how likely it is to get the
-
-distributions in the various treatments of the data so in our truth data set
-
-again focus on these red tracks which is the European segments we do see pretty
-
-close to expectations distribution here almost around nine after statistical
-
-phasing however the tracks get extremely short they're actually P times 10 to the
-
-negative 28 likely and to observe a distribution of this many tiny tracks so very very unlikely after on kinking it's
-
-about twice as improved and with one iteration of the pipeline we have gotten
-
-things almost back up to where they should be and just sort of to zoom out and put this all in into perspective
-
-another way you can see you know how we really dramatically improved things from this original
-
-purple phased situation back down to this yellow line which is as close to
-
-the truth dataset in black here as we've gotten it so far so we are indeed making
-
-the situation look statistically significantly more realistic by recovering these long-range haplotypes
-
-which which can be important too if you're concerned with things like LD for example in your data set we've also
-
-tested this and a bunch of other demographic scenarios and it performs you know similarly well so with
-
-different admixture fractions putting a different you know demographic models in
-
-so pulse times at different points in in the past and also between different
-
-ancestries with varying kind of divergence times so in the last couple
-
-minutes here I'd like to kind of take a step back and look at one of the main applications of this framework which is
-
-really to show that it improves performance in Ag wast context so not only should we better correct for
-
-population structure by using this local ancestry information but we can actually identify a new low sy through an
-
-increase in power from local ancestry as well so the statistical model that's
-
-built into tractor basically tests each snip for an association with the phenotype using the logistic regression
-
-model that I've show here where X is the number of copies of the risk allele from the you know the first of your ants this
-
-trees x2 is the number of copies from your second ancestry and then you can put in whatever other code various
-
-importantly including global pcs you know as for the rest of your parameters
-
-you also notice that this is currently written as a two-way admix context but it could be scaled up to an arbitrary
-
-number of ancestries and you can further test if the risk allele is ancestry
-
-specific by evaluating the difference between beta 1 and beta 2 using AZ test
-
-so we wanted to see if there were any kind of power gains using this model and
-
-I want to acknowledge Adam here who heroically ran a whole lot of these simulations with me
-
-so to do this we we simulated again a realistic african-american demographic
-
-scenario we drew a by allelic disease variant with the probability of each
-
-genotype copy drawn from the minor allele frequency we then simulated a disease phenotype
-
-assuming a 10% disease prevalence and an individual's risk of developing the phenotype was modified basically by
-
-their percent admixture and the presence of the minor allele on the African genetic background so this is basically
-
-assuming no effect in a European genetic context but an effect on an African genetic context which would be you know
-
-equivalent to modifying effect sizes due to a tagged snip being present in African background and not in Europeans
-
-for a shared causative mutation so we ran a whole lot of simulations varying
-
-all of these kind of parameters to sort of characterize the landscape of how tractor would improve your power this is
-
-the simplest context just showing the allele frequency held constant at a twenty percent minor low frequency and
-
-in all of these plots the dotted line or the dash line is tractor and the solid line is sort of the traditional G wast
-
-method which does incorporate PCs and you'll notice that both the same sample
-
-size is shown in blue and black we do see a significant power gain using local
-
-ancestry and this can get very large and you know this game can get really big in
-
-different genomic contexts so for example when you introduce a minor allele frequency difference between the
-
-ancestry is now shown in this red line this sort of gap between the methods
-
-grows very dramatic and I kind of want to dwell in this for a moment just to show how much you know how significant
-
-this power improvement is so if you pick your favorite power let's say 80% you'd be able to detect variants that are of
-
-an odds ratio of about point one lower using our local ancestry incorporating method compared to your traditional G
-
-wasps or if you pick your favorite odds ratio let's say 1.2 you would basically have you know very little power to find
-
-this variant in a normal context that we'd be able detected at very high power from using
-
-our our method so we've also done a lot
-
-of sort of tests characterizing other aspects of the genomic landscape since I'm running a little low on time I'll
-
-just sort of briefly mention the most significant one which is the effect size difference across ancestries so now
-
-we've introduced an effect in both backgrounds not only in the African genetic context and the sort of major
-
-take-home point is that you know if you have the effects so on the right hand
-
-side here we have the effect now swapped only in the European background rather than the African background and you'll
-
-notice that we would have effectively zero power to detect it using a traditional model but can detect it at
-
-reasonable power with Traktor this is you know because European ancestry only
-
-makes up about 20% of the sample so the signal would really have gotten swamped
-
-out if we hadn't deke involved the local ancestry tracts and importantly in a
-
-context where we would actually expect no improvement from local ancestry the effect is the same everything is the
-
-same in both ancestries we don't see much of a power loss a very minimal
-
-power loss from using tractor so there doesn't seem to be you know a major hit from including this in your analyses so
-
-you know if you're uncertain of the effect of ancestry it seems like it's not a massive problem to incorporate
-
-this and importantly we're talking about you know the perceived effect of this tag snip not the real causative mutation
-
-and so you know even if there's the shared causative mutation is the same across ancestries you know what you
-
-actually would detect in your Jie wasps could differ depending on the amount little frequency or LD patterns or environmental interactions or many other
-
-factors that could be different across these ancestries alright to sum up today
-
-I've talked about this readily implemented pipeline that should allow you to be able to include admixed
-
-individuals in your jaw studies in a well calibrated manner I am currently optimizing it with
-
-members of the Hale team from the Broad Institute so it should be a very quick
-
-and work in all systems once it's finalized there but it's already written up in
-
-Python and I can you know distribute it to whoever's interested we have also
-
-built in these extra features to improve long range phasing and I've shown you
-
-today that we not only you know boost your sample size by allowing inclusion of admixed individuals but we can
-
-actually further boost your power by leveraging this information from admix populations to find novel variants we're
-
-also hoping to take this in a few kind of directions I'm starting testing on an
-
-empirical data set that has a very well-established you know ancestry specific hit so blood lipids and
-
-african-american individuals to make sure this really does work not only in simulation but in real miracle data as
-
-well we're hoping that since recently admixed individuals have disrupted LD
-
-blocks we should be able to leverage this to more kind of fine scale pinpoint
-
-causal variants so we're sort of diving into this now too and developing a
-
-heterogeneity test to try to automatically suggest and eliminate candidate sites based on your admixed
-
-populations and i'm also working with alicia martin who's speaking immediately next and some other collaborators here
-
-at the road and mph to try to build a polygenic risk or framework that would actually produce reliable estimates for
-
-admixed populations which remains another kind of notable gap in current methods and I'll just close with saying
-
-not only is this procedure useful in the
-
-G wast context but could really be applied to any situation where you need to control for population structure at a
-
-very fine scale manner so for example even things such as you know evolutionary study is doing genome-wide
-
-scans of selection so with that I'll acknowledge my collaborators and
-
-advisers and I guess I'll take questions at the very end but thank you for your attention
+So with that, I'll acknowledge my collaborators and advisers, and I guess I'll take questions at the very end. But thank you for your attention.
 
 #  {#sec-video2}

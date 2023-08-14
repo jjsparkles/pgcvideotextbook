@@ -2,11 +2,15 @@
 title: "Chapter 2.2: Genetic Variation (Video Transcript)"
 ---
 
+**Title**: Genetic Variation and Mutation
+
+**Presenter(s)**: Precision Health
+
 The differences in our genes come about through a natural process called mutation. Mutation is extremely common. As a cell copies its DNA before dividing, it makes occasional typos. Most commonly, a single base is substituted for another.Sometimes a base is deleted or an extra base is added. The cell is able to repair most of these typos. But each round of cell division introduces a few changes that are not repaired. When DNA changes occur in cells that will give rise to eggs or sperm, they can be passed down to offspring. Each one of us has about 60 new variations that were not present in our parents.
 
 People commonly use the terms mutant and mutation to describe something undesirable or broken. But mutation is not always bad. Most DNA changes fall in the large areas of the genome that sit between genes and they usually have no affect. When variations occur in areas of the genome that code for proteins, they often have consequences. These changes can effect the protein product itself or they can effect when, where, or how much protein is made.
 
-Most of the time, mutation generates variations that are neither good nor bad, just different. While a mutation is defined as any alteration in the DNA sequence, biologists use the term \"single nucleotide polymorphism\" (SNP) to refer to a single base pair alteration that is common in the population. Specifically, a polymorphism is any genetic location at which at least two different sequences are found, with each  sequence present in at least 1% of the population. Note that the term \"polymorphism\" is generally used to refer to a normal variation, or one that does not directly cause disease. Moreover, the cutoff of at least 1% prevalence for a variation to be classified as a polymorphism is somewhat arbitrary; if the frequency is lower than this, the allele is typically regarded as a mutation.
+Most of the time, mutation generates variations that are neither good nor bad, just different. While a mutation is defined as any alteration in the DNA sequence, biologists use the term "single nucleotide polymorphism" (SNP) to refer to a single base pair alteration that is common in the population. Specifically, a polymorphism is any genetic location at which at least two different sequences are found, with each  sequence present in at least 1% of the population. Note that the term "polymorphism" is generally used to refer to a normal variation, or one that does not directly cause disease. Moreover, the cutoff of at least 1% prevalence for a variation to be classified as a polymorphism is somewhat arbitrary; if the frequency is lower than this, the allele is typically regarded as a mutation.
 
 SNPs are important as markers, or signposts, for scientists to use when they look at populations of organisms in an attempt to find genetic changes that predispose individuals to certain traits, including disease. On average, SNPs are found every 1,000--2,000 nucleotides in the human genome, and scientists participating in the International HapMap Consortium have mapped millions of these alterations.
 

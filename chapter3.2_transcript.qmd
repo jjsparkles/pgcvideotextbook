@@ -8,7 +8,7 @@ title: "Chapter 3.2: Next Generation Sequencing (Video Transcript)"
 
 **Presenter(s)**: Mark J. Kiel
 
-You've probably heard of the human genome,the huge collection of genes inside each and every one of your cells. You probably also know that we've sequenced the human genome, but what does that actually mean? How do you sequence someone's genome?
+You've probably heard of the human genome, the huge collection of genes inside each and every one of your cells. You probably also know that we've sequenced the human genome, but what does that actually mean? How do you sequence someone's genome?
 
 *What is a genome*
 
@@ -27,6 +27,8 @@ But we have to read them all somehow. To do this, we need to make a batch of spe
 *Interpreting the sequence*
 
 So, the next step is to decipher what the sequence means, how your genome and my genome are different. Interpreting the genes of the genome is the part scientists are still working on. While not every difference is consequential, the sum of these differences is responsible for differences in how we look, what we like, how we act, and even how likely we are to get sick or respond to specific medicines. Better understanding of how disparities between our genomes account for these differences is sure to change the way we think not only about how doctors treat their patients, but also how we treat each other.
+
+------------------------------------------------------------------------
 
 # *Next Generation Sequencing: A Step-by-Step Guide to DNA Sequencing* {sec-video2}
 

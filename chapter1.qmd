@@ -67,7 +67,7 @@ Link to video transcript [here](chapter1.3_transcript.qmd#sec-part1).
 
 **Title**: History of Psychiatric Genetics (Part 2)
 
-**Description**: A deeper dive into a single episode in the history of Psychiatry: "The Beginnings of the Debate Between the Mendelians and the Biometricians in Psychiatric Genetics", focusing on four individuals: David Herron, Carl Pearson, Abraham Rosenoff, and Charles Davenport during 1913 to 1914.
+**Description**: A deeper dive into a single episode in the history of Psychiatry: "The Beginnings of the Debate Between the Mendelians and the Biometricians in Psychiatric Genetics", focusing on four individuals: David Heron, Karl Pearson, Aaron Rosanoff, and Charles Davenport during 1913 to 1914.
 
 **Presenter(s)**: Ken Kendler
 

@@ -21,7 +21,7 @@ library("vembedr")
 embed_url("https://youtu.be/H18i2Oe05Gw")
 ```
 
-Link to video transcript [here](software_prs_transcript.qmd).
+Link to video transcript [here](software_prs_transcript.qmd#sec-video1).
 
 ------------------------------------------------------------------------
 
@@ -44,7 +44,7 @@ library("vembedr")
 embed_url("https://www.youtube.com/watch?v=ERAuCaoJ4Wk")
 ```
 
-Link to video transcript [here](software_prs_transcript.qmd).
+Link to video transcript [here](software_prs_transcript.qmd#sec-video2).
 
 ## PRS in Ancestrally-diverse Populations
 
@@ -61,7 +61,7 @@ library("vembedr")
 embed_url("https://www.youtube.com/watch?v=UM554Hi_v-Y")
 ```
 
-Link to video transcript [here](software_prs_transcript.qmd).
+Link to video transcript [here](software_prs_transcript.qmd#sec-video3).
 
 ------------------------------------------------------------------------
 
@@ -82,9 +82,9 @@ library("vembedr")
 embed_url("https://www.youtube.com/watch?v=aya8WsNAu6U")
 ```
 
-Link to video transcript [here](software_prs_transcript.qmd).
+Link to video transcript [here](software_prs_transcript.qmd#sec-video5).
 
-Link to tutorial test datasets here.
+Link to tutorial test datasets [here](https://privefl.github.io/bigsnpr/articles/LDpred2.html).
 
 ------------------------------------------------------------------------
 
@@ -105,7 +105,7 @@ library("vembedr")
 embed_url("https://www.youtube.com/watch?v=Q-hRBQ7kAPM")
 ```
 
-Link to video transcript [here](software_prs_transcript.qmd).
+Link to video transcript [here](software_prs_transcript.qmd#sec-video4).
 
 ------------------------------------------------------------------------
 
@@ -126,7 +126,7 @@ library("vembedr")
 embed_url("https://youtu.be/nUNU7TZMui4")
 ```
 
-Link to video transcript [here](software_prs_transcript.qmd).
+Link to video transcript [here](software_prs_transcript.qmd#sec-video6).
 
 ------------------------------------------------------------------------
 
@@ -147,4 +147,4 @@ library("vembedr")
 embed_url("https://www.youtube.com/watch?v=w7wB0HsGAJE")
 ```
 
-Link to video transcript [here](software_prs_transcript.qmd).
+Link to video transcript [here](software_prs_transcript.qmd#sec-video7).

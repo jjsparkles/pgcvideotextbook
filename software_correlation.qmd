@@ -17,12 +17,9 @@ library("vembedr")
 embed_url("https://www.youtube.com/watch?v=ovfYfcVLLO0")
 ```
 
-# LDSC
+Link to video transcript [here](software_correlation_transcript.qmd#sec-video1).
 
-```{r, echo=FALSE}
-library("vembedr")
-embed_url("https://www.youtube.com/watch?v=nOxHTYz-z7s")
-```
+------------------------------------------------------------------------
 
 # GCTA-GREML
 
@@ -38,3 +35,5 @@ embed_url("https://www.youtube.com/watch?v=nOxHTYz-z7s")
 library("vembedr")
 embed_url("https://www.youtube.com/watch?v=kk9Fkg0trT8")
 ```
+
+Link to video transcript [here](software_correlation_transcript.qmd#sec-video2).

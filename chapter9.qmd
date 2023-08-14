@@ -138,6 +138,8 @@ embed_url("https://www.youtube.com/watch?v=Paf2JfWES6I&list=PL-A34BVyxWtV2q5COof
 
 Link to video transcript [here](chapter9.3_transcript.qmd#sec-video4).
 
+Link to tutorial GitHub [here](https://github.com/GenomicSEM/GenomicSEM) and Wiki [here](https://github.com/GenomicSEM/GenomicSEM/wiki).
+
 ------------------------------------------------------------------------
 
 **Title**: Multivariate GWAS in Genomic SEM

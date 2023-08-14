@@ -242,7 +242,9 @@ Link to video transcript [here](chapter8.6_transcript.qmd#sec-video3).
 
 ### From SNPs to Genes
 
-**Video 4**: Linking SNPs with genes in GWAS. This video discuss the relevance of gene regulation in GWAS, explains transcriptome-wide association studies and co-localization of GWAS with eQTLs as methods to link SNPs to gene expression and trait associations, discusses proximity and the abstrat mediation model, and covered combining multiple SNP-to-gene strategies based on the Nature Genetics Publication: "Combining SNP-to-gene linking strategies to identigy diease genes and assess disease omonigenicity".
+**Title**: Linking SNPs with genes in GWAS.
+
+**Description**: This video discuss the relevance of gene regulation in GWAS, explains transcriptome-wide association studies and co-localization of GWAS with eQTLs as methods to link SNPs to gene expression and trait associations, discusses proximity and the abstrat mediation model, and covered combining multiple SNP-to-gene strategies based on the Nature Genetics Publication: "Combining SNP-to-gene linking strategies to identigy diease genes and assess disease omonigenicity".
 
 **Level**: intermediate (the content will be easier to follow by those who already went through some introductory materials on GWAS and gene expression)
 
@@ -259,7 +261,7 @@ Link to video transcript [here](chapter8.6_transcript.qmd#sec-video4).
 
 ------------------------------------------------------------------------
 
-### Resources
+### Additional qTL Resources
 
 <https://chr1swallace.github.io/coloc/articles/a01_intro.html> <http://gusevlab.org/projects/fusion/>
 

@@ -6,9 +6,9 @@ title: "EWAS"
 
 **Title**: How to Perform Epigenome Wide Association Studies
 
-**Presenter(s)**: Adam Maihofer
+**Presenter(s)**: Agaz Wani, Seyma Katrinli
 
-**Level**:
+**Level**: Intermediate
 
 **Length**: 21:17
 
@@ -16,3 +16,5 @@ title: "EWAS"
 library("vembedr")
 embed_url("https://www.youtube.com/watch?v=uTEfOTHfHpk")
 ```
+
+Link to video transcript [here](software_ewas_transcript.qmd).

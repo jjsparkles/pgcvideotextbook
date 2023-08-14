@@ -4,4 +4,20 @@ title: "Chapter 4.3: Genetic Study Designs (Video Transcript)"
 
 # Twin studies {sec-video1}
 
+**Title**: What are "Twin studies"?
+
+**Presenter(s)**: OpenLearn from the Open University
+
+Twin studies allow us to estimate how much a trait comes from our genes and how much is influenced by environment. These identical twins share the same genes. They are the product of one sperm and one egg that divided into two embryos in an early stage of the pregnancy. They are therefore genetically identical.
+
+Non-identical twins derive from two different sperms and two different eggs. They are genetically as similar as ordinary brothers and sisters and share, on average, 50% of their genes. But they all share the same environment as they grow up in the same family.
+
+In twin studies, it is possible to separate out these different influences by comparing the resemblance between identical twins with the resemblance between non-identical twins. Data is gathered from numerous pairs of twins in order to gain an accurate estimate of the relative importance of genes and the environment.
+
+So, identical twins share all their genes and their share environmental influences. Differences between these twins can thus be only due to non-shared environmental influences. If both identical and non-identical twins resemble each other closely, this must be due to shared environmental influences. If identical twins resemble each other more closely than non-identical twins, then it gives us a clue that genetic factors must play a role.
+
+So, twin studies can provide clues on the relative importance of genes and environment, and thus provide information on where the balance lies between nature and nurture.
+
+------------------------------------------------------------------------
+
 # Choosing the Right Design {sec-video2}

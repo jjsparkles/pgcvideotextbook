@@ -4,4 +4,76 @@ title: "Software Tutorials: EWAS (Video Transcript)"
 
 **Title**: How to Perform Epigenome Wide Association Studies
 
-**Presenter(s)**: Adam Maihofer
+**Presenter(s)**: Agaz Wani, Seyma Katrinli, PhD
+
+Hello, I am Agaz Wani. I am a postdoc in Dr. Uddin's lab at the University of South Florida. Today, I'll be talking about quality control steps that we need to do in epigenome-wide association studies. So, I'll be talking about checking for failed assays, mislabeled and contaminated samples. Then, I'll be talking about dye bias correction and normalization, followed by a removal of low-quality probes and samples. Finally, I'll be talking about adjustment for batch effects.
+
+So, we need to install and load some packages. We will be using "ewastools" to perform quality control checks. So, the first thing we need to do is to load the idat files. That is, the R data. Each sample has two idat files, that is green and red channels.
+
+We also have a sample sheet that comes with the raw data, which looks something like this, where we have Sentrix ID and Sentrix positions. We have the sample name. So, we need to use this sample sheet to read the idat files. We are reading the idat files, it will take a few seconds. We are almost done reading the idat files. Then, we will check if we have all the samples on the sample sheet and the methylation data.
+
+The next step we need to do is to evaluate 17 quality metrics that are recommended by Illumina. We will remove the samples that fail this check. It looks something like this, where we have the sample ID, which is the combination of Sentrix ID and Sentrix position. It will be unique for each sample, and we will have the information here whether the samples failed or passed this step of quality control. If the sample passes, the value will be "TRUE" here.
+
+Now, we need to do the genotype check that will help us to find the mislabeled or contaminated samples. It will give an outlier score. If the outlier score is greater than -4, it is recommended to remove that sample. So, we have the information here. We have the written to the file where we have the outlier information. If it's greater than -4, it's recommended to remove the sample or flag the sample so that you can track it in the downstream analysis. We have the donor ID and the number of samples with the donor ID.
+
+So, in the case of a longitudinal study where we have more than one time point of data for a participant ID, it will have the same ID for that participant. As we have unique samples, all these IDs are unique. In cross-sectional analysis, we need to remove the duplicate samples of IDs. Then, finally, we will write this data so that we can use it in the next quality control steps and downstream analysis.
+
+In this part, we will be performing normalization, dye bias collection, sex check, and ComBAT adjustment. So, we will install and load the packages. We will use some main packages like "minfi", "sva", and "CpGassoc". R packages and some helper R packages to make the process easy. First, we will load the idat files and the sample sheet that we saved in the previous file. We will need some more information like age and sex and PTSD that we will use in the ComBAT adjustment.
+
+Yeah, so we will load the data first. As you can see, it is loading the data, the green channel data, and it will perform dye bias correction because we have data from two different channels, that is red and green. It will perform a SS noob normalization. There are various approaches, but in this part, we will use SS noob. Followed by that, we will do the sex check.
+
+We are almost done. Now, in the next step, we will perform a sex check. The data in the phenotype file and methylation data should match. So, if there's any sex mismatch between those two files, we need to remove the sample. It means there's some issue with that sample, so we don't want that sample in the analysis.
+
+We also need to have P value, beta value, Signal A (that is unmethylated information), and Signal B (that is methylated information) to perform some other steps. So, we will also save this information so that we can use it in the future steps. We will also save this updated phenotype information to use it in the next steps.
+
+So, once we have saved this data, then we will clean the environment and load the data again to perform some other quality control steps. We are almost done with this step now.
+
+When we have saved the data, we will load the data here and do the check, that is to remove the low-quality probes and samples. So, if there is any sample that has greater than 10 percent of the missing values or any group with greater than 10 percent of the missing values, we will remove that. As you can see, zero samples have been removed, but 1,585 CpGs have been removed due to high missing values.
+
+Next, we need to remove the cross-hybridized groups - those groups that match more than one location in the genome. So, those are recommended to be removed. You can refer to this paper where you know it has known probes that are known to be as cross-hybridized. We will remove those probes and then save the data again for future use.
+
+The next step, very important step, will have to do with ComBAT adjustment. It will remove the batch effects that are in the data. But the main thing we have to keep in mind is that we have saved the variation or preserved the variation for the phenotype of interest, for example, in this case, it's PTSD. We also have to save factors, sex and age. So we will build the metrics for that and use that matrix to preserve the variation in ComBAT adjustment.
+
+So, for ComBAT adjustment, we have loaded the saved data and we have loaded the saved phenotype data. We have removed the samples that were QCed. Now, we will order the samples or sort the samples so that they should be in the same order in the phenotype file and the methylation data file. We will have sex, age, PTSD, chip ID, and chip position. We will be using ComBAT adjustment to adjust for the batch effects for chip ID and chip position and save the variation for sex, age, and PTSD.
+
+We also have to remove the missing values if there are any missing values in the phenotype information. So, we will remove those samples. The other way is to include the samples, the information in those samples, but here in this part, we will remove those samples.
+
+Now, convert the columns, such as Chip and Chip position as factors, and PTSD and sex as factors, so that they can be considered as categorical variables. Here is the matrix we have designed, where we have PTSD, age, and sex. The variation for all these variables will be saved when the ComBAT adjustment will be performed.
+
+We are performing log transformation so that we have a uniform distribution of the data. We will include the missing values in the methylation data because ComBAT will not work for data that has missing values. And it's imputing right now the data.
+
+Here, the first adjustment will be done based on chip ID and the data. The outcome data will be used for the next adjustment, that is based on the chip position. So, you can see, as we have three chips, we have three batches that are being adjusted for the batch effects. The data is being adjusted for chip position, as we have eight positions on the chip, so we have eight batches. After ComBAT adjustment, we will be converting the data back to a beta transformation, where it will have the data in the range of zero and one.
+
+I'm converting the data back and inserting any values back because we imputed the data for ComBAT adjustment, so we need to put the missing values back. And we will finally receive the data that is ComBAT adjustment normalized, you know, after sex check, we will see the final data so that we can use it in the downstream analysis. Thank you.
+
+**Seyma**:
+
+Hello, so for the second part of our pipeline journey, I will talk about how to run the analysis, the epigenome-wide analysis and what we need to run epigenome-wide association studies, and how we can get what we need using our pipeline.
+
+This is the general structure of the pipeline. Agaz has kindly talked about the initial quality control steps, which are described in script 1 and script 2, and I will talk about scripts 3, 3.1, 3.2, 4, and 5. Briefly, the EWAS is done by using script 4. But, in order to run the EWAS, we first need some preliminary scripts to estimate cell proportions, principal components, and smoking scores.
+
+Cell-proportion estimation will be done using script 2. This script needs normalized and QCed beta values and phenotypes, which were prepared by Script two, to calculate cell proportions (CD8, CD4, natural killer cells, B cells, monocytes, and neutrophils), using "Epidish" R package and an IDOL reference panel. For the output, we will get cell proportions.
+
+Script 3.1 is actually not a mandatory script. We will use it if PCs from GWAS are not available. So here, in script 3.1, we still use normalized and QCed beta values from Script 2 to calculate methylation principal components using CpG sites that harbor SNPs. This procedure was described in the paper of Barfield et al. As an output, we will get methylation principal components (mPCs).
+
+Then, we move to script 3.2, which uses 39 probes to estimate a smoking score. So, this EWAS, our main analysis, uses normalized QCed and ComBAT-adjusted beta values and phenotypes from Script 2, as well as cell proportions from Script 3, principal components from Script 3.1, and also smoking scores from Script 3.2 for running smoking sensitivity analysis.
+
+Here, after running this script 4, we will get our output summary statistics that each group can share for us to run the meta-analysis.
+
+And finally, we have script five, which we use to calculate cell-specific differential methylation. This script identifies cell-specific differential methylation using PTSD as the main effect and age and sex as covariates. So, at the end, we will get summary statistics for each calculated cell type.
+
+So, how we calculate cell proportion estimation with principal components, and smoking scores. Here's how we do it: For cell proportions, we use the "Epidish" R package using the Epidish function with the robust partial correlations mode.
+
+Here, we use an EPIC-specific reference panel, as described in the paper Salas et al. This reference panel is more advanced than the previous ones because it includes more samples -- 37 samples -from diverse backgrounds. It includes 6 African-American, 2 Asian, 21 European, and 8 mixed ancestry. It also has female and male smokers and non-smokers, and has a wide age range.
+
+Then, we calculate methylation principal components. If principal components from GWAS are not available, we use CpGs within zero base pair of SNPs, and we use methylation PC2 and PC3, which are shown to correlate the most with ancestry. Principal component 1 has been shown to correlate with cell type, so we don't include it because we already included cell proportions that we calculated with the Epidish package. Finally, we calculate smoking scores using the 39 smoking-associated CpGs. That's much better than using self-reported smoking scores because it helps us distinguish, let's say, Jack, who smoked one cigarette per day, and Amy, who smoked a pack of cigarettes per day.
+
+Finally, we run our EWAS, using the normalized and ComBAT-adjusted data, we test the association between PTSD and CpG sites, adjusting for cell types. Here, the important thing is we only include five cell types and leave out neutrophils, which have the highest proportion, because, at the end, the sum of all six equals one, so it doesn't make sense to include all six, so we exclude neutrophils. We include principal components either from GWAS or methylation data, age, and sex if available.
+
+And then, we run a smoking sensitivity analysis, including smoking scores as a covariate. Then, we can run sex-stratified analysis if applicable, those include sex-stratified and ancestry-stratified analysis. Finally, we will have summary statistics that will be used in the meta-analysis.
+
+For cell-specific differential methylation, we use R package, TOAST, to identify cell-specific differentially methylated CpGs that associate with PTSD. The idea with that is each individual may have different cell type proportions, which may mask the association. So, in using this method, we will have CpGs that also associate with PTSD in each of the six cell types.
+
+So, to sum up, using this pipeline, we will get EWAS summary statistics for our main model, smoking-adjusted model, and sex-stratified model, and race-stratified model if applicable. Additionally, we will have summary statistics for each cell type.
+
+I would like to once again mention our PI's Alicia, Caroline, Monica, and Mark, and our analysts Agaz, Andrew, and Adam, who helped in making this pipeline. Also, if you want to join our calls, our regular calls are on the third Tuesday of the month. Oh, thank you.

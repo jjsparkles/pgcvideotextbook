@@ -49,6 +49,7 @@ website:
           - software_genomicSEM.qmd
           - software_imaging.qmd
           - software_MR.qmd
+          - software_mtag.qmd
           - software_prs.qmd
           - software_correlation.qmd
       - section: "Additional Resources"
