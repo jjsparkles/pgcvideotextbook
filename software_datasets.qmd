@@ -1,0 +1,39 @@
+---
+title: "Datasets"
+---
+
+# FinnGen
+
+**Title**: Intro to FinnGen
+
+**Presenter(s)**: Aarno Palotie
+
+**Level**: Beginner
+
+**Length**: 19:24
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=WPprJg7fIBg")
+```
+
+Link to video transcript [here](software_datasets_transcript.qmd#sec-video1).
+
+------------------------------------------------------------------------
+
+# PsychENCODE
+
+**Title**: Introduction to PsychENCODE
+
+**Presenter(s)**: Chunyu Liu
+
+**Level**: Beginner
+
+**Length**: 19:34
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=mnnnmuk09JE")
+```
+
+Link to video transcript [here](software_datasets_transcript.qmd#sec-video2).

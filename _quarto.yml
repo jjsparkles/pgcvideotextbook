@@ -43,6 +43,7 @@ website:
           - software_cnvs.qmd
           - software_conditional.qmd
           - software_crossdisorder.qmd
+          - software_datasets.qmd
           - software_ewas.qmd
           - software_geneset.qmd
           - software_gwas.qmd
