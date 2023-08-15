@@ -48,7 +48,6 @@ website:
           - software_geneset.qmd
           - software_gwas.qmd
           - software_genomicSEM.qmd
-          - software_imaging.qmd
           - software_MR.qmd
           - software_mtag.qmd
           - software_prs.qmd
