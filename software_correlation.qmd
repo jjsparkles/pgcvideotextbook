@@ -37,3 +37,22 @@ embed_url("https://www.youtube.com/watch?v=kk9Fkg0trT8")
 ```
 
 Link to video transcript [here](software_correlation_transcript.qmd#sec-video2).
+
+------------------------------------------------------------------------
+
+# Genetic Architecture
+
+**Title**: Tracking 12 years of genetic architecture estimates of schizophrenia
+
+**Presenter(s)**: Naomi Wray
+
+**Level**: Beginner
+
+**Length**: 15:26
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=ze6Oe5_DwWU")
+```
+
+Link to video transcript [here](software_correlation_transcript.qmd#sec-video3).

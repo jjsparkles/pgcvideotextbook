@@ -42,6 +42,10 @@ embed_url("https://www.youtube.com/watch?v=koHuMAeWQ5E")
 
 Link to video transcript [here](software_gwas_transcript.qmd#sec-video2).
 
+Link to [PGC RICOPILI pipeline](https://sites.google.com/a/broadinstitute.org/ricopili/).
+
+Link to [Coleman lab GitHub](https://github.com/ColemanResearchGroup/gwas_scripts) GWAS scripts.
+
 ------------------------------------------------------------------------
 
 # Tractor: GWAS with admixed individuals
@@ -100,6 +104,8 @@ embed_url("https://www.youtube.com/watch?v=ZrWFOSAdc74")
 ```
 
 Link to video transcript [here](software_gwas_transcript.qmd#sec-video5).
+
+Link to GitHub and Wiki Tutorials for [SAIGE](https://github.com/weizhouUMICH/SAIGE/wiki/SAIGE-Hands-On-Practical---09-2021-updated) and [SAIGE-GENE](https://github.com/weizhouUMICH/SAIGE/wiki/SAIGE-GENE:-Hands-On-Practice-(09-2021-updated)).
 
 ------------------------------------------------------------------------
 

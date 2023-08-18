@@ -19,6 +19,8 @@ embed_url("https://www.youtube.com/watch?v=WPprJg7fIBg")
 
 Link to video transcript [here](software_datasets_transcript.qmd#sec-video1).
 
+Link to [FinnGen website](https://www.finngen.fi/en).
+
 ------------------------------------------------------------------------
 
 # PsychENCODE
@@ -37,3 +39,5 @@ embed_url("https://www.youtube.com/watch?v=mnnnmuk09JE")
 ```
 
 Link to video transcript [here](software_datasets_transcript.qmd#sec-video2).
+
+Link to [PsychENCODE website](https://psychencode.synapse.org) and [PsychSCREEN website](http://psychscreen.beta.wenglab.org/main/search).

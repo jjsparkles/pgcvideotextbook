@@ -116,7 +116,7 @@ Each video is embedded into the textbook webpage, and a link to the video transc
 >
 > [Cross-Disorder Analysis](software_crossdisorder.qmd)
 >
-> Datasets
+> [Datasets](software_datasets.qmd)
 >
 > [Epigenome-Wide Association Studies](software_ewas.qmd)
 >
