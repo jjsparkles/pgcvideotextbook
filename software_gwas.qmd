@@ -86,6 +86,8 @@ embed_url("https://www.youtube.com/watch?v=QWECuWknTVY")
 
 Link to video transcript [here](software_gwas_transcript.qmd#sec-video4).
 
+Link to [MoChA GitHub](https://github.com/freeseek/mocha) and [Webpage](https://software.broadinstitute.org/software/mocha/).
+
 ------------------------------------------------------------------------
 
 # SAIGE: Family-based GWAS
