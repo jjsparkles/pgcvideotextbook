@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>PGC Video Textbook - Chapter 5.2: Imputation (Video Transcript)</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">PGC Video Textbook</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html" rel="" target="">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./contact.html" rel="" target="">
+ <span class="menu-text">Contact us</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://pgc.unc.edu/" rel="" target="">
+ <span class="menu-text">PGC Website</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Chapter 5.2: Imputation (Video Transcript)</li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./pgc_logo_website_v3.jpeg" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main">
+    <div class="dropdown">
+      <a href="" title="" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label=""><i class="bi bi-github"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="">
+            Source code
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="">
+            Report a bug
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./welcome.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome to the PGC Video Textbook!</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./toc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Table of Contents</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Chapters</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 1: Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 2: The Genome</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 3: Technologies</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 4: Study designs</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 5: GWAS analysis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 6: Polygenic Scores</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 7: Ancestry-Specific Analyses and Considerations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 8: Post-GWAS bioinformatics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter9.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 9: Advanced Topics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 10: Other Considerations</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Software Tutorials</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_cnvs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CNVs</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_conditional.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Conditional Analysis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_crossdisorder.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cross-disorder Analysis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_datasets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Datasets</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_ewas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">EWAS</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_geneset.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Gene Set Identification</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_gwas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">GWAS</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_genomicSEM.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Genomic SEM</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_MR.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mendelian Randomization</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_mtag.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">MTAG</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_prs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">PRS</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_correlation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SNP Heritability and Genetic Correlation</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Additional Resources</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Glossary</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./resources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tools/Software Resources</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./addreading.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Additional Reading</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://pgc.unc.edu/for-researchers/download-results/" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">PGC Summary Statistics</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#sec-video1" id="toc-sec-video1" class="nav-link active" data-scroll-target="#sec-video1">Imputation Introduction</a></li>
+  <li><a href="#sec-video2" id="toc-sec-video2" class="nav-link" data-scroll-target="#sec-video2">Imputation Steps</a></li>
+  <li><a href="#sec-video3" id="toc-sec-video3" class="nav-link" data-scroll-target="#sec-video3">Imputation Deep-Dive</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Chapter 5.2: Imputation (Video Transcript)</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="sec-video1" class="level3">
+<h3 class="anchored" data-anchor-id="sec-video1">Imputation Introduction</h3>
+<p><strong>Title</strong>: Haplotypes and Imputation</p>
+<p><strong>Presenter(s)</strong>: Dr.&nbsp;Gábor Mészáros, University of Natural Resources and Life Sciences, Vienna.</p>
+<p>Hi everyone, welcome back to the Introduction to Genomics lecture series. This time, we will be talking about haplotypes and imputation before we move on to the new material. So, here is the quick summary from the previous lectures.</p>
+<p>We talked about SNP markers that are widely used. There is a number of ways to express these genotypes, but we are always talking about biallelic SNPs. These biallelic SNPs are being genotyped with the species-specific SNP chips. We talked about how to determine the positions on the genome, and we talked about physical maps. Also, we talked about recombination events that are of major biological importance, and they introduce variability to the populations.</p>
+<p><em>Haplotypes</em></p>
+<p>This graph is also from the last time, so we have an individual here, and there is a recombination event. The previous “capital A,” “capital B,” and “capital C” haplotype is changing to “capital A,” “lowercase b,” and “lowercase c” haplotype because of this recombination event.</p>
+<p>During this lecture, we will look a bit more closely at these haplotypes and also show how to use them or what is the use for them in the context of genotype imputation.</p>
+<p>So, when we look at the genotypes, what we see, in reality, is paternal and maternal chromosomes together that are joined during fertilization to the set of alleles. So, we see certain genotypes at certain loci. For the sake of example, let’s say that we have these four individuals, and at four loci, we have these genotypes. What we see here are summaries only.</p>
+<p>Now, of course, we can ask the question: What are the actual sets of alleles on each chromosome? For the first individual, it is easy because its genotype consists entirely of homozygotes. So, basically, “A A,” “B B,” and “C C.” So, we know that on both chromosomes are actually the very same haplotypes of “capital A lowercase b” and “capital C.”</p>
+<p>In the second individual, we have one heterozygote already. So, while here is also just actually one option how to divide the haplotypes, the actual haplotypes on both chromosomes are different from each other. Because on one chromosome, there is “capital A capital B” on “lowercase c,” and the other chromosome has “lowercase a capital B” and “lowercase c.” So basically, one of each of these alleles goes into one chromosome, and the other to the other chromosome.</p>
+<p>Of course, it becomes more interesting the more heterozygous we have on our genome, because this actually creates options on how the haplotypes could be distributed. So we have these three loci here, and two of them are heterozygous: the loci B and C. If we look at the pairwise combinations of these alleles, then we could arrive at actually two solutions: either this one or this one.</p>
+<p>If you look at the alleles in these haplotype pairs, then the genotypes will end up always with this summary genotype. But also, if you look carefully, the haplotype pairs, the first two haplotype pairs are different from the second two haplotype pairs.</p>
+<p>Of course, the more heterozygotes we have, the more complicated it gets. So, for example, for the three heterozygotes, we have even more combinations. So, I put question marks here. So if you want, you can work this one out yourself. Just pause the video here and try to work out what are the actual haplotype possibilities in case that we have three heterozygous loci. So, what are the haplotype combinations that are possible that end up with these summary genotypes?</p>
+<p>After you’ve done it, you can unpause the video and see if you were right or just continue watching and get the answer in three, two, one… Go!</p>
+<p>So, these are the actual possibilities. You see that there are actually four haplotype pairs that are possible based on these three heterozygous genotypes, and each of these haplotype pairs is different from one another. So, basically, how you solve this? First, you take the first from each pair: “capital I capital B capital C,” and then remains “lowercase a lowercase b lowercase c.” So this would be the first one. Then you go with the pairwise combinations. So you flip one locus at a time until you get to all combinations.</p>
+<p><em>Phasing</em></p>
+<p>Of course, we have many more than just three heterozygotes on the genome. So, there is a question: how do we solve these questions in practice, where we have tens of thousands of loci and also thousands of heterozygous genotypes? Now the answer is, of course, with computers. Fortunately, there is sophisticated software that solves these questions for us and delivers the haplotypes we could analyze further. This computation process is called phasing.</p>
+<p>So, the phasing is a task of the process in the computer to assign alleles to the paternal and maternal chromosomes. It looks for haplotypes, or these so-called “phases,” in large-scale genotype data and solves these complex problems of assigning correct haplotypes.</p>
+<p>Of course, this is easier if the so-called trios are genotyped. So they basically are the offspring and the father, mother, and their child, or even if we have multi-generational trios that include families, including grandparents and great-grandparents, are genotyped. So if everyone is genotyped, this process is somewhat easier. In reality, however, we don’t have this ideal situation. Many times only parts of the populations are genotyped, so it is harder to work out the actual haplotypes. Fortunately, this is also possible, and haplotypes could be determined also for samples of unrelated individuals, for a population. “Unrelated” here is in quotation marks because there is usually some kind of relationship between the individuals within a population.</p>
+<p>So, as I mentioned before, there are specific software solutions for all of this, which actually divide the genotypes into smaller segments and try to derive these haplotypes from these smaller segments and merge them back properly.</p>
+<p><em>Imputation - general definition</em></p>
+<p>Now, when we determine these haplotypes or these phases in a population, these are really useful for a number of purposes, and one of these purposes is the so-called genotype imputation. I mentioned multiple times that the SNP genotyping is fairly reliable, but occasionally, we see missing genotypes. So, actually, with this genotype imputation process, we can make an educated guess on how to fill in these missing genotypes so we get the full information.</p>
+<p>So, the imputation process is nothing else than filling in missing information. There are two major ways how we can use this method. The first one is the imputation of sporadically missing SNPs, and the other one is imputation between SNP chips. For example, we can extend a lower density SNP chip, for example, a 50k SNP chip, to a higher density. For both of these approaches, I will give examples in the following slides.</p>
+<p><em>Imputation of sporadically missing genotypes</em></p>
+<p>Out of the two methods, the imputation of sporadically missing SNPs is more straightforward. So, as we established, some of the SNPs could be missing due to genotyping error, and because of these genotyping errors, we might be forced to remove individuals from our analysis. Or, for example, if we need complete data in a sense that all SNPs should be known, then this is also a problem for us. But this situation could be fixed by imputing these sporadically missing SNPs.</p>
+<p>Let’s say that we have an established haplotype in a population that looks like this: [haplotype diagram not provided]. And when we have another animal or individual that is genotyped, and there is a genotyping error, but the haplotype looks like this: [On slide]. So it’s basically totally the same as before, so all the other loci for this haplotype are exactly matching, but these genotypes are missing. Based on this comparison, if every other SNP fits, we have a very good idea what should be filled in the place of the question marks. So we have complete data also for this individual.</p>
+<p><em>Imputation between different SNP densities</em></p>
+<p>The imputation between SNP chips works on a similar logic, but it’s somewhat more complex. So let’s say we have SNP chips of two densities, and this is a smaller example. So you see that there are 16 columns here. This will be our larger SNP chip, and the second SNP chip would be a smaller one that consists of eight SNPs. Each line here would be an individual, and each column would be a locus, and these loci are either homozygous for one (that is a 0), heterozygous (that is a 1), and homozygous for the other (that is a 2).</p>
+<p>Now, the usual arrangement with these smaller and larger SNP chips, so that contain more or fewer SNPs, is that one SNP chip or the smaller SNP chip is a subset of the bigger one. So, basically, all the SNPs from the smaller SNP chip appear on the bigger one as well, but there are other SNPs that are on the larger SNP chip but unknown for the smaller one. This shows the starting situation here when we genotyped nine individuals with the smaller SNP chip.</p>
+<p>Now, let’s say that these individuals are from a population that are fairly unrelated, but we also know that even in unrelated individuals, there are short stretches of sequences that are identical by descent. These local patterns of IBD (Identical by Descent) could be described, and also the length of these segments determined, which, of course, varies based on the recombinations. If we identify these segments or these haplotypes, we can use them to our advantage. So, for example, these would be the haplotypes that occur in our population, and also, for the sake of this example, these are also color-coded.</p>
+<p>So if we return to our original example for the nine individuals that are genotyped with the lower density SNP chip, we could see that each of these individuals could be described as a combination of certain haplotypes. And because these haplotypes are already known, we actually know what we should put into the place of the question marks. This is then also done, and the information is being filled in to these gaps that were previously unknown.</p>
+<p>So what we basically do is we take the information from the higher density SNP chip, make the haplotypes for the population, and we use the information from these haplotypes to fill in the information also for the other individuals that were genotyped with a lower density SNP chip in case this lower density SNP chip is a subset of the higher density SNP chip.</p>
+<p>Here I would also underline that these haplotypes do not come from nothing but actually, we need a sufficient number of individuals that are actually genotyped with this higher density SNP chip in this population. So we can determine the actual haplotypes that occur in this population, which can be further used for this genomic imputation as described here now.</p>
+<p><em>Imputation accuracy and practical use</em></p>
+<p>Why is this useful? Well, the lower density SNP chips tend to cost less. So if genotyping costs are an issue or we want to genotype a really large number of individuals, we can use, well, just this lower density SNP chip and go for the imputation process. Of course, for this, we need haplotypes that were determined based on individuals’ genotypes by the high-density SNP chip. This imputation is a so-called “in-silico,” so basically, it’s done with computers, which also means that it is with no additional costs other than the computation cost for the whole process.</p>
+<p>There are different options and possibilities for software for this process, and to my knowledge, all or most of them are also free or open access. Based on this software, we can do the imputation that will be done with a certain accuracy. So actually, the whole process is not 100 percent accurate, but actually works surprisingly well. The imputation accuracy, in general, depends on the size of the reference set and the data quality. What I mean with this is that we need to determine actually the haplotypes that occur in this population or the population of interest. So of course, we need to have a representative sample genotype with the higher density SNP chips in order to determine the haplotypes that occur in the population. So we could use these haplotypes further on in the imputation process.</p>
+<p>In general, the imputation works really well for the common SNPs, which occur reasonably frequently within a population. This also means that, unfortunately, the imputation works less well for these so-called rare SNPs that occur very infrequently, because there is just no way for the imputation process to pick it up from the haplotypes that are available for this population. So the general advice is that if someone is interested in very specific rare alleles, then the imputation process is perhaps not the best solution. In that case, genotyping the individuals with the actual higher density SNP chip is advisable.</p>
+<p>But overall, the imputation works really well. So I put there that the imputation accuracy could be more than 95%. So I just put their numbers so you have a bit of an idea that we are talking about very high values, actually especially in the simulation studies. In my experience, the imputation accuracy is lower than 99%, and the people start to get unhappy. So it’s, actually, in the papers, especially in simulations, the imputation accuracy is much higher than 95%. In real data, well, it could be variable, as I mentioned. This really depends on the reference and the data quality.</p>
+<p>Also, there is a range of possibilities how to evaluate the actual imputation accuracy, but it is mostly done with the so-called masking procedure. So it’s a very similar process that I described also in this presentation. So there are the genotypes obtained from a higher density SNP chip, and basically within this process, some of these genotypes are deleted, and then the imputation software is used to fill these missing markers in. But of course, we know what is the actual genotype for these higher density SNP chips.</p>
+<p>So then, basically, the values that were filled in by the software and those that were obtained from the actual genotyping are compared, and this is the basis of how actually the imputation software is also being evaluated, how good of a job it does. But as I mentioned, these software do a surprisingly good job, and we already arrived at the end of this segment, and we end, as always, with a short summary.</p>
+<p><em>Summary of the lecture</em></p>
+<p>We talked about the so-called haplotypes that are a series of SNPs, and these haplotypes clarify which combination of alleles come from which parent. Of course, if we want to do these computations on the large scale or in real genotypes, we need to use computers for it, and there is a range of specialized software programs that do the job for us. The approach itself is called phasing, and these phases or haplotypes could be used in various ways, but one of the uses is the so-called imputation process, which is nothing else than filling in the missing SNPs to our data.</p>
+<p>Here we also have options. If we want to fill in sporadically missing SNPs that were not genotyped for some reason, so some kind of genotyping errors or missing SNPs could be filled in or imputed. Or we have a different option when we can actually extend smaller SNP chips to a larger one based on haplotypes and information from these larger and denser SNP chips, perhaps even saving some money in the process because these lower density SNP chips tend to cost less. And if we are not interested in some very specific rare alleles, and we are fine with the imputed version of these genotypes, we can use these for our research.</p>
+<p>So we end here today. Let me know if you have any questions or comments down in the comment section below. Also, thank you for your time you spent on this video, and I wish you a very nice day.</p>
+<hr>
+</section>
+<section id="sec-video2" class="level3">
+<h3 class="anchored" data-anchor-id="sec-video2">Imputation Steps</h3>
+<p><strong>Title</strong>: Imputation<br>
+<strong>Presenter(s)</strong>: Dr.&nbsp;Sarah Medland, Queensland Institute of Medical Research.</p>
+<p><strong>Sarah Medland</strong>:</p>
+<p>Hello, my name is Sarah Medland and I’ll be talking to you today about imputation. So there are three main reasons why we might impute data. The first of these being meta-analysis or combining our data with that of another cohort. Secondly, fine-mapping. And I’ll give an example of that in just a moment, and Thirdly is to combine data from different chips.</p>
+<p>So imagine a situation where you have a large cohort which is being genotyped half on chip A and half on chip B. If we were to put the data from these two chips together and analyze them, we would end up with a mixture of power distributions. So we would have some SNPs that are on both chips and they would be the most powerful SNPs in the analysis compared to those that are on one chip or the other. If we were to take this forward for analysis and look at our QQ and Manhattan plots, we would have a very hard time interpreting those results because of that mixture of powers. So if we were to find an association and go in and look at the region, we could expect that the distribution of p-values wouldn’t follow what we would expect based on the LD or the correlation structure within that region. So because we have this differential in power, the SNPs that would be on both chips would have the highest power and potentially higher p-values than those that are on one chip or the other. So to get around this, what we could do is bring those two data sets together, take them forward for imputation, and end up with a data set that has a fairly constant N and a single power distribution that’s not dependent on whether or not a SNP was present on the chip or not. We can also use imputation to correct for sporadic missingness, and genotyping errors, and also impute in types of variation that we haven’t directly genotyped such as structural variants.</p>
+<p>Here’s an example of fine mapping. In this situation we have run a GWAS, but we’ve only used genotyped SNPs and we have this variant that we’re finding on chromosome 19. When we go in and have a look, it appears to be floating, so it’s not really supported. We have nothing really in this region to back it up particularly well. So looking at that, it’s very hard to work out if that could be a true finding or not, and one of the things we might do is fine mapping, which is to go in and impute other content in that region and see whether there is additional support that we’re not observing in our genotyped SNPs. So when we go ahead and do that in this case, we can see this actually is the true effect. It’s well supported by SNPs in the region, it’s just that these variants were not genotyped on this chip.</p>
+<p>So when we’re talking about imputation, what are we actually talking about here? We usually start with a genotype data set that has missing or untyped genotypes. We have a reference set of haplotypes, so a public reference set, and those references are compared to our genotypes. We try and identify which haplotype best represents each segment of data, and then we infer in the missing content. So to put this another way, we start with the genotype sample, which has some genotypes but is missing others. We have our set of reference haplotypes. What we’re going to do is compare our genotype samples to our reference haplotypes. Try and work out which haplotypes best represent which segments of data, and then infer in the missing genotypes. This is done in a probabilistic way, and we can assess the accuracy of this imputation as we go.</p>
+<p><em>Steps to Imputation</em></p>
+<p>OK, so there’s a couple of steps and things we need to think about when we’re setting up for imputation. So firstly we need to have really well QC’ed data and this would be similar to the QC that you were shown in the QC in GWAS session from yesterday. Secondly, we need to decide which of our references we want to use, and we are in the situation where we now have quite a lot of references, so it’s worth thinking carefully about why you are using a particular reference and what you’re trying to do with your analysis.</p>
+<p>The most common references to use at the moment are the 1000 Genome and the HRC references the 1000 Genome reference is a multi-ethnic reference, whereas the HRC is a predominantly European reference. The HapMap and 1000 Genome references can be downloaded and used locally. The other references are mainly only available from custom imputation servers. Although there is a wide difference in the size of the references, so for example 1000 Genome reference yields around 20,000 markers, whereas, sorry 20 million markers, Whereas the HRC yields around 40 million and TOPMed yields around 300 million. At the end of the day, if you have a cohort of predominantly European individuals, you’ll likely to end up with between 8 and 10 million usable markers for your analysis.</p>
+<p><em>Phasing</em></p>
+<p>So once we have QC’ed and decided on our references, the next step is to phase our data. Phasing in this case means we estimate the haplotypes within our data. So we take our genotype data. We try and reconstruct the haplotypes using reference data and so for example, in this situation here we have three genotypes and there are four potential haplotypes that we can arise that from that data. We don’t do this manually. We use software that’s been specially designed to do it, and the most common software packages at the moment, are Eagle and Shapeit. They use hidden Markov model and Markov chain Monte Carlo methods to reconstruct the haplotypes. And then these are used to provide scaffolds to infer or impute the data.</p>
+<p><em>Imputation Programs</em></p>
+<p>For our imputation as well we use customized programs and the most commonly used ones at the moment are minimac or impute. There are others that are available. An important point is to never use Plink for imputation, although Plink has an imputation option, it’s really not very well designed and I wouldn’t recommend using that. So the two most commonly commonly used imputation programs are minimac and impute. So minimac comes from the work of Gonçalo Abecasis, Christian Fuchsberger, and colleagues. And has a number of downstream analysis options, including SAIGE which will use later in the week, BoltLMM and Plink2. Impute is now up to impute version 5. This comes from Jonathan Marchini and colleagues, and it incorporates the Positional Burrows Wheeler Transform (PBWT), so it’s a fast and efficient way of undertaking imputation. Once again, it has a number of downstream analysis programs that have been written specifically for the output of this program.</p>
+<p><em>Imputation Cookbook</em></p>
+<p>So how would you actually go about doing your imputation? If you are in this situation where you have to do imputation locally, I would seriously recommend using what we call a cookbook and there are a number of these available online. So here’s a link for minimac3 imputation cookbook for 1000 Genomes. If you are in the situation where you can use an imputation server, I strongly recommend that you do that and there are a couple of these available. So there’s one at University of Michigan, which is probably the most heavily used one, there’s one at the Sanger in the UK and a new one, the TOPMed imputation server for those wanting to impute TOPMed data. Here’s a little shot of each of those front pages. In the practical, we’re not going to walk through how you impute data, because there’s a really good set of imputation practical sessions available on the Michigan imputation server site, these are from the American Association of Human Genetics meeting in 2020, and you can walk through each of those if you’re interested in learning how to run imputation on the server.</p>
+<p><em>Data QC</em></p>
+<p>The main points are that as I said, we need to QC the data well so we exclude SNPs with excessive missingness, low minor allele frequency, Hardy–Weinberg issues and Mendelian errors. We should also drop strand-ambiguous or palindromic SNPs. And you need to be careful that your data is on the right build and alignment. So depending on which reference you’ve chosen, if you’ve chosen the TOPMed references, you need to have your data on build 38. If you choose the others the build should be on build 37. So you need to output your data in the format expected for the phasing program, and it’s really important that you check the naming convention for the references and the program that you want to use. So do the SNPs, use RS numbers, or are they in a position reference?</p>
+<p>If you are using an imputation server, once you have your data QC’ed and ready to go, it really is as simple as uploading your data, picking the options that you want to use, and then submitting the job. After the imputation you have about a week to get your imputed data off the server and then it’s all wiped.</p>
+<p>OK, so once we’ve done our imputation, if we use the Michigan imputation server, then our data is going to be in a format called a VCF format. So in this format, each line in the file represents a variant and each block of data represents an individual. The file contains our imputed data in three different formats. The first of these before the semicolon is hard-call or best-guess genotype and this refers to the number of copies of the alternate allele that someone has. The second of these is the dosage format, which ranges between zero and two, and once again this is a count of a number of doses of the alternate allele that someone has. The third format, which is not used very often is what we call a genotype probability format, and so it’s the probability that an individual is has an AA, AB, or BB genotype for each of the SNPs in our file.</p>
+<p>To go along with these, we have a series of info files that contain the information about the imputation accuracy and the frequency of the variants in the sample. So we have our SNP identifiers and you can see some of these get quite long. We have our two alleles, our frequencies, our r-squareds, or imputation accuracies, a column telling us whether it’s genotyped or not. And for those SNPs that are genotyped, we have a leave-one-out imputation accuracy. So this gives us an idea of how accurately these genotyped SNPs have been imputed or would have been imputed if they weren’t already genotyped.</p>
+<p><em>Rsquared</em></p>
+<p>So one thing to keep in mind is there are subtle differences between the way that the different programs create their R-squared metrics. In both cases, effectively the R-squared is the ratio of the observed variance to the expected variance. But there are small differences in how they are calculated. There’s also a difference in that the IMPUTE info measure is capped at one. Whereas the MACH or Minimac r-square measure is allowed to go above one as an empirical estimate.</p>
+<p>The two programs to get fairly good agreement though and they should line up fairly well if you were to impute the same set of data both ways. So the R-squared or the info is telling us about the level of certainty we have in the data. So if we had an R-squared of one, it’s indicating there’s no uncertainty. R-squared zero means complete uncertainty, and for example, an R-squared on .8 on 1000 individuals will give us the same amount of power as if that SNP had been genotyped on 800 individuals? So you can think of it that way.</p>
+<p>After we’ve done our imputation, it’s a good idea to do some QC and check that it’s worked. So some things that you can do is to look at the minor allele frequency compared to the reference and see how that looks. You can also look at the R-squared across the chromosome and see how that looks. So here’s some toy examples of a relatively good imputation, but you can see are r-squared sort of varies quite markedly across the genome, but generally follows a fairly well defined distribution. Whereas this is particularly and deliberately a bad imputation, and you can see that we’ve got a very different distribution here.</p>
+<p><em>GWAS</em></p>
+<p>After doing the basic imputation, it’s a good idea to run a GWAS for a trait that is fairly well powered. Ideally something continuous. Have a look at the Lambda and look at your Manhattan QQ plots. And then run the same trait using GWAS using only the observed Genotypes and plot the imputed versus the observed variant results and see what you get.</p>
+<p><em>Consortiums</em></p>
+<p>Lastly, quite often when we’re running imputation, we’re actually running it for a consortium or a meta-analysis, and they will give you instructions about which reference panels to use and what to do. They will probably ask you to analyze all variants, regardless of whether they pass QC or not. It’s important to think about this, especially if you are using those TOPMed references which have something like 300,000,000 variants, as only around 8 to 10 million of those will typically be useful for GWAS, and so you’ll be running analysis and uploading results for many, many SNPs that won’t be very useful for anyone. So if you’ve got any questions, feel free to ask them at the start of the practical session or to post them to the slack. Thanks very much, bye.</p>
+<hr>
+</section>
+<section id="sec-video3" class="level3">
+<h3 class="anchored" data-anchor-id="sec-video3">Imputation Deep-Dive</h3>
+<p><strong>Title</strong>: An Introduction to Genotype Imputation</p>
+<p><strong>Presenter(s):</strong> Dr.&nbsp;Brian Browning, University of Washington.</p>
+<p>this this talk is gonna look at genotype imputation which is a standard technique we’ll cover just an overview of it and we’ll look at some of the models used which then in the research talk that I’ll have on Thursday we’ll make use of some of the information in the tutorial and I’ll finish up with maybe a little bit discussion of programming because that’s something that’s very relevant to this audience.</p>
+<p>so imputation is just estimating missing data you can use the other data in the data set you have an external data sets and if you have played any word games you’ve you’ve done imputation classic examples hangman start give three characters the last two characters or ATT about a third of the letters in the alphabet can fit in there and hangman gives a good illustration of a general principle of imputation at the more context you have the better you can fill in or estimate that missing data if I give you some additional characters that for the sentence the dog chase the you can do a much better job filling it in instead of a third of the characters in the alphabet there’s one a see probably springs to mind first it could also be an R but your probability distribution becomes much more pointed genotype</p>
+<p><em>What is genotype imputation?</em></p>
+<p>imputation is the filling in of genotypes so it originally started where you actually were imputing genotypes now for computational reasons we work on the haplotype and imputing alleles level so your reference data consists of reference haplotypes to phase reference haplotypes per reference sample and the sample your imputing has two haplotypes to but it’s missing a lot of data it typically is genotyped on a snip array and you have just a couple of just get back there you know you might have a marker here or on one haplotype there’s a G and a marker here or the other haplotype there’s a C and on the second haplotype for the sample an A and a C and based on these reference samples yours and a probabilistic model you want to make inferences about what all these dots there goes again what all these dots are so</p>
+<p><em>Applications to GWAS</em></p>
+<p>imputation has been around for a long time imputation of sporadic missing genotypes has been around for a long time but imputation came into prominence in 2007 where a group from Oxford with the Wellcome Trust case-control consortium and sort of simultaneously a group in Michigan gonzalo efficaciousness group developed methods for imputed ungenial type 2 markers using reference data and the initial application was defining new trait associated lo sigh and in the initial study it actually didn’t produce much although it will produce some power the ideas that you have a snip ray in which you genotype three hundred thousand five hundred thousand a million markers but there’s a lot of other markers in the genome if you can impute them then you can test additional markers so it should give you a little bit increase in power and it in it will the second application was for fine mapping so you your genotype markers showed that you have an association in a region but there may be other markers that weren’t genotype that give you a stronger signal that can be valuable for replication studies so you impute the additional markers in the region you might find a marker that’s more highly correlated with the trait you’re interested in and then that’s the marker that you’d want to take forward definitely including your replication study because it will should have a greater chance of replicating the Association if it’s real these first two applications are nice I don’t think they’re necessary game changers are they’re useful very useful but the real killer application is meta-analysis so there’s lots of different snip raised out there with different numbers of markers by different vendors snip arrays from different vendors tend to not have a lot of overlap and when you want to do meta-analysis it’s very difficult to do meta-analysis when your datasets are Gina typed on different markers it’s like this Gordian knot well imputation just slices through that knot you take a reference panel you impute all your data individual data sets so that they all have the same markers that are in the reference panel and now they’re on the same set of markers and you proceed so that’s been very when you see these studies in nature Nature Genetics where they have several hundred thousand samples and they have scores and scores of associations it’s imputation that made that work work in a straightforward way because there’s a lot of different data sets and they had to use imputation to get them all in the same marker sets to do the meta-analysis so the meta-analysis I think has been very very successful what you get out of</p>
+<p><em>Imputation output</em></p>
+<p>imputation is not necessarily like hangman where you you you’re guessing the most of what you think is the most likely letter it’s probable a probabilistic output so we think based on the reference data and the observed date in the sample that on this this allele of this haplotype there’s a certain probability that the allele is the a allele or at certain probability that’s the B allele so throughout this talk all these methods extend to multi allelic markers but first just to remove that complexity we’ll assume as dye allelic markers now typically refer to the alleles as a and B my background is with human data so whenever I refer to some physical characteristics of data I’ll be usually thinking I’ll always be thinking of human data so my apologies to people from an animal background it’s just that’s not my background so I my examples are from the human domain so here’s a haplotype at a marker you might have for the a allele probability 98% probability B allele 2% and on the other hapless type you also have a probability distribution that essentially gives you all the information you need for whatever you want to to use the advantage of probabilistic output is you’re capturing the uncertainty in the imputation rather than hard genotype calls where you’ve you’ve erased that uncertainty you can get called genotypes if you want by just taking the genotype that was have the highest probability and and to get posterior probabilities the genotype level rather than the allele level you just you can assume hardy-weinberg equilibrium and it pops out also with probabilistic gene types you can use them in the standard standard frameworks for testing so if you do linear regression analysis often typically the predictor at a markers or the number of copies of the minor allele zero one or two that same framework works with imputed data is just instead of an integer number of copies you have the expected number of copies which is sometimes referred as the expected dose of the allele so like in this example the B allele dose turns out to be zero point eight eight that’s what you’d plug into your your regression analysis so</p>
+<p><em>Measuring imputation accuracy</em></p>
+<p>there’s more uncertainty and imputation you need a way of measuring it and there’s two sort of ways one I think is really obvious one is a little less so so that the most obvious way is just genotype discordance the little less obvious way is the correlation and allele dosage and this was I think again the first groups that were developing imputation devised these methods the Michigan groove and in the Oxford group devised something similar Michigan devised the correlation metrics I’ll talk about here so R squared turns out even though it’s a little bit more complicated has some advantages a big advantages it’s normalized for allele frequency so for example if I tell you I have a marker that I can impute the alleles at this market with 99.9 percent accuracy well it’s very tough to interpret that without some more information if if the marker allele frequency is 30 40 50 percent 99.9 percent accuracy is really really good if the marker allele frequency is 0.1 percent 99.9 percent accuracy is really really really bad right because you could take and just do that the dumb imputation strategy of always imputing the alleles to be the major allele you’ve destroyed all the information at the marker and you’ve achieved 99.9 percent accuracy so you have to know the allele frequency whereas correlation automatically builds it in if you’ve you know from your introductory statistics class if you computed a correlation there’s variances in the denominator those variances or in terms of capture the allele frequencies so it’s it can be interpreted in a much better way without actually knowing having to know the allele frequency the squared correlation may meant metric where you’re looking at the expected correlation between the imputed allele dose imputed number of copies of alleles in samples and the true number of copies of alleles in samples it also has a couple of other factors that strike me is not very obvious but they’re useful so R squared can be estimated if the true genotypes are unknown you can get an estimate of your accuracy without even knowing what the truth is now it assumes that your posterior genotype provo these are well calibrated so there is that assumption built-in but if they are you can estimate the from from the imputed data itself without knowing the truth you can estimate what that correlation is this was this idea was developed by Michigan and Adair a derivation of something similar that illustrates one way to derive this is given in the reference I’ve cited in the american journal of human genetics this the second surprising feature is that R squared gives information about relative power so there’s an interpretation in terms of power that it’s useful for R squared so it turns out that the allelic tests has similar power if you use imputed genotypes for in samples or the true genotypes for R squared x in samples this there’s been something similar to this has been known for a long long time the best explanation i’ve seen in this is a box in the American Journal article that I’ve cited here if you want to look it up it’s just a small box that goes through the derivation so if you’re looking at a marker that you imputed where the estimated R square which are taking to be the true R square or in it to be is 0.8 and you have a thousand total samples you maybe have cases and half controls if you test that imputed marker the power should be roughly the same as using the true genotypes which are correct for 80% of your samples for 800 samples so it gives a way of if you’re trying to determine what R squared thresholds use for accepting your imputed genotypes to use to carry for that imputed marker into downstream analysis this gives you a way to interpret what that r-squared what it might mean so the general rule with imputation is you can impute high-frequency markers really well and low-frequency markers not very well where’s the cutoff what determines the threshold of what you compute there’s two primary factors one which we can change and one we can’t the one we can’t change is the effective population size we’re stuck with that the more diverse the population has the bigger effective population size the the shorter the shared haplotype segments in the population in the shorter those hats shared haplotype segments are the harder it is to impute can’t change that but what we can change if given money is the reference panel size the more the bigger the reference panel size the lower frequencies we can compute and we often think in terms of minor allele frequency it for many applications that’s more natural but for imputation the thing I find useful to think about is minor allele count oops a second so this is the same data</p>
+<p><em>Imputation accuracy (MAF VS MAC)</em></p>
+<p>this is and it also these plots are sort of nice for getting a sense of the potential for what imputation accuracy can be for different frequencies this is simulated data from a Northwest European population reference panel sizes vary from 50 to 200 thousand samples and the targa data was is on a million snip chip on the left hand pot plot we’re plotting the squared correlation this is using the true simulated the truth versus the imputed data for different minor allele frequencies on the right hand plot it’s the same data but broken up by minor allele count on the left hand side you can see that the you really need to know the frequency of what your imputing to understand the accuracy on the right hand side when it expressed in terms of minor they’ll count it’s much more much more stable so you with this simulated data around 10 markers 10 copies of the minor allele in the reference panel you’re getting up squared correlation accuracy around 0.74 around 20 markers in the reference panel 2020 variants in a reference panel for at that level you’re getting around 80% imputation accuracy so this this is simulated data it’s going to be a bit better than current reference panels because current reference panels are predominantly if not totally but or at least predominantly from low coverage sequence data and low coverage sequence data its Achilles heel is estimating low low frequency genotypes so it has a very high error rate for low frequency genotypes but as we move into high coverage reference reference panels obtained from high coverage sequencing this kind of performances should be practical in outbred populations like European populations oh one of the inference from this is that as you double the reference panel size if you were able to impute markers with at least 20 copies of the minor allele with a certain reference of panel size when you double it that should still be true it’ll even get a teeny bit better so every time you double the reference panel size the frequency of variants that you can compute other things being equal cuts in half it’s sort of a linear relationship now if you’re from a sequencing background.</p>
+<p><em>Why impute when you can sequence?</em></p>
+<p>a natural question to ask is why impute when you can sequence imputation has error sequencing is more accurate high coverage sequencing why why go to the trouble of imputing and so I this slide just sort of breaks down the pros and or the things that imputation is competitive with high coverage sequencing ad and things that it’s not competitive with so the easiest thing to do is is estimating allele frequencies and that’s what we do and we do Association testing which is where imputation has been used most widely that’s its strong point so with 50,000 Northwest European reference samples if you impute down to 20 copies that’s imputing down to a minor allele frequency of 10 or 2 times 10 to the minus 4th so you can go very relatively low and and do very well with imputation if your goal is to estimate minor allele frequencies if your goal is a little bit harder it’s much harder to estimate a genotype than to estimate a minor allele frequency then it gets more problematic in my simulated data for five percent minor allele frequency and above does it does very good it can you can actually estimate the the genotype with about 99.9% accuracy Oh in that range but it’s not true for less than five percent the accuracy slips and the imputation at a genotype level not a minor allele frequency level but a genotype level is just not as accurate now we could improve that by going to ever larger reference panels but there is there is a break and it’s much higher than the break for for estimating allele frequency there’s a much higher break for estimating genotypes threshold and of course for de novo mutations I don’t care how you know bigger reference panel is you aren’t gonna be able to impute them so there’s it’s true there are things that genotype amputate your genotype sequence II and he does much better than imputation so why would you do it money alright high coverage high coverage sequencing thousand dollars if or at least that’s the last time I checked I think it’s still in that range and that that may even require an order in bulk yeah I’m curious if somebody has data on that I’d like to hear that what the current costs are for genotyping as a service chip typing if you a good negotiator you can get a pretty good deal on chip typing you need you know big data sets you need to play the metrics off against Illumina and you know get them to go you know going against each other but you can get it down to $50 a sample imputation with the current methods you know half a cent a genome for 10,000 reference samples and these are order magnitude figures five cents a genome for a hundred thousand reference samples and if you have a million reference samples which we won’t per few TAF you years probably 50 cents 50 cents a sample so essentially a hundred fold less than the chip typing car and there’s a lot of data out there with chip typing costs or with with G while chip data available so compared to sequencing then that the cost difference is a factor of two thousand you may not have a thousand dollars to sequence a sample that you probably have five cents alright so yeah there’s a trade-off depending on what your application is if you’re poor especially if you’re interested in Association testing imputation gives you a lot of bang for the buck so the next part of the talk is</p>
+<p><em>Hidden Markov model (HMM)</em></p>
+<p>I’d like to go over the models the standard model the most widely used a model for imputation there’s been some very nice clever work developing other approaches matrix completion approaches summary statistic approaches oh just you know in the interest of summarizing I’m gonna talk about the one I’m most familiar with and also the one that from what I’ve seen has the greatest accuracy so the debate the basic methods are based on hidden Markov models where you have a Markov process and you can’t observe the underlying states the process it’s hidden well what you do have is observed data and I’ll go through the parts of the model and then we’ll use this model in the research talk on Thursday so I’ll describe the Lee and Stevens model once the field of imputation moved into a what’s been called as pre phasing is where imputing onto haplotypes the Lee and Stevens model becomes the model in my view becomes the model of choice because it’s computationally tractable at the haplotype level without having to do a lot of shortcuts you can do the full even Stephens model and it gives you very accurate results the reference for that seminal model is is given on this slide so the hidden Markov model has a number of components I’ll go through those components and all of them will typically be based on a slide like this so I’ll go over that in some detail so the first thing it has is model states and there’s going to be a model state for every hat every pairing of a haplotype and marker so the markers these are the on the reference haplotypes are given as columns of the matrix the haplotypes these are reference haplotypes not the typo types your imputing that the from the reference samples are given here we’ll label these h1 h2 h3 h4 and so on the states of the model then just becomes the elements of the matrix these circles and for reasons that will become apparent in the slide or two we want to label those states with the allele that the reference haplotype carries so well we’ll use two the blue allele will represents the reference allele that yellow coloring will represent the alternative allele so the number of states in your model is just going to be the number of rows times columns so it’s number of haplotypes times the number of markers the next component of the model</p>
+<p><em>Initial state probabilities</em></p>
+<p>after you’ve defined the states for the lead this villian Stephens hidden Markov model is the initial state probabilities so these are the probabilities before you’ve seen any observed data and the way the model the process the Markov process works is you start at the first marker and you work your way through to the last marker so the initial state probabilities are there’s only nonzero probabilities in the first column for the first marker so all those for each haplotype all the states at the first marker they will have equal probability so that the probably sum to one there’s no reason to prefer one state to the other and at every other marker another every other column those states have probability 0 to be at the beginning</p>
+<p><em>State transitions</em></p>
+<p>then there’s state transitions and just to keep the slide from getting too cluttered I’ve only shown one so far the state transitions I’ve been shown is just what you can think is the primary state transition so the primary street straight transition just goes when you go from one marker to the next you stay on the same haplotype with probability close to one that’s what happens but actually it’s it’s a little bit more flexible and complex with a small probability you can jump to a random haplotype and that’s what I’ve tried to show for just sink one single marker right here so with a with a with a probability close to one you stay on the same state and there’s no what we call no recombination with a probability a small probability the remaining probability you jump to a random state and that random state can also include the the state you’re on so what that is modeling is is historical recombination or in the past there’s you know for a while you’ve inherited the same that haplotype your imputing on matches or is has inherited the same sequence of genotyped alleles as on as on a certain reference haplotype and then it because of a historical recombination it switches to another reference haplotype so these the probability of that small probability of of transitioning to a random haplotype is proportional over short distance is approximately proportional to genetic distance so the bigger genetic distance the rate higher recombination rate and so you have a greater probability of transitioning to a random haplotype so I won’t show this anymore but just be aware that the actual state transitions can go from - any marker at the or any state at the next marker but I’m only going to show the primary ones will you stay on the same haplotype all right the next component of the hidden Markov model is you have to have some way of relating your observed data to the to the des Markov process and that comes from what are called emission probabilities and this is where the labeling where we labeled each each reference haplotype at each each state with the allele that the reference haplotype carries and so if you’re in a particular state let’s just take the first state marker at the first haplotype it will with probability near one emit the blue allele and that’s shown in these equations here so if you’re in a blue state the square this I use a square to represent the allele on the observed data it will be epsilon here’s a small value it will be close to one with a small probability it will emit the other state you’ll have a mismatch between your observed data and the state you’re in and the same principle holds for yellow if you’re in the yellow you’ll emit a yellow allele with high probability and with small probability I’ll admit the other allele this works at any state where you have observed data these open squares mean you have missing data like you would have if you were performing genotype imputation then here’s another marker that’s genotyped in your sample your imputing and so for example not knowing anything else you just intuitively expect it’s more likely you’d be in a state on hepa type for one or two because the emission probabilities are higher there because the allele matches then in states H 3 and H 5 at the states where you have missing data there the emission terms they’re constant doesn’t matter what the underlying state is you have no observed data and you can treat it treat it as one in it and it drops out now let me let me back up once once you have the state proper beliefs you can get the imputed legal probabilities so the key the key thing you’re trying to understand is given this imputed data at a particular marker at any imputed marker I’m sorry given the observed haplotype the observed alleles on that haplotype you want to understand what in each of these hidden states what its probability is once you have that you’re essentially done with the imputation problem if you want to know what the probability of the blue allele at the third marker once you have these state probabilities you just add up all the state probabilities for for blue heppa for the blue states and that gives you the probability posterior probability of the blue allele posterior probability of the yellow allele at the third marker probability that that’s yellow you just add up the state probabilities for all the states for the reference haplotypes where the reference haplotype carries the yellow alleles so the key is those state probabilities and that’s the next slide so this standard way of breaking this up</p>
+<p><em>Calculating HMM state probabilities</em></p>
+<p>it’s a really beautiful math I love the math that that you use to get these state probabilities is you break it up in what’s called a forward probability in a backward probability so first this is the state probability because little m is a marker H is your haplotype so it’s the probability of being in the state at marker M half a type H and the Oh is your observed alleles Capital m is the total number of markers so given all the observed alleles at the genotype markers you want to be able to compute conditional on that what the state probability is and from what we talked about the last side as soon as you know the state probabilities you just sum them up to get your imputed allele probabilities so you break it up using the end of conditional independence assumptions into two parts that are called a forward and a backward probability so there’s a couple things to - I think to note about this equation one is there’s a forward probability for every state in your model so remember there’s number of states is the number of rows times columns number of haplotypes times the number of markers so there’s a ford probability for each of those states and there’s a backward probability for each of those states for each marker and for each haplotype the ford probability only conclude the observed data up through marker m so if we are imputing a ford probability for a state at marker m the ford probably only includes the observed data up to marker m the backward probability includes the observed data from the next marker all the way to the end so there’s that kind of division going on and then let’s see then the name for probability I’m guessing it comes from the way they’re computed it turns out you’d compute the four probabilities by making a forward pass through your data so the way it works is</p>
+<p><em>Computing forward probabilities</em></p>
+<p>you start with the state probabilities for marker 1 which you get just from the initial state probabilities they’re all equal given your state probabilities for marker 1 there’s an update equation which I’ll just flash on the screen in the in a few minutes there’s an update equation that gives you all the state probabilities at mark or two once you have all the state probabilities of marker 2 there’s an update equation that uses these probabilities to determine all the state markers at all the state probabilities at marker 3 and you just march through your data one marker at a time and at each step you use the state probabilities at the proceeding marker to give you the the the Ford’s the four probabilities at the next marker I said state probabilities but use the I mean the forward probabilities at the proceeding marker and you keep marching as you might guess that backward probabilities work the same way it’s</p>
+<p><em>Computing backward probabilities</em></p>
+<p>just in Reverse you start at capital n that the last marker in your data set you start with the backward probabilities there which are which which turn out to be all one initially and then from that you get the backward state probabilities at markers at marker and minus one at the preceding marker and you keep marching backwards so you end up at eventually you get to marker six and given the backward probabilities at marker six you can get them at marker five given all the backward probabilities at marker five the the backward update equation gives you at marker 4 and so on and you march back so you do a forward pass and a backward pass through the data and it’s imaginatively called the algorithm the forward backward algorithm will use this</p>
+<p><em>Forward update</em></p>
+<p>equation in the research talk and I just wanted to give a high-level look at the equation this is an example of the forward update equation don’t have to memorize it but just to understand the different components of it so remember the up forward update equation gives you the forward probabilities at marker n plus 1 given the four probabilities at marker M so that oops for it probabilities a marker n plus 1 that’s the Ford problems at marker and plus one you’ll notice there’s an N plus 1 there then use sum over all the reference haplotypes all the states at marker M so here is the forward probability at marker M and then you end up multiplying that by a transition probabilities this is state probability of being an H reference the state for reference haplotype H Prime and transitioning to the state at the next marker with reference to haplotype h and then you multiply by an emission probability so given this the state you’re in what’s the probability of the observed allele at that state the backward state update I won’t go over it has the same format it’s a little bit different but it’s the same format you’re summing over a triple product product of the the backward state probability at the at the state you’re coming from a transition probability and an emission probability one thing that’s we’ll use in the research talk on Thursday is we’ll use very strongly the fact that when you’re at an imputed marker this term effectively drops out and that’s it and we’ll use that to to find some faster ways to compute compute imputation so the last part of the talk I wanted to talk about programming this is for people with a CS background this this some of this a lot of this all of this perhaps you’ve seen but there’s probably people in here that are like I was a number of years ago coming into computational genetics with little or no programming background and so there’s certain certain things that I was I thought it might be helpful to just go over that may save you some time save you some make your life a little simpler because a lot of our work is involve writing code so I I find when when</p>
+<p><em>Simplicity</em></p>
+<p>writing software that the chief challenge for me is complexity if and when it gets more complex my mind has a hard time grasping at a more error-prone and as much as if you’re like me you get a buzz from getting writing really fast code it’s it’s pretty exciting to write code that’s really fast that’s really not the first object the first object is to write clean simple code don’t worry about the optimization you’re you’re just trying to write this simple code so that when you look at it it’s easy to understand what it does it it operates in a logical way the structure of it makes sense just easy for the mind to absorb and grasp without having to really study it there is a place for optimization but it’s not the first thing you want to do there’s a famous quote that started donald knuth took this this statement from scripture and then changed it after computer science he wrote the premature optimization is the root of all evil and I think the idea is that if you optimize too soon you can end up optimizing the wrong thing or doing unnecessary optimizations that don’t actually improve the code or if your code isn’t simple to begin with you have a hard time finding the right optimizations see optimization optimization is not free yes it can speed things up but it has a cost if your simple code was fast enough you wouldn’t need to optimize so when you optimize by definition you are introducing complexity and that complexity has has costs it’s you’re gonna have more bugs in it because it’s more complex it’s gonna be harder to find the bugs because it’s more complex it’s gonna be harder to extend your code to add new features to it because it’s more complex it’s gonna be harder to maintain the code because it’s more complex it’s harder for other people to come look at your code and under wonder what you’re doing because it’s more complex so it there’s that cost and you have to weigh that cost against the expected benefit is a big increase in complexity worth getting a 5% reduction runtime in most cases not if your code is fast enough for practical purposes getting a tenfold 100 folding reduction runtime may not may not be worth it for the increased complexity if it’s already fast enough for your purposes if it runs in a second so weigh it up and and understand how much complexity you’re adding and what the trade-off is before you even add it because optimization is not it’s just not free the second general principle that I find useful is modularity which just carries the idea that the you want code units of code where the input is very simple what it does is simple to understand at least at a high level and the outputs very simple a module of code that you can treat conceptually as a unit without having to really think about it very deeply now when you write the code you may not have to think about it deeply but once it’s working and doing what you want you can just treat it as a building block and ideally you want your program to be very loosely interacting modules so that when you’re when you’re working on a particular module because it operates very independently you can give that your whole concentration you don’t have to have the whole program the whole complex program at your fingertips in your memory you can just focus on the individual part you’re working at because it’s loosely coupled the classic example of this would be UNIX utilities at the command line if you’ve used a UNIX system so UNIX utilities there’s utilities first sorting counting lines counting words extracting columns extracting lines that meet a certain criteria changing characters replacing words and your there’s all these UNIX utilities and you can do a lot of your programming without actually or a lot of your data manipulation without actually sitting in the writing code you just take the UNIX utilities and you string them together in a series of filters or in a pipeline write you UNIX utilities our classic example of doing some units of code that do one thing do it fairly well and that you can work with as a unit without understanding how they’re implemented and that kind of approach is really useful for writing complex projects another just general thing when you’re writing is if you can be aware when your classes or your methods or which are called functions and depending on language you’re working in when they do too much one of the pieces of advice I read early on when I was learning program is be aware of of functions that extend more than the length of your computer screen and in my experience that’s that’s good advice when it doesn’t fit on the screen I’m more likely to make errors because I can’t see the whole function without scrolling and the extra link that indicates it’s usually a bit extra come has additional complexity and so you know all rules have exceptions but I generally if the function extends more than the screen I want to see if there’s a way to make the code cleaner simpler easier to understand by breaking it up into parts classes if you work in an object-oriented environment which for complex problems can be very useful complex programs for me you know your threshold may be different but my threshold is once my my file my I work in Java predominantly once it’s more than two or three hundred lines I noticed that I have a harder time really understanding what’s going on in the class and so when it gets long I if I can I try to find ways see if there’s a way I can break things up that would make it simpler to understand there’s not always but I try so to get that simple code and involves what’s called refactoring which is just cleaning up cleaning up your code without changing how it behaves so when do you when do you a factor how do you know what parts of the code you want to spend some effort cleaning up just from experience anything I’ve just written a scan they need cleaned up I never get a a really right design the first time unless it’s over just a trivial piece of code I may not realize it when I raid it that day has problems but there’s an acid test for for discovering you have code that’s hard to understand it’s you just come back to it after a couple months and for some reason you have to go back a new code and and you’re looking at it and it’s very humbling because you can’t understand what you wrote you wonder what you were thinking why did I do this is this a bug isn’t this more convoluted than doing it this other way all those thoughts that when you look at the code for fresh eyes it’s usually then that did I spend time refactoring when I first write the code I’m just a little too close for it I’m a little it’s hard for me to see the blemishes but you come at or with fresh eyes they’re really obvious and it’s often in the part of that painful time you’re spending trying to understand what your codes doing again that also can at the same time is very easy to see ways that I could have done this differently I could have combined things I could have changed the organization to make it easier to structure I could divide long methods into in these two shorter methods I can combine code that’s essentially duplicate code so that instead of having to maintain tuned components of code it’s just one so all those things become obvious when you look at the code again with fresh eyes so we’re factoring if you’ve had the experience like you know I’ve had many many times of just having a not very fun day trying to understand what you wrote in the past refactoring just makes it means the next time you look at the code it won’t be so bad and it’ll end in any poor soul that’s not you if you have a hard time understanding your code just imagine what somebody else coming your code is gonna what difficulties they’ll have</p>
+<p><em>Testing and debugging</em></p>
+<p>then for testing and debugging one tool that I find really useful is regression testing so this is not linear regression from statistics it’s just testing to make sure your code is still working correctly and this can be set up in a very automated way you have some test data sets the test data sets you originally used to convince yourself that your code was was behaving well and doing what it was supposed to do save those test data sets write some scripts and save the output that you had from a previous version and when you continue working on your code may be doing refactoring and then you reach a reach is sort of a stable point the code you can check and see whether your code is still producing the same output you can check it a qualitative level to see if it’s still producing the same accuracy you can also just use the diff tool in UNIX to check whether the output files have changed at all and this is a fantastic way to catch bugs that you’ve introduced you had working code you made some changes and you didn’t realize it but you broke something it makes it very systematic very easy to find those type of bugs another useful tool is version control system I use a tool called git it allows you to go back and see previous states of your previous state of the program you may have started off on a develop development and then found out that this I made a mistake I need a backtrack or maybe there’s a bug that you never caught before and it was introduced in the past it allows you to essentially do a binary search to find just the point where you made the bug and determine exactly what changes that you made at that point so you can vary with a microscope narrate and nail down the place where the bug was introduced if you get there’s a lot of tools online for that there’s a Udacity course on get a short Udacity course there’s also a some manual online if you search for something called git GI teeb book you should find that the online book for that explains get if you want to learn that it’s not easy-to-learn get initially I don’t think these version control systems take a little bit of use but they’re a powerful tool once you learn them it’s like the UNIX the UNIX environment it’s hardly hard to learn but very powerful</p>
+<p>the last is it pays to remember your previous bugs bugs are not uniformly distributed in your code typically they tend to cluster and the reason for that are you know fairly a fairly natural it could be a complex section of code complex code more likely to harbor bugs they either spatially correlated in your but in your code it could be something in your life you where you weren’t at your best the day you wrote that code you didn’t get enough sleep you got a letter from the IRS whatever you just something that threw you a little bit where you’re not up to up to your full full capabilities so if it pays to remember where your past bugs are when you find a bug if you can remember the type of bugs you had and where they tended to occur in the code in the past that can help you can give a little more preference to those parts of the code when you’re trying to track that bug down and it can save you a lot of time so thank you thank you for your attention that’s the end of my remarks</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          // default icon
+          link.classList.add("external");
+      }
+    }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
