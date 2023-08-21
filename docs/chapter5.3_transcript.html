@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>PGC Video Textbook - Chapter 5.3: Association Testing (Video Transcript)</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">PGC Video Textbook</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html" rel="" target="">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./contact.html" rel="" target="">
+ <span class="menu-text">Contact us</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://pgc.unc.edu/" rel="" target="">
+ <span class="menu-text">PGC Website</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Chapter 5.3: Association Testing (Video Transcript)</li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./pgc_logo_website_v3.jpeg" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main">
+    <div class="dropdown">
+      <a href="" title="" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label=""><i class="bi bi-github"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="">
+            Source code
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="">
+            Report a bug
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./welcome.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome to the PGC Video Textbook!</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./toc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Table of Contents</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Chapters</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 1: Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 2: The Genome</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 3: Technologies</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 4: Study designs</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 5: GWAS analysis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 6: Polygenic Scores</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 7: Ancestry-Specific Analyses and Considerations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 8: Post-GWAS bioinformatics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter9.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 9: Advanced Topics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 10: Other Considerations</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Software Tutorials</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_cnvs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CNVs</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_conditional.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Conditional Analysis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_crossdisorder.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cross-disorder Analysis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_datasets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Datasets</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_ewas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">EWAS</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_geneset.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Gene Set Identification</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_gwas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">GWAS</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_genomicSEM.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Genomic SEM</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_MR.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mendelian Randomization</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_mtag.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">MTAG</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_prs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">PRS</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_correlation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SNP Heritability and Genetic Correlation</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Additional Resources</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Glossary</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./resources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tools/Software Resources</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./addreading.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Additional Reading</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://pgc.unc.edu/for-researchers/download-results/" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">PGC Summary Statistics</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#sec-video1" id="toc-sec-video1" class="nav-link active" data-scroll-target="#sec-video1">The Biometrical Model &amp; Basic Statistics</a></li>
+  <li><a href="#sec-video2" id="toc-sec-video2" class="nav-link" data-scroll-target="#sec-video2">Hypothesis Testing, Effect Sizes, and Statistical Power</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Chapter 5.3: Association Testing (Video Transcript)</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="sec-video1" class="level3">
+<h3 class="anchored" data-anchor-id="sec-video1">The Biometrical Model &amp; Basic Statistics</h3>
+<p><strong>Title</strong>: Biometrical Model and Basic Statistics</p>
+<p><strong>Presenter(s)</strong>: Benjamin Neale</p>
+<p>Hello, I’m Ben Neale. I’m one of the course directors for the International Statistical Genetics Workshop, and I’m here today to talk to you about the biometrical model and basic statistics. Some really core theoretical underpinnings of how we think about twins and families, heritability estimation. All of this stretches back to an intellectual tradition that goes, you know, to Mendel and Galton and Fisher, all people that we’ll talk about over the course of, say, from the mid-1800s. You know, forward to today.</p>
+<p>Now a number of the scientists that I’m going to refer to are also eugenicists. I’m not going to talk about eugenics here. I know that can be very triggering for many. If you would like to learn more about eugenics or understand the relationship between polygenic inheritance and polygenicity and eugenics theory, I’d refer you to Lea Davis’ talk in the 2021 workshop about precisely that. But nevertheless, let’s move on and focus on the science in this particular session.</p>
+<p>So a natural starting point when thinking about Human Genetics or, really any genetics, is to start with Mendel and start with this idea of inheritance of physical characteristics, and that was what Mendel was really interested in - working out and understanding how parents and offspring share some kinds of traits. In Mendel’s case, he was doing breeding experiments using pea plants, and here we’ve got the little picture of this sort of toy example of a yellow smooth-skinned pea crossed with a green wrinkly-skinned pea. And if you cross peas of those particular phenotypic characteristics, all you end up with in the first generation are smooth peas that are yellow. That is denoted here by a kind of imagined genotype of AABB - “AA” “BB” for yellow and smooth and then little “aa” “bb” for green and wrinkly. This particular phenotype is operating in a recessive fashion. If you think about green or wrinkly, that is to say, you have to be homozygous or identical at the genotype. You have to have two copies of the genetic variant - one from your mom and one from your dad&nbsp; to express the green wrinkly phenotype for the green or the wrinkly, they are on independent chromosomes. This is the law of independent assortment that Mendel was also getting at. You can juxtapose that against the yellow smooth pea, which will behave in a dominant gene action form where that is to say the big A or big B means that if you have just one copy of that particular genetic variant that is governing the phenotype that you’re looking at, the trait of yellow or the trait of smooth-skinned pea, you end up with an F1 generation that has all the same phenotypes - all yellow peas and all smooth-skinned. And then if you cross within that F1 generation, so you take the F1 generation and you mate across the different plants in that fashion, you end up with 3/4 of the time being a yellow pea and 1/4 of the time being a green pea, and 3/4 of the time being a smooth-skinned pea and 1/4 of the time being a wrinkly-skinned pea. Now this wrinkly, smooth, yellow, green is operating either in a dominant fashion for the yellow or recessive fashion for the green. And it’s a really single genetic variant that’s governing this trait in this particular toy example of a pea plant.</p>
+<p>And Mendel experimentally showed this. He bred a bunch of peas and did the analysis to get to a place where we arrive at Mendel’s laws of independent assortment and segregation. Half of your genetic material comes from your mom, and half comes from your dad. Now, Mendel did this when there wasn’t really much of an appreciation of statistics, but we’re going to spend a lot of time talking about statistics in this course and throughout the rest of this lecture. So as a result, his sums came out exactly at the proportion, so they stopped the experiment when they got to the place where they thought the answer was because there wasn’t really a notion of randomness in the context of this particular experiment. But nevertheless, those kinds of laws - Mendel’s laws that I’m sure you learned about in your introduction to biology course - are still governing how genetic variation is transmitted from parent to offspring in humans and basically every other species in the population.There are lots of different mechanisms of reproduction in biology, and so you can get into all of that complexity. But we’re going to focus our attention on the way things work in humans during this course because I think we’re interested in understanding a little bit more about trait variation in the population or populations that we’re studying.</p>
+<p>Now,wWhen thinking about Mendelian genetics, you can also think about this sort of interesting intermediate case, where you have white flowers and you have red flowers, and you cross them. And then in the first generation after that, you see nothing but pink flowers. So you see no flowers like either the white flower side or the red flower side. You only see pink flowers. And then if you take that pink flower generation and cross it with another white flower, then what you end up with is a 50/50 mix of pink flowers and white flowers. Whereas if you cross within just the pink flowers, you end up with a quarter white flowers, half pink flowers, and a quarter red flowers.</p>
+<p>Now, this is a sort of co-dominance, the sort of intermediate circumstance for Mendelian genetics, right? So there’s this idea that the phenotype is not one of two forms but actually maybe slightly more on a continuum of white to red, and you get the halfway point in that sort of space when you cross with red flowers and white flowers. So it could be that the two genetic variants are, in a sense, equally balancing one another rather than necessarily purely expressing or not expressing their particular phenotype.</p>
+<p>Now, that’s a complicated case, but let’s take something that’s also sort of intuitive and important. And let’s talk about height. If we think about height in the population, this guy over here, Francis Galton, has been doing a great many different things scientifically. But perhaps one of his most important contributions was this observation that parents who are tall or parents who are short tend to have kids that are tall or have kids that are short. And actually, not only do they tend to have tall parents have tall kids and short parents have short kids, but the kids don’t seem to be quite as short as the parents are when you look at the mid-parental height (which is this line from A to B on this picture). That’s the distribution of heights for parental pairs, taking the midpoint of those. And then if you look at the kids of those parents with the shortest stature, they don’t have kids that are short. They have this C to D line, so they actually tend to regress a little bit towards the mean. So that’s actually where we get our term regression from. So when we do a linear regression, it’s actually from this kind of drawing a line concept that Galton was doing when he was writing about height and stature and parents and offspring.</p>
+<p>But there’s a natural question that arises when you think about something like height. If you think about your own height, do you think there’s like a single genetic variant that tells you how tall you are? I don’t. That doesn’t seem to make so much sense for something that’s like genetics. Why would you have a single variant that ends you up at, say, 6’4 inches, like my height? No, it’s actually a little bit more complicated than that, right? Just intuitively, this idea that there’s this kind of continuous variation in height in the population. There’s the kind of distribution of height sort of almost looks like a normal distribution, and so how do we square this inheritance of discrete physical characteristics that Mendel observed with this idea of continuous variation?</p>
+<p>Now, Galton was also heavily influenced by Charles Darwin. You know they were relatives. There was a lot of sort of intellectual curiosity around trait variation and kind of genetics and biology, more generally, right? Like this was all happening again in that kind of mid-1800s, so a huge amount of change in the scientific literature, and a lot of data being collected about things like people’s heights and their kids and their families, and these ideas of how do we take something like height? How do we take a continuous trait like height and integrate that with what we understand about discrete inheritance of characteristics from Mendel? Because that was really Mendel’s main point, is that there was something - some discrete thing being transmitted from parent to offspring.</p>
+<p>So in 1915, there’s a really beautiful paper by East looking at Corolla length in Nicotiana longiflora, or the tobacco plant. And the experiment that East did was he concentrated the longest Corolla length and the shortest Corolla length plants and then made those the founding parental generations and then crossed those and ended up with a distribution. This F1 distribution was sort of in the midpoint, you know, sort of between those two distributions of Corolla length from the long Corolla length and the short Corolla length tobacco plants, and he had this F1 distribution. And then he mated within that F1 generation to get the F2 generation. Same sort of thing as with the peas or the flowers, and what you can see quite distinctly is that the distribution spreads out quite a bit from F1 to F2. And that observation, like the increase in the variability of the distribution from F1 to F2, points to the idea that there is maybe more than one genetic factor being inherited here. That there’s maybe something that’s adding a little bit of jumbling up and actually, you know, what’s actually happening that we can know and appreciate now and obviously indicate is that amongst the tall parents, you’ve homozygosed, or you’ve taken the two alleles that are the long form of whatever it is, particular allele it is. And in the shorter length plants, you’ve homozygosed, the short form. And so when you do the F1 generation, you get a lot of heterozygous sites. So that is to say, instances where you have one of the long form and one of the short form of the particular genetic variant that is having an impact on corolla length in the tobacco plant. And as a result of them all being homozygosed, they’re actually very similar genetically in F1. And then when you go to F2, you then have the binomial resampling, so some of the heterozygous sites are now turning into the homozygous long form or the homozygous short form in that F2 generation.</p>
+<p>Now, not content with simply looking at the increase in the distribution as you get to the F2 generation, East then went and sampled from different points across that distribution and then. In a sense, created an F3 generation, so just take a bunch of plants with a similar sort of height and then see what happens there. And there you can see that the mean more or less tracks with the mean of where the sampling was happening in that subsequent F3 generation. And so that’s the idea that there is actually a genetic contribution to the phenotypic variance in Corolla length in the tobacco plant, and that you could see it through these kinds of breeding experiments.</p>
+<p>This is very important work, and it kind of articulated this idea that polygenic inheritance was, you know, perhaps the most natural explanation, but there wasn’t really a clear mathematical formulation that made everything sort of airtight and coherent. And for that to hit the scene was a paper that Ronald Fisher wrote in 1916, and actually submitted to the Royal Society in London in 1916. It was rejected, and then it kind of got passed around in the academic publishing press of the day into this paper in 1918 where it was described in the Royal Society of Edinburgh instead.</p>
+<p>And as a result of the sort of observations that Lee is talking about, and many others were making throughout the scientific literature at the time, Fisher wrote this treatise on the correlation between relatives on the supposition of Mendelian inheritance, and this paper is an extremely rich, dense text. It has a huge number of ideas that are still relevant today, a century on. So this is more than a century ago, the theoretical underpinnings of quantitative genetic theory were really articulated and laid out in a very, very clear and precise mathematical framework by Fisher. And in, you know, just something like 30 pages or so, there’s all kinds of ideas about how to think about genetic variance, the definition of genetic variance, the definition of variance that we use today, the idea of partitioning variance indeed, prior to this paper, partitioning variance, and even like ANOVA-like ideas hadn’t really been invented, and that’s Fisher’s clear contribution here. How do we try and disentangle really complicated ideas? What can we maybe partition? Now, again, this is a statistical tool. This is a scientific tool. It is a model description of the world. It is not a complete and rich description of the world, and whenever we talk about partitioning variance, it’s important that it is a statement that genetic variation influences a phenotype. But it is by no means the only mechanism by which a particular phenotypic value can arise, and indeed the environment may matter a great deal. Changes in the environment can have massive changes on phenotypes, and that’s not really captured in a kind of idealized toy model that Fisher was talking about in the context of the biometric model. But nevertheless, additive genetic variance, dominance, worries about a sort of mating epistasis, how to think about multiple alleles, how to think about all kinds of different forces that would shape the genetic landscape of a phenotype in a population were really given some deep thorough mathematical treatment by Fisher, and this paper is so important that it’s still the sort of primary way that we think about the definition of heritability. Indeed, the definition of heritability goes back to precisely this paper.</p>
+<p>OK, so how did Fisher get there? How did he reconcile this idea of discrete inheritance from Mendel with continuous variation like height? And what Galton was doing with the looking at the parents and kids and measuring their height and showing that they were the same? Well, what Fisher did was he invoked something called the central limit theorem, and what the central limit theorem states is that if you have a bunch of independent factors that sort of are summing together to create some outcome, then a normal distribution will emerge. And we can see this if we create a sort of toy example of thinking about coin tosses. And what we’re going to do when we think about coin tosses, we’re going to think about just the binomial chance. And in a sense, if you think about your parents, they have genetic variation. They have a lot of places where they’re heterozygous, where they have one form of a genetic variant and another form of a genetic variant, and it’s a random toss of the coin. Which form of that genetic variant you yourself get, and so thinking about that coin toss, well if there’s just one coin like there was for like wrinkly or smooth in terms of the peas or yellow skin or green skin for the peas, then that might you know just be a binomial chance exactly like this. But what happens when we start to add coins? Well when we start to add coins we see different distributions of outcomes in those coin tosses coming. And if you keep adding coins, what you see is, and you know, a distribution emerge, and that distribution that emerges is this normal distribution that was written about by de Moivre in the 18th century and Gauss in the 19th century, and this normal distribution here. That’s like if you have an infinite number or a very large number of outcomes, you end up with that normal distribution, but it’s worth remembering that if you just look at ten coin tosses as your outcomes, you’re already getting pretty close to a normal-ish distribution in the population.</p>
+<p>OK, so how do we relate the normal distributions to something like diabetes or schizophrenia? Well, we invoke something called the liability threshold model that was really articulated in advance of the Fisherian idea of the quantitative genetic theory, the biometrical model that I’m talking about. So Pearson, working with Alice Lee in 1901, sort of articulated this idea that if you have an underlying distribution of liability, of you know some sort of risk for a phenotype like schizophrenia or diabetes, then if you’re above that threshold, then suddenly you’ll have, you’ll present with that illness or that disease or that binary trait. And if you’re below it, then you won’t have that trait. And so you can actually think about some discrete binary phenotype as really having an underlying continuous distribution. Now, Pearson sort of elevated Alice Lee in the early 20th century. It was not often the case that women co-authored scientific papers because of gatekeeping by many different male scientists and institutions, and a lot of institutionalized sexism. But Pearson, I think, was a little bit more of a let the sort of people who actually created the ideas get the credit, and so he advocated for Alice Lee to be recognized in the scientific papers, and I think there’s a lot of contributions that have gone unspoken in history, and so it’s nice to sort of recognize one where there was actually the co-authorship extended to the key intellectual partner for developing these ideas. Now, the way that Pearson and Lee got to this set of ideas was actually thinking about horses and thinking about horse coat color, which you could see as discrete characteristics ranging from like a Black Horse all the way to a White Horse. But if you lined up all of those horses from the lightest shades to the darkest shades or the dark shades, the lightest shades, then there might be some underlying distribution of horse coat color that was maybe slightly more normally distributed in the population, and that was the whole idea. That was how they got to this notion that there could be some hidden distribution that we can’t see, but that we just see this kind of binary outcome at the end. And this liability threshold model is still a very powerful tool for modeling discrete outcomes, particularly when they are multifactorial, when they have lots of contributing causes, just as we saw with the central limit theorem ideas with Fisher.</p>
+<p>OK, so Fisher didn’t just define, you know, variance and partitioning genetic variance and the analysis of variance in the 1918 paper. He also set forth a model to describe how genetic action might operate in the population, and these are slides that Manuel Ferreira made many years ago that I’m still using because I just find them so exquisitely clear. And so what we’ve got here are three genotype classes: “aa,” “Aa,” and “AA,” and they are attached to different means in the population: the white circle, the yellow circle, and the red circle have different means in the population conditional on what your genotype is that you have. And that’s because this genetic variant, if you hold like everything else constant, has some impact on the phenotype. It has some mild change that will maybe make you slightly taller or shorter, thinking about Galton’s example dataset. And you can see that the genetic effect here that Fisher wrote down is “little a,” and “little a” is like really not the best naming convention, as it’s a really difficult collision of terms, but it is what it is. That’s the way it’s written. So here’s how we’re teaching it. And so the kind of genotype mean in the population is “minus a” for the “aa” [genotype], “d” for “Aa” [genotype], and this is in a context where D or the dominance deviation, which is to say how far away from the midpoint value of the two homozygote classes you are, the “aa” or “AA” where is that “Aa” genotype in relation to that midpoint. It’s well, in this instance, it’s dominance equals zero, and so the “Aa”&nbsp; has a mean of 0, and then “AA” has a mean of “plus a,” and those are the sort of genotype conditional means. So here’s now a picture of normal distributions layered on top of the genotype distribution, so we see the red “aa” distribution has some mean trait value. The blue “Aa” distribution has some mean trait value, and the green “AA” has some trait value in there, you know separated by an “a’s” worth of distance, and they are now a source of variation in the trait in the overall population, which is actually quite a big source of variation in this particular example.</p>
+<p>Now, what happens if we have some dominance deviation, right? So maybe everything isn’t purely additive. Maybe additivity doesn’t explain the universe perfectly well. Well, in that circumstance, we’ll see this “d” now move the genotype mean of “Aa.” Note that the midpoint is still term 0, is the midpoint between the two homozygote classes, and Fisher did that to make the algebra a little tidier, and I think we all appreciate the tidiness of the algebra when we get there. OK, so this is the dominance deviation, so this is allowing for non-additivity in the genetic effect, and there are a lot of supporters of non-additivity in the Biological Sciences because there are a lot of recessive-acting phenotypes, sort of like we saw with the yellow-green pea color, and the green peas are sort of a recessive mode of action, and so that necessity is an important observation in biology, and so this non-additivity has got a long strong intellectual tradition in this space. OK, so that’s what happens under additivity. That’s what happens under dominance. Now let’s talk a little bit about some of the statistics that are used, and these are really just your elementary first-level statistics. Very, very basic statistics ways of describing distributions of traits, and so here we’ve got some idealized simulated trait on the X-axis on the right, and then this red line of mean, it’s got a mean of zero that, you know, I’ve artificially fixed to be 0, based on R, and then the frequency is the count of the number of individuals with the trait value, and here we have it in normal units on the X-axis, and the mean is just simply defined as the sum of the observations that Xi, those individual trait values, divided by the total number of individuals or n.&nbsp;Pretty pretty simple. Pretty basic statistics. Hopefully, you all remember how to calculate a mean.</p>
+<p>Now let’s talk about the variance. The measure of spread in the distribution. Well, the variance is now summing up the deviations from the mean and collecting those and aggregating those over the entire distribution. And Fisher used the deviation from the mean squared because he found that that was the most consistent estimator when thinking about trying to define the measure of the spread. So what that means is that it has the least variability of an estimator of the spread of the distribution, which is why we favor X minus the mean quantity squared for each individual divided by now “n - 1”. And the reason that we have an “n - 1” there is that we’ve had to give up a degree of freedom to the mean, and I’m not going to go much further into that. But degrees of freedom are a bit fiddly like that, but this is a way to make the estimator unbiased.</p>
+<p>OK, so the covariance of a distribution is now thinking about not just one trait but two traits, which is to say that we’ve got trait one on the X-axis here and trait two on the Y-axis. And these traits have some relationship to each other. There’s some, you know, you can see this red line. That’s the regression line that I fit on this particular dataset, and they are a bit correlated or have some covariance. Now, all the covariances is it’s just a way of again summing up the deviations from the mean. But now instead of doing it in one dimension, we’re doing it in two dimensions. So we’ve got the Xi minus Mu of X, which is the individual trait value of X for the i-th individual minus the mean of that for the overall dataset. And then we do the same thing for the Y trait as we did for the X trait, and then we multiply those deviations for each individual together, and we divide that by the number of paired entries that we have minus one, and that gives us just the covariance, and so this is just in the scale that X is on or Y is on when X and Y are standard normals. When they are, have, you know means of 0 and variance of 1. This turns into the correlation, but there’s also a way to turn the covariance into correlation as well.</p>
+<p>OK, so how much mean and variance? Well, we can think about the contribution of the QTL to the mean, and really, that’s just a way of making sure that the mean squares with how we’ve defined our genotype classes, and so we take the number of individuals with a given Trait value times the frequency of individuals with that trait value. And you might remember how there were different means for the different traits that we saw in the picture a little while ago, with the “AA,” “Aa,” and “aa”. Really well, those mean points we’re going have to come up with a grand mean for our total dataset.</p>
+<p>Now. This might be something like cholesterol levels in the population or something like height. You know any continuous phenotype. And really, it can have any shape, be any distribution, and it will still have some mean. Now, here we’ve got our “AA,” “Aa,” “aa” genotypes. The effect of the QTL, the quantitative trait locus. That’s the genetic variant that is having an impact on the trait or phenotype, and that effect here is for the “AA” genotype, just a. For “Aa,” it’s D, and then for “aa,” it’s -a. That’s the conditional mean. That’s the mean of the phenotype conditional on carrying that genotype, and then there are the frequencies of those genotype classes. Another bit of notation introduced. So we have a tendency to define the frequency of the genotype as “p” and “q” for the other allele. So one allele, one form of the genetic variant gets the frequency of “p,” the other form of the genetic variant gets a frequency of “q,” which equals “1-p,” and you end up with “p^2,” “2pq,” and “q^2” for the frequency of the genotype classes, if the Hardy Weinberg rules follow, and the Hardy Weinberg is basically just a way of saying that there isn’t an unexpected amount of correlation amongst your parents in terms of their genotype. So if you have random mating in the population more or less, then you’ll have that sort of frequencies be p^2 for “AA,” 2pq for “Aa,” and q^2 for “aa.”</p>
+<p>Now the mean is just going to be taking those conditional genotype means times the frequency of the genotype and summing those all together. And so that’s what we see down here in the mean of X, and that gives us a grand mean that we’re going to use in the context of our calculation of the variance. OK, so when we calculate the variance again, we’re looking at the squared deviation from the mean. Now note, this is in the population, and so we don’t have to worry about the “n-1”. It’s funny because it’s thinking about everybody rather than thinking about an estimate, and that little estimator thing is just a little bit of nuance around statistics. But again, we have this (xi minus mu)^2, so the ith individual’s trait value of X minus the mean squared times the frequency of that genotype class. And so here we just work through some more algebra. So the variance is taking this effect mean for “AA” multiplying it, you know, taking off the grand mean that we calculated on the previous slide, and multiplying it by the frequency of that genotype in the population. So we have (a - mu)^2 * p^2 + (d - mu)^2 * 2pq + (-a - mu)^2 * q^2. And that’s how we define the variance of the QTL. That’s what Fisher partitioned as the variance of the QTL, all the way back in 1918. Again, before there was the structure of the genome, before the nucleic acids were really understood, before we had any real notion of what was actually going on with DNA itself. But we understood that there were genetic variants operating in the population, that they were a source of variation, and this source of variation could be a tractable, quantifiable thing. This VQTL, this variance of the QTL. And the heritability of trait X at this locus is just simply taking the variance of the QTL divided by the total variance of the phenotype. Now this is all worked out for just one genetic effect, but remember, we could have many, many genetic effects, and so if we sum up all of those genetic effects together, then that might get us to the sum total of the variance of QTL, which is VA, and then divide that by the sum total of the phenotypic variance. Just the variance of the trait in the population more generally. And that’s how you get to your heritability.</p>
+<p>OK, so let’s work through a bit more of the algebra, so we’ve got this variance. Here we get this (a - m)^2 * p^2 + (d - m)^2 * 2pq + (-a - m)^2 * q^2, and we can actually partition the variance of the QTL into a part that is additive and a part that is dominance, and so that’s what’s been done here through rearranging is taking the VA of the QTL, and that’s the main effect that if you take a genotype and just run a regression, the genotype against a phenotype, you will end up with this additive genetic variance as your estimator. Fisher made it really convenient and really nice for us in the derivation of the math and kind of thought it through that way, and then if you add that second term and you encode a dominance deviation from that additivity, then you can get this VD of the QTL, or the dominance contribution to variance. So that’s just the deviation from the purely additive model, all predicated on where that heterozygous class goes.</p>
+<p>OK, now that’s one genetic effect, but remember for something like height, things are a bit more complicated, right? We don’t have a single genetic effect necessarily. We actually maybe have many, many genetic effects, and so we can kind of develop those ideas a bit further and say that there might be some distribution to the genetic effects. This isn’t what you know. This is what Fisher implied in his work. He said that let’s assume that there are polygenes. We can assume a distribution of those single nucleotide polymorphisms, those specific genetic effects that you’re going to learn about a little bit later on in the course. We can then use that to generate an estimate of the heritability, and that’s exactly what the tool GCTA does. It’s also what we did in the context of the LD score regression. So this has just been an introduction to heritability, additive genetic variance, dominance genetic variance, means, variances, and covariances. These are the most fundamental basic building blocks that the rest of the two weeks will be built on, and I hope you’ve enjoyed this introduction to how we think about partitioning phenotypic variance and a little bit on why we do it so as to try and understand a little bit more about the world around us. Thank you.</p>
+<hr>
+</section>
+<section id="sec-video2" class="level3">
+<h3 class="anchored" data-anchor-id="sec-video2">Hypothesis Testing, Effect Sizes, and Statistical Power</h3>
+<p><strong>Title</strong>: Hypothesis Testing, Effect Sizes, and Statistical Power</p>
+<p><strong>Presenter(s)</strong>: Brad Verhulst</p>
+<p>Hello and welcome to the 2022 Boulder Workshop, where we’re going to discuss hypothesis testing, effect sizes, and statistical power. My name is Brad Verhulst from Texas A&amp;M University, and I’m going to walk you through some of the important components of these concepts.</p>
+<p>So, the first thing that we’re going to start with is statistical power, and just to quickly define it, statistical power is the probability of correctly rejecting the null hypothesis. Importantly, statistical power depends on 4 components. The first thing is sample size – this is often what we’re trying to calculate. The second is our α level, and typically we set α at 0.05 or the p-value of α equals 0.05 or less. The third thing is our β level, our power level, the probability that we’re going to reject the null hypothesis if the null hypothesis is actually false, and the final thing that we’re going to do is we’re going to look at effect sizes. And so, in order to do this, we’re going to start right at the beginning and think about how statistical power relates to the basic components of hypothesis testing.</p>
+<p><em>Hypothesis testing:</em></p>
+<p>So, when we’re thinking about hypothesis testing, we really have three steps. The first step is to define what the null hypothesis is. Oftentimes, this is a hypothesis of no difference. So, Group A is equal to Group B, or the parameter of interest that we’re looking for, say, our heritability coefficient is equal to 0. Of course, at that point, we then define what would be considered sufficient evidence to reject the null hypothesis. Say p is less than 0.05, for example. In a genome-wide significance framework, we might want to say p is less than 5x10<sup>-8</sup>, and that would be our threshold for rejecting the null hypothesis. The final thing that we do is we go and collect data and then we actually conduct our analysis and see where the parameters fall.</p>
+<p>So, when we’re thinking about hypothesis testing then, we can imagine a distribution of our test statistic under the null hypothesis. The next thing that we need to do is define this evidence that we’re going to use to reject the null hypothesis. So, in a standard situation where α is set to 0.05, anything that falls in this blue shaded region, we would claim is inconsistent with the null hypothesis, and therefore we will reject it. Now, even if it is part of the null hypothesis, we will observe that approximately 5% of the time, i.e., a p of 5%. The second thing that we really need to think about is the distribution of the test statistic under our alternative hypothesis. Now, most of the time, if we’re going to conduct a study, we’re not thinking, “Oh, nothing’s going to happen.” We’re thinking, “Oh, something’s going to happen.” And what we believe is going to happen is that our test statistic is going to fall in this distribution – in the alternative hypothesis distribution. And so, the probability that we’re able to reject the null hypothesis given that we’re in the alternative hypothesis, drawing our statistic from the alternative hypothesis distribution, is going to be our power, and this red shaded area is the β component here – 1 minus our power – which we can quite easily say is sometimes, even if our statistic is drawn from the alternative hypothesis, sometimes that statistic still won’t reach our level of evidence that we’re required to reject that it’s part of the null hypothesis distribution.</p>
+<p>The second component here that we really need to talk about is effect sizes. So, effect size is a measure of the strength of a phenomenon in the population. And most of the time when we’re thinking about effect size, we’re thinking about effect size as independent of the sample size or other components of statistical power. In a lot of cases, this helps us communicate the result in everyday language, especially if the scale is meaningful on a practical level. For example, we might want to say that people who take Zyban or Bupropion smoked 5 fewer cigarettes per day, or people who take Liponox will lose 28.16 pounds in eight weeks. That would be an effect size measure. Effect sizes are agnostic to whether the effect is real or not, so it could be a real effect or it could be a false effect. And the effect size doesn’t really care whether it’s one or the other, because they’re not associated with p-values as they don’t incorporate any components of sample size into them.</p>
+<p>When we’re thinking about effect sizes and we’re thinking about the distribution of the null and the alternative hypothesis, the difference between the mean of the null and the mean of the alternative hypothesis distribution is what we’re really thinking about when we’re thinking about the effect sizes. So if we’ve got a regression coefficient of 0.2, this difference between these of 0 and 0.2 under null and alternative hypotheses, respectively, would be our effect size. So, what are the conventional sizes of that we think of when we’re talking about effect sizes? Well, most of the stuff comes from Cohen’s classic 1988 book where he provided some standards for interpreting effect sizes, and it’s really important to be cautious when we’re interpreting effect sizes, because in a rather counterintuitive way, large effect sizes are not necessarily more theoretically interesting and instead tend to be rather obvious. So, when Cohen wrote his book, he noted that, well, a small effect, something with an R<sup>2</sup> around 1%, is likely to be something that we need to do some sort of statistical analysis to detect. We really do need to do some sort of modeling of our data in order to extract the association; it’s not going to be observable just from walking around. A medium effect size or an R<sup>2</sup> of about 0.1 is going to be apparent upon careful inspection – might not be completely obvious – but it’s going to be apparent if you were to really look carefully at the world around you. And then we’ve got large effect sizes, or an R-squared of about 0.25, and this is really going to be obvious at a superficial glance. Things like men tend to be taller than women or something completely obvious like that on average. That doesn’t mean that all men are taller than women, but that on average, we wouldn’t really need to do a statistical test in order to get this.</p>
+<p>Okay, so now that we’ve defined several of the components of statistical power, let’s talk about what that really means. So statistical power is typically used to do two types of power analyses. The first type of power analysis is called an <em>a priori</em>, or a prospective power analysis. We typically do an <em>a priori</em> power analysis in order to figure out how many responses are necessary to fairly test our null hypothesis. This is typically done for grant applications or things of that sort, where we have to justify a sample size that we’re planning on collecting. A second type of power analysis is called a <em>post hoc</em> or a retrospective power analysis, and in this type of power analysis, what we’re going to do is we’re going to explore whether the effects that we’ve observed can be reasonably expected to reject the null if it’s actually false. If we were to, say, add more people, how much power did we have in our test or is our test based on about 20% power, 50% power, etc., etc.? And knowing how much power you had to test your null hypothesis is really an essential element in understanding the likelihood that you’re going to replicate your results.</p>
+<p>So, if we think about the likelihood that you observe a true effect, you reject the null or you fail to reject the null, we can think of a situation where we know what the truth is. So, we can say that the null hypothesis is true or the null hypothesis is false. Of course, in reality, we never know what the truth is, but we can set this up as kind of a straw man. And then if the null hypothesis is true, but we reject the null hypothesis, we’re committing a Type I error, or a false positive. If, by contrast, the null hypothesis is actually false and we fail to reject the null hypothesis, then we’re committing a Type II error, or a β error – in this case, it’s a false negative. Of course, if the null hypothesis is false and we reject it or if the null hypothesis is true and we fail to reject the null hypothesis, then we’re in a good state of affairs.</p>
+<p>So what is a Type I error? A Type I error is a false positive. The rejection region that we’re focusing on here is this red-shaded region in this figure, and if our test statistic falls in this region, we will reject it even if the effect isn’t true. Basically, in this case, we just sort of got lucky. So, given that our α is fixed probably by our discipline or at least exogenously from the experiment, this is the basic significance level that we’re trying to test.</p>
+<p>By contrast, a β error is the probability of failing to reject the null hypothesis when it’s actually false. In this case, our statistic is drawn from the distribution on the right-hand side here, but it just happened to be really far out in the lower tail of our effect size distribution, and what that means is that it doesn’t exceed the necessary α threshold to reject the null hypothesis. In this case, this is a false negative.</p>
+<p>So, when we think about the standard conceptualization of statistical power, we’re really thinking about those four elements. We’ve got our effect sizes, our sample sizes, and the α and β levels. So, if we take this simple equation and we rearrange it, we can show that we’ve got our α level, our β level, and the difference between α and β is equal to the square root of our sample size times our effect size. And this works pretty well for a lot of cases when we’re looking at differences of means or we’re looking at sort of correlations or something like that.</p>
+<p>Once we get into things like twin models where we’re looking at differences between distributions of correlations, things get a little bit more complicated, so instead of thinking about the standard power calculations, twin modeling tends to use two possible methods for calculating statistical power. The first method is a simple Monte Carlo simulation method where you simulate a model under the alternative hypothesis numerous times, say 1000 times, and then you count how many times you observe a test statistic for your parameter of interest that exceeds the critical value that you’re looking for, so 0.05 for example. And the proportion of times you get this significant result is your statistical power. It’s pretty simple to do. The downside of it is it can be very time-consuming. Also, with models that are complex, this can take a lot of time, and you can end up with a lot of model failures that may or may not affect your statistical power.</p>
+<p>An alternative method is to use what we’d call non-centrality parameters. Because we’re working with parametric tests, we know or we assume that the distribution of the test statistic follows, say, a standard chi-squared or a standard normal distribution, and we can leverage this assumption to more directly calculate statistical power without doing just an absolute ton of replication. So, we can do it once and then calculate power from there, rather than doing it 1000 times and looking at the proportions. And because of this time difference, the number of times you have to do it, this can be done relatively quickly.</p>
+<p>So, we’re going to focus on non-centrality parameters. So, the non-centrality parameter is the sum of the mean of the test statistic distribution under the alternative hypothesis with a given set of degrees of freedom. That’s a little complicated, but basically what we’re talking about is the difference between the distributions that we’ve been discussing already: that effect size distribution. So, there are two points that are especially important for calculating statistical power using non-centrality parameters. The first is: as the effect size gets larger, the mean of the test statistic distribution gets larger and, therefore, the NCP gets larger, and as the NCP gets larger, we have more statistical power. The second component is: as sample sizes increase, the standard deviation of the null and the alternative distributions get tighter and, therefore, the NCP, the non-centrality parameter, gets larger as well. In both cases, as effect sizes get larger or as sample sizes get larger, we are increasing our statistical power.</p>
+<p>Okay, so when we’re calculating power with non-centrality parameters in twin models, we’ve got four basic steps that we’re going to follow. The first thing that we’re going to do is we’re going to simulate twin data that corresponds with the alternative hypothesis. Say we want to test the power to detect an additive genetic variance component of 0.4 – how much power would we need to do that? And so that would be something that we want to test. Of course, the level of your effect sizes, for example, how big your additive genetic variance component is, should be based on the literature as far as possible. Of course, if you’re doing something really novel, you might not know how heritable it is, and so you’ll have to take a guess.</p>
+<p>The second step is to fit the full and the reduced models to the simulated data to obtain a chi-squared value from the likelihood ratio test. So, if we’re going to test that the heritability or the additive genetic component, what we want to do is we want to simulate the data in step 1, and in step 2, we’d run the ACE model and, in step 2, we’d also compare that against a reduced model the CE model. And we would be able to tell based on that how significant that A parameter was.</p>
+<p>Once we’ve got this chi-squared value from the likelihood ratio test for the full and the reduced, we can calculate the average contribution of each observation to the chi-squared. So, in order to do that, we take the difference that we have observed from the likelihood ratio test and simply divide it by the total number of observations. In this case, if we had MZ twins, we divide it by the total number of MZ plus the total number of DZ twins: twin pairs. And this will give us what I call the weighted non-centrality parameter.</p>
+<p>And then we can go ahead, and in step 4, we can actually calculate that we can use this weighted non-centrality parameter to calculate the non-centrality parameter for a range of statistical sample sizes. And then we can just basically multiply it by any given sample size to get what our Chi-squared value would be for that particular value of n.</p>
+<p>So, if we had a chi-squared value, for example of 10 with 1000 observations, the weighted non-centrality parameter would be 10, or our chi-squared value divided by 1000, which is our number of observations to give us 0.01. Therefore, on average, each observation contributes about 0.01 to the NCP. Because the NCP scales linear with sample size, if we had 2000 observations, we would simply multiply this 0.01, this weighted non-centrality parameter, by 2000, and we would get a chi square value of 20. If we had 500 observations, we would multiply this weighted non centrality parameter of 0.01 by 500 and we get a chi square value of 5, and it’s really that easy.</p>
+<p>So all of the stuff that I’ve told you today comes from this paper that I wrote in 2017, for the Boulder Workshop, and I’m going to walk you through quickly a power analysis based on the script that we’ve put together. All of the functions can be found in this powerFun.R script, and as a quick note, you’re going to need to have the powerFun.R script in your current working directory or the powerScript.R will not be able to find the functions - because all the functions are in here. So what we can do then is walk through a couple of examples to show how this script works and show how you can&nbsp;calculate power using the non-centrality parameter in twins and everything’s pretty well boxed up. But of course, the devil’s in the details, so we’ll go through some of those details now.</p>
+<p>So, the first thing that we’re going to do is we’re going to want to require the necessary R packages, and there’s two in particular that we’re going to use OpenMx and MASS. So OpenMx is going to help us to specify and fit our twin models, and MASS is going to help us to simulate the data. Remember that’s the key step at the beginning. And then what we’re going to do is we’re just going to source all of these functions and running these three lines of code will allow us to start playing with some of the possible power analyses that we’re going to want to look at.</p>
+<p>So, I’ve set out a series of power analyses that we might find interesting as twin modelers. So, the first question that we might want to know is what is the power to detect A, or the additive genetic component, in the univariate model as C, the shared environmental component, increases. So, what I’ve done here is I’ve specified 3 models, one where the additive genetic path coefficient is 0.6 for each of the models and then the common environmental path coefficient goes from 0.3 to 0.5 to 0.7. And note here that we’re assuming that the sample size for the MZ and DZ twins is equal. We’ve set it arbitrarily to 1000, but this is actually something that it’s much more important to get the proportion of twins right – so, in this case, we’re having equal proportions – than to actually specify a specific number. Sometimes when you are fitting rather esoteric models, you might want to bump this up to say, 10,000 or 100,000 twins in each group in order to get more precise estimates of the average non-centrality parameter or the weighted non-centrality parameter.</p>
+<p>So if we run these three lines of code, we’ve basically set ourselves up to get all of the information that we’re going to need, and we can look inside this object, say "modA1.” And what we’ll see here is 3 bits of information. First, we can see on the left-hand column of the top table the estimates that we specify. So, we wanted a 0.6, 0.3, and then R just computes what the rest of the path coefficients would be. So 0.6 and 0.3 would leave an E component of about 0.74, and you can see how closely these are being estimated to what we’re asking for. And we can see what the standard errors are, and this kind of tells us what the results from our twin model would have been under this situation. We want to make sure that these estimates here match what we’re seeing or what we’re asking for in our function. If they deviate too far, then our simulation didn’t work, and we probably have to do it again, perhaps with a larger sample size. The two key pieces of information here that we want to know are going to relate to the A and the C parameters. So, our weighted non-centrality parameter of A here is going to be this value here, 0.0121, etc., and the value of C is going to be 0.00105 or so. And we can see that this value here for A and this value here for C correspond, or at least proportional, to the non-centrality parameters, giving us some suggestion that what we’re seeing is going to be useful.</p>
+<p>So now that we’ve actually calculated the weighted non-centrality parameters for A, we can then just plot them. And so the powerPlot function that is cooked into this powerFun functions will allow us to plot all of the various non-centrality parameter power analyses that we’re interested in doing, and if we just run those four lines of code, it’s going to give us a legend as well. And what we can see here is that on the x-axis, we’ve got the sample size that we’re looking for, and on the y-axis, we’ve got the power to reject the null hypothesis or the power to detect a significant parameter. Now, if we look at the black line here, that was our first situation where A was equal to 0.6 and C was equal to 0.3, so we can see here that as we increase the power, we finally get that magic value of power equals 0.8 when we get about 625 individuals. By contrast, if we increase C from 0.3 to 0.5, which is this red line here, we can see that the power to detect the A component increases much faster, and if we increase it again to 0.7, it is increasing even faster. Basically, what we can see here is that the power to detect A depends on the assumptions that we have about the power to detect C, which is very interesting, and it has a big effect on this. If we look in our R console window, what we can see is our 80% power to detect an A of 0.6 when C is 0.3, we would need about 645 twin pairs, split evenly between MZs and DZs. If we had a C of 0.5 and an A of 0.6, what we’d have is about 400 twin pairs necessary, so 200 MZs and 200 DZs. Now if we have C of 0.7 and an A of 0.6, which is explaining pretty much all of the variation with either the additive or the common environment additive genetic or common environment, what we see here is we only need about 51 MZ and 51 DZ twin pairs, which is an astronomically low number of twin pairs.</p>
+<p>Okay, so, the next question is what’s the reverse? How does the power to detect C vary as we increase A? So instead of increasing C from 0.3 to 0.5 to 0.7, we increased A, and we kept pretty much all of the other parameters the same, and so all we need to do here is run this and if you wanted to test different values here, you could just replace any of these values and we can run that. And then we can similarly plot this using the same functions. Basically, what we can see here is that the power to detect C depends much less on our value of A than the power to detect A depended on our value of C. So, what we can say here is we really have to have some expectation of both A and C included in our power analysis.</p>
+<p>Okay, so up to this point, we’ve looked at the power to detect A and C when the sample sizes were equal. In this next section, what we’re going to do is we’re going to look at two different sample sizes and how they affect power. So, we’re going to say we’ve got a 5:1 ratio, so 5000:1000 ratio of MZ to DZ twins, and then we’ve got an equal ratio, and then we’ve got a 1:5 ratio of MZ to DZ twins. And just for simplicity, we’ll keep it at 0.6 for the A and the C component, but this doesn’t really. This demonstration doesn’t really depend upon the values of A and C. What we’re looking for is the proportions of the various twin types that we have. And so again, all we need to do is quickly run this. These three lines of code and then we can plot the power. And if we were to quickly plot that again, what we would see is the plot would shape up much nicer.</p>
+<p>Okay, so what we can see in the power analysis where we vary the proportion of MZ to DZ twins from 5:1 to equal to 1:5 is that the best power comes, or the smallest sample sizes come, when we have about equal numbers of MZ and DZ twins. A lot of times people think, "Hey, you know, in order to get more power, I should have more MZ twins." But that’s actually not the way that we would see this shaking out to detect additive genetic variance. Of course, to detect common environmental variance, it’s actually much more beneficial to have more DZ twins than MZ twins, and if we have MZ twins, we are dramatically underpowered to detect the common environmental components of variance, which is an interesting and important finding that we need to keep in mind when we’re doing our twin analysis.</p>
+<p>Okay, the next thing that we have to keep in mind is whether we’re using continuous or categorical data. And that's for the current analysis, look at binary data, so case-control data. And what we can do here is we can think of how the prevalence of our case-control trait affects the power to detect a significant genetic component. Now, let’s say that the genetic component is again a path coefficient of 0.6 and the common environment is a path coefficient of 0.6. So, we’ve got equal A and C here and we’ve got equal proportions of MZ and DZ twins. So, all we need to do to start out with is specify all of the various different coefficients that we might be interested in running and then we can plot it again. And as we can see here, as the prevalence goes from about 0.5 down to 0.05, the power drops dramatically. So, for our common traits, we can get away with many fewer twin pairs, say about 1,100 for a prevalence of 0.5, whereas for a prevalence of 0.05, we’re looking at over 4,000, and we need to keep this in mind when we’re doing any types of twin models.</p>
+<p>Okay, the final set of power analysis that I want to talk about is the power to detect genetic correlations between our variables. So what we’ve done here is we’ve specified an increasing set of A and C or A for the first trait and A for the second trait. And what we’re looking at here is increasing the genetic correlation between these two traits from 0.1 to 0.3 to 0.5, so very small, moderate, and actually quite large genetic correlations. And we’re keeping the C correlations proportional to the A correlations, and then we’re going to keep the sample sizes approximately equal again. All right. So, if we run these 9 different scenarios, what we’ve got here is all of the results that we need and now we can easily plot those and we can take a look at what comes out. So, for both, because both variable 1 and variable 2 were simulated to have the same A, C, and E components, we can see here that the power to detect those variance components is equal for both traits. What we can see is that we need about just less than 600 twin pairs to detect an A of 0.3, about 200 just over 200 for an A of 0.4, and just about 100 to detect an A of 0.5. Importantly, here, the power to detect our genetic correlations varies pretty dramatically with the amount of heritability that we have in our traits. So, for modestly heritable traits, we can only really reliably detect a genetic correlation of about 0.5. So with an A of 0.3, we’re looking at about 1,200 people, 1,200 twin pairs in order to get our correlation power up to the 0.8 level. By contrast, if our A is about 0.4, we need about 500 people to get that significant genetic correlation power to 80%, whereas we need about 1,400 to get it for the modest genetic correlation of about 0.3. And then by the time that our a parameter gets to about 0.5, we have even more power. And of course, when we have a very small genetic correlation, we never really achieve sufficient power with reasonable sample sizes.</p>
+<p>Okay, so just to recap, we’ve gone over the elements of statistical power, hypothesis testing, and effect sizes, and we’ve gone over a variety of different methods of calculating them, and I’ve shown you a demonstration of how you can use some of the functions that we’ve put together over the years to calculate power for a classical twin design.</p>
+<p>Thank you very much. My name is Brad Verhulst, and you can ask me all of the questions that you need in the workshop practicals where we’ll go through a little bit of this information as it relates to estimating twin models. Thank you very much.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          // default icon
+          link.classList.add("external");
+      }
+    }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
