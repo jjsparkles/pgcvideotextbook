@@ -2,13 +2,17 @@
 title: "Chapter 3: Technologies"
 ---
 
-------------------------------------------------------------------------
+> *Chapter goals:*
+>
+> 1.  *Understand the basic concept of SNP chip genotyping (also called beadchip, bead array, microarray), and the high level data handling process.*
+>
+> 2.  *Gain introductory knowledge of Next Generation Sequencing (NGS), and implementation of this technology to sequence DNA.*
 
 ## 3.1 SNP array genotyping {#sec-section1}
 
-**Title**: SNP Chips (Introduction to genomics theory)
+> This video is focused on understanding the SNP chip technology: how SNP chips work and why are they useful.
 
-**Description**: This part is focused on understanding the SNP chip technology. We talk about the general idea behind them, and how they work and why are they useful.
+**Title**: SNP Chips (Introduction to genomics theory)
 
 **Presenter(s)**: Gábor Mészáros, Genomics Boot Camp
 
@@ -27,11 +31,11 @@ Powerpoint slides for this video are available [here](https://github.com/Genomic
 
 ## 3.2 Next Generation Sequencing {#sec-section2}
 
+> This section gives an introduction to Next Generation Sequencing. The first video gives a very brief introduction to the concept of DNA sequencing, and how nucleotide bases are "read" from the DNA. The second video gives a more detailed view of Next Generation Sequencing, how it differs from Sanger sequencing, and the different steps involved in sequencing a DNA sample with NGS methods, including library preparation, Sequencing by Synthesis and the sequencing reaction, cluster generation from fragments, indexing, filtering, mapping, and demultiplexing the reads.
+
 ### *How to sequence the human genome*
 
 **Title**: How to sequence the human genome
-
-**Description**: Your genome, every human's genome, consists of a unique DNA sequence of A's, T's, C's and G's that tell your cells how to operate. Thanks to technological advances, scientists are now able to know the sequence of letters that makes up an individual genome relatively quickly and inexpensively. Mark J. Kiel takes an in-depth look at the science behind the sequence.
 
 **Presenter(s)**: Mark J. Kiel
 

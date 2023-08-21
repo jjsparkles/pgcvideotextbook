@@ -4,11 +4,19 @@ title: "Chapter 1: Introduction"
 
 ------------------------------------------------------------------------
 
+> *Chapter goals:*
+>
+> 1.  *Gain a basic understanding of psychiatric genetics and genome-wide association studies.*
+>
+> 2.  *Understand the recent history of psychiatric genetics.*
+>
+> 3.  *Gain insight into the current state of psychiatric disorder research.*
+
 ## 1.1 What are psychiatric disorders? {#sec-section1}
 
-**Title**: Psychiatric Disorders
+> A very brief overview of Psychiatric disorder genetics.
 
-**Description**: A very brief overview of Psychiatric disorder genetics.
+**Title**: Psychiatric Disorders
 
 **Presenter(s)**: Broad Institute
 
@@ -27,9 +35,9 @@ Link to video transcript [here](chapter1.1_transcript.qmd).
 
 ## 1.2 Epidemiology {#sec-section2}
 
-**Title**: What is a genome-wide association study?
+> A brief overview of genome-wide association studies and genetic epidemiology.
 
-**Description**: A brief overview of genome-wide association studies.
+**Title**: What is a genome-wide association study?
 
 **Presenter(s)**: Till Andlauer
 
@@ -48,9 +56,11 @@ Link to video transcript [here](chapter1.2_transcript.qmd).
 
 ## 1.3 History {#sec-section3}
 
-**Title**: History of Psychiatric Genetics (Part 1)
+> A brief overview of some of the prominent players in psychiatry and psychiatric genetics, starting from the late 1700s through the mid-1900s. Part 1 highlights the work of Robert Burton, Prosper Lucas, Jenny Koller, Ernst Rüdin, and Eugen Bleuler, and discusses the darker periods of the history of psychiatric genetics during the late 1920's and 1930's.
+>
+> Part 2 is a deeper dive into a single episode in the history of Psychiatry: "The Beginnings of the Debate Between the Mendelians and the Biometricians in Psychiatric Genetics", focusing on four individuals: David Heron, Karl Pearson, Aaron Rosanoff, and Charles Davenport during 1913 to 1914.
 
-**Description**: A brief overview of some of the prominent players in psychiatry and psychiatric genetics, starting from the late 1700s through the mid-1900s.
+**Title**: History of Psychiatric Genetics (Part 1)
 
 **Presenter(s)**: Ken Kendler
 
@@ -67,8 +77,6 @@ Link to video transcript [here](chapter1.3_transcript.qmd#sec-part1).
 
 **Title**: History of Psychiatric Genetics (Part 2)
 
-**Description**: A deeper dive into a single episode in the history of Psychiatry: "The Beginnings of the Debate Between the Mendelians and the Biometricians in Psychiatric Genetics", focusing on four individuals: David Heron, Karl Pearson, Aaron Rosanoff, and Charles Davenport during 1913 to 1914.
-
 **Presenter(s)**: Ken Kendler
 
 **Length**: 43:41
@@ -84,7 +92,7 @@ Link to video transcript [here](chapter1.3_transcript.qmd#sec-part2).
 
 ## 1.4 Psychiatric genomics: State-of-the-science {#sec-section4}
 
-Below are state-of-the-science videos/papers for psychiatric disorders, which were recorded for the PGC by early career researchers, with accompanying papers in Psychological Medicine (Vol 51, issue 13). Alzheimer and Suicidal behaviour videos recorded separately.
+> The current state of psychiatric research. Below are state-of-the-science videos/papers for psychiatric disorders, which were recorded for the PGC by early career researchers, with accompanying papers in Psychological Medicine (Vol 51, issue 13).
 
 ### The Psychiatric Genomics Consortium
 

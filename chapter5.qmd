@@ -2,23 +2,23 @@
 title: "Chapter 5: GWAS analysis"
 ---
 
-------------------------------------------------------------------------
+Chapter goals:
 
 # 5.1 Quality Control {#sec-section1}
 
-Goals of this section:
+*Goals of this section:*
 
-> 1.  Understand the basis of genotyping quality control and why it is important.
+> 1.  *Understand the basis of genotyping quality control and why it is important.*
 >
-> 2.  Understand the basic pre-imputation quality control steps (missingness, Hardy-Weinberg outliers, heterozygosity, relatedness, population stratification).
+> 2.  *Understand the basic pre-imputation quality control steps (missingness, Hardy-Weinberg outliers, heterozygosity, relatedness, population stratification).*
 >
-> 3.  Understand various considerations for each step of quality control, based on your data.
+> 3.  *Understand various considerations for each step of quality control, based on your data.*
+>
+> The first video by Drs. Grasby and Colodro Conde provides a brief introduction to the logic of the steps of QC (how genetic data are generated for subsequent QC, briefly what each step of the QC does, and why these steps are useful and necessary for future analyses of cleaned-up data. The second video by Dr. Coleman is a nice QC guide which provides overviews of dealing with missingness, relatedness, and population stratification. The third video from Dr. Demirkan provides key steps of QC for the GWAS data, similar to the first two videos, but it additionally discusses steps of quality controlling imputed data and factors affecting imputation (starting at 25:57).
 
 ## Quality control: Introduction
 
 **Title**: Quality control
-
-**Description**: This video provides a brief introduction to the logic of the steps of QC (how genetic data are generated for subsequent QC, briefly what each step of the QC does, and why these steps are useful and necessary for future analyses of cleaned-up data)
 
 **Presenter(s)**: Katrina Grasby (katrina.grasby\@qimrberghofer.edu.au) and Lucía Colodro Conde (Lucia.ColodroConde\@qimrberghofer.edu.au), from the 2021 International Statistical Genetics Workshop hosted by the Institute for Behavioral Genetics at the University of Colorado, Boulder.
 
@@ -39,8 +39,6 @@ Link to video transcript [here](chapter5.1_transcript.qmd#sec-video1).
 
 **Title**: How to run Quality Control on Genome-Wide Genotyping Data
 
-**Description**: Another nice QC guide which provides overviews of dealing with missingness, relatedness, and population stratification.
-
 **Presenter(s)**: Jonathan Coleman (jonathan.coleman\@kcl.ac.uk)
 
 **Level**: Beginner friendly
@@ -60,8 +58,6 @@ Link to video transcript [here](chapter5.1_transcript.qmd#sec-video2).
 
 **Title**: Considerations for genotyping, quality control, and imputation in GWAS
 
-**Description**: This video provides key steps of QC for the GWAS data, similarly to videos above, but it additionally discusses steps of quality controlling imputed data and factors affecting imputation (starting at 25:57)
-
 **Author**: Ayşe Demirkan (a.demirkan\@surrey.ac.uk)
 
 **Level**: Beginner friendly
@@ -79,15 +75,17 @@ Link to video transcript [here](chapter5.1_transcript.qmd#sec-video3).
 
 # 5.2 Imputation {#sec-section2}
 
-Goals of this section:
+*Goals of this section:*
 
-> 1.  Be
+> 1.  *Understand what imputation is and why it is important for genotyping*
+> 2.  *Understand the steps of imputation, including the concept of phasing, reference panels, imputation servers, and imputation accuracy parameters.*
+> 3.  *Understand some of the math behind imputation.*
+>
+> The first video by Dr. Mészáros gives an introduction to haplotypes and imputation and explains the concepts of phasing and imputation in an easily understandable way. The second video by Dr. Sarah Medland talks about the steps needed for imputation, including the imputation reference panels, common software for phasing and imputation, imputation servers, content in the output files from imputation, and brief explanation of imputation accuracy parameters (r2 or INFO). The third video by Dr. Browning discusses the details and math behind imputation: for example, why choose to perform imputation when you can sequence, as well as the Hidden Markov Model for imputation. Note: The imputation-related content ends at 32:07. After this, the speaker talks about best programming practices.
 
 ## Imputation Introduction
 
 **Title**: Haplotypes and Imputation
-
-**Description**: Introduction to haplotypes and imputation. This video explains the concepts of phasing and imputation in an easily understandable way.
 
 **Presenter(s)**: Dr. Gábor Mészáros, University of Natural Resources and Life Sciences, Vienna.
 
@@ -106,9 +104,7 @@ Link to video transcript [here](chapter5.2_transcript.qmd#sec-video1).
 
 ## Imputation Steps
 
-**Title**: Imputation
-
-**Description**: This video talks about the steps needed for imputation, including the imputation reference panels, common softwares for phasing and imputation, imputation servers, content in the output files from imputation, and brief explanation of imputation accuracy parameters (r2 or INFO).\
+**Title**: Imputation\
 \
 **Presenter(s)**: Dr. Sarah Medland, Queensland Institute of Medical Research.
 
@@ -128,8 +124,6 @@ Link to video transcript [here](chapter5.2_transcript.qmd#sec-video2).
 ## Imputation Deep-Dive
 
 **Title**: An Introduction to Genotype Imputation
-
-**Description**: This video talks about the details and math behind imputation, for example, why choosing imputation when you can sequence, as well as the Hidden Markov Model for imputation. *Note*: The imputation-related content ends at 32:07. After this, the speaker talks about best programming practice.
 
 **Presenter(s):** Dr. Brian Browning, University of Washington.
 
@@ -156,8 +150,6 @@ Goals of this section:
 
 **Title**: Biometrical Model and Basic Statistics
 
-**Decription**: This video presents an overview of a biometrical model.
-
 **Presenter(s)**: Benjamin Neale (bneale\@partners.org)
 
 **Level**: Beginner friendly
@@ -176,8 +168,6 @@ Link to video transcript [here](chapter5.3_transcript.qmd#sec-video1).
 ## Hypothesis Testing, Effect Sizes, and Statistical Power
 
 **Title**: Hypothesis Testing, Effect Sizes, and Statistical Power
-
-**Description**: An introduction to association testing, effect sizes, statistical power, and how to calculate power
 
 **Presenter(s)**: Brad Verhulst: bverhulst\@vcu.edu
 

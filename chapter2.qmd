@@ -2,13 +2,19 @@
 title: "Chapter 2: The Genome"
 ---
 
-------------------------------------------------------------------------
+> *Chapter goals:*
+>
+> 1.  *Become familiar with the basic structure and organization of the genome and how it is regulated.*
+>
+> 2.  *Understand types of genetic variation and the role that genetic variation, and natural selection plays in populations.*
+>
+> 3.  *Understand the concept of linkage disequilibrium, including an overview of more advanced techniques for measuring this.*
 
 ## 2.1 Organization of the genome {#sec-section1}
 
-**Title**: An Introduction to the Human Genome
+> The following video gives a brief overview of the human genome: What is DNA? How is DNA organized? How is DNA regulated? What are genes?
 
-**Description**: A brief overview of the human genome: What is DNA? How is DNA organized? How is DNA regulated? What are genes?
+**Title**: An Introduction to the Human Genome
 
 **Presenter(s)**: HMX Genetics, Harvard University
 
@@ -25,9 +31,9 @@ Link to video transcript [here](chapter2.1_transcript.qmd).
 
 ## 2.2 Genetic variation {#sec-section2}
 
-**Title**: Genetic Variation and Mutation
+> This section introduces a brief overview on genetic variation: Single Nucleotide Polymorphisms (SNPs) and Copy Number Variants (CNVs).
 
-**Description**: A brief overview on genetic variation (SNPs, CNVs)
+**Title**: Genetic Variation and Mutation
 
 **Presenter(s)**: Precision Health
 
@@ -44,11 +50,11 @@ Link to video transcript [here](chapter2.2_transcript.qmd).
 
 ## 2.3 Evolutionary signatures {#sec-section3}
 
+> This section describes how genetic variation is introduced into populations. The first video gives a brief overview of the different events that can occur to introduce genetic variation, including mutations, crossing over, independent assortment, and random fertilization. The second video gives a greater in-depth look at genetic variation introduced through natural selection and gives the specifics of those selection processes.
+
 ### Origins of Genetic Variation
 
 **Title**: Origins of Genetic Variation
-
-**Description**: A brief overview on genetic variation (SNPs, CNVs)
 
 **Presenter(s)**: Jessica Pamment, Professor, DePaul University
 
@@ -67,8 +73,6 @@ Link to video transcript [here](chapter2.3_transcript.qmd#sec-origins).
 
 **Title**: MPG Primer: Natural selection & human genetic variation
 
-**Description**: A brief overview on genetic variation (SNPs, CNVs)
-
 **Presenter(s)**: Stephen Schaffner, Computational Biologist, Broad Institute
 
 **Length**: 54:09
@@ -84,11 +88,11 @@ Link to video transcript [here](chapter2.3_transcript.qmd#sec-selection).
 
 ## 2.4 Linkage disequilibrium {#sec-section4}
 
+> This section dives deep into the concept of linkage disequilibrium: what it is, how it affects and why it is important to genetics and genetic analyses, advanced methods of calculating linkage disequilibrium, and the different types of LD measures.
+
 ### What is linkage disequilibrium?
 
 **Title**: What is linkage disequilibrium?
-
-**Description**:
 
 **Presenter(s)**: Gábor Mészáros, PhD
 
