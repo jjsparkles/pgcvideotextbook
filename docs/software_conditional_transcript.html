@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>PGC Video Textbook - Conditional Analysis</title>
+<title>PGC Video Textbook - Software Tutorials: Conditional Analysis (Video Transcript)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -58,7 +58,6 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
-<link href="site_libs/vembedr-0.1.5/css/vembedr.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="styles.css">
@@ -109,7 +108,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./software_cnvs.html">Software Tutorials</a></li><li class="breadcrumb-item"><a href="./software_conditional.html">Conditional Analysis</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Software Tutorials: Conditional Analysis (Video Transcript)</li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -251,7 +250,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./software_conditional.html" class="sidebar-item-text sidebar-link active">
+  <a href="./software_conditional.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Conditional Analysis</span></a>
   </div>
 </li>
@@ -362,7 +361,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#mtcojo" id="toc-mtcojo" class="nav-link active" data-scroll-target="#mtcojo">mtCOJO</a></li>
+  <li><a href="#sec-video1" id="toc-sec-video1" class="nav-link active" data-scroll-target="#sec-video1">mtCOJO</a></li>
   </ul>
 </nav>
     </div>
@@ -371,7 +370,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Conditional Analysis</h1>
+<h1 class="title">Software Tutorials: Conditional Analysis (Video Transcript)</h1>
 </div>
 
 
@@ -386,23 +385,30 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="mtcojo" class="level1">
+<section id="sec-video1" class="level1">
 <h1>mtCOJO</h1>
 <p><strong>Title</strong>: How to perform mtCOJO</p>
 <p><strong>Presenter(s)</strong>: Zhihong Zhu</p>
-<p><strong>Level</strong>: Intermediate</p>
-<p><strong>Length</strong>: 14:51</p>
-<div class="cell">
-<div class="cell-output-display">
-<div class="vembedr">
-<div>
-<iframe src="https://www.youtube.com/embed/bkHvJ3fTew0" width="533" height="300" frameborder="0" allowfullscreen="" data-external="1"></iframe>
-</div>
-</div>
-</div>
-</div>
-<p>Link to video transcript <a href="./software_conditional_transcript.html#sec-video1">here</a>.</p>
-<p>Link to <a href="https://yanglab.westlake.edu.cn/software/gcta/#mtCOJO">mtCOJO website</a>.</p>
+<p><strong>Zhihong Zhu</strong>:</p>
+<p>Hi everyone, I’m Zhihong Zhu. Today, I’m going to talk about how to perform mtCOJO. In observational studies, we can directly measure relationships between traits. For example, people with schizophrenia have low levels of vitamin D, which has led to hypotheses that low vitamin D is a risk factor for psychiatric disorders. But this is very difficult to test.</p>
+<p>Mendelian randomization provides a way to test for causality using GWAS results from the putative causal trait and from the outcome. However, in testing these relationships, we may wish to account for other confounding factors. If we had individual-level data, we could account for confounding factors through their inclusion as covariates. mtCOJO is a method that allows us to condition on confounding factors when we only have GWAS summary statistics. The conditional GWAS allows us to investigate causal relationships free from the bias of confounding factors.</p>
+<p>As I mentioned, accounting for confounding factors can be achieved by their inclusion as covariates. Due to the stringent assumptions of Mendelian Randomization methods, it is not straightforward to fit genetic variables jointly. Instead, we can achieve our goal by a two-step approach. The first step is to adjust both focal traits and risk factor for covariates. The second step is to investigate the causality. The estimated causal relationship is then free of confounding with covariates. The mtCOJO estimates causal effects of covariates on focal traits and the risk factors, and then performs conditional Mendelian randomization on those traits. The Mendelian randomization method uses genetic summary statistics, which can be from a single cohort or multiple studies. Let me talk about some details of mtCOJO.</p>
+<p>The first step of mtCOJO is to estimate the causal effects of covariates on focal traits and the risk factors. This step is conducted by GSMR, a Mendelian randomization method which has similar concepts to randomized controlled trials, the gold standard to test for causality. The GSMR method uses SNPs as instruments to test the causal effect, taking the correlation between SNPs into account. Pleiotropic SNPs for two traits commonly effect causal relationships between two traits. The GSMR method excludes those pleiotropic SNPs which have effect sizes that deviates the relationship at causal SNPs. The GSMR method is highly robust and investigates causality, and the causal effect is unbiased in the presence of non-genetic factors. Because of this, the mtCOJO result is free of bias. The GSMR method uses multiple SNP instruments, therefore, we need to incorporate the correlation between SNPs. So we need a cohort with individual-level data to provide an LD reference.</p>
+<p>The second step of mtCOJO is to conduct the conditional GWAS. We derived the formula to estimate the conditional effects, as shown in the equation. The effects of SNPs are directly from GWAS studies. The mtCOJO effects also need estimates from LD score regression analysis. Due to the limited time, I will not describe the details here. We compare the mtCOJO result to the traditional method if we have individual-level data. The two results are identical. Furthermore, mtCOJO accounts for distinctive sample sizes and overlapping individuals when there are multiple GWAS studies. Lastly, the mtCOJO method is free from bias. I will talk about it in detail.</p>
+<p>The mtCOJO method is free of bias. There are two sources of bias: environmental and genetic factors. Suppose a covariate does not have a direct effect on focal traits. We may still be able to observe an association between covariate and focal traits because of non-genetic and genetic factors. So when we perform GWAS of focal traits conditioned on covariates with observed data, we are likely to detect spurious GWAS hits. mtCOJO can address these issues. Firstly, mtCOJO can unbias-ly estimate the effect of covariates on focal traits in the presence of non-genetic factors. Secondly, because of the causal effect, mtCOJO is free of pleiotropic effects. In general, the mtCOJO method is free of bias.</p>
+<p>The mtCOJO method has been implemented in software that is free to download and easy to use. The mtCOJO software only needs GWAS summary statistics. The command for mtCOJO is very simple; press enter and the analysis will be finished in a few minutes. This is the link to the mtCOJO webpage. When you open the page, you can easily find the commands.</p>
+<p>To perform the mtCOJO analyses, we will need GWAS summary statistic, an LD reference sample and LD scores.</p>
+<p>Today, I will use the GWAS of vitamin D conditioned on BMI as an example. In this example, firstly, we will need the original GWASs of vitamin D and BMI.</p>
+<p><em>GWAS summary statistics in mtCOJO format</em>: There are eight columns in the mtCOJO format file. The first row is the header. The mtCOJO will use the SNP ID column to match the GWAS summary stats with LD reference. The SNPs which are not matched will be excluded. The allele frequency is the one of the effect allele A1. Likewise, the effect of SNP beta is that of the effect allele A1. So please double-check the SNP ID, A1, A2, allele frequency, and beta before performing your mtCOJO analysis.</p>
+<p>Secondly, we need our LD reference sample. If we have the cohort where we performed the GWAS, we can simply use the subset of the GWAS cohort as an LD reference. Usually, the GWAS cohort is not available, so we need a cohort of the same ancestry as the GWAS cohort. We recommend using a relatively large cohort. When the LD reference sample is large, the LDs in the LD reference are likely to be consistent with the GWAS cohort. In the demonstration, we will use a cohort with 10,000 individuals as LD reference. The genotypes of the LD reference sample are saved in PLINK binary format. Thirdly, we will download the LD scores from LDSC GitHub.</p>
+<p>Now let’s perform the mtCOJO analysis of vitamin D together. We will download the software and the datasets used in the analysis: the GCTA software, the GWAS summary stats of the focal trait, vitamin D, and the covariate BMI, the LD reference sample, and LD scores.</p>
+<p>When all the datasets are ready, we can perform the mtCOJO analysis of vitamin D. Now the datasets are ready, let’s have a look. This is the original GWAS of vitamin D in mtCOJO format. This is the GWAS of BMI in mtCOJO format. We create a list of GWAS summary stats for the mtCOJO analysis. The first row is the focal trait, vitamin D. The next rows are the covariates. We only have a single covariate, BMI. If there are multiple covariates, you can simply add them into the list. This is the LD reference sample in PLINK binary format. These are the LD scores for 22 chromosomes. The LD scores are downloaded from LDSC GitHub.</p>
+<p>When all the datasets are ready, we can perform the mtCOJO analysis. The command is very simple. Copy the command and press enter. Then, mtCOJO analysis starts.</p>
+<p>Now the mtCOJO analysis is finished. It is very quick, only around three minutes. The mtCOJO analysis uses the causal effect of BMI on vitamin D. The estimated causal effect is free of bias; therefore, it is less likely that the mtCOJO caused spurious conditional GWAS hits.</p>
+<p>Let’s have a look at the mtCOJO results. The “.mtcojo.cma” file contains the original GWAS estimates of vitamin D and the GWAS estimates as adjusted for BMI. The first eight columns are the original GWAS estimates, and the last three columns are the GWAS estimates of vitamin D adjusted for BMI.</p>
+<p>We plot the conditional GWAS results of vitamin D. There are more than 100 significant loci in the conditional GWAS. Those loci are vitamin D-specific and free of confounding with BMI.</p>
+<p>Likewise, we perform the mtCOJO analysis for schizophrenia conditional on BMI, and then conduct the GSMR analysis to test for causality. Conditioned on BMI, the association between vitamin D and schizophrenia remains significant.</p>
+<p>Take-home message: mtCOJO has easy-to-use software; just a simple command and press enter. It only uses GWAS summary statistics, and the mtCOJO method is free of bias. These are the references of mtCOJO analysis in the demonstration. I would like to thank my supervisors, Naomi [Wray], Peter [Visscher], and Jian [Yang], who supervised me and helped me with tasks. I would also like to thank Joana [Revez], Naomi [Wray], and John [McGrath], who offered me a quick example of mtCOJO analysis. Finally, I will give special acknowledgments to all PGC group members and collaborators who worked on these projects. Thanks for watching.</p>
 
 
 </section>

@@ -6,8 +6,6 @@ title: "Conditional Analysis"
 
 **Title**: How to perform mtCOJO
 
-**Description**:
-
 **Presenter(s)**: Zhihong Zhu
 
 **Level**: Intermediate
@@ -18,3 +16,7 @@ title: "Conditional Analysis"
 library("vembedr")
 embed_url("https://www.youtube.com/watch?v=bkHvJ3fTew0")
 ```
+
+Link to video transcript [here](software_conditional_transcript.qmd#sec-video1).
+
+Link to [mtCOJO website](https://yanglab.westlake.edu.cn/software/gcta/#mtCOJO).
