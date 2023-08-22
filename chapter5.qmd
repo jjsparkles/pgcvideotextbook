@@ -192,8 +192,6 @@ Goals of this section:
 
 **Title**: Genome-wide association study design and interpretation
 
-**Description**:
-
 **Presenter(s)**: Gina Peloso, Broad Institute
 
 **Level**:

@@ -4,21 +4,21 @@ title: "Chapter 6: Polygenic Scores"
 
 ------------------------------------------------------------------------
 
-# 6.1 Polygenic Risk Scores
+# Polygenic Risk Scores
 
-Goals of this section:
+*Chapter goals:*
 
-> 1.  Understand "what is a polygenic risk score?"
+> 1.  *Understand "what is a polygenic risk score?"*
 >
-> 2.  Understand the basic principals of calculating polygenic risk scores
+> 2.  *Understand the basic principals of calculating polygenic risk scores*
 >
-> 3.  Understand different polygenic risk scoring methods, their benefits, and pitfalls.
+> 3.  *Understand different polygenic risk scoring methods, their benefits, and pitfalls.*
 
-## Polygenic Risk Scores: Introduction
+## 6.1 Polygenic Risk Scores: Introduction
+
+> The goal of this section is to give a general introduction into the purpose of polygenic risk scores (PRS) and how they are calculated for populations. The first video from the Center for Personalized Medicine describes what a polygenic risk score is and a broad idea of its applications. The second video from Dr. Andlauer expands upon this introduction by introducing the concepts of LD clumping and thresholding when calculating PRS.
 
 **Title**: Polygenic Risk Scores
-
-**Description**: Polygenic risk scores in a nutshell. This video is designed to explain PRS to a lay audience and answers the question why we care about PRS and what we could do with the knowledge of PRS to improve human health.
 
 **Presenter(s)**: Center for Personalized Medicine, Oxford University
 
@@ -37,8 +37,6 @@ Link to video transcript [here](chapter6.1_transcript.qmd#sec-video1).
 
 **Title**: Polygenic Risk Scores
 
-**Description**: Introduction to polygenic risk scores. This video explains how to calculate PRS and how to interpret PRS in a clear and easily understandable way.
-
 **Presenter(s)**: Till Andlauer
 
 **Level**: Beginner friendly
@@ -54,11 +52,11 @@ Link to video transcript [here](chapter6.1_transcript.qmd#sec-video2).
 
 ------------------------------------------------------------------------
 
-## Polygenic Risk Scores: In detail
+## 6.2 Polygenic Risk Scores: In detail
+
+> This video by Dr. Campos gives a more detailed look into how PRS are calculated and considerations for running PRS analyses, including a brief introduction and description of LDPred2 software for calculating PRS.
 
 **Title**: Polygenic risk scores
-
-**Description**: A more detailed introduction to polygenic risk scores
 
 **Presenter(s)**: Adrian Campos, Adrian.Campos\@qimrberghofer.edu.au
 
@@ -75,11 +73,11 @@ Link to video transcript [here](chapter6.1_transcript.qmd#sec-video3).
 
 ------------------------------------------------------------------------
 
-## Polygenic Scoring Methods
+## 6.3 Polygenic Scoring Methods
+
+> The following two videos explain different methods of calculating PRS and evaluate their performance. The first video by Dr. Pain compares different available PRS methods on their performance and required computational time (ends at 12:30) in the UK Biobank. Towards the end, Dr. Pain introduces their new software to calculate standardized individual polygenic risk score based on genetic ancestry. In the second video, Dr. Ni compares different PRS methods on their performance in the cohorts in the Psychiatric Genomics Consortium (i.e., schizophrenia cohorts). Dr. Ni gives toy examples to explain the different parameters they used to evaluate how well each PRS method performed.
 
 **Title**: Polygenic Scoring Methods: Comparison and Implementation
-
-**Description**: Comparison of different PRS methods I. This video compares different available PRS methods on their performance and required computational time (ends at 12:30) in the UK Biobank. Towards the end, Dr. Pain introduces their new software to calculate standardized individual polygenic risk score based on genetic ancestry.
 
 **Presenter(s)**: Oliver Pain
 
@@ -97,8 +95,6 @@ Link to video transcript [here](chapter6.1_transcript.qmd#sec-video4).
 ------------------------------------------------------------------------
 
 **Title**: Polygenic risk scores: PGS comparison
-
-**Description**: This is another video comparing different PRS methods on their performance in the cohorts in the Psychiatric Genomics Consortium (i.e., schizophrenia cohorts). Dr. Ni gives toy examples to explain the different parameters they used to evaluate how well each PRS method performed.
 
 **Presenter(s)**: Guiyan Ni
 

@@ -2,9 +2,7 @@
 title: "Chapter 8.6: Quantitative Trait Loci (Video Transcript)"
 ---
 
-# General Introduction to GWAS Studies and eQTL Analysis
-
-## GWAS Studies and eQTL Analysis {#sec-video1}
+# GWAS Studies and eQTL Analysis {#sec-video1}
 
 **Presenter(s)**: Xiaole Shirley Liu
 
@@ -44,13 +42,7 @@ Yeah, so that's kind of the summary. In the genome, there are SNPs, they are oft
 
 ------------------------------------------------------------------------
 
-# Expression Quantitative Trait loci (eQTLs)
-
-## Introduction to expression quantitative trait loci
-
-------------------------------------------------------------------------
-
-### MPG Primer {#sec-video2}
+# MPG Primer: Introduction to expression quantitative trait loci {#sec-video2}
 
 **TItle**: MPG Primer: Introduction to expression quantitative trait loci (2021).
 
@@ -152,7 +144,7 @@ I'll just end here with the slide containing different resources to follow up on
 
 ------------------------------------------------------------------------
 
-### eQTLs, genes, and molecular networks {#sec-video3}
+# eQTLs, genes, and molecular networks {#sec-video3}
 
 **Title**: Introduction to expression (e)QTL & their role in connecting QTL to genes and molecular networks.
 

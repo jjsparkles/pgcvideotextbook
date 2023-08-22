@@ -130,7 +130,7 @@ Link to video transcript [here](chapter1.4_transcript.qmd#sec-adhd).
 
 ### *Alzheimer's Disease*
 
-See @sec-dementia
+See [Dementia](chapter1.qmd#sec-dementia)
 
 ------------------------------------------------------------------------
 

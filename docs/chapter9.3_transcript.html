@@ -361,18 +361,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#genomic-sem-introduction" id="toc-genomic-sem-introduction" class="nav-link active" data-scroll-target="#genomic-sem-introduction">Genomic SEM Introduction</a>
-  <ul class="collapse">
-  <li><a href="#sec-video1" id="toc-sec-video1" class="nav-link" data-scroll-target="#sec-video1">Genomic Structural Equation Modeling: A Brief Introduction</a></li>
-  </ul></li>
-  <li><a href="#running-genomic-sem" id="toc-running-genomic-sem" class="nav-link" data-scroll-target="#running-genomic-sem">Running Genomic SEM</a>
-  <ul class="collapse">
+  <li><a href="#sec-video1" id="toc-sec-video1" class="nav-link active" data-scroll-target="#sec-video1">Genomic Structural Equation Modeling: A Brief Introduction</a></li>
   <li><a href="#sec-video2" id="toc-sec-video2" class="nav-link" data-scroll-target="#sec-video2">Short Primer on Structural Equation Modeling (SEM) in Lavaan</a></li>
   <li><a href="#sec-video3" id="toc-sec-video3" class="nav-link" data-scroll-target="#sec-video3">GenomicSEM: Input</a></li>
-  <li><a href="#examples-on-the-genomic-sem-wiki" id="toc-examples-on-the-genomic-sem-wiki" class="nav-link" data-scroll-target="#examples-on-the-genomic-sem-wiki">Examples on the Genomic SEM wiki</a></li>
+  <li><a href="#sec-video4" id="toc-sec-video4" class="nav-link" data-scroll-target="#sec-video4">Examples on the Genomic SEM wiki</a></li>
   <li><a href="#sec-video5" id="toc-sec-video5" class="nav-link" data-scroll-target="#sec-video5">Multivariate GWAS in Genomic SEM</a></li>
   <li><a href="#sec-video6" id="toc-sec-video6" class="nav-link" data-scroll-target="#sec-video6">Using Genomic SEM to Understand Psychiatric Comorbidity</a></li>
-  </ul></li>
   </ul>
 </nav>
     </div>
@@ -397,10 +391,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <hr>
-<section id="genomic-sem-introduction" class="level1">
-<h1>Genomic SEM Introduction</h1>
-<section id="sec-video1" class="level2">
-<h2 class="anchored" data-anchor-id="sec-video1">Genomic Structural Equation Modeling: A Brief Introduction</h2>
+<section id="sec-video1" class="level1">
+<h1>Genomic Structural Equation Modeling: A Brief Introduction</h1>
 <p><strong>Title</strong>: Genomic Structural Equation Modeling: A Brief Introduction</p>
 <p><strong>Presenter(s)</strong>: Andrew Grotzinger</p>
 <p><em>Introduction</em></p>
@@ -426,12 +418,8 @@ ul.task-list li input[type="checkbox"] {
 <p>This final slide is just to highlight the different ways in which genomic SEM has been used. Including some work that I’ve been involved in, but also works from other outside research groups that are published in high-impact journals, like Molecular Psychiatry, Nature Genetics, Cell, and Nature Human Behavior. I really hope that some of you see some opportunity to use genomic SEM in your own research. In the next videos, we’ll talk more about how structural equation modeling works and provide some hands-on examples of how to apply genomic SEM to actual genetic summary data.</p>
 <hr>
 </section>
-</section>
-<section id="running-genomic-sem" class="level1">
-<h1>Running Genomic SEM</h1>
-<hr>
-<section id="sec-video2" class="level2">
-<h2 class="anchored" data-anchor-id="sec-video2">Short Primer on Structural Equation Modeling (SEM) in Lavaan</h2>
+<section id="sec-video2" class="level1">
+<h1>Short Primer on Structural Equation Modeling (SEM) in Lavaan</h1>
 <p><strong>Title</strong>: Short Primer on Structural Equation Modeling (SEM) in Lavaan</p>
 <p><strong>Presenter(s)</strong>: Andrew Grotzinger</p>
 <p>In this video, we’re going to talk about some of the basics of structural equation modeling and more specifically how to do&nbsp; structural equation modeling and Lavaan which is the art package that genomic SEM uses to estimate the models.</p>
@@ -449,8 +437,8 @@ ul.task-list li input[type="checkbox"] {
 <p>What genomic SEM does is it uses the principles of structural equation modeling to fit a model to the genetic covariance matrix. So it’s a two-stage process where in stage one, that genetics covariance matrix and its associated matrix of standard errors and their co-dependencies are estimated where we specifically use LD score regression and stage two, we fit that structural equation model to the matrices from stage one using Lavaan and the basic principles of structural equation modeling. I know this was a fairly brief overview, but hopefully it provided the basic notation to use Lavaan syntax and understand a little bit about what the SEM process looks like. And so in the next talk, we’ll go over how it is that we actually estimate this genetic covariance matrix and that set of standard errors.</p>
 <hr>
 </section>
-<section id="sec-video3" class="level2">
-<h2 class="anchored" data-anchor-id="sec-video3">GenomicSEM: Input</h2>
+<section id="sec-video3" class="level1">
+<h1>GenomicSEM: Input</h1>
 <p><strong>Title</strong>: GenomicSEM: Input/Explaining how S and V are estimated and what they are</p>
 <p><strong>Presenter(s)</strong>: Michel Nivard</p>
 <p>What goes into genomic SEM before you can actually fit a structural equation model. So it’s basically a class on how the sausage&nbsp; is made, right? So some of these things are details that are good as background, Good for you to understand, once you use genomic SEM. But basically stuff that’s largely handled by internal functions of genomic SEM. So it means you don’t have to do anything like this by hand. And to discuss what goes into genomic SEM, it’s good to discuss two other things. Namely, what kind of information goes into a structural equation model in general? Right. You can use raw data, but you could also use the covariance matrix of the raw data to fit the structural equation model or a regression model, as we’ll see in the example. And it’s good to discuss what LD score regression is exactly. It’s a very commonly used technique to estimate genetic co-variance and or heritability. And it actually is one of the main ways genomic SEM can estimate from raw GWAS data. So raw, summary statistics, the genetic covariance between traits and the heritabilities, which you can then use to fit a structural equation model too. Okay.</p>
@@ -478,8 +466,8 @@ ul.task-list li input[type="checkbox"] {
 <p>Now that sounds really hard and complex and computationally it is luckily others have solved the wonders of how to compute this for us. And so we can very easily implement it. Let me just show you in a browser how is this done in genomic SEM. It’s in the Wiki page of the genomic SEM GitHub Chapter 3: models without individual SNP effects. And it basically starts by preparing the GWAS summary data we get, which is couple of lines of code. Right, which gets us like the summary statistics in a standardized format. So LD score will know how to read them. And then after that’s done all, we need to tell LD score regression within genomic SEM is where to find, in this case, the summary statistics for psychiatric diseases, what the sample prevalence is of these diseases are in the respective GWASes, what the population prevalence of the traits are in the population, where it can find these LD scores I’ve been discussing, and&nbsp; what I want my traits to be named. And then I just run the function “ldsc()” and everything we just discussed, the estimating of S, the estimating of V is done automatically, and it’s stored in an object, which you can then use to start running genomic SEM models. It also means you don’t need to rerun all those steps. You can store the object, you created, so you don’t need to rerun LD score all the time.&nbsp; Okay. Thank you for joining us for this lecture And catch you in the next one.</p>
 <hr>
 </section>
-<section id="examples-on-the-genomic-sem-wiki" class="level2">
-<h2 class="anchored" data-anchor-id="examples-on-the-genomic-sem-wiki">Examples on the Genomic SEM wiki</h2>
+<section id="sec-video4" class="level1">
+<h1>Examples on the Genomic SEM wiki</h1>
 <p><strong>Title</strong>: Working through examples on the Genomic SEM wiki one by one: munge, ldsc, usermodel functions</p>
 <p><strong>Presenter(s)</strong>: Michel Nivard</p>
 <p><strong>Michel</strong>:</p>
@@ -509,8 +497,8 @@ ul.task-list li input[type="checkbox"] {
 <p>So the last bit of this video went a bit chaotic, but that’s what you get if you ad hoc try to fit a new model. You can try to improve the model further or, yourself, you could consider whether there is still residual genetic correlation between schizophrenia and bipolar - maybe you removed the genetic residual correlation between anxiety and MDD. All kinds of things you can consider, and I encourage you to try. And some of those things we may introduce in live practicals in June. Thank you for watching and catch you in the next one.</p>
 <hr>
 </section>
-<section id="sec-video5" class="level2">
-<h2 class="anchored" data-anchor-id="sec-video5">Multivariate GWAS in Genomic SEM</h2>
+<section id="sec-video5" class="level1">
+<h1>Multivariate GWAS in Genomic SEM</h1>
 <p><strong>Title</strong>: Multivariate GWAS in Genomic SEM</p>
 <p><strong>Presenter(s)</strong>: Andrew Grotzinger</p>
 <p><strong>Andrew Grotzinger</strong>:</p>
@@ -545,8 +533,8 @@ ul.task-list li input[type="checkbox"] {
 <p>With that, I’ll just end here, and in the next videos, we’ll talk about some of the newer functionality available in genomic SEM, including the ability to examine multi-variate enrichment using what we call stratified genomic SEM.</p>
 <hr>
 </section>
-<section id="sec-video6" class="level2">
-<h2 class="anchored" data-anchor-id="sec-video6">Using Genomic SEM to Understand Psychiatric Comorbidity</h2>
+<section id="sec-video6" class="level1">
+<h1>Using Genomic SEM to Understand Psychiatric Comorbidity</h1>
 <p><strong>Title</strong>: Using Genomic SEM to Understand Psychiatric Comorbidity</p>
 <p><strong>Presenter(s)</strong>: Andrew Grotzinger</p>
 <p><strong>Jason Fletcher [Host]:</strong></p>
@@ -633,7 +621,6 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Andrew:</strong> Yeah, thanks, everyone. Really great questions, and it was a real privilege to present to you all.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

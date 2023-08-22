@@ -4,9 +4,7 @@ title: "Chapter 9.3: 9.3 Genomic Structural Equation Modeling (Video Transcript)
 
 ------------------------------------------------------------------------
 
-# Genomic SEM Introduction
-
-## Genomic Structural Equation Modeling: A Brief Introduction {#sec-video1}
+# Genomic Structural Equation Modeling: A Brief Introduction {#sec-video1}
 
 **Title**: Genomic Structural Equation Modeling: A Brief Introduction
 
@@ -56,11 +54,7 @@ This final slide is just to highlight the different ways in which genomic SEM ha
 
 ------------------------------------------------------------------------
 
-# Running Genomic SEM
-
-------------------------------------------------------------------------
-
-## Short Primer on Structural Equation Modeling (SEM) in Lavaan {#sec-video2}
+# Short Primer on Structural Equation Modeling (SEM) in Lavaan {#sec-video2}
 
 **Title**: Short Primer on Structural Equation Modeling (SEM) in Lavaan
 
@@ -94,7 +88,7 @@ What genomic SEM does is it uses the principles of structural equation modeling 
 
 ------------------------------------------------------------------------
 
-## GenomicSEM: Input {#sec-video3}
+# GenomicSEM: Input {#sec-video3}
 
 **Title**: GenomicSEM: Input/Explaining how S and V are estimated and what they are
 
@@ -148,7 +142,7 @@ Now that sounds really hard and complex and computationally it is luckily others
 
 ------------------------------------------------------------------------
 
-## Examples on the Genomic SEM wiki
+# Examples on the Genomic SEM wiki {#sec-video4}
 
 **Title**: Working through examples on the Genomic SEM wiki one by one: munge, ldsc, usermodel functions
 
@@ -206,7 +200,7 @@ So the last bit of this video went a bit chaotic, but that's what you get if you
 
 ------------------------------------------------------------------------
 
-## Multivariate GWAS in Genomic SEM {#sec-video5}
+# Multivariate GWAS in Genomic SEM {#sec-video5}
 
 **Title**: Multivariate GWAS in Genomic SEM
 
@@ -274,7 +268,7 @@ With that, I'll just end here, and in the next videos, we'll talk about some of 
 
 ------------------------------------------------------------------------
 
-## Using Genomic SEM to Understand Psychiatric Comorbidity {#sec-video6}
+# Using Genomic SEM to Understand Psychiatric Comorbidity {#sec-video6}
 
 **Title**: Using Genomic SEM to Understand Psychiatric Comorbidity
 

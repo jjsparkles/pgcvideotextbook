@@ -8,8 +8,6 @@ title: "Chapter 10: Other Considerations"
 
 **Title**: How does Genetics Affect our Mental Health?
 
-**Description**:
-
 **Presenter(s)**: Cathryn Lewis, Alex Curmi
 
 **Level**: Beginner
@@ -28,8 +26,6 @@ Link to video transcript [here](chapter10.1_transcript.qmd).
 # 10.2 Caution in Genetic Prediction {#sec-section2}
 
 **Title**: Predicting the likelihood of future psychiatric disorders: a closer look, and some cautions.
-
-**Description**:
 
 **Presenter(s)**: Howard Edenberg
 
@@ -50,8 +46,6 @@ Link to video transcript [here](chapter10.2_transcript.qmd).
 
 **Title**: Small effect sizes
 
-**Description**:
-
 **Presenter(s)**: Howard Edenberg
 
 **Level**: Beginner
@@ -70,8 +64,6 @@ Link to video transcript [here](chapter10.3_transcript.qmd).
 # 10.4 Language in Genetics Research {#sec-section4}
 
 **Title**:
-
-**Description**:
 
 **Presenter(s)**: Carina Seah, Kayla Townsley
 
@@ -95,8 +87,6 @@ Link to video transcript
 # 10.6 GDPR for Dummies: A Survival Guide for Genetics Research {#sec-section6}
 
 **Title**: GDPR for dummies: A survival guide for genetics research
-
-**Description**:
 
 **Presenter(s)**: Heidi Beate Bentzen
 

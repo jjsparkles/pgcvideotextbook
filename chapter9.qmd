@@ -6,13 +6,9 @@ title: "Chapter 9: Advanced Topics"
 
 # 9.1 Copy Number Variation {#sec-section1}
 
-Goals of this section:
-
-> 1.  
+This video by Dr. Howrigan
 
 **Title**: How to run Copy Number Variation (CNV) analysis
-
-**Description**: Explanation of the interaction term Part 1. This two-part short video series briefly describes how to use and interpret interaction terms.
 
 **Presenter(s)**: Daniel Howrigan, Broad Institute
 
@@ -31,13 +27,7 @@ Link to video transcript [here](chapter9.1_transcript.qmd).
 
 # 9.2 Mendelian Randomization {#sec-section2}
 
-Goals of this section:
-
-> 1.  
-
 **Title**: A two minute primer on Mendelian Randomization
-
-**Description**:
 
 **Presenter(s)**: George Davey Smith, TARG Bristol
 
@@ -56,15 +46,9 @@ Link to video transcript [here](chapter9.2_transcript.qmd).
 
 # 9.3 Genomic Structural Equation Modeling {#sec-section3}
 
-Goals of this section:
-
-> 1.  
-
-## Genomic SEM Introduction
+## 
 
 **Title**: Genomic Structural Equation Modeling: A Brief Introduction
-
-**Description**:
 
 **Presenter(s)**: Andrew Grotzinger
 
@@ -81,11 +65,7 @@ Link to video transcript [here](chapter9.3_transcript.qmd#sec-video1).
 
 ------------------------------------------------------------------------
 
-## Running Genomic SEM
-
 **Title**: Short Primer on Structural Equation Modeling (SEM) in Lavaan
-
-**Description**:
 
 **Presenter(s)**: Andrew Grotzinger
 
@@ -104,8 +84,6 @@ Link to video transcript [here](chapter9.3_transcript.qmd#sec-video2).
 
 **Title**: GenomicSEM: Input/Explaining how S and V are estimated and what they are
 
-**Description**:
-
 **Presenter(s)**: Michel Nivard
 
 **Level**: Intermediate
@@ -122,8 +100,6 @@ Link to video transcript [here](chapter9.3_transcript.qmd#sec-video3).
 ------------------------------------------------------------------------
 
 **Title**: Working through examples on the Genomic SEM wiki one by one: munge, ldsc, usermodel functions
-
-**Description**:
 
 **Presenter(s)**: Michel Nivard
 
@@ -144,8 +120,6 @@ Link to tutorial GitHub [here](https://github.com/GenomicSEM/GenomicSEM) and Wik
 
 **Title**: Multivariate GWAS in Genomic SEM
 
-**Description**:
-
 **Presenter(s)**: Andrew Grotzinger
 
 **Level**: Intermediate
@@ -162,8 +136,6 @@ Link to video transcript [here](chapter9.3_transcript.qmd#sec-video5).
 ------------------------------------------------------------------------
 
 **Title**: Using Genomic SEM to Understand Psychiatric Comorbidity
-
-**Description**:
 
 **Presenter(s)**: Andrew Grotzinger
 

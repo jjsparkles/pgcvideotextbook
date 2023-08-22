@@ -2,25 +2,15 @@
 title: "Chapter 8: Post-GWAS bioinformatics"
 ---
 
-------------------------------------------------------------------------
+Chapter goals:
 
 # 8.1 SNP Heritability {#sec-section1}
 
-### 
-
-> Goals of this section:
->
-> 1.  
-
-#### 
-
 **Title**: Heritability and SNP Heritability
-
-**Description**:
 
 **Presenter(s)**: Alkes Price, Broad Institute
 
-**Level**:
+**Level**: Intermediate
 
 **Length**: 56:27
 
@@ -35,13 +25,7 @@ Link to video transcript [here](chapter8.1_transcript.qmd).
 
 # 8.2 Genetic Correlations and Partitioned LDSC {#sec-section2}
 
-> Goals of this section:
->
-> 1.  
-
 **Title**: Genetic Correlation and Partitioning
-
-**Description**:
 
 **Presenter(s)**: Patrick Turley, ATGU, Massachusetts General Hospital
 
@@ -60,15 +44,9 @@ Link to video transcript [here](chapter8.2_transcript.qmd).
 
 # 8.3 Gene association analysis {#sec-section3}
 
-> Goals of this section:
->
-> 1.  
-
 ## MAGMA
 
 **Title**: How do we go from genetic discoveries from GWAS/WGS/WES to mechanistic disease insight?
-
-**Description**:
 
 **Presenter(s)**: Danielle Posthuma
 
@@ -83,13 +61,13 @@ embed_url("https://www.youtube.com/watch?v=RQwASJcR8_4")
 
 Link to video transcript [here](chapter8.3_transcript.qmd#sec-video1).
 
+Link to MAGMA [software download](https://ctg.cncr.nl/software/magma) and [tutorial](https://cloufield.github.io/GWASTutorial/09_Gene_based_analysis/).
+
 ------------------------------------------------------------------------
 
 ## FUMA
 
 **Title**: FUMA: Functional mapping and annotation of genetic associations
-
-**Description**:
 
 **Presenter(s)**: Kyoko Watanabe
 
@@ -104,17 +82,13 @@ embed_url("https://www.youtube.com/watch?v=fLEooAu3VwM")
 
 Link to video transcript [here](chapter8.3_transcript.qmd#sec-video2).
 
+Link to FUMA [Website](https://fuma.ctglab.nl/), [GitHub](https://github.com/Kyoko-wtnb/FUMA-webapp), and [Tutorial](https://fuma.ctglab.nl/tutorial).
+
 ------------------------------------------------------------------------
 
 # 8.4 Gene set analysis {#sec-section4}
 
-> Goals of this section:
->
-> 1.  
-
 **Title**: How do we go from genetic discoveries from GWAS/WGS/WES to mechanistic disease insight?
-
-**Description**:
 
 **Presenter(s)**: Danielle Posthuma
 
@@ -136,13 +110,7 @@ Link to video transcript [here](chapter8.3_transcript.qmd#sec-video1).
 
 # 8.5 Fine-mapping {#sec-section5}
 
-> Goals of this section:
->
-> 1.  
-
 **Title**: Introduction to fine-mapping methods
-
-**Description**:
 
 **Presenter(s)**: Hilary Finucane
 
@@ -161,19 +129,27 @@ Link to video transcript [here](chapter8.5_transcript.qmd).
 
 # 8.6 Quantitative Trait Loci (QTLs) {#sec-section6}
 
-### General Introduction to GWAS Studies and eQTL Analysis
-
 > Goals of this section:
 >
 > 1.  Be able to define GWAS and understand the general genetic architecture of common risk variants
 >
-> 2.  Be able to define an eQTL (Expression Quantitative Trait Loci) and how they may be useful to interprating GWAS results
+> 2.  Be able to define an eQTL (Expression Quantitative Trait Loci) and how they may be useful to interpreting GWAS results
+>
+> 3.  Obtain a solid understanding of eQTLs and related analytical approaches.
+>
+> 4.  Examine the role of eQTLs in the relationship of genes and molecular networks with phenotypic QTLs (pQTLs).
+>
+> 5.  Understand eQTLs for co-expression networks.
+>
+> This first short video by Dr. Liu briefly reviews GWAS studies and the GWAS catalog resource in order to discuss a main caveat of GWAS - that most significant trait associated variants lay in non-coding regions of the genome with putative regulatory function. The video then presents expression quantitative trait loci (eQTLs) as a method to connect SNPs to gene regulatory effects in a tissue-specific manner.
 
-#### **GWAS Studies and eQTL Analysis**
+> The second video by Dr. Auget introduces expression quantitative trait loci (eQTL) analysis, discusses how to address batch effects and covariate correction, and control for false discovery rate.
+>
+> The third video by Dr. Saba explains the concepts of transcriptome-wide association studies, gene expression prediction related to phenotypes of interest, and accompanying statistical tests.
+>
+> In the fourth video, Drs. O'Connor and Weiner discuss the relevance of gene regulation in GWAS, explains transcriptome-wide association studies and co-localization of GWAS with eQTLs as methods to link SNPs to gene expression and trait associations, discusses proximity and the abstract mediation model, and covered combining multiple SNP-to-gene strategies based on the Nature Genetics Publication: "Combining SNP-to-gene linking strategies to identify disease genes and assess disease omnigenicity".
 
 **Title**: GWAS Studies and eQTL Analysis.
-
-**Description**: This short video briefly reviews GWAS studies and the GWAS catalog resource in order to discuss a main caveat of GWAS - that most significant trait associated variants lay in non-coding regions of the genome with putative regulatory function. The video then presents expression quantitative trait loci (eQTLs) as a method to connect SNPs to gene regulatory effects in a tissue-specific manner.
 
 **Presenter(s)**: Xiaole Shirley Liu
 
@@ -190,21 +166,7 @@ Link to video transcript [here](chapter8.6_transcript.qmd#sec-video1).
 
 ------------------------------------------------------------------------
 
-### Expression Quantitative Trait loci (eQTLs)
-
-> Goals of this section:
->
-> 1.  Obtain a solid understanding of eQTLs and related analytical approaches.
->
-> 2.  Examine the role of eQTLs in the relationship of genes and molecular networks with phenotypic QTLs (pQTLs).
->
-> 3.  eQTL for co-expression networks.
-
-#### Introduction to expression quantitative trait loci
-
 **TItle**: MPG Primer: Introduction to expression quantitative trait loci (2021).
-
-**Description**: This video introduces expression quantitative trait loci (eQTL) analysis, discusses how to address batch effects and covariate correction, and control for false discovery rate.
 
 **Presenter(s)**: Francois Auget - Broad Institute
 
@@ -223,8 +185,6 @@ Link to video transcript [here](chapter8.6_transcript.qmd#sec-video2).
 
 **Title**: Introduction to expression (e)QTL & their role in connecting QTL to genes and molecular networks.
 
-**Description**: This video explains the concepts of transcriptome-wide association studies, gene expression prediction related to phenotypes of interest, and accompanying statistical tests.
-
 **Level**: intermediate (the content will be easier to follow by those who already went through some introductory materials on GWAS and gene expression)
 
 **Author**: Laura Saba
@@ -240,11 +200,7 @@ Link to video transcript [here](chapter8.6_transcript.qmd#sec-video3).
 
 ------------------------------------------------------------------------
 
-### From SNPs to Genes
-
 **Title**: Linking SNPs with genes in GWAS.
-
-**Description**: This video discuss the relevance of gene regulation in GWAS, explains transcriptome-wide association studies and co-localization of GWAS with eQTLs as methods to link SNPs to gene expression and trait associations, discusses proximity and the abstrat mediation model, and covered combining multiple SNP-to-gene strategies based on the Nature Genetics Publication: "Combining SNP-to-gene linking strategies to identigy diease genes and assess disease omonigenicity".
 
 **Level**: intermediate (the content will be easier to follow by those who already went through some introductory materials on GWAS and gene expression)
 
@@ -261,25 +217,13 @@ Link to video transcript [here](chapter8.6_transcript.qmd#sec-video4).
 
 ------------------------------------------------------------------------
 
-### Additional qTL Resources
+# 8.7 TWAS {#sec-section7}
 
-<https://chr1swallace.github.io/coloc/articles/a01_intro.html> <http://gusevlab.org/projects/fusion/>
+> In the following videos, we will explore Transcriptome-Wide Association Studies, or TWAS, including various TWAS methods. In the first video, Dr. Gusev explains the concepts of transcriptome-wide association studies, gene expression prediction related to phenotypes of interest, and accompanying statistical tests. The second video by Drs. Eicher and Zaitlin is a very brief introduction to the concept of a TWAS. In the third video, Dr. Gusev provides a tutorial for conducting a TWAS, using FUSION software.
 
-------------------------------------------------------------------------
-
-# 8.7 TWAS/PWAS/MWAS {#sec-section7}
-
-### Transcriptome-wide association studies (TWAS)
-
-> Goals of this section:
->
-> 1.  Obtain
-
-#### Understanding GWAS mechanisms with Transcriptome-Wide Association Studies
+### 
 
 **Title**: Understanding GWAS mechanisms with Transcriptome-Wide Association Studies
-
-**Description**: This video explains the concepts of transcriptome-wide association studies, gene expression prediction related to phenotypes of interest, and accompanying statistical tests.
 
 **Presenter(s)**: Sasha Gusev (alexander_gusev\@dfci.harvard.edu)
 
@@ -296,11 +240,7 @@ Link to video transcript [here](chapter8.7_transcript.qmd#sec-video1).
 
 ------------------------------------------------------------------------
 
-#### Methods for GWAS/TWAS
-
-**Title**:
-
-**Description**: A very brief introduction to what TWAS studies are.
+**Title**: Methods for GWAS/TWAS
 
 **Presenter(s)**: John Eicher (https://www.researchgate.net/profile/John-Eicher-2) and Noah Zaitlen (nzaitlen\@ucla.edu)
 
@@ -312,11 +252,7 @@ Link to video transcript [here](chapter8.7_transcript.qmd#sec-video2).
 
 ------------------------------------------------------------------------
 
-#### TWAS Primer
-
 **Title**: PGC TWAS Primer
-
-**Description**: This video provides a brief background to TWAS and how to run it using the FUSION software.
 
 **Presenter(s)**: Sasha Gusev (alexander_gusev\@dfci.harvard.edu)
 
@@ -331,35 +267,15 @@ embed_url("https://www.youtube.com/watch?v=BhZ0NUGwZJg")
 
 Link to video transcript [here](chapter8.7_transcript.qmd#sec-video3).
 
-------------------------------------------------------------------------
-
-### MWAS tutorial
-
-> Goals of this section:
->
-> 1.  Obtain
-
-**Title**:
-
-**Description**: It is a private video hosted on the Edinburgh University cloud so I cannot access it - to be updated when the owner grants access
-
-**Presenter(s)**: Xueyi Shen (xueyi.shen\@ed.ac.uk)
-
-**Level**:
-
-Link to video transcript [here](chapter8.7_transcript.qmd#sec-video4).
+Link to [FUSION TWAS website](http://gusevlab.org/projects/fusion/).
 
 ------------------------------------------------------------------------
 
 # 8.8 PheWAS {#sec-section8}
 
-> Goals of this section:
->
-> 1.  
+> The following videos provide an overview of the Phenone-Wide Association Study (PheWAS). The first video by Dr. Denny talks about how PheWAS and GWAS could work in concert with each other and what data are used for the phenome. After 9:45, Dr. Josh Denny pivots the focus from PheWAS to phenotypic risk score (PheRS). In the second video, Dr. Davis gives an example of PheWAS and how to interpret the PheWAS results (starting 28:15). **Note**: There is no current video on Laboratory-Wide Association Studies (*LabWAS*) yet, but the concept is similar to PheWAS and in this Youtube video, Dr. Lea Davis talked briefly on the QC of the lab results in the BioVU Biobank (starting 39:00).
 
 **Title**: PheWAS: Discovering gene-disease associations
-
-**Description**: Overview of PheWAS. This video talks about how PheWAS and GWAS could work in concert with each other and what data are used for the phenome. After 9:45, Dr. Josh Denny pivots the focus from PheWAS to phenotypic risk score (PheRS).
 
 **Presenter(s)**: Dr. Joshua Denny, All of Us Research Program
 
@@ -377,8 +293,6 @@ Link to video transcript [here](chapter8.8_transcript.qmd#sec-video1).
 ------------------------------------------------------------------------
 
 **Title**: Using EHR-based genomic approaches to understand the relationship between mental and physical health
-
-**Description**: Example of PheWAS and how to interpret the PheWAS results (starting 28:15). **Note**: There is no current video on *LabWAS* yet, but the concept is similar to PheWAS and in this youtube video, Dr. Lea Davis talked briefly on the QC of the lab results in the BioVU Biobank (starting 39:00).
 
 **Presenter(s)**: Dr. Lea Davis, Vanderbilt University
 

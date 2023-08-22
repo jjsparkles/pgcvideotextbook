@@ -2,13 +2,19 @@
 title: "Chapter 7: Ancestry-Specific Analyses and Considerations"
 ---
 
-------------------------------------------------------------------------
+*Chapter goals:*
+
+1.  *Understand that ancestry is an important consideration for performing genetic analyses*
+
+2.  *Understand how population stratification can affect GWAS results*
+
+3.  *Understand considerations for PRS across different ancestries and how to calculate cross-ancestry PRS*
+
+4.  *Understand cross-ancestry methods for GWAS and post-GWAS analyses*
 
 # Chapter 7.1: Cross-ancestry analysis {#sec-section1}
 
 **Title**: Cross-ancestry PTSD and Polygenic Findings, and the Cross-Population SIG of the PGC
-
-**Description**:
 
 **Presenter(s)**: Laramie Duncan
 
@@ -21,13 +27,13 @@ embed_url("https://www.youtube.com/watch?v=p3m6MM5b-UU&t=148s")
 
 Link to video transcript [here](chapter7_transcript.qmd#sec-video1).
 
+\[Note: This paper is now available as [*Genome-wide Association Studies in Ancestrally Diverse Populations: Opportunities, Methods, Pitfalls, and Recommendations: https://doi.org/10.1016/j.cell.2019.08.051*\]](https://doi.org/10.1016/j.cell.2019.08.051)
+
 ------------------------------------------------------------------------
 
 # Chapter 7.2: Ancestry-specific PRS {#sec-section2}
 
 **Title**: Clinical use of current polygenic risk scores may exacerbate health disparities
-
-**Description**:
 
 **Presenter(s)**: Alicia Martin
 
@@ -46,8 +52,6 @@ Link to video transcript [here](chapter7_transcript.qmd#sec-video2).
 
 **Title**: Tractor: A framework enabling the well-calibrated genomic analysis of psychiatric traits across admixed populations
 
-**Description**:
-
 **Presenter(s)**: Elizabeth Atkinson
 
 **Length**: Video starts at 14:50 and ends at 32:38 (total 19:28)
@@ -58,3 +62,5 @@ embed_url("https://www.youtube.com/watch?v=p3m6MM5b-UU&t=890s")
 ```
 
 Link to video transcript [here](chapter7_transcript.qmd#sec-video3).
+
+Link to Tractor [GitHub](https://github.com/Atkinson-Lab/Tractor) and [Tutorial](https://github.com/Atkinson-Lab/Tractor-tutorial).
