@@ -219,7 +219,7 @@ Link to video transcript [here](chapter8.6_transcript.qmd#sec-video4).
 
 # 8.7 TWAS {#sec-section7}
 
-> In the following videos, we will explore Transcriptome-Wide Association Studies, or TWAS, including various TWAS methods. In the first video, Dr. Gusev explains the concepts of transcriptome-wide association studies, gene expression prediction related to phenotypes of interest, and accompanying statistical tests. The second video by Drs. Eicher and Zaitlin is a very brief introduction to the concept of a TWAS. In the third video, Dr. Gusev provides a tutorial for conducting a TWAS, using FUSION software.
+> In the following videos, we will explore Transcriptome-Wide Association Studies, or TWAS, including various TWAS methods. In the first video, Dr. Gusev explains the concepts of transcriptome-wide association studies, gene expression prediction related to phenotypes of interest, and accompanying statistical tests. In the second video, Dr. Gusev provides a tutorial for conducting a TWAS, using FUSION software.
 
 ### 
 
@@ -237,18 +237,6 @@ embed_url("https://www.youtube.com/watch?v=cfEGf6ezR-c")
 ```
 
 Link to video transcript [here](chapter8.7_transcript.qmd#sec-video1).
-
-------------------------------------------------------------------------
-
-**Title**: Methods for GWAS/TWAS
-
-**Presenter(s)**: John Eicher (https://www.researchgate.net/profile/John-Eicher-2) and Noah Zaitlen (nzaitlen\@ucla.edu)
-
-**Level**: Beginner
-
-**Length**: 2:40
-
-Link to video transcript [here](chapter8.7_transcript.qmd#sec-video2).
 
 ------------------------------------------------------------------------
 

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>PGC Video Textbook - Chapter 8.8: TWAS/PWAS/MWAS (Video Transcript)</title>
+<title>PGC Video Textbook - Chapter 8.8: TWAS (Video Transcript)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -108,7 +108,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Chapter 8.8: TWAS/PWAS/MWAS (Video Transcript)</li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Chapter 8.8: TWAS (Video Transcript)</li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -361,12 +361,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#sec-video1" id="toc-sec-video1" class="nav-link active" data-scroll-target="#sec-video1">Transcriptome-Wide Association Studies</a>
-  <ul class="collapse">
-  <li><a href="#sec-video2" id="toc-sec-video2" class="nav-link" data-scroll-target="#sec-video2">Methods for GWAS/TWAS</a></li>
+  <li><a href="#sec-video1" id="toc-sec-video1" class="nav-link active" data-scroll-target="#sec-video1">Transcriptome-Wide Association Studies</a></li>
   <li><a href="#sec-video3" id="toc-sec-video3" class="nav-link" data-scroll-target="#sec-video3">TWAS Primer</a></li>
-  </ul></li>
-  <li><a href="#sec-video4" id="toc-sec-video4" class="nav-link" data-scroll-target="#sec-video4">MWAS tutorial</a></li>
   </ul>
 </nav>
     </div>
@@ -375,7 +371,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Chapter 8.8: TWAS/PWAS/MWAS (Video Transcript)</h1>
+<h1 class="title">Chapter 8.8: TWAS (Video Transcript)</h1>
 </div>
 
 
@@ -392,7 +388,7 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="sec-video1" class="level1">
 <h1>Transcriptome-Wide Association Studies</h1>
-<p><strong>Title</strong>: Undesrtanding GWAS mechanisms with Transcriptome-Wide Association Studies</p>
+<p><strong>Title</strong>: Understanding GWAS mechanisms with Transcriptome-Wide Association Studies</p>
 <p><strong>Presenter(s):</strong> Sasha Gusev</p>
 <p>I am Sasha Gusev. This is my first time at CGSI, so thanks, everybody, for having me and giving me the opportunity to give this tutorial. As with the other ones, please feel free to interrupt or ask questions throughout, and I’ll try to sort of break things down in a way that’s accessible. I’m going to be talking about genome-wide association studies and specifically trying to make sense of genome-wide association studies as a way to understand human disease and complex traits.</p>
 <p>So just to sort of start it at the very basic level, this is the output of a genome-wide association study or GWAS. The procedure is very straightforward - you collect a lot of genetic data on individuals with the disease and without the disease or with a quantitative trait, and then you test each genetic variant (and that’s what each of these dots is here) for association with the phenotype. The variants that are significantly associated are above a predefined threshold here, and if they replicate, we treat those as genetic variants that are causal for the disease. This is sort of a study design that I think initially almost seemed too simple to work, but now over time and with very large sample sizes has produced thousands, if not hundreds of thousands, of associations for nearly every complex trait that it’s been applied to when there was sufficient sample size.</p>
@@ -429,12 +425,9 @@ ul.task-list li input[type="checkbox"] {
 <p>And we’ve sort of started to think about what those loci could be telling us. One observation is that if you look at the distribution of evolutionary constraint across the genome, you will see that in regions with higher evolutionary constraint, we see fewer TWAS models that can be built, probably because selection is making it more difficult to detect or is decreasing the observed effect on expression, making it harder to pick up the eQTLs. But we actually see more of these RWAS or chromatin-WAS models observed in those loci. So, this is maybe this gap could potentially explain that sliver in the previous figure. These are loci that are very difficult to pick up in the expression framework but are not as difficult to pick up when we look directly at the intermediate chromatin phenotype. And a sort of related observation that we’ve made is if you look at genes in terms of their tissue specificity, so as we move from here to here from the left to the right, these genes are more specifically expressed in prostate tissue, we’re looking at a prostate cancer GWAS again, we see that the TWAS models, there’s fewer of them, they’re harder to fit for more tissue-specific expression, but for the chromatin-based models and the transcription factor-based models, there’s more of them and they’re easier to fit. And so again, this could be pointing towards a phenomenon where more tissue-specific expression has lower power for the sort of eQTL and transcriptome-based models but higher power for these epigenetic-based models.</p>
 <p>And so with that, I’ll conclude. I hope I’ve been able to convince you at the very least that gene expression is a complex, heritable, and predictable trait, and this predictability is something that we can leverage to integrate that trait into other datasets where we don’t have it measured. And specifically, we derived this TWAS statistic, which is a measure of the <em>cis</em> genetic correlation between the gene expression and the disease. As I noted at the end, this is not just limited to transcription; other molecular phenotypes can be used within the same framework. And again, I want to sort of emphasize the caveats that go along with any kind of association study. It’s not a causal inference, and in fact, causal inference in this space is I think a really interesting and sort of ongoing open problem. How do we disentangle all of those different arrows that I was showing earlier? And then also, just to remind you that all the prediction here has been within the <em>cis</em> locus of the gene. That’s where we have power at the current sample size. But there’s a whole world of <em>trans</em> effects, which we haven’t really scratched the surface in understanding. And so that’s something that I think as studies get larger and as we have more experimental data, we’ll also be able to fold into this framework. And so with that, I’ll take your questions. Thanks. Thank you.</p>
 <hr>
-<section id="sec-video2" class="level2">
-<h2 class="anchored" data-anchor-id="sec-video2">Methods for GWAS/TWAS</h2>
-<hr>
 </section>
-<section id="sec-video3" class="level2">
-<h2 class="anchored" data-anchor-id="sec-video3">TWAS Primer</h2>
+<section id="sec-video3" class="level1">
+<h1>TWAS Primer</h1>
 <p><strong>Title</strong>: PGC TWAS Primer</p>
 <p><strong>Presenter(s)</strong>: Sasha Gusev</p>
 <p><strong>Sasha Gusev</strong>:</p>
@@ -459,11 +452,6 @@ ul.task-list li input[type="checkbox"] {
 <p><em>THOC7</em> gene; after conditioning on the predictor of <em>THOC7</em>, you see that the GWAS Manhattan plot goes from significant associations beyond a p-value of 10<sup>-8</sup> to essentially no significant associations in this locus. So, this is a very good sign visually that things are kind of working as we expect. And when we condition on the predictor, the association goes away, which is consistent with the predictor being the mediator. You can do these analyses when you have multiple genes in the locus, you can do all sorts of fancy pairwise or individual model conditioning, but I think that this is, in addition to looking at just the raw statistics, this is a useful visual output to understand what’s going on at the locus.</p>
 <p>Okay, so hopefully, that was a useful primer on running a TWAS analysis with FUSION. I’ll just mention that there are a couple of other analyses that you can do. We’ve worked with Nick Mancuso in this paper in 2019 for fine-mapping TWAS associations in a similar way as how you would fine-map SNPs. I would also refer you to this paper of Yao et al.&nbsp;in <em>Nature Genetics</em> looking at estimating the fraction of heritability that’s mediated by gene expression rather than just associated. Additionally, there are a lot of scripts on the Fusion website that let you predict into individual-level data, perform co-localization analyses in addition to TWAS analyses, and do more detailed comparisons and visualizations of the ones that I described, as well as cross-model correlations. What are the weights that are contributing to each model, how do the eQTLs for a model look like, and so forth, and let you really dig into an association in a visual way.</p>
 <p>The one other thing I mentioned is that I’ll mention is that we’ve put together an interactive website called twas-hub.org, where you can go and look at all of these associations. You can search for individual phenotypes for genes and look at the TWAS associations and investigate which models are predictive and do all this in the web interface. Um, which I think is also very useful to get a sense of how these methods perform. And with that, thank you very much.</p>
-<hr>
-</section>
-</section>
-<section id="sec-video4" class="level1">
-<h1>MWAS tutorial</h1>
 
 
 </section>

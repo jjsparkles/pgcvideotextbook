@@ -1,10 +1,10 @@
 ---
-title: "Chapter 8.8: TWAS/PWAS/MWAS (Video Transcript)"
+title: "Chapter 8.8: TWAS (Video Transcript)"
 ---
 
 # Transcriptome-Wide Association Studies {#sec-video1}
 
-**Title**: Undesrtanding GWAS mechanisms with Transcriptome-Wide Association Studies
+**Title**: Understanding GWAS mechanisms with Transcriptome-Wide Association Studies
 
 **Presenter(s):** Sasha Gusev
 
@@ -78,11 +78,7 @@ And so with that, I'll conclude. I hope I've been able to convince you at the ve
 
 ------------------------------------------------------------------------
 
-## Methods for GWAS/TWAS {#sec-video2}
-
-------------------------------------------------------------------------
-
-## TWAS Primer {#sec-video3}
+# TWAS Primer {#sec-video3}
 
 **Title**: PGC TWAS Primer
 
@@ -131,7 +127,3 @@ And this produces figures that look like this, which I think are very useful to 
 Okay, so hopefully, that was a useful primer on running a TWAS analysis with FUSION. I'll just mention that there are a couple of other analyses that you can do. We've worked with Nick Mancuso in this paper in 2019 for fine-mapping TWAS associations in a similar way as how you would fine-map SNPs. I would also refer you to this paper of Yao et al. in *Nature Genetics* looking at estimating the fraction of heritability that's mediated by gene expression rather than just associated. Additionally, there are a lot of scripts on the Fusion website that let you predict into individual-level data, perform co-localization analyses in addition to TWAS analyses, and do more detailed comparisons and visualizations of the ones that I described, as well as cross-model correlations. What are the weights that are contributing to each model, how do the eQTLs for a model look like, and so forth, and let you really dig into an association in a visual way.
 
 The one other thing I mentioned is that I'll mention is that we've put together an interactive website called twas-hub.org, where you can go and look at all of these associations. You can search for individual phenotypes for genes and look at the TWAS associations and investigate which models are predictive and do all this in the web interface. Um, which I think is also very useful to get a sense of how these methods perform. And with that, thank you very much.
-
-------------------------------------------------------------------------
-
-# MWAS tutorial {#sec-video4}
