@@ -185,11 +185,11 @@ Link to video transcript [here](chapter8.6_transcript.qmd#sec-video2).
 
 **Title**: Introduction to expression (e)QTL & their role in connecting QTL to genes and molecular networks.
 
-**Level**: intermediate (the content will be easier to follow by those who already went through some introductory materials on GWAS and gene expression)
+**Level**: Intermediate (the content will be easier to follow by those who already went through some introductory materials on GWAS and gene expression)
 
-**Author**: Laura Saba
+**Presenter(s)**: Laura Saba
 
-**Length**: 1:26:43
+**Length**: 1:26:43 \*\*\*Please note that the audio cuts out for approximately 3 minutes starting at minute 5.
 
 ```{r, echo=FALSE}
 library("vembedr")
@@ -202,9 +202,9 @@ Link to video transcript [here](chapter8.6_transcript.qmd#sec-video3).
 
 **Title**: Linking SNPs with genes in GWAS.
 
-**Level**: intermediate (the content will be easier to follow by those who already went through some introductory materials on GWAS and gene expression)
+**Level**: Intermediate (the content will be easier to follow by those who already went through some introductory materials on GWAS and gene expression)
 
-**Author**: Luke O'Connor and Dan Weiner, Broad Institute
+**Presenter(s)**: Luke O'Connor and Dan Weiner, Broad Institute
 
 **Length**: 47:52
 

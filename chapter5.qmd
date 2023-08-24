@@ -2,7 +2,13 @@
 title: "Chapter 5: GWAS analysis"
 ---
 
-Chapter goals:
+> *Chapter goals:*
+>
+> 1.  *Understand what are the main analysis steps in a Genome-Wide Association Study (GWAS).*
+> 2.  *Understand the GWAS quality control metrics and considerations for each step.*
+> 3.  *Understand what imputation is and why it is useful for GWAS.*
+> 4.  *Gain understanding of the statistical background to GWAS association testing and considerations for those association tests.*
+> 5.  *Understand how meta-analyses are important and useful for GWAS, and various methods for implementing them.*
 
 # 5.1 Quality Control {#sec-section1}
 
@@ -142,9 +148,7 @@ Link to video transcript [here](chapter5.2_transcript.qmd#sec-video3).
 
 # 5.3 Association Testing {#sec-section3}
 
-Goals of this section:
-
-> 1.  Understand
+> This section highlights the statistical theory behind association testing in a GWAS, and discusses the considerations for evaluating associations between genetic variants and a phenotype. The first video by Dr. Neale discusses the background and history of genetic epidemiology, heritability, and the methods for uncovering genetic associations with traits. The second video by Dr. Verhulst gives an introduction to the statistics of GWAS, including association testing, effect sizes, statistical power, and how to calculate power.
 
 ## The Biometrical Model & Basic Statistics
 
@@ -186,9 +190,7 @@ Link to video transcript [here](chapter5.3_transcript.qmd#sec-video2).
 
 # 5.4: Meta-Analysis {#sec-section4}
 
-Goals of this section:
-
-> 1.  Understand
+> In this video, Dr. Peloso gives a comprehensive look into the different steps of GWAS and highlights best practices for GWAS and meta-analyses combining GWAS data across multiple studies. 
 
 **Title**: Genome-wide association study design and interpretation
 

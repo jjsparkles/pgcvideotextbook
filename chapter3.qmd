@@ -10,7 +10,7 @@ title: "Chapter 3: Technologies"
 
 ## 3.1 SNP array genotyping {#sec-section1}
 
-> This video is focused on understanding the SNP chip technology: how SNP chips work and why are they useful.
+> This video by Dr. Mészáros is focused on understanding the SNP chip technology: how SNP chips work and why they are useful.
 
 **Title**: SNP Chips (Introduction to genomics theory)
 
@@ -31,7 +31,7 @@ Powerpoint slides for this video are available [here](https://github.com/Genomic
 
 ## 3.2 Next Generation Sequencing {#sec-section2}
 
-> This section gives an introduction to Next Generation Sequencing. The first video gives a very brief introduction to the concept of DNA sequencing, and how nucleotide bases are "read" from the DNA. The second video gives a more detailed view of Next Generation Sequencing, how it differs from Sanger sequencing, and the different steps involved in sequencing a DNA sample with NGS methods, including library preparation, Sequencing by Synthesis and the sequencing reaction, cluster generation from fragments, indexing, filtering, mapping, and demultiplexing the reads.
+> This section gives an introduction to Next Generation Sequencing. The first video by Dr. Kiel gives a very brief introduction to the concept of DNA sequencing, and how nucleotide bases are "read" from the DNA. The second video from ClevaLab gives a more detailed view of Next Generation Sequencing, how it differs from Sanger sequencing, and the different steps involved in sequencing a DNA sample with NGS methods, including library preparation, Sequencing by Synthesis and the sequencing reaction, cluster generation from fragments, indexing, filtering, mapping, and demultiplexing the reads.
 
 ### *How to sequence the human genome*
 
@@ -48,11 +48,11 @@ embed_url("https://www.youtube.com/watch?v=MvuYATh7Y74")
 
 Link to video transcript [here](chapter3.2_transcript.qmd#sec-video1).
 
+------------------------------------------------------------------------
+
 ### *Next Generation Sequencing: A Step-by-Step Guide to DNA Sequencing*
 
 **Title**: Next Generation Sequencing: A Step-by-Step Guide to DNA Sequencing
-
-**Description**: Next Generation Sequencing (NGS) is used to sequence both DNA and RNA. Billions of DNA strands get sequenced simultaneously using NGS. Whereas with Sanger Sequencing, only one strand is sequenced at a time. While the Human Genome Project took over 30 years to sequence the human genome for the first time. Now with Next Generation Sequencing, a whole human genome can be sequenced in just one day. This video describes the library preparation process, cluster generation, the sequencing reaction and filtering and alignment of the sequencing data. This video focuses on the primary sequencing method used by Illumina, Sequencing by Synthesis (SBS).
 
 **Presenter(s)**: ClevaLab
 
