@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>PGC Video Textbook - Software Tutorials: GWAS (Video Transcript)</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">PGC Video Textbook</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html" rel="" target="">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./contact.html" rel="" target="">
+ <span class="menu-text">Contact us</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://pgc.unc.edu/" rel="" target="">
+ <span class="menu-text">PGC Website</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Software Tutorials: GWAS (Video Transcript)</li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./pgc_logo_website_v3.jpeg" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main">
+    <div class="dropdown">
+      <a href="" title="" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label=""><i class="bi bi-github"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="">
+            Source code
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="">
+            Report a bug
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./welcome.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome to the PGC Video Textbook!</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./toc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Table of Contents</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Chapters</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 1: Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 2: The Genome</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 3: Technologies</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 4: Study designs</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 5: GWAS analysis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 6: Polygenic Scores</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 7: Ancestry-Specific Analyses and Considerations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 8: Post-GWAS bioinformatics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter9.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 9: Advanced Topics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 10: Other Considerations</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Software Tutorials</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_cnvs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CNVs</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_conditional.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Conditional Analysis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_crossdisorder.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cross-disorder Analysis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_datasets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Datasets</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_ewas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">EWAS</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_geneset.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Gene Set Identification</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_gwas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">GWAS</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_genomicSEM.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Genomic SEM</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_MR.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mendelian Randomization</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_mtag.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">MTAG</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_prs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">PRS</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_correlation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SNP Heritability and Genetic Correlation</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Additional Resources</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Glossary</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./resources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tools/Software Resources</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./addreading.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Additional Reading</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://pgc.unc.edu/for-researchers/download-results/" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">PGC Summary Statistics</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#sec-video1" id="toc-sec-video1" class="nav-link active" data-scroll-target="#sec-video1">Genome-wide Association Studies in PLINK</a></li>
+  <li><a href="#sec-video2" id="toc-sec-video2" class="nav-link" data-scroll-target="#sec-video2">Genotype QC</a></li>
+  <li><a href="#sec-video3" id="toc-sec-video3" class="nav-link" data-scroll-target="#sec-video3">Tractor: GWAS with admixed individuals</a></li>
+  <li><a href="#sec-video4" id="toc-sec-video4" class="nav-link" data-scroll-target="#sec-video4">Genotype Calling and Imputation with MoChA</a></li>
+  <li><a href="#sec-video5" id="toc-sec-video5" class="nav-link" data-scroll-target="#sec-video5">SAIGE: Family-based GWAS</a></li>
+  <li><a href="#sec-video6" id="toc-sec-video6" class="nav-link" data-scroll-target="#sec-video6">CC-GWAS</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Software Tutorials: GWAS (Video Transcript)</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="sec-video1" class="level1">
+<h1>Genome-wide Association Studies in PLINK</h1>
+<p><strong>Title</strong>: Genome-wide Association Studies</p>
+<p><strong>Presenter(s)</strong>: Hailiang Huang</p>
+<p><strong>Hailiang Huang:</strong></p>
+<p>Hello everyone. My name is Hailiang Huang. I’m a statistical geneticist at the Broad Institute. I’m very happy today to do this GWAS tutorial with you.</p>
+<p>So the first thing—let’s clone the GitHub I have created for you - the GitHub repository that I have created for you with the data and tutorial materials. Please type this in your command line in the terminal: `git clone` and the location of the repository under my first and last name and GWAS-tutorial. It will take a while but it should be very fast. All right, this is done. Let’s get into the location - The folder you just cloned - and have a look at all the files. I would recommend you to open the ‘GWAS on the squad tutorial’ and your text editor, so that you can simply copy and paste everything from the text editor to your terminal. All right, I have opened this in one of my text editors and just noticed a few pieces of information here. The information here—so first, where you can download this GitHub repository. In case you have any questions, feel free to contact me. Additionally, for this tutorial, you have to install PLINK2, which can be retrieved here, and ‘R’, which can be downloaded from the R project website. Also, we use the ‘qqman’ package in R, so please have it installed in your R program.</p>
+<p>All right, let’s get started. So first, let’s take a look at the data. This is one of the two data files. It has individual-level genotype information. If you use the ‘head’ command, you will see the first few rows in that file. The first two columns are the individual ID and the family ID. The next two columns are the IDs for the parents of that individual, as well as the sex and the diagnosis. After the first six columns, the rest of the columns have the genotype of that individual, which you can easily tell. In case the genotype is missing, we have ‘0’ to indicate the missing genotype.</p>
+<p>The other file is called a map file. It basically has a list of SNPs (Single Nucleotide Polymorphisms), and each row here corresponds to one SNP. Every two columns here correspond to the SNP’s map, so that the program ‘plink’ will know which SNP this dataset refers to.</p>
+<p>All right, so the first thing we typically do after we see this dataset is to convert it to binary format. What you saw is very convenient for you to get an idea of what the data is, but there is a format called binary format that is more efficient in terms of storage and analysis. All you need to do is indicate your input file, which can be done with the flag ‘--file’. You can use the command ‘--make-bed’ to convert this text file to binary format, and then indicate where you want this binary format to be written using the ‘--out’ flag.</p>
+<p>All right, this is done. If you compare the size of the file before and after the conversion to the binary file, here is how you can do that. You can see that before conversion, you have a 77-megabyte file with the genotypes. After the conversion, you only have a 4.7-megabyte file. So, the conversion results in more than a 10-times space reduction.</p>
+<p>All right, so let’s start some QC. The first thing we want to do is to remove the individuals that have a high missing rate. You can do that by using the ‘plink’ with the flag ‘--missing’. The ‘--bfile’ flag specifies the location where the input files are, and the ‘--out’ flag specifies where ‘plink’ should write the output files to. So, you use the ‘--missing’ command to calculate the missing rates. Here is what the output file looks like. It basically has a list of individuals with their missing rates. Here, you’ll find the ‘autofilter’ command filtering on the missing rate in the ‘F_MISS’ column. You can see that we have two individuals with missing rates greater than two percent. A high missing rate typically indicates problems in the sample quality, so it’s not a bad idea to remove the samples with a high missing rate.</p>
+<p>All right, the next thing we want to do is to remove samples with a high heterozygosity rate. This can be done by calculating the heterozygosity using the ‘--het’ command. If you take a look, this is the output from that calculation. It’s basically a list of individuals with their heterozygosity rates. I have prepared an R script for you to group together individuals that fail either the missing rate test or the heterozygosity test. Due to time constraints, I won’t go into the details of that R script, but you can call that R script like this. In that script, we will create a list of individuals with extremely high missing rates or heterozygosity rates that are either too high or too low. All you need to do is use the ‘--remove’ command to exclude that list of individuals and inform ‘plink’ that you want to write the new data file to this location.</p>
+<p>All right, so we have removed individuals that have a high missing rate. However, we also have to do that for the SNPs. To remove the SNPs that have a high missing genotype rate, we can leverage the other output file from the ‘plink’ command ‘--missing’, which is the ‘high missing SNP’ file. This file contains a list of SNPs with their missing rates. We decide to use five percent as a threshold. We write all these things we want to exclude in this file. Then we use the ‘plink’ with the flag ‘--exclude’ to remove such SNPs. So, ‘plink’ removes individuals, and ‘plink’ with ‘--exclude’ excludes the SNPs. All right, this is done. We now have the second iteration of QC with the SNPs with high missing rate removed.</p>
+<p>The next thing we want to do is to find SNPs with differential missing rates—where the missing rate is different in cases versus in controls. We do so by using the ‘--test-missing’ flag. Take a look at what is inside. You have a list of SNPs with their missing rates in cases as affected and in controls as unaffected. In this case, we don’t want to use the p-value because the sample size is too small for the p-value to be helpful. We simply want to remove the SNPs with a five percent difference between cases and controls. This can be done by subtracting the difference of missing rates in cases versus controls and using five percent as a threshold. We write everything we want to exclude here, and we will remove that list of SNPs.</p>
+<p>All right, the last thing we want to do on the SNPs is the Hardy-Weinberg equilibrium test. This can be done by using the ‘--hardy’ flag. This is a list of SNPs with their Hardy-Weinberg marker P-value. We want to only use the Hardy-Weinberg test for the unaffected samples, and we want to use a p-value of 10 to the power of minus six as a cutoff. We filter for such SNPs and use ‘plink’ to remove those SNPs.</p>
+<p>All right, now you have a dataset that is relatively clean for individuals and for SNPs. What’s next? The next step is to remove individuals that are related to each other. But to do that, we need to create a dataset that is independent in terms of genetic variance. We can do so by using the ‘--indep-pairwise’ flag. This involves a bunch of parameters that go into the LD pruning process, including the window size, the step of the window that is moving, and also the threshold you want to use for identifying two variants that are in LD with each other.</p>
+<p>So, after you run this command, you will have a list of SNPs that ‘plink’ would recommend you to keep as independent SNPs. This is in the file called ‘plink.prune.in’. All you need to do is generate a new dataset with only these variants by using the ‘--extract’ command. This will give you an independent set of markers in a new ‘plink’ binary format. Then, you want to use the ‘--genome’ flag to calculate the relatedness between samples. Take a look at what is in that output file, which is just a pair list of individuals with their relatedness. Typically, a relatedness measure higher than 0.2 indicates something concerning. We want to identify those pairs using this command, write them to a file, and then use the ‘plink’ ‘--remove’ command as we did before to remove such individuals.</p>
+<p>All right, let’s take a look at how many variants and individuals we have removed. Initially, we had over 100,000 individual SNPs and 200 subjects before QC. After QC, we got rid of less than 1000 variants and eight individuals.</p>
+<p>All right, now let’s assess how well we did in the QC. We use the ‘wc -l’ command to count how many variants we had before and after QC, as well as how many individuals we had before and after QC. It looks like the data was pretty good. The QC process removed roughly 1000 variants, which is quite normal given that we started with over a little over a hundred thousand. We ended up with around 99,700, which is not bad. We removed eight individuals from the initial 200, leaving us with 192, which is also acceptable. All right, so far, so good. What’s next?</p>
+<p><em>Principal Components Analysis (PCA)</em></p>
+<p>Next is to generate the principal components so that we can include them as covariates to control the population structure. This is how you do that: You need to create a new independent dataset, independent in terms of variance, and you want to generate that based on the latest file you have created after removing the related individuals. You do that similarly as you did before, using the ‘--independent-pairwise’ command. Then, you create a new file that only has the independent variants, like this. After that, you perform the principal component analysis using the ‘--pca’ command.</p>
+<p>All right, this is the output from that command. The ‘.angle’ value and ‘.eigenvec’ files have what you need for the downstream analysis. So, let’s take a look. The ‘.eigenvec’ file contains a list of individuals with their principal components—many of them.</p>
+<p><em>Running GWAS association test</em></p>
+<p>So, what you do next is to perform your GWAS with these principal components. This can be done using the ‘--logistic’ flag because this is a case-control study. You want to use logistic regression. The ‘--hide-covar’ flag basically asks ‘plink’ not to write the coefficient for the covariates, as for this study, you are only interested in the variance. The ‘--covar-variance’ flag tells ‘plink’ which file has the covariates. Additionally, this is to calculate how many components you should include as covariates. Here we do one to ten. All right, let’s do it.</p>
+<p>All right, it’s done. So, the ‘.logistic’ file has a list of all the variants with their odds ratio, standard error, confidence interval, and the p-value. This is exactly what you need from a GWAS. We could use this script I wrote in R to do some visualization. That script also calculates the genomic inflation factor, which is only 1.06. It looks like the genome has been very well controlled. Let’s look at the two figures it has generated: the Manhattan plot and the QQ plot.</p>
+<p>All right, so this is a Manhattan plot. And this is the QQ plot. You can tell that the genome has been well controlled; there’s no significant inflation. Unfortunately, for this particular study, we don’t have a genome-wide significant signal for now. We do have one signal surpassing the suggestive significance threshold, which suggests that we may need more samples to identify the same significant locus. All right, that is a very quick tutorial, and I hope it helps for your research. Thank you for your attention.</p>
+<hr>
+</section>
+<section id="sec-video2" class="level1">
+<h1>Genotype QC</h1>
+<p><strong>Title</strong>: How to run quality control on genome-wide genotyping data</p>
+<p><strong>Presenter(s)</strong>: Jonathan Coleman</p>
+<p><strong>Jonathan Coleman:</strong></p>
+<p>Hello, I’m Joni Coleman, and in this brief presentation, I’m going to discuss some key points concerned with running quality control on genome-wide genotype data, which is a common first step in running a GWAS. I’m going to provide a theoretical overview, addressing the overarching reasons why we need to do QC, highlighting some common steps, and discussing a few pitfalls the data might throw up. I’m not going to talk about conducting imputation or GWAS analyses or secondary analyses. Nor am I going to talk at great length about the process of genotyping and ensuring the quality of genotyping calls. Similarly, I won’t go into any deep code or maths. However, if you are starting to run your own QC and analyses, I recommend the PGC’s RICOPILI automated pipeline as the starting point. There are also some simple scripts on my group’s GitHub that may be useful as well. They follow a step-by-step process with codes and explanations. We’re currently updating this repository, so look out for some video tutorials there as well.</p>
+<p>So here is our starting point. I’ll be using this graph on the top right several times throughout this talk. This is a genotype calling graph with common homozygotes in blue, heterozygotes in green, and rare homozygotes in red. Hopefully, your data will already have been put through an automated genotype calling pipeline. And if you’re really lucky, and an overworked and underappreciated bioinformatician, may have done some manual recalling to ensure the quality of the data is as high as possible. But in point of fact, the data you’ll be using won’t be in this visual form but rather as a numeric matrix like the one below that lists SNPs and individuals. This might be in the form of a PLINK genotype file or its binary equivalent, or it’s in some similar form that can be converted to the PLINK format.</p>
+<p>And where we want to go is clean data with variants that are called in the majority of participants in your study and won’t cause biases in downstream analyses. That should give a nice clean Manhattan plot from GWAS like the one below, rather than the Starry Night effect of this poorly QC’d Manhattan plot above. However, something I’d like to emphasize across this talk is that QC is a data-informed process. What works for one cohort won’t necessarily be exactly right for another. Good QC requires the analyst to investigate and understand the data.</p>
+<p><em>Rare variants</em></p>
+<p>Often, the first step is to remove rare variants. This is because we cannot be certain of variant calls. Consider the variants in the circle on the right: are these outlying common homozygotes or are they heterozygotes? We cannot really tell because there aren’t enough of them to form a recognizable cluster. Typically, we might want to exclude variants with a low minor allele count, for example, five. There are many excellent automated calling methods to increase the amount of certainty you have in these variants. But it’s also worth noting that many analytical methods don’t deal well with rare variants anyway. Again, the demands of your data determine your QC choices. It may be more useful for you to call rare variants, even if you’re uncertain of them, or you may wish to remove them and be absolutely certain of the variants that you retain.</p>
+<p><em>Missingness</em></p>
+<p>Next, we need to think about missing data. Genotyping is a biochemical process, and like all such processes, it goes wrong in some cases and a call cannot be made. This can be a failure of the genotyping probe, poor quality of DNA, or a host of other reasons. But such calls are unreliable and they need to be removed.</p>
+<p>Missingness is best dealt with iteratively. To convince you of that, let’s examine this example data. We want to keep only the participants, which are the rows in this example, with complete or near-complete data on the eight variants we’re examining, which are shown in the columns. So, we could remove everyone with fewer than seven SNPs, but when we do that, oh dear, we’ve obliterated our sample size. So instead, let’s do things iteratively. We’ll remove the worst SNP again. Variant 7 goes. And then we remove the worst participant. Bye-bye, Dave. Then we remove the next worst SNP, so that’s SNP two. And now everyone has near-complete data, and we’ve retained nearly all of our cohort. This was obviously a simple example. How does this look with real data?</p>
+<p>So here we have some real data, and it’s pretty good data. Most variants are only missing in a small percentage of the cohort, but there are some that are missing in as much as 10% of the cohort. So, let’s do that iterative thing: removing variants missing in 10% of the individuals, and then individuals who have more than 10% missing variants, and then 9%, and so on, down to 1%. When we do this, the data looks good. Nearly all of the variants are at 0% missingness, and those that aren’t are present in at least 578 to the 582 possible participants. We’ve lost around 25 participants for about 22,500 SNPs. But what if we didn’t do the iterative thing and we just went straight for 99% complete data?</p>
+<p>When we do that, the distribution of variants looks good again—arguably, it looks even better—and we’ve retained an additional 16,000 variants. However, we’ve lost another 40 participants, which is about 6% more of the original total than we lost. Typically, participants are more valuable than variants, which can be regained through imputation anyway. But this, again, is a data-driven decision. If coverage is more important than cohort size in your case, you might want to prioritize well-genotyped variants over individuals.</p>
+<p><em>Hardy-Weinberg Equilibrium</em></p>
+<p>So, we’ve addressed rare variants, where genotyping is uncertain, and missingness, where the data is unreliable. But sometimes, calling is simply wrong, and again, there are many reasons that could be. We can identify some of these implausible genotype calls by using some simple population genetic theory. From our observed genotypes, we can calculate the allele frequency at any biallelic SNP we’ve called. So here, the frequency of the A allele is twice the frequency of the AA calls (those are our common homozygotes in blue), plus the frequency of AB calls (heterozygous in green). We can do the equivalent, as you see on the slide, for the frequency of the B allele. Knowing the frequency of the A and B alleles, we can use Hardy and Weinberg’s calculation for how we expect alleles at a given frequency to be distributed into genotypes, to generate an expectation for the genotype we expect to observe at any given allele frequency. We can then compare how our observed genotypes (i.e., the blue, green, and red clusters) fit that expectation, and we can test that using a chi-squared test.</p>
+<p>Now, Hardy-Weinberg equilibrium is an idealized mathematical abstraction, so there are lots of plausible ways it can be broken, most notably by evolutionary pressure. As a result, in case-control data, it’s typically best to assess it just in controls or to be less strict with defining violations of Hardy-Weinberg in cases. That said, in my experience, genotyping errors can produce very large violations of Hardy-Weinberg. So, if you exclude the strongest violations, you tend to be removing the biggest genotyping errors.</p>
+<p><em>Sex check</em></p>
+<p>The previous steps are mostly focused on problematic variants, but samples can also be erroneous. One example is the potential for sample swaps, either through sample mislabeling in the lab or incorrectly entered data in phenotypic data. These are often quite hard to detect, but one way to detect at least some of these is to compare self-reported sex with X chromosome homozygosity, which is expected to differ between males and females. In particular, males have one X chromosome. They’re what’s known as hemizygous. So, when you genotype them, they appear to be homozygous on all SNPs on the X chromosome. Females, on the other hand, have two X chromosomes. They are holozygous, and they have a normal X distribution centered around zero, which is the sample mean in this case. You could also look at chromosome Y SNPs for the same reason. However, Y chromosome genotyping tends to be a bit sparse and is often not of fantastic quality. So, there are benefits to using both of these methods. It’s also worth noting that potential errors here are just that—potential. Where possible, it’s useful to confirm these with further information. For example, if there isn’t a distinction between self-reported sex and self-reported gender in your phenotype data, then known transgender individuals may be being removed unnecessarily. The aim here is to determine places where the phenotypic and genotypic data is discordant, as these may indicate a sample swap. And this might indicate the genotype-to-phenotype relationship has been broken, and that data is no longer useful to you.</p>
+<p><em>Inbreeding coefficient</em></p>
+<p>Average variant homozygosity can also be applied across the genome, where this metric is sometimes referred to as the inbreeding coefficient. It’s called that because high values of it can be caused by consanguinity—related individuals having children together, which increases the average homozygosity of the genome. There can also be other violations of expected homozygosity, so it’s worth examining the distribution of values and investigating or excluding any outliers that you see.</p>
+<p><em>Relatedness</em></p>
+<p>Examining genetic data also gives us the opportunity to assess the degree of relatedness between samples. For example, identical sets of variants imply duplicates or identical twins. 50% sharing implies a parent-offspring relationship or siblings. And those two things can be separated by examining how often both alleles of a variant are shared. Specifically, we would expect parents and offspring to always share one allele at each variant, whereas siblings may share no alleles, they may share one allele, or they may share two. Lower amounts of sharing imply uncles and aunts, and then cousins, grandparents, and so on, down to more and more distant relationships. In some approaches to analysis, individuals are assumed to be unrelated, so the advice used to be to remove one member of each pair of related individuals. However, as mixed linear models have become more popular in GWAS, and mixed linear models are able to retain and include related individuals in analyses, related individuals, therefore, should be retained if the exact analysis method isn’t known. Again, it’s worth having some phenotypic knowledge here. Unexpected relatives are a potential sign of sample switches and need to be examined, confirmed, and potentially removed if they are truly unexpected. And once again, it’s important to know your sample. The data shown in this graph does not, despite what the graph appears to suggest, come from a sample with a vast amount of cousins. Instead, it comes from one in which a minority of individuals were from a different ancestry, and that biases this metric. I’ll talk a little more about that in just a moment.</p>
+<p>Relatedness can also be useful for detecting sample contamination. Contamination will result in a mixture of different DNAs being treated as a single sample, and this results in an overabundance of heterozygote calls. This, in turn, creates a signature pattern of low-level relatedness between the contaminated sample and many other members of the cohort. These samples should be queried with the genotyping lab to confirm whether or not a contamination event has occurred and potentially be removed if an alternative explanation for this odd pattern of inter-sample relatedness can’t be found.</p>
+<p><em>Ancestry</em></p>
+<p>Finally, a word on genetic ancestry. Because of the way in which we have migrated across our history, there is a correlation between the geography of human populations and their genetics. This can be detected by running principal component analyses on genotype data pruned for linkage disequilibrium. For example, this is the UK Biobank data. You can see subsets of individuals who cluster together and who share European ethnicities, other subsets who share African ethnicities, and subsets who share different Asian ethnicities. In a more diverse cohort, you would be able to see other groupings as well. This kind of 2D plot isn’t the best way of visualizing this. For example, here, it isn’t really possible to distinguish the South Asian and admixed American groupings, and you don’t get the full sense of the dominance of European ancestry data in this cohort. Europeans, in this case, account for around 95% of the full cohort. But because of overplotting, i.e.&nbsp;the same values being plotted on top of each other in this 2D plot, you don’t really appreciate that. Looking across multiple principal components helps for that.</p>
+<p>Ancestry is important to QC. Many of the processes I’ve talked about rely on the groups being assessed fairly being fairly homogeneous. As such, if your data is multi-ancestry, it’s best to separate those ancestries out and rerun QC in each group separately.</p>
+<p><em>Conclusion</em></p>
+<p>So, that was a brief run-through of some of the key things to think about when running QC. I hope I’ve gotten across the need to treat this as a data-informed process and to be willing to rerun steps and adjust approaches to fit cohorts. Although we’ve got something resembling standard practice in genotype QC, I think there are still some unresolved questions. So, get hold of some data, look online for guides and automated pipelines, and enjoy your QC.</p>
+<p>Thank you very much for listening. I’m doing a Q&amp;A at 9:30 EST. Otherwise, please feel free to throw questions at me on Twitter, where I live, or at the email address on screen, which I occasionally check. Thank you very much.</p>
+<hr>
+</section>
+<section id="sec-video3" class="level1">
+<h1>Tractor: GWAS with admixed individuals</h1>
+<p><strong>Title</strong>: Tractor: Enabling GWAS in admixed cohorts</p>
+<p><strong>Presenter(s)</strong>: Elizabeth Atkinson</p>
+<p><strong>Elizabeth Atkinson:</strong></p>
+<p>Hi, thanks so much for your interest in using <em>Tractor</em>. I hope this tutorial helps get you started in doing ancestry-aware GWAS on admixed cohorts.</p>
+<p>So, here’s just a brief outline: I’ll start with some motivation, go into the overview of our statistical model, and then talk about implementation of the actual <em>Tractor</em> code.</p>
+<p>To start off with our motivation, I want to reiterate a point that is now thankfully becoming common knowledge in the GWAS community. That is, that the vast majority of our association studies are actually conducted on European cohorts. And if we look further at this breakdown of the small kind of wedge of the pie of who’s not European, we can see that there’s actually only a few percent from recently admixed populations, such as African-American and Hispanic Latino individuals—groups that collectively make up more than a third of the US populace. And just to make sure we’re all on the same page, an admixed individual refers to somebody whose ancestry is not homogeneous but rather has components from several different ancestral groups. There are actually many more admixed individuals out there whose samples have already been collected and genotyped or sequenced alongside phenotypes, but they’re not making it into this figure due to being intentionally excluded for being admixed. So, there’s really a pressing need for novel methods to allow for the easy incorporation of admixed people into association studies.</p>
+<p>Admixed people are generally removed due to the challenges of accurately accounting for their complex ancestry, such that population substructure and stratification can seep in and bias your results. And in the context of GWAS, this means the potential for false positive hits that are due to ancestry rather than a real relationship to the phenotype. So, in a global collection such as this example from the PGC, even controlling for PCs, which is the standard way that admixture is attempted to be kind of controlled for, there’s still so much variability in the data that there’s a lot of concern over false positives. It’s because of this that researchers will often sort of draw a circle around people who are deemed homogeneous enough to be included in the study, and everyone else is excluded. So, this nearly always ends up resulting in European individuals being included, as they generally represent the bulk of samples that have been collected. So the main motivation of the project I’m talking about today was to try to rectify this issue and develop a framework to allow for the easy incorporation of admixed people into association studies.</p>
+<p>So, with <em>Tractor</em>, we are handling this concern by directly incorporating local ancestry. Local ancestry tells us the ancestral origin of each particular haplotype tract in an admixed individual at each spot in their genome. So, in this three-way admixed individual, the y-axis are the autosomes, the position along them is on the x-axis, and because humans are diploid, the top and bottom half of each chromosome is painted differently. You can see that each tract in this individual is colored according to the ancestry from which it derived.</p>
+<p>So, the intuition behind <em>Tractor</em> is that to correct for population structure, we effectively scoop out the tracks from each component ancestry to be analyzed alongside other ancestrally similar segments. So, we do this by tracking the ancestry context of each of the alleles for each person at each spot in their genome. Note that here I’m only showing this red ancestry, but the same thing is going to be happening for the blue and green ancestry.</p>
+<p>The statistical model built into <em>Tractor</em> tests each SNP for an association with the phenotype by splitting up the ancestry context of the minor alleles. So, in the two-way admixed example, we have our intercept, of course, and then we include terms for how many copies of the index ancestry there are for this person at that spot in the genome. For example, if you have zero, one, or two African alleles at this location, as well as how many minor alleles fall on your ancestry A versus ancestry B backbone. So those are the first three x’s in these terms. This is what corrects for the fine-scale population structure. If there were differing allele frequencies for the ancestries at this spot in the genome, as we expect there to kind of routinely be due to the different demographic histories of modern-day human populations, then we’re no longer going to be confounded by this, as we’ve sort of deconvolved them. So, the minor alleles you’ll see on each ancestry backbone, is kind of properly scaled to their background expectations. Note that while I’m showing a two-way admixed example here, this model can also scale easily to an arbitrary number of ancestries by addition of terms, as well as allowing for the ready inclusion of all of your necessary covariates.</p>
+<p>So, I already went over how our model corrects for the fine-scale population structure at the genotype or haplotype level, which is what’s allowing the inclusion of admixed people in a well-calibrated manner in GWAS. But it also has some other nice benefits I’d like to briefly mention. We’ve built in an optional step to recover long-range tracks that we find to be disrupted by statistical phasing by using our local ancestry information. With respect to GWAS, our novel local ancestry-aware model can improve your results in a variety of ways, most notably through boosting GWAS power, generating ancestry-specific summary statistics, and helping to localize your GWAS signals to be closer to the causal SNPs. So, we really hope that this framework should advance existing methodologies for studying admixed individuals and allow for a better-calibrated understanding of the genetics of complex disorders in these underrepresented populations.</p>
+<p>Now, I’ll shift to giving a brief walkthrough of the steps involved in implementing the <em>Tractor</em> pipeline. There are three different steps, the first one being optional for efforts that require complete haplotypes. I’m going to go through each of them kind of individually, but the first three steps are implemented as Python scripts, and step three, the GWAS model, is sort of the recommended implementation in the cloud-native language, Hail. There’s a lot more documentation and description of these steps on our GitHub page, so please check out the wiki there for more information, as well as a Jupyter notebook to kind of walk through the steps of the pipeline.</p>
+<p>So, before running local ancestry-aware GWAS, you need to call your local ancestry. We recommend the program RFMix for this, which is described in their paper ‘Maples et al.&nbsp;2013,’ as well as their GitHub repo, which I’m linking to here. The success of <em>Tractor</em> really relies on good local ancestry calls, so it’s really important to ensure that your local ancestry inference performance is highly accurate before you try to run a <em>Tractor</em>-GWAS. Just to make sure you know we’re all ready to go, I wanted to show an example command for launching an RFMix run on one chromosome using some publicly available data. This is sort of the basic parameter settings that we’ve come up with as being kind of ideal for our <em>Tractor</em> pipeline. Again, more details on the Wiki page.</p>
+<p>But what I’d like to spend more time on is the actual <em>Tractor</em> scripts. This first step in our pipeline is what’s going to detect and correct for switch errors from phasing by using our local ancestry calls. You can see our supplementary information and Extended Data Figures 1 and 2 in our manuscript for some additional context around what we mean by this. This step uses RFMix ancestry calls as input and is implemented with the script ‘UnkinkMSPfile.py,’ which tracks those switch locations and corrects them. So, the output will consist of two files: a text file that documents the switch locations for each individual (so that’ll be sort of your input MSP file name suffixed with ‘switches’), and a corrected local ancestry file (again, the same input name but this time suffixed with ‘unkinked,’ as in unkinking a garden hose – we’re kind of straightening out those switch errors). Here’s your kind of example usage – you should just need to point to the MSP file name without this ‘msp.tsv’ suffix. I’m going to call this script. So this is one of the default output files from RFMix.</p>
+<p>Next, we also need to correct switch errors in our phased genotype file, and we’re expecting VCF format for this. This is what’s going to actually recover the fuller haplotypes and improve our long-range track distribution. This step is implemented with the script ‘UnkinkGenofile.py’ and expects as input the phased VCF file that went into RFMix, as well as that switches file that we generated in the previous step. So, the switches file is basically used to determine the positions that need to be flipped in your VCF file. <em>Tractor</em> also expects all of your VCF files to be phased, and it’s recommended to strip their info and format annotations prior to running, just to ensure good parsing. Again, Step One is optional and won’t affect your GWAS results, but can be useful for efforts that require complete haplotypes.</p>
+<p>Alright, so in Step Two, we extract the tracks that relate to each component ancestry into their own VCF files and calculate the ancestry haplotype and alternate allele counts for each component ancestry for your admixed cohort. This step is implemented with the script ‘ExtractTracts.py’ and expects as input the stem name of your VCF (you can have it just be unzipped or gzipped is also allowed), as well as your RFMix MSP files. So, you can input those ‘Unkinked’ files from the previous step if you chose to correct switch errors, or you can go straight from your original data if you did not. This script now accepts an arbitrary number of ancestry calls, which is very exciting, so you can specify the number of component ancestries with the ‘--num_inks’ flag – the default is two, you can change it to however, you know, multi-way your population was. If your VCF file is g-zipped, also include the flag ‘--zipped’; if not, leave that flag off. So there are multiple files output from this step, including the counts for each individual at each position for these three different pieces of information I’m listing here. So, firstly, you’ll get the number of copies of each ancestry at that spot – so if you have zero, one, or two copies of, you know, ancestry A, B, C, however many ancestries are in your data. Secondly, you’ll get the number of alternate allele counts on each of those ancestral backgrounds. And thirdly, you’ll get VCF files for each of those ancestries, containing only genotype information for that ancestry’s tracks. So, these will be sort of VCF files that will contain a bunch of missing data – will kind of blank out the other ancestries – and it’ll also contain some half-calls for instances where there’s, you know, sort of heterozygous ancestry at a spot.</p>
+<p>Alright, so our ancestry dosage output can now be used in our local ancestry-aware GWAS model. The recommended implementation of the <em>Tractor</em> joint analysis model uses the free, scalable software framework called Hail. Hail can be run locally or on the cloud. I’m going to be showing a cloud implementation here, and it can be useful to build and test your pipeline in a Jupyter notebook when applying it to your own cohort data. So, for this reason, we supply an example Jupyter notebook written in Hail on our GitHub, which can be adapted for user data. The specific commands to load in and run linear regression on our ancestry dosage file will be as follows:</p>
+<p>So, here is the specific suite of commands in Hail that will read in and format our <em>Tractor</em> dosage files, just to make it a little nicer running things downstream. This is a little bit more involved in terms of loading files in than a standard VCF or MatrixTable. This is because we need to run GWAS on entries rather than rows. So, for each ancestry and dosage haplotype file, we’ll be kind of annotating that information in, rather than just sort of one piece of information per variant. And this will become a little bit clearer in the following slides, but that’s why there’s like, you know, a couple extra steps in this reading in dosage files, proportion.</p>
+<p>So, next we’ll join our ancestry and haplotype dosage files together onto a Hail Matrix table. We do this by basically annotating the haplotype counts and any of the other ancestry information we have onto our first ancestry – ancestry zero. And here, we’re creating a new combined Hail Matrix table called ‘mt,’ which will have all of this information in it. Basically, we’ll have our original ancestry zero dosage information and then ‘structs’ for each additional term that we’re annotating on. So, here I’m showing examples for two-way and three-way admixed example. In the two-way example, we’re annotating structs for the ancestry one dosages, as well as our hap counts for our ancestry zero – our index ancestry haplotype counts. These are all three default outputs from our earlier <em>Tractor</em> steps. So, if you want to have more multi-way admixed populations included, you just need to add additional terms for each new ancestry – one new dosage term for each additional ancestry and N-1 terms for the haplotype counts.</p>
+<p>So, now we can load in and annotate our Matrix table with our phenotype and covariate information, and from here on, we are now utilizing standard Hail commands. The only thing to be careful about with loading in your phenotypes is to make sure that you’re keying by the same ID field that will match the names in your genotypes file. And again, note that I’m doing this in the Google Cloud example, so I’m pointing to the location of this file in my Google bucket.</p>
+<p>Finally, we can run the linear regression. For a single phenotype, for example, total cholesterol or TC, as shown here, along with our relevant covariates. So here, in addition to our intercept of one, we have our hap counts term and our two terms for our two-way admixed population – our ancestry zero and one dosages. And then we also are putting in all of our covariates that we want. In this case, I’m using sex, age, blood dilution level (which is kind of a phenotype-specific covariate), and then an estimate of the Global African ancestry fraction that we got prior to this from using the program Admixture. So we recommend putting in an estimate of your Global ancestry in addition to these sort of local ancestry-specific terms, just to account for if there’s a relationship to the phenotype with their overall ancestry proportions. And we find that the direct measure of global ancestry is a bit more accurate than PCs, so this is sort of the recommended strategy.</p>
+<p>Doing that, we are basically annotating each of the variants in our Matrix table with the results of the GWAS. The results are again saved as a ‘struct’ here named TC (our phenotype), and this will contain pieces of information for each of the summary statistics that we listed here, including the beta effect size, the standard error, and the p-value. Within each of these, there’s going to be an array of index-able values that’s in the order of your terms. So, the index of zero is going to be your intercept; in the example I listed prior to this, one is going to be your haplotype dosage; two is your ancestry zero dosage; three would be ancestry one; and then covariates would be four, until however many covariates that you have. So you can pull out summary statistics for every term in your model to allow for kind of easy comparison. They’re all going to be annotated into kind of one big ‘struct’ that’s just index-able by what position they were in your model.</p>
+<p>To run multiple phenotypes in batch, you can make a list of phenotypes first and then cycle through them, annotating The Matrix table with multiple ‘structs’ that will each be named, you know, the names of your phenotypes. So, again, all the information can be stored just in that one Matrix table.</p>
+<p>In our Jupiter notebook, we also provide some code to generate Manhattan and QQ plots. You can select the term you would like to plot by its index, as we talked about in the last slide, and you can use the Hail commands `plot.manhattan` and `plot.qq` to visualize the results. So, here we’re pulling in our TC struct for the p-value. We want the third term, or the index of two.</p>
+<p>And here is what those plotting commands will produce. With those, you know, the settings, by launching those commands, you’ll end up with figures that look exactly like this.</p>
+<p>Great! So with that, I hope that this was helpful. Thanks so much again for your interest in <em>Tractor</em>, and feel free to leave questions on our GitHub repo or email me with any thoughts. I also have many people to thank, of course, for this project, including my K01 funding from NIMH. And I’ll also direct you to our paper published several months ago in Nature Genetics, which has a much more thorough description of our method and some other considerations. Again, our code is freely available on GitHub, alongside a Wiki tutorial to help you get started with <em>Tractor</em> there as well. So, thanks very much, and I hope that you enjoy using <em>Tractor</em>.</p>
+<hr>
+</section>
+<section id="sec-video4" class="level1">
+<h1>Genotype Calling and Imputation with MoChA</h1>
+<p><strong>Title</strong>: Genotype calling/imputation on the cloud: MoChA pipleine</p>
+<p><strong>Presenter(s)</strong>: Giulio Genovese</p>
+<p><strong>Giulio Genovese:</strong></p>
+<p>Hello, everybody! Today, I’m going to talk about the MoChA Pipeline and how you can use it to perform phasing and imputation of DNA microarray data in the Cloud.</p>
+<p>So, as an introduction—what is phasing and imputation? Well, for every genome-wide association study where we work with DNA microarray data, we always have to go through three main steps. The first step is to call genotypes from microarray intensity data. Then, we have to retrieve the haplotype structure of the samples by phasing. And then, we have to impute the missing variants that were not present in the microarray by comparing the haplotypes that we phased with haplotypes of another reference panel of samples for which we have more information. Phasing and imputation, in particular, are two steps that require a fair amount of computations and that parallelization of computations—they have high computational requirements. There have been many pipelines out there to perform these two steps, but today, I’m going to talk about the MoChA Pipeline, which consists of two different scripts. One is the MoChA wedl, and one is the impute wdl. The first one performs calling genotypes, and basically, the second one performs imputation.</p>
+<p>These scripts are written in WDL, which is a language for workflows and allows you to define very complex segments of tasks. And in WDL, in particular, corresponds to a set of tasks and a description of the order in which tasks have to be performed. And in writing the task, we have to define which input file we need, which commands we’re going to run on those files, and which output file, so you expect. And the nice thing about writing pipelines in the WDL (Workflow Description Language) language is that they can be run on any computational environment.</p>
+<p>In particular, you can do this thanks to the Cromwell Workflow engine, which is an engine developed by the Broad Institute. The idea is that you can input your WDL pipeline into the Cromwell server, and the Cromwell server will take care of dispatching all the required jobs to different nodes in a highly parallelized fashion. This could be nodes on an HPC cluster like an SGE, SLF, SLURM cluster that is common in academic environments, or maybe in a Cloud computing cluster like Google Cloud, Amazon Web Services, or Microsoft Azure. And this is all transparent to the user, who doesn’t have to worry about the technicalities of the cluster implementation when writing a WDL pipeline.</p>
+<p>So, what features does the MoChA pipeline for phasing and imputation have that might not be available in other similar pipelines? Well, the first feature is that it follows a minimalistic approach. The user always has to provide a minimal amount of necessary inputs to run the pipeline. It can take various input file formats, but in particular, it can process raw Illumina input files, also known as IDAT files, without requiring to be pre-processed in alternative ways. It uses very state-of-the-art software for phasing and imputation (SHAPEIT4, IMPUTE5). It allows you to use the reference genome of your choice. So, you can request the GRCh38 reference that you want to use. And once you have set up a Cromwell server, you can actually even run the pipeline in Terra, if you want, it’s very easy to use.</p>
+<p>And it scales very nicely and seamlessly to a cohort of biobank size. In particular, you can run it on the UK Biobank, and the phasing part will run for less than $100, and phasing imputation overall will run in less than 40 hours if you run it in Google Cloud. The reason I actually developed this phasing pipeline was to support analysis related to mosaic chromosome alterations. In particular, when you run this pipeline, you also want to get as an output a list of constitutional mosaic chromosomal alterations in the samples you process.</p>
+<p><em>Running the pipeline</em></p>
+<p>So, how complicated is it to run the MoChA pipeline? Hopefully, I can convince you that it’s not that complicated. Running a pipeline mostly means that you need to define a set of input files. Let’s say that we’re going to run the pipeline in IDAT mode, and we’re going to provide a set of IDAT files, which are again Illumina intensities. We’ll need that and we’re also going to have to provide a table with a list of samples and a table with a list of batches. And then, in particular, I’m going to have to provide a configuration file in JSON format indicating in which way the pipeline needs to be run. Once we input that into the Cromwell server together with the MoChA WDL script, the output we expect is going to be a set of VCF phased files and an output table with the list of these files.</p>
+<p>This is an example of what the input for a run is going to look like. Here, we have a sample table where each row is a sample. On the bottom left, we have a batch table where each row is a batch. For each sample, we have to define which batch it belongs to and which green and red IDAT file it corresponds to. And for each batch, we have to define the three different manifest files from Illumina, which are the BPM, CSV, and EGT files. These inform the software about which variants have been tested and about what the cluster’s original type looks like. The configuration file, which is in JSON format, is going to define just a minimum set of parameters. Like the name of the cohort, the mode, which in this case is the IDAT mode because we are inputting IDAT files. In this case, because the manifest files are in GRCh37 coordinates, we will ask the pipeline to realign the manifest files. This comes in very handy when Illumina does not provide a manifest file for GRCh38. And then we can provide information about how much parallelization we want to achieve in phasing. So, we can define the window size, the maximum window size for phasing, which in this case would be 50 centimorgans. But we can decrease that if we want to parallelize the computation even more. And then, after that, we need to provide a file with URL addresses for where to find all the files for the dimension of reference for the Illumina manifest files, for the IDATs, and also for the two tables. And that’s it. Once we have these three files, we can just submit the MoChA workflow, along with the configuration file, into the Cromwell server with a command like that.</p>
+<p>And then, if everything goes well, we would obtain, as an output, a table with a list of VCF files. The VCF files that will be generated will be divided across batches. So, for each batch, we’re going to get a VCF file with the phased genotypes and probe intensity. And then, also, a VCF file with just phased genotypes useful for imputation. We’ll also get some summary plots that will visualize the call rate across samples and maybe some statistics that will indicate possible contamination. Also, other summary plots indicating probe intensities for the sex chromosome and others that I’m not sure. The cost that I’ve observed, if you run it in Google Cloud, is about one dollar for five thousand samples for GSA-like arrays.</p>
+<p>Similarly, when running the imputation pipeline, it’s not that different, especially after you’ve run the MoChA WDL pipeline. You’re going to have to input a set of phased VCF files, one per batch. You’re going to input a table listing the batches, and again, a configuration file listing some important options. Again, this will be input into the Cromwell server, together with the impute WDL script, and we’re going to expect a bunch of imputed VCF files out if everything runs correctly.</p>
+<p>This is an example of what an input would look like. And again, a batch table file in WDL format, where each row contains information for one batch. And then, a configuration file here on the right, where again, we can define parameters like the name of the cohort, which chromosomes we want to impute. If we don’t want to impute all chromosomes, if you omit this, all 23 chromosomes will be included. And the information about, for example, which kind of information we want in the output of the imputed VCF files. Do we want the dosages? And then we can ask for dosages. Or do we want genotype probabilities? Or maybe we don’t want either and we just want the genotypes. By default, the imputation pipeline will use the 1000 Genomes high coverage reference panel. But you can also input a reference panel of your choice if you want. The only requirement is that you have access to the reference panel, and that it’s structured in VCF format, split across the 23 different chromosomes. Again, a simple command like this will submit the job to a running Cromwell server, where we indicate that we’re going to run the impute WDL script together with the JSON file with the configuration.</p>
+<p>If everything goes well, we’re going to get as an output, again, a table with a list of VCF files. We’re going to obtain one VCF file for each batch and for each chromosome that we have asked to impute. The pipeline, as I said, it uses IMPUTE5 to run. Optionally, you can use Beagle5. You should need to run it in a commercial setting if you don’t have a commercial license for IMPUTE5. But IMPUTE5 is free for academic research. The cost, if you use the 1000 Genomes Project reference panel, is about one dollar for a thousand samples when you run it in Google Cloud.</p>
+<p><em>Applications</em></p>
+<p>Now, I’m going to show you very quickly some applications of the MoChA pipeline. First of all, this is a list of biobanks across the world where we were able to run the scripts. Thanks to collaborators that have access to the data on some of these biobanks. I personally have access to the UK Biobank, the Massachusetts General Brigham Biobank data. You might notice that due to different restrictions with different biobanks, we actually have to run the pipeline on a very different arrays of computational environments, from LSF and SLURM clusters to Google Cloud and European clusters. But this is a testament to the fact that the pipeline structure can run on almost any biobank.</p>
+<p>Moving on, there will be more pipelines in development. There is actually a polygenic score pipeline that can be run right on the output of the imputation pipeline if you’re interested in computing polygenic scores. There is also a work-in-progress Association pipeline that will run REGENIE in a very distributed fashion and will take again as an input the output of the MoChA imputation pipeline.</p>
+<p>Part of the reason why I’ve been developing this set of pipelines is that about five years ago, I started to work with Po-Ru (Loh) on a project to detect chromosomal alterations in the UK Biobank. To our surprise, we found that there was a lot of interesting biology to be discovered by doing so, and I published a paper. After that, I started to realize that there was actually quite some interest in running this kind of analysis with mosaic chromosomal alterations in biobanks, but the technical skills to actually do that were really prohibitive for many users. So I decided to try to package the analysis that people were doing into an easy-to-reproduce framework, and that led to the development of the MoChA pipeline.</p>
+<p>However, although it is designed to scale to biobank-sized datasets, it can be applied also to smaller cohorts. This is an example of work from Max Sherman that applied the framework on autism samples. He was able to show that mosaic chromosomal alterations are more common in autism probands compared to their unaffected siblings, even if this explains only a very small fraction of autism probands.</p>
+<p>And to conclude, the MoChA-WDL pipeline supports versatile computational environments. It follows a minimalistic design and can input IDAT files. It can be used on GRCh38 even with old cohorts , and it can scale to biobanks of any size. If you’re interested in CNV analysis, it actually provides germline and somatic outputs for further study.</p>
+<p>With that, I would like to acknowledge the many people who have helped in developing this framework. First, I want to thank my supervisor, Steven McCarroll, who has supported me for many years. For Po-Ru, who has run many of the initial analyses in the UK Biobank, showing that this framework is actually important. And then, the many, many, many collaborators and users of the pipeline who have provided incredibly important feedback. With that, I’ll conclude, and understand that there will be a Q&amp;A session after this. I’ll be available for questions if you have any. Thank you for listening, and I hope this pipeline might be useful to you.</p>
+<hr>
+</section>
+<section id="sec-video5" class="level1">
+<h1>SAIGE: Family-based GWAS</h1>
+<p><strong>Title</strong>: Genetic association studies in large-scale biobanks and cohorts: Scalable and Accurate Implementation of GEneralized mixed model (SAIGE)</p>
+<p><strong>Presenter(s)</strong>: Wei Zhou</p>
+<p><strong>Wei Zhou:</strong></p>
+<p>Hi, I’m Wei Zhou. In this presentation, I’m going to give a quick tutorial on a program called SAIGE, which is for scalable and accurate implementation of generalized mixed models. It was developed for conducting genetic association studies in large-scale biobanks and cohorts.</p>
+<p>We will firstly go through several challenges of GWAS in large-scale cohorts and biobanks, mostly for binary phenotypes, followed by our solutions. We have implemented SAIGE for single-variant association tests because the single-variant association tests are usually underpowered for rare variants. More recently, we have implemented the region or gene-based association tests called SAIGE-Gene for rare variants in the same SAIGE R package. Lastly in this talk, we’re going to use some examples to demonstrate how to run the SAIGE R package.</p>
+<p>Here, three main challenges of GWAS in large-scale biobanks and cohorts are listed, including sample relatedness, large-scale data sizes, and unbalanced case-control ratio of binary phenotypes.</p>
+<p>First, let’s take a look at the sample relatedness. Sample relatedness is an important confounding factor in genetic association tests that needs to be accounted for. For example, in the UK Biobank data, almost one-third of individuals have a third-degree or closer relative in the cohort. However, linear and logistic regression models assume individuals are unrelated.</p>
+<p>Therefore, instead, we use mixed models for GWAS with related samples. Mixed models use the random effect, denoted as “b” here, to account for sample relatedness. “b” follows the multivariate normal distribution, whose variance contains the genetic relationship matrix (GRM). Each of the diagonal elements in GRM corresponds to the relatedness coefficient of a sample pair, which can be estimated using the genetic data.</p>
+<p>In linear and logistic mixed models, “b,” which is the random effect, is included to account for the sample relatedness through the GRM.</p>
+<p>In 2015, Loh et al.&nbsp;developed a linear mixed model method called BOLT-LMM. BOLT-LMM uses several asymptotic approaches to achieve the scalability of the mixed models, and it is the first linear mixed model method feasible for GWAS in biobank-scale data.</p>
+<p>So, can we use the linear mixed model for binary phenotypes? In this figure, the variance against the mean of residuals is plotted for the linear model and logistic model. The linear model assumes constant variance, as the orange line shows, while the true mean-variance relationship for binary traits is represented by the green line. Therefore, for binary phenotypes, instead of using a linear mixed model, we would like to use the logistic mixed model.</p>
+<p>In 2016, Chen et al.&nbsp;developed an R package called GMMAT in which the logistic mixed model has been implemented for GWAS on binary phenotypes while accounting for sample relatedness. So, we use logistic mixed models to account for sample relatedness in GWAS binary phenotypes.</p>
+<p>When we apply the logistic mixed model as implemented in GMMAT to one example phenotype, colorectal cancer in the UK Biobank, we found that it would take more than 600 gigabytes of memory and 184 CPU years to finish one GWAS in the UK Biobank.</p>
+<p>This brings out our next challenge: large-scale data. To be able to run logistic mixed models in biobank-scale data for binary phenotypes, we need to optimize implementation.</p>
+<p>To make logistic mixed models computationally practical for large-scale datasets. We use similar approaches that have been previously used in BOLT-LMM, which is the first linear mixed model method that is scalable for large-scale biobanks. Several approaches have been used to reduce the computation memory and time. We have successfully reduced the computation memory from more than 600 gigabytes to less than 10 gigabytes, and the computation time becomes nearly linear as the sample size increases.</p>
+<p>The program optimization allows us to apply the logistic mixed model for binary phenotypes in the UK Biobank. Here again, we have the same example for colorectal cancer. After we apply the logistic mixed model to this phenotype, we still see many spurious signals, as we can tell from the Manhattan plot.</p>
+<p>So, what is missing here?</p>
+<p>We later find out the reason is the unbalanced case-control ratio of binary phenotypes. Unbalanced case-control ratio is widely observed in biobanks. This plot is showing a distribution of case-control ratio of 1,600 binary phenotypes in the UK Biobank, and around 85 percent of them have case-control ratio lower than 1 to 100, which means there are 100 times more cases than controls.</p>
+<p>Previous studies have shown that unbalanced case-control ratios can cause inflated type 1 errors of the score test, which is represented by the blue line in the plot. The y-axis is for type 1 error rates, and the x-axis is for the minor allele frequency of the testing genetic markers. The score test is widely used in GWAS because of its relatively low computational burden. As we can see from the left to the right, as the study becomes more unbalanced, the inflation becomes more severe. Also, as the minor allele frequency becomes lower, the inflation becomes more severe.</p>
+<p>The reason is that when the case-control ratio is unbalanced, the score test statistic does not follow the normal distribution. In the plot, the dotted line is for the normal distribution, and the black solid line is for the score test statistic. So, when we try to get a p-value based on the normal approximation, we’ll see inflation.</p>
+<p>To solve this problem, Dey et al.&nbsp;in 2017 proposed to use the saddle point approximation to approximate the empirical distribution of the score test statistic, instead of using the normal approximation. And they have implemented this in the <em>SPAtest</em> R package. So, for our third challenge, we’re going to use the <em>SPAtest</em> to account for the unbalanced case-control ratio.</p>
+<p>In summary, SAIGE can work for GWAS with related samples based on the mixed models, and it can work for large-scale data with those optimization strategies. It can account for unbalanced case-control ratio of binary phenotypes through the saddle point approximation.</p>
+<p>Again, back to our example phenotype, colorectal cancer, and we see SAIGE successfully corrects the inflated type 1 error.</p>
+<p>We have applied SAIGE to three other phenotypes in the UK Biobank on White British samples: coronary artery disease, which is relatively common with the case-control ratio 1 to 12, and the less prevalent disease thyroid cancer with a case-control ratio of 1 to 1000. As we can tell from the third column of the Manhattan plots, SAIGE has well corrected type 1 error rates.</p>
+<p>SAIGE contains two steps. In the first step, the null logistic mixed model was fit with phenotype covariates and genotypes that were used to construct the GRM on the fly as input. In step 2, score tests were conducted for each genetic marker with the Saddle Point approximation applied to account for the unbalanced case-control ratio of the binary phenotypes.</p>
+<p>SAIGE has been implemented as an open-source R package and has been used to run GWAS for UK Biobank data and for other biobanks and large consortia. PheWeb interface has been created for some of the projects for browsing the phenome-wide GWAS results.</p>
+<p>As more and more sequencing data are being generated, more rare variants are being detected. However, single-variant association tests by GWAS are usually underpowered for rare variants, and set-based tests can be used to increase the power in which rare variants are grouped and tested together based on some functional units such as genes and regulatory regions.</p>
+<p>We then extended SAIGE for region or gene-based tests for rare variants. We implemented different set-based association tasks including Burden, SKAT, and SKAT-O. And SAIGE-GENE also allows for incorporation of multiple minor allele frequency cutoffs and functional annotations.</p>
+<p>Here are some useful papers that you can read if you want to know more details about different methods: The first three are about SAIGE, SAIGE-GENE, and SAIGE-GENE+, which is the improved version of the SAIGE-GENE that we have recently implemented. All three methods have been implemented in the SAIGE R package. And the fourth one is the GMMAT, which is an R package implemented for the logistic mixed model. The BOLT-LMM is the first linear mixed model method that is scalable for biobank-scale data. “REGENIE” is a new method based on some machine learning approaches. It is a very computationally efficient method for biobank-scale GWAS.</p>
+<p>I would like to thank Dr.&nbsp;Zhangchen Zhao, who co-developed SAIGE-GENE with me, and my PhD advisors Dr.&nbsp;Shawn Lee and Dr.&nbsp;Cristy Willer. My postdoc advisors are Dr.&nbsp;Mark Daly and Dr.&nbsp;Benjamin Neale, and now my colleagues from the University of Michigan. Also, fantastic collaborators from the HUNT study in Norway.</p>
+<p>Next, we have prepared some SAIGE and SAIGE-GENE examples as Wiki pages on GitHub, and we will go through some of them together.</p>
+<p>If you click on the first link, it will bring you to this SAIGE Hands-On practice.</p>
+<p>To get ready, you can install the SAIGE R package following the instructions that you may find linked here on the SAIGE GitHub, and all the example data can be found in the EXT data.</p>
+<p>So, SAIGE has two steps. The first one is to fit a logistic or linear mixed model, and the second one is to perform association tests for each genetic marker that you want to test, while applying the SPA (Saddle Point Approximation) to score tests to account for unbalanced case-control ratios.</p>
+<p>Here’s the First step: For step 1, you can use the trait type option to specify whether it is a binary or quantitative trait. For binary traits, SAIGE will automatically fit a null logistic mixed model, and for quantitative traits, it’ll fit a null linear mixed model. The first step takes two input files. The first input file is in the PLINK format, containing genotypes of genetic markers that we want to use to estimate the genetic relationship matrix, which which contains the relatedness coefficient of sample pairs. The second file is the called phenotype file, which contains non-genetic covariates, if there are any, and phenotype and sample IDs. Here’s a snapshot of the phenotype file, and you can see there are multiple columns corresponding to the phenotype you want to test, covariates included in the model, and sample IDs.</p>
+<p>Here’s an example command line to fit the null logistic mixed model for binary phenotypes. As we can see here, we have the PLINK file, and we have to specify the phenotype file and which column is for phenotype, and which columns are for covariates, and which column is for sample ID.</p>
+<p>So, there are way more options available for step 1, and for more details, you can call this R script with “--help” to see all of them. Then, if you run the example step one command in the previous slide, you can expect to see the screen output ending with the following text: “If the job above has been run successfully”.</p>
+<p>Step 1 will generate three output files, as you can see: model file ending with the “.RDA”, and the variance file which contains a number for the variance ratio, and then association result file which is an intermediate file. So the first two will be used as input for step 2.</p>
+<p>In Step 2, we perform single-variant association tests for each genetic marker. So, step 2 requires four input files. First of all, is the dosage or genotype file containing dosages or genotypes of markers we want to test. SAIGE supports four formats for dosages or genotypes: VCF, BCF, BGEN file, or the SAV file. We’ll use the BGEN file in the example today, but you can click on the links to see more details about those different file formats.</p>
+<p>The second one is the sample file. So, this file contains one column for sample IDs corresponding to the sample order in the dosage file, and no header is included in the sample file. This file is only required for BGEN input, as for some BGEN files, there is no sample ID information included in a region. But for VCF, BCF, and SAV files, sample IDs are already included in those files, so this sample file is not required for those file formats.</p>
+<p>The third and fourth input files are output from Step 1.</p>
+<p>Here’s the example code to run Step 2. As we can see, we specify the BGEN file, BGEN file index, and sample file. We also specify the chromosome number because only one chromosome can be tested in each job. We use a minimum allele frequency or a minimum allele count to specify some cutoffs for markers to be tested. The GMMAT model file and variance ratio file, both of them are outputs from Step 1. Then we use the “numLinesOutput” option, so we use 1,000 here to tell SAIGE to output the results of every 1,000 markers to the output file. We don’t want to use a very low number here because it will generate heavier overhead writing to the output file. The last option is the “IsOutputAFinCaseCtrl”. We specify this one to be true, and SAIGE will output the allele frequencies in cases and controls if we’re testing a binary trait to the output.</p>
+<p>Here’s some header information in the output file from Step 2, which contains the association results for the genetic markers we’re testing. Association results are all with regard to allele 2, as we see in the output file. I want to point out the column called “p.value.NA.” These p-values are obtained under the normal approximation. So, if we generate a QQ plot for “p.value.NA,” it’s very likely for us to see the inflation for binary phenotypes with unbalanced case-control ratios. The “p.value” column are the p-values that we want to use.</p>
+<p>Next, if you’re interested in conducting gene- or region-based tests for rare variants, you can click on the second link here, which will take you to the Wiki page we created for examples of SAIGE-GENE jobs.</p>
+<p>So, here we can see this page contains similar formats as SAIGE that we have gone through for the hands-on practice. SAIGE-GENE also contain similar Step 1 and Step 2 as SAIGE does, and it contains the extra step called Step 0, in which we construct the sparse GRM based on the provided PLINK file. This step only needs to be done once for each dataset, and it does not change according to different phenotypes.</p>
+<p>So, in Step 0, we’re creating a sparse GRM based on the genotypes stored in the PLINK file, as we use for Step 1 for the full GRM. The difference is that we create this sparse GRM and store it in a file, so it can be reused in Step One for different phenotypes.</p>
+<p>The input file will be the PLINK file, same as the PLINK file for Step 1. The output file will be a file storing the sparse GRM and a file storing IDs of samples in the sparse GRM. If you run the example code and you expect the screen output to end with the following text if the job has been run successfully.</p>
+<p>Then we’re running Step 1 again. It is to fit a logistic or linear mixed model. So, Step 1 asks for four input files instead of two, as we see in SAIGE. The first two are the same as Step 1 for single-variant association tests in SAIGE: the PLINK file storing the genotypes and the phenotype file containing phenotype, covariates, and sample ID information. The last two, the third, and the fourth ones, are outputs by Step 0, which are files storing the sparse GRM and the file storing the sample IDs in the sparse GRM.</p>
+<p>Here’s the example code for the Step 1 job. As we can see, we can use the two options that are highlighted here to specify the sparse GRM and the sparse GRM sample IDs that we have obtained from Step 0.</p>
+<p>Again, this “--help” flag can be used to see a more detailed parameter list. If the Step 0 job has been run successfully, the screen output will end with the following text. As we see, there are multiple values corresponding to multiple variance ratios, and there are actually four different minor allele count categories that we are using. So, for the specific cutoffs for different minor allele count categories, you can use “--help” to have a look.</p>
+<p>So, this Step 1 will generate four output files, and the first three are the same as the Step 1 outputs by SAIGE and when we try to run single-variant association tests: the model file, the variance ratio file, and the intermediate file for the association tests of some randomly selected markers. The fourth file here is specific to SAIGE-GENE, which is a sparse Sigma file. This file will be used as input for Step 2 along with the first and the second output files, which are the model file and the variance ratio file.</p>
+<p>In Step 2, we’re performing the set-based association tasks. It asks for five input files, and the first three are similar to SAIGE. There is a dosage or genotype file in different formats, a model file, and a variance ratio file generated by Step 1. Note that if you’re using BGEN for dosages or genotypes, you need to use the sample file to specify the sample IDs in the BGEN file.</p>
+<p>Now let’s look at the fourth and fifth files. They are specific to SAIGE-GENE. The fourth file is the group file. We can take a closer look at this one.</p>
+<p>So, each line in a group file is for one gene or one set of variants that you want to test together as a set. The first element is for the gene or set name, and the rest of the line is for variant IDs included in this gene set. For VCF or SAV input, the genetic marker IDs should be in the format “Chromosome_Position_Ref_Alternate_Allele,” and for BGEN files, the genetic marker IDs should match the IDs in a BGEN file. Each element in the line is separated by a tab. The fifth file is called a sparse Sigma file. It is also an output by Step 1.</p>
+<p>With all those input files, we can run the Step 2 job to perform set-based association tests. I want to point out this option called “maxMAFforGroupTest.” This can be used to specify the maximum minor allele frequency of genetic markers that you want to include in a group test. By default, this value is one percent, but if you want to test rare variants only, you can lower this number. Again, use “--help” to see a more detailed parameter list and information. If your Step 2 job runs successfully and you see the screen output ending with the text as we show here.</p>
+<p>Then we can take a look at the output files by Step 2. Step 2 will provide a file with region or gene-based association test results for each gene or region we’re testing. It will provide p-values from the SKAT-O test and also p-values from Burden and SKAT tests. There are a couple of columns showing the number of markers following each minor allele count category, and the category information can be found in the Step 1 script. If we specify that we want to output the single-variant association test result for genetic markers in the genes or regions we’re testing, the second file will be generated to provide that information.</p>
+<p>Lastly, if we want to use multiple minor allele frequency cutoffs and multiple functional annotations to test each gene, for example, we can use different group files and run Step 2 for that gene, multiple times. To combine those different p-values for the same gene, we can use the Gaussian distribution to combine them. Here’s the code that you can use to combine multiple p-values for gene or testing region.</p>
+<hr>
+</section>
+<section id="sec-video6" class="level1">
+<h1>CC-GWAS</h1>
+<p><strong>Title</strong>: Tutorial to use CC-GWAS to identify loci with different allele frequency among cases of different disorders.</p>
+<p><strong>Presenter(s)</strong>: Wouter Peyrot</p>
+<p><strong>Wouter Peyrot:</strong></p>
+<p>Hi, thank you very much for your interest in applying CC-GWAS to identify loci with different allele frequencies among cases of different disorders. My name is Wouter Peyrot. In the next 15 minutes or so, I’ll show you how to run the CC-GWAS software. We also conduct this analysis in the cross-disorder working group of the PGC for the next wave of analysis. Alkes Price and I developed the software. If you’re interested in any further reading, please see our paper in Nature Genetics 2021 or visit my GitHub page. If you have any questions or suggestions, please do not hesitate to contact me. I’m most welcome to explain further or to receive any suggestions you may have.</p>
+<p>So, and first, here I’ll show a couple of slides to give a big picture overview of the method, and then I’ll get hands-on with some real data to show you how real analyses are done with our package software. CC-GWAS is intended to compare cases of two different disorders. And when you’d like to extend, for example, to compare 10 disorders, you just need to repeat the CC-GWAS analysis accordingly, to compare two disorders at a time.</p>
+<p>So, CC-GWAS compares the cases of two disorders based on the respective case-control GWAS results, and the case-control GWAS results are, of course, widely publicly available most of the time. CC-GWAS works by taking a weighted difference of these case-control GWAS results. And CC-GWAS combines two components, which have distinct functions: The first component is what we refer to as the CC-GWAS<sub>OLS</sub> component. This component optimizes the power and controls for type 1 error at null-null SNPs. Null-null SNPs we refer to SNPs that have no impact on either disorder, so there is no case-case difference. If you’re interested in any more details about the CC-GWAS<sub>OLS</sub> component, I refer you to our paper.</p>
+<p>Then there is a second component, which we refer to as the CC-GWAS<sub>EXACT</sub> component. The CC-GWAS<sub>EXACT</sub> component controls the type 1 error at stress test SNPs. Stress test SNPs are a very specific set of SNPs that impact both disorders but have no case-case difference. So, the impact on both disorders is exactly the same, so there’s no case-case difference. This set of stress test SNPs is a very tricky set of SNPs because they can get type 1 error quickly. That’s why we have these additional set of weights to control for type 1 error at stress test SNPs. So CC-GWAS says that a SNP is significantly associated with case-case status when the p-value of the OLS component is smaller than 5x10<sup>-8</sup>, and when the p-value of the exact component is smaller than 10<sup>-4</sup>.</p>
+<p>CC-GWAS also has an additional filter to protect against false positives, and that is a very specific set of false positives that may result from differential tagging of a causal stress test SNP. Again, the stress test SNP is a SNP that impacts both disorders, but there’s no difference in allele frequency between the cases. Here, in the right column, you can see the causal stress test SNP. It has an impact on disorder A, it has an impact on disorder B, but there is no case-case difference, so there’s no case-case effect. But now, suppose you have a tagging SNP which tags in population A, in which you study disorder A, you study it with an r of 0.6, and for disorder B, it takes a SNP with an r of 0.3. Then, when you look at the difference of the effects of disorder A and disorder B, you do find the case-case difference. So, this is a very specific set of SNPs for which you can find false positives. To protect against this, CC-GWAS has an additional built-in step to filter SNPs that show evidence of differential tagging. Once again, when you’re interested in any more details of this step, I refer you to our paper and its supplements.</p>
+<p>Now we get to how to run CC-GWAS. So, I first suggest visiting the GitHub page, CC-GWAS GitHub. At this GitHub page, you can download all the results, and in particular, I’m now going to already download the files and in the test folder there are the two dummy input files for the case-control input GWAS results. Returning to the previous page, you can see an explanation of how to run CC-GWAS, how to get started, there’s a detailed description of all the input parameters where you can look up for reference, and there’s a description of the output files. Here, there is this example which I’ll go through with you.</p>
+<p>So, let’s first get to running CC-GWAS. First, here I have a terminal opened, and I can show you I’m in a folder where I have already downloaded these two files, so the test case-control GWAS for Bipolar 10 SNPs, and the test case-control GWAS for Schizophrenia 10 SNPs. So, we’ll look at the example of comparing Bipolar to Schizophrenia.</p>
+<p>Back to the GitHub page. First, we open R. I’m working on my MacBook, but I know this is exactly the same as working on a Linux-based server, and it also works on Windows. Here, you first need to load a couple of R libraries and install the CC-GWAS package. I’ll just copy-paste it from here, paste it here, and wait for R to run it. Now CC-GWAS is loaded, and you can see that CC-GWAS is now a functioning R package.</p>
+<p>Yeah, you can see that CC-GWAS is now loaded into R.</p>
+<p>Okay, and I’ve already loaded these two files, so now I go to this example here, at the bottom of the GitHub page, I’ve loaded this CC-GWAS example, and you can see if it all works. I’ll copy-paste it, and you can see that all is loaded.</p>
+<p>But before looking at the results, I’ll first get you to see the input parameters. Probably best to do it on this GitHub page. So here, in CC-GWAS, first, you set the name of the output file, and then you set the name of the first disorder. You set the name of the second disorder, which is Bipolar Disorder. You say where the summary statistics file of the first disorder is and the summary statistics file of the second disorder. Case-control subsets results. And then note, the six columns of these results are very specific, so they need to be exactly as I’ve described it here.</p>
+<p>So, let me show it’s at the GitHub page. Here it says…Yeah, so the columns should be the SNP name, the chromosome number, the base pair position, the effective allele, the non-effective allele, the allele frequency of the effective allele, the odds ratio for the risk of the disorder for the effect per effective allele, the standard error of the log odds of the alternate allele, the p-value for this SNP, and N effective (Neff). And when you don’t have N effective, you can impute it as I also described here on the GitHub page. So, 4 divided by 1 over n-case plus 1 over n-control. And I note that the results for the case-control disorder A and disorder B will be based merged on the SNP name. So before you run CC-GWAS, make sure that the SNP names between those two sets are well aligned.</p>
+<p>Now, I return to the example that we just ran. So that’s where we left off. I just showed you what the columns should look like of these two gzipped files. And then there are more input parameters. “K_A1A0” means it’s the population prevalence of disorder A. So, for schizophrenia, that’s approximately 0.4 percent. And because, of course, it’s very hard to know exactly the population prevalence of a disorder, you can also put boundaries to it. So for schizophrenia, we set it at one percent and the low at 0.4 percent. It’s important to add these ranges because it also, again, protects against type 1 error at stress test SNPs. And then, for disorder B, you set the exact same three values. The population prevalence of disorder B and the high estimate and the low estimate.</p>
+<p>Then, you specify results that typically come from LD Score regression, but of course, you can use different methods for it. That’s the liability scale heritability for disorder A, the liability scale heritability for disorder B. And how to get these estimates, I refer to the software package that provides these estimates. Then, you want to know the genetic correlation between disorder A and disorder B, and also the intercept that you get from bivariate LD Score regression. And this is very important to set this value because it helps you increase the power of CC-GWAS. And you also set an estimate of the approximated number of causal SNPs. And so, this “m” value, you need to specify it. And I also show here in the input files, I give some extra explanations about it and also some papers where you can see if this “m” is already estimated or how you can estimate it, or if you want to make an approximation, how to do it. Details on setting “m” are here on the GitHub page under the input parameters.</p>
+<p>So, we were left here with specifying the number of SNPs. And then, at last, you need to give the number of cases for disorder A, the number of cases for disorder B, the number of controls for disorder A, and the number of controls for disorder B. And then you also need to specify the overlap of controls. Once again, when you set this overlap of controls, it really helps you increase the power of CC-GWAS. So it has kind of the same function as the intercept. These are two ways to increase the power of CC-GWAS and also to double-check that you don’t risk any type one error result. So when you know these values, it’s important to set them to increase the power of CC-GWAS.</p>
+<p>I hope this clarifies the input parameters of CC-GWAS. Now, I’ll return to the analysis that we just did by running this command line.</p>
+<p>Yeah, so we just ran it, and you can see that the R function gives kind of an output file, which is also saved in the log file. So it says when the analysis was started and that you run CC-GWAS and not CC-GWAS+. And for CC-GWAS+, I refer to my GitHub page. And this is when you also have a direct case-case comparison available.</p>
+<p>Then, it shows some summary about the data that were read from the gz file and it does some very rough QC on the odds ratios. And then how it merges the data. So this kind of the just the log file that’s plotted, and you also get provided in an FST plot for this. And let me see if I can quickly, yeah, so this is what the FST plot looks like. It’s an output of CC-GWAS. Here you can see the FST. Again, for the details, I refer to our paper, but it gives intuition of the genetic distance between cases and controls. So here you can see the controls for bipolar disorder, the cases for bipolar disorder, the controls for schizophrenia, and the cases for schizophrenia. And I don’t know what just happened…And these numbers give the relative difference between them. So you can see that even though schizophrenia and bipolar disorder have a very large genetic correlation of 0.7, the genetic distance is still considerable with a relative value of 0.49 compared to 0.66 or 0.6 for the case-control difference.</p>
+<p>Okay, and then when we look at the output files, I always like this system where from R, you can also use the command line in the terminal. Yeah, you can see that by running CC-GWAS, these are the input summary statistics for these ten SNPs. This is the output file. This is the FST plot that I just showed. This is the log file, which is also printed here on the screen, so I’m not going to open it, but it’s good for later reference if you’re interested. And I note this log file also gives you the OLS and the exact weights that I just discussed. So here in the log file, you can see for this example, the OLS weights were 0.54 for schizophrenia, -0.3 for bipolar, and the exact weights are also listed in the log file and may be good to report in the description of your CC-GWAS analysis. And here there’s also the results that are displayed here.</p>
+<p>So now let’s have a look at these results. I’ll just copy-paste this also from the GitHub page, and for now, I’ll remove the “all,” and I’ll explain to you later what “all” means. So I need to give it the correct name, “test.out,” and then let’s have a look at “d”. Once again, I only have 10 SNPs. Now normally, of course, these are maybe 10 million SNPs or something, and here you can see the columns. So there’s the SNP name, the chromosome number, the base pair position, the effective allele, the non-effective allele, and then you have three columns: OLS beta, OLS standard error, and OLS p-value, and these represent the effects from the OLS component of CC-GWAS. And then there are three more columns: exact beta, exact standard error, and exact p-value, and these three columns give the CC-GWAS results of the exact component.</p>
+<p>And now, as we said, and here there’s also a column which labels CC-GWAS significant. So when CC-GWAS is significant, this column is labeled as “1”, right? So, and you can see for this specific SNP in the ninth row, so when we look here, you can see that OLS p-value is 9x10<sup>-12</sup>, so it’s smaller than 5x10<sup>-8</sup>. And you can see that the exact p-value is 4.7x10<sup>-11</sup>, so it’s smaller than 10<sup>-4</sup>. So this SNP is CC-GWAS significant.</p>
+<p>And so if you’re interested, I think it’s good to note that you can also have a more detailed output file. To do this, you need to add to this R script. Yeah, you need to add here an additional input parameter, which was named, if I remember correctly, yeah. So then you add, “save.all=TRUE”, here, “save.all=TRUE”. And when we look again at the files that are now in the folder, here you can see that an additional output file popped up. And when we have a look at this file, so I open this file, changing the file name a little bit with the “ALL” here. So now this file takes much more space. Of course, for 10 SNPs, it’s not really a problem, but when you have many SNPs, it can be tedious.</p>
+<p>So, and there are many, many columns here. The first columns of “d” represent again the columns that I just discussed. So the first columns are the SNP, chromosome, base pair position, effective allele or non-effective allele, and then you have the case-control effects. And these are scaled to the standardized observed scale based on a 50-50 case-control ascertainment. Again, when you’re interested in the details, please see our paper and its supplements. And then you have the case-control results for this disorder B. Then you have the OLS results as we just discussed, and you have the exact results. But then there are additional columns. So there is the potential tagging for the stress test SNP, potential differential tagging of the stress test SNP. It’s not necessary to understand all the details. If you’re interested, please have a look at our paper or its supplements, but just know that behind the scenes, we test for it and it’s being excluded from the previous output file that I showed.</p>
+<p>And then here we also have this exact approach, which again, the exact component of CC-GWAS protects against type 1 error of stress test SNPs. And this is also based on the fact that you don’t know exactly the population prevalence of both these disorders. So here you can see the exact results when you take the low-low values of both population prevalence disorders, low-high, high-low, and the high-high population prevalence bound. And here’s the CC-GWAS significant folder. So as you can see, this “d”, this output file, “ALL”, if you’re interested to look into more details of your results, you can have a look at it. And if you have any questions, please don’t hesitate to contact me and ask me for the details. But in general, I advise not to look at these results because also in the trimmed results, which are the default output, and now I’m going to load it again, we already removed the SNPs that may have a problem with differential tagging or some other issues, right? So if you use this file, you’re safe in that aspect.</p>
+<p>And then finally, and I see I extended the 15 minutes, but I hope you don’t mind. So now we showed how to run CC-GWAS in practice, and for, yeah, for follow-up analysis, as I just said, use CC-GWAS results based on the “save.all=FALSE” results. And I know this is a default, so when you don’t set “save_all,” this is what’s being done, and it’s a trimmed set of results. And then we advise to use the CC-GWAS<sub>OLS</sub> component. So these are the columns that are labeled “ols_beta,” “ols_standard_error,” and “ols_p_val” for clumping and, for example, polygenic risk analysis. So, to look at which loci have the different allele frequency. And when you’re interested in genetic correlation analysis or any other sort of LD Score regression-based analysis or methods that are alike, we advise to use the CC-GWAS<sub>EXACT</sub> component. So the “exact_beta,” “exact_standard_error,” and the “exact_p_value.” So that brings me to the end of this tutorial. Once again, please don’t hesitate to contact me if you have any questions, and I hope this tutorial was helpful.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          // default icon
+          link.classList.add("external");
+      }
+    }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
