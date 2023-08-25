@@ -714,1038 +714,192 @@ doing the work thank you very much
 
 **Presenter(s)**: Dr. Lea Davis, Vanderbilt University
 
-Intro
+\[the recording starts mid-sentence\]
 
-**and the bio bank that's attached to them at Vanderbilt and so this opened up part**
+**Lea Davis:**
 
-of a newer area of investigation for me something that I've been interested in a long time but but hadn't had the
+...and the biobank that\'s attached to them at Vanderbilt. And so, this opened up a newer area of investigation for me -- something that I've been interested in for a long time but hadn't had the resources to investigate. And so, that's basically using EHR-based \[electronic health records-based\] genomic approaches to try to better understand the relationship between mental health and physical health. That's the story that I'm going to be talking to you about today. So, if I can advance my slides\... oh, there we go. Okay.
 
-resources to investigate and so that's basically using EHR based genomic
+So this relationship between mental health and physical health is well-known -- that it's important. In one of the nice summary statements about the importance of this, it comes from the World Health Organization. On their website, they state that there is no health without mental health. And it's been documented for some time that poor mental health is a risk factor for a number of physical conditions, particularly chronic conditions. People with severe psychiatric illness are at a much higher risk of experiencing chronic physical conditions, and vice versa -- people with chronic physical conditions are also at risk of declining mental health. And so, I've actually come to think about this much like a disparity, in fact, that people with severe psychiatric illness experience these kinds of healthcare disparities. Oh, there we go. So, this is really sort of punctuated by the observation that the lifespan for people with severe psychiatric illness -- schizophrenia, bipolar disorder -- but also neuropsychiatric disorders like autism spectrum disorders and cognitive impairment, on average, the lifespan is shortened by 10 to 12 and a half years. It's thought that this is due to many possible reasons. One being a difference in access to healthcare -- related to employment and insurance issues here in the States. And that's certainly been shown to play a role, particularly for psychiatric illnesses such as schizophrenia, where there's a much higher rate of homelessness.
 
-approaches to try to better understand the relationship between mental health and physical health so that's kind of
+But also, issues related to difficulty in expressing pain. For example, for people who are non-verbal, there's also some suggestion that there may be altered interoception among people with neurodevelopmental disorders. So, for anybody who's not familiar with that term, interoception is kind of your internal perception of pain, discomfort, hunger, thirst, even sensing your own heartbeat. And that appears to be somewhat altered in people with developmental disorders.
 
-the story that I'm going to be talking to you about today so if I can advance my slides oh there we go okay so so this
+But it's also certainly possible that there's some increased genetic or biological risk that's actually related to the genetic risk for the psychiatric disorder itself. So, imagine sort of pleiotropic mechanisms. And then, of course, increased exposure to environmental risk factors: poor diet, lack of shelter, lack of access to medication, and those kinds of things.
 
-relationship between mental health and physical health is kind of well-known
+I think it's also important to highlight that this is really an understudied area for a couple of primary reasons actually. One is that until fairly recently, a lot of people with severe psychiatric illness and neurodevelopmental disorders received most of their healthcare in an institutionalised setting, whether that was a psychiatric institution, prison, or some other kind of group institutionalised setting that was separated from community-based healthcare. And so, this population has been understudied in epidemiological and community-based studies.
 
-that it's important and in one of the I think nice summary statements about the
+And then, there's also, as I'm sure everybody on this call is probably well aware, a historical separation between psychiatry and the rest of medicine. And so, it ends up being a kind of functional separation. That refers to the fact that often, mental health facilities are separate from primary care facilities. So you might have a community-based mental health clinic and a community-based primary care clinic. And even at a hospital, there's often a separate psychiatric hospital in a completely different building from the general hospital. So, there's this functional, cultural, and financial separation of psychiatry and medicine that I think has also contributed to this kind of healthcare disparity and the lack of research about it.
 
-importance of this comes from the World Health Organization on their website they state that there is no health without mental health and it's been
+Okay, and so, like many of us in this field, this is also an area of personal interest for me. So, this is a picture of me with my son, Dylan. Dylan is 24 years old; he has autism and severe cognitive impairment. He's nonverbal, requires 24-hour support staff, and he lives in a community-integrated group home. And so, even with a whole team of people who are focused on Dylan's health, we still really struggle to get proper healthcare for him. And so, this is an issue that's important to me personally, as it is to many families of individuals with developmental and psychiatric disorders who are getting older and ageing, and we don't really know what chronic health conditions they may be at risk for.
 
-documented for some time that poor mental health is a risk factor for a number of physical conditions particularly chronic conditions and so
+So, while, on the whole, this has been an understudied area, there have been a few areas of focus, particularly related to cardiovascular disease and cerebrovascular disease. And in recent years, there have been some really large meta-analyses looking at the prevalence and cumulative incidence of cardiovascular disease in people with severe psychiatric illness, primarily bipolar disorder, schizophrenia, and major depression. This is actually a recent paper with a meta-analysis of, I think, 92 studies that had an impressive sample size: over three million patients with one of those three disorders and over a hundred million controls, where they \[study authors\] investigated the increased risk of both cardiovascular disease and cerebrovascular disease in these populations. And so, basically, the take-home is that there is a significantly increased risk for both diseases, cerebrovascular and cardiovascular disease. This risk persists even after adjusting for some of the health behaviors that may be related to the incidence of disease, so things like smoking, poor diet, or BMI.
 
-people with severe psychiatric illness are at much higher risk of experiencing
+So based on these epidemiological studies that are just now starting to be published, we're also interested in asking the same kinds of questions and better understanding the relationship between mental and physical health using our EHR. In particular, we want to understand if there is some shared biology; if it\'s the case that poor mental health causes poor physical health or that poor physical health causes poor mental health. Really, our model is that it's going to be all of the above. But understanding what the primary risk factors are for each type of chronic disease and where their shared biology is, yeah, I think this is going to be an important area of research.
 
-chronic physical conditions and vice versa people with chronic physical conditions
+Another question that we have is: Do these relationships between mental health and physical health transcend our diagnostic boundaries? Is it really the case that it\'s just people with severe psychiatric illness or diagnosable neurodevelopmental disorders who are at risk? Or is it the case that the risk is continuous? That actually, across the entire spectrum of genetic risk for these traits, that there's also an increased risk for these chronic health conditions?
 
-are also at risk of defining mental health and so I I've actually come to
+And then, are there particular health conditions for which people with developmental disabilities and severe psychiatric illness are at high risk? So there's been a lot of work done on cardiovascular disease and cerebrovascular disease, and I think actually a fair bit of work on type 2 diabetes. But, outside of those primary chronic health conditions, there really hasn't been much, and so we really want to look  phenome-wide at these relationships.
 
-People with severe psychiatric illness experience health disparities
+And then finally, we want to see if this can help us understand the best point of intervention and, of course, to identify any interventions that are typically used in healthy populations that may cause particular problems in patients with severe psychiatric illness or developmental disorders. So maybe I'll pause there for just a minute if there are any questions.
 
-think about this much like a disparity in fact that people with severe
+**Facilitator:** Don't forget to unmute yourself if you have one. And I mean, one short question. To move to the first slide here, so this is the shortening of the lifespan for severe psychiatric diseases, and so the one thing that was... not missing on this list is suicide. So, big toll to the psychiatric disease here, is it not the main cause for that, or...?
 
-psychiatric illness experience these kinds of healthcare disparities there we
+**Lea Davis:** No it isn\'t, actually. It\'s definitely a contributory cause, but actually, the primary causes are chronic health conditions. Suicide is definitely an increased risk in this population, absolutely. But it doesn\'t account.
 
-go so this is really sort of punctuated by the observation that the lifespan for
+**Facilitator:** So, you also mentioned already, being in facilities, being in, like, prisons, etc. So, are there other comparisons between, for example, also the US and Europe? Are there comparisons between Caucasians and other ancestries? Do you have any idea here already?
 
-people with severe psychiatric illness or schizophrenia bipolar disorder but also neuropsychiatric disorders like
+**Lea Davis:** Honestly, the literature is pretty scant, so I'm not sure if that's really been investigated systematically and with sufficient sample size. It really hasn't been. I mean, I think most of the papers looking at these associations have been published from the '90s and on, so there's not the kind of 80-year body of literature like there is for cardiovascular disease and in healthy populations. So, yeah, I guess the short answer is I'm not sure that it's been systematically investigated.
 
-autism spectrum disorders and cognitive impairment on average the life span is
+**Facilitator:** Interesting. Do others have some questions? It says that there are two or three \[individuals\] on the call that are not muted. So again, if you\'re on the call and not muted, please mute yourselves. I can\'t right now.
 
-shortened by 10 to 12 and a half years and it's thought that this is due to
+**Lea Davis:** So, we believe that EHR-based genomic approaches are actually a great way of investigating several of these questions that we have. So, the EHR, the electronic health record, allows us to investigate the relationships between phenotypes, and the biobank that we have also facilitates investigation of the genetic relationships between these phenotypes. And so, we can then also compare the genetic correlations to the phenotypic correlations to better understand, you know, where there are environmental risk factors that contribute to the phenotypic relationships and genetic risk factors that contribute to the genetic relationships between traits. And it also allows us to utilise the polygenic architecture of these complex traits and develop quantitative models, so we're not necessarily relying on diagnostic categories but we can look at how genetic risk as a quantitative trait is related to risk for various phenotypes.
 
-many possible reasons one being a difference in the access to health care
+So, maybe some of you have heard me talk about the Vanderbilt EHR and the biobank, but just in case you haven't, it can be kind of thought of as three entities. We have what we refer to as the synthetic derivative, which is this de-identified and continuously updated mirror image of the EHR or EMR \[electronic medical record\], that, as of now, has a little over 2.8 million individuals. If we look across just that set of 2.8 million individuals, the median length of the EHRs is only about a year, even though the EHR has been in existence now for 20 years. And part of the reason for this is that we're a tertiary care centre. So we get people coming in from all over the state of Tennessee, Kentucky, and sort of all over the Southeast, particularly, you know, if they have the need to come see a specialist in a specialty care clinic. And so we end up drawing pretty sick people from all across the state. So, in comparison to, like, the UK biobank, that has maybe a healthier, on average, population, I think at Vanderbilt, we have a sicker, on average, population. That said, there is also a population of people who make Vanderbilt their medical home, so to speak, and they get most of their primary care at Vanderbilt as well. And so, our biobank consists of DNA samples that have been collected from just routine clinical blood draws, is enriched for that population of people that actually make Vanderbilt their medical home. And so, this is illustrated by the median length of the EHR, or BioVU subjects, which is about 10 years.
 
-so related to employment and insurance issues here in the states and that's
+And so, we have now somewhere around 270,000 DNA samples that have been collected, and a little over 50,000 of those subjects have been genotyped with some kind of GWAS platform. And on average, the age of those subjects is around 58 years old, but we are trying to genotype and accumulate pediatric care as well. So, any quick questions about the structure of the BioVU biobank or EHR that's central to the rest \[of the presentation\]?
 
-certainly been shown to play a role particularly for for psychiatric illnesses such as
+**Facilitator:** So this is, like, all different kinds of diseases, right?
 
-schizophrenia where there's a much higher rate of homelessness but also
+**Lea Davis:** Yep.
 
-issues related to difficulty in expressing pain and so for example for
+**Facilitator:** All cases? Or are there also healthy subjects here, or is this all cases?
 
-people who are non-verbal there's also some suggestion that there may be
+**Lea Davis:** Well, I mean, yeah, so there are people who don't have, you know, chronic diseases certainly, and there are people who come in for, you know, routine health care, and they are in the biobank as well. So there's no ascertainment at the biobank level. That said, it's a hospital-ascertained population, so, I think, most people will likely be, you know, a case for something.
 
-altered interoception or among people with neurodevelopmental disorders and so
+**Facilitator:** Okay. And so, how many of these 50,000 are psychiatric patients?
 
-if for anybody who's not familiar with that term interoception is kind of your internal perception of pain discomfort
+**Lea Davis:** Um, how many of the 50,000 have psychiatric codes? I\'m not exactly sure. Yeah, I actually don't have access yet to all 50,000 samples. It's not enriched for psychiatric codes, that. But we\'ve... So, you know, the genotyping data, it\'s actually a large project. Eventually, we'll have a 100,000 people genotyped. And so, the data is coming through in waves, and we actually were involved in pushing several of the psychiatric diagnoses through, but we haven't gotten those genotype samples yet. So, they\'re, yeah...
 
-hunger thirst even sort of sensing your own heartbeat and and that appears to be
+**Facilitator:** Right. Where are they genotyped right now?
 
-somewhat altered in people with developmental disorders but it's also
+**Lea Davis:** Where are they being genotyped?
 
-certainly possible well that there's some increased genetic or biological risk that's actually related to the
+**Facilitator:** Yeah.
 
-genetic risk for for the psychiatric disorder itself so imagine sort of
+**Lea Davis:** Here, at Vanderbilt.
 
-pleiotropic mechanisms and then of course increase exposure to environmental risk factors poor diet
+**Facilitator:** Vanderbilt. On GSA \[Global Screening Array\]?
 
-lack of shelter lack of access to medication and those kinds of things and
+**Lea Davis:** No, on the MEGA platform \[Multi-Ethnic Genotyping Array\].
 
-I think it's also important to highlight that this is really a an under studied area for a couple of primary reasons
+**Facilitator:** Okay. Thank you. Great.
 
-actually one is that until fairly recently a lot of people with severe psychiatric illness and
+**Lea Davis:** Okay, so, as I mentioned before, we were very interested in taking advantage of the fact that most complex traits have a complex genetic architecture with a measurable polygenic component. So we can look at how the polygenic risk for all kinds of psychiatric disorders is also related to disease status for other chronic health conditions. So I think probably everybody on the call is familiar with this approach, but just in case, one of the methods that we're using is basically to calculate polygenic risk scores for everybody in our biobank. So, using some kind of large discovery GWAS and taking the effect sizes from that GWAS to create a linear weighted sum of the number of risk alleles. And then looking at how those polygenic risk scores segregate cases from controls across a number of different phenotypes phenome-wide.
 
-neurodevelopmental disorders received most of their health care in an institutionalized setting whether that
+So we started with actually investigating this in both psychiatric disorders and in some of the previously published chronic health conditions. And so, I am starting with showing you coronary artery disease polygenic risk scores that are significantly associated with the EHR definition for coronary artery disease. So here we took the beta weights from the CARDIoGRAMplusC4D Consortium study, which had about 60,000 cases and 123,000 controls, and applied it to a small subset of our MEGA data target sample, just to make sure that indeed, coronary artery disease, as defined in carefully ascertained research samples, was related to the EHR diagnosis for coronary artery disease. And so, this included covariates median age across the EHR, sex, the top 10 PCs \[principal components\], and actually it\'s not listed here, but also genotyping batch. So you can see that our polygenic risk score accounted for almost 3 percent of the variance in CAD diagnosis within our EHR.
 
-was a psychiatric institution or or prison or some other kind of group
+So, this was encouraging. And we actually applied this model also to the lipid traits that have been studied by the Global Lipids Consortium -- so HDL, LDL, and triglycerides. And we tried to model the relationship, the known relationships between those risk factors and coronary artery disease. Oops, so I'm going to take just a short methodological detour here because one of the other things that's come to my attention in working with the Department for Biomedical Informatics, you know, often, when I present polygenic analyses, I get the question from people who do a lot of machine learning, "Where is your feature selection step?" Right? So, in your genome-wide association study, training the weights, but then, how do you know which SNPs to include in your model and the target data? And typically, really, what we often do is just work across a number of thresholds, and, you know, see how the R^2^ might change if we include just the genome-wide significant SNPs or, you know, everything at a p-value of less than 0.5 or less than 1. And so, kind of investigate across different thresholds.
 
-institutionalized setting that was separated from community-based health
+But we wondered, really, how well we would do if we actually took a training set and used it to select a threshold for including SNPs in the polygenic risk score, and then applied it to a validation set. Because this is actually, you know, I think, ultimately what we would do. Really, just out of curiosity we looked at that now. The slide is a little busy but I will walk you through it.. We have our discovery GWAS phenotypes in the first column and the target phenotype in the second column. So the discovery GWAS was either the Global Lipids Consortium for HDL, LDL, or triglycerides. Can you guys see my cursor there?
 
-care and so there's this population has been under studied in the kind of
+**Facilitator:** We can, we definitely can, but there is someone not muted in the background. Not sure if this is this one person who is not muted or if it\'s you, Lea, I\'m not sure.
 
-epidemiological and community-based studies and then there's also as I'm
+**Lea Davis:** No, it's not me. I heard it, too. It\'s okay.
 
-sure everybody on this call is probably well aware has been kind of a historical
+**Facilitator:** But we see your cursor, yes.
 
-separation between psychiatry and the rest of Medicine and so it ends up being functional separation
+**Lea Davis:** Okay, all right, great. So, right, for these lipid traits, this was Global Lipids Consortium, across CAD, this was the cardiogram study, and then our target phenotypes were all measured in the biobank. And so, we set up a training sample of about 9,000 people and a validation sample of about 16,000 people.
 
-so that refers to the fact that you know
+\[Note: There are noises in the background of the call due to an individual not being muted, 24:39 to 25:14\]
 
-often the mental health facilities are separate from the primary care
+**Facilitator:** Gerome, if you hear us, please mute yourself! I don\'t have the claim to power. They can\'t hear us.
 
-facilities and you might have like a community-based mental health clinic and a community-based primary care clinic
+**Lea Davis:** Yeah. \[laughs lightly\] So we had a training sample of about 9,000 people, a validation sample of about 16,000 people. And so, you can see the p-value threshold that was the best fit in the training sample, the number of SNPs that was included in that best fit, the adjusted R^2^ value, or the proportion of variance explained. And the p-value for that...
 
-and even at a hospital there's often a separate psychiatric hospital you know
+\[Note: There are noises in the background of the call due to an individual not being muted, 25:35 to 25:55\]
 
-in a completely different building from the the general hospital so there's this
+**Lea Davis:** Sorry, it\'s hard to...
 
-functional and cultural and financial separation of psychiatry and medicine
+**Facilitator:** I mean, they seem to be like they don't have the speaker on, they don't even listen, so it's a little bit annoying. So please, everybody, again, here, if you hear us, please mute yourself or just, if you're not listening, just leave the call. That's fine as well.
 
-that I think has also contributed to this kind of healthcare disparity and in
+**Lea Davis:** Okay, so we used the same threshold that was identified in the training sample to define the PRS in the validation sample. There's a, you'll notice, there\'s a different number of SNPs included, and we think that this is because the training sample was on the Omni \[genotyping\] platform and the validation sample was on the MEGA platform, even though they were both imputed to the same reference panel, and they're both European populations. The MEGA sample seems to have better overlap with the original discovery GWAS, and so the R^2^ for, you know, both the training and validation samples, particularly for the lipid traits, are really pretty impressive and, and actually start to approach the SNP-based heritability, for, in particular, for HDL.
 
-the lack of research about it okay and
+And so, I\'ve put an asterisk here because the p-value threshold in the training sample was actually the same as the best-fit p-value threshold in the validation sample. So, I can pause there for any questions. We were actually kind of surprised that there were any traits where the best-fit threshold was the same across multiple samples. And so, I think this is actually really interesting and potentially indicating that we're starting to approach, kind of, maximum information for HDL and LDL in our GWAS.
 
-so like many of us in this field this is also a very an area of personal interest
+Right, in the interest of time, I'll just move on. So, we took the same best-fit thresholds and polygenic scores developed from them, and applied them in a pheWAS analysis. So what you\'re looking at here is a Manhattan plot from our pheWAS where, along the x-axis, we have, kind of, classified phenotypes, and along the y-axis, the -log10 of the p-value for the PRS. The direction of the arrow indicates the direction of risk. So, if there were higher polygenic risk scores among cases, you\'ll see an up arrow, versus control, you'll see a down arrow. So, this pheWAS was for LDL, sorry, for HDL, and we see a protective effect of HDL on type 2 diabetes. And this has been previously shown. So, this was a good proof-of-concept.
 
-for me so that this is a picture of me with my son Dylan Dylan is 24 years old
+We did a similar type of analysis for our LDL polygenic risk score, where, again, we see a strong association with dyslipidemias and coronary artery disease. So these are also known associations. Interestingly, so I don't have it here in this presentation, but there is, the phenotypic correlations between LDL and the diseases tested in our phenome-wide analysis were much stronger. So, we saw lots of different phenotypes associated with the measured LDL, but these are the only phenotypes that are associated with genetically predicted LDL.
 
-he has autism and severe cognitive impairment he's nonverbal he requires
+So, getting into our primary interest, which is the genetic risk for psychiatric disorders associated with diseases across the phenome, we asked whether genetic risk for MDD \[major depressive disorder\] was associated with heart disease codes and, actually, all phenome-wide codes. And so, we took the most recent 2018 MDD meta-analysis results that are posted on the website \[note: of the PGC: https://pgc.unc.edu/for-researchers/download-results/\] and did the same kind of thing where we calculated a genetic risk score in all of our 16,000 people in the MEGA sample. And we see really strong associations with mood disorders and depression, which we expect. Associations with bipolar disorder and anxiety disorders. But then, we also see some of these cardiovascular traits rising in significance as well. And so, we see an association with nonspecific chest pain, which is really a catch-all, you know, as it states, nonspecific, code, but was definitely interesting to us. And so, we wanted to investigate this a little further.
 
-24-hour support staff and he lives in a community integrated group home and so
+And we asked whether we saw similar associations for related mental health traits. So, related to major depression is also an individual's perception of loneliness. And this is something that we've been working on with a consortium group, Abe Palmer, Dorret Boomsma, and myself, and others. We call ourselves the Lonely Consortium. And we've amassed almost 500,000 samples. And I think those of you on the MDD call have heard some reports of this already. So, we looked at the relationship between polygenic risk scores for loneliness and phenome-wide associations as well. And so, this is our Manhattan plot for our loneliness GWAS, and you can see also that we are observing some enrichment of gene expression for our loneliness loci within tissues that we expect to see some enrichment in, brain tissues in particular. And we have also observed several genetic correlations. I just have a few posted here, but these are genetic correlations with phenotypes that are associated with poor mental health, including general tiredness, lower self-rated health, and coronary artery disease.
 
-even with a whole team of people who are therapists on Dylan's health we still
+One of the reasons that we were really interested in looking at the genetic relationship between loneliness and these other traits is that loneliness has, in and of itself, been identified as a risk factor for increased morbidity and mortality. And so, there have been several epidemiological studies looking at the temporal relationship between a person's self-reported loneliness and later health consequences. And so, often, the causal mechanism is inferred from that temporal relationship. But I think that's a little tricky because, of course, by the time someone actually has a heart attack or has diagnosis of coronary artery disease, that disease has been developing for many years. And so, having that temporal relationship is not always an indicator of a cause-and-effect relationship.
 
-really struggle to get proper healthcare for him and so you know this is I think
+A graduate student in my lab, Julia Sealock, has led the effort on this work. She looked at, again, the innate propensity to loneliness --- the polygenic risk scores for loneliness --- to see whether they were associated also with poor health outcomes. And so, in this case, because we didn't have loneliness measured anywhere in our biobank, we weren't able to do this kind of hold-out training on a separate sample for a best fit. So, we just took everything at a p-value of less than one. And even with that, we actually see a strong association with mood disorders and depression, with tobacco use disorders. But then also, you can see a whole host of coronary artery disease-type phenotypes. So this is also getting at the question that we had about the relationship between sort of dimensional traits and diagnosis itself. So again, these are not necessarily... The sample is not enriched for major depression, and we're not looking at the diagnosis of major depression or the diagnosis of chronic loneliness. We're just looking at the genetic risk factors.
 
-an issue that it's important to me personally as it is to many families of
+So, we actually... one of the, I think, benefits of having this type of data, as opposed to just looking at genetic correlations with summary stats, is that we can do a lot of conditional and sensitivity analyses to try to tease out some of the relationships. And so, we looked at how BMI and diagnosis of major depression might influence associations. And so, when we adjust for BMI, definitely we see an attenuation of the signal for coronary artery disease, although we do still see some of these phenotypes rising above phenome-wide significance. And we also see, again, a strong association with mood disorders, depression, and tobacco use disorders.
 
-individuals with developmental disorders and our psychiatric disorders who are
+When we adjust for the diagnosis of major depression, we still observe a significant association with obesity. And, even though our coronary artery disease codes kind of fall below phenome-wide significance, they're still, of course, enriched among our results. And so, this was actually a really important analysis because it's also well-known that after having a coronary event, people become much more susceptible to a major depression episode. And so, we wanted to make sure that our associations weren't completely driven by the major depression that may be diagnosed after the fact. And while we do see definitely an attenuation of the signal, I think with increased sample sizes, these associations will probably still remain phenome-wide significant.
 
-getting older and aging and we don't really know what chronic health
+We were also interested in seeing if there was a difference between males and females. And so, we stratified our pheWAS sample and looked separately. And while we do see some qualitative differences -- so, in females, definitely the depression and mood disorder codes remain phenome-wide significant, and in males, the MI \[myocardial infarction\] and atherosclerosis codes remain phenome-wide significant -- these differences between them were actually not statistically significant. So I think this is really just reflecting the fact that more males have myocardial infarctions and more females are diagnosed with depression. Stephan, how am I doing on time?
 
-conditions they may be at risk for so
+**Facilitator:** It depends on how many slides you have left. \[laughs\]
 
-while on the whole this has been a you know an under studied area there have
+**Lea Davis:** Well, what time is it?
 
-been a few kind of areas of focus particularly related to cardiovascular
+**Facilitator:** Sorry, we have still another 17 minutes? But let\'s leave another 5 minutes to the end at least. So you have good... 10 to 12 minutes?
 
-and cerebrovascular disease and in recent years there have been some really
+**Lea Davis:** Okay, alright. Okay, great. So, since we were primarily interested in following up the associations between polygenic risk for loneliness and the coronary artery disease codes, we focused in on the males and looked there at the association after adjusting for, again, MDD or BMI. And so, again, we see that myocardial infarction remains significantly associated after adjusting for either BMI or MDD, and actually also remains associated after adjusting for both MDD and BMI. And so this, I think, now provides a really nice substrate for a Mendelian randomisation analysis as well.
 
-large meta analyses looking at the prevalence and cumulative incidence of
+The second part here is actually just an introduction to some of the work that we have planned. And so I wanted to just briefly go over it and invite any ideas or collaborations if people are particularly interested in certain biomarkers for phenotypes that they're studying. So, within the EHR, we have access to actually thousands of labs, but many of those are kind of unique, special snowflakes, so they may have only been ordered on, you know, a small handful of patients.
 
-cardiovascular disease in people with severe psychiatric illness primarily
+So, when we start looking at labs that have a larger sample size, it turns out we have about 350 labs with over a thousand individuals. And actually, I should say that all of these labs have at least a thousand observations. So, if we say that we have 350 labs with at least a thousand individuals and at least a thousand observations, then it means everyone has been measured at least once. But then, we\'ve got a larger number of labs where we have a smaller number of individuals but a larger number of observations per individual. And so, this data is also, you know, really rich for looking at longitudinal associations between the relationship with, you know, psychiatric illness and changes over time in various biomarkers. So in total, we have about 500 labs with at least a hundred people, at least a thousand observations.
 
-bipolar disorder schizophrenia and major depression and so this is actually a
+So, this work... Sorry, this data source really has not been utilised very much in the EHR space, partially because it's really messy data. So it's taken us close to two years actually to really carefully QC \[quality control\] all of the labs that had sufficient sample size. It's also challenging because, again, it's a hospital population, and so, you know, a lot of the times, the labs are being drawn because somebody is actually sick. And so, this can be a challenge to interpretation. But, at the same time, the fact that we have the entire EHR allows us to investigate the relationship between diagnoses and changes in lab values.
 
-recent paper with the meta-analysis of I think 92 studies the had really
+Some of the benefits of using this data are that we have a really large sample size that is really rich for clinical data. So it\'s longitudinal. We\'ve got over 20 years\' worth of data. And we can, as I\'ve mentioned a couple times now, test the effects of many possible mediating and moderating variables. And then, we can also go into the charts themselves and validate by chart review. So, developing tools to both QC and visualise this data has been a really tremendous effort by Peter Straub, a programmer in my lab. So he has developed a Shiny app and a whole set of tools that we\'re actually planning on making publicly available. And we\'ll be able to make the summary data for all these different labs available, so that we can look at how they vary by age, by sex, by race, and that groups with other bio banks and labs, you know, can locally also download these tools and apply them to their data.
 
-impressive sample size so over three million patients with one of those three
+And this is sort of the concept map for what we would eventually like to do. So this is, you know, that we would take, you know, the beta values from GWAS of many psychiatric illnesses, calculate polygenic risk scores across everybody in BioVU, and then look at how these risk scores are related to median values in, you know, hundreds of routinely collected labs. And, as I mentioned before, we can also use longitudinal models to see how they\'re related to change in lab values over time.
 
-disorders and and over a hundred million controls where they investigated the the
+So we've started doing this a little bit for some of these traits that I've been talking about so far. So this is just focusing in again on HDL, LDL, and triglycerides, and looking at how genetic risk scores for coronary artery disease, loneliness, or major depression is associated with median lab values. And so, in each of these plots, we\'re looking at the R^2^ values, the proportion of variance explained in HDL, LDL, and triglycerides, on the y-axis. And then, the discovery GWAS p-value threshold on the x-axis. So that we can see kind of across the board how well do, you know, the MDD risk scores, CAD risk scores, and loneliness risk scores predict HDL, LDL, and triglyceride levels. And so, interestingly, we see that,  for HDL, our loneliness risk scores actually tend to outperform our CAD risk scores. And for LDL, you know, it looks like there is some differences, but I don\'t think these are actually really meaningful because below 0.1% variance \[explained\], it\'s not, not a significant association between the risk score and the median value. And then, in our triglyceride analysis, we do see the CAD risk score outperforming the loneliness risk score, which is what we would kind of think about, maybe intuitively expect. But the loneliness risk score does actually significantly predict triglyceride levels as well.
 
-increased risk of both cardiovascular disease and cerebrovascular disease in these populations and so basically the
+So, like I\'ve said a couple of times... Sorry. We also are interested in testing the mediating effects of these quantitative traits and the moderating effects of sex and medications, and other diagnoses on these relationships as well. So this is kind of our... an example of a general model we're interested in testing---the relationship between polygenic liability and disease diagnosis, that may be, again, mediated through quantitative traits.
 
-the take-home is that there is significantly increased risk for both disorder for both circular and
+So, kind of, our future interests are to mine this lab data for potential biomarkers for neuropsychiatric disorders, using genetic risk scores from our publicly available GWAS data. And I should say that, you know, we don\'t think it\'s likely that we will identify a biomarker for, you know, major depression out of all of these routinely collected labs, but that actually, we may identify several quantitative traits that together may be predictive of anindividual's genetic risk for major depression or schizophrenia, for example. We also are really excited about using bi-directional Mendelian randomisation analyses to better understand some of these possible causal mechanisms. And to compare the phenotypic correlations with the genetic correlations, to try to identify comorbidities that may actually be more of a consequence of environment than of genetic causes---which, you know, we\'re also equally interested in understanding.
 
-cardiovascular disease and that this risk persists even after adjusting for
+So, I think that is it! I\'ll wrap up with an acknowledgement of everybody in my lab, a really great group of people to work with and wonderful students. And the work of the Lonely Consortium has just been a phenomenal collaboration that, I think, has yielded some really interesting results. And so, I think, with that I conclude and I hope there is some time for questions.
 
-some of the health behaviors but that may be related to to the incidence of
+**Facilitator:** Thanks so much, Lea. Fabulous presentation, really, it\'s a lot of data that is coming, therefore, it\'s really exciting that you\'re diving into that with full speed here. So is there... I mean, we have, like, around 30 people on the call. They probably have questions and they don\'t know how to unmute themselves. I still have questions, but I don't want to always step in, so... Did I hear somebody? Not yet. So, okay, so, Lea, I still have two or three more short questions, more on the technical side. There are two things here. So, first of all. Because you\'re speaking about, like, longitudinal stuff, because you have multiple measurements from the same individuals here. But also, is there a chance to actually, given the fact you might have seen some people with especially high polygenic scores for schizophrenia also. Is there a chance to get in touch with them \[the patients\] again on the next visit or so? Or is this something so enormous there\'s no chance to get in contact with these individuals again?
 
-disease so things like smoking or poor diet or BMI and so based on these kinds
+**Lea Davis:** No, they\'re, yeah, it's completely a de-identified dataset. Yeah, there is also a what's called the research derivative, so we work with the synthetic derivative because we're also working with the genetic data. If we were to restrict ourselves just to the phenotype associations, we could apply for access to the research derivative, which is an identified dataset. But even then, I think there are rules---I don't know that we could actually recontact patients. And there's no, although I don't understand why this is the case, you can't work with genetic data in the identified environment.
 
-of epidemiological studies that are just now starting to be published we also are
+**Facilitator:** Is this special to Vanderbilt or is this general to the US?
 
-interested in asking the same kinds of questions and better understanding the
+**Lea Davis:** Well, I think most of the biobanks within the US are de-identified. That issue about not working with genetic data in the context of an identified environment, that might be specific to Vanderbilt. I'm not actually not sure what the, you know, rules around that \[are\] or where those came from.
 
-relationship between men of mental and physical health using our EHR so in
+**Facilitator:** Very interesting, and a little bit sad, of course, because that would have been the gold example for that. And so, the other issue---a little bit more on the technical side---I mean, we all know that, like, especially polygenic risk scores are relatively sensitive to sample overlap. So how is... is there any chance for you? How are you dealing with this issue?
 
-particular we want to understand if there is some shared biology if it's the
+**Lea Davis:** Yeah, you know, it's a good question. And we've been thinking about this a lot. So, there's a method... I can't remember the first author's name now, but I think it came from Peter Visscher\'s group, to... In the context that we're using, where we have some individual-level data and GWAS summary statistics. They've published an approach to actually first just check to see if there is, yeah, what the probability of overlap actually is. Everything up until now, I have to be honest, is based on just the knowledge that no investigators have contributed actively from Vanderbilt to these GWAS. But I mean, we haven't yet done the careful checking to make sure that there's no sample overlap. But that is on our list.
 
-case that for mental health causes for physical health or that for physical health causes for mental health and
+**Facilitator:** Yeah, I think it\'s something that you need to think about.
 
-really our model is that it's it's gonna be all of the above but understanding
+**Lea Davis:** Yeah, absolutely. Yeah, it\'s, it's really something that, I think, we have to just actually bake into the pipeline. And we're also part of a collaboration with other biobank sites through the eMERGE Network, where we're doing a similar kind of thing---you know, replicating these polygenic pheWAS associations in other biobanks. And so, we're really trying to develop a, you know, robust pipeline for doing that across several EHR environments. And one of the things we need to make sure to build into the pipeline is this kind of checking.
 
-you know what the primary risk factors are for for each type of chronic disease and
+**Facilitator:** Yeah, I mean, especially within \[the\] PGC, it's good for just testing reasons, try to see if we see some unexpected overlap there, and if we don't, then this gives you a little bit more security that there isn\'t, and that it isn\'t like, suddenly 200 cases coming up that were shared from somebody else to \[the\] PGC, something that you need to be super careful \[about\] with all the other phenotypes. At least in \[the\] PGC, with everything in place, we could test. We could test that even without, you know, we have the checksum method where we can do it without sharing the genotype. So, it's something that could be done on a relatively low level.
 
-where their shared biology yeah I think this is going to be an important area of research another question that we have
+**Lea Davis:** So, in a phenome-wide type of analysis, how would you then, basically, for each pheWAS category, conduct a GWAS and check all of those sumstat relationships? Because it's also possible that we have, let's say, somebody with schizophrenia who doesn't actually have the diagnosis in *our* electronic health record. Right? They have a diagnosis of type 2 diabetes in our health record, but maybe they've been included in a GWAS somewhere else. So, I think...you know, I mean...
 
-is do these relationships between mental health and physical health transcends our diagnostic boundaries is it really
+**Facilitator:** Exactly, that\'s why I would be very interested to see, like, to check on the summary statistics level works for, like, a significant overlap for, for... if you have the same phenotype. I think you're raising exactly the right questions that, I think, if you want to be really sure, you need to really test it on a genotype level, right?
 
-because that it's just people with severe psychiatric illness or diagnoseable more developmental
+**Lea Davis:** Yeah.
 
-disorders that are who are at risk or is it the case that risk is continuous and
+**Facilitator:** And then... But I think that at least, if you can do this, like, with a couple of these consortia. You can, at least, mean that if there's something unexpected or something expected, and I think this already provides some support here. And maybe when you actually see this on the summary statistics level, when you see actual significant overlap there, find it somewhere. Then you probably want to go there, ask these guys, "Can we actually test this on genotype level? Who are these individuals?" Is this actually correct? I think we can test this on a couple of different levels.
 
-and that actually across the entire spectrum of genetic risk for these traits that there's also increased risk
+**Lea Davis:** Yeah, yeah, that's... that\'s a good idea. And that's basically what we wanted to start with---was just to see, first, like, do we see any evidence of overlap? And then, if we do, you know, how should we go about dealing with it?
 
-for these chronic health conditions and
+**Facilitator:** I mean, to be honest, the overlap cannot be really, really big because then it's so quick. We'll see really exploding R^2^ values that's really impressive. Even if, like, you have a small data set, like couple hundred individuals, in our big meta-analysis, all of these, it's just 300 cases in the meta-analysis, the R^2^ are exploding. So, it is probably... Definitely... If there is something, it\'s definitely very small. Of course, even this small thing can have this small impact on these... that seemed to fit so well, right?
 
-then are there particular health conditions for which people with developmental disabilities and severe
+**Lea Davis:** Yeah. So, do you have an intuition of, like, what you expect if there's an overlap of, say, you know, a dozen people? You know, like a really small overlap?
 
-psychiatric illness are at high risk there's been a lot of work done on cardiovascular disease and cerebral
+**Facilitator:** No, this is always something that I really wanted to test. Yeah, somebody wants to go for it? Please do so. \[laughs\] No, I don't have that intuition. I have these experiences that if there\'s like a couple hundred overlap, it's really, it\'s really strong. So much surprise... surprisingly strong, really. That's why I'm always careful about this. It's not that you see, like, R^2^ that\'s just jumping a little bit around, it's really exploding. And so, that's why I think... My hunch is that even, like, a dozen or 20 could have a small impact, not big---I mean, some of your p-values are really just passing this phenome-wide threshold there, right? So that's why, especially for these cases... But yeah, let\'s keep this up, this discussion, and I'm very happy to be a part of it.
 
-vascular disease but and and I think actually a fair bit of work on type 2
+**Lea Davis:** Yeah, and so, and for anybody on the call who's interested in looking at particular phenotypes, and we've now pheWAS polygenic risk scores for all of the publicly available summary statistics from \[the\] PGC. And so, anybody who's interested in talking more about what schizophrenia looks like or what bipolar looks like, or whatever, please feel free to get in touch with me, because I would love to kind of have more folks to discuss these with.
 
-diabetes but outside of those kind of primary chronic health conditions um there's there's really not been very
+**Facilitator:** Fabulous. I'm sure the people will be more brave. Okay, so we are actually over the hour, so I will have to close the call now. Thanks so much, Lea, for presenting.
 
-much and so we really want to look genome-wide at these relationships and
+**Lea Davis:** Yeah, thanks, guys.
 
-then finally the wanna see if this can help us understand the best point of
+**Facilitator:** And I hope this will continue here. All the best to everybody here. See you in a short time. Bye-bye.
 
-intervention and and of course to identify any interventions that are typically used in healthy populations
-
-that that may cause particular problems in patients with severe psychiatric
-
-illness or developmental disorders so
-
-A few of our research questions
-
-maybe I'll pause there for just a minute if there are any questions
-
-and don't forget you to unmute yourself if you have one and I mean one short
-
-question - to move to the first slide so this is the shortening of the lifespan
-
-for severe psychiatric diseases and so
-
-the one thing that that was from my point was not missing on this list is
-
-like suicide like big toe to to the psychiatric disease here is not the main
-
-no it isn't actually um it's definitely a contributory cause but but actually
-
-the primary causes chronic health condition so suicide is definitely a
-
-increased risk in this population absolutely um but it doesn't account so
-
-you mentioned already this like like being facilities being also prisons etc
-
-so and is there other comparisons
-
-between for example also like the US and Europe are the comparisons between
-
-Caucasians and other industries have
-
-honestly the literature is pretty scant so I'm I'm not sure if that's really
-
-been investigated sort of systematically and with sufficient sample size um it
-
-really hasn't been I think most of the papers looking at that these
-
-associations have been published you know from the 90s and on so there's not
-
-the kind of you know eighty year body of literature like there is for you know
-
-cardiovascular disease and in healthy populations so I guess that yeah the
-
-short answer is I'm I'm not sure that it's really been systematically investigated
-
-two others have some questions if not
-
-they said they'd like two or three on the car that are not muted so if again
-
-so this is question if you own the car not muted please mute yourselves like right contractors um so we believe that
-
-EHR based genomic approaches are actually a great way of investigating
-
-several of these questions that we have so the EHR the electronic health record
-
-allows us to investigate the relationships between phenotypes and the
-
-biobank that we have also facilitates investigation of the genetic relationships between theatre phenotypes
-
-and so we can then also compare the the genetic correlations to the phenotypic correlation better understand you know
-
-what is there where there are the environmental risk factors that contribute to the matific relationships
-
-and genetic risk factors that contribute to the genetic relationships between traits and it also allows us to utilize
-
-the polygenic architecture of these complex traits and develop quantitative models so that we're not necessarily
-
-relying relying completely on diagnostic categories but we can look at how
-
-genetic risk as a quantitative trait is related to risk for various phenotypes
-
-so maybe some of you have heard me talk about the Vanderbilt EHR and the bio
-
-bank but just in case you haven't it can be kind of thought of as three entities
-
-we have what we refer to as the synthetic derivative which is this
-
-de-identified and continuously updated mirror image of the EHR or EMR that as
-
-of now has a little over 2.8 million individuals if we look across just that
-
-set of 2.8 million individuals the median length of the EHRs is only about
-
-a year even though the EHR has been in existence now for 20 years and part of
-
-the reason for this is that we're a tertiary care center so we get people coming in from all over the state of Tennessee and Kentucky and
-
-and sort of all over the southeast particularly you know if they have a
-
-they if they have the need to come see a special specialist in a specialty care
-
-clinic um and so we end up drawing pretty sick people from all across the
-
-state so in comparison to like the UK biobank that has maybe a healthier on
-
-average population I think at Vanderbilt we have a sicker on average population
-
-that said there is also a population of people who make Vanderbilt their medical
-
-home so to speak and they get most of their primary care at the end result as
-
-well and so our biobank which consists
-
-of DNA samples that have been collected from just routine clinical blood draws
-
-is enriched for that population of people but that actually make Vanderbilt
-
-their medical home and so this is illustrated by the median length of the
-
-EHR or bioview subjects which is about 10 years and so we have now somewhere
-
-around 270,000 DNA samples that have been collected and a little over 50,000
-
-of those subjects have been genotyped with some kind of G loss platform and on
-
-average the age of those subjects is around 58 years old but we are trying to
-
-genotype and accumulate pediatric care goals of all so any quick questions
-
-about the structure of the bioview biobank or EHR that's central to the
-
-rest of the so this is like all different kinds of diseases right all
-
-cases of these are they are also healthy subjects here or is this all cases well
-
-I mean yeah so there are people who don't have you know chronic diseases
-
-certainly there are people who come in who's just for you know routine health care and they're in in the bio bank as well so
-
-there's no ascertain meant at the bio bank level that said there it's a it's a
-
-hospital ascertained population so so I think probably most people will be you
-
-know a case for something okay and so how many of these \$50,000 psychiatric
-
-patients how many of the 50,000 have
-
-psychiatric codes I'm not exactly sure
-
-yeah I actually don't have access yet to all 50,000 samples it's it's not an it's
-
-not enriched for psychiatric cards that but but we've said you know the
-
-genotyping data is actually it's a large project eventually we'll have a hundred thousand people genotype and so the the
-
-data is coming through in waves and we actually were involved in pushing
-
-several of the psychiatric diagnoses through but we haven't gotten those
-
-genotype samples yet so um so they're right yeah we know where are they being
-
-you know type here no on the mega
-
-platform okay okay so as I mentioned
-
-before we were very interested in taking advantage of the fact that most complex traits have a complex genetic
-
-architecture with a measurable polygenic component and so we can look at how the
-
-polygenic risk for all kinds of psychiatric disorders is also related to
-
-disease status for other chronic health conditions
-
-so I think probably everybody on the call is familiar with this approach but just in case one of the methods that
-
-we're using is basically to calculate koala genetic risk scores for everybody in our bio Bank so using some kind of
-
-large discovery gos and taking the effect sizes from from that gos to
-
-create a linear weighted sum of the number of risk alleles and then looking
-
-at how those polygenic risk scores segregate cases from controls across a
-
-number of different phenotypes genome-wide so we started with actually
-
-investigating this and both psychiatric disorders and in some of the previously
-
-published chronic health conditions and so I'm starting with showing you the
-
-coronary artery disease polygenic risk scores that are significantly associated
-
-with the EHR definition for coronary artery disease so here we took the beta
-
-weights from the cardiogram plus C for D consortium study that had about sixty
-
-thousand cases and 123 thousand controls and applied it to a small subset of our
-
-mega data target sample just to make sure that we that indeed coronary artery
-
-disease in carefully ascertained research samples was related to the HRV
-
-diagnosis for coronary artery disease and so this included covariates median
-
-age across the EAP our sexes the top 10 pcs and actually it's not listed here but also genotyping batch and so you can
-
-see that our apologetic risk score accounted for almost 3 percent of the variants and CID diagnosis within our
-
-EHR so this was encouraging and we actually applied this model also to the
-
-lipid traits that have been studied by the global lipids consortium so HDL LDL
-
-triglycerides and try to also model the relationship the known relationships
-
-between those risk factors and coronary artery disease oops
-
-so I'm going to take just a short methodological detour here because one
-
-of the other things that's pointer my attention in working with the Department
-
-for biomedical informatics you know often when I present telegenic analyses
-
-I get the question from people could be a lot of machine learning where is your
-
-feature selection step right so in your genome-wide Association study training
-
-the the weights but then how do you know which snips to include in your model and
-
-the target data and typically really what we often do is just work across a
-
-number of thresholds and you know and see how the r-squared might change if we
-
-in just the genome-wide significant snips or you know everything at a p-value of less than 0.5 or less than
-
-one and so kind of investigator cost different thresholds but we wondered really how well we would do if we
-
-actually took a training set and use that to select a threshold for inclusion
-
-for including snips in the apologetic risk score and then applied it to a validation set because this is actually
-
-I think you know ultimately what we would do if we were they're really just
-
-kind of out of curiosity we you know look at that now but we have our
-
-Lipid traits and Coronary Artery Disease
-
-discovery gos phenotype in the first column and the target phenotype and the
-
-second column so the discovery gos either as the global the potential for the HDL LDL and triglycerides and you
-
-can see my
-
-this one person that is not muted or if it's Yulia sure no it's not me I heard
-
-it too okay if we see you know me to see
-
-your cars is okay all right great and so right so for for these lipid trades this was people and then our
-
-target phenotypes were all measured in the bio Bank and so we we set up a
-
-training sample of about 9,000 people and a validation sample oh yeah alright
-
-so we had a training sample of about 9,000 people a validation sample of about 16,000 people and and so you can
-
-see the key value threshold that was the best fit and the training sample the number of snips that was included in
-
-that best friend we're truly r-squared value or the proportion of variance I have to say and and the p-value for that
-
-because I have no experience so I'm not
-
-sure I mean they they seem to be like they don't have the speaker on kro they don't even listen so it's a little bit
-
-annoying so please everybody again here so if you hear us please mute yourself
-
-or just if you don't listen if you're not listening just leave the call that's
-
-fine as well okay so we used the same in
-
-fresh hold that was identified in the training symbol to define the PRS in the
-
-validation sample there's a you'll notice there's a different number of snips included and we think that this is
-
-because the training sample was a me platform and the validation sample was
-
-the mega platform even though they were both imputed to the same reference panel
-
-and they're both European populations the mega sample seems to have better
-
-overlap with the original discover AG loss and so the are squirts for you know
-
-both the training and validation sample particularly for the lipid traits are really pretty impressive and and
-
-actually start to approach the Senate based heritability or in particular for
-
-HDL and so I put an asterisk here for
-
-the p-value fold in the training sample was actually the same as the best fit
-
-p-value threshold in the validation sample so I can pause there for any
-
-question we were actually kind of surprised that there were any traits where the best of it men told was the
-
-same across multiple samples and so I think this is actually really
-
-interesting and potentially indicating that we're starting to approach kind of narcs and them information or an LDL in
-
-our jaws
-
-right in the interest of time I'll just move on so we took the same best-fit
-
-thresholds and genetics course you're
-
-looking at here is a Manhattan plot from us yaws where along the x-axis we have
-
-kind of classified that the phenotypes and along the y-axis the minus log time
-
-that the p-value for the PRS twin direction of the arrow indicates the
-
-direction of risk so if there were higher polygenic risk scores among cases
-
-this up arrow control to see a Down and so this view else was for LDL sorry for
-
-HDL and so we see a protective effect of yell on type 2 diabetes and this has
-
-been previously shown this was a good concept and we did a similar type of
-
-analysis for our LDL polygenic risk score where again we see a strong
-
-association with this lipid yneouws and
-
-with coronary artery disease and so these are also known associations
-
-interestingly so I don't have it here and in this presentation but but there's
-
-a the phenotypic correlations between a chair between LDL and the diseases
-
-tested in our genome wide analysis were much stronger so we saw lots of
-
-different phenotypes associated with the measured LDL but these are the only phenotypes that are associated with
-
-genetically predicted LDL so getting
-
-into our primary interest which is the genetic risk for psychiatric disorders
-
-associated with diseases across the phenome we asked
-
-whether genetic risk for MDD was associated with heart disease codes and and actually all phenome wide codes and
-
-so he took the most recent 2018 DD
-
-meta-analysis results that are posted on the website and did the same kind of thing where we calculated a genetic risk
-
-score and all of our 16,000 people in the mega example and we see really
-
-strong associations with mood disorders and depression which we expect associations with bipolar disorder and
-
-anxiety disorders but then we also see some of these party avascular rates
-
-rising in significance as well and so we see an association with nonspecific
-
-chest pain which is really kind of a catch-all you know as it states
-
-nonspecific code but was definitely interesting to us and so we wanted to
-
-kind of investigate this a little further and we asked whether we saw some
-
-Do we see similar associations for related mental health traits?
-
-similar associations for related mental health traits so related to major depression is also individual's
-
-perception of loneliness and this is something that we've been working on with a consortium group now a Palmer
-
-Dorit blooms fund and myself and others would call ourselves the lonely
-
-consortium and we've amassed almost 500,000 samples and I think those of you on the MDD call have heard some reports
-
-of this already and so we looked at the relationship between polygenic risk scores for loneliness and phenom wide
-
-associations as well and so this is our Manhattan plot for our loneliness
-
-seawalker sorry gee wasps and you can see also that we are observing some
-
-enrichment of gene expression for our loneliness low sigh within
-
-tissues that we expect to see some enrichment so this is in brain tissues in particular and we also have observed
-
-several genetic correlations and I just have a few posted here but genetic correlations with phenotypes that are
-
-associated with poor mental health including general tiredness lower
-
-self-rated health and coronary artery disease and one of the reasons that we
-
-were really interested in and actually looking at the genetic relationship between loneliness in these other traits
-
-is that loneliness has in and of itself and identified as a risk factor for
-
-increased morbidity and mortality and and so there have been several kind of
-
-epidemiological studies looking at the temporal relationship between a person's self-reported loneliness and later
-
-health consequences and so often the causal mechanism is inferred from that
-
-temporal relationship but I think that's a little tricky because of course you know by the time I'm somebody actually
-
-has a heart attack or has diagnosis of coronary artery disease that that
-
-disease has been developing for for many years and so having that temporal
-
-relationship is not always an indicator of a cause-and-effect relationship so a
-
-graduate student in my lab julia c-loc has kind of led the effort on this work
-
-well she looked at again the innate propensity to loneliness apologetic risk scores for loneliness to see whether
-
-they were associated also with poor health outcomes and so in this case because we didn't have loneliness measured anywhere in our biobank we
-
-weren't able to do this kind of foot training on a separate sample for a best fit so we just took everything at a
-
-p-value of less than one and even with that we actually see a strong association with mood disorders and
-
-depression with tobacco use disorders but then also you can see with a whole host of coronary artery disease type
-
-phenotypes and so this is also getting at that question that we had about the relationship between sort
-
-of dimensional traits and and diagnosis itself so again these are not
-
-necessarily so the sample is not enriched for major depression and we're
-
-not looking at the diagnosis of major depression our diagnosis of you know chronic loneliness or we're just looking
-
-at the genetic risk factors so we
-
-BMI and MDD diagnosis influence associations
-
-actually one of the I think benefits of having this type of data as opposed to just looking at genetic correlations
-
-with summary stats is that we can do a lot of conditional and sensitivity analyses to try to tease out some of the
-
-relationships and so we looked at how
-
-BMI and diagnosis of major depression might influence associations and so when
-
-we adjust for BMI definitely we see an attenuation of the signal for coronary
-
-artery disease although we do still see some of these phenotypes rising above
-
-you know might significance and we also see again a strong association with the
-
-you know disorders depression and tobacco use disorders when we adjust for the diagnosis of major depression we we
-
-still observe a significant association with obesity and and even though our
-
-coronary artery disease codes kind of fall below phenome wide significance they're still of course enriched among
-
-our results and so this was actually a really important analysis because it's
-
-also known well-known that after having a coronary event people become much more
-
-susceptible to a major depression episode and so so he wanted to make sure
-
-that our associations weren't completely driven by the major depression that may
-
-be diagnosed after the fact and while we do see definitely an attenuation of the
-
-signal I think we're think resample sighs these associations will probably still remain
-
-phenome aren't significant we also were interested in seeing if
-
-Differences between males and females?
-
-there was a difference between males and females and so we stratified our few us
-
-sample and and looked separately and while we do see some qualitative
-
-differences so in females definitely the depression and mood disorder codes remain phenome like significant and in
-
-males the mi and atherosclerosis codes
-
-remain feel might significant these differences between them were actually not statistically significant so I think
-
-this is really just reflecting the fact that more males have myocardial infarctions and more females
-
-are diagnosed with depression Stephan
-
-how am i doing on time good 10 to 12
-
-minutes okay all right okay great so so
-
-there's since we were really primarily interested in following up the associations between polygenic risk for
-
-loneliness and the coronary artery disease codes we we focused in on the males and and looked there at
-
-Association after adjusting for again MDD or BMI and and so again we see that
-
-myocardial infarction remains significantly associated after adjusting
-
-for either BMI or MDD and actually also remains associated after adjusting for
-
-both MDD and BMI and so this now I think
-
-is a really nice substrate for a
-
-Mendelian randomization analysis as well
-
-Part 2: Strategy to screen for biomarkers in lab data
-
-so the the second part here is is actually just kind of an introduction to some of this the work that we have
-
-planned and so I just wanted to sort of briefly go over it and and invite any
-
-ideas or collaborations of people are particularly interested in certain
-
-biomarkers for phenotypes that they that they're studying so within the EHR we
-
-have access also to actually thousands of labs but many of those are kind of
-
-unique special snowflakes so they may only have been ordered on you know a small handful of patients so when we
-
-start looking at labs that have a larger sample size it turns out that we have
-
-about 350 labs with over a thousand individuals and actually I should say
-
-that all of these labs have at least a thousand observations so if we say that
-
-you know we've got 350 labs with at least a thousand individuals at least a
-
-thousand observations then everybody has been measured at least once but then
-
-we've got a larger number of labs where we have a smaller number of individuals but a larger number of observations per
-
-individual and so this data is also you know really rich for looking at
-
-longitudinal associations between the relationship with you know psychiatric
-
-illness and and changes over time in various biomarkers so in total we've got
-
-about 500 labs with at least a hundred people measured at least a thousand
-
-observations so this work has sorry this
-
-Clinical lab data
-
-data source really has not been utilized very much in the EHR space partially
-
-because it's really messy data so it's taken us close to two years actually to to really carefully QC all of the the
-
-labs that that had sufficient sample size it's
-
-also challenging because again it's a hospital population and so you know a lot of times the the labs are being
-
-drawn because somebody is actually sick and so this can be a challenge to interpretation but at the same time the
-
-fact that we have the entire EHR allows us to investigate the relationship between diagnosis and and changes in lab
-
-values some of the benefits of using this data are that we have a really
-
-large sample size that is really rich for clinical data so it's longitudinal
-
-we've got over 20 years worth of data and we can as I mentioned a couple of
-
-times now test the effect of many possible mediating and moderating variables and then we can also go into
-
-the charts themselves and validate by chart with you so developing tools to
-
-both QC and visualize this data has been a really tremendous effort by Peter
-
-Straub a programmer in my lab so he's developed a shiny app and a whole set of
-
-tools that actually we're planning on making publicly available and and will
-
-be allowed we'll be able to make the summary data for all of these different labs available so that we can look at
-
-how they vary by age by sex by by race
-
-and and that groups with bio banks and
-
-and labs you know locally can also download these tools and and apply them to their data
-
-and this is sort of the concept map for what we would eventually like to do so
-
-this is you know that we would take the you know beta values from geo so many
-
-psychiatric illnesses calculate polygenic risk scores across everybody
-
-and bio view and then look at how those risk scores are related to median values
-
-in hundreds of routinely collected labs and as I mentioned before we can
-
-so use longitudinal models to see how they're related to change in lab values
-
-over time so we've started doing this a
-
-little bit for some of these traits that I've been talking about so far so this
-
-is just focusing in again on HDL LDL and triglycerides and looking at how the
-
-genetic risk scores for coronary artery disease loneliness or major depression
-
-is associated with median lab values and
-
-so in each of these plots we're looking at the r-squared values the proportion
-
-of variance explained in HDL LDL and triglycerides on the y axis and then the
-
-Discovery gos p-value threshold on the x axis so that we can see kind of across
-
-the board how well do you know MDD risk scores CA D risk scores and loneliness
-
-risk scores predict HDL LDL and triglycerides and so interestingly we
-
-see that for HDL our loneliness risk scores actually tend to outperform our
-
-CA D risk scores and for LDL you know it
-
-looks like there's some difference but I don't think these are actually really meaningful because below 0.1% variance
-
-it's not not a significant association with the between the risk score it's
-
-often and the median value and then in our triglyceride analysis we do see the
-
-the CAG risk score outperforming the loneliness risk score which is kind of what we would think about maybe
-
-intuitively expect but the loneliness risk score does actually significantly
-
-predict triglyceride levels as well
-
-so like I've said a couple of times we
-
-also are interested in testing for the mediating effect of these quantitative
-
-traits and the moderating effects of sex and medications and and other diagnoses
-
-on these relationships as well so this is kind of our an example of a general
-
-model that we're interested in testing the relationship between polygenic viability and disease diagnosis that may
-
-be again mediated through quantitative traits so kind of our future interests
-
-are to mine this lab data for biomarkers for our psychiatric disorders using genetic risk scores from them are
-
-publicly available jaws and I should say that you know we don't think it's likely
-
-that we will identify a biomarker for you know major depression out of all of
-
-these routinely collected labs but that actually we may identify by several quantitative traits that together may be
-
-predictive of an individual's genetic twist or form a major depression or
-
-schizophrenia for example we also are really excited
-
-about using bi-directional Mendelian randomization analyses to better understand some of these possible causal
-
-mechanisms and to compare the phenotypic correlations with the genetic
-
-correlations to try to identify comorbidities that may actually be more of a consequence of environment then of
-
-genetic causes which you know we're also equally interested in understanding so I
-
-Acknowledgements
-
-think that is it I'll wrap up with an acknowledgement of everybody in my lab a
-
-really great group of people to work with and wonderful students and the work
-
-of the lonely consortium again this has been like a just a phenomenal
-
-collaboration that I think has yielded some really interesting results and so I
-
-think with that all and and hopefully there's some time the questions thanks so much the other
-
-fabulous presentations really it's a lot of data that's coming - therefore - it's
-
-really exciting to see that you're diving into that with full speed here um
-
-so is there I mean we have like around 30 people on the call we probably have
-
-questions and they don't know how to unmute themselves or I still have
-
-questions but I don't want to always step in did I hear somebody
-
-okay so then here I still have likes like two or three night more short
-
-questions I'm on the technical side so so two things here so first of all and these are you a because you're speaking
-
-about to do know stuff but also is there
-
-chance to actually give them the fact you might have seen some people with
-
-especially high score screen your result is their chance to get in contact with
-
-them again on the next visit or so or is this something that's so enormous there's no chance to to actually get in
-
-contact with these individuals no they're yeah it's it's a completely de-identified data set yeah there is
-
-also a what's called the research derivative so we work with in the synthetic derivative because we're also
-
-working with the genetic data if we if we were to restrict ourselves just to
-
-the phenotype associations we could apply for access to the research derivative which is an identified data
-
-set but even then I think there are rules I don't know that that we could
-
-actually recontact patients and and there's no although I don't understand
-
-it why this is the case you can't work with genetic data in the identified
-
-environment well I think most of the bio
-
-banks within the US are de-identified that that issue about not working with
-
-genetic data in the context of an identified environment that might be specific to Vanderbilt I'm not actually
-
-sure what the what the you know rules around that where those
-
-came from very interesting and a little
-
-bit sad of course because that would be the and so the other issue a little bit
-
-more technical side I mean like special project with scores are actively sensitive to so how is there
-
-any chance for you or how do you want these dealing with this issue like yeah
-
-you know that it's a good question we've been thinking about this a lot so so
-
-there's a method I can't remember now the first author's name but I think it came from from Peter Fisher's group to
-
-in the context that we're using where we have some individual level data and geo
-
-summary statistics they've they've published an approach to actually first
-
-just check to see if there is yeah what the probability of overlap actually is
-
-everything up until now have to be honest is based on just the knowledge
-
-that no investigators have contributed actively from Vanderbilt to these G wast
-
-but I mean we haven't yet done the careful checking to make sure that
-
-there's no sample overlap but that is on our list yeah it's it's really something
-
-that I think we have to just actually baked into the pipeline and and we're
-
-also part of a collaboration with other
-
-bio bank sites through the emerge Network where we're doing a similar kind
-
-of thing you know replicating these polygenic few associations in other bio
-
-banks and so so we're really trying to develop a you know a robust pipeline for
-
-for doing that across several EHR environments and and one of the things
-
-we need to make sure to build into the pipeline is this kind of checking
-
-especially when did you see it's good for for just testing reasons doesn't try to
-
-see if we see some unexpected overlap there and we don't and this gives you a
-
-little bit more security that yes like 200 cases coming up that we shared from
-
-somebody else to PTC something that you need to be super careful at least did
-
-you see everything in place we could test that we couldn't test done even without you know we have to check some
-
-method where we can without sharing the genotype so it's something that could be
-
-done on a relatively low level so so in
-
-a genome-wide type of analysis how would you then basically like for each fee
-
-wass category conduct a G was\--and check all of those some stat relationships
-
-it's also possible that we have say somebody with schizophrenia who doesn't
-
-actually have the diagnosis in our electronic health record right they have
-
-a diagnosis of type 2 diabetes in our health record but maybe they've been inclusive in a geo somewhere else so so
-
-I think you know I mean first we like
-
-the check on the summary statistics level works for like a significant
-
-overlap for for if you have the same field I think you're raising exactly
-
-right questions that I think if you want to be really sure you need to really
-
-test it on a genotype and the burning at
-
-least you can do this like with a couple of these consortiums you at least
-
-meaning if there's something unexpected or something expected and I think this gives already some support here and
-
-maybe when you actually see the summary statistics level when you see actually
-
-some significant overlap there Fineman somewhere then you you probably
-
-want to go there ask these guys for can we actually test this on genotype 11 who are these individuals this is actually
-
-correct is this I think we can test this on a couple of different levels yeah yeah that's that's a good idea
-
-and that's basically what we wanted to start with was just to see first like do we see any evidence of overlap and then
-
-if we do you know how should we go about dealing with it I mean to be honest the
-
-overlap cannot be really really big because then it's so quickly we'll see
-
-with the exploding a square values that's really impressive even if like if
-
-you have a small data set like individuals all of these it's just 300
-
-cases red ones are exploding so if there
-
-is something little small thing can have
-
-this small impact on these on these on these that seemed to fit so well right
-
-yeah so do you have an intuition of like what you expect if there's an overlap of
-
-say you know a dozen people you know like a really small overlap no this is
-
-always something that I really wanted to test yeah somebody wants to go for it please no I don't have that I have these
-
-experiences that it's like a couple hundred overlap it's really it's really
-
-strong so much surprise surprisingly strong really that's why I'm always
-
-careful about this it's not that you see dying are spread this is just jumping a little bit around it's really exploding
-
-and so that's why I think my hunch is that even like it does know 20 could
-
-have a small I mean some of the p-values I really like just passing the spin of white
-
-trash out there right so that's why especially for these cases yeah
-
-okay but that's the cheapest keep this ominous this discussion and I'm very
-
-happy to it to be yeah and and so for
-
-you know anybody on the call who's interested in looking at particular phenotypes and we've we've now see us
-
-apologetic scores for all of the publicly available summary stats from PG
-
-C and and so you know anybody who's like
-
-interested in talking more about what schizophrenia looks like or what you know bipolar looks like or whatever
-
-please feel free to get in touch with me because I would love to kind of have you know more folks to discuss these with
-
-I'm sure the people will be more grave
-
-okay so we are actually over the hour so I will have to close to the call now thanks so much for presenting yeah
-
-thanks and this will continue here so
-
-all the best
+**Lea Davis:** Bye.

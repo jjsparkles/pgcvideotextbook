@@ -42,7 +42,7 @@ OK. This just is stressing that same point and also in the, in part two of these
 
 **Kyoko Watanabe**:
 
-Um, hi everyone. I'm a PhD student at the Fair University in Amsterdam. My work is mainly focusing on how to understand the genetic association in a biological context, and today I'm going to introduce you to a web application I have recently developed, which is functional mapping and annotation of genetic associations.
+Hi everyone. I'm a PhD student at the Fair University in Amsterdam. My work is mainly focusing on how to understand the genetic association in a biological context, and today I'm going to introduce you to a web application I have recently developed, which is functional mapping and annotation of genetic associations.
 
 So, I'm going to start with a very quick look at what was zeros again. So, we basically start with genotyping a large number of individuals using SNP arrays, which nowadays can tag around a million SNPs. And by performing imputation with a reference manual, you end up with a maximum of 20 million SNPs. So, in a very simple case, when you have case and control groups in your genotype individuals, you perform the statistical tests to see if the occurrences of alleles in case and control groups are different from zero. So, at the end, you basically get the p-value for every single SNP you have. But, as you can imagine, the number of statistical tests being performed is the same as the number of SNPs you have. We, of course, have to correct for the multiple testing, and the golden standard genomic significant p-value is five times ten to the minus eight. So, whenever you find the SNPs with a p-value less than that, they show that those genomic regions are called "hits."
 

@@ -2,9 +2,17 @@
 title: "Chapter 8: Post-GWAS bioinformatics"
 ---
 
-Chapter goals:
+> *Chapter goals:*
+>
+> 1.  *Be able to define SNP heritability and understand how it is calculated*
+>
+> 2.  *Understand the concept of "missing" heritability and explanations for why it is "missing"*
+>
+> 3.  *Understand methods of determining genetic overlap through calculations of genetic correlation*
 
 # 8.1 SNP Heritability {#sec-section1}
+
+> In this video by Dr. Price, we get a comprehensive overview of heritability, as defined through twin studies and SNP heritability as defined with genetic analyses. The video touches on the idea of \"missing\" heritability, with a comprehensive delve into possible explanations for missing heritability, and how to measure heritability through different methods.
 
 **Title**: Heritability and SNP Heritability
 
@@ -25,6 +33,8 @@ Link to video transcript [here](chapter8.1_transcript.qmd).
 
 # 8.2 Genetic Correlations and Partitioned LDSC {#sec-section2}
 
+> In this video, Dr. Turley gives a brief introduction into the concept of genetic overlap and methods of estimating the relationship of two traits through genetic correlation.
+
 **Title**: Genetic Correlation and Partitioning
 
 **Presenter(s)**: Patrick Turley, ATGU, Massachusetts General Hospital
@@ -43,6 +53,8 @@ Link to video transcript [here](chapter8.2_transcript.qmd).
 ------------------------------------------------------------------------
 
 # 8.3 Gene association analysis {#sec-section3}
+
+> In the first video, Dr. Posthuma gives a brief introduction to gene set annotation and pathway analysis with the MAGMA tool, discussing the various models and analyses that can be implemented with MAGMA. In the second video, Dr. Watanabe gives an introduction to the FUnctional Mapping and Annotation (FUMA) tool for annotating GWAS results: connecting SNPs to genes and then genes to functional annotations.
 
 ## MAGMA
 
@@ -88,6 +100,8 @@ Link to FUMA [Website](https://fuma.ctglab.nl/), [GitHub](https://github.com/Kyo
 
 # 8.4 Gene set analysis {#sec-section4}
 
+> This video by Dr. Posthuma is the same from Section 8.3, giving an overview of gene set analysis in MAGMA.
+
 **Title**: How do we go from genetic discoveries from GWAS/WGS/WES to mechanistic disease insight?
 
 **Presenter(s)**: Danielle Posthuma
@@ -110,6 +124,8 @@ Link to video transcript [here](chapter8.3_transcript.qmd#sec-video1).
 
 # 8.5 Fine-mapping {#sec-section5}
 
+> In this video, Dr. Finucane gives a comprehensive introduction to fine-mapping of genetic loci to determine potential causal variants, including discussing posterior inclusion probabilities (PIPs) and credible sets, and gives examples of different fine-mapping methods such as FINEMAP, SuSiE, Caviar, and DAP-G.
+
 **Title**: Introduction to fine-mapping methods
 
 **Presenter(s)**: Hilary Finucane
@@ -129,17 +145,17 @@ Link to video transcript [here](chapter8.5_transcript.qmd).
 
 # 8.6 Quantitative Trait Loci (QTLs) {#sec-section6}
 
-> Goals of this section:
+> *Goals of this section:*
 >
-> 1.  Be able to define GWAS and understand the general genetic architecture of common risk variants
+> 1.  *Be able to define GWAS and understand the general genetic architecture of common risk variants*
 >
-> 2.  Be able to define an eQTL (Expression Quantitative Trait Loci) and how they may be useful to interpreting GWAS results
+> 2.  *Be able to define an eQTL (Expression Quantitative Trait Loci) and how they may be useful to interpreting GWAS results*
 >
-> 3.  Obtain a solid understanding of eQTLs and related analytical approaches.
+> 3.  *Obtain a solid understanding of eQTLs and related analytical approaches.*
 >
-> 4.  Examine the role of eQTLs in the relationship of genes and molecular networks with phenotypic QTLs (pQTLs).
+> 4.  *Examine the role of eQTLs in the relationship of genes and molecular networks with phenotypic QTLs (pQTLs).*
 >
-> 5.  Understand eQTLs for co-expression networks.
+> 5.  *Understand eQTLs for co-expression networks.*
 >
 > This first short video by Dr. Liu briefly reviews GWAS studies and the GWAS catalog resource in order to discuss a main caveat of GWAS - that most significant trait associated variants lay in non-coding regions of the genome with putative regulatory function. The video then presents expression quantitative trait loci (eQTLs) as a method to connect SNPs to gene regulatory effects in a tissue-specific manner.
 
