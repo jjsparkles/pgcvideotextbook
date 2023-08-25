@@ -8,89 +8,121 @@ Below are common terms and acronyms used within this book and across the field o
 
 # A
 
-Admixture:
-
-Allele:
-
-Area under the ROC curve:
-
-AUC: see "Area under the ROC curve"
-
-Autosome:
+| Term                                           | Definition | Reference chapter |
+|------------------------------------------------|------------|-------------------|
+| Admixture                                      |            |                   |
+| Allele                                         |            |                   |
+| Antisense                                      |            |                   |
+| **A**rea **u**nder the ROC **c**urve (**AUC**) |            |                   |
+| Autosome                                       |            |                   |
 
 ------------------------------------------------------------------------
 
 # B
 
-Biallelic:
-
-Bonferroni adjustment:
+|                       |     |     |
+|-----------------------|-----|-----|
+| Base pair             |     |     |
+| Biallelic (SNP)       |     |     |
+| Bonferroni adjustment |     |     |
+|                       |     |     |
 
 ------------------------------------------------------------------------
 
 # C
 
-Chromosome:
-
-Common variant:
-
-Copy Number Variant (CNV):
+|                                                                    |     |     |
+|--------------------------------------------------------------------|-----|-----|
+| Candidate Gene study                                               |     |     |
+| Chromatin                                                          |     |     |
+| **Ch**romatin **I**mmunoprecipitation **Seq**uencing (**ChIPseq**) |     |     |
+| Chromosome                                                         |     |     |
+| Codon                                                              |     |     |
+| Common variant                                                     |     |     |
+| Congenital                                                         |     |     |
+| **C**opy **DNA** (**cDNA**)                                        |     |     |
+| **C**opy **N**umber **V**ariant (CNV)                              |     |     |
+| Crossover                                                          |     |     |
 
 ------------------------------------------------------------------------
 
 # D
 
+|             |     |     |
+|-------------|-----|-----|
+| Deletion    |     |     |
+|             |     |     |
+| Duplication |     |     |
+|             |     |     |
+
 ------------------------------------------------------------------------
 
 # E
 
-Effect estimate:
-
-Elastic Net Regression:
-
-EWAS:
+|                                                         |     |     |
+|---------------------------------------------------------|-----|-----|
+| Effect estimate                                         |     |     |
+| Elastic Net Regression                                  |     |     |
+| Enhancer                                                |     |     |
+| Epidemiology                                            |     |     |
+| Epigenetics                                             |     |     |
+| Epigenome                                               |     |     |
+| **E**pigenome-**W**ide **A**ssociation **S**tudy (EWAS) |     |     |
+| Epistasis                                               |     |     |
+| Exome                                                   |     |     |
+| Exon                                                    |     |     |
 
 ------------------------------------------------------------------------
 
 # F
 
-False Discovery Rate (FDR):
+|                                            |     |     |
+|--------------------------------------------|-----|-----|
+| **F**alse **D**iscovery **R**ate (**FDR**) |     |     |
+| FASTA file                                 |     |     |
+| Frameshift mutation                        |     |     |
 
 ------------------------------------------------------------------------
 
 # G
 
-Genetic Correlation:
-
-Genomic Inflation factor (lamda):
-
-Genotype:
-
-Genome-Wide Association Study (GWAS): Chapter X (What is a GWAS?):
+|                                                          |     |                        |
+|----------------------------------------------------------|-----|------------------------|
+| **G**ene-**E**nvironment Interaction (**GxE**)           |     |                        |
+| Genetic Correlation                                      |     |                        |
+| Genome                                                   |     |                        |
+| Genomic Inflation factor (lamda)                         |     |                        |
+| Genotype                                                 |     |                        |
+| **G**enome-**W**ide **A**ssociation **S**tudy (**GWAS**) |     | Chapter 1.2; Chapter 5 |
 
 ------------------------------------------------------------------------
 
 # H
 
-Haplotype:
-
-Hardy-Weinberg Equilibrium
-
-Heterogeneity
-
-Horizontal pleiotropy:
-
-Hyperparameters
+|                                                  |     |     |
+|--------------------------------------------------|-----|-----|
+| Haplotype                                        |     |     |
+| **H**ardy-**W**einberg **E**quilibrium (**HWE**) |     |     |
+| Heterogeneity                                    |     |     |
+| Heterozygosity                                   |     |     |
+| Histone modification                             |     |     |
+| Homozygosity                                     |     |     |
+| Horizontal pleiotropy                            |     |     |
+| Hyperparameters                                  |     |     |
 
 ------------------------------------------------------------------------
 
 # I
 
-Identity-by-decent (IBD):
-
-Imputation:
-
-Indel:
+|                                          |     |     |
+|------------------------------------------|-----|-----|
+| **I**dentity-**b**y-**d**ecent (**IBD**) |     |     |
+| Imputation                               |     |     |
+| INFO score                               |     |     |
+| Insertion                                |     |     |
+| **In**sertion/**Del**etion (**Indel**)   |     |     |
+| Intergenic                               |     |     |
+| Intron                                   |     |     |
 
 ------------------------------------------------------------------------
 
@@ -100,103 +132,131 @@ Indel:
 
 # K
 
-Kinship:
+|               |     |     |
+|---------------|-----|-----|
+| Kilobase (Kb) |     |     |
+| Kinship       |     |     |
+|               |     |     |
 
 ------------------------------------------------------------------------
 
 # L
 
-Lasso regression:
-
-LDSC
-
-Linkage disequilibrium
+|                                         |     |     |
+|-----------------------------------------|-----|-----|
+| Lasso regression                        |     |     |
+| **LD Sc**ore Regression (**LDSC**)      |     |     |
+| Linkage                                 |     |     |
+| **L**inkage **d**isequilibrium (**LD**) |     |     |
+| Locus                                   |     |     |
+|                                         |     |     |
 
 ------------------------------------------------------------------------
 
 # M
 
-Manhattan plot:
-
-Mendelian Randomization
-
-Minor allele frequency
+|                          |     |     |
+|--------------------------|-----|-----|
+| Manhattan plot           |     |     |
+| Mendelian Randomization  |     |     |
+| Messenger RNA (mRNA)     |     |     |
+| Methylation              |     |     |
+| Microbiome               |     |     |
+| Minor allele frequency   |     |     |
+| Missense mutation        |     |     |
+| Mitochondrial DNA (mDNA) |     |     |
+| Mosaicism                |     |     |
 
 ------------------------------------------------------------------------
 
 # N
 
-Null hypothesis:
+|                   |     |     |
+|-------------------|-----|-----|
+|                   |     |     |
+| Nagelkerke P      |     |     |
+| Nonsense mutation |     |     |
+| Nucleosome        |     |     |
+| Null hypothesis   |     |     |
 
 ------------------------------------------------------------------------
 
 # O
 
-Odds ratio:
+|                     |     |     |
+|---------------------|-----|-----|
+| Observational study |     |     |
+| Odds ratio          |     |     |
+| Open Reading Frame  |     |     |
 
 ------------------------------------------------------------------------
 
 # P
 
-Phenome
-
-Phenome-wide Association Study (pheWAS)
-
-Phenotype:
-
-Pleiotropy:
-
-Polygenic Risk Score (PRS):
-
-Population stratification:
-
-Power analysis:
-
-Principal Component Analysis (PCA):
+|                                                             |     |     |
+|-------------------------------------------------------------|-----|-----|
+| Pedigree                                                    |     |     |
+| Phasing                                                     |     |     |
+| Phenome                                                     |     |     |
+| **Phe**nome-**w**ide **A**ssociation **S**tudy (**pheWAS**) |     |     |
+| Phenotype                                                   |     |     |
+| Pleiotropy                                                  |     |     |
+| Point mutation                                              |     |     |
+| **P**olygenic **R**isk **S**core (**PRS**)                  |     |     |
+| Polygenic trait                                             |     |     |
+| Polymorphism                                                |     |     |
+| Population stratification                                   |     |     |
+| Power (Genomic)                                             |     |     |
+| Power analysis                                              |     |     |
+| Precision Medicine                                          |     |     |
+| **P**rincipal **C**omponent **A**nalysis (**PCA**)          |     |     |
+| Proband                                                     |     |     |
+| Promoter                                                    |     |     |
 
 ------------------------------------------------------------------------
 
 # Q
 
-qqplot:
+|        |     |     |
+|--------|-----|-----|
+| qqplot |     |     |
+|        |     |     |
+|        |     |     |
 
 ------------------------------------------------------------------------
 
 # R
 
-R2 (Genetic Correlation):
-
-Rare Variant:
-
-REF/ALT:
+|              |     |     |
+|--------------|-----|-----|
+| R^2^         |     |     |
+| Rare variant |     |     |
+| REF/ALT      |     |     |
 
 ------------------------------------------------------------------------
 
 # S
 
-Sensitivity
-
-Single Nucleotide Polymorphism (SNP):
-
-Single Nucleotide Variant (SNV):
-
-SNP Heritability (H2SNP)
-
-Specificity
-
-Structural variant:
+|                                                      |     |     |
+|------------------------------------------------------|-----|-----|
+| Sensitivity                                          |     |     |
+| **S**ingle **N**ucleotide **P**olymorphism (**SNP**) |     |     |
+| **S**ingle **N**ucleotide **V**ariant (**SNV**)      |     |     |
+| SNP Heritability (h^2^~SNP~)                         |     |     |
+| Specificity                                          |     |     |
+| Structural variant                                   |     |     |
 
 ------------------------------------------------------------------------
 
 # T
 
-Transcriptome:
-
-Transcriptomic Imputation:
-
-Type I error:
-
-Type II error:
+|                                                 |     |     |
+|-------------------------------------------------|-----|-----|
+| Transcriptome                                   |     |     |
+| Transcriptomic Imputation                       |     |     |
+| **T**ranscriptomic **R**isk **S**core (**TRS**) |     |     |
+| Type I error                                    |     |     |
+| Type II error                                   |     |     |
 
 ------------------------------------------------------------------------
 
@@ -206,22 +266,29 @@ Type II error:
 
 # V
 
-Variant
-
-Variance explained
-
-Vertical pleiotropy:
+|                                           |     |     |
+|-------------------------------------------|-----|-----|
+| Variant                                   |     |     |
+| Variance explained                        |     |     |
+| **V**ariant **C**all **F**ormat (**VCF**) |     |     |
+| Vertical pleiotropy                       |     |     |
 
 ------------------------------------------------------------------------
 
 # W
 
-WES:
-
-WGS:
+|                                               |     |     |
+|-----------------------------------------------|-----|-----|
+| **W**hole **E**xome **S**equencing (**WES**)  |     |     |
+| **W**hole **G**enome **S**equencing (**WGS**) |     |     |
+|                                               |     |     |
 
 ------------------------------------------------------------------------
 
 # XYZ
 
-X-linked:
+|          |     |     |
+|----------|-----|-----|
+| X-linked |     |     |
+|          |     |     |
+|          |     |     |

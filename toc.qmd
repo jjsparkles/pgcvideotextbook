@@ -74,7 +74,7 @@ title: "Table of Contents"
 >
 > [8.6: Quantitative Trait Loci (QTLs)](chapter8.qmd#sec-section6)
 >
-> [8.7: TWAS/PWAS/MWAS](chapter8.qmd#sec-section7)
+> [8.7: TWAS](chapter8.qmd#sec-section7)
 >
 > [8.8: pheWAS](chapter8.qmd#sec-section8)
 
@@ -110,7 +110,7 @@ title: "Table of Contents"
 >
 > [Cross-Disorder Analysis](software_crossdisorder.qmd)
 >
-> Datasets
+> [Datasets](software_datasets.qmd)
 >
 > [Epigenome-Wide Association Studies](software_ewas.qmd)
 >
@@ -122,7 +122,9 @@ title: "Table of Contents"
 >
 > [Mendelian Randomization](software_MR.qmd)
 >
-> [Polygenic Risk Score](software_prs.qmd)
+> [Multi-Trait Analysis of GWAS](software_mtag.qmd)
+>
+> [Polygenic Risk Scores](software_prs.qmd)
 >
 > [SNP Heritability and Genetic Correlation](software_correlation.qmd)
 

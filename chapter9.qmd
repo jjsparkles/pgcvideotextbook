@@ -58,8 +58,6 @@ Link to video transcript [here](chapter9.2_transcript.qmd).
 
 > The following six videos by Drs. Grotzinger and Nivard give a comprehensive look at Genomic Structural Equation Modeling (Genomic SEM) for examining shared and distinct genetic relationships across multiple disorders. The first two videos give an introduction to the concept and basic usage of Genomic SEM, while the latter four videos dive deeper into the methods and analyses that can be performed with this tool.
 
-## 
-
 **Title**: Genomic Structural Equation Modeling: A Brief Introduction
 
 **Presenter(s)**: Andrew Grotzinger

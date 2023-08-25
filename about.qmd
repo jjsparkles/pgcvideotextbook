@@ -17,6 +17,46 @@ Finally, a huge thank you to the team, who have given their time, their energy, 
 
 We hope that this Psychiatric Genomics Consortium Video Training Textbook fills a need in building capacity in the psychiatric genetics community, and so, enables us to train a new generation of researchers worldwide. With the rapid expansion of available genetic data, the need for skilled analysts has never been greater! And that is an essential step, if we are to realize the potential of using genetics to improve the prevention, diagnosis, and treatment of mental health disorders. And I hope the Video Training Textbook helps you achieve that aim.
 
+------------------------------------------------------------------------
+
 # The Video Textbook Team
+
+Anna Docherty
+
+Howard Edenberg
+
+Lachlan Gilchrist
+
+Laura M. Huckins
+
+**Jessica Johnson MPH**: Data Scientist, Department of Psychiatry, University of North Carolina at Chapel Hill, Chapel Hill, NC, USA
+
+Michelle Kamp
+
+**Hannah Kennedy PhD**: PostDoctoral Researcher, Department of Psychological Medicine, University of Otago, Christchurch, New Zealand
+
+**Ada P. Kępińska PhD**: PostDoctoral Researcher, Departments of Psychiatry and Genetics and Genomic Sciences, The Seaver Autism Center for Research and Treatment, Icahn School of Medicine at Mount Sinai, New York, NY, USA
+
+Cathryn Lewis
+
+Chris Lo
+
+Grace D. Lutter
+
+Adam Maihofer
+
+Caroline Nievergelt
+
+Oliver Pain
+
+Carina Seah
+
+Kayla Townsley
+
+Tim Van Der Es
+
+Jiayi Xu
+
+------------------------------------------------------------------------
 
 # About the Psychiatric Genomics Consortium
