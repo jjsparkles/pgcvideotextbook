@@ -2,7 +2,7 @@
 title: "Chapter 10: Other Considerations"
 ---
 
-------------------------------------------------------------------------
+Chapter goals:
 
 # 10.1 A Career in Psychiatric Genetics {#sec-section1}
 

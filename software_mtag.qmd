@@ -2,9 +2,17 @@
 title: "MTAG"
 ---
 
+> In this video Dr. Turley gives a comprehensive introduction to Multi-Trait Analysis of GWAS, or MTAG. The video discusses the theory behind combining different but correlated traits\' GWAS and the benefits and considerations of doing this. This video goes fairly deep into the mathematical models underlying this method.
+>
+> You can read more about this method here:
+>
+> Turley, P., Walters, R.K., Maghzian, O. *et al.* Multi-trait analysis of genome-wide association summary statistics using MTAG. *Nat Genet* **50**, 229--237 (2018). https://doi.org/10.1038/s41588-017-0009-4
+>
+> Below the video there is a link to the Python command line tools on GitHub for conducting MTAG.
+
 **Title**: Multi-trait Analysis of GWAS (MTAG)
 
-**Description**:
+**Description**: Intermediate
 
 **Presenter(s)**: Patrick Turley
 

@@ -2,21 +2,23 @@
 title: "Chapter 7: Ancestry-Specific Analyses and Considerations"
 ---
 
-*Chapter goals:*
-
-1.  *Understand that ancestry is an important consideration for performing genetic analyses*
-
-2.  *Understand how population stratification can affect GWAS results*
-
-3.  *Understand considerations for PRS across different ancestries and how to calculate cross-ancestry PRS*
-
-4.  *Understand cross-ancestry methods for GWAS and post-GWAS analyses*
+> *Chapter goals:*
+>
+> 1.  *Understand that ancestry is an important consideration for performing genetic analyses*
+>
+> 2.  *Understand how population stratification can affect GWAS results*
+>
+> 3.  *Understand considerations for PRS across different ancestries and how to calculate cross-ancestry PRS*
+>
+> 4.  *Understand cross-ancestry methods for GWAS and post-GWAS analyses*
 
 # Chapter 7.1: Cross-ancestry analysis {#sec-section1}
 
 **Title**: Cross-ancestry PTSD and Polygenic Findings, and the Cross-Population SIG of the PGC
 
 **Presenter(s)**: Laramie Duncan
+
+**Level**: Beginner friendly
 
 **Length**: Video starts at 00:00 and goes until 13:39 (13:39 total)
 
@@ -37,6 +39,8 @@ Link to video transcript [here](chapter7_transcript.qmd#sec-video1).
 
 **Presenter(s)**: Alicia Martin
 
+**Level**: Beginner friendly
+
 **Length**: Video starts at 32:39 and goes to 47:06 (15:45 total)
 
 ```{r, echo=FALSE}
@@ -53,6 +57,8 @@ Link to video transcript [here](chapter7_transcript.qmd#sec-video2).
 **Title**: Tractor: A framework enabling the well-calibrated genomic analysis of psychiatric traits across admixed populations
 
 **Presenter(s)**: Elizabeth Atkinson
+
+**Level**: Beginner/Intermediate
 
 **Length**: Video starts at 14:50 and ends at 32:38 (total 19:28)
 

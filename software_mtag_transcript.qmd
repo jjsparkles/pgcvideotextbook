@@ -14,13 +14,13 @@ We've been toying with what we were going to do with this afternoon lecture. We 
 
 **Patrick:** It's going to become so common, yeah.
 
-**Audience comment:**It's good to know about. And also, Patrick is going to talk about things to look out for, so you know if it's being applied well or not being applied well. *Response:* Yep, okay, great.
+**Audience comment:** It's good to know about. And also, Patrick is going to talk about things to look out for, so you know if it's being applied well or not being applied well. *Response:* Yep, okay, great.
 
 **Audience question:**Where are the slides?
 
 **Patrick:** Oh, sorry. Oh yeah, so this is going to be a really informal lecture, which means that there's actually very little information on these slides. I mean, like, I'm going to show a bunch of pictures, but I'm actually going to do a lot of work on the whiteboard. If you want, I mean, like, you know, but the work that I'm going to do on the whiteboard is in the paper but not the paper that you guys have access to. We're working on it. The reason why you don't have access to it is because it's not written yet. The version that we gave you was a previous iteration of this method that was based on maximum likelihood. So if you read it, then that's what you read. We realized that it could be generalized to be a GMM framework with much weaker assumptions, and so we're going to talk about that framework today. Once that paper's finished being updated and written, we'll post it to bioRxiv, and then you'll have that one. But, oh yeah, so that's why. The plan was to have done this before the Institute, but you guys only give me like 10 minutes a day to do any of my own stuff.
 
-The idea here is; we've been talking about. For our people doing genome-wide association or any study, what's the first thing we ask them about? Sample size and  power. And so, this is the problem that we have. So, a lot of times, we want to look at outcomes, and we just don't have big enough samples, you know, and so if you have a really small sample, you don't get very many hits, you have weak polygenic scores, and so this is a problem. However, in a lot of cases, there are people who are studying different but related outcomes. So, for example, what I'm going to show you today is, you know, there's a big or like medium-sized GWAS of depression with maybe 100 to 300 thousand individuals, and we also have a GWAS of subjective well-being, so how people respond to the question "how happy are you?" Now, these two things aren't exactly the same thing, and so you might think that it's probably incorrect just to meta-analyze them together. But they seem like they're probably really closely related. We've seen, Raymond showed us the LD score regression results, and we see that knowing the βs for one trait, the effect sizes for one trait, is related to the βs for another trait, and so it would be nice if we could figure out a way to get the information out of the GWAS for subjective well-being and import that into a GWAS of depressive symptoms or the other way -- just so that we can increase our power and get all these nice benefits that we get from running well-powered studies. So, what's the right way to do this?
+The idea here is; we've been talking about. For our people doing genome-wide association or any study, what's the first thing we ask them about? Sample size and power. And so, this is the problem that we have. So, a lot of times, we want to look at outcomes, and we just don't have big enough samples, you know, and so if you have a really small sample, you don't get very many hits, you have weak polygenic scores, and so this is a problem. However, in a lot of cases, there are people who are studying different but related outcomes. So, for example, what I'm going to show you today is, you know, there's a big or like medium-sized GWAS of depression with maybe 100 to 300 thousand individuals, and we also have a GWAS of subjective well-being, so how people respond to the question "how happy are you?" Now, these two things aren't exactly the same thing, and so you might think that it's probably incorrect just to meta-analyze them together. But they seem like they're probably really closely related. We've seen, Raymond showed us the LD score regression results, and we see that knowing the βs for one trait, the effect sizes for one trait, is related to the βs for another trait, and so it would be nice if we could figure out a way to get the information out of the GWAS for subjective well-being and import that into a GWAS of depressive symptoms or the other way -- just so that we can increase our power and get all these nice benefits that we get from running well-powered studies. So, what's the right way to do this?
 
 So, MTAG, let me just talk about some of the hurdles that we're going to face in trying to design a method to do this. First off is, in a lot of cases, we don't have the individual-level data. So, you know, we just get people to release their GWAS summary statistics because that's something that they're allowed to post without any privacy issues. But, you know, we don't have the actual genotypes of the individuals. The method that we want to come up with is one that can use just these publicly available summary statistics. Another problem is that the summary statistics often include the same individuals, and so with the UK Biobank coming out, if the UK Biobank asks the question about the phenotype that you're interested in, then, you know, it's going to be in this GWAS and that GWAS, and so we're going to have a lot of overlap in what's used. And the reason that this is a problem is if we took the summary statistics for one trait that was estimated in the UK Biobank and for another trait that was estimated in the UK Biobank, they may co-vary partially because they're genetically correlated, but they're also going to co-vary because they came from the same sample, so the estimation error is going to co-vary. And so, we're going to need to be able to address that, especially because a lot of times, we don't even know how much overlap there is. We suspect that there might be some, but we're just not sure. Another thing that would be useful. There are a bunch of methods that allow you to jointly analyze different traits, but it would be great if, when we were done, we could get estimates that we said, "Yeah, these estimates correspond to the trait that we're interested in." So, we don't want to get results and say, "Well, because we jointly analyzed this with depression and subjective well-being and whatever else we threw into it, it corresponds to some weird composite phenotype that we don't understand." It would be nice if the results that we have actually correspond to the trait that we're interested in. And just, a computation issue, it should be nice if we could actually get them in finite time. So, MTAG, the reason that I'm excited about it is because it deals with all of these really practical issues that we deal with in running these analyses.
 
@@ -38,9 +38,9 @@ So, the question is then, how do we deal with that? Well, generalized method of 
 
 Okay, so we're going to take this now into the MTAG model. So let's say that I have a GWAS summary statistic for some trait, so this is β-hat for SNP j, trait s -- just one of my traits. And I want to find what the best linear predictor of this GWAS coefficient, conditional on the effect of a different GWAS coefficient for a different trait. And so, just using -- if we know our OLS properties -- expectation, this thing is going to be equal to the covariance of β-hat (I'm going to leave GWAS off everywhere just because all of these are going to be GWAS coefficients, so if it's a hat, I mean the GWAS estimate, just to make notation easier) so "J, s" and "J, t" -- so this is the effect of the SNP on trait t \[*gestures to β~j,t~*\] and this is the estimated effect on trait s \[*gestures to β-hat~j,s~*\] -- over the variance of β­~*j,t*~.
 
-**Audience question:**Don't you need a hat?
+**Audience question:** Don't you need a hat?
 
-**Patrick:**On this one \[*gestures to β~j,t~*\], yeah, no, no, because I just told you I didn't need it because what I'm trying to predict the GWAS estimate as a function of the true value. And so, in this case, I'm saying I want to regress the GWAS estimate on the true value.
+**Patrick:** On this one \[*gestures to β~j,t~*\], yeah, no, no, because I just told you I didn't need it because what I'm trying to predict the GWAS estimate as a function of the true value. And so, in this case, I'm saying I want to regress the GWAS estimate on the true value.
 
 The coefficient of such a regression is going to be this thing here \[*gestures to β-hat~j,s~*\]. So because this is the estimate, it's equal to the true value plus some error, and that error is going to be independent of the actual effect size. So, the covariance of the estimate with this true value here is just going to be the covariance -- I mean, I could write this as β plus E and then say that E is independent of β~j,t~ and then erase it, but I'm just going to erase the hat to skip those steps.
 
@@ -50,7 +50,7 @@ Okay, so now, we have a moment condition because I'm saying the expected value o
 
 **Audience question:** \[Unable to hear on video\].
 
-**Patrick:**So, I guess I should have said this up front. So, what we really want to know, we're trying to get an estimate we want, is β~j,t~, which is the effect of SNP j on whatever trait t, whatever trait t we're focused on. So, if we want to know the effect of SNP j on depression, then t is depression. And so, you know, even though I've used a different subscript here, s could be equal to t, and so it'd be like, "What's the expected value of our estimate for the beta for the estimate for trait t, given the true value of trait t?" And you see how this reduces here. The covariance of the effect size with itself is just equal to the variance. And so, we have these two things cancel, and so the expected value of the GWAS coefficient given the truth is just the true GWAS coefficient.
+**Patrick:** So, I guess I should have said this up front. So, what we really want to know, we're trying to get an estimate we want, is β~j,t~, which is the effect of SNP j on whatever trait t, whatever trait t we're focused on. So, if we want to know the effect of SNP j on depression, then t is depression. And so, you know, even though I've used a different subscript here, s could be equal to t, and so it'd be like, "What's the expected value of our estimate for the beta for the estimate for trait t, given the true value of trait t?" And you see how this reduces here. The covariance of the effect size with itself is just equal to the variance. And so, we have these two things cancel, and so the expected value of the GWAS coefficient given the truth is just the true GWAS coefficient.
 
 Okay, I kind of just glossed over how we might get at these weights. So, if we have a vector of moment conditions, which I'm just something call m -- so this is my principles of GMM, again -- just to give you some notation, so in this case, we might be interested in some parameter θ. In this case, θ is β~j,t~. We have some parameter θ, and this is a vector-valued set of moment conditions. And so, so m of θ, in this case, is this thing \[*points to upper half of slide*\] of β~j,t~. And then the weight function, we have some big matrix here, and that's just a matrix of θ. So, when we do generalized method of moments, this is --when I was saying, we do kind of a weighted sum that we're minimizing, this is actually the thing that we're minimizing \[*points to equation on board*\]. And so, if you've had a little bit of background with linear algebra, this sort of function is called a quadratic form. And even though there's a vector on each side of these... let me try to think of the right way to explain this. So, let's assume that W was equal to I -- so this is the identity matrix; it's just ones down the diagonal. When you multiply this out, what you're going to get out is just the sum of the squared moment conditions, which is how I described it at first. But if you wanted to give more weight to a certain moment condition, you would maybe just change the diagonal element corresponding to that moment condition to be a little larger or a little smaller. You also have all these off-diagonal moment conditions that can account for potential covariance between your moment conditions.
 
@@ -60,9 +60,9 @@ And so, I'm not going to work through that carefully, but I'm going just kind of
 
 So, the variance of our estimate\... oh, I never showed this last thing. I need to find some notation. The variance of β-hat \[sub j\] is equal to is equal to the variance of β~j~ plus the error ε~j~. All right, and then assuming these things are independent \[*points to* β~j~ and ε~j~\], this is going to be equal to the variance of β~j~ plus the variance of ε~j~. Okay, we've defined this thing \[*points to* β~j~\] to be Ω from here, and then we're going to define the variance-covariance of the error to be Σ~j~. Now, I put a subscript on this one \[*points to* Σ~j~\], and the reason I've done that is because this is supposed to be the sampling variance and so it's supposed to capture... you can think of this like at a baseline as just the standard error, so the standard error is measuring how much variance there is due to the error in your estimate and that's what this is supposed to do. And if, for one SNP, you have a really large sample size, but then for another SNP, maybe a few cohorts got dropped and so you have a smaller sample size. We're going to allow for that to happen by putting the subscript here, and so when you have a bigger sample, Σ is going to be smaller to account for the more precise estimate there.
 
-**Audience question:**\[Unable to hear on video\].
+**Audience question:** \[Unable to hear on video\].
 
-**Patrick:**Yeah, so it depends on why there's a difference. So, if the variance is different just because there's a difference in an estimation error because of sample size differences, then it will capture that. If the difference is because we actually think that Ω is different across SNPs, then it won't be able to capture that. We've had to assume that Ω is the same for all SNPs, and we need that in order to get our estimates.
+**Patrick:** Yeah, so it depends on why there's a difference. So, if the variance is different just because there's a difference in an estimation error because of sample size differences, then it will capture that. If the difference is because we actually think that Ω is different across SNPs, then it won't be able to capture that. We've had to assume that Ω is the same for all SNPs, and we need that in order to get our estimates.
 
 Let's just think for a minute. So, we want to know what the true β is, the true genetic β, absent any confounds. So, I'm going to treat β throughout as true β, not including stratification biases or anything like that, and I'm going to actually throw anything that causes the GWAS estimate to deviate from the truth, and I'm going to store that in here. So, now, Σ not only includes a sampling variance, but it also will include stratification bias and things like that. And so now, when we're estimating, when we want this β~j~ -- I mean true β~j~, like not β~j~ with error in it or like biases in it. So we can take our moment condition, so I told you, it's the variance of the moment condition. So, the variance of β~j~, we worked it out here, is Ω plus Σ~j~. And the variance of this term, with a little bit of work, you can get this term here. So that's where these come from.
 
@@ -72,7 +72,7 @@ And so then, we plug this into our objective formula here, we do some calc. We t
 
 **Patrick:** So you're saying you could add additional moment, so we would have not only just one for each trait but we would have T squared of them. We could choose to not only vary s, but we could also be varying t. Is that kind of what you mean?
 
-**Audience response:**\[Unable to hear on video\].
+**Audience response:** \[Unable to hear on video\].
 
 **Patrick:** Okay, well, so the problem is going to be that we need to come up with this Ω, we're not going to just kind of make it up. We're going to estimate it, and so we're going to estimate it using all SNPs. And so if the Ω only holds for some subset of SNPs and we don't know which subset that is, then I don't know how you estimate this parameter. Like, in principle, you could say, "Let's run MTAG and let's restrict ourselves just to, like, coding SNPs," and maybe the set of coding SNPs have a different Ω. You could estimate the Ω among the particular type of SNP that you're interested in, but you'd have to make a choice before you get started that there is some class of SNPs that all have the same Ω matrix.
 
@@ -128,7 +128,7 @@ Great, so that's replication. Another kind of replication you think about is wha
 
 **Audience response:** SNP hits.
 
-**Patrick:**So what we did is we took this -- so the HRS was in one of the discs, it was in the subjective well-being discovery sample, and so the first thing that we did is we removed it from discovery. Then we applied MTAG, and it gave us a set of between 40 to 60 hits and those are the ones that we used. I don't think that probably any of those hits are actually genome-wide significant in the Health and Retirement Study. I don't even know if any of them are Bonferroni significant. But on average, they should be the same. And so when we do this regression... I'm not sure if I'm answering your question because I wasn't totally certain what you meant about the replication hits.
+**Patrick:** So what we did is we took this -- so the HRS was in one of the discs, it was in the subjective well-being discovery sample, and so the first thing that we did is we removed it from discovery. Then we applied MTAG, and it gave us a set of between 40 to 60 hits and those are the ones that we used. I don't think that probably any of those hits are actually genome-wide significant in the Health and Retirement Study. I don't even know if any of them are Bonferroni significant. But on average, they should be the same. And so when we do this regression... I'm not sure if I'm answering your question because I wasn't totally certain what you meant about the replication hits.
 
 **Audience response:** \[Unable to hear on video\].
 
@@ -136,7 +136,7 @@ Great, so that's replication. Another kind of replication you think about is wha
 
 **Audience response:** \[Unable to hear on video\].
 
-**Patrick:**So in the replication regression, it's just kind of one number. We're taking the effect sizes, the effect size estimates. Maybe I didn't explain this very well. So, what we did is we did a GWAS just in the HRS, right? And so just for the 12,000, however many that are in there, and none of those are significant because the HRS is way too small.
+**Patrick:** So in the replication regression, it's just kind of one number. We're taking the effect sizes, the effect size estimates. Maybe I didn't explain this very well. So, what we did is we did a GWAS just in the HRS, right? And so just for the 12,000, however many that are in there, and none of those are significant because the HRS is way too small.
 
 **Audience response:** \[Unable to hear on video\].
 
@@ -168,7 +168,7 @@ You can do the same thing looking at gene sets, and so these are the lists of th
 
 **Audience response:** \[Unable to hear on video\].
 
-**Patrick:**Because they're so sad. Yep, but, again, it seems like we're trying to study depression and it seems consistent with kind of the bio stuff that we already know, and so this is kind of exciting, interesting things.
+**Patrick:** Because they're so sad. Yep, but, again, it seems like we're trying to study depression and it seems consistent with kind of the bio stuff that we already know, and so this is kind of exciting, interesting things.
 
 And so, you know, I've shown you these results here. I can also give you a preview. So, cognitive performance, I think, is something that a lot of us are very interested in. It's really hard to study because it's only available in very small sample sizes, right? So, if we took the largest GWAS of cognitive performance and we use the summary statistics to make a score for that, the predictive power of that score is 1% or something along those lines. Robbie King knows this better than I do, so you can tell me if I'm wrong. If you, instead of taking the cognitive performance score, actually use our education analysis and you created an education polygenic score and tried to predict cognitive performance, now that might be reasonable because these two things are related. But we have a much larger sample for education and so we might think we can do better -- and we do. We get about 6% predictive power if we try to predict cognitive performance using a score that's designed to predict educational attainment, alright? But if we MTAG the education results with the cognitive performance results and then create a cognitive performance MTAG score, the predictive power jumps to 8.5%, and so this is like -- I'm really excited because before these cognitive performance scores were just not big enough to be useful, and suddenly using methods like this, we're getting enormous... I mean, 8.5% is enough to start doing some really interesting polygenic score work.
 
@@ -186,7 +186,7 @@ And so, what we've done here, we've done a set of simulations where we generate 
 
 **Audience question:** \[Unable to hear on video\].
 
-**Patrick:**Okay, yes, so when I say "traits," I mean GWAS, and that's an interesting question because there's nothing about a trait that means that it's a different thing. So, we could, for example, use MTAG and use it as a form of meta-analysis, right? So, let's say we have six cohorts, and those cohorts maybe come from overlapping samples and so we can't just meta-analyze them because there's overlap across the cohorts. However, MTAG knows how to deal with the potential overlap between your cohorts, and so you could maybe instead of just doing a standard inverse variance weighted meta-analysis or sample or something like that, you could just pass it in to MTAG and MTAG should fix those problems -- except for this thing here.
+**Patrick:** Okay, yes, so when I say "traits," I mean GWAS, and that's an interesting question because there's nothing about a trait that means that it's a different thing. So, we could, for example, use MTAG and use it as a form of meta-analysis, right? So, let's say we have six cohorts, and those cohorts maybe come from overlapping samples and so we can't just meta-analyze them because there's overlap across the cohorts. However, MTAG knows how to deal with the potential overlap between your cohorts, and so you could maybe instead of just doing a standard inverse variance weighted meta-analysis or sample or something like that, you could just pass it in to MTAG and MTAG should fix those problems -- except for this thing here.
 
 Right, so in educational attainment, EA2, how many cohorts did we have? I see, like, 70?
 
@@ -216,7 +216,7 @@ Right, so in educational attainment, EA2, how many cohorts did we have? I see, l
 
 **Audience response:** \[Unable to hear on video\].
 
-**Patrick:**This was designed to do kind of to deal with very specific data constraints that we face, which are the ones I showed you before. We don't have the individual level data in the first place.
+**Patrick:** This was designed to do kind of to deal with very specific data constraints that we face, which are the ones I showed you before. We don't have the individual level data in the first place.
 
 **Audience question:** So suppose you really had like 20 phenotypes. It seems like you maybe could do better and get less inflation if you either make your Z-scores and then take an equally weighted sum or maybe you do the simple regression predictor from the other 19 things. And then you just have 2 things and you kind of impose that. It would be interesting to see those simulations.
 
@@ -226,7 +226,7 @@ Right, so in educational attainment, EA2, how many cohorts did we have? I see, l
 
 **Patrick:** Yeah, so, we actually explored that a little bit in the paper -- what happens when you just make these assumptions and fix these parameters? In general, we do a little bit better when we allow them to be free, but I mean, it really depends on how close. So, if the genetic correlation is just 0.95 and you fix it to 1, you're not going to gain a lot by allowing it to a free parameter.
 
-**Audience response:**I was talking about the case where you have a huge number of phenotypes.
+**Audience response:** I was talking about the case where you have a huge number of phenotypes.
 
 **Patrick:** But even then. So, if the truth is close to whatever assumption that you're making, then you probably are fine just fixing it to that assumption and you probably gain a little bit, in fact, since there's less noise. But if it's not quite there, then you know how much you gain depends on how good your assumptions are.
 
@@ -236,7 +236,7 @@ Right, so in educational attainment, EA2, how many cohorts did we have? I see, l
 
 So, that's just one problem. The other problem is actually a pretty major theoretical problem, and it's this constant Ω assumption. Okay, so by this constant Ω assumption, it means that there's kind of just one class of SNPs, and the relationship between the SNPs are the same no matter where you are in the genome. So now I'm going to imagine that I'm doing a regression, and I have two phenotypes that are pretty highly correlated just in general, but I have a SNP where it's highly correlated... so, for the trait I'm interested in, it's actually no effect size for that, this β is equal to zero for that one. But then for another trait that I'm including, it's actually really important; it's super strongly significant; it has a big, large effect size. So what's going to happen in MTAG with something like that, if we assume that there's this kind of strong relationship between the βs throughout, but it just so happens that there are SNPs that meet that criterion that I described there, where it's actually no for the trait you want, but the other trait is strongly significant? Well, what MTAG is doing is it's kind of using information from the other traits to get a better guess of what's happening for this one that we want, and so it's, like, "Wow this is\... this is really strong, you are so confident that this is real. And then you have this one here, like I don't really know, it's kind of low. But this one's for sure, it's great, right?" And so MTAG is going to look at that and say,"Well, then this one's probably great too, because you're doing at correlation is like 0.8." And so, it's going to pull that away from 0; we're going to be biased away from 0 in a case like that. And so, it may even pull it away enough that that it becomes genome-wide significant when it really has no business being genome-wide significant. And so, that would be an inflation of the false discovery rate because we're going to find more of these SNPs that are actually null for the trait we want, but because they're causal for a different one, those SNPs are getting pulled into the nominal category.
 
-**Audience question:**\[Unable to hear on video\].
+**Audience question:** \[Unable to hear on video\].
 
 **Patrick:** So, this inflation I'm talking about here is because when we calculate our standard errors, we assume that β and Ω and Σ are known, but because they're unknown, we probably should add a little bit more to the standard errors to account for that uncertainty, and so that's why that's why we're getting inflation here. Whereas in this case, it might be even if we knew exactly what Ω was, we estimated there's a genetic correlation of 0.9, right? Even if we knew that exactly, we would still have some of these SNPs that are being pulled away from 0 or we may still have some of these SNPs that are pulled away from 0, just because there are SNPs that are of the type that I described: where it's actually null for the trait you want to know about, but nominal for the one that you're just using to boost power.
 
@@ -274,15 +274,15 @@ Oh, go ahead.
 
 **Audience question:** \[Unable to hear on video\].
 
-**Patrick:**I saw I'm a little confused by what you mean.
+**Patrick:** I saw I'm a little confused by what you mean.
 
 **Audience response:** \[Unable to hear on video\].
 
-**Patrick:**Well, I mean, no, I think it's kind of related. But if you think about it, in if there are any SNPs that are these "MTAG killers" where it's zero effect for this guy and a non-zero effect here, putting any weight on this guy will drag it in the wrong direction.
+**Patrick:** Well, I mean, no, I think it's kind of related. But if you think about it, in if there are any SNPs that are these "MTAG killers" where it's zero effect for this guy and a non-zero effect here, putting any weight on this guy will drag it in the wrong direction.
 
 **Audience response:** \[Unable to hear on video\].
 
-**Patrick:**Is this is this one, null SNP, or there's real hit?
+**Patrick:** Is this is this one, null SNP, or there's real hit?
 
 **Audience response:** \[Unable to hear on video\].
 
@@ -302,7 +302,7 @@ Oh, go ahead.
 
 **Audience question:** \[Unable to hear on video\].
 
-**Patrick:**Yes, so I'm going to get there on the next slide.
+**Patrick:** Yes, so I'm going to get there on the next slide.
 
 So, I was trying to show this, because it's worst-case scenario. So let's say that instead, we're combining comparably powered GWASs for those traits. So, in this case, I plotted max FDR again, and you're combining two traits that both have a 1.1, and so this is actually the same line, but if both of them have a power of about 1.4 or both of them have a power of 2.0, then the maximum false discovery rate is actually quite low. In the results, I showed you for depression, all of our traits are about 1.4, and they have a genetic correlation of about 0.7, and so, you know, it looks like we're kind of living right there.
 
@@ -310,7 +310,7 @@ And so, the intuition about why, even if there are really bad sets of SNPs, why 
 
 **Audience question:** \[Unable to hear on video\].
 
-**Patrick:**It has to do with some of the assumptions that we're making. And so, we've assumed that at least 10% of SNPs are causal in calculating this max false discovery rate. You can get some really funny things happening if you assume that, like, 99.5% of SNPs are null for all traits, and then there's a really high correlation in a small set of them and things just get really wonky. And so, but we think it's likely that at least 10% of SNPs are nominal for any trait that we're interested in. You can actually estimate this. In depression, we think that about 60% are non-null, but yeah, so the peak here has to do with the boundary being really binding but not quite as binding in this area.
+**Patrick:** It has to do with some of the assumptions that we're making. And so, we've assumed that at least 10% of SNPs are causal in calculating this max false discovery rate. You can get some really funny things happening if you assume that, like, 99.5% of SNPs are null for all traits, and then there's a really high correlation in a small set of them and things just get really wonky. And so, but we think it's likely that at least 10% of SNPs are nominal for any trait that we're interested in. You can actually estimate this. In depression, we think that about 60% are non-null, but yeah, so the peak here has to do with the boundary being really binding but not quite as binding in this area.
 
 But yeah, if you have kind of high-powered things and you're combining them, then maybe you're okay. But the thing to really, really be nervous about is settings where you have something that's low-powered and you're combining with something that's very high-powered. And something to be kind of worried about is if you have a whole lot of low-powered things that you're trying to combine. I think that's my last slide, so like I said, we're excited about this. It seems to work really well in practice. I think like Miles was saying that we have some theoretical results which suggest that even if you have these death SNPs, predictive power, if you do MTAG, should always get better. And so, if you just want to make a polygenic score, then I think MTAG is pretty much always a good choice. If you want to find novel GWAS hits, then you have to worry about this depending on the setting. So, it just really depends on what question you want to ask and what your data look like, and so you should think about kind of these assumptions that we're making, and this is true about kind of all the things. You know, we've been focusing so hard this week on what are the assumptions of this model, because depending on where you are, the assumption may or may not be more or less reasonable. And depending on what you want to do with the results, violations of those assumptions may be better or worse.
 
@@ -320,7 +320,7 @@ But yeah, if you have kind of high-powered things and you're combining them, the
 
 **Audience question:** \[Unable to hear on video\].
 
-**Patrick:**As long as you live more here -- if each of your each of your GWASs have a chi-squared of 1.4-ish, then combining all of these things together is fine. I mean, even if you're at 1.1, you'd expect to see a 1% inflation with 10 questions. Maybe you're okay with that. This is the case of the mean chi-squared, so each SNP has its own chi-squared statistic and we take the mean of all of them.
+**Patrick:** As long as you live more here -- if each of your each of your GWASs have a chi-squared of 1.4-ish, then combining all of these things together is fine. I mean, even if you're at 1.1, you'd expect to see a 1% inflation with 10 questions. Maybe you're okay with that. This is the case of the mean chi-squared, so each SNP has its own chi-squared statistic and we take the mean of all of them.
 
 **Audience question:** \[Unable to hear on video\].
 
@@ -328,7 +328,7 @@ But yeah, if you have kind of high-powered things and you're combining them, the
 
 **Audience question:** \[Unable to hear on video\].
 
-**Patrick:**Yeah, we don't know that, but it's something we could look into. It'd be interesting.
+**Patrick:** Yeah, we don't know that, but it's something we could look into. It'd be interesting.
 
 **Audience question:** \[Unable to hear on video\].
 
@@ -336,7 +336,7 @@ But yeah, if you have kind of high-powered things and you're combining them, the
 
 **Audience response:** \[Unable to hear on video\].
 
-**Patrick:**Okay, so the question is what exactly then?
+**Patrick:** Okay, so the question is what exactly then?
 
 **Audience response:** \[Unable to hear on video\].
 
@@ -344,7 +344,7 @@ But yeah, if you have kind of high-powered things and you're combining them, the
 
 **Audience question:** \[Unable to hear on video\].
 
-**Patrick:**Yeah, that's true, and so the standard errors that we use hold exactly if they are normally distributed. It turns out they hold asymptotically in general, but we had we're a little funny about the asymptotics here, because the unit of observation here is number of traits. And so, it holds asymptotically with number of traits that, we don't go to infinity there, but you can also show that actually even if the distribution assumptions violated, it turns out that the MTAG standard errors are conservative on average. And so, the standard errors should be okay for the most part. Except for the SNPs that are null for one trait and nominal for the other, you can show that it is anti-conservative for those.
+**Patrick:** Yeah, that's true, and so the standard errors that we use hold exactly if they are normally distributed. It turns out they hold asymptotically in general, but we had we're a little funny about the asymptotics here, because the unit of observation here is number of traits. And so, it holds asymptotically with number of traits that, we don't go to infinity there, but you can also show that actually even if the distribution assumptions violated, it turns out that the MTAG standard errors are conservative on average. And so, the standard errors should be okay for the most part. Except for the SNPs that are null for one trait and nominal for the other, you can show that it is anti-conservative for those.
 
 **Audience question:** \[Unable to hear on video\].
 

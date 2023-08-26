@@ -4,11 +4,9 @@ title: "Mendelian Randomization"
 
 **Title**: Examine causality using Mendelian randomization
 
-**Description**:
-
 **Presenter(s)**: Jie Zheng
 
-**Level**:
+**Level**: Intermediate
 
 **Length**: 9:26
 
