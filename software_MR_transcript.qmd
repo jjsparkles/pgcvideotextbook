@@ -4,7 +4,7 @@ title: "Software Tutorials: Mendelian Randomization (Video Transcript)"
 
 **Title**: Examine causality using Mendelian randomization
 
-**Presenter(s)**: Jie Zheng
+**Presenter(s)**: Jie Zheng, PhD (Shanghai Institute of Endocrine and Metabolic Diseases, Ruijin Hospital, Shanghai Jiao Tong University School of Medicine)
 
 **Jie Zheng**:
 

@@ -6,7 +6,9 @@ title: "Chapter 8.8: TWAS (Video Transcript)"
 
 **Title**: Understanding GWAS mechanisms with Transcriptome-Wide Association Studies
 
-**Presenter(s):** Sasha Gusev
+**Presenter(s):** Sasha Gusev, PhD (Dana-Farber Cancer Institute)
+
+**Sasha Gusev**:
 
 I am Sasha Gusev. This is my first time at CGSI, so thanks, everybody, for having me and giving me the opportunity to give this tutorial. As with the other ones, please feel free to interrupt or ask questions throughout, and I'll try to sort of break things down in a way that's accessible. I'm going to be talking about genome-wide association studies and specifically trying to make sense of genome-wide association studies as a way to understand human disease and complex traits.
 
@@ -82,7 +84,7 @@ And so with that, I'll conclude. I hope I've been able to convince you at the ve
 
 **Title**: PGC TWAS Primer
 
-**Presenter(s)**: Sasha Gusev
+**Presenter(s)**: Sasha Gusev, PhD (Dana-Farber Cancer Institute)
 
 **Sasha Gusev**:
 

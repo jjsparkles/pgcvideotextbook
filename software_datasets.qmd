@@ -8,11 +8,11 @@ title: "Datasets"
 >
 > The PsychENCODE consortium is composed of many academic institutions whose goal is the generation of large-scale genomic data (gene expression and regulation) from individuals with psychiatric disorders across different brain regions. This includes generation of both bulk and single-cell RNA sequencing, ChIPseq, Hi-C, ATACseq, and other measures of chromatin activity for multiple brain regions across different developmental stages.
 
-# FinnGen
+# FinnGen {#sec-section1}
 
 **Title**: Intro to FinnGen
 
-**Presenter(s)**: Aarno Palotie
+**Presenter(s)**: Aarno Palotie, MD, PhD (Institute for Molecular Medicine Finland (FIMM), University of Helsinki)
 
 **Level**: Beginner
 
@@ -29,11 +29,11 @@ Link to [FinnGen website](https://www.finngen.fi/en).
 
 ------------------------------------------------------------------------
 
-# PsychENCODE
+# PsychENCODE {#sec-section2}
 
 **Title**: Introduction to PsychENCODE
 
-**Presenter(s)**: Chunyu Liu
+**Presenter(s)**: Chunyu Liu, PhD (Department of Psychiatry, SUNY Upstate Medical University)
 
 **Level**: Beginner
 

@@ -6,7 +6,7 @@ title: "Conditional Analysis"
 
 **Title**: How to perform mtCOJO
 
-**Presenter(s)**: Zhihong Zhu
+**Presenter(s)**: Zhihong Zhu, PhD (Aarhus University)
 
 **Level**: Intermediate
 

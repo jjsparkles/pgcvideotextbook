@@ -16,7 +16,7 @@ title: "Chapter 8: Post-GWAS bioinformatics"
 
 **Title**: Heritability and SNP Heritability
 
-**Presenter(s)**: Alkes Price, Broad Institute
+**Presenter(s)**: Alkes Price, PhD (Department of Epidemiology, Harvard School of Public Health)
 
 **Level**: Intermediate
 
@@ -37,7 +37,7 @@ Link to video transcript [here](chapter8.1_transcript.qmd).
 
 **Title**: Genetic Correlation and Partitioning
 
-**Presenter(s)**: Patrick Turley, ATGU, Massachusetts General Hospital
+**Presenter(s)**: Patrick Turley, PhD (Massachusetts General Hospital)
 
 **Level**: Beginner friendly
 
@@ -60,7 +60,7 @@ Link to video transcript [here](chapter8.2_transcript.qmd).
 
 **Title**: How do we go from genetic discoveries from GWAS/WGS/WES to mechanistic disease insight?
 
-**Presenter(s)**: Danielle Posthuma
+**Presenter(s)**: Danielle Posthuma, PhD (Department of Complex Trait Genetics, Vrije Universiteit Amsterdam)
 
 **Level**: Beginner friendly
 
@@ -81,7 +81,7 @@ Link to MAGMA [software download](https://ctg.cncr.nl/software/magma) and [tutor
 
 **Title**: FUMA: Functional mapping and annotation of genetic associations
 
-**Presenter(s)**: Kyoko Watanabe
+**Presenter(s)**: Kyoko Watanabe, PhD (Regeneron)
 
 **Level**: Beginner friendly
 
@@ -104,7 +104,7 @@ Link to FUMA [Website](https://fuma.ctglab.nl/), [GitHub](https://github.com/Kyo
 
 **Title**: How do we go from genetic discoveries from GWAS/WGS/WES to mechanistic disease insight?
 
-**Presenter(s)**: Danielle Posthuma
+**Presenter(s)**: Danielle Posthuma, PhD (Department of Complex Trait Genetics, Vrije Universiteit Amsterdam)
 
 **Level**: Beginner friendly
 
@@ -128,7 +128,7 @@ Link to video transcript [here](chapter8.3_transcript.qmd#sec-video1).
 
 **Title**: Introduction to fine-mapping methods
 
-**Presenter(s)**: Hilary Finucane
+**Presenter(s)**: Hilary Finucane, PhD (Broad Institute)
 
 **Level**: Beginner friendly
 
@@ -165,9 +165,9 @@ Link to video transcript [here](chapter8.5_transcript.qmd).
 >
 > In the fourth video, Drs. O'Connor and Weiner discuss the relevance of gene regulation in GWAS, explains transcriptome-wide association studies and co-localization of GWAS with eQTLs as methods to link SNPs to gene expression and trait associations, discusses proximity and the abstract mediation model, and covered combining multiple SNP-to-gene strategies based on the Nature Genetics Publication: "Combining SNP-to-gene linking strategies to identify disease genes and assess disease omnigenicity".
 
-**Title**: GWAS Studies and eQTL Analysis.
+**Title**: GWAS Studies and eQTL Analysis
 
-**Presenter(s)**: Xiaole Shirley Liu
+**Presenter(s)**: Xiaole Shirley Liu, PhD (GV20 Therapeutics)
 
 **Level**: Beginner
 
@@ -184,7 +184,7 @@ Link to video transcript [here](chapter8.6_transcript.qmd#sec-video1).
 
 **TItle**: MPG Primer: Introduction to expression quantitative trait loci (2021).
 
-**Presenter(s)**: Francois Auget - Broad Institute
+**Presenter(s)**: Francois Auget, PhD (Illumina's Artificial Intelligence Laboratory)
 
 **Level**: intermediate (the content will be easier to follow by those who already went through some introductory materials on GWAS and gene expression)
 
@@ -201,9 +201,9 @@ Link to video transcript [here](chapter8.6_transcript.qmd#sec-video2).
 
 **Title**: Introduction to expression (e)QTL & their role in connecting QTL to genes and molecular networks.
 
-**Level**: Intermediate (the content will be easier to follow by those who already went through some introductory materials on GWAS and gene expression)
+**Presenter(s)**: Laura Saba, PhD (University of Colorado)
 
-**Presenter(s)**: Laura Saba
+**Level**: Intermediate (the content will be easier to follow by those who already went through some introductory materials on GWAS and gene expression)
 
 **Length**: 1:26:43 \*\*\*Please note that the audio cuts out for approximately 3 minutes starting at minute 5.
 
@@ -220,7 +220,11 @@ Link to video transcript [here](chapter8.6_transcript.qmd#sec-video3).
 
 **Level**: Intermediate (the content will be easier to follow by those who already went through some introductory materials on GWAS and gene expression)
 
-**Presenter(s)**: Luke O'Connor and Dan Weiner, Broad Institute
+**Presenter(s)**:
+
+-   Luke O'Connor, PhD (Broad Institute)
+
+-   Dan Weiner, PhD (Broad Institute)
 
 **Length**: 47:52
 
@@ -241,7 +245,7 @@ Link to video transcript [here](chapter8.6_transcript.qmd#sec-video4).
 
 **Title**: Understanding GWAS mechanisms with Transcriptome-Wide Association Studies
 
-**Presenter(s)**: Sasha Gusev (alexander_gusev\@dfci.harvard.edu)
+**Presenter(s)**: Sasha Gusev, PhD (Dana-Farber Cancer Institute)
 
 **Level**: Intermediate (the content will be easier to follow by those who already went through some introductory materials on GWAS and gene expression)
 
@@ -258,7 +262,7 @@ Link to video transcript [here](chapter8.7_transcript.qmd#sec-video1).
 
 **Title**: PGC TWAS Primer
 
-**Presenter(s)**: Sasha Gusev (alexander_gusev\@dfci.harvard.edu)
+**Presenter(s)**: Sasha Gusev, PhD (Dana-Farber Cancer Institute)
 
 **Level**: Beginner to Intermediate
 
@@ -281,7 +285,7 @@ Link to [FUSION TWAS website](http://gusevlab.org/projects/fusion/).
 
 **Title**: PheWAS: Discovering gene-disease associations
 
-**Presenter(s)**: Dr. Joshua Denny, All of Us Research Program
+**Presenter(s)**: Joshua Denny, PhD (All of Us Research Program)
 
 **Level**: Intermediate
 
@@ -298,7 +302,7 @@ Link to video transcript [here](chapter8.8_transcript.qmd#sec-video1).
 
 **Title**: Using EHR-based genomic approaches to understand the relationship between mental and physical health
 
-**Presenter(s)**: Dr. Lea Davis, Vanderbilt University
+**Presenter(s)**: Lea Davis, PhD (Vanderbilt University)
 
 **Level**: Intermediate
 

@@ -10,7 +10,7 @@ title: "Chapter 9.4: Interactions with Environmental Factors (Video Transcript)"
 
 **Title**: Dummy variables: interaction terms explanation
 
-**Presenter(s)**: Ben Lambert
+**Presenter(s)**: Ben Lambert, PhD (College of Engineering, Mathematics, and Pyshical Sciences, University of Exeter)
 
 **Ben Lambert**:
 
@@ -30,7 +30,7 @@ So, we can sort of think about what these cross terms mean in our regression spe
 
 **Title**: Continuous variables: interaction term interpretation
 
-**Presenter(s)**: Ben Lambert
+**Presenter(s)**: Ben Lambert, PhD (College of Engineering, Mathematics, and Pyshical Sciences, University of Exeter)
 
 **Ben Lambert**:
 
@@ -50,7 +50,7 @@ So, beta 3 generally, what does it mean? What have we learned from considering t
 
 **Title**: Gene-environment interaction analysis
 
-**Presenter(s)**: Kenny Westerman, Broad Institute
+**Presenter(s)**: Kenny Westerman, PhD (Broad Institute)
 
 **Kenny Westerman**:
 

@@ -10,7 +10,7 @@ title: "CNVs"
 
 **Title**: How to Run Copy Number Variation (CNV) analysis
 
-**Presenter(s)**: Daniel Howrigan
+**Presenter(s)**: Daniel Howrigan, PhD (Broad Institute)
 
 **Level**: Intermediate
 

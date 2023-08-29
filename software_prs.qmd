@@ -4,13 +4,11 @@ title: "PRS"
 
 ------------------------------------------------------------------------
 
-# Comparison of PRS methods
+# Comparison of PRS methods {#sec-section1}
 
 **Title**: Comparison of PRS methods
 
-**Description**:
-
-**Presenter(s)**: Guiyan Ni, Program in Complex Trait Genomics, Institute for Molecular Bioscience, University of Queensland
+**Presenter(s)**: Guiyan Ni, PhD (Institute for Molecular Bioscience, University of Queensland)
 
 **Level**: Intermediate
 
@@ -25,15 +23,17 @@ Link to video transcript [here](software_prs_transcript.qmd#sec-video1).
 
 ------------------------------------------------------------------------
 
-# PRS-CS and PRS-CSx
+# PRS-CS and PRS-CSx {#sec-section2}
 
 ## PRS-CSx to perform PRS analysis
 
 **Title**: Hands-on tutorial of using PRS-CSx to perform multi-ancestry PRS analysis
 
-**Description**:
+**Presenter(s)**:
 
-**Presenter(s)**: Tian Ge, Yunfeng Ruan, Stanley Center, Broad Institute
+-   Tian Ge, PhD (Broad Institute)
+
+-   Yunfeng Ruan, PhD (Broad Institute)
 
 **Level**: Intermediate
 
@@ -46,11 +46,13 @@ embed_url("https://www.youtube.com/watch?v=ERAuCaoJ4Wk")
 
 Link to video transcript [here](software_prs_transcript.qmd#sec-video2).
 
+------------------------------------------------------------------------
+
 ## PRS in Ancestrally-diverse Populations
 
 **Title**: PRS-CSx: Improving Cross-Population Polygenic Prediction using Coupled Continuous Shrinkage Priors
 
-**Presenter(s)**: Tian Ge
+**Presenter(s)**: Tian Ge, PhD (Broad Institute)
 
 **Level**: Intermediate
 
@@ -65,13 +67,11 @@ Link to video transcript [here](software_prs_transcript.qmd#sec-video3).
 
 ------------------------------------------------------------------------
 
-# LDpred2
+# LDpred2 {#sec-section3}
 
 **Title**: How to run LDpred2
 
-**Description**:
-
-**Presenter(s)**: Florian Privé
+**Presenter(s)**: Florian Privé, PhD (National Centre for Register-Based Research, Aarhus University)
 
 **Level**: Intermediate
 
@@ -88,13 +88,11 @@ Link to tutorial test datasets [here](https://privefl.github.io/bigsnpr/articles
 
 ------------------------------------------------------------------------
 
-# PRSice2 and LASSOSUM
+# PRSice2 and LASSOSUM {#sec-section4}
 
 **Title**: PRSice: Basic Polygenic analysis
 
-**Description**:
-
-**Presenter(s)**: Shing Wan Choi
+**Presenter(s)**: Shing Wan Choi, PhD (Regeneron)
 
 **Level**: Intermediate
 
@@ -109,13 +107,11 @@ Link to video transcript [here](software_prs_transcript.qmd#sec-video4).
 
 ------------------------------------------------------------------------
 
-# SBayesR
+# SBayesR {#sec-section5}
 
 **Title**: How to run SBayesR
 
-**Description**:
-
-**Presenter(s)**: Jian Zeng
+**Presenter(s)**: Jian Zeng, PhD (Institute for Molecular Bioscience, University of Queensland)
 
 **Level**: Intermediate
 
@@ -130,13 +126,17 @@ Link to video transcript [here](software_prs_transcript.qmd#sec-video6).
 
 ------------------------------------------------------------------------
 
-# Vertical Transmission and Genetic Nurture with PRS
+# Vertical Transmission and Genetic Nurture with PRS {#sec-section6}
 
 **Title**: Estimating Vertical Transmission and Genetic Nurture using Polygenic Scores
 
-**Description**:
+**Presenter(s)**:
 
-**Presenter(s)**: Jared Balbona, Yongkang Kim, Matthew Keller
+-   Jared Balbona, PhD (Institute for Behavioral Genetics, University of Colorado Boulder)
+
+-   Yongkang Kim, PhD (Janssen Pharmaceutical Companies of Johnson & Johnson)
+
+-   Matthew Keller, PhD (University of Colorado, Boulder)
 
 **Level**: Intermediate
 
@@ -148,3 +148,7 @@ embed_url("https://www.youtube.com/watch?v=w7wB0HsGAJE")
 ```
 
 Link to video transcript [here](software_prs_transcript.qmd#sec-video7).
+
+Link to [code and practice data on Google drive](https://drive.google.com/drive/folders/1C7LrfLJO8cbhwGHIApc4yc2Or-skcZ1E).
+
+Link to [OpenMx R package](https://openmx.ssri.psu.edu/).

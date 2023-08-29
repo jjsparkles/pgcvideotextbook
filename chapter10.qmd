@@ -8,7 +8,11 @@ Chapter goals:
 
 **Title**: How does Genetics Affect our Mental Health?
 
-**Presenter(s)**: Cathryn Lewis, Alex Curmi
+**Presenter(s)**:
+
+-   Cathryn Lewis, PhD (Social, Genetic, and Developmental Psychiatry Centre, King's College London)
+
+-   Alex Curmi, MD (Maudsley NHS Foundation Trust)
 
 **Level**: Beginner
 
@@ -27,7 +31,7 @@ Link to video transcript [here](chapter10.1_transcript.qmd).
 
 **Title**: Predicting the likelihood of future psychiatric disorders: a closer look, and some cautions.
 
-**Presenter(s)**: Howard Edenberg
+**Presenter(s)**: Howard Edenberg, PhD (Department of Medical and Molecular Genetics, Indiana University School of Medicine)
 
 **Level**: Beginner
 
@@ -46,7 +50,7 @@ Link to video transcript [here](chapter10.2_transcript.qmd).
 
 **Title**: Small effect sizes
 
-**Presenter(s)**: Howard Edenberg
+**Presenter(s)**: Howard Edenberg, PhD (Department of Medical and Molecular Genetics, Indiana University School of Medicine)
 
 **Level**: Beginner
 
@@ -63,24 +67,21 @@ Link to video transcript [here](chapter10.3_transcript.qmd).
 
 # 10.4 Language in Genetics Research {#sec-section4}
 
-**Title**:
+**Content coming soon!**
 
-**Presenter(s)**: Carina Seah, Kayla Townsley
+**Presenter(s)**:
+
+-   Carina Seah, MS (Department of Genetics and Genomic Sciences, Icahn School of Medicine at Mount Sinai)
+
+-   Kayla Townsley, MS (Department of Genetics and Genomic Sciences, Icahn School of Medicine at Mount Sinai)
 
 **Level**: Beginner
-
-**Length**:
-
-```{r, echo=FALSE}
-library("vembedr")
-embed_url("https://www.youtube.com/watch?v=bxCV2Z5i_yI&t=8s")
-```
-
-Link to video transcript
 
 ------------------------------------------------------------------------
 
 # 10.5 Equitable Collaboration for LMIC Researchers {#sec-section5}
+
+**Content coming soon!**
 
 ------------------------------------------------------------------------
 
@@ -88,7 +89,7 @@ Link to video transcript
 
 **Title**: GDPR for dummies: A survival guide for genetics research
 
-**Presenter(s)**: Heidi Beate Bentzen
+**Presenter(s)**: Heidi Beate Bentzen, LLM (Centre for Medical Ethics, University of Oslo)
 
 **Level**: Beginner
 

@@ -4,7 +4,9 @@ title: "Chapter 9.2: Mendelian Randomization (Video Transcript)"
 
 **Title**: A two minute primer on Mendelian Randomization
 
-**Presenter(s)**: George Davey Smith, TARG Bristol
+**Presenter(s)**: George Davey Smith, PhD (MRC Integrative Epidemiology Unit, University of Bristol)
+
+**George Davey Smith**:
 
 Epidemiologists are interested in understanding factors related to health and disease. The smokers tend to die younger than non-smokers; it certainly looks that way, but disentangling cause-and-effect can be difficult. Smokers are different on average from non-smokers; they're more likely to drink heavily and have less healthy diets. But even if we measure these confounding factors, we may not measure them perfectly, or there may be others we haven't measured. Also, as people become ill, they may cut down or give up smoking, which could wrongly suggest that reduced smoking leads to worse health.
 

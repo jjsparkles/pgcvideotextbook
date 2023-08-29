@@ -6,7 +6,7 @@ title: "Software Tutorials: Gene Set Identification (Video Transcript)"
 
 **Title**: Gene- and gene-set analysis in MAGMA
 
-**Presenter(s)**: Christiaan de Leeuw
+**Presenter(s)**: Christiaan de Leeuw, PhD (Department of Complex Trait Genetics, Vrije Universiteit Amsterdam)
 
 **Christiaan de Leeuw**:
 
@@ -68,7 +68,7 @@ This concludes this MAGMA tutorial. More information on the different analyses o
 
 **Title**: Annotating Genetic Variants to Target Genes Using H-MAGMA
 
-**Presenter(s)**: Nancy Y.A. Sey, University of North Carolina at Chapel Hill
+**Presenter(s)**: Nancy Y.A. Sey, PhD (National Human Genome Research Institute)
 
 **Nancy Sey**:
 
@@ -130,7 +130,13 @@ And with that, I would just like to thank my lab as well as my funding sources. 
 
 **Title**: E-MAGMA: an eQTL-informed method to identify risk genes using genome-wide association study summary statistics
 
-**Presenter(s)**: Zac Gerring, Eske Derks
+**Presenter(s)**:
+
+-   Zac Gerring, PhD (Translational Neurogenomics, QIMR Berghofer Medical Research Institute)
+
+-   Eske Derks, PhD (Translational Neurogenomics, QIMR Berghofer Medical Research Institute)
+
+**Zac Gerring**:
 
 Thank you for attending my talk entitled 'eMAGMA: An eQTL-Informed Method to Identify Risk Genes Using Genome-Wide Association Studies Summary Statistics'. MAGMA was initially developed to extract biological insights from GWAS by linking risk variants to their nearby genes. The method assigns single nucleotide polymorphism (SNP) associations to gene-level associations while correcting for confounding factors such as gene length, minor allele frequency, and gene density. While MAGMA is a reliable and commonly used tool, there is room for alternative approaches for how SNPs are assigned to genes. For example, conventional MAGMA assigns SNPs to the nearest gene, which is not always the most accurate approach. Non-coding SNPs can affect the expression of distal genes known as Expression Quantitative Trait Loci (eQTL). eMAGMA, or H-MAGMA, is a modified version of conventional MAGMA that leverages tissue-specific eQTL information to assign SNPs to genes.
 
@@ -156,7 +162,7 @@ In conclusion, eMAGMA is an eQTL-informed extension to conventional MAGMA and ca
 
 **Title**: How to run pathway specific Polygenic Risk Scores
 
-**Presenter(s)**: Judit García-González
+**Presenter(s)**: Judit García-González, PhD (Department of Genetics and Genomic Sciences, Icahn School of Medicine at Mount Sinai)
 
 **Judit García-González**:
 

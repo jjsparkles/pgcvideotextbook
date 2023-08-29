@@ -2,13 +2,11 @@
 title: "GWAS"
 ---
 
-------------------------------------------------------------------------
-
-# Genome-wide Association Studies in PLINK
+# Genome-wide Association Studies in PLINK {#sec-section1}
 
 **Title**: Genome-wide Association Studies
 
-**Presenter(s)**: Hailiang Huang
+**Presenter(s)**: Hailiang Huang, PhD (Department of Medicine, Harvard Medical School)
 
 **Level**: Intermediate
 
@@ -25,11 +23,11 @@ Link to video transcript [here](software_gwas_transcript.qmd#sec-video1).
 
 ------------------------------------------------------------------------
 
-# Genotype QC
+# Genotype QC {#sec-section2}
 
 **Title**: How to run quality control on genome-wide genotyping data
 
-**Presenter(s)**: Joni Coleman
+**Presenter(s)**: Jonathan Coleman, PhD (King's College London)
 
 **Level**: Intermediate
 
@@ -48,11 +46,11 @@ Link to [Coleman lab GitHub](https://github.com/ColemanResearchGroup/gwas_script
 
 ------------------------------------------------------------------------
 
-# Tractor: GWAS with admixed individuals
+# Tractor: GWAS with admixed individuals {#sec-section3}
 
 **Title**: Tractor: Enabling GWAS in admixed cohorts
 
-**Presenter(s)**: Elizabeth Atkinson
+**Presenter(s)**: Elizabeth Atkinson, PhD (Department of Molecular and Human Genetics, Baylor College of Medicine)
 
 **Level**: Intermediate
 
@@ -69,11 +67,11 @@ Link to video transcript [here](software_gwas_transcript.qmd#sec-video3).
 
 ------------------------------------------------------------------------
 
-# Genotype Calling and Imputation with MoChA
+# Genotype Calling and Imputation with MoChA {#sec-section4}
 
 **Title**: Genotype calling/imputation on the cloud: MoChA pipleine
 
-**Presenter(s)**: Giulio Genovese
+**Presenter(s)**: Giulio Genovese, PhD (Program in Medical and Population Genetics, Broad Institute)
 
 **Level**: Intermediate
 
@@ -90,11 +88,11 @@ Link to [MoChA GitHub](https://github.com/freeseek/mocha) and [Webpage](https://
 
 ------------------------------------------------------------------------
 
-# SAIGE: Family-based GWAS
+# SAIGE: Family-based GWAS {#sec-section5}
 
 **Title**: Genetic association studies in large-scale biobanks and cohorts
 
-**Presenter(s)**: Wei Zhou
+**Presenter(s)**: Wei Zhou, PhD (Broad Institute)
 
 **Level**: Intermediate
 
@@ -111,11 +109,11 @@ Link to GitHub and Wiki Tutorials for [SAIGE](https://github.com/weizhouUMICH/SA
 
 ------------------------------------------------------------------------
 
-# CC-GWAS
+# CC-GWAS {#sec-section6}
 
 **Title**: Tutorial to use CC-GWAS to identify loci with different allele frequency among cases of different disorders.
 
-**Presenter(s)**: Wouter Peyrot
+**Presenter(s)**: Wouter Peyrot, MD, PhD (Department of Psychiatry, Amsterdam UMC)
 
 **Level**: Intermediate
 

@@ -6,7 +6,7 @@ title: "Software Tutorials: GWAS (Video Transcript)"
 
 **Title**: Genome-wide Association Studies
 
-**Presenter(s)**: Hailiang Huang
+**Presenter(s)**: Hailiang Huang, PhD (Department of Medicine, Harvard Medical School)
 
 **Hailiang Huang:**
 
@@ -60,7 +60,7 @@ All right, so this is a Manhattan plot. And this is the QQ plot. You can tell th
 
 **Title**: How to run quality control on genome-wide genotyping data
 
-**Presenter(s)**: Jonathan Coleman
+**Presenter(s)**: Jonathan Coleman, PhD (King's College London)
 
 **Jonathan Coleman:**
 
@@ -122,7 +122,7 @@ Thank you very much for listening. I'm doing a Q&A at 9:30 EST. Otherwise, pleas
 
 **Title**: Tractor: Enabling GWAS in admixed cohorts
 
-**Presenter(s)**: Elizabeth Atkinson
+**Presenter(s)**: Elizabeth Atkinson, PhD (Department of Molecular and Human Genetics, Baylor College of Medicine)
 
 **Elizabeth Atkinson:**
 
@@ -178,7 +178,7 @@ Great! So with that, I hope that this was helpful. Thanks so much again for your
 
 **Title**: Genotype calling/imputation on the cloud: MoChA pipleine
 
-**Presenter(s)**: Giulio Genovese
+**Presenter(s)**: Giulio Genovese, PhD (Program in Medical and Population Genetics, Broad Institute)
 
 **Giulio Genovese:**
 
@@ -228,7 +228,7 @@ With that, I would like to acknowledge the many people who have helped in develo
 
 **Title**: Genetic association studies in large-scale biobanks and cohorts: Scalable and Accurate Implementation of GEneralized mixed model (SAIGE)
 
-**Presenter(s)**: Wei Zhou
+**Presenter(s)**: Wei Zhou, PhD (Broad Institute)
 
 **Wei Zhou:**
 
@@ -346,7 +346,7 @@ Lastly, if we want to use multiple minor allele frequency cutoffs and multiple f
 
 **Title**: Tutorial to use CC-GWAS to identify loci with different allele frequency among cases of different disorders.
 
-**Presenter(s)**: Wouter Peyrot
+**Presenter(s)**: Wouter Peyrot, MD, PhD (Department of Psychiatry, Amsterdam UMC)
 
 **Wouter Peyrot:**
 

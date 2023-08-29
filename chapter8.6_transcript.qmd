@@ -4,7 +4,9 @@ title: "Chapter 8.6: Quantitative Trait Loci (Video Transcript)"
 
 # GWAS Studies and eQTL Analysis {#sec-video1}
 
-**Presenter(s)**: Xiaole Shirley Liu
+**Title**: GWAS Studies and eQTL Analysis
+
+**Presenter(s)**: Xiaole Shirley Liu, PhD (GV20 Therapeutics)
 
 **Xiaole Shirley Liu**:
 
@@ -46,7 +48,7 @@ Yeah, so that's kind of the summary. In the genome, there are SNPs, they are oft
 
 **TItle**: MPG Primer: Introduction to expression quantitative trait loci (2021).
 
-**Presenter(s)**: Francois Auget - Broad Institute
+**Presenter(s)**: Francois Auget, PhD (Illumina's Artificial Intelligence Laboratory)
 
 **Francois Auget**:
 
@@ -148,7 +150,7 @@ I'll just end here with the slide containing different resources to follow up on
 
 **Title**: Introduction to expression (e)QTL & their role in connecting QTL to genes and molecular networks.
 
-**Presenter(s)**: Laura Saba
+**Presenter(s)**: Laura Saba, PhD (University of Colorado)
 
 **Laura Saba**:
 
@@ -400,7 +402,11 @@ And finally, you know, I have a great group in my lab. We have some funding from
 
 **Title**: Linking SNPs with genes in GWAS.
 
-**Author**: Luke O'Connor and Dan Weiner
+**Presenter(s)**:
+
+-   Luke O'Connor, PhD (Broad Institute)
+
+-   Dan Weiner, PhD (Broad Institute)
 
 **Sarah \[Host\]**:
 

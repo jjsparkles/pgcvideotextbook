@@ -4,7 +4,9 @@ title: "Chapter 8.1: SNP Heritability (Video Transcript)"
 
 **Title**: Heritability and SNP Heritability
 
-**Presenter(s)**: Alkes Price, Broad Institute
+**Presenter(s)**: Alkes Price, PhD (Department of Epidemiology, Harvard School of Public Health)
+
+**Host**:
 
 Again, good morning, everyone, and welcome to our first virtually presented MPG session. We're fortunate today to have Dr. Alkes Price from Harvard School of Public Health speaking. He's a professor of statistical genetics in the Department of Epidemiology, and today, we'll be talking about heritability and SNP heritability and the relationship to the genetic architecture of disease.
 

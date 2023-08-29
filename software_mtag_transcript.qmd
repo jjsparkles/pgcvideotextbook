@@ -4,7 +4,7 @@ title: "Software Tutorials: MTAG (Video Transcript)"
 
 **Title**: Multi-trait Analysis of GWAS (MTAG)
 
-**Presenter(s)**: Patrick Turley
+**Presenter(s)**: Patrick Turley, PhD (Massachusetts General Hospital)
 
 **Patrick Turley**:
 

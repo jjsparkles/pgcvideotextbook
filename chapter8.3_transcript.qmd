@@ -6,7 +6,7 @@ title: "Chapter 8.3: Gene Association Analysis (Video Transcript)"
 
 **Title**: How do we go from genetic discoveries from GWAS/WGS/WES to mechanistic disease insight?
 
-**Presenter(s)**: Danielle Posthuma
+**Presenter(s)**: Danielle Posthuma, PhD (Department of Complex Trait Genetics, Vrije Universiteit Amsterdam)
 
 **Danielle Posthuma**:
 
@@ -38,7 +38,7 @@ OK. This just is stressing that same point and also in the, in part two of these
 
 **Title**: FUMA: Functional mapping and annotation of genetic associations
 
-**Presenter(s)**: Kyoko Watanabe
+**Presenter(s)**: Kyoko Watanabe, PhD (Regeneron)
 
 **Kyoko Watanabe**:
 

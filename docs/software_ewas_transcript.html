@@ -333,12 +333,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./addreading.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Additional Reading</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="https://pgc.unc.edu/for-researchers/download-results/" class="sidebar-item-text sidebar-link">
  <span class="menu-text">PGC Summary Statistics</span></a>
   </div>
@@ -374,7 +368,12 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <p><strong>Title</strong>: How to Perform Epigenome Wide Association Studies</p>
-<p><strong>Presenter(s)</strong>: Agaz Wani, Seyma Katrinli, PhD</p>
+<p><strong>Presenter(s)</strong>:</p>
+<ul>
+<li><p>Agaz Wani, PhD (Genomics Program, College of Public Health, University of South Florida)</p></li>
+<li><p>Şeyma Katrinli, PhD (Department of Gynecology &amp; Obstetrics, Emory University School of Medicine)</p></li>
+</ul>
+<p><strong>Agaz Wani</strong>:</p>
 <p>Hello, I am Agaz Wani. I am a postdoc in Dr.&nbsp;Uddin’s lab at the University of South Florida. Today, I’ll be talking about quality control steps that we need to do in epigenome-wide association studies. So, I’ll be talking about checking for failed assays, mislabeled and contaminated samples. Then, I’ll be talking about dye bias correction and normalization, followed by a removal of low-quality probes and samples. Finally, I’ll be talking about adjustment for batch effects.</p>
 <p>So, we need to install and load some packages. We will be using “ewastools” to perform quality control checks. So, the first thing we need to do is to load the idat files. That is, the R data. Each sample has two idat files, that is green and red channels.</p>
 <p>We also have a sample sheet that comes with the raw data, which looks something like this, where we have Sentrix ID and Sentrix positions. We have the sample name. So, we need to use this sample sheet to read the idat files. We are reading the idat files, it will take a few seconds. We are almost done reading the idat files. Then, we will check if we have all the samples on the sample sheet and the methylation data.</p>
@@ -395,7 +394,7 @@ ul.task-list li input[type="checkbox"] {
 <p>We are performing log transformation so that we have a uniform distribution of the data. We will include the missing values in the methylation data because ComBAT will not work for data that has missing values. And it’s imputing right now the data.</p>
 <p>Here, the first adjustment will be done based on chip ID and the data. The outcome data will be used for the next adjustment, that is based on the chip position. So, you can see, as we have three chips, we have three batches that are being adjusted for the batch effects. The data is being adjusted for chip position, as we have eight positions on the chip, so we have eight batches. After ComBAT adjustment, we will be converting the data back to a beta transformation, where it will have the data in the range of zero and one.</p>
 <p>I’m converting the data back and inserting any values back because we imputed the data for ComBAT adjustment, so we need to put the missing values back. And we will finally receive the data that is ComBAT adjustment normalized, you know, after sex check, we will see the final data so that we can use it in the downstream analysis. Thank you.</p>
-<p><strong>Seyma</strong>:</p>
+<p><strong>Şeyma Katrinli</strong>:</p>
 <p>Hello, so for the second part of our pipeline journey, I will talk about how to run the analysis, the epigenome-wide analysis and what we need to run epigenome-wide association studies, and how we can get what we need using our pipeline.</p>
 <p>This is the general structure of the pipeline. Agaz has kindly talked about the initial quality control steps, which are described in script 1 and script 2, and I will talk about scripts 3, 3.1, 3.2, 4, and 5. Briefly, the EWAS is done by using script 4. But, in order to run the EWAS, we first need some preliminary scripts to estimate cell proportions, principal components, and smoking scores.</p>
 <p>Cell-proportion estimation will be done using script 2. This script needs normalized and QCed beta values and phenotypes, which were prepared by Script two, to calculate cell proportions (CD8, CD4, natural killer cells, B cells, monocytes, and neutrophils), using “Epidish” R package and an IDOL reference panel. For the output, we will get cell proportions.</p>

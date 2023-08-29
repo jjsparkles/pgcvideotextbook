@@ -333,12 +333,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./addreading.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Additional Reading</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="https://pgc.unc.edu/for-researchers/download-results/" class="sidebar-item-text sidebar-link">
  <span class="menu-text">PGC Summary Statistics</span></a>
   </div>
@@ -383,7 +377,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="sec-video1" class="level1">
 <h1>MAGMA</h1>
 <p><strong>Title</strong>: How do we go from genetic discoveries from GWAS/WGS/WES to mechanistic disease insight?</p>
-<p><strong>Presenter(s)</strong>: Danielle Posthuma</p>
+<p><strong>Presenter(s)</strong>: Danielle Posthuma, PhD (Department of Complex Trait Genetics, Vrije Universiteit Amsterdam)</p>
 <p><strong>Danielle Posthuma</strong>:</p>
 <p>Well, welcome back, this is part three of the session on how do we go from genetic discoveries to mechanistic disease insight, and in this last part I will focus a little bit on the software tool MAGMA for conducting gene based and pathway analysis. So in the practical you will learn how to work with MAGMA, and that’s a tool that was created by Christiaan de Leeuw a couple of years ago and it can be downloaded from this website over here.</p>
 <p>It is a tool for gene-set analysis and requires you to work with the Command Line interface, which should now be quite familiar to you and as an input you can either provide raw genotypic and phenotypic data or you can also provide summary statistics from already published results, but then you would also need some reference data. Because we need information on the LD structure of between the SNPs that are part of your analysis and then the other input is gene definitions. So that’s with SNPs belong to which genes and I will come back to that in the next couple of slides and also definitions of gene sets. But if you download MAGMA, there’s some files that have, some default files that you can use, that do this for you, but you’re also free to use your own files if you want to. So just as an aside, if you want to have access to public summary statistics, we created a database and on this slide I’ve just added one example when you’re interested in looking at one particular GWAS, then it gives you the Manhattan plot that gives you gene-based plots, it gives you the QQ plot. It also gives you gene sets outcome already. And it gives you some information about this GWAS with the link to the PubMed ID and where to download the data. So that’s, you can use this database if you want to play around with any software tool that requires you to input summary statistics, then yeah you can just download summary statistics from this database but there are also some other databases that have the same purpose. In MAGMA gene set analysis, there are three main steps, so step one is the annotation where we match SNPs to genes, and so MAGMA needs to know which SNPs do I have to analyze as part of which gene. So that’s step one.</p>
@@ -401,7 +395,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="sec-video2" class="level1">
 <h1>FUMA</h1>
 <p><strong>Title</strong>: FUMA: Functional mapping and annotation of genetic associations</p>
-<p><strong>Presenter(s)</strong>: Kyoko Watanabe</p>
+<p><strong>Presenter(s)</strong>: Kyoko Watanabe, PhD (Regeneron)</p>
 <p><strong>Kyoko Watanabe</strong>:</p>
 <p>Hi everyone. I’m a PhD student at the Vrije Universiteit in Amsterdam. My work mainly focuses on understanding genetic associations in a biological context. Today, I’m going to introduce you to a web application I have recently developed, which is Functional Mapping and Annotation of Genetic Associations [FUMA].</p>
 <p>So, I’m going to start with a very quick recap of what was GWAS [genome-wide association study] again. So, we basically start by genotyping a large number of individuals using SNP [single nucleotide polymorphism] arrays. Which, nowadays, we can tag around a million SNPs, and by performing imputation with reference panels, you end up with a maximum of 20 million SNPs. So, in a very simple case, when you have case and control groups in your genotyped individuals, you perform statistical tests to see if the occurrence of minor alleles in case and control groups are different from zero. So, in the end, you get the p-value for every single SNP you have. But, as you can imagine, the number of statistical tests being performed is the same as the number of SNPs you have. Of course, you have to correct for multiple testing, and the gold standard for a genomically significant p-value is 5 × 10<sup>-8</sup>. So, whenever you find SNPs with p-values less than that, those genomic regions are called “hits” or “significant.”</p>

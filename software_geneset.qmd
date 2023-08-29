@@ -4,11 +4,11 @@ title: "Gene Set Identification"
 
 ------------------------------------------------------------------------
 
-# MAGMA
+# MAGMA {#sec-section1}
 
 **Title**: Gene- and gene-set analysis in MAGMA
 
-**Presenter(s)**: Christiaan de Leeuw
+**Presenter(s)**: Christiaan de Leeuw, PhD (Department of Complex Trait Genetics, Vrije Universiteit Amsterdam)
 
 **Level**: Intermediate
 
@@ -23,11 +23,11 @@ Link to video transcript [here](software_geneset_transcript.qmd#sec-video1).
 
 ------------------------------------------------------------------------
 
-# H-MAGMA
+# H-MAGMA {#sec-section2}
 
 **Title**: Annotating Genetic Variants to Target Genes Using H-MAGMA
 
-**Presenter(s)**: Nancy Y.A. Sey, University of North Carolina at Chapel Hill
+**Presenter(s)**: Nancy Y.A. Sey, PhD (National Human Genome Research Institute)
 
 **Level**: Intermediate
 
@@ -44,11 +44,15 @@ Link to video transcript [here](software_geneset_transcript.qmd#sec-video2).
 
 ------------------------------------------------------------------------
 
-# E-MAGMA
+# E-MAGMA {#sec-section3}
 
 **Title**: E-MAGMA: an eQTL-informed method to identify risk genes using genome-wide association study summary statistics
 
-**Presenter(s)**: Zac Gerring, Eske Derks
+**Presenter(s)**:
+
+-   Zac Gerring, PhD (Translational Neurogenomics, QIMR Berghofer Medical Research Institute)
+
+-   Eske Derks, PhD (Translational Neurogenomics, QIMR Berghofer Medical Research Institute)
 
 **Level**: Intermediate
 
@@ -65,11 +69,11 @@ Link to video transcript [here](software_geneset_transcript.qmd#sec-video3).
 
 ------------------------------------------------------------------------
 
-# PRSet
+# PRSet {#sec-section4}
 
 **Title**: How to run pathway specific Polygenic Risk Scores
 
-**Presenter(s)**: Judit García-González
+**Presenter(s)**: Judit García-González, PhD (Department of Genetics and Genomic Sciences, Icahn School of Medicine at Mount Sinai)
 
 **Level**: Intermediate
 
@@ -81,3 +85,5 @@ embed_url("https://www.youtube.com/watch?v=IrriXu26h_E")
 ```
 
 Link to video transcript [here](software_geneset_transcript.qmd#sec-video4).
+
+Link to [PRSet website](https://choishingwan.github.io/PRSice/quick_start_prset/) (part of the PRSice-2 website).

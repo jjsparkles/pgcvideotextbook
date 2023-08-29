@@ -6,7 +6,7 @@ title: "Software Tutorials: Datasets (Video Transcript)"
 
 **Title**: Intro to FinnGen
 
-**Presenter(s)**: Aarno Palotie
+**Presenter(s)**: Aarno Palotie, MD, PhD (Institute for Molecular Medicine Finland (FIMM), University of Helsinki)
 
 **Aarno Palotie:**
 
@@ -62,7 +62,7 @@ And I think everyone for listening and hope that these cohorts provide an opport
 
 **Title**: Introduction to PsychENCODE
 
-**Presenter(s)**: Chunyu Liu
+**Presenter(s)**: Chunyu Liu, PhD (Department of Psychiatry, SUNY Upstate Medical University)
 
 **Chunyu Liu:**
 

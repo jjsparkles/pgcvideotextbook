@@ -6,7 +6,11 @@ title: "EWAS"
 
 **Title**: How to Perform Epigenome Wide Association Studies
 
-**Presenter(s)**: Agaz Wani, Seyma Katrinli
+**Presenter(s)**:
+
+-   Agaz Wani, PhD (Genomics Program, College of Public Health, University of South Florida)
+
+-   Şeyma Katrinli, PhD (Department of Gynecology & Obstetrics, Emory University School of Medicine)
 
 **Level**: Intermediate
 
@@ -18,3 +22,5 @@ embed_url("https://www.youtube.com/watch?v=uTEfOTHfHpk")
 ```
 
 Link to video transcript [here](software_ewas_transcript.qmd).
+
+Link to [ewastools GitHub](https://github.com/hhhh5/ewastools).

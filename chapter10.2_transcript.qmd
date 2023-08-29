@@ -4,13 +4,15 @@ title: "Chapter 10.2: Caution in Genetic Prediction (Video Transcript)"
 
 **Title**: Predicting the likelihood of future psychiatric disorders: a closer look, and some cautions.
 
-**Presenter(s)**: Howard Edenberg
+**Presenter(s)**: Howard Edenberg, PhD (Department of Medical and Molecular Genetics, Indiana University School of Medicine)
+
+**Howard Edenberg**:
 
 Predicting the likelihood of future psychiatric disorders sounds very appealing, particularly if there's the possibility of an effective early intervention.
 
 But let's take a closer look and look and look at some cautions before jumping ahead too quickly.
 
-HI. I\'m Howard Edenberg from Indiana University. \[These are my personal views.\]
+HI. I'm Howard Edenberg from Indiana University. \[These are my personal views.\]
 
 Psychiatric and substance use disorders are complex genetic disorders. The risk is affected by both the genes and the environment. Neither works alone and they interact, sometimes in complex ways. For many disorders, including the substance use disorders, the total genetic contribution to risk is about equal to the environmental contribution, and for substance use disorders there's a required environmental component: consumption or use of the substance. Thus genetics will never fully predict future psychiatric disorders, particularly the substance use disorders.
 

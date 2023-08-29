@@ -55,7 +55,6 @@ website:
         contents: 
           - glossary.qmd
           - resources.qmd
-          - addreading.qmd
           - text: PGC Summary Statistics
             href: https://pgc.unc.edu/for-researchers/download-results/
     

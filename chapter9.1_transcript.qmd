@@ -4,7 +4,9 @@ title: "Chapter 9.1: Copy Number Variation (Video Transcript)"
 
 **Title**: How to run Copy Number Variation (CNV) analysis
 
-**Presenter(s)**: Daniel Howrigan, Broad Institute
+**Presenter(s)**: Daniel Howrigan, PhD (Broad Institute)
+
+**Daniel Howrigan**:
 
 Hello, my name is Daniel Howrigan, and today I'll be talking about how to run copy number variation analysis. In today's talk, I'll address a couple of questions, namely: what is a copy number variant, and how do we detect it with genotype data? What does the CNV file format look like, and what does CNV analysis output look like? Finally, how do I use this to run CNV burden and Association tests?
 

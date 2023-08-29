@@ -157,3 +157,35 @@ embed_url("https://www.youtube.com/watch?v=3cNmTwm-x-Q&t=6s")
 ```
 
 Link to video transcript [here](chapter2.4_transcript.qmd#sec-video4).
+
+------------------------------------------------------------------------
+
+## 2.5 Genome References
+
+**Title**: What is hg19/hg38? All you need to know about human reference genomes
+
+**Presenter(s)**: Khushbu Patel, PhD, DABCC (Children's Hospital of Philadelphia)
+
+**Length**: 11:58
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=DeZTPCOKZrg")
+```
+
+Link to video transcript [here](chapter2.5_transcript.qmd#sec-section1).
+
+------------------------------------------------------------------------
+
+**Title**: Introduction to Genome Builds and Transcripts
+
+**Presenter(s)**: Karen Wain, MS, CGC (ClinGen)
+
+**Length**: 7:45
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=pg6IjH4Oits")
+```
+
+Link to video transcript [here](chapter2.5_transcript.qmd#sec-section2).

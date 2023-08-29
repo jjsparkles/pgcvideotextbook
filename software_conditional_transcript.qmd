@@ -6,7 +6,7 @@ title: "Software Tutorials: Conditional Analysis (Video Transcript)"
 
 **Title**: How to perform mtCOJO
 
-**Presenter(s)**: Zhihong Zhu
+**Presenter(s)**: Zhihong Zhu, PhD (Aarhus University)
 
 **Zhihong Zhu**:
 

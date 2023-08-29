@@ -333,12 +333,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./addreading.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Additional Reading</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="https://pgc.unc.edu/for-researchers/download-results/" class="sidebar-item-text sidebar-link">
  <span class="menu-text">PGC Summary Statistics</span></a>
   </div>
@@ -384,7 +378,8 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="sec-video1" class="level1">
 <h1>GWAS Studies and eQTL Analysis</h1>
-<p><strong>Presenter(s)</strong>: Xiaole Shirley Liu</p>
+<p><strong>Title</strong>: GWAS Studies and eQTL Analysis</p>
+<p><strong>Presenter(s)</strong>: Xiaole Shirley Liu, PhD (GV20 Therapeutics)</p>
 <p><strong>Xiaole Shirley Liu</strong>:</p>
 <p><em>GWAS Studies</em></p>
 <p>Over the last decade, we see an increasing rate of GWAS studies. This is because people really want to see: “Based on my genetic information, can I predict a disease? How likely am I going to have a disease?” They are also interested in whether there’s an association with the patient’s response to drugs. This is facilitated by the drastic reduction of genome sequencing costs in early days by the microarray cost. So you can see the number of publications in the GWAS studies are really increasing. In the early days when the cost was high and people didn’t have enough data yet, it was collecting sample cohorts. It’s very time-consuming; it takes decades to collect enough patients for some case-control studies. In the early days, they were looking at cohorts that have only a few hundred patients. Sometimes they might find a SNP that gives them some association, and if they repeat the same study using another scientist, they collect another cohort of patients with a few hundred patients, they do the same study, they see some SNPs, and there could be very low overlap between the two studies. This is mostly because, in the early days, there were not enough patients, and most of these GWAS individual associations have very weak effects on the disease. And because we’re doing so many multiple hypothesis testing, you actually hit on things that are not really real. If you change a cohort, you’ll land in some other regions. You can see here the number of GWAS hits is directly associated with your discovery cohort size. In the early days, it could be a few hundred or a few thousand, and then 20,000, and even 200,000. And now, with more and more people doing genome sequencing, you might even have these huge cohorts that have close to a million individuals to look at associations. The nice thing about this is, once you sequence somebody’s DNA, the information is always there, and all you need to decide is which phenotype do I want to look at. You can see here this could be height, body mass index, this QT interval (is a heart QT interval), cholesterol level. You can look at hair color, eye color, disease other associations, you can look at their IQ. Yeah, there’s many, like skin color and things like that, that you can look at.</p>
@@ -407,7 +402,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="sec-video2" class="level1">
 <h1>MPG Primer: Introduction to expression quantitative trait loci</h1>
 <p><strong>TItle</strong>: MPG Primer: Introduction to expression quantitative trait loci (2021).</p>
-<p><strong>Presenter(s)</strong>: Francois Auget - Broad Institute</p>
+<p><strong>Presenter(s)</strong>: Francois Auget, PhD (Illumina’s Artificial Intelligence Laboratory)</p>
 <p><strong>Francois Auget</strong>:</p>
 <p>It’s a pleasure to be here. I’ve learned a ton from this series in the past, so it’s really nice to have an opportunity to contribute to it. So, what I’d like to do with this talk is give a sort of broad overview of quantitative trait loci or QTLs (I put “expression” here in parentheses), although most of the talk will be focused on expression QTLs. Many of the concepts are really generally applicable to any kind of molecular QTL.</p>
 <p>In terms of the structure of the talk, I’ll start with aspects of data normalization and covariate correction; then get into the details of QTL mapping for <em>cis</em>-eQTLs; talk about other QTL types, including <em>trans</em>-eQTLs, splicing QTLs, conditional independent QTLs; as well as context-dependent QTLs. And as I’ve mentioned, these concepts are really generally applicable. There are some topics that the talk won’t cover just for the sake of time. One of those aspects, which is really key to these analyses but basically another talk in itself, is how to perform quality control of the core data types, so both on the genotyping side as well as the RNA sequencing. It also won’t be a sort of step-by-step, really detailed walkthrough of how to do these analyses with code examples. Really more of a bit of a higher-level overview. It also won’t be a discussion of QTL results, although I’ll present several examples, these will really be more for illustration purposes.</p>
@@ -460,7 +455,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="sec-video3" class="level1">
 <h1>eQTLs, genes, and molecular networks</h1>
 <p><strong>Title</strong>: Introduction to expression (e)QTL &amp; their role in connecting QTL to genes and molecular networks.</p>
-<p><strong>Presenter(s)</strong>: Laura Saba</p>
+<p><strong>Presenter(s)</strong>: Laura Saba, PhD (University of Colorado)</p>
 <p><strong>Laura Saba</strong>:</p>
 <p>Thank you, thank you. So, just to touch on a few housekeeping things, this is the third webinar for the “Quantitative Genetics Tools for Mapping Trait Variation to Mechanisms, Therapeutics, and Intervention” . It’s sponsored by the NIDA Center of Excellence and Omics Systems Genetics and the Addictome. Today, we’re going to be talking about expression QTL and how we connect those to genes. So, we sent out a survey a few weeks ago after our second webinar, and one of the really helpful suggestions that was given on that survey was to aim for a presentation that’s close to an hour and then add an extra 30 minutes for those who want to stick around and ask questions and have more of a discussion. So, that’s how we’ll work it today. Feel free, if you’ve only got an hour, to log off at the end of the talk, or feel free to stay on and have a discussion with us to talk about some more in detail about some of the things that we’re discussing in these webinars. And I do need to make the apology of sending out the wrong link to you for those of you that had to register twice on my email, lesson learned about copying and pasting. The slides are now available on GitHub and the video and the slides will be available online at the Oak Harwell website within the next couple of days. And we’ll do another webinar here in a couple weeks, so we’ll send out information all about that so that you can register and join in on that if you’d like. I think that about sums up the housekeeping items, except that I will be sending out another quick survey, just three questions, in case you want to give us some feedback on the format or give us some feedback on other topics you’d like to see covered. So, let’s just jump right into it. I’m Laura Saba, I’m at the University of Colorado, and I’m co-director of the NIDA Center for Omics Systems Genetics and the Addictome. I’m going to be talking today about expression QTL.</p>
 <p><em>Quantitative Genetics Tools for Mapping Trait Variation to Mechanisms, Therapeutics, and Interventions Webinar Series</em></p>
@@ -588,7 +583,11 @@ ul.task-list li input[type="checkbox"] {
 <section id="sec-video4" class="level1">
 <h1>From SNPs to Genes</h1>
 <p><strong>Title</strong>: Linking SNPs with genes in GWAS.</p>
-<p><strong>Author</strong>: Luke O’Connor and Dan Weiner</p>
+<p><strong>Presenter(s)</strong>:</p>
+<ul>
+<li><p>Luke O’Connor, PhD (Broad Institute)</p></li>
+<li><p>Dan Weiner, PhD (Broad Institute)</p></li>
+</ul>
 <p><strong>Sarah [Host]</strong>:</p>
 <p>Good morning, everyone, and welcome to today’s MPG primer session. We are very excited to have a talk by Luke O’Connor and Dan Weiner, who are here today to share their work on the intersection of common and rare variant disease. Luke O’Connor is a Schmidt fellow at the Broad Institute; his focus is on developing statistical approaches to understand the genetics of common disease. His work integrates data from multiple phenotypes, from common emerging genetic variation, and from diverse populations.</p>
 <p>Dan Weiner is an MD, PhD candidate at Harvard Medical School who has just defended his PhD. Congratulations! He is studying the convergence of common and rare genetic variation, co-advised by Luke O’Connor and Elise Robinson. They will be speaking to us today about their recent work linking single nucleotide polymorphisms with genes and genome-wide association studies. So, thank you both for being here today. They’ll be happy to take your questions during the talk, so go ahead and post them in the Q&amp;A or type in the chat, and there will be pauses to have them addressed.</p>

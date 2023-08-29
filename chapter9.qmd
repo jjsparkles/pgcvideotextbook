@@ -22,7 +22,7 @@ title: "Chapter 9: Advanced Topics"
 
 **Title**: How to run Copy Number Variation (CNV) analysis
 
-**Presenter(s)**: Daniel Howrigan, Broad Institute
+**Presenter(s)**: Daniel Howrigan, PhD (Broad Institute)
 
 **Level**: Intermediate
 
@@ -43,7 +43,7 @@ Link to video transcript [here](chapter9.1_transcript.qmd).
 
 **Title**: A two minute primer on Mendelian Randomization
 
-**Presenter(s)**: George Davey Smith, TARG Bristol
+**Presenter(s)**: George Davey Smith, PhD (MRC Integrative Epidemiology Unit, University of Bristol)
 
 **Level**: Beginner
 
@@ -64,7 +64,7 @@ Link to video transcript [here](chapter9.2_transcript.qmd).
 
 **Title**: Genomic Structural Equation Modeling: A Brief Introduction
 
-**Presenter(s)**: Andrew Grotzinger
+**Presenter(s)**: Andrew Grotzinger, PhD (Institute for Behavioral Genetics, University of Colorado Boulder)
 
 **Level**: Beginner
 
@@ -81,7 +81,7 @@ Link to video transcript [here](chapter9.3_transcript.qmd#sec-video1).
 
 **Title**: Short Primer on Structural Equation Modeling (SEM) in Lavaan
 
-**Presenter(s)**: Andrew Grotzinger
+**Presenter(s)**: Andrew Grotzinger, PhD (Institute for Behavioral Genetics, University of Colorado Boulder)
 
 **Level**: Intermediate
 
@@ -98,7 +98,7 @@ Link to video transcript [here](chapter9.3_transcript.qmd#sec-video2).
 
 **Title**: GenomicSEM: Input/Explaining how S and V are estimated and what they are
 
-**Presenter(s)**: Michel Nivard
+**Presenter(s)**: Michel Nivard, PhD (Department of Biological Psychology, VU Amsterdam)
 
 **Level**: Intermediate
 
@@ -115,7 +115,7 @@ Link to video transcript [here](chapter9.3_transcript.qmd#sec-video3).
 
 **Title**: Working through examples on the Genomic SEM wiki one by one: munge, ldsc, usermodel functions
 
-**Presenter(s)**: Michel Nivard
+**Presenter(s)**: Michel Nivard, PhD (Department of Biological Psychology, VU Amsterdam)
 
 **Level**: Intermediate
 
@@ -134,7 +134,7 @@ Link to tutorial GitHub [here](https://github.com/GenomicSEM/GenomicSEM) and Wik
 
 **Title**: Multivariate GWAS in Genomic SEM
 
-**Presenter(s)**: Andrew Grotzinger
+**Presenter(s)**: Andrew Grotzinger, PhD (Institute for Behavioral Genetics, University of Colorado Boulder)
 
 **Level**: Intermediate
 
@@ -151,7 +151,7 @@ Link to video transcript [here](chapter9.3_transcript.qmd#sec-video5).
 
 **Title**: Using Genomic SEM to Understand Psychiatric Comorbidity
 
-**Presenter(s)**: Andrew Grotzinger
+**Presenter(s)**: Andrew Grotzinger, PhD (Institute for Behavioral Genetics, University of Colorado Boulder)
 
 **Level**: Intermediate
 
@@ -174,7 +174,7 @@ Link to video transcript [here](chapter9.3_transcript.qmd#sec-video6).
 
 **Title**: Dummy variables: interaction terms explanation
 
-**Presenter(s)**: Ben Lambert
+**Presenter(s)**: Ben Lambert, PhD (College of Engineering, Mathematics, and Pyshical Sciences, University of Exeter)
 
 **Level**: Beginner friendly
 
@@ -191,7 +191,7 @@ Link to video transcript [here](chapter9.4_transcript.qmd#sec-video1).
 
 **Title**: Continuous variables: interaction term interpretation
 
-**Presenter(s)**: Ben Lambert
+**Presenter(s)**: Ben Lambert, PhD (College of Engineering, Mathematics, and Pyshical Sciences, University of Exeter)
 
 **Level**: Beginner friendly
 
@@ -208,7 +208,7 @@ Link to video transcript [here](chapter9.4_transcript.qmd#sec-video2).
 
 **Title**: Gene-environment interaction analysis
 
-**Presenter(s)**: Kenny Westerman, Broad Institute
+**Presenter(s)**: Kenny Westerman, PhD (Broad Institute)
 
 **Level**: Intermediate (content will be easier to those with a statistical genetics background)
 
@@ -229,9 +229,7 @@ Link to video transcript [here](chapter9.4_transcript.qmd#sec-video3).
 
 **Title**: Univariate/MonoPhenotype Twin Modeling in OpenMx
 
-**Description**:
-
-**Presenter(s)**: Hermine H. Maes
+**Presenter(s)**: Hermine H. Maes, PhD (Virginia Institute for Psychiatric and Behavioral Genetics, Virginia Commonwealth University)
 
 **Level**: Intermediate
 
@@ -254,7 +252,11 @@ Link to [OpenMx software](https://openmx.ssri.psu.edu/).
 
 **Title**: Pharmacogenomics knowledge for personalized medicine
 
-**Presenter(s)**: Cristina Rodriguez-Antona, Michelle Whirl-Carrillo
+**Presenter(s)**:
+
+-   Michelle Whirl-Carrillo, PhD (Stanford University School of Medicine)
+
+-   Cristina Rodriguez-Antona, PhD (CNIO, Spanish National Cancer Research Centre)
 
 **Level**: Intermediate
 

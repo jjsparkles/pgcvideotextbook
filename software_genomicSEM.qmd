@@ -10,7 +10,7 @@ title: "Genomic SEM"
 
 **Title**: Genomic SEM Tutorial
 
-**Presenter(s)**: Andrew Grotzinger
+**Presenter(s)**: Andrew Grotzinger, PhD (Institute for Behavioral Genetics, University of Colorado Boulder)
 
 **Level**: Intermediate
 

@@ -1,0 +1,133 @@
+---
+title: "Chapter 2.5: Genome References (Video Transcript)"
+---
+
+# **Human reference genomes (hg19 and hg38)** {#sec-section1}
+
+**Title**: What is hg19/hg38? All you need to know about human reference genomes
+
+**Presenter(s)**: Khushbu Patel, PhD, DABCC (Children's Hospital of Philadelphia)
+
+**Khushbu Patel**:
+
+Hi guys, welcome back to my channel. I'm so happy to see you all here. So, in today's video, I want to talk about reference genomes. We have used a reference genome while we were quantifying our RNA sequence. So today, I want to talk a little more about reference genomes in terms of what they are, how they are built, and what are the different versions available, and which version should one use.
+
+*What is a reference genome?*
+
+Talking about what a reference genome is, a reference genome is a library or database of nucleic acid sequences representing a complete set of genes from a species. So, a human reference genome is created from the DNA of different donor individuals, and therefore, it does not represent the set of genes of any individual person. So, if you were to take the sequence of the reference human genome, you are not going to be able to match it to one individual because it's stitched together from the genes of different individuals.
+
+So, in the simplest case, and in any individual genome can be used as a reference genome. However, the quality and the sensitivity of your analysis are increased when the reference genome is more representative of a wider group of individuals. Each segment of the genome reference should feature the sequence most commonly observed across the available individual genomes.
+
+While the reference genome is very useful to the genomics field, it is important to keep in mind that the reference genomes are just an idea of what a normal organism's genome should look like. Um, so a reference genome is NOT...
+
+\- not a healthy genome,
+
+\- it is not most commonly observed,
+
+\- it is not the longest,
+
+\- it is not ancestral,
+
+\- it is not the average of the global population, but rather it's peculiar, since the reference genome was built not from one individual but from donors.
+
+*Why sequence full human genome?*
+
+The human reference genome ultimately is used for sample comparison with single individual human genomes to show genomic differences and similarities, as well as to solve biological questions. So, some human reference genome applications include identification of all genes, understanding the role of these genes, um, also discovering uh novel regulatory regions, understanding how these regulatory regions play a role in various mechanisms.
+
+Besides that, a human reference genome is also used by geneticists and biologists to identify gene mutations and variants which can cause diseases. So, understanding of these uh variants and mutations can help create better treatment, medicines, and cures.
+
+It is also used by population geneticists in genome-wide association studies. Apart from that, this reference genome is also used by personal whole genome sequence testing companies like Nebula Genomics or Dante Labs, to provide customers with uh more accurate DNA results for genetic ancestry, as well as performing personal health profiling.
+
+*How is a human reference genome created?*
+
+So, talking about how a reference genome is created, reference genomes are prepared through a process called de novo genome sequencing. So, de novo sequencing occurs when scientists sequence and assemble a genome from scratch without using a reference genome for alignment.
+
+So, to begin *de novo* sequencing, scientists created many copies of the DNA of interest. Since the reference genome was created from multiple donors, um, the genomic DNA of interest was from multiple donors and that was chopped up into fragments of various sizes.
+
+And then, all the sequence pieces, which are called reads, are assembled back together to produce the whole genome sequence. The order of the reads can be computationally inferred by detecting overlapping regions between the reads. The more similarity between the end of one read and the beginning of the another, the more likely that they are originating from overlapping sections of the genome. The computer program, uh, pieces shorter reads together into larger overlapping chunks, and these are called contigs, which are short for contiguous sequences.
+
+Then, there are two approaches taken from here. Either, um, all the contigs are compared by a computer program and a consensus sequence is generated based on the most frequently occurring base at each location of the genome. Or another approach is the computer program runs an algorithm that finds the most likely connection of the contigs, which assembles into larger pieces called scaffolds. And there is enough information sometimes for the assembler to go one step further and connect the scaffolds into complete chromosomes.
+
+So, successive versions of the human genome reference genome builds (versions), references commonly called as assemblies or builds. You might have heard the term genome builds. Builds are nothing but versions. So, with each version, there are gradual improvements in quality which is made possible by technological advancement and improved sequencing techniques, as well as improvements in representativeness of reference genomes in terms of underrepresented population since the reference genome originally was built using donors from a specific population or restricted to a certain geographical location.
+
+The efforts are investing into adding more sequences from diverse populations across various geographical locations to have an appropriate representative reference genome.
+
+The most up-to-date version of the human reference genome is GRCh38, which was released in December 2013. It is a Genome Reference Consortium (GRC) which is responsible, uh, to revise and update these human genome reference sequences regularly and roll out the updates with newer improvements in the sequences.
+
+Oftentimes, there is confusion: What's with multiple names - GRCh37, hg19, or b37?
+
+Regarding the naming of these reference genomes, here I'm using an example of an earlier version of the human reference genome. GRCh37 is a reference that is built by the Genome Reference Consortium, and this is a baseline human genome reference that serves as the basis for the other two references here in the comparison.
+
+hg19 is a reference that is created by UCSC (University of California, Santa Cruz), and that is based on GRCh37.
+
+b37 is a reference that is created by the Broad Institute, and the reference is based on GRCh37. These three are often called hg19 references, but they are not directly interchangeable as there are differences in sequences between these references in certain chromosomal regions and in certain contexts.
+
+*Types of sequences found in a human reference FASTA file*
+
+A reference genome sequence is available as a FASTA file, and within this FASTA file, there are sequences for various chromosomes like chromosome 1 to 22, chromosome X, chromosome Y, and chromosome M (that is mitochondrial chromosome). In addition to the sequences for these chromosomes, we have unlocalized sequences. So, we uh know what chromosome these sequences originate from, but we do not know uh exactly what location within the chromosome these sequences lie. So, these sequences are identified by the uh underscore random suffix.
+
+In addition to that, we also have unplaced sequences. For these sequences, we do not know what chromosome they are originating from, and they are identified by the uh chromosome underscore U prefix.
+
+So, the combination of the main reference, that is uh chromosome 1 to 22, chromosome X, Y, chromosome M, unlocalized sequences, and unplaced sequences, these form the primary assembly, and it is recommended to use the complete primary assembly for all the analysis.
+
+*Now, talking about the alternate loci: What are alternate loci?*
+
+Prior to GRCh37 assembly, which was released in 2009, prior to that, the human genome reference sequence was represented as a single consensus sequence. Now, there are several regions in the chromosome that display a high degree of variability among the population that cannot be adequately represented by a single sequence. For this reason, the GRC began to provide alternate sequences for regions that showed high variability, by including something called alternative loci or alternate locus scaffolds.
+
+So, it first introduced this GRCh37, uh, assembly which was released in 2013. In that assembly, it included three regions with nine alternate locus sequences. And in GRCh38, which is the most up-to-date recent assembly, um, there are 178 regions with 261 alternate loci. This offers many opportunities to the genomics and bioinformatics communities to adapt analysis procedures to a more sophisticated and representative model of the human genome.
+
+In addition to alternative loci, we have sequences for the Epstein-Barr virus. As the Epstein-Barr virus sequences are endogenously found in most of the uh population, as this virus naturally infects B cells in around 90% of the world population.
+
+In addition to that, we have decoy sequences, and these sequences are uh, ones that could not be placed on chromosomes when the reference genome was put together. Uh, much of the decoy sequences consist of repeats that are difficult to assemble.
+
+Lastly, we have sequences corresponding to HLA regions. These are the sequences for various HLA types.
+
+*GRCh37 (hg19) vs GRCh38 (hg38) - which one should I use?*
+
+And finally, when deciding which reference build should one use, it is strongly recommended to switch to GRCh38 or G38, as there are significant improvements in this version compared to the previous version. Some of the significant uh improvements include the addition of many alternative loci, um, correction of thousands of small sequencing artifacts which can cause false snips and indels to be called, um, inclusion of centromeric regions, and updates to non-nuclear genomic sequence. So, overall, there have been major updates with the latest version, and it's strongly recommended to switch to the GRCh38.
+
+So, here are two IGV plots: Visualizing a gene in both versions of the reference genome in IGV.
+
+In the plot at the top, we show the gene being visualized in GRCh37 and hg19. The plot at the bottom, uh, shows that the gene is visualized using GRCh38 and G38 genomic build. And just to take note of the chromosomal locations, they differ in both the genomic builds. So, these plots are just to show, um, that the chromosomal locations for the same gene differ in both the genomic builds. So, just be mindful of this when we are analyzing our data using either of the genomic builds. It's also possible to lift over the genomic positions from one genomic build to the other using a tool called LiftOver.
+
+That's all I have for today's video. I hope you found today's video helpful and informative. If you did, please make sure you hit the subscribe button, like the video, share it, and leave your comments under the comment section. Until next time, see you!
+
+------------------------------------------------------------------------
+
+# Genome Builds and Transcripts {#sec-section2}
+
+**Title**: Introduction to Genome Builds and Transcripts
+
+**Presenter(s)**: Karen Wain, MS, CGC (ClinGen)
+
+**Karen Wain**:
+
+My name is Karen Wain. I'm a genetic counselor at Geisinger and a member of the ClinGen education workgroup. This presentation will provide a brief introduction to genome assemblies and gene transcripts, and we'll address why these two pieces of information are important for a genetic test result and for a clinical provider who may be searching for information that is relevant to the interpretation of a genetic test result. I'll begin by describing what a genome assembly is. These are also often referred to as "builds." An assembly is created by arranging millions of sequence reads across all chromosomes and represents an understanding of the human genome based on data at a point in time. Each iteration, due to new technologies or available populations, is named as a new assembly. We are still gathering sequence and structural genomic data that continues to inform this understanding, and therefore, have been able to make improvements like filling sequence gaps and understanding the structural nature of the genomic regions with each iteration. There are two commonly used systems for naming assemblies, one from the Genome Reference Consortium which is used as the nomenclature of NCBI build number, such as 36, and more recently GRCh37 and GRCh38. The other comes from the University of California, Santa Cruz, and has used the nomenclature of hg number, such as hg18 and hg19. The most recent build is called hg38, to be more consistent with the GRCh nomenclature. The most common assembly currently used by clinical labs is GRCh37, which is equivalent to hg19.
+
+*Importance of genome assembly*
+
+The genome assembly that a laboratory uses for a test is important to know, particularly for genomic assays such as chromosomal microarray and exome and genome sequencing. The assembly serves as a reference to which the genomic coordinates correspond. If you're given the genomic coordinates for a reported variant, which would be standard practice for copy number variants identified by microarray, you must know what assembly was used in order to accurately use the coordinates in genomic tools.
+
+For example, the gene TP53 has a location on chromosome 17. The location of that gene corresponds to the coordinates shown here. As you can see, the coordinates for this gene are different between build GRCh36 and GRCh37 with no overlap. Therefore, if you were searching for a genomic variant in TP53 using genomic coordinates but did not have the correct assembly specified, you would not correctly locate your variant. This can be a source of confusion when a clinician is looking at an older chromosomal microarray report that used an older assembly. If that clinician entered the reported genomic coordinates into a browser tool using a different assembly, they would not see the true gene content of their patient's genetic variant.
+
+*The Lab report*
+
+The lab report should specify the assembly used, particularly for large-scale genomic tests. This is typically located in the methods section, but can sometimes be listed in other places as well. The assembly is a standard part of ISCN nomenclature for chromosomal microarray reports.
+
+You will definitely need the assembly in order to accurately use browser tools such as the UCSC genome browser and the NCBI variation viewer, and to search the database of genomic variants for copy number variants. For sequence variants, the lab may or may not report the genomic nomenclature of a variant, which includes genomic coordinates and base change. Having this information is also very helpful in accurately searching population databases such as ExAC and gnomAD, since sequence variant cDNA nomenclature and protein change nomenclature are transcript-specific. Therefore, comparing genomic coordinates and confirming the appropriate assembly is the easiest way to be certain that your search results are correct.
+
+Now I will talk more about transcripts and why they are important.
+
+*Transcripts*
+
+A single gene can be transcribed into multiple RNA molecules, or transcripts, that can vary in size and exon content. Therefore, our coding DNA, or cDNA changes, are specific to a transcript.
+
+This picture shows several transcripts for the TP53 gene. Transcription is initiated from the right side of the screen, and you can see several transcripts resulting from two different transcription start sites. The dark blue boxes represent exons that are included in the transcript, and you can see that there is variability in exon content between transcripts. This impacts how exons are numbered. For example, exon 3 in transcript NM_001276698.1 at the top is not the same stretch of DNA as exon 3 in transcript NM_001126118.1. Furthermore, a single genomic DNA change would cause different coding DNA and amino acid changes in different transcripts.
+
+There are several places that the transcript used by a lab could be found in a test report, including a results table, a results summary paragraph, the methods section, or other supplementary information toward the end of the report. This is typically standard for sequence-level variants. Knowing the transcript used by the laboratory and comparing it to transcripts used in literature reports or other databases is important to confirm that you are finding information that pertains specifically to the variant found in your patient.
+
+I hope this has been a useful introduction to genome assemblies and gene transcripts. Please visit www.clinicalgenome.org for additional educational resources, and to learn more about the ClinGen initiatives.
+
+Our funding sources are listed at the bottom. Please feel free to contact ClinGen by email at clingen\@clinicalgenome.org with questions or feedback.
+
+Thank you.

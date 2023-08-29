@@ -8,7 +8,9 @@ title: "Chapter 9.3: 9.3 Genomic Structural Equation Modeling (Video Transcript)
 
 **Title**: Genomic Structural Equation Modeling: A Brief Introduction
 
-**Presenter(s)**: Andrew Grotzinger
+**Presenter(s)**: Andrew Grotzinger, PhD (Institute for Behavioral Genetics, University of Colorado Boulder)
+
+**Andrew Grotzinger**:
 
 *Introduction*
 
@@ -58,7 +60,9 @@ This final slide is just to highlight the different ways in which genomic SEM ha
 
 **Title**: Short Primer on Structural Equation Modeling (SEM) in Lavaan
 
-**Presenter(s)**: Andrew Grotzinger
+**Presenter(s)**: Andrew Grotzinger, PhD (Institute for Behavioral Genetics, University of Colorado Boulder)
+
+**Andrew Grotzinger**:
 
 In this video, we're going to talk about some of the basics of structural equation modeling and more specifically how to do  structural equation modeling and Lavaan which is the art package that genomic SEM uses to estimate the models.
 
@@ -92,7 +96,9 @@ What genomic SEM does is it uses the principles of structural equation modeling 
 
 **Title**: GenomicSEM: Input/Explaining how S and V are estimated and what they are
 
-**Presenter(s)**: Michel Nivard
+**Presenter(s)**: Michel Nivard, PhD (Department of Biological Psychology, VU Amsterdam)
+
+**Michel Nivard**:
 
 What goes into genomic SEM before you can actually fit a structural equation model. So it's basically a class on how the sausage  is made, right? So some of these things are details that are good as background, Good for you to understand, once you use genomic SEM. But basically stuff that's largely handled by internal functions of genomic SEM. So it means you don't have to do anything like this by hand. And to discuss what goes into genomic SEM, it's good to discuss two other things. Namely, what kind of information goes into a structural equation model in general? Right. You can use raw data, but you could also use the covariance matrix of the raw data to fit the structural equation model or a regression model, as we'll see in the example. And it's good to discuss what LD score regression is exactly. It's a very commonly used technique to estimate genetic co-variance and or heritability. And it actually is one of the main ways genomic SEM can estimate from raw GWAS data. So raw, summary statistics, the genetic covariance between traits and the heritabilities, which you can then use to fit a structural equation model too. Okay.
 
@@ -146,9 +152,9 @@ Now that sounds really hard and complex and computationally it is luckily others
 
 **Title**: Working through examples on the Genomic SEM wiki one by one: munge, ldsc, usermodel functions
 
-**Presenter(s)**: Michel Nivard
+**Presenter(s)**: Michel Nivard, PhD (Department of Biological Psychology, VU Amsterdam)
 
-**Michel**:
+**Michel Nivard**:
 
 Hi, and welcome to this tutorial on genomic SEM, and specifically a tutorial on fitting genomic SEM models without an individual SNP effect. And today's video is on how to perform those models. We also have written a Wiki page on GitHub. Right, so, navigate to Github.com/GenomicSEM/GenomicSEM, then click on the header Wiki. And you'll find a number of tutorial pages, or pages with instructions, on how to perform analyses in GenomicSEM, and actually, the third chapter of the Wiki is about models without individual SNP effects. And that's what we're discussing in this video, and actually, we're running the code from this tutorial.
 
@@ -204,7 +210,7 @@ So the last bit of this video went a bit chaotic, but that's what you get if you
 
 **Title**: Multivariate GWAS in Genomic SEM
 
-**Presenter(s)**: Andrew Grotzinger
+**Presenter(s)**: Andrew Grotzinger, PhD (Institute for Behavioral Genetics, University of Colorado Boulder)
 
 **Andrew Grotzinger**:
 
@@ -272,7 +278,7 @@ With that, I'll just end here, and in the next videos, we'll talk about some of 
 
 **Title**: Using Genomic SEM to Understand Psychiatric Comorbidity
 
-**Presenter(s)**: Andrew Grotzinger
+**Presenter(s)**: Andrew Grotzinger, PhD (Institute for Behavioral Genetics, University of Colorado Boulder)
 
 **Jason Fletcher \[Host\]:**
 

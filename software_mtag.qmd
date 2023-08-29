@@ -12,9 +12,9 @@ title: "MTAG"
 
 **Title**: Multi-trait Analysis of GWAS (MTAG)
 
-**Description**: Intermediate
+**Presenter(s)**: Patrick Turley, PhD (Massachusetts General Hospital)
 
-**Presenter(s)**: Patrick Turley
+**Level**: Intermediate
 
 **Length**: 1:32:04
 
@@ -25,4 +25,4 @@ embed_url("https://www.youtube.com/watch?v=qTzj1aCPDhM")
 
 Link to video transcript [here](software_mtag_transcript.qmd).
 
-Link to MTAG GitHub [here](https://github.com/JonJala/mtag).
+Link to [MTAG GitHub](https://github.com/JonJala/mtag).

@@ -4,7 +4,13 @@ title: "Software Tutorials: EWAS (Video Transcript)"
 
 **Title**: How to Perform Epigenome Wide Association Studies
 
-**Presenter(s)**: Agaz Wani, Seyma Katrinli, PhD
+**Presenter(s)**:
+
+-   Agaz Wani, PhD (Genomics Program, College of Public Health, University of South Florida)
+
+-   Şeyma Katrinli, PhD (Department of Gynecology & Obstetrics, Emory University School of Medicine)
+
+**Agaz Wani**:
 
 Hello, I am Agaz Wani. I am a postdoc in Dr. Uddin's lab at the University of South Florida. Today, I'll be talking about quality control steps that we need to do in epigenome-wide association studies. So, I'll be talking about checking for failed assays, mislabeled and contaminated samples. Then, I'll be talking about dye bias correction and normalization, followed by a removal of low-quality probes and samples. Finally, I'll be talking about adjustment for batch effects.
 
@@ -46,7 +52,7 @@ Here, the first adjustment will be done based on chip ID and the data. The outco
 
 I'm converting the data back and inserting any values back because we imputed the data for ComBAT adjustment, so we need to put the missing values back. And we will finally receive the data that is ComBAT adjustment normalized, you know, after sex check, we will see the final data so that we can use it in the downstream analysis. Thank you.
 
-**Seyma**:
+**Şeyma Katrinli**:
 
 Hello, so for the second part of our pipeline journey, I will talk about how to run the analysis, the epigenome-wide analysis and what we need to run epigenome-wide association studies, and how we can get what we need using our pipeline.
 

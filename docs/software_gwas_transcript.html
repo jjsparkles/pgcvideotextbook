@@ -333,12 +333,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./addreading.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Additional Reading</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="https://pgc.unc.edu/for-researchers/download-results/" class="sidebar-item-text sidebar-link">
  <span class="menu-text">PGC Summary Statistics</span></a>
   </div>
@@ -387,7 +381,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="sec-video1" class="level1">
 <h1>Genome-wide Association Studies in PLINK</h1>
 <p><strong>Title</strong>: Genome-wide Association Studies</p>
-<p><strong>Presenter(s)</strong>: Hailiang Huang</p>
+<p><strong>Presenter(s)</strong>: Hailiang Huang, PhD (Department of Medicine, Harvard Medical School)</p>
 <p><strong>Hailiang Huang:</strong></p>
 <p>Hello everyone. My name is Hailiang Huang. I’m a statistical geneticist at the Broad Institute. I’m very happy today to do this GWAS tutorial with you.</p>
 <p>So the first thing—let’s clone the GitHub I have created for you - the GitHub repository that I have created for you with the data and tutorial materials. Please type this in your command line in the terminal: `git clone` and the location of the repository under my first and last name and GWAS-tutorial. It will take a while but it should be very fast. All right, this is done. Let’s get into the location - The folder you just cloned - and have a look at all the files. I would recommend you to open the ‘GWAS on the squad tutorial’ and your text editor, so that you can simply copy and paste everything from the text editor to your terminal. All right, I have opened this in one of my text editors and just noticed a few pieces of information here. The information here—so first, where you can download this GitHub repository. In case you have any questions, feel free to contact me. Additionally, for this tutorial, you have to install PLINK2, which can be retrieved here, and ‘R’, which can be downloaded from the R project website. Also, we use the ‘qqman’ package in R, so please have it installed in your R program.</p>
@@ -416,7 +410,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="sec-video2" class="level1">
 <h1>Genotype QC</h1>
 <p><strong>Title</strong>: How to run quality control on genome-wide genotyping data</p>
-<p><strong>Presenter(s)</strong>: Jonathan Coleman</p>
+<p><strong>Presenter(s)</strong>: Jonathan Coleman, PhD (King’s College London)</p>
 <p><strong>Jonathan Coleman:</strong></p>
 <p>Hello, I’m Joni Coleman, and in this brief presentation, I’m going to discuss some key points concerned with running quality control on genome-wide genotype data, which is a common first step in running a GWAS. I’m going to provide a theoretical overview, addressing the overarching reasons why we need to do QC, highlighting some common steps, and discussing a few pitfalls the data might throw up. I’m not going to talk about conducting imputation or GWAS analyses or secondary analyses. Nor am I going to talk at great length about the process of genotyping and ensuring the quality of genotyping calls. Similarly, I won’t go into any deep code or maths. However, if you are starting to run your own QC and analyses, I recommend the PGC’s RICOPILI automated pipeline as the starting point. There are also some simple scripts on my group’s GitHub that may be useful as well. They follow a step-by-step process with codes and explanations. We’re currently updating this repository, so look out for some video tutorials there as well.</p>
 <p>So here is our starting point. I’ll be using this graph on the top right several times throughout this talk. This is a genotype calling graph with common homozygotes in blue, heterozygotes in green, and rare homozygotes in red. Hopefully, your data will already have been put through an automated genotype calling pipeline. And if you’re really lucky, and an overworked and underappreciated bioinformatician, may have done some manual recalling to ensure the quality of the data is as high as possible. But in point of fact, the data you’ll be using won’t be in this visual form but rather as a numeric matrix like the one below that lists SNPs and individuals. This might be in the form of a PLINK genotype file or its binary equivalent, or it’s in some similar form that can be converted to the PLINK format.</p>
@@ -449,7 +443,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="sec-video3" class="level1">
 <h1>Tractor: GWAS with admixed individuals</h1>
 <p><strong>Title</strong>: Tractor: Enabling GWAS in admixed cohorts</p>
-<p><strong>Presenter(s)</strong>: Elizabeth Atkinson</p>
+<p><strong>Presenter(s)</strong>: Elizabeth Atkinson, PhD (Department of Molecular and Human Genetics, Baylor College of Medicine)</p>
 <p><strong>Elizabeth Atkinson:</strong></p>
 <p>Hi, thanks so much for your interest in using <em>Tractor</em>. I hope this tutorial helps get you started in doing ancestry-aware GWAS on admixed cohorts.</p>
 <p>So, here’s just a brief outline: I’ll start with some motivation, go into the overview of our statistical model, and then talk about implementation of the actual <em>Tractor</em> code.</p>
@@ -479,7 +473,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="sec-video4" class="level1">
 <h1>Genotype Calling and Imputation with MoChA</h1>
 <p><strong>Title</strong>: Genotype calling/imputation on the cloud: MoChA pipleine</p>
-<p><strong>Presenter(s)</strong>: Giulio Genovese</p>
+<p><strong>Presenter(s)</strong>: Giulio Genovese, PhD (Program in Medical and Population Genetics, Broad Institute)</p>
 <p><strong>Giulio Genovese:</strong></p>
 <p>Hello, everybody! Today, I’m going to talk about the MoChA Pipeline and how you can use it to perform phasing and imputation of DNA microarray data in the Cloud.</p>
 <p>So, as an introduction—what is phasing and imputation? Well, for every genome-wide association study where we work with DNA microarray data, we always have to go through three main steps. The first step is to call genotypes from microarray intensity data. Then, we have to retrieve the haplotype structure of the samples by phasing. And then, we have to impute the missing variants that were not present in the microarray by comparing the haplotypes that we phased with haplotypes of another reference panel of samples for which we have more information. Phasing and imputation, in particular, are two steps that require a fair amount of computations and that parallelization of computations—they have high computational requirements. There have been many pipelines out there to perform these two steps, but today, I’m going to talk about the MoChA Pipeline, which consists of two different scripts. One is the MoChA wedl, and one is the impute wdl. The first one performs calling genotypes, and basically, the second one performs imputation.</p>
@@ -506,7 +500,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="sec-video5" class="level1">
 <h1>SAIGE: Family-based GWAS</h1>
 <p><strong>Title</strong>: Genetic association studies in large-scale biobanks and cohorts: Scalable and Accurate Implementation of GEneralized mixed model (SAIGE)</p>
-<p><strong>Presenter(s)</strong>: Wei Zhou</p>
+<p><strong>Presenter(s)</strong>: Wei Zhou, PhD (Broad Institute)</p>
 <p><strong>Wei Zhou:</strong></p>
 <p>Hi, I’m Wei Zhou. In this presentation, I’m going to give a quick tutorial on a program called SAIGE, which is for scalable and accurate implementation of generalized mixed models. It was developed for conducting genetic association studies in large-scale biobanks and cohorts.</p>
 <p>We will firstly go through several challenges of GWAS in large-scale cohorts and biobanks, mostly for binary phenotypes, followed by our solutions. We have implemented SAIGE for single-variant association tests because the single-variant association tests are usually underpowered for rare variants. More recently, we have implemented the region or gene-based association tests called SAIGE-Gene for rare variants in the same SAIGE R package. Lastly in this talk, we’re going to use some examples to demonstrate how to run the SAIGE R package.</p>
@@ -567,7 +561,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="sec-video6" class="level1">
 <h1>CC-GWAS</h1>
 <p><strong>Title</strong>: Tutorial to use CC-GWAS to identify loci with different allele frequency among cases of different disorders.</p>
-<p><strong>Presenter(s)</strong>: Wouter Peyrot</p>
+<p><strong>Presenter(s)</strong>: Wouter Peyrot, MD, PhD (Department of Psychiatry, Amsterdam UMC)</p>
 <p><strong>Wouter Peyrot:</strong></p>
 <p>Hi, thank you very much for your interest in applying CC-GWAS to identify loci with different allele frequencies among cases of different disorders. My name is Wouter Peyrot. In the next 15 minutes or so, I’ll show you how to run the CC-GWAS software. We also conduct this analysis in the cross-disorder working group of the PGC for the next wave of analysis. Alkes Price and I developed the software. If you’re interested in any further reading, please see our paper in Nature Genetics 2021 or visit my GitHub page. If you have any questions or suggestions, please do not hesitate to contact me. I’m most welcome to explain further or to receive any suggestions you may have.</p>
 <p>So, and first, here I’ll show a couple of slides to give a big picture overview of the method, and then I’ll get hands-on with some real data to show you how real analyses are done with our package software. CC-GWAS is intended to compare cases of two different disorders. And when you’d like to extend, for example, to compare 10 disorders, you just need to repeat the CC-GWAS analysis accordingly, to compare two disorders at a time.</p>

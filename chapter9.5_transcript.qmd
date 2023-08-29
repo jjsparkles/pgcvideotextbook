@@ -4,7 +4,9 @@ title: "Chapter 9.5: Family-based analysis (Video Transcript)"
 
 **Title**: Univariate/MonoPhenotype Twin Modeling in OpenMx
 
-**Presenter(s)**: Hermine H. Maes
+**Presenter(s)**: Hermine H. Maes, PhD (Virginia Institute for Psychiatric and Behavioral Genetics, Virginia Commonwealth University)
+
+**Hermine Maes**:
 
 Hi, my name is Hermine Maes, and I'm going to talk to you about univariate or mono phenotype twin modeling in OpenMx. Today, this is the first of several videos that I'll be recording to help you understand how to go about modeling twin data, in terms of estimating sources of variance in a phenotype of interest. Now, this presentation, as well as various of the slides, wouldn't have been possible without help from a variety of my colleagues, including Drs. Nick Martin, Elizabeth Prom-Wormley, Lindon Eaves, Tim Bates, Mike Neale, and many others.
 
