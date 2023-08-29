@@ -8,7 +8,7 @@ title: "Chapter 1.4 Psychiatric genomics: State-of-the-science (Video Transcript
 
 **Title**: PGC: Future Perspectives
 
-**Presenter(s)**: Patrick Sullivan
+**Presenter(s)**: Patrick Sullivan, MD, FRANZCP (Department of Psychiatry, University of North Carolina at Chapel Hill)
 
 **Gerome Breen**:
 
@@ -114,7 +114,15 @@ Nature nurture in play, absolutely. I mean that's part of the whole gene environ
 
 **Title**: Insights into Attention-Deficit/Hyperactivity Disorder from Genetic Studies
 
-**Presenter(s)**: Joanna Martin, Christie Burton, Isabell Brikell, Nina Roth Mota
+**Presenter(s)**:
+
+-   Joanna Martin, PhD (Division of Psychological Medicine and Clinical Neurosciences, Cardiff University School of Medicine)
+
+-   Christie Burton, PhD (Department of Psychiatry, Hospital for Sick Children, University of Toronto)
+
+-   Isabell Brikell, PhD (Department of Medical Epidemiology and Biostatistics, Karolinska Institutet)
+
+-   Nina Roth Mota, PhD (Radboud University Medical Centre)
 
 **Joanna Martin**:
 
@@ -146,7 +154,17 @@ There are many unanswered questions, and I won't go through all of these, so fee
 
 **Title**: Genetic contributions to anxiety disorders: Where we are and where we are heading
 
-**Presenter(s)**: Helga Ask, Rosa Cheesman, Daniel Levey, Kristin Purves, Heike Weber
+**Presenter(s)**:
+
+-   Helga Ask, PhD (Department of Mental Disorders, Norwegian Institute of Public Health)
+
+-   Rosa Cheesman, PhD (University of Oslo)
+
+-   Daniel Levey, PhD (Department of Psychiatry, Yale University School of Medicine)
+
+-   Kristin Purves, PhD (King's College London)
+
+-   Heike Weber, PhD (Department of Psychiatry, Psychosomatic Medicine and Psychotherapy, Goethe-Universität Frankfurt am Main)
 
 **Kirsten Purves**:
 
@@ -190,7 +208,11 @@ The field of anxiety genetics is at a pivotal point of this understanding. We ho
 
 **Title**: Genetic contributions to Autism Spectrum Disorder
 
-**Presenter(s)**: Alexandra Havdahl
+**Presenter(s)**:
+
+-   Alexandra Havdahl, PhD (Department of Psychology, University of Oslo)
+
+-   Anna Starnawska, PhD (Department of Biomedicine, Aarhus University)
 
 **Alexandra Havdahl**:
 
@@ -242,7 +264,13 @@ We would like to thank you for listening and thank the Psychiatric Genomics Cons
 
 **Title**: Genetics of Bipolar Disorder
 
-**Presenter(s)**: Brandon Coombes, Kevin O'Connell
+**Presenter(s)**:
+
+-   Brandon Coombes, PhD (Division of Computational Biology, Department of Quantitative Health Sciences, Mayo Clinic)
+
+-   Kevin O'Connell, PhD (University of Oslo)
+
+**Brandon Coombes**:
 
 Hi everyone, I'm Brandon Coombes and today I'll be talking about the genetics of bipolar disorder, and this is work that I've done with Kevin O'Connell and myself for the early career researcher reviews papers.
 
@@ -254,17 +282,17 @@ People can have rapid cycling and bipolar disorder and some people don't \-- rap
 
 Some people with bipolar disorder have melancholic features, atypical features, there is psychosis in bipolar disorder and that psychosis can either happen in depression or it can happen in mania. There's also catatonia, peripartum onset, and seasonality to the disorder. So, some people might experience depression during winter um so there's a certain seasonality aspect. In general, there's a sort of transition here of what these different mood states could look like as you move along the range here (range referring to severe depression to mania mood states)
 
-**Epidemiology**
+*Epidemiology*
 
 So, speaking of epidemiology here \-- there's a lifetime prevalence of one percent for each type, bipolar type 1 or type 2, and bipolar disorder is ranked 17th in global burden disease. It has a mean age onset of 20 years. And typically, early age of onset - which we define as usually in your teenage years of developing bipolar disorder - that's associated with poor prognosis and increased comorbidity.
 
 Bipolar disorder also has a potential for misdiagnosis in early onset. So once people are first developing bipolar disorder, depressive symptoms can look like MDD (major depressive disorder) at first if they haven't experienced mania. Also, if their first time coming in is during a psychotic episode they could be misdiagnosed as having schizophrenia. There are also cases that are misdiagnosed with ADHD, or reverse that ADHD is misdiagnosed as bipolar disorder. So, there's a lot of misdiagnoses, and as I mentioned before there's a high comorbidity of bipolar disorder \-- at least 90% of people with bipolar disorder have at least one lifetime comorbid disorder and 70% of people bipolar disorder have three or more. Some of these comorbid comorbidities include anxiety disorders, which make up a majority of what the comorbidities are, substance use disorders, ADHD, personality disorders, and eating disorders.
 
-**Genetics**
+*Genetics*
 
 So, moving on to the genetics, we're talking about the genetics of bipolar disorder. Bipolar disorder is highly heritable. So, in fact it's 60% to 90% heritability, and here on the right you can see bipolar disorder is lined up with all the other different psychiatric disorders and it tends to be towards the highest psych heritability among all the psychiatric disorders. Here you see either heritability measured from twins or heritability measured from the SNPs. BD also has a high genetic correlation with other psychiatric disorders. In this paper that was published last year, it was shown that bipolar disorder has the largest genetic overlap with schizophrenia, and it also has a pretty large genetic overlap with depression, but it also has overlap with all of these other different traits such as anorexia, OCD, ADHD, and autism.
 
-**GWAS**
+*GWAS*
 
 The biggest breakthroughs for bipolar disorder have really come through the through GWAS (genome-wide association studies). When GWAS first started for bipolar disorder in 2007 through the Wellcome Trust there were only two thousand cases, three thousand controls, and zero genome-wide significant loci were found in that original GWAS. And that's where we saw that we're going to need a much larger sample size to find anything that's associated with bipolar disorder, even though this is such a highly heritable trait.
 
@@ -274,17 +302,17 @@ But still, only 15% to 18% of the variance is explained in this latest sample. B
 
 So, we actually are missing a lot of the very heritability here - only 15% to 18% of the variance is explained, but bipolar disorder has a high heritability - so that's what we deem as the "missing heritability problem". And in the next few slides I'm going to go over the different hypotheses of missing heritability and one of the common ones is that we're actually leaving out genetic interactions.
 
-**Genetic Interactions**
+*Genetic Interactions*
 
 Genetic interactions being gene-environment or gene-gene interactions, but so far in bipolar disorder these have been understudied as you might imagine, and they're not well replicated. So, unlike the main effects for GWAS, gene-environment interactions or gene-gene interactions usually take around four times the sample size to get the same sort of significance that you would in GWAS. So, we're going to need much, much larger sample sizes and on top of that you're going to have to measure for environments, you're going to have to measure the same environments in all those samples. So, it's very tricky getting gene-environment reactions measured for bipolar disorder, which is why it's been so understudied. For gene-environment interactions, just to list off a few, there's been some with toxoplasmosis, child abuse, stressful life events, cannabis. And there's also been a couple gene-gene interactions, but all of these have had not very much replication.
 
-**Missing heritability**
+*Missing heritability*
 
 There's also the hypothesis for missing heritability that rare variation is what could be driving some of the heritability. And with that \[rare variants\] its \[requires\] whole genome (WGS) and whole exome sequencing (WES) \[but\] because of the prohibitive cost, it's usually been limited to small studies. And I'll talk about in the future directions that that could be changing soon. But right now, it's only been limited to small studies. These studies usually just have large pedigrees so that you have large families that can concentrate the amount of rare variants to increase the power to detect rare variants.
 
 There has been evidence that there's rare burden in bipolar disorder, but it's nothing to the degree to which schizophrenia has \[shown\]. So, it seems like rare variants might have a role in bipolar disorder, but it's not going to be as large of a role as we've found in schizophrenia. And the same is true for CNVs (copy number variants). So CNVs - it does appear that they do have a higher frequency of CNVs in bipolar disorder than controls, but it's less than that than it observed in schizophrenia and also neurodevelopmental disorders and there's really only been one replicated CNV associated with bipolar disorder.
 
-**Pharmacogenomics**
+*Pharmacogenomics*
 
 Moving this along to clinical impact of all these genetic findings, is moving into pharmacogenomics. Bipolar disorder is typically treated with mood stabilizers, antidepressants, or antipsychotics. Pharmaceutical pharmacogenomic studies have been limited in bipolar disorder, but they are growing in size. The largest GWAS of lithium genetics - which lithium is one of the most popular mood stabilizers for bipolar disorder - this study had over 2500 patients treated with lithium but only found one genome wide significant loci associated with treatment response to lithium. So just like bipolar disorder, it seems like we'll need \[a larger\] sample size in order to see what is predicting treatment response, at least to lithium.
 
@@ -292,13 +320,13 @@ Beyond the GWAS, polygenic risk scores (PRS) have also been used in in pharmacog
 
 But as is the case with a lot of different pharmacogenomics, it's been harder to figure out what predicts treatment response. But we've had a lot more success in figuring out what predicts serious adverse reactions, so with that we can genotype a patient and then tell them whether they shouldn't take a medication, rather than what they should take. And in bipolar disorder, it turns out that there's HLA haplotypes that predict serious adverse reactions related to carbamazepine, lamotrigine, and other \[mood stabilizers\].
 
-**PRS Prediction**
+*PRS Prediction*
 
 So PRS prediction is the last thing I'll talk about here - and that's one way that you can have clinical utility, or clinical implications, for the genetic findings. But unfortunately, in the latest paper we show that the best PRS derived from bipolar disorder GWAS explains less than five percent of the variation in case control phenotypes. So right now, as is the case with any other psychiatric disorder, PRSs are really not clinically useful at this point, at least \[not\] for predicting case control status.
 
 But they \[PRSs\] can still be useful in understanding the heterogeneity within bipolar disorder. The heterogeneity is bipolar disorder getting dissected through polygenic risk scores, we've seen that higher schizophrenia risk is associated with type 1 bipolar disorder, which aligns well with clinical observations and schizophrenia risk is associated with psychosis in bipolar disorder, typically during mania. We also see that depression genetic risk is associated with suicide and ADHD genetic risk is associated with rapid cycling. So all of these things are sort of lining up well with the clinical outcomes and these sort of findings can lead us to have better diagnostics and potentially better therapeutics.
 
-**Future Directions**
+*Future Directions*
 
 So, with that, future directions for bipolar disorder and the genetics of bipolar disorder: One of the big pushes from the latest PGC4 is that we'll have increased ancestral diversity. With that if you look at the latest GWAS from the PGC-BD group, it only contains European ancestries in that GWAS, and so we've actually committed to expanding this beyond that to other ancestries in the next wave. And Kevin O'Connell will actually talk about how we included 23andme, which has a large diverse sample, into the current GWAS that is in the MedRxiv paper.
 
@@ -314,7 +342,9 @@ And on top of wanting to get deeper phenotyping, as I mentioned, we are now at t
 
 **Title**: Genetic Risk for Dementia
 
-**Presenter(s)**: Malia Rumbaugh
+**Presenter(s)**: Malia Rumbaugh, MS (Indiana University-Purdue University Indianapolis)
+
+**Host**:
 
 Okay, okay, all right. So, I would like to introduce---I'm actually so happy to introduce---Malia Rumbaugh, who has expertise that we haven't really had in our series before. So we're very excited about that. She's a genetic counselor with 20 years of research experience in the genetics of neurodegenerative disorders. She earned her MS in genetic counseling from the University of California, Irvine, and currently works at Indiana University and researches the genetics of Alzheimer's and Parkinson's disease. She provides genetic counseling to study participants, is the lead genetic counselor for two large multi-site studies of Alzheimer's disease, and co-lead of the asymptomatic subcommittee of The Advisory Group on Risk, Evidence, Education for Dementia, which was convened by the NIA to focus on communication of dementia risk. She is also part of an NIH-convened work group on biomarker disclosure at Alzheimer's disease research centers.
 
@@ -504,7 +534,19 @@ Um, when we are especially talking about some of these more predictive testing, 
 
 **Title**: Genetics of Eating Disorders
 
-**Presenter(s)**: Hunna Watson, Alish Palmos, Avina Hunjan, Jessica Baker, Zeynep Yilmaz, Helena Davies
+**Presenter(s)**:
+
+-   Hunna Watson, PhD (Department of Psychiatry, University of North Carolina at Chapel Hill)
+
+-   Alish Palmos, PhD (Social, Genetic, and Developmental Psychiatry Centre, King's College London)
+
+-   Avina Hunjan, PhD (Social, Genetic, and Developmental Psychiatry Centre, King's College London)
+
+-   Jessica Baker, PhD (Center of Excellence for Eating Disorders, University of North Carolina at Chapel Hill)
+
+-   Zeynep Yilmaz, PhD (Aarhus University)
+
+-   Helena Davies, MSc (Social, Genetic, and Developmental Psychiatry Centre, King's College London)
 
 **Helena Davies**:
 
@@ -594,7 +636,21 @@ And with that, on behalf of my co-presenters, I would like to acknowledge and th
 
 **Title**: Major Depressive Disorder: Introduction and General Epidemiology
 
-**Presenter(s)**: Kim Kendall, Evelien Van Assche, Till Andlauer, Karmel Choi, Jurgen Luykx, Eva Schulte, Yi Lu
+**Presenter(s)**:
+
+-   Kim Kendall, PhD (Cardiff University)
+
+-   Evelien Van Assche, MD, PhD (Department of Psychiatry, University of Münster)
+
+-   Till Andlauer, PhD (Boehringer Ingelheim)
+
+-   Karmel Choi, PhD (Massachusetts General Hospital)
+
+-   Jurgen Luykx, MD, PhD (University Medical Center Utrecht)
+
+-   Eva Schulte, MD, PhD (Institute of Psychiatric Phenomics and Genomics, University of Munich)
+
+-   Yi Lu, PhD (Karolinska Institutet)
 
 **Kim Kendall**:
 
@@ -712,35 +768,37 @@ So in conclusion understanding the genetics of depression helps us to improve ou
 
 **Title**: Genetics of Obsessive-Compulsive Disorder: What we know in 2020
 
-**Presenter(s)**: Christie Burton
+**Presenter(s)**: Christie Burton, PhD (Department of Psychiatry, Hospital for Sick Children, University of Toronto)
 
-Hi, my name is Christy Burton and I'm a research associate working at the Hospital for Sick Children and I'm going to talk to you today about what we know about the genetics of obsessive-compulsive disorder \[OCD\]. This material comes from a review that's forthcoming in a PGC issue of Psychological Medicine. So, I'm presenting today on behalf of my co-authors who are listed below \[Behrang Mahjani, Katharina Bey, Julia Boberg, Christie Burton\].
+**Christie Burton**:
 
-**Introduction to Obsessive Compulsive Disorder \[OCD\]**
+Hi, my name is Christie Burton and I'm a research associate working at the Hospital for Sick Children and I'm going to talk to you today about what we know about the genetics of obsessive-compulsive disorder \[OCD\]. This material comes from a review that's forthcoming in a PGC issue of Psychological Medicine. So, I'm presenting today on behalf of my co-authors who are listed below \[Behrang Mahjani, Katharina Bey, Julia Boberg, Christie Burton\].
+
+*Introduction to Obsessive Compulsive Disorder \[OCD\]*
 
 OCD is a psychiatric disorder that's characterized by obsessions which are intrusive and wonted distressing thoughts that cause a lot of anxiety and that often precipitate compulsions which are repeated or ritualized behaviors. Now, the nature of these obsessions and compulsions can vary a lot from person to person so the presentation of OCD is quite heterogeneous. But we do know that symptoms tend to fall into clear factors and the most common factor structure identified in meta-analysis is hoarding, symmetry, forbidden thoughts, and cleaning. OCD is also considered to be a common disorder. The lifetime prevalence is between one and three percent. it's also thought to be a brain-based disorder with a lot of converging evidence coming from neuroimaging, genetics, and pre-clinical work - with the corticosteroid thalamic circuit being one of the main pathophysiological mechanisms that's been implicated.
 
 In terms of the epidemiology of OCD, when we look at age of onset there does seem to be two peaks in the distribution: one in childhood and the other in early adulthood. And when we look at children with OCD two-thirds of cases tend to be boys, but the prevalence rates between males and females is about equal in adulthood. OCD also co-occurs with several psychiatric disorders; the most common being major depressive disorder, but also various anxiety disorders like generalized anxiety disorder, Tourette's, as well as anorexia and obsessive-compulsive personality disorder. There are several risk factors that have been associated with OCD - obviously we're going to spend a lot of time talking about genetics today, but there's also environmental factors like stressful life events, perinatal complication, childhood trauma, as well as infection in the case of Pandas or Pans
 
-**Key Findings from OCD Genetic Research to Date**
+*Key Findings from OCD Genetic Research to Date*
 
 Now we're going to go over some of the key themes or messages that have come out of OCD genetic research to date. So first, is that OCD is familial and that's clearly illustrated in these pedigrees where we look at the green symbols which represent OCD phenotype - so a lot of clustering within families and across generations. And when we look at the recurrence risk among first-degree relatives, some estimates are as high as 50 percent. But a lot seem to cluster within the 10 to 20 percent range which is considerable when we think of the prevalence of OCD in the general population \[1-3% lifetime prevalence\].
 
 We also know that genetics play an important role in OCD. So, the concordance rate in monozygotic twins is consistently twice that of dizygotic, or fraternal, twins. And the heritability estimates from twin studies range between 27 and 65 percent with slightly greater estimates found for childhood-onset rather than adult-onset OCD. Now recent evidence from family studies provides further evidence for the additive genetic effect in OCD. And the effects coming from mothers tend to be genetic rather than environmental. So, there's a lot of converging evidence coming from twin family studies that implicate genetics as an important factor in the etiology of OCD.
 
-**OCD is Highly Polygenic**
+*OCD is Highly Polygenic*
 
 We also know that OCD is highly polygenic - so there is no one genetic variant for OCD, there's likely to be hundreds of thousands of genetic variants that are contributing to OCD risk. A lot of this evidence comes from genome-wide association studies \[GWAS\]. So, the largest published GWAS of OCD to date comes from a meta-analysis of two large consortia, the IOCDF and OCGAS and all those which are now part of the PGC-OCD sample. And although the study didn't identify any genome significant variants, it did identify variants that are in, or close to, genes that have previously been associated with OCD or involved in brain function. SNP \[single-nucleotide polymorphism\] heritability estimates from the study were around 25 percent, which is consistent with previous studies. There is a very large meta-analysis of OCD GWAS that's forthcoming from the PGC-OCD group with some very promising results that hopefully will be published soon.
 
 There have also been two genome wide association studies \[GWAS\] of obsessive-compulsive traits and symptoms in the general population. Interestingly, both of them have identified genome-wide significant variants. The most recent, which comes from the group that I work with, showing a genome-wide significant variant in *PTPRD* - a gene that's come up a few times in OCD genetic studies. This particular variant was also associated with OCD diagnosis in independent samples, so there's definitely some converging evidence for this variant. Now what's interesting, is when we look at the SNP heritability for OCD symptoms and traits, it does seem to be a bit lower than what we see for OCD diagnosis and the reason for that still unclear. Although, it does seem to occur in other disorders like ADHD. And there's also a very large initiative within the PGC-OCD group to conduct a large genome wide association study of OCD compulsive symptoms and traits and that's currently ongoing.
 
-**Rare Variants in OCD**
+*Rare Variants in OCD*
 
 Now there was some evidence from a few years ago that suggested that a lot of the genetic effects from OCD were coming from common variants, but there is definitely evidence that rare variants also play a role in OCD. So, when we look at rare copy number variants, or CNVs, the very consistent finding is that there's no increased overall burden in rare CNVs for OCD. This is quite different from what we see for other disorders like autism or schizophrenia. But there does seem to be an increased number of rare CNVs in gene sets that are related to brain function or in genes that have previously been associated with neurodevelopmental disorders. Some of the CNVs that have been identified in CNV cases include *PTPRD,* which again is coming up in findings, as well as *BTBD9*, *NRXN1*, and 16p13.11. There are still a lot of the CNV studies today that have been relatively small and there's an initiative within the PGC-OCD group to conduct a larger scale CNV study of OCD.
 
 When we look at CNVs and Indels, this research is so very much in its infancy as there are very few studies using next generation sequencing in terms of OCD, but one such recent study that conducted whole exome sequencing in a few hundred trios really focusing on *de novo* variants showed that *de novo* damaging variants were more common in OCD cases compared to controls. And that these damaging mutations conferred risk for OCD in about 22 percent of cases. Now we don't know how much risk they conferred in those cases, and there's actually just a lot to be learned still in the rare variance space when it comes to OCD, especially as larger samples become available.
 
-**OCD Dimensions have Shared and Unique Genetic Risk**
+*OCD Dimensions have Shared and Unique Genetic Risk*
 
 Now we also know that OCD dimensions have both shared and unique genetic risks. So, a recent study in a large sample of twins looked at the SNP heritability of compulsive symptoms versus obsessive symptoms, and compulsive symptoms had twice the SNP heritability of obsessive symptoms. Although both \[heritability estimates\] were relatively low. And only compulsive symptoms were genetically correlated with diagnosed OCD in the PGC sample whereas obsessive symptoms were not \[correlated\] at all. So there definitely seems to be some differences in the genetic architecture of those two very broad symptom types.
 
@@ -752,7 +810,7 @@ And finally, we also know that risk for OCD seems to be shared quite a bit betwe
 
 So, although there are some distinctions when you look at the genetic correlations, they're extremely high. There's definitely likely to be some sex-specific variants between males and females, but there is a large proportion of the genetic risk that is shared between sexes.
 
-**Summary of Findings**
+*Summary of Findings*
 
 So just to summarize some of the key findings:
 
@@ -774,7 +832,7 @@ So just to summarize some of the key findings:
 
 5.  And genetic risk for OCD is shared between the sexes.
 
-**Implications**
+*Implications*
 
 [Research]{.underline}
 
@@ -786,7 +844,7 @@ Now in terms of clinical implications, it's a little bit "early days" for that. 
 
 And hopefully, emerging pharmacogenetics work, which I wasn't able to talk about today, will help to identify some novel therapeutics or people who are more likely to have therapeutics that are successful for them. There's some evidence from glutamate work that has prompted the investigation of glutamate-based therapeutics for OCD.
 
-**Future Directions**
+*Future Directions*
 
 And I think there's still this is a really exciting time to be in OCD \[research\] with growing samples and more momentum there's going to be the opportunity to ask a lot of important questions that are still unanswered. And these are just a couple \[of questions\] where we can start:
 
@@ -828,7 +886,9 @@ So, I think we've learned a lot in the last 10 years in terms of OCD genetics an
 
 **Title**: Posttraumatic Stress Disorder: From Gene Discovery to Disease Biology
 
-**Presenter(s)**: Frank Wendt
+**Presenter(s)**: Frank Wendt, PhD (Department of Anthropology, University of Toronto)
+
+**Frank Wendt**:
 
 Hi everyone, my name is Frank Wendt. I am a postdoctoral fellow with Renato Polimanti at Yale School of Medicine. Today we'll be talking about post-traumatic stress disorder and some of the historical studies that have led us from gene discovery to understanding some disease biology in relation to PTSD. I don't have any conflict of interest to disclose. So PTSD is ultimately uh sort of the end product of a series of events including pre-trauma risk factors and traumatic events but in order for us to really understand what's going on with PTSD, we have to have some understanding of what's happening prior to uh diagnosis of PTSD including those traumatic events and the pre-trauma risk factors.
 
@@ -878,7 +938,17 @@ And with that, I will provide thank yous um to Karestan and Caroline and Gita fo
 
 **Title**: Genetic Architecture of Schizophrenia
 
-**Presenter(s)**: Kaarina Kowalec, Niran Okewole, Sophie Legge, Marcos Santoro, Sathish Periyasamy
+**Presenter(s)**:
+
+-   Kaarina Kowalec, PhD (University of Manitoba)
+
+-   Niran Okewole, PhD (Neuropsychiatric Hospital Aro)
+
+-   Sophie Legge, PhD (Cardiff University)
+
+-   Marcos Santoro, PhD (Departamento de Bioquímica, Universidade Federal de São Paulo, Brazil)
+
+-   Sathish Periyasamy, PhD (University of Queensland)
 
 **Kaarina Kowalec**:
 
@@ -1036,7 +1106,9 @@ Thank you so much for your attention today, and please feel free to reach out to
 
 **Title**: Shared Genetic Architecture across Psychiatric Disorders
 
-**Presenter(s)**: Andrew Grotzinger
+**Presenter(s)**: Andrew Grotzinger, PhD (Institute for Behavioral Genetics, University of Colorado Boulder)
+
+**Andrew Grotzinger**:
 
 Hi everyone, my name is Andrew Grotzinger and we'll be talking today about the shared genetic architecture across psychiatric disorders. I'm going to break up my talk into five sections starting with the comorbidity problem more generally, and how family studies have been used to understand comorbidity, and then move on to talk about how genomic methods have been used more recently to understand comorbidity: starting with the genome-wide level analysis, followed by the genetic variant level, and ending with mechanistic studies. Then, we'll wrap up by talking about next steps in cross disorder efforts.
 
@@ -1110,7 +1182,11 @@ I would argue that genomics offers a real opportunity to fill in some major gaps
 
 **Title**: The Genetics of Substance Use Disorders: A Review
 
-**Presenter(s)**: Joseph Deak, Emma Johnson
+**Presenter(s)**:
+
+-   Joseph Deak, PhD (Yale University School of Medicine)
+
+-   Emma Johnson, PhD (Department of Psychiatry, Washington University in St. Louis School of Medicine)
 
 **Joseph Deak:**
 
@@ -1164,13 +1240,25 @@ Thanks for checking out our video, and we would like to mention that if you're i
 
 **Title**: Insight into the Genetics of Suicide
 
-**Presenter(s)**: Hilary Coon, Anna Docherty, Douglas Ruderfer, Niamh Mullins, Eli Stahl (Host)
+**Presenter(s)**:
 
-**Eli Stahl**: OK let's go ahead and get started. Welcome to the Psychiatric Genomics Consortium World Wide Lab meeting on September 27, 2019. Thank you for joining ahead of the conferences and during grant season. I know that at least two presenters are in total crunch time for the October 5th deadline for NIH, so I appreciate making time for this and for you guys presenting and for all of the attendees. Today, we have insights into the genetics of suicide from a group of collaborators within the PGC, the International Suicide Genetics Consortium, and the psychEMERGE consortium working with EHR data. We have professor Hillary Coon from University of Utah, assistant professor Anna Docherty from Utah and the Virginia Commonwealth University Institute for Psychiatric and Behavioral Genetics, VIPBG, assistant professor Doug Ruderfer from Vanderbilt University Medical Center, and postdoctoral fellow Niamh Mullins from Mount Sinai School of Medicine. Their talk titles are shown on this second slide.
+-   Hilary Coon, PhD (Department of Psychiatry, University of Utah)
+
+-   Anna Docherty, PhD (Department of Psychiatry, University of Utah)
+
+-   Douglas Ruderfer, PhD (Division of Genetic Medicine, Vanderbilt University)
+
+-   Niamh Mullins, PhD (Department of Genetics and Genomic Sciences, Icahn School of Medicine at Mount Sinai)
+
+**Eli Stahl \[Host\]**:
+
+OK let's go ahead and get started. Welcome to the Psychiatric Genomics Consortium World Wide Lab meeting on September 27, 2019. Thank you for joining ahead of the conferences and during grant season. I know that at least two presenters are in total crunch time for the October 5th deadline for NIH, so I appreciate making time for this and for you guys presenting and for all of the attendees. Today, we have insights into the genetics of suicide from a group of collaborators within the PGC, the International Suicide Genetics Consortium, and the psychEMERGE consortium working with EHR data. We have professor Hillary Coon from University of Utah, assistant professor Anna Docherty from Utah and the Virginia Commonwealth University Institute for Psychiatric and Behavioral Genetics, VIPBG, assistant professor Doug Ruderfer from Vanderbilt University Medical Center, and postdoctoral fellow Niamh Mullins from Mount Sinai School of Medicine. Their talk titles are shown on this second slide.
 
 The talk titles are shown on this slide. We're planning for short talks, 10 to 15 minutes, and we hope that there's time for a short question and answer period at the end of each talk, and then according to plan we'll have 5 to 10 minutes at the end for questions or any broader discussion. My plan is to look on the attendees list for people who raise their hand. If you raise your hand to ask a question, then I can unmute you, and you can ask your question directly with the panelists here. So we'll see how this works. Typically then also you can send questions, you can type your questions into either the Q&A button, after pushing the Q&A button at the bottom, or the chat button, and we'll read your questions aloud and then answer them. September is Suicide Prevention Month, "is that so?", you ask. Well, every month should be Suicide Prevention Month, and so we focus on suicide biology and genetics. This is Hillary Coon.
 
-**Hilary Coon**: Thanks very much. It's a pleasure to be able to present to you, and we're absolutely delighted that suicide is now sort of moving into the mainstream of psychiatric genetics, and this of course hasn't always been the case, it's been sort of on the fringe, but this hasn't been because it isn't important. We never have any trouble with our impact statements of our grants. So suicide is certainly a huge public health crisis, it's the tenth leading cause of death in the US. In 2017 over 47,000 people died by suicide, and this number is over 800,000 people worldwide. And attempts are much more common: so for every suicide, there's 25 to 30 attempts. So a big worldwide problem, a growing problem,
+**Hilary Coon**:
+
+Thanks very much. It's a pleasure to be able to present to you, and we're absolutely delighted that suicide is now sort of moving into the mainstream of psychiatric genetics, and this of course hasn't always been the case, it's been sort of on the fringe, but this hasn't been because it isn't important. We never have any trouble with our impact statements of our grants. So suicide is certainly a huge public health crisis, it's the tenth leading cause of death in the US. In 2017 over 47,000 people died by suicide, and this number is over 800,000 people worldwide. And attempts are much more common: so for every suicide, there's 25 to 30 attempts. So a big worldwide problem, a growing problem,
 
 and I'm going to give you a little bit of overview of suicidal behaviors and also then suicide death, and our talks are sort of spanning the spectrum of those two outcomes. So certainly the problem is that attempts are increasing, and our prediction of attempts is pretty poor at this stage, which means prevention is really challenging, and a possible solution to this is really playing in genetics.
 
@@ -1200,7 +1288,9 @@ I just want to acknowledge a ton of people who are working on this project. It's
 
 **Eli Stahl**: Thank you, Hillary. I think that it's worth it to take a brief time for questions. If anyone has a question, please raise your hand or again type your question into the Q&A box or the chat box quickly, please, before we move on to the next presentation. Five, four, three, two, one. Okay, we'll move on to the next presentation, which is Anna Docherty.
 
-**Anna Docherty**: Okay, thank you for attending today, and I am going to briefly discuss the genome-wide association analysis of the suicide death samples here in Utah, from the incredible resources that Hillary Coon has obtained here. This is going to be a brief talk, so I'm obviously happy to provide details to interested people offline as well.
+**Anna Docherty**:
+
+Okay, thank you for attending today, and I am going to briefly discuss the genome-wide association analysis of the suicide death samples here in Utah, from the incredible resources that Hillary Coon has obtained here. This is going to be a brief talk, so I'm obviously happy to provide details to interested people offline as well.
 
 Our genome-wide association study of the first genotyped suicide deaths was a case-control design with 3,413 suicide deaths from Utah, these are non-Finnish northern European suicide deaths, and 14,810 controls. We had some significant challenges to the genome-wide association analysis using Utah suicide data, because we don't have controls in Utah, and so we had to take multiple steps to filter and minimize false positives in our analyses. Another challenge is that we have only about 20 percent of our sample with significant admixture, and so with this preliminary data set, we didn't have a sufficient sample to complete a trans-ancestry GWAS, although we do expect in the next three years to have the numbers to do that.
 
@@ -1236,7 +1326,9 @@ We do have one question that was typed into the chat box from Paul Nestat. If yo
 
 **Eli Stahl**: Okay, if there are any other questions? Any other questions at this time? So, let's move on and hear from Doug Ruderfer.
 
-**Doug Ruderfer**: Excellent! Well, thank you Eli for organizing this, and it's happy to be part of this session. This deserves a whole session for the worldwide meeting and happy to have great colleagues that are dedicated to the issues. We came into this for the same reasons that here we mentioned, for all the important public health reasons and for that necessity to kind of learn about ongoing biology of this devastating outcome. We came at it from a slightly different direction, and that's partly out of a requirement, and everyone's familiar with this idea of population samples, are, do have limited powerful phenotypes that are of low prevalence, and for our own work at Vanderbilt, we have about three million unique patients that have been seen at least once at the hospital, but many of those patients actually come for particular procedures, or give birth, because a trauma center, or go to the ER, and don't have a lot of actual data. If we had three million new patients and we had DNA on all of them, we could have a pretty well-powered genome-wide association study even for a 1% disorder, but we clearly don't.
+**Doug Ruderfer**:
+
+Excellent! Well, thank you Eli for organizing this, and it's happy to be part of this session. This deserves a whole session for the worldwide meeting and happy to have great colleagues that are dedicated to the issues. We came into this for the same reasons that here we mentioned, for all the important public health reasons and for that necessity to kind of learn about ongoing biology of this devastating outcome. We came at it from a slightly different direction, and that's partly out of a requirement, and everyone's familiar with this idea of population samples, are, do have limited powerful phenotypes that are of low prevalence, and for our own work at Vanderbilt, we have about three million unique patients that have been seen at least once at the hospital, but many of those patients actually come for particular procedures, or give birth, because a trauma center, or go to the ER, and don't have a lot of actual data. If we had three million new patients and we had DNA on all of them, we could have a pretty well-powered genome-wide association study even for a 1% disorder, but we clearly don't.
 
 If we think about the individuals where we have longitudinal data, multiple events, what we call our "frequent visitors", or medical home patients, we substantially reduce the number of individuals to about 1 million patients, and of course, collecting DNA on all of those would still be a challenge, though we have a pretty robust collection process where we have about 1/4 million individuals that have DNA in our biobank, named BioVu.
 
@@ -1276,7 +1368,9 @@ So, with that, I'll just thank the wonderful colleagues that in all of the suici
 
 **Eli Stahl**: Thank you. Are there any other questions at this time? Okay, we can move now to our final presentation, Niamh Mullins.
 
-**Niamh Mullins**: Thank you. Okay, can you see my slides? And can you hear me? So, this is a within-case design, and it's aimed at detecting associations specific for suicide attempt, and not the psychiatric disorder, and variants occurring at a higher frequency in suicide attempters compared with other psychiatric cases. I ran a GWAS of suicide attempt in each disorder followed by meta-analysis between them. In total, there were over six and a half thousand cases of suicide attempt.
+**Niamh Mullins**:
+
+Thank you. Okay, can you see my slides? And can you hear me? So, this is a within-case design, and it's aimed at detecting associations specific for suicide attempt, and not the psychiatric disorder, and variants occurring at a higher frequency in suicide attempters compared with other psychiatric cases. I ran a GWAS of suicide attempt in each disorder followed by meta-analysis between them. In total, there were over six and a half thousand cases of suicide attempt.
 
 There were a couple of genome-wide significant associations. One in the GWAS of suicide attempt in MDD. It had a MAF of 2%; Another in suicide attempt and bipolar disorder, which had a frequency of 20%. In the GWAS of suicide attempt in schizophrenia, there were no genome-wide significant associations.
 
@@ -1340,7 +1434,9 @@ And our analyses, though were aimed to try and tease apart the genetics of suici
 
 **Title**: Genetics of Tourette Syndrome
 
-**Presenter(s)**: Matt Halvorsen
+**Presenter(s)**: Matt Halvorsen, PhD (University of North Carolina at Chapel Hill School of Medicine)
+
+**Matt Halvorsen**:
 
 Hi, everyone. My name is Matt Halvorsen, and today I'll be presenting on the genetics of Tourette syndrome.
 

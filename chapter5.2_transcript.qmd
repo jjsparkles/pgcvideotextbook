@@ -6,7 +6,9 @@ title: "Chapter 5.2: Imputation (Video Transcript)"
 
 **Title**: Haplotypes and Imputation
 
-**Presenter(s)**: Dr. Gábor Mészáros, University of Natural Resources and Life Sciences, Vienna.
+**Presenter(s)**: Dr. Gábor Mészáros, PhD (Institute of Livestock Sciences (NUWI), University of Natural Resources and Life Sciences)
+
+**Gábor Mészáros**:
 
 Hi everyone, welcome back to the Introduction to Genomics lecture series. This time, we will be talking about haplotypes and imputation before we move on to the new material. So, here is the quick summary from the previous lectures.
 
@@ -97,7 +99,7 @@ So we end here today. Let me know if you have any questions or comments down in 
 ### Imputation Steps {#sec-video2}
 
 **Title**: Imputation\
-**Presenter(s)**: Dr. Sarah Medland, Queensland Institute of Medical Research.
+**Presenter(s)**: Sarah Medland, PhD (Queensland Institute of Medical Research)
 
 **Sarah Medland**:
 
@@ -159,7 +161,7 @@ Lastly, quite often when we're running imputation, we're actually running it for
 
 **Title**: An Introduction to Genotype Imputation
 
-**Presenter(s):** Dr. Brian Browning, University of Washington.
+**Presenter(s):** Brian Browning, PhD (Department of Medicine, University of Washington)
 
 **Brian Browning**:
 

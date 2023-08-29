@@ -2,7 +2,9 @@
 title: "Chapter 2.1 Organization of the genome (Video Transcript)"
 ---
 
-\[Music\]
+**Title**: An Introduction to the Human Genome
+
+**Presenter(s)**: HMX Genetics, Harvard University
 
 Humans around the world have much in common, but also enormous diversity. Some of the differences between each of us come from our environment and life experiences, but our DNA plays an important role in determining our appearance, our traits, and our health. There are thousands of genes in the human genome sequence. Changes in individual genes can determine if we have freckles, can digest lactose, have wet or dry earwax, are red-green color blind, or are likely to have blue eyes or think broccoli tastes better. Individual genes can also determine if we will develop sickle cell anemia, cystic fibrosis, or Huntington's disease. Multiple genes act together with our environment to determine our hair and skin color, our height, our weight, our blood pressure, and our risk of developing type 2 diabetes, depression, cancer, some autoimmune disorders, and many other conditions.
 

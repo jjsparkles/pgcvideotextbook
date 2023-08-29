@@ -37,7 +37,7 @@ Link to video transcript [here](chapter6.1_transcript.qmd#sec-video1).
 
 **Title**: Polygenic Risk Scores
 
-**Presenter(s)**: Till Andlauer
+**Presenter(s)**: Till Andlauer, PhD (Boehringer Ingelheim)
 
 **Level**: Beginner friendly
 
@@ -58,7 +58,7 @@ Link to video transcript [here](chapter6.1_transcript.qmd#sec-video2).
 
 **Title**: Polygenic risk scores
 
-**Presenter(s)**: Adrian Campos, Adrian.Campos\@qimrberghofer.edu.au
+**Presenter(s)**: Adrian Campos, PhD (Regeneron)
 
 **Level**: Intermediate
 
@@ -79,7 +79,7 @@ Link to video transcript [here](chapter6.1_transcript.qmd#sec-video3).
 
 **Title**: Polygenic Scoring Methods: Comparison and Implementation
 
-**Presenter(s)**: Oliver Pain
+**Presenter(s)**: Oliver Pain, PhD (King's College London)
 
 **Level**: Intermediate
 
@@ -96,7 +96,7 @@ Link to video transcript [here](chapter6.1_transcript.qmd#sec-video4).
 
 **Title**: Polygenic risk scores: PGS comparison
 
-**Presenter(s)**: Guiyan Ni
+**Presenter(s)**: Guiyan Ni, PhD (Institute for Molecular Bioscience, University of Queensland)
 
 **Level**: Intermediate
 

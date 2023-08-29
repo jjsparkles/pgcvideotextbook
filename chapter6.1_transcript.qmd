@@ -1,16 +1,16 @@
 ---
-title: "Chapter 6.1: Polygenic Risk Scores (Video Transcript)"
+title: "Chapter 6: Polygenic Risk Scores (Video Transcript)"
 ---
 
 ------------------------------------------------------------------------
 
-# 6.1 Introduction 
+# 6.1 Introduction
 
 ## Polygenic Risk Scores {#sec-video1}
 
 **Title**: Polygenic Risk Scores
 
-**Presenter(s)**: CPM Oxford
+**Presenter(s)**: Center for Personalized Medicine, Oxford University
 
 Our genes provide valuable insight into our family history, our ancestry, and also our health. As we learn more about our DNA, we identify new opportunities for healthcare. One such opportunity comes from using polygenic risk scores. In this video, you will learn what a polygenic risk score is, see how they can be used in healthcare, and find out how you can participate in research studies that use them.
 
@@ -36,7 +36,7 @@ To learn more about polygenic risk scores and how you can take part in research 
 
 **Title**: What is a polygenic risk score?
 
-**Presenter(s)**: Till Andlauer
+**Presenter(s)**: Till Andlauer, PhD (Boehringer Ingelheim)
 
 **Till Andlauer**:
 
@@ -72,11 +72,13 @@ In research, PRS have many highly useful applications. From the assessment of th
 
 ------------------------------------------------------------------------
 
-# 6.2 Polygenic Risk Scores: In detail {#sec-video3}
+# 6.2 Polygenic Risk Scores: In detail
+
+## Polygenic Risk Scores {#sec-video3}
 
 **Title**: Polygenic Risk Scores
 
-**Presenter(s)**: Adrian Campos
+**Presenter(s)**: Adrian Campos, PhD (Regeneron)
 
 **Adrian Campos**:
 
@@ -128,13 +130,11 @@ If you're interested, here are some further reading on polygenic risk scores. So
 
 ------------------------------------------------------------------------
 
-# Polygenic Scoring Methods 
-
 ## Polygenic Scoring Methods: Comparison and Implementation {#sec-video4}
 
 **Title**: Polygenic Scoring Methods: Comparison and Implementation
 
-**Presenter(s)**: Oliver Pain
+**Presenter(s)**: Oliver Pain, PhD (King's College London)
 
 **Oliver Pain**:
 
@@ -206,7 +206,7 @@ Lastly, I'd like to thank my amazing colleagues for their help with this work, i
 
 **Title**: Polygenic risk scores: PGS comparison
 
-**Presenter(s)**: Guiyan Ni
+**Presenter(s)**: Guiyan Ni, PhD (Institute for Molecular Bioscience, University of Queensland)
 
 **Guiyan Ni**:
 

@@ -35,7 +35,7 @@ Link to video transcript [here](chapter1.1_transcript.qmd).
 
 **Title**: What is a genome-wide association study?
 
-**Presenter(s)**: Till Andlauer
+**Presenter(s)**: Till Andlauer, PhD (Boehringer Ingelheim)
 
 **Level**: Beginner
 
@@ -58,7 +58,7 @@ Link to video transcript [here](chapter1.2_transcript.qmd).
 
 **Title**: History of Psychiatric Genetics (Part 1)
 
-**Presenter(s)**: Ken Kendler
+**Presenter(s)**: Ken Kendler, MD (Virginia Institute for Psychiatric and Behavioral Genetics, Virginia Commonwealth University)
 
 **Length**: 21:44
 
@@ -73,7 +73,7 @@ Link to video transcript [here](chapter1.3_transcript.qmd#sec-part1).
 
 **Title**: History of Psychiatric Genetics (Part 2)
 
-**Presenter(s)**: Ken Kendler
+**Presenter(s)**: Ken Kendler, MD (Virginia Institute for Psychiatric and Behavioral Genetics, Virginia Commonwealth University)
 
 **Length**: 43:41
 
@@ -94,7 +94,7 @@ Link to video transcript [here](chapter1.3_transcript.qmd#sec-part2).
 
 **Title**: PGC: Future Perspectives
 
-**Presenter(s)**: Patrick Sullivan
+**Presenter(s)**: Patrick Sullivan, MD, FRANZCP (Department of Psychiatry, University of North Carolina at Chapel Hill)
 
 **Length**: 33:33
 
@@ -111,7 +111,15 @@ Link to video transcript [here](chapter1.4_transcript.qmd#sec-psychgen).
 
 **Title**: Insights into Attention-Deficit/Hyperactivity Disorder from Genetic Studies
 
-**Presenter(s)**: Joanna Martin, Christie Burton, Isabell Brikell, Nina Roth Mota
+**Presenter(s)**:
+
+-   Joanna Martin, PhD (Division of Psychological Medicine and Clinical Neurosciences, Cardiff University School of Medicine)
+
+-   Christie Burton, PhD (Department of Psychiatry, Hospital for Sick Children, University of Toronto)
+
+-   Isabell Brikell, PhD (Department of Medical Epidemiology and Biostatistics, Karolinska Institutet)
+
+-   Nina Roth Mota, PhD (Radboud University Medical Centre)
 
 **Length**: 14:24
 
@@ -134,7 +142,17 @@ See [Dementia](chapter1.qmd#sec-dementia)
 
 **Title**: Genetic contributions to anxiety disorders: Where we are and where we are heading
 
-**Presenter(s)**: Helga Ask, Rosa Cheesman, Daniel Levey, Kristin Purves, Heike Weber
+**Presenter(s)**:
+
+-   Helga Ask, PhD (Department of Mental Disorders, Norwegian Institute of Public Health)
+
+-   Rosa Cheesman, PhD (University of Oslo)
+
+-   Daniel Levey, PhD (Department of Psychiatry, Yale University School of Medicine)
+
+-   Kristin Purves, PhD (King's College London)
+
+-   Heike Weber, PhD (Department of Psychiatry, Psychosomatic Medicine and Psychotherapy, Goethe-Universität Frankfurt am Main)
 
 **Length**: 11:32
 
@@ -151,7 +169,11 @@ Link to video transcript [here](chapter1.4_transcript.qmd#sec-anxiety).
 
 **Title**: Genetic contributions to Autism Spectrum Disorder
 
-**Presenter(s)**: Alexandra Havdahl
+**Presenter(s)**:
+
+-   Alexandra Havdahl, PhD (Department of Psychology, University of Oslo)
+
+-   Anna Starnawska, PhD (Department of Biomedicine, Aarhus University)
 
 **Length**: 16:42
 
@@ -168,7 +190,11 @@ Link to video transcript [here](chapter1.4_transcript.qmd#sec-asd).
 
 **Title**: Genetics of Bipolar Disorder
 
-**Presenter(s)**: Brandon Coombes, Kevin O'Connell
+**Presenter(s)**:
+
+-   Brandon Coombes, PhD (Division of Computational Biology, Department of Quantitative Health Sciences, Mayo Clinic)
+
+-   Kevin O'Connell, PhD (University of Oslo)
 
 **Length**: 16:35
 
@@ -185,7 +211,7 @@ Link to video transcript [here](chapter1.4_transcript.qmd#sec-bipolar).
 
 **Title**: Genetic Risk for Dementia
 
-**Presenter(s)**: Malia Rumbaugh
+**Presenter(s)**: Malia Rumbaugh, MS (Indiana University-Purdue University Indianapolis)
 
 **Length**: 58:02 (Frontotemporal dementia starts at 17:55)
 
@@ -202,7 +228,19 @@ Link to video transcript [here](chapter1.4_transcript.qmd#sec-dementia).
 
 **Title**: Genetics of Eating Disorders
 
-**Presenter(s)**: Hunna Watson, Alish Palmos, Avina Hunjan, Jessica Baker, Zeynep Yilmaz, Helena Davies
+**Presenter(s)**:
+
+-   Hunna Watson, PhD (Department of Psychiatry, University of North Carolina at Chapel Hill)
+
+-   Alish Palmos, PhD (Social, Genetic, and Developmental Psychiatry Centre, King's College London)
+
+-   Avina Hunjan, PhD (Social, Genetic, and Developmental Psychiatry Centre, King's College London)
+
+-   Jessica Baker, PhD (Center of Excellence for Eating Disorders, University of North Carolina at Chapel Hill)
+
+-   Zeynep Yilmaz, PhD (Aarhus University)
+
+-   Helena Davies, MSc (Social, Genetic, and Developmental Psychiatry Centre, King's College London)
 
 **Length**: 21:30
 
@@ -219,7 +257,21 @@ Link to video transcript [here](chapter1.4_transcript.qmd#sec-eatingdisorders).
 
 **Title**: Major Depressive Disorder: Introduction and General Epidemiology
 
-**Presenter(s)**: Kim Kendall, Evelien Van Assche, Till Andlauer, Karmel Choi, Jurgen Luykx, Eva Schulte, Yi Lu
+**Presenter(s)**:
+
+-   Kim Kendall, PhD (Cardiff University)
+
+-   Evelien Van Assche, MD, PhD (Department of Psychiatry, University of Münster)
+
+-   Till Andlauer, PhD (Boehringer Ingelheim)
+
+-   Karmel Choi, PhD (Massachusetts General Hospital)
+
+-   Jurgen Luykx, MD, PhD (University Medical Center Utrecht)
+
+-   Eva Schulte, MD, PhD (Institute of Psychiatric Phenomics and Genomics, University of Munich)
+
+-   Yi Lu, PhD (Karolinska Institutet)
 
 **Length**: 32:13
 
@@ -236,7 +288,7 @@ Link to video transcript [here](chapter1.4_transcript.qmd#sec-mdd).
 
 **Title**: Genetics of Obsessive-Compulsive Disorder: What we know in 2020
 
-**Presenter(s)**: Christie Burton
+**Presenter(s)**: Christie Burton, PhD (Department of Psychiatry, Hospital for Sick Children, University of Toronto)
 
 **Length**: 15:28
 
@@ -253,7 +305,7 @@ Link to video transcript [here](chapter1.4_transcript.qmd#sec-ocd).
 
 **Title**: Posttraumatic Stress Disorder: From Gene Discovery to Disease Biology
 
-**Presenter(s)**: Frank Wendt
+**Presenter(s)**: Frank Wendt, PhD (Department of Anthropology, University of Toronto)
 
 **Length**: 15:33
 
@@ -270,7 +322,17 @@ Link to video transcript [here](chapter1.4_transcript.qmd#sec-ptsd).
 
 **Title**: Genetic Architecture of Schizophrenia
 
-**Presenter(s)**: Kaarina Kowalec, Niran Okewole, Sophie Legge, Marcos Santoro, Sathish Periyasamy
+**Presenter(s)**:
+
+-   Kaarina Kowalec, PhD (University of Manitoba)
+
+-   Niran Okewole, PhD (Neuropsychiatric Hospital Aro)
+
+-   Sophie Legge, PhD (Cardiff University)
+
+-   Marcos Santoro, PhD (Departamento de Bioquímica, Universidade Federal de São Paulo, Brazil)
+
+-   Sathish Periyasamy, PhD (University of Queensland)
 
 **Length**: 29:52
 
@@ -287,7 +349,7 @@ Link to video transcript [here](chapter1.4_transcript.qmd#sec-schizophrenia).
 
 **Title**: Shared Genetic Architecture across Psychiatric Disorders
 
-**Presenter(s)**: Andrew Grotzinger
+**Presenter(s)**: Andrew Grotzinger, PhD (Institute for Behavioral Genetics, University of Colorado Boulder)
 
 **Length**: 14:04
 
@@ -304,7 +366,11 @@ Link to video transcript [here](chapter1.4_transcript.qmd#sec-sharedgenetic).
 
 **Title**: The Genetics of Substance Use Disorders: A Review
 
-**Presenter(s)**: Joseph Deak, Emma Johnson
+**Presenter(s)**:
+
+-   Joseph Deak, PhD (Yale University School of Medicine)
+
+-   Emma Johnson, PhD (Department of Psychiatry, Washington University in St. Louis School of Medicine)
 
 **Length**: 17:38
 
@@ -323,13 +389,13 @@ Link to video transcript [here](chapter1.4_transcript.qmd#sec-sud).
 
 **Presenter(s)**:
 
--   Hilary Coon, Professor, University of Utah
+-   Hilary Coon, PhD (Department of Psychiatry, University of Utah)
 
--   Anna Docherty, Assistant Professor, University of Utah
+-   Anna Docherty, PhD (Department of Psychiatry, University of Utah)
 
--   Douglas Ruderfer, Assistant Professor, Vanderbilt University
+-   Douglas Ruderfer, PhD (Division of Genetic Medicine, Vanderbilt University)
 
--   Niamh Mullins, Assistant Professor, Mount Sinai School of Medicine
+-   Niamh Mullins, PhD (Department of Genetics and Genomic Sciences, Icahn School of Medicine at Mount Sinai)
 
 **Length**: 58:54
 
@@ -346,7 +412,7 @@ Link to video transcript [here](chapter1.4_transcript.qmd#sec-suicide).
 
 **Title**: Genetics of Tourette Syndrome
 
-**Presenter(s)**: Matt Halvorsen
+**Presenter(s)**: Matt Halvorsen, PhD (University of North Carolina at Chapel Hill School of Medicine)
 
 **Length**: 15:23
 

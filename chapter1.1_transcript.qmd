@@ -2,6 +2,10 @@
 title: "Chapter 1.1: What are psychiatric disorders? (Video Transcript)"
 ---
 
+**Title**: Psychiatric Disorders
+
+**Presenter(s)**: Broad Institute
+
 Psychiatric disorders can be thought of as the severe chronic disabling disorders of the young. When you add it up they cause a disproportionate amount of suffering for individuals, for families. Unfortunately, we haven't made as much progress as we would have imagined in the last 60 years. We need a revolution in both efficacy, but also in the breadth and number of symptoms that we're able to treat medically. It's easy to study cancer. It's easy to study inflammatory bowel disease because you just go in and you take some of it out and you look at it under the microscope. You just can't do that with the brain. The most important clue that we have though about human traits in particular and about human psychiatric disorders, comes from genetics.
 
 For example, we know the adolescent brain is a period of vulnerability in a lot of neuropsychiatric disorders including schizophrenia, but we don't know why. So there were all kinds of theories of schizophrenia which may or may not be true. The largest single risk factor genetically, at least in European populations, turns out to be a gene that encodes complement factor four or C4. In the brain, the role of complement proteins is to mark individual synapses that are weak or inefficient. One possible thought about what causes schizophrenia: Something having to do with these complement proteins inappropriately signals to these brain immune cells to remove synapses that actually you needed for your cognition, for thinking, for your processing of information from the world. The actual risk gene itself is very rarely a good target, but it gives you insight into the pathway or the mechanism by which that disease is manifest. So if you march up the pathway, or down the pathway, or sideways into other pathways that kind of impinge on this particular pathway, you can usually identify more tractable targets for drugging.

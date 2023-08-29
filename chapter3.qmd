@@ -14,7 +14,7 @@ title: "Chapter 3: Technologies"
 
 **Title**: SNP Chips (Introduction to genomics theory)
 
-**Presenter(s)**: Gábor Mészáros, Genomics Boot Camp
+**Presenter(s)**: Gábor Mészáros, PhD (Institute of Livestock Sciences (NUWI), University of Natural Resources and Life Sciences)
 
 **Length**: 28:05
 
@@ -37,7 +37,7 @@ Powerpoint slides for this video are available [here](https://github.com/Genomic
 
 **Title**: How to sequence the human genome
 
-**Presenter(s)**: Mark J. Kiel
+**Presenter(s)**: Mark J. Kiel, PhD (Universidade Federal de São Paulo, Brazil)
 
 **Length**: 5:04
 

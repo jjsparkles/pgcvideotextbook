@@ -26,7 +26,11 @@ title: "Chapter 5: GWAS analysis"
 
 **Title**: Quality control
 
-**Presenter(s)**: Katrina Grasby (katrina.grasby\@qimrberghofer.edu.au) and Lucía Colodro Conde (Lucia.ColodroConde\@qimrberghofer.edu.au), from the 2021 International Statistical Genetics Workshop hosted by the Institute for Behavioral Genetics at the University of Colorado, Boulder.
+**Presenter(s)**:
+
+-   Katrina Grasby, PhD (QIMR Berghofer Medical Research Institute)
+
+-   Lucía Colodro Conde, PhD (QIMR Berghofer Medical Research Institute)
 
 **Level**: Beginner friendly
 
@@ -45,7 +49,7 @@ Link to video transcript [here](chapter5.1_transcript.qmd#sec-video1).
 
 **Title**: How to run Quality Control on Genome-Wide Genotyping Data
 
-**Presenter(s)**: Jonathan Coleman (jonathan.coleman\@kcl.ac.uk)
+**Presenter(s)**: Jonathan Coleman, PhD (King's College London)
 
 **Level**: Beginner friendly
 
@@ -64,7 +68,7 @@ Link to video transcript [here](chapter5.1_transcript.qmd#sec-video2).
 
 **Title**: Considerations for genotyping, quality control, and imputation in GWAS
 
-**Author**: Ayşe Demirkan (a.demirkan\@surrey.ac.uk)
+**Author**: Ayşe Demirkan, PhD (School of Biosciences, Surrey Institute for People-Centred Artificial Intelligence, University of Surrey)
 
 **Level**: Beginner friendly
 
@@ -93,7 +97,7 @@ Link to video transcript [here](chapter5.1_transcript.qmd#sec-video3).
 
 **Title**: Haplotypes and Imputation
 
-**Presenter(s)**: Dr. Gábor Mészáros, University of Natural Resources and Life Sciences, Vienna.
+**Presenter(s)**: Dr. Gábor Mészáros, PhD (Institute of Livestock Sciences (NUWI), University of Natural Resources and Life Sciences)
 
 **Level**: Beginner friendly
 
@@ -112,7 +116,7 @@ Link to video transcript [here](chapter5.2_transcript.qmd#sec-video1).
 
 **Title**: Imputation\
 \
-**Presenter(s)**: Dr. Sarah Medland, Queensland Institute of Medical Research.
+**Presenter(s)**: Sarah Medland, PhD (Queensland Institute of Medical Research)
 
 **Level**: Beginner friendly
 
@@ -131,7 +135,7 @@ Link to video transcript [here](chapter5.2_transcript.qmd#sec-video2).
 
 **Title**: An Introduction to Genotype Imputation
 
-**Presenter(s):** Dr. Brian Browning, University of Washington.
+**Presenter(s):** Brian Browning, PhD (Department of Medicine, University of Washington)
 
 **Level:** Intermediate/Advanced level.
 
@@ -154,7 +158,7 @@ Link to video transcript [here](chapter5.2_transcript.qmd#sec-video3).
 
 **Title**: Biometrical Model and Basic Statistics
 
-**Presenter(s)**: Benjamin Neale (bneale\@partners.org)
+**Presenter(s)**: Benjamin Neale, PhD (Harvard Medical School; Analytic and Translational Genetics Unit, Massachusetts General Hospital)
 
 **Level**: Beginner friendly
 
@@ -173,7 +177,7 @@ Link to video transcript [here](chapter5.3_transcript.qmd#sec-video1).
 
 **Title**: Hypothesis Testing, Effect Sizes, and Statistical Power
 
-**Presenter(s)**: Brad Verhulst: bverhulst\@vcu.edu
+**Presenter(s)**: Brad Verhulst, PhD (Department of Psychiatry and Behavioral Sciences, Texas A&M University)
 
 **Level**: Intermediate
 
@@ -194,9 +198,9 @@ Link to video transcript [here](chapter5.3_transcript.qmd#sec-video2).
 
 **Title**: Genome-wide association study design and interpretation
 
-**Presenter(s)**: Gina Peloso, Broad Institute
+**Presenter(s)**: Gina Peloso, PhD (Department of Biostatistics, Boston University)
 
-**Level**:
+**Level**: Beginner friendly
 
 **Length**: 55:39
 

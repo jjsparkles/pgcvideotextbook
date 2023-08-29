@@ -16,7 +16,7 @@ title: "Chapter 4: Study designs"
 
 **Title**: Epidemiological Studies: A Beginners guide
 
-**Presenter(s)**: Ranil Appuhamy, James Clark, Let's Learn Public Health
+**Presenter(s)**: Ranil Appuhamy, MD (World Health Organization)
 
 **Length**: 9:42
 
@@ -73,7 +73,7 @@ Link to video transcript [here](chapter4.3_transcript.qmd#sec-video1).
 
 **Title**: Choosing the Right Study Design in Genetic Epidemiology
 
-**Presenter(s)**: Duncan Thomas, University of Southern California
+**Presenter(s)**: Duncan Thomas, PhD (Department of Population and Public Health Sciences, University of Southern California)
 
 **Length**: 34:31
 

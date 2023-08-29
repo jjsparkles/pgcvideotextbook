@@ -58,7 +58,7 @@ Link to video transcript [here](chapter2.2_transcript.qmd).
 
 **Title**: Origins of Genetic Variation
 
-**Presenter(s)**: Jessica Pamment, Professor, DePaul University
+**Presenter(s)**: Jessica Pamment, PhD (Department of Biological Sciences, DePaul University)
 
 **Length**: 4:47
 
@@ -75,7 +75,7 @@ Link to video transcript [here](chapter2.3_transcript.qmd#sec-origins).
 
 **Title**: MPG Primer: Natural selection & human genetic variation
 
-**Presenter(s)**: Stephen Schaffner, Computational Biologist, Broad Institute
+**Presenter(s)**: Stephen Schaffner, PhD (Broad Institute)
 
 **Length**: 54:09
 
@@ -96,7 +96,7 @@ Link to video transcript [here](chapter2.3_transcript.qmd#sec-selection).
 
 **Title**: What is linkage disequilibrium?
 
-**Presenter(s)**: Gábor Mészáros, PhD
+**Presenter(s)**: Gábor Mészáros, PhD (Institute of Livestock Sciences (NUWI), University of Natural Resources and Life Sciences)
 
 **Length**: 12:52
 
@@ -113,7 +113,7 @@ Link to video transcript [here](chapter2.4_transcript.qmd#sec-video1).
 
 **Title**: How to measure linkage disequilibrium?
 
-**Presenter(s)**: Gábor Mészáros, PhD
+**Presenter(s)**: Gábor Mészáros, PhD (Institute of Livestock Sciences (NUWI), University of Natural Resources and Life Sciences)
 
 **Length**: 11:31
 
@@ -130,7 +130,7 @@ Link to video transcript [here](chapter2.4_transcript.qmd#sec-video2).
 
 **Title**: How to measure linkage disequilibrium? (ADVANCED)
 
-**Presenter(s)**: Gábor Mészáros, PhD
+**Presenter(s)**: Gábor Mészáros, PhD (Institute of Livestock Sciences (NUWI), University of Natural Resources and Life Sciences)
 
 **Length**: 9:28
 
@@ -147,7 +147,7 @@ Link to video transcript [here](chapter2.4_transcript.qmd#sec-video3).
 
 **Title**: Compute linkage disequilibrium (Part 1)
 
-**Presenter(s)**: Gábor Mészáros, PhD
+**Presenter(s)**: Gábor Mészáros, PhD (Institute of Livestock Sciences (NUWI), University of Natural Resources and Life Sciences)
 
 **Length**: 10:18
 

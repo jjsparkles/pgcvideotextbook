@@ -6,9 +6,9 @@ title: "Chapter 2.4: Linkage Disequilibrium (Video Transcript)"
 
 **Title**: What is linkage disequilibrium?
 
-**Description**:
+**Presenter(s)**: Gábor Mészáros, PhD (Institute of Livestock Sciences (NUWI), University of Natural Resources and Life Sciences)
 
-**Presenter(s)**: Gábor Mészáros, PhD
+**Gábor Mészáros**:
 
 Hello, everyone. Welcome back to the Genomics Boot Camp to a series about linkage disequilibrium. In this video, we just start to talk about this genomic phenomenon, so therefore, the question is what it is exactly. So what is linkage disequilibrium? And you will know it from this video.
 
@@ -54,7 +54,9 @@ And the very last summary slide for the entire presentation we talked about SNPs
 
 **Title**: How to measure linkage disequilibrium?
 
-**Presenter(s)**: Gábor Mészáros, PhD
+**Presenter(s)**: Gábor Mészáros, PhD (Institute of Livestock Sciences (NUWI), University of Natural Resources and Life Sciences)
+
+**Gábor Mészáros**:
 
 Hello everyone, welcome back to the Genomics Boot Camp. Today we will continue to talk about linkage disequilibrium. Before we start, however, I want to thank you for the 500 subscribers or the over 500 subscribers on the Genomics Boot Camp channel. It seems that there is a continued and ever increasing interest about the contents of the channel, which is, of course, very good news for me and good motivation to move forward. Of course, if you are not subscribed yet. you can use this opportunity to do so. So thank you, thank you, thank you, and without further delay, let's move on to further discussions about linkage disequilibrium.
 
@@ -104,7 +106,9 @@ So, to summarize this video, the LD characterizes the degree of relationships be
 
 **Title**: How to measure linkage disequilibrium? (ADVANCED)
 
-**Presenter(s)**: Gábor Mészáros, PhD
+**Presenter(s)**: Gábor Mészáros, PhD (Institute of Livestock Sciences (NUWI), University of Natural Resources and Life Sciences)
+
+**Gábor Mészáros**:
 
 Hello, everyone. Welcome back to another video on the Genomics Boot Camp. This time is a follow-up or an add-on to the previous video how to measure linkage disequilibrium. This video is entitled "advanced," because we have a bit more equations here as on the average of the channel. The reason I did not include these ones into the previous video is that perhaps not everybody is interested or they don't like to see, you know, too many equations in an educational video. Therefore, I thought it makes sense to divide the two, but you are here, you are interested, so let's get to it. I repeat here a few slides that were in the original video in order to provide context, but we will go through these ones in a quicker manner.
 
@@ -146,7 +150,9 @@ So, for the summary, the r^2^ is a commonly used and robust measure of LD, and t
 
 **Title**: Compute linkage disequilibrium (Part 1)
 
-**Presenter(s)**: Gábor Mészáros, PhD
+**Presenter(s)**: Gábor Mészáros, PhD (Institute of Livestock Sciences (NUWI), University of Natural Resources and Life Sciences)
+
+**Gábor Mészáros**:
 
 Hello, everyone. Welcome back to another video on the Genomics Boot Camp back again with another video on linkage disequilibrium. This is the first part of the finishing two when we are actually computing the linkage disequilibrium this time by hand. I believe this is an interesting piece of knowledge, so it's worthwhile to look at.
 

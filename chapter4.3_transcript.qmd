@@ -21,3 +21,7 @@ So, twin studies can provide clues on the relative importance of genes and envir
 ------------------------------------------------------------------------
 
 # Choosing the Right Design {sec-video2}
+
+**Title**: Choosing the Right Study Design in Genetic Epidemiology
+
+**Presenter(s)**: Duncan Thomas, PhD (Department of Population and Public Health Sciences, University of Southern California)

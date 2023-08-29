@@ -6,7 +6,9 @@ title: "Chapter 5.3: Association Testing (Video Transcript)"
 
 **Title**: Biometrical Model and Basic Statistics
 
-**Presenter(s)**: Benjamin Neale
+**Presenter(s)**: Benjamin Neale, PhD (Harvard Medical School; Analytic and Translational Genetics Unit, Massachusetts General Hospital)
+
+**Benjamin Neale**:
 
 Hello, I'm Ben Neale. I'm one of the course directors for the International Statistical Genetics Workshop, and I'm here today to talk to you about the biometrical model and basic statistics. Some really core theoretical underpinnings of how we think about twins and families, heritability estimation. All of this stretches back to an intellectual tradition that goes, you know, to Mendel and Galton and Fisher, all people that we'll talk about over the course of, say, from the mid-1800s. You know, forward to today.
 
@@ -62,7 +64,9 @@ OK, now that's one genetic effect, but remember for something like height, thing
 
 **Title**: Hypothesis Testing, Effect Sizes, and Statistical Power
 
-**Presenter(s)**: Brad Verhulst
+**Presenter(s)**: Brad Verhulst, PhD (Department of Psychiatry and Behavioral Sciences, Texas A&M University)
+
+**Brad Verhulst**:
 
 Hello and welcome to the 2022 Boulder Workshop, where we're going to discuss hypothesis testing, effect sizes, and statistical power. My name is Brad Verhulst from Texas A&M University, and I'm going to walk you through some of the important components of these concepts.
 

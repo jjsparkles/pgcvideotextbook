@@ -4,7 +4,9 @@ title: "Chapter 3.1: SNP array genotyping (Video Transcript)"
 
 **Title**: SNP Chips (Introduction to genomics theory)
 
-**Presenter(s)**: Gábor Mészáros, Genomics Boot Camp
+**Presenter(s)**: Gábor Mészáros, PhD (Institute of Livestock Sciences (NUWI), University of Natural Resources and Life Sciences)
+
+**Gábor Mészáros**:
 
 *Introduction*
 

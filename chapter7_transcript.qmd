@@ -6,7 +6,7 @@ title: "Chapter 7: Trans-ancestry analysis (Video Transcript)"
 
 **Title**: Cross-ancestry PTSD and Polygenic Findings, and the Cross-Population SIG of the PGC
 
-**Presenter(s)**: Laramie Duncan
+**Presenter(s)**: Laramie Duncan, PhD (Stanford University)
 
 **Caroline Nievergelt:**
 
@@ -51,6 +51,10 @@ Hailiang spoke to an editor at *Cell*, and they were very interested in this pap
 ------------------------------------------------------------------------
 
 # 7.2: Ancestry-specific PRS {#sec-video3}
+
+**Title**: Clinical use of current polygenic risk scores may exacerbate health disparities
+
+**Presenter(s)**: Alicia Martin, PhD (Broad Institute)
 
 **Caroline Nievergelt**:
 
@@ -111,6 +115,10 @@ So I want to acknowledge that this is a huge effort involving a ton of really aw
 ------------------------------------------------------------------------
 
 # 7.3: Local Ancestry and Admixed Populations
+
+**Title**: Tractor: A framework enabling the well-calibrated genomic analysis of psychiatric traits across admixed populations
+
+**Presenter(s)**: Elizabeth Atkinson, PhD (Department of Molecular and Human Genetics, Baylor College of Medicine)
 
 **Caroline Nievergelt**:
 

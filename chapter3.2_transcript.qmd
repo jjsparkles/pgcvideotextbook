@@ -6,7 +6,9 @@ title: "Chapter 3.2: Next Generation Sequencing (Video Transcript)"
 
 **Title**: How to sequence the human genome
 
-**Presenter(s)**: Mark J. Kiel
+**Presenter(s)**: Mark J. Kiel, PhD (Universidade Federal de São Paulo, Brazil)
+
+**Mark Kiel**:
 
 You've probably heard of the human genome, the huge collection of genes inside each and every one of your cells. You probably also know that we've sequenced the human genome, but what does that actually mean? How do you sequence someone's genome?
 

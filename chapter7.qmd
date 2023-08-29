@@ -16,7 +16,7 @@ title: "Chapter 7: Ancestry-Specific Analyses and Considerations"
 
 **Title**: Cross-ancestry PTSD and Polygenic Findings, and the Cross-Population SIG of the PGC
 
-**Presenter(s)**: Laramie Duncan
+**Presenter(s)**: Laramie Duncan, PhD (Stanford University)
 
 **Level**: Beginner friendly
 
@@ -37,7 +37,7 @@ Link to video transcript [here](chapter7_transcript.qmd#sec-video1).
 
 **Title**: Clinical use of current polygenic risk scores may exacerbate health disparities
 
-**Presenter(s)**: Alicia Martin
+**Presenter(s)**: Alicia Martin, PhD (Broad Institute)
 
 **Level**: Beginner friendly
 
@@ -56,7 +56,7 @@ Link to video transcript [here](chapter7_transcript.qmd#sec-video2).
 
 **Title**: Tractor: A framework enabling the well-calibrated genomic analysis of psychiatric traits across admixed populations
 
-**Presenter(s)**: Elizabeth Atkinson
+**Presenter(s)**: Elizabeth Atkinson, PhD (Department of Molecular and Human Genetics, Baylor College of Medicine)
 
 **Level**: Beginner/Intermediate
 

@@ -2,6 +2,10 @@
 title: "Chapter 1.2: Epidemiology (Video Transcript)"
 ---
 
+**Title**: What is a genome-wide association study?
+
+**Presenter(s)**: Till Andlauer, PhD (Boehringer Ingelheim)
+
 **Till Andlauer**:
 
 Most of the work of the psychiatric genomics consortium is about genome-wide association studies, or GWAS in short. But, what is a GWAS?

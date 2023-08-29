@@ -8,7 +8,11 @@ title: "5.1 Quality Control (Video Transcript)"
 
 **Title**: Quality control
 
-**Presenter(s)**: Katrina Grasby (katrina.grasby\@qimrberghofer.edu.au) and Lucía Colodro Conde (Lucia.ColodroConde\@qimrberghofer.edu.au), from the 2021 International Statistical Genetics Workshop hosted by the Institute for Behavioral Genetics at the University of Colorado, Boulder.
+**Presenter(s)**:
+
+-   Katrina Grasby, PhD (QIMR Berghofer Medical Research Institute)
+
+-   Lucía Colodro Conde, PhD (QIMR Berghofer Medical Research Institute)
 
 Thanks for joining me for this session on Quality Control. In this recording I'm going to be talking about the quality control or QC steps that we apply to genetic data. So this is in the very early stages of a study. We've collected our DNA, it's being transformed into data. We're going to clean that data up and then we will impute and then we can do our statistical analyses. So there's many points in a study that will be applying QC, but these steps that we'll be discussing here and in the tutorial, are the quality control steps that we apply to our genetic data.
 
@@ -66,7 +70,9 @@ So these are going to be out checklist for our key steps in QC that will be runn
 
 **Title**: How to run Quality Control on Genome-Wide Genotyping Data
 
-**Presenter(s)**: Jonathan Coleman
+**Presenter(s)**: Jonathan Coleman, PhD (King's College London)
+
+**Jonathan Coleman**:
 
 Hello, I'm Joni Coleman and in this brief presentation I'm going to discuss some key points concerned with running quality control on genome-wide genotype data which is a common first step in running a GWAS.
 
@@ -74,11 +80,11 @@ Hello, I'm Joni Coleman and in this brief presentation I'm going to discuss some
 
 I'm going to provide a theoretical overview, addressing the overarching reasons why we need to do QC. Highlighting some common steps, and discussing a few pitfalls the data might throw up.
 
-I\'m not going to talk about conducting imputation, or GWAS analyses, or secondary analyses.  Nor am I going to talk at great length about the process of genotyping and ensuring the quality of genotyping calls. I\'ll similarly not go into any deep code or maths, however, if you are starting to run your own qc and analyses I recommend the PGC's RICOPILI automated pipeline as a starting point. There are also some simple scripts on my group's github that may be useful as well. They follow a step-by-step process with codes and explanations. We're currently updating this repository, so look out for some video tutorials there as well.
+I'm not going to talk about conducting imputation, or GWAS analyses, or secondary analyses.  Nor am I going to talk at great length about the process of genotyping and ensuring the quality of genotyping calls. I'll similarly not go into any deep code or maths, however, if you are starting to run your own qc and analyses I recommend the PGC's RICOPILI automated pipeline as a starting point. There are also some simple scripts on my group's github that may be useful as well. They follow a step-by-step process with codes and explanations. We're currently updating this repository, so look out for some video tutorials there as well.
 
 *The beginning: genome-wide genotypes*
 
-So here is our starting point. I'll be using this graph on the top right several times through this talk, and this is a genotype calling graph with common homozygotes in blue, heterozygotes in green, and rare homozygotes in red. Hopefully your data will already have been put through an automated genotype calling pipeline, and if you\'re really lucky, an overworked and under-appreciated bioinformatician might have done some manual recalling to ensure the quality of the data is as high as possible.
+So here is our starting point. I'll be using this graph on the top right several times through this talk, and this is a genotype calling graph with common homozygotes in blue, heterozygotes in green, and rare homozygotes in red. Hopefully your data will already have been put through an automated genotype calling pipeline, and if you're really lucky, an overworked and under-appreciated bioinformatician might have done some manual recalling to ensure the quality of the data is as high as possible.
 
 But in point of fact the data you will be using won't be in this visual form but rather as a numeric matrix like the one below, with SNPs, and individuals. This might be in the form of a PLINK genotype file or it's binary equivalent, or it's in some similar form that can be converted to the PLINK format.
 
@@ -88,7 +94,7 @@ Where we want to go is clean data with variants that are called in the majority 
 
 That should give a nice clean Manhattan plot from GWAS was like the one below rather than the starry night effect of this poorly QC'd Manhattan plot above.  However, something I'd like to emphasize across this talk is that QC is a data informed process, and what works for one cohort won't necessarily be exactly right for another. Good QC requires the analyst to investigate and understand the data.
 
-*\"Rare\" variants*
+*"Rare" variants*
 
 Often the first step is to remove rare variants, and this is because we cannot be certain of variant calls. Consider the variance in the circle on the right. Are these outlying common homozygotes or are they heterozygotes? We cannot really tell because there aren't enough of them to form a recognizable cluster. Typically, we might want to exclude variants with a low minor allele count for example five. There are many excellent automated calling methods to increase the amount of certainty you have in these variants but it's also worth noting that many analytical methods don't deal well with rare variants anyway.
 
@@ -144,13 +150,13 @@ Relatedness can also be useful for detecting sample contamination. Contamination
 
 Finally, a word on genetic ancestry. Because of the way in which we have migrated across our history, there is a correlation between the geography of human populations and their genetics. This can be detected by running principal component analyses on genotype data pruned for linkage disequilibrium. For example this is the UK biobank data, you can see subsets of individuals who cluster together and who share European ethnicities, other subsets who share African ethnicities, and subsets who share different Asian ethnicities, and in a more diverse cohort you will be able to see other groupings as well. this kind of 2D plot isn't the best way of visualizing this, for example here it isn't really possible to distinguish these South Asian and admixed American groupings, and you don't get the full sense of the dominance of European ancestry data in this cohort. The Europeans in this case account for around 95% of the full cohort but because of over plotting i.e. the same values being plotted on top of each other in this 2D plot, you don't really appreciate that. Looking across multiple principal components helps for that.
 
-Ancestry is important to QC. Many of the processes I\'ve talked about rely on the groups being assessed fairly of being fairly homogeneous. As such, if your data is multi-ancestry it's best to separate those ancestries out and re-run QC in each group separately.
+Ancestry is important to QC. Many of the processes I've talked about rely on the groups being assessed fairly of being fairly homogeneous. As such, if your data is multi-ancestry it's best to separate those ancestries out and re-run QC in each group separately.
 
 *Take-aways*
 
 So that was a brief run-through of some of the key things to think about when running QC.
 
-I hope I\'ve got across the need to treat this as a data informed process, and to be willing to re-run steps, and adjust approaches to fit cohorts. Although we've got something resembling standard practice in genotype QC, I think there are still some unresolved questions. So get hold of some data, look online for guides and automated pipelines, and enjoy your QC.
+I hope I've got across the need to treat this as a data informed process, and to be willing to re-run steps, and adjust approaches to fit cohorts. Although we've got something resembling standard practice in genotype QC, I think there are still some unresolved questions. So get hold of some data, look online for guides and automated pipelines, and enjoy your QC.
 
 Thank you very much for listening, I'm doing a Q & A at 9 30 EST, otherwise please feel free to throw questions at me on twitter where I live, or at the email address on screen which I occasionally check. Thank you very much.
 
@@ -160,642 +166,106 @@ Thank you very much for listening, I'm doing a Q & A at 9 30 EST, otherwise plea
 
 **Title**: Considerations for genotyping, quality control, and imputation in GWAS
 
-**Author**: Ayşe Demirkan (a.demirkan\@surrey.ac.uk)
+**Author**: Ayşe Demirkan, PhD (School of Biosciences, Surrey Institute for People-Centred Artificial Intelligence, University of Surrey)
 
-hello everyone my name is aisha demerka i'm affiliated at the university of
+**Ayşe Demirkan**:
 
-roningam from the netherlands and university of surrey from the uk this is a pre-recorded lecture
+Hello everyone, my name is Ayşe Demirkan. I'm affiliated with the University of Groningen from the Netherlands and the University of Surrey from the UK. This is a pre-recorded lecture in the second session of on-demand sessions: "Introduction to the Statistical Analysis of Genome-Wide Association Studies." I will be talking about considerations for genotyping quality control and imputation in genomic association studies.
 
-in the second lecture of on-demand sessions introduction to the statistical analysis of genome-wide association
+So here you see an overview of the lecture. We will shortly go over genotyping platforms and options for quality control. Then, I will talk about the definition and purpose of imputation and how it is done. This is going to include reference data, tools, analysis of imputed data, imputation accuracy, and assessing.
 
-studies i will be talking about considerations for genotyping quality control and
+*Genotyping and Platforms*
 
-imputation in genomic association studies jivas
+Genotyping is the process of determining differences in the genetic makeup (genotype) of an individual by examining the individual's DNA sequence. What we call genotyping is the process of determining differences in the genetic makeup, hence the genotype, of an individual by examining the individual's DNA sequence. Of course, the technology used for genotyping depends on the structural properties of the genetic variation, whether it is a single nucleotide polymorphism or a copy number variation or other structural variations. It also depends on the project rationale or scientific question and your budget, mainly. Related to that, of course, is how many SNPs you want to genotype. If it is a genomic association study, and the number of individuals you would like to include. Depending on your study design, you will also be limited by your DNA sample quality and quantity.
 
-so here you see an overview of the lecture we will shortly go over genotyping platforms
+So here on this slide, you see the most common approaches used for genotyping.
 
-Lecture outline
+*Common Approaches*
 
-and options quality control then i will talk about definition and purpose of imputation and how it is done
+SNPs, and depending on your study, you will most likely be using one of these. What are those Illumina microarrays? So, on the y-axis, you see the number of SNPs that are easily captured by the arrays, and on the x-axis, you see the number of individuals. Then, what do we have? We have PCR, RFLP, sequencing, pyrosequencing, and Fluidigm platforms, and TaqMan. For instance, one of the best examples are the Illumina arrays for whole-genome scans. Whole-genome genotyping by these arrays provides an overview of the entire genome and enables novel discoveries and associations. So, using high-throughput next-generation sequencing and microarray technologies, you can obtain a deeper understanding of the genome because you are covering a very wide proportion of the genome.
 
-and this is going to include reference data tools analysis of imputed data
+So you can use one of their selection of Illumina or Affymetrix arrays, which you think may be suitable for your study. There are many options, and for Illumina's array platforms, there are genome-wide genotyping arrays for 18 species at the moment. The number of markers on each array varies by product. For humans, up to four million markers per sample are possible. Then, there is an Infinium low-cost screening array. For example, this one includes 600,000 markers on it. You can start from 200 nanograms of genomic DNA. What you can also do is add some custom marker panels. There is an add-on capacity of up to 50k markers. And then there is the Omni family of Illumina arrays.
 
-imputation accuracy and accusing
+*Omni Family of Illumina Arrays*
 
-Genotyping and platforms Genotyping is the process of determining differences in the genetic make- up (genotype) of an individual by examining the individual's DNA Sequence
+Here you see a simple description of their coverage and the inclusion of genetic markers in relation to their minor allele frequencies. So, these arrays on the left include only common variation with minor allele frequencies higher than five percent. Some include CNVs (Copy Number Variations), and some include SNPs with lower minor allele frequencies. Which one to choose among those will depend on your research question and the population you want to screen. For instance, are you looking for rare or common variations in terms of SNPs? Are you looking for CNVs? Are you working with a rare or common disease, and what is your sample size and budget? Now, I've listed some websites here. Please take 10-20 minutes to check on the technologies mentioned in the first section using these websites.
 
-what we call is genotyping is the process of determining differences in the genetic makeup
+*Quality Control (QC) of Genotyping: From Machine to Dataset - Genotype Calling*
 
-hence the genotype of an individual by examining the individual's dna sequence
+Now let's talk about genotyping quality control (QC). You've designed your study, chosen a proper array platform or service, and used a service from your institute. So, one critical initial step from chemically induced intensity signals and data analysis is the transfer and QC of genotypes determined towards your computer. This critical step is called genotype calling. Genotype calling algorithms are always implemented in the proprietary software accompanying the genotyping platform you choose. So, you don't need to invent them yourself. Typically, calling software uses a sort of mathematical clustering algorithm to analyze the raw intensity data and estimate the probability that their genotype is one of AA, AB, or BB for a given individual for a given biallelic marker locus. One method of checking initial SNP quality is visually inspecting the intensity clustering of a particular SNP in the overall population. Depending on this, one can decide whether a SNP is characterized by a clear signal or not.
 
-of course the technology used for genotyping depends on the structural properties of the genetic variation
+Here on the left of these figures, you see a clear intensity clustering of a SNP in the population. You see that the common variant is depicted by red, the heterozygous by purple in the middle, and the homozygous for the less common allele are depicted as blue. The table on the right shows the raw values that this plot is figured from. So, here the plot shows a tight clustering of genotypes, and there is not much noise in the measurement of this SNP. Following that, there are important data QC steps. One of them is to work on replicates. For inspecting plating issues and by looking at genotype concordance, this would be a good thing to do -- to include the same DNA sample on different batches of experiments. Then, there are Mendelian errors to control for, for instance, transmission inconsistencies. For example, SNPs with more than a 10 percent Mendelian error rate can be excluded. This would be based on the number of trios that you would include in your experiment.
 
-whether it is a single nucleotide polymorphism or a copy number variation or other structural variations
+Unfortunately, this option obviously is only available for family-based and trio designs only. Another thing, another QC measure we use is SNP call rate. This is basically the missing genotype rate, 1 minus the missing genotype rate per SNP. So, this can depend on the quality of the DNA samples, and this is generally between 95 percent and 99 percent. This is a very standard thing to include in your QC. Another thing is the Hardy-Weinberg equilibrium deviance of your SNP. This is another method for checking the quality and exclusion of your SNPs. This will be explained in the next slide. Another one is the sample call rate, so this is a sample-based QC method. This is a good indication of sample success. Different platforms have different thresholds, but this will be mainly determined by your initial DNA quality and will somehow be in relation to the SNP call rate. Once you do SNP call rate, you could do sample call rate, and you may want to repeat SNP call rate depending on that.
 
-it also depends on the project rationale or scientific question and your budget
+Another thing to do is sample gender check. For this quality measure, you need X chromosome information to calculate this, and you may want to add this as an additional sanity check in your data to make sure that there is a perfect overlap with your phenotype files in terms of sex.
 
-mainly and related to that of course how many snips
+Another important one is sample heterozygosity. This is to check for example outliers -- for example, samples with more heterozygosity than expected can be an indication of contamination in your samples. And you also want to do something on top of all of that. You need to check samples' cryptic relatedness and unexpected twinning, and whether there is actually relatedness and structure in the data. But this will be more covered in the lecture of RediK MAGI.
 
-you want to genotype if it is a genomic association study and number of individuals you would like to include
+*Hardy-Weinberg Equilibrium*
 
-depending on your study design you will also be limited with your dna
+As the occurrence of two alleles of a SNP in the same individual are two independent events, the distribution of the genotypes across individuals should be more or less in equilibrium with the frequencies of the alleles of a biallelic SNP. So, this is only possible in ideal conditions, of course, which would be random mating, no selection, equal survival, no migration, no mutation, and selection based on mutation, no inbreeding, and large population size.
 
-sample quality and quantity
+So, under these conditions, above deviations from Hardy-Weinberg equilibrium is an indication of genotyping calling problems, and a commonly used threshold for genotypic variance is a p-value of Hardy-Weinberg equilibrium that is less than ten to the minus five. This is an indication of a deviation from Hardy-Weinberg equilibrium, and you may want to take a look at these SNPs, or you may want to exclude them from your dataset.
 
-so here on this slide you see the most common approach used for genotyping
+\*\*Another important thing to always consider is genome builds and alignments.\*\*
 
-Common approaches
+The characterization of the human genome is an ongoing effort, and a genome build tells us the positions of the SNPs in the genome on the genome. So, the latest build is called build 38, but the most commonly used one at the moment is still build 37. For instance, the HapMap was released on build 35 and build 36. So, you need to be aware of issues relating to merging and meta-analyzing data from different genome builds. Also, when preparing your data for imputation, this is very important because you need to make sure that your data is coded according to the same genome build between the target set and the reference dataset.
 
-synips and depending on your study you will be most likely using one of these what are those illuminati matrix arrays
+\*\*So, there are tools for that. One they are called liftover tools. For instance, there is one from Oxford that we use for this purpose, and I provide the link to that here.\*\*
 
-so on the y-axis you see the number of snips that are easily captured by the arrays and on the x-axis you see the
+*Commonly Used Software for QC: PLINK*
 
-number of individuals and then what do we have we have pcr rflp sequence
+So, all of these QC steps I shortly went over here are pretty standard, and there are a couple of widely used tools. One very commonly used tool that we also use for data storage, analysis, and QC is called PLINK. Here on this slide, I made a snapshot of some of the PLINK options that I also covered during the lecture, and these functions are implemented in the PLINK software. You can use it for the QC of your genetic data.
 
-pyrosequencing and fluidicum platforms and tacman
+\*\*First thing to be able to use PLINK is to obviously install PLINK, and you will need to read your genotype call data in PLINK in the form of map or ped files. Then, you can perform QC at the SNP level -- remove or extract SNPs -- and you can perform QC at the sample level -- you can remove or extract individuals.\*\*
 
-um for instance one of the best examples are the illuminae arrays for whole
+And under the summary statistics option here, there are functions listed to check for call rate missingness, Hardy-Weinberg equilibrium, highlight frequencies, and Mendelian errors. You can also perform sex checks. What PLINK can also do is to extract genetic principal components and identify cryptically related individuals or twinnings in the data and the genetic structure of the data. You can then use this to determine ethnic outliers in your datasets. I will not talk about this because this is a part of the lecture of RediK MAGI of the next session.
 
-genome scans um whole genome genotyping by these arrays provide an overview of the entire
+*Intermezzo*
 
-genome and enable you know white discoveries and associations so you using a high throughput
+Here I put two websites here. One of them is for PLINK and how to use PLINK for QC, and the other one is for BEAGLE, which I mentioned is one of the algorithms that you could use for genotype calling. So now, take 10-20 minutes to have a look at this website and try to grasp what you can do with them.
 
-next generation sequencing and microarray technologies you can obtain a deeper understanding of the genome
+*Genetic data missingness*
 
-because you are covering a very wide proportion of the genome so you can use
+Now, let's talk about imputation. Why do we need imputation? We need imputation to address missingness in the genetic data. This is all about missing values in the genetic data. Where do the missing values come from? So, during the QC, we already set some values to missing, right? And also, during genotype calling, you could set some data points to missing. But actually, most of the missing values come from the initial targeted coverage of the genotyping chips and platforms we used. Remember that there are many types of arrays - some are more dense, less dense. There are arrays made specifically for oncological studies like onco arrays. There is a metabolic chip that is designed for metabolic diseases, especially, and there are arrays focused on mainly SNPs with higher minor allele frequency, or there are those focusing on CNVs. But even the dense SNP arrays do not cover all of the genetic variation. They cover much less than you would imagine. And, in addition to that, SNPs included in one array may not be included in the other one. And for many variable positions on the genome, we do not have matching information across genotype sets of individuals. For instance, look at what I try to depict here. I think of three individuals: the first two are typed on the array X and the third one is typed on array Y. So, hence, they have different missing data points. And when you try to pull their data for a pooled analysis or to be used in meta-analysis, you're going to have even more missingness in this data because of the non-overlapping positions. And you will not be able to replicate findings from one dataset in the other one. So, additionally, we will be analyzing only half of the genetic variation, and we may miss causal variants in the analysis. This is because of all these reasons. We use genetic data imputation.
 
-one of their selection of this illumina or f metrics arrays which you think may be suitable for your study
+*Imputation Principle*
 
-there are many options and so for s4 illumina there are genome-wide genotyping is for 18 species
+So, what do we do in principle? In principle, it means estimating the most likely genotypes in an individual at the missing positions by looking at the correlated SNP values from a more complete dataset, and based on that, writing over the missing values in the target dataset. So, how does it work? First of all, we need a dataset where dense genotypes are directly measured. This can be a dense array or it could be a set of sequenced individuals. This we call a reference panel. Then, we use an imputation software or service, and by looking at the correlation structure of the dense genotypes or sequence SNPs, we estimate them in the target dataset. So, at the end, these are probabilities, and we end up with dosage information for alleles or genotypes, rather than hard genotype calls. And this dosage information, which accounts for the uncertainty in the estimation, is then included in the genomic association study analysis. So, to sum up, the purpose of imputation is to increase power because obviously, the reference panel is more likely to contain the causal variants than a less dense genotyping array. To improve fine mapping because imputation provides a higher resolution overview of an association signal across a locus. And then, to enable meta-analysis because imputation is going to allow data that's typed with different arrays to be combined up to variants in the reference panel.
 
-at the moment so number of markers on each array it changed by products for human up to four minion markers per
+*Historical Milestones 2010-2018*
 
-sample are possible now and then there is an infinium low cost screening
+Going over the historical milestones in terms of imputation also summarizes the theoretical and technological advancements in human genomic data imputation. So, one important advance in all of these was the generation of reference panels. The first reference panel was HapMap, and HapMap2 was the most commonly used release of HapMap. It consists of a limited sample of individuals from diverse genetic backgrounds: 60 Yoruba, 90 Han Chinese and Japanese, and six individuals that were Utah residents descending from European ethnic origin. Now, it sounds funny to think that we imputed thousands of people based on the genetic material of 60 Utah residents only, talking about the Europeans. But actually, this yielded a lot of success, and actually, this is what we had for a long time. So, we could only impute up to 3 million SNPs with HapMap at the time.
 
-array so for this one for example includes 600 000 markers on it
+And then came the 1000 Genomes reference panel, which included at the end 2,500 individuals from multiple ethnic groups. And later on, and currently, the most widely used reference panel is the panel of Haplotype Reference Consortium (HRC). Recall shortly, this is a combined set of whole-genome and exome sequence data for more than 30,000 individuals and uses 39 million SNPs after imputation, of course. This is going to depend on the scaffold that you use for imputation as well. Many of these SNPs will not be imputed with good quality, but in ideal conditions, you can go up to 39 million. And finally, we now have a reference panel from the Trans-Omics for Precision Medicine (TOPMed) program, and this consists of almost 100,000 deeply sequenced human genomes and can yield up to 308 genetic variants to be identified. One technical milestone worth mentioning was the prephasing of haplotypes. Genetic imputation is a highly computationally intensive process because of the probabilistic framework and high rate of missing data that we are trying to deal with. One of the major milestones to reduce the computational burden was the introduction of prephasing. This idea involves a two-step imputation process. So, there is one initial step of prephasing, which is actually haplotype estimation of the genotypes, and a subsequent step of imputation into the estimated phased haplotypes. So, this reduces the complexity of the imputation process and speeds it up. The current version of all imputation software can deal with the prephasing approach. And what is very important is the choice of the reference panel.
 
-you can use start from 200 nanogram genomic dna and what you can also do you
+So, it is shown that making use of the all-ancestries reference panels rather than ethnic-specific reference panels improves imputation accuracy for rare variants in any population. And formatted reference panels for IMPUTE and Minimac can be downloaded from the software websites. And it's very important to make sure that genotype scaffold and reference panels are aligned to the same build of the human genome. I will get back to that later as well.
 
-can add some custom marker panels there is an add-on capacity up to
+So, another very important and current technological advancement that makes our lives easier is the imputation services. These are freely available services such as the Michigan and Sanger imputation services. You can simply format and upload your data in a secure way to this server and get the data imputed and phased genotypes back in a few days. And this depends on the speed and how busy the server is and depending on the sample size you are trying to impute, of course.
 
-50 50k markers
+*Historical Milestones - Sanger*
 
-and then there is this omni family of illumina arrays
+So, in parallel to the Michigan imputation server, the Sanger Institute also has a similar service. In this service, you can also upload your data in VCF format and optionally perform prephasing using BEAGLE or SHAPEIT software. The current reference panels in the Sanger imputation server include HRC, UK 10K, and 1000 Genomes. As I said, there is also a server dedicated to TOPMed. This is all very self-explanatory. This is how the Sanger imputation server would like you to prepare the data. So, there is a whole bunch of instructions there that you would like to use. The use of these services comes with instructions and manuals, so feel free to make an account there and run some test datasets in there. You will need to format the data as required in the instructions. You will need to match the coordinates and reference level of the genome builds and prepare one file for each chromosome. This is for the Sanger imputation server. And another important thing in terms of imputation is, of course, the speed.
 
-Omni family of Illumina arrays
+*Speed - Impute5 PLOS GENETICS*
 
-here you see a simple description of their coverage and the inclusion of genetic markers in relation to their
+So, increasing reference panel size improves the accuracy of markers with low minor allele frequencies, but this positive effect increases computational challenges for imputation methods. So recently, a new imputation software, Impute 5, was introduced from the same group. It does memory-efficient imputation by selecting haplotypes using the positional Burrows-Wheeler transform. So, using the HRC reference panel, the developers of the software showed that Impute 5 is up to 30 times faster than Minimac 4 and up to 3 times faster than BEAGLE 5.1 and uses less memory than both of these methods.
 
-minor alleged frequencies so these expressed chips on the left include only common variation with minor
+*Example Framework*
 
-life frequencies higher than five percent some include cmes and some include snips with lower minor allied
+So, using all the mentioned considerations up until now, you can build an in-silico framework similar to this one. So, you can use, for instance, PLINK functions for the first two steps of genetic data QC. Then you can check chip information and strand issues using R software tools. And if needed, you can update your genome build by using liftover tool. And you can then prephase by using SHAPEIT. And finally, impute in-house or using one of the servers mentioned. So, two links to this software are given here. Now take time, probably hours, to explore these three imputation services, and you may also want to produce quality plots per chromosome varying by minor allele frequency strata and position on the chromosomes. For instance, here is an example figure. This Imputation quality vs MAF figure shows a typical relationship between minor allele frequency and imputation quality. So, on the y-axis, you see the imputation accuracy as determined by imputation quality, as by r square or info score from different software, and on the x-axis, you see the minor allele frequency. You see that the accuracy is highest when the minor allele frequency is high, when the allele is more common. Then the accuracy goes lower where the minor allele frequency goes lower as well. You still have some well-imputed SNPs among the rare ones as well, but most of the low-quality SNPs are going to come from low minor allele frequency SNPs. So, keep in mind that when you filter by imputation quality, you will be filtering out a lot of rare SNPs as well.
 
-frequencies so which one to choose among those will depend on your question research
+*Factors Affecting Imputation*
 
-question and population you want to screen for instance are you looking for a rare or common variation in terms of
+So, at the genome-wide level, the number of individuals imputed has something to do with it. For this reason, we merge scaffold datasets before imputation if we are going to impute more than one. The more, the merrier. And the second factor is the reference panel. The choice of the reference panel, as well as the whole idea, is to use the correlation between SNPs across different populations, and this may be different from population to population. You want to go for a large multi-ethnic panel if you're not able to go for a large ethnic-specific panel. Finally, at the SNP level, the lower the minor allele frequency, the lower the quality of the imputation is going to be.
 
-snips are you looking for cmes are you looking are you working with a rare or common disease and what is your sample
+*How to Analyze the Imputed Data: Analysis of Imputed Genotypes*
 
-size and your budget now
+So, for each individual, imputation provides a probability distribution of possible genotypes for each untyped variant. These probabilities can be converted into best-guess genotypes, but this is not generally recommended, as it increases false positives and reduces power. Also, when you convert the probabilities to expected allele counts, you want to filter your best-guess genotypes. You want to apply strict filtering on the best-guess genotypes, and this would result in more NAs in your dataset. So, it's better to convert the probabilities to expected allele counts and analyze by taking the uncertainty in the imputation into account. That's really important. And to do that, you need to match the data formats to the software. Not all software uses all types of data, and you may need to do data conversions. A software called EPACTS, SNPTEST, and PLINK 2 supports the dosage information, and you need to check the lecture from REDCap MAGI for the analysis of genome-wide data.
 
-i listed some websites here please take 10 20 minutes to check on
+*Messages*
 
-the technologies mentioned in the first section using these websites
+So, this is the last slide of this lecture. The take-home message is that we are dealing with hypothesis-free approaches here. Unfortunately, it all comes down to the bittersweet money and resources we have. So, you need to think about what is the best and most cost-effective way of getting genetics done in a large sample size. And the answer is combining a dense genome scan array with imputation, as the reference panels are free at the moment and the cost of arrays is going lower as well. But you really need to think about the in silico part of doing so, as it also requires staff and computational resources to some level. And what else should you consider? In comparison, you want to know, depending on your research question, of course, whether there is a better array for you, or perhaps an array or a metabold chip if you are going to conduct your research in a very restricted field. And most importantly, what are the future uses of this data? Because obviously, you don't want to build something that you're going to use only for a couple of years and finalize the research on that. You ideally want to invest in big data. So, are you going to invest in a population-based cohort or a disease-based cohort? Is it going to be a short-term project, or is it going to be a follow-up study that's likely to build up and extend throughout the years, including new phenotypes? And finally, who do you want to collaborate with? Which consortia? Which diseases?
 
-Quality control (QC) of genotyping From machine to dataset: genotype calling
-
-now let's talk about genotyping quality control qc you designed your study you chose a
-
-proper array platform service you used or you used a service from your institute
-
-so one critical initial step from chemically induced intensity signals and data analysis is a transfer and
-
-qc of genotypes determined towards your computer this critical step is called genotype
-
-calling so genotype calling algorithms are always implemented in the probability
-
-software accompanying the genotyping platform you choose so you don't need to invent them yourself
-
-so it's typical calling software uses a sort of mathematical clustering
-
-algorithm to inter to analyze the row intensity data and it estimates the probability that
-
-their genotype is one of the a a a b or bb for a given individual for a given b
-
-allelic marker locus so one method of checking initial synopquality is visually inspecting the
-
-intensity clustering of a particular snip in the overall population and depending on this one can decide
-
-whether a snip is characterized by a clear signal or not so
-
-here on the left of these figures you see a clear intensity clustering of a
-
-scene in the population so you see that the common variant is
-
-depicted by red on the left there is some hetero heterozygous in the middle
-
-depicted by purple and the homozygous um people for the less common allele are
-
-depicted as blue and the table on the right it shows the row values that this plot
-
-is figured from so here the plot shows a tight
-
-clustering of genotypes and there is not moist much noise in the measurement of
-
-this cinema following that there are imputed the
-
-important data qc steps one of them is
-
-to work on uh replicates so for inspecting plating issues and by
-
-looking at you know type concordance this would be a a good thing to do to include the same
-
-dna sample on different batches of experiments and then there are mendelian areas to
-
-control for for instance transmission and the inconsistencies for example snips with more than 10 percent manual
-
-area rate can be excluded this would be based on the number of trios that you would include in your
-
-experiment unfortunately this option obviously is only available for family
-
-based and trio designs only another thing another qc measure we use
-
-is snip call rate this is basically the missing genotype rate
-
-1 minus the missing genotype rate per snip so this can depend on the quality of tsa
-
-and this is generally between 95 percent and 99 is this is a very standard thing
-
-to include in your qc another thing is the hardy weinberg
-
-equilibrium uh deviance of your snip so this is another method for checking the quality and
-
-exclusion of this of your snips this will be explained in the next slide another one is the sample call right so
-
-this is a sample based uh qc method this is a good indication of sample
-
-success so different platforms have different thresholds but this will this is will be mainly
-
-determined by your initial dna quality and uh it will somehow will be in
-
-relation to with a snip color so once you do snip call rate you could do sample call rate and you may want to
-
-repeat snip call rate depending on that and another thing to do is sample gender
-
-check for this quality measure you need x chromosome information to calculate this
-
-and you may want to add this as an additional sanity check in your data to make sure that there is
-
-a perfect overlap with your phenotype files in terms of sex and
-
-another important one is sample heterozygosity this is to check for example outliers
-
-for example samples with more heterozygosity than expected um can be an indication of contamination
-
-in your samples and you also want to do something in on top of all of that you
-
-you need to check samples cryptic relatedness and unexpected uh twinning
-
-and whether there is actually a relatedness and structure in the data
-
-but this will be more covered in the lecture of redik magi
-
-so let's talk about hard wineback equilibrium shortly so as occurrence of uh two allies of a
-
-Hardy-Weinberg equilibrium
-
-snip in the same individual are two independent events the distribution of the genotypes across
-
-individuals should be more or less in equilibrium with the frequencies of the alas of a b allelic snip
-
-so this is only possible in ideal conditions of course which would be random mating
-
-no selection equal survival no migration no mutation and selection based on
-
-mutation no inbreeding and large population size
-
-so under these conditions above deviations from high divine back equilibrium is an indication of
-
-genotyping calling problems and a commonly used threshold for
-
-genotypes variance is a p value of hardy weinberg equilibrium uh that is less than ten to the minus five
-
-is an indication of a deviation from hardy weinberg equilibrium and you may
-
-want to take a look at these snips or you you may want to exclude them from your
-
-data set another important thing to always
-
-Genome builds and alignments
-
-consider is genome bills and alignments so the characterization of the human
-
-genome is an ongoing effort and a genome build tells us the positions of the snips in the genome on
-
-the genome so the latest build is called build 38 but the most commonly used one at the
-
-moment is still built 37 for instance the head map was released on build 35
-
-and bill 36 so you need to be aware of issues relating to merging and meta-analyzing
-
-data from different genome builds also for when preparing your data for
-
-imputation this is very important because you need to make sure that your data is coded according to the same
-
-genome build between the target set and the reference data set
-
-so there are tools uh for that one they are called liftover tools for instance there is one from oxford that we use for
-
-purpose and i provide the link to that here
-
-Commonly used software for QC plink\...
-
-so all of these qc steps i shortly went over here are pretty standard and there
-
-are a couple of widely used tools one very commonly used tool that we also
-
-use for data storage analysis and qc is called plink
-
-here on this slide i made snapshot of some of the blink
-
-options that i also covered during the lecture and these functions are implemented in
-
-the plink software and you can use it for the qc of
-
-your genetic data so first thing to be able to use bling
-
-to obviously install plink and you will need to read your genotype call data in plink in the form of a map or pad files
-
-and then you can perform qc at the snip level remove or extract snips and you
-
-can perform qc at the sample level you can remove or extract individuals and under the summary statistics option
-
-here there are functions listed to check for call rate missingness hardy-weinberg
-
-equilibrium highlight frequencies and mandel errors you can also perform
-
-sex checks what billing can also do is to extract genetic principle components and
-
-identify cryptically related individuals or twinnings in the data
-
-and and the genetic structure of the data and uh can be which you can then use to determine ethnic outliers in your
-
-data sets i will not talk about this because this is a part of the lecture of redick muggy
-
-of the next session now
-
-Intermezzo
-
-here i put two websites here one of them is for
-
-blink and how to use blink for qc and the other one is
-
-for a beat studio which i mentioned is one of the algorithms that you could
-
-use for a genotype calling so now take 10-20 minutes to have a look at
-
-this website and try to grasp what you can do with them
-
-Genetic data missingness
-
-now let's talk about imputation why do we need imputation we need imputation to
-
-address missingness in the genetic data this is all about missing values in the genetic data where do the missing values
-
-come from so during the qc we already set some values to missing right and also during
-
-genotype calling you could set some data points to missing but actually most of
-
-the missing values come from the initial targeted coverage of the genotyping
-
-chips and platforms we used so remember that there are many types of arrays some of more dense less dense
-
-there are arrays made specifically for oncological studies like onco arrays there is a metabolic
-
-chip that is designed for metabolic disease especially and there are areas focused on focusing
-
-on mainly snips with higher minor area frequency or their whereas focusing on cnvs
-
-but even the dense snip areas do not cover all of the genetic variation they
-
-cover much less than you would imagine and in addition to that snips included in one array may not be included in the
-
-other one and for many variable positions on the genome we do not have
-
-matching information across genotype set of individuals for instance
-
-look what i try to depict here i think of three individuals
-
-first two are typed on the array x and the third one is typed on array y
-
-so hence they have different missing data points and when you try to
-
-pull their data for a pooled analysis or to be using meta-analysis you're going
-
-to have even more missingness in this data because of the non-overlapping positions
-
-and you will not be able to replicate findings from one of data set and in the
-
-other one so additionally we will be analyzing only half of the
-
-genetic variation and we may miss causal variance in the analysis this is this is
-
-because of all these reasons we use a genetic data imputation
-
-Imputation principle
-
-so what do we do in principle in principle it means estimating the most likely genotypes in
-
-an individual at the missing positions by looking at the correlated snip values
-
-from a more complete data set and based on that writing the
-
-writing over the missing values in the target data set so how does it work
-
-first of all we need a data set where dense genotypes are directly measured this can be a density array or it could
-
-be a set of sequence individuals this we call a reference panel
-
-then we use an imputation software or service and by looking at the correlation structure of the density
-
-types or sequence snips we estimate them in the target data set
-
-so at the end these are probabilities and we end up with dosage information for alleles or
-
-genotypes rather than hard genotypes calls and this dosage information
-
-which accounts for the immunity in the estimation is then included in the
-
-genomic association study analysis so to sum up the purpose of imputation
-
-Purpose of imputation
-
-is to increase power because obviously the reference panel is more likely to contain the causal
-
-variance than a less dense geos array to improve fine mapping because
-
-imputation provides a higher resolution overview of an association signal across
-
-a locus and then to enable meta-analysis because imputation is going to allow viewers
-
-typed with different arrays to be combined up to variance in the reference panel
-
-Historical milestones 2010-2018
-
-going over the historical milestones in terms of imputation also summarizes the
-
-theoretical and technological advancements in human data immune genetic data imputation
-
-so one important advance in all of these was the generation of reference panels so the first reference panel was hepmap
-
-and the headmap2 was the most commonly used release of hapmap it consists of a limited sample of individuals from
-
-diverse genetic backgrounds 60 yoruba indians 90 hein chinese and japanese and six
-
-individuals that were utah residents descending of european ethnic origin
-
-now it sounds funny to think that we imputed thousands of people based on the genetic material of 60 euro residents
-
-only talking about the europeans but actually this yielded a lot of success and actually this is what we had um only
-
-for a long time so we could only impute up to 3 million
-
-snips with headmap at the time and then came the 1000 genome reference panel which included at the
-
-end 2500 individuals from multiple ethnic groups
-
-and later on and currently the most widely used reference panel is the panel
-
-of haplotype reference consortium hrc recall shortly this is a combined set of
-
-whole genome and exome sequence data for more than 30 000 individuals and use 39 million
-
-snips after imputation of course this this is going to depend uh this on the
-
-scaffold that you use for imputation as well many of these snips will not be include imputed with the good quality
-
-but in the ideal conditions you can go up to 39 million and finally we now have a reference
-
-panel from the transomics for precision medicine topmed program and this consists of almost 100k deeply sequenced
-
-human genomes and it can yield up to 308 genetic variants
-
-to be identified one technical milestone is mentioning
-
-was prefacing of haplotypes so genetic imputation is a highly
-
-computationally intensive process because of the probabilistic framework and high rate of missing data that we
-
-are trying to deal with one of the major milestones is to reduce the computational
-
-burden was introduction of prephasing so this idea involves a two-step
-
-imputation process so there is one initial step of previousing which is actually haplotype
-
-estimation of the geos genotypes and a subsequent step of imputation into the estimated steady haplotypes
-
-so this reduces complexity of the imputation process and speeds it up the current version of all imputation
-
-software can deal with the prefacing approach
-
-and what is very important is a choice of reference panel
-
-so it is shown that making use of the all ancestry's reference panels rather than
-
-ethnic specific reference panel improves imputation accuracy for rare variants in
-
-any population and formatted reference panels for impude and minimax can be
-
-downloaded from the software websites and it's very important to make sure
-
-that genotype scaffold and reference panels are aligned to the same build of the human genome i will get back to that
-
-later as well
-
-so another and very important and current technological advancement that makes our
-
-lives easier is the imputation services these are freely available services such
-
-as the michigan and sanger imputation services you can simply format and upload your data in a secure way to this
-
-server and get the data imputed and face genotypes back in a few days
-
-and this depends on the speed and how busy the server is and depending on the
-
-sample size you are trying to impute of course
-
-Historical milestones -Sanger
-
-so in parallel to michigan imputation server uh there is also a sanger institute uh has
-
-a similar service in this service also you can upload your data in a vca format and optionally
-
-perform pre-phasing using beagle or shaping software and current reference panels
-
-in the sanger imputation server includes hrc uk 10k and 1000 genomes
-
-as i said there is also a server dedicated to the
-
-topmat this is all very self
-
-explanatory uh this is how uh the sanger imputation server would like
-
-you to prepare the data so there is a whole a bunch of instructions there that you would like to use
-
-um so the use of these services comes with instruction and manuals so feel free to make an account there and run
-
-some test data says in there you will need to qcn format the data as required
-
-in the instructions you will need to match the coordinates and reference level of the genome bills and prepare one file for each chromosome this is for
-
-sanger imputation server and another important thing in terms of imputation is of course the speed
-
-Speed-Impute 5 PLOS GENETICS
-
-so increasing reference panel size improves accuracy of markers with low minor allele frequencies but
-
-this positive every increase in computational challenges for imputation methods so recently a new imputation software
-
-input 5 was introduced from the same group so it does memory efficient imputation by selecting haplotypes using
-
-the positional borrows wheeler transform so using hrc reference panel
-
-the developers of the software uh showed that input 5 is up to 30 times faster
-
-than minimax 4 and up to 3 times faster than a beagle
-
-5.1 and uses less memory than both of these methods
-
-Example framework
-
-so using all the mentioned considerations up until now you can
-
-build an insico framework similar to this one so you can use for instance blink functions for the first two steps
-
-of genetic data qc then you can check cheap information and
-
-strength issues using rhino tools and if needed you can update your genome
-
-build by using leftover tool and you can then preface by using shape it and
-
-finally imputed in-house or using one of the servers are mentioned so two links
-
-to this software are given here
-
-now take time
-
-probably hours to explore these three imputation services uh of
-
-sanger michigan and topmatz uh you will be asked to make an account
-
-and perhaps it will be need to be improved so take your time to do so
-
-Imputation QC
-
-and the next topic is imputation related qc so there are two qc steps um
-
-around imputation one is pre-imputation qc um so we have already discussed standard
-
-qc after genotyping and on top of that you you may want to exclude snips with less than one percent minor allyl
-
-frequency and a post imputation quality is assessed
-
-by information measures which is in some value in the range of 0
-
-to 1 and it is typical to filter snips by this
-
-value less than 0.8 for a strict filtering or less than 0.4
-
-and in the impute software this is called infoscore and in the minimax
-
-imputation software this is called r square per snip so it's important to check quality of
-
-type snips in the scaffold in the region also by visual inspection of cluster
-
-plots and you may also want to produce quality plots per chromosome
-
-varying by minor allele frequency strata and a position
-
-on the chromosomes for instance is an example figure this
-
-Imputation quality vs MAF
-
-shows a typical relationship between minor allyl frequency and imputation quality
-
-so on the y-axis you see the imputation accuracy as a determined by imputation
-
-quality as by r square on infoscore from different softwares and on the
-
-x-axis you see the minor allele frequency you see that the accuracy is top when
-
-the minor alarm frequency is high when the allyl is common and more common and then the accuracy
-
-goes lower where the minority frequency goes lower as well you still have some
-
-snips which you still have some well-imputed snips
-
-among the rare ones as well but most of the low quality snips are going to come from a low minor added frequency
-
-snips so keep in mind that when you filter by imputation quality you will be filtering out a lot of rare snips as
-
-well so what are the factors affecting imputation quality
-
-Factors affecting imputation
-
-so at the genome-wide level the number of individuals imputed has something to
-
-do with it for this reason we merge scaffold data sets before imputation if we are going to impute
-
-more than one so the the more the merrier
-
-and the second factor is the reference panel
-
-the choice of the reference panel as well as the whole idea is to use the correlation between snips
-
-across different populations and this may be different from population to population
-
-you want to go for a large multi-ethnic panel if you're not able to go for a
-
-large ethnic specific panel and uh finally at the snip level uh the
-
-lower the minor life frequency the lower the quality of the imputation
-
-is going to be and how to analyze the imputed data
-
-Analysis of imputed genotypes
-
-so for each individual imputation provides probability distribution of
-
-possible genotypes for each untyped variant these properties can be converted into
-
-best guest genotypes but this is not something really generally recommended as it increases false
-
-positives and it reduces power but also you want to filter your best
-
-best guess genotypes you want to put a strict filtering on the best uh guest genotypes and this would result
-
-more nas in your data set so it's better to convert the uh
-
-probabilities to expected allele counts and analyze uh by taking the uncertainty
-
-in the imputation into account that's really important and to do that you need to match the
-
-data formats to the software not all software uses all types of data and you may need to do
-
-data conversions um and um software called epex snip test to
-
-and link to supports the knowledge information and you need to check the lecture from
-
-medic magi for analysis of genome-wide data
-
-Messages
-
-um so this is the last slide of this lecture so the take-home message is that
-
-is we are dealing with hypothesis free approaches here unfortunately it all comes down to the bittersweet money and
-
-uh resources we have so you need to think what is the best and most cost effective way of getting
-
-genetics done in large sample size and the answer is combining a dense genome scan array with imputation as the reference panels are free at the moment and cost of arrays are going lower as well but you really need to think as the in silico part of doing so also will cause staff and a computational resources to some level and what else should you consider so in comparison you want to know depending on your research question of course whether there is a better array for you or perhaps an array or a metabold chip if you are going to conduct your research in a in a very restricted field and the most importantly what are the future uses of this data because obviously you don't want to build something that you're going to use only a couple of for only a couple of years and finalize the research on that you want to you ideally want to invest in big data uh so are you gonna invest in population based cohort or disease-based cohort is it going to be a short-term project or is it going to be a follow-up study that's going to be likely build up and extended extended throughout the years and by inclusion of new phenotypes so and finally who do you want to collaborate with which consortia which disease
-
-um yeah so i hope this lecture will be useful for your research and future studies and for the people who are interested and to have a better and in-depth understanding of imputation every year two times we have a jivas course organized by university of surrey in collaboration with imperial college and university of tartu from estonia this is a hands-on this includes a hands-on workshop as well as theoretical uh lectures where we teach these concepts and matters in more detail so the last one was in five to ten july 2021 and for information there is an email address you can connect to thank you very much and have a nice conference of the remaining time
+Um, yeah. So, I hope this lecture will be useful for your research and future studies, and for the people who are interested in having a better and in-depth understanding of imputation. Every year, two times, we have a GIVAS course organized by the University of Surrey in collaboration with Imperial College and the University of Tartu from Estonia. This course includes a hands-on workshop as well as theoretical lectures, where we teach these concepts and matters in more detail. The last one was in May 10th to July 5th, 2021. For more information, there is an email address you can connect to. Thank you very much and have a nice conference for the remaining time.
