@@ -2,6 +2,8 @@
 title: "Chapter 2: The Genome"
 ---
 
+![](02_genome.jpg)
+
 > *Chapter goals:*
 >
 > 1.  *Become familiar with the basic structure and organization of the genome and how it is regulated.*

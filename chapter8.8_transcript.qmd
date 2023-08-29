@@ -10,701 +10,43 @@ title: "Chapter 8.9: PheWAS (Video Transcript)"
 
 **Presenter(s)**: Dr. Joshua Denny, All of Us Research Program
 
-**thank you very much it's a pleasure to**
+**Joshua Denny**:
 
-be here as always and talking about just
+Thank you very much. It's a pleasure to be here, as always, and talking about, just, the amazing stuff that's happening here in the UK Biobank. Let\'s see... Alright, great. So to start with, we've talked a lot about genome-wide association studies and sequencing, and we've also talked about phenome-wide association studies as well. That's going to be the focus of my talk. And just to orient us, essentially what we're doing is thinking about an independent variable and exploring what phenotypes and the range of phenotypes that are available and associated with that. We're really anchoring on the fact that we have richly and systematically phenotyped sets of individuals, such as in the UK Biobank, and other electronic health record datasets, which is where this started.
 
-the amazing stuff that's happening here
+Usually, that's based on things like billing codes, but I don't want to limit us there. You can think about laboratory values, you could think about natural language processing, and things like that as well. Most of it has been based on billing codes. So to start with, I want to orient us to a discovery study out of the Electronic Medical Records and Genomics Network, eMERGE, in the US. It was five sites that worked together for a carefully validated phenotype. We have used codes, labs, medications, natural language processing to find these cases and manually validate who was a case for presumptive autoimmune hypothyroidism and controls. We\'d identified the thyroid transcription factor that was associated and replicated this. Then, we did a... we took a variant, the same variant that was found here, and did a pheWAS on that variant in a slightly larger population -- a much larger population, you know, that was unselected for any given phenotype. And hypothyroidism was the highest associated phenotype there, but we also had some other thyroid diseases that came up, and things like atrial flutter were associated, which we know that hypothyroidism is less likely to manifest with atrial flutter.
 
-in the UK biobank
+And so, this gives an opportunity to look at the performance of these two methods. And so, you know, on the left, we have the schematic of the algorithm we use, and then we use these mappings called pheWAS codes, or phecodes. And we usually say there have to be two or more that map into that phecode. And, you know, you can see the odds ratios are essentially the same between the two approaches within our population of individuals within eMERGE. You know, we identified more cases with the pheWAS codes than we did with the algorithm.
 
-alright great so to start with you know
+So, you know, there\'s many approaches to pheWAS. Just talking about that, you know, most used billing codes in the U.S. That's been historically ICD-9 \[International Classification of Diseases, Ninth Revision\] with the clinical modifications, and now ICD-10 after 2015. There's about 65,000 ICD-10-CM \[International Classification of Diseases, Tenth Revision, Clinical Modification\] codes. And on the right, you can see some of the ways this works. So the phecodes have numbers that kind of look like ICD-9 codes, but they're actually not. And then what we do is we group like codes now across ICD-9 and ICD-10, and ICD-10-CM codes to a given phecode. And so, all the Type 1 codes come together, which is not obvious from the ICD-9 coding group system. And then each of those also defines ranges of control groups in addition to the Fee groupings or other groupings in the U.S.
 
-we've talked a lot about genome-wide
+There's some, the AHRQ has released some software that groups things into about 300 diseases. TreeWAS is another thing you can also use. Raw ICD codes, for instance, that gives you a challenge, of course, mapping between ICD-9 and ICD-10. And you can do many other things. Survey data has been run across the UK Biobank and other things that I've talked about, like the procedures.
 
-Association studies and sequencing and
+So here's another example: pheWAS driven by EHR data looking at imputed HLA types into the two and four-digit types of HLA. And you can see, you know, quickly it highlights the fact that there are different associations between class one and class two HLA alleles. And what helps you think about the range of associations. And overall, I think, there were a hundred or so significant associations, most of which were known and a few new ones. But what's more interesting is, by doing it in a single population, you can actually look across those phenotypes. And then look for pleiotropy and see, you know, if you adjust and condition on one and the other, do you see, you know,  that they're truly independent associations? And you can also see, we can take a given HLA type that, you know, one or two HLA types that may put you similarly at risk for rheumatoid arthritis may have a differential effect on your risk for type one diabetes, for instance. So, that is a tool that you can rapidly explore using this kind of technique.
 
-and we've talked to them about phenome
+An important aspect is validating its efficacy. So, one of the early things we did using our ICD-9 codes across the eMERGE was replicating known associations in the GWAS Catalog. We found 86 phenotypes that were... could be represented in the electronic health record and a number of SNPs \[single nucleotide polymorphisms\], about 750 overall SNP-phenotype pairs. Overall, we replicated 210 of them across a number of disease classifications and 66% percent of those for which we were adequately powered in this population of 13,000 people, as well as finding some novel associations, the top of which we replicated.
 
-wide Association studies as well that's
+It also allows us to actually compare the effect size. So here, you might see something that you would expect to see in that the effect sizes from the GWAS studies are typically a little bit lower than what's in the GWAS Catalog. Now, some of that's probably due to the winner's curse, but some of it's also due to the phenotype being not quite as accurate, and it helps you think about the ones where you have the most error. The most common error, and it was really, universally, type 1 diabetes is often mis-coded. In fact, 96% of the time, we found type 1 diabetics had type 2 diagnosis codes. So, it made it, it made it, and the reverse is true, 56% of the time. So, it caused a lot of inaccuracy in the type 1 diabetes phenotype, and we had trouble replicating some of those SNPs. And we've actually instituted methods to fix that problem, and we can recover those associations.
 
-going to be the focus of my talk and
+Here's a way you can use pheWAS in concert with aGWAS. So, we did a GWAS in eEMERGE, looking at the longitudinal risk of cardiovascular disease on a statin and found variants that are tied to expression of lipoprotein(a) were associated with that outcome as a longitudinal analysis. And that risk is increased for those that have, you know, kind of ideal cholesterol levels of less than 70.
 
-just to orient us you know essentially
+So, we looked at a pheWAS of this locus and, you know, as you'd expect, you see coronary atherosclerosis near the top. And fortunately, we see most of the phenotypes are ones we would expect to see, which gets us to the question, if you were to target this with a medication, you know, what potential effects would you see? One of the things that's interesting and wouldn't have been on our radar screen is this point over here, which is not quite statistically significant, was lung cancer. So, you know, this is a relatively small population of 13,000 people. As it's explored more, maybe that will turn out to be true or not. But it is a rapid tool for highlighting, especially, when you think about the scale of the UK Biobank. I mentioned mapping these to ICD-10 and ICD-10-CM codes. It just shows a little bit of a process and the vocabularies and systems that we used in the process, with some manual validation. It is still in what we call a beta form, but you can see it covers about 90% of the billed ICD codes in the UK Biobank. And amongst the 10% that aren't there, most of those are not actual disease codes. Only a small fraction of those represent true disease codes. And we did an evaluation using our data with ICD-9 and ICD-10 codes in terms of pheWAS, and you can see that the effect sizes between this phenotypic population were essentially the same for these two known associations with that SNP.
 
-what we're doing is thinking about an
+I want to give a few examples. Actually, Kristen showed this earlier, doing a pheWAS in the UK Biobank and just tons of associations associated with atrial fibrillation genetic risk score for AFib. And when they condition for the phenotypes, the cardiovascular phenotypes essentially, those associations went away. But it shows the power of a huge population to show lots of things you expect to see.
 
-independent variable than exploring what
+Here's another example for systolic blood pressure using a large GWAS done across the Million Veteran Program, as well as the UK Biobank. And just a number, number of associations showing up with systolic blood pressure. They also did the same with diastolic blood pressure and pulse pressure, to show that some of these phenotypes overlap. And you also see phenotypes that are not exactly associated with a cardiovascular disease in here coming out as well, endocrine being one of the more common ones.
 
-phenotypes and the range of phenotypes
+Here\'s a resource, Kristen also talked about the SAGE approach, using a saddle point approximation to create an efficient and accurate way of calculating these kinds of results at scale for the UK Biobank. They have produced a website where you can explore these phenotypes, calculated using the same approaches for phecodes across the UK Biobank. And this \[slide\] just shows a particular AFib SNP in that website, and the URL is there at the bottom.
 
-that are available and associated with
+So, you know, we've talked about this, and in looking at individual phenotypes, I want to spend the last few minutes talking about phenotypes in clusters and how we think of them. So, if you think about Mendelian diseases, they are a classic example that are often syndromic, presenting with many different features. These features may be what we bill in the electronic medical record as physicians, but it doesn't necessarily represent the disease, you know. The disease is not always recognised or may be recognised later into the disease course, as we heard about earlier with hemochromatosis. And so, through the Online Mendelian Inheritance in Man resource and the linked Human Phenotype Ontology \[HPO\], you know, we can go from a Mendelian disease to a list of features of that disease. These features have a vocabulary behind them. Then, so... So, our lab mapped those HPO features to phecodes, so basically allowing you to translate OMIM features into EHR phenotypes. Similar to a polygenic risk score, you know, creating a phenotype risk score, that looks similar in process, so, aggregating phenotypes up by their weights to produce a score for individuals. Essentially, you can crank this out across anything for which you have a map and do it at scale.
 
-that really anchoring on the fact that
+So, let's look at cystic fibrosis. We have a number of features from OMIM, and each of those is mapped to a Human Phenotype Ontology code. And so, we\'re using our phecode ontology of around 1,800 phenotypes and you can map the ones that line up fairly well to CF. They're not all exact matches; some are better matches than others, and then some that we don't have in the EHR, which, you know, we're familiar with.
 
-we have richly systematically phenotype
+And so, let's play that out on a couple of hypothetical individuals, hypothetical different conditions. I mentioned they're weighted, so features like bronchiectasis have a higher weight than features like asthma. And so, when you go across these individuals, they get different scores. What you find is that you can separate cases and controls for cystic fibrosis, you know, just using the features of the disease. So, we\'re not using the disease label and, in this example, we use manually validated cases versus controls who don't have any evidence of the disease in the text record. And we see a very significant result. And we've actually done this for 15 other diseases now, and in every case except for one, we've seen very strong separation between cases and controls. The one exception is phenylketonuria, which, as you know, in the US is on essentially every newborn screening test. And if you avoid phenylalanine exposure, you don't actually see the manifestations of the disease. So it sort of gives you a test of the effectiveness of newborn screening in removing the features of the disease in the population because they \[those who avoid exposure\] generally do not have elevated scores.
 
-sets of individuals such as in the UK
+So we turned this on a population of 21,000 people who had exome array genotyping and looked at 6,000 variants that were rare at a 1% level or less. And we found 18 significant associations, most of which were novel, and, importantly, we were able to change the ACMG \[American College of Medical Genetics\] clinical interpretations for eight of these variants towards likely pathogenic or pathogenic. So, this, using our population as a paradigm, I think this approach can be explored with larger rich phenotype populations such as what is in the UK Biobank.
 
-biobank and other electronic health
-
-record data sets which is where this
-
-started usually that's based on things
-
-like billing codes but I don't want to
-
-limit us there you can think about
-
-laboratory values you could think about
-
-natural language processing and things
-
-like that as well most of its been based
-
-on billing codes so to start with I want
-
-to orient us to a discovery study four
-
-out of the electronic medical records
-
-and genomics Network emerge in the US
-
-and it was five sites that work together
-
-for a carefully validated phenotype that
-
-we used codes labs medications natural
-
-language processing to find these cases
-
-and manually validate who was a case for
-
-autoimmune presumptive autoimmune
-
-hypothyroidism and in control and we'd
-
-identify the thyroid transcription
-
-factor that was associated and
-
-replicated this and then we did it took
-
-took a variant the same variant that was
-
-found here and did a fee wass on that
-
-variant in a slightly larger population
-
-and you know that was unselected our a
-
-much larger population unselected for
-
-any given phenotype and hypothyroidism
-
-was the the you know the highest
-
-associate a phenotype there but we also
-
-had some other thyroid diseases that
-
-came up and things like atrial flutter
-
-as associated which we know that there's
-
-you know hypothyroid or less likely to
-
-manifest with atrial flutter and so so
-
-this gives opportunity to look at the
-
-performance of these two methods
-
-and so you know on the left we have the
-
-schematic of the algorithm we use and
-
-then we use these mappings called fee
-
-wass codes or fee codes and we usually
-
-say there have to be two or more that
-
-map into that fee code and you know you
-
-can see the odds ratios are essentially
-
-the same between the two approaches
-
-within our population of individuals
-
-with an emerge
-
-you know we identified more cases and
-
-with the fee wast codes than we did with
-
-the algorithm and so you know there's
-
-many approaches that fee Wasson just
-
-talking about that you know said most
-
-used billing codes in the u.s. that's
-
-been historically icd-9 with the
-
-clinical modifications and now icd-10
-
-after 2015
-
-there's about 65,000 icd-10-cm codes and
-
-on the right you can see some of the
-
-ways this works so the fee codes have
-
-numbers that kind of look like icd-9
-
-codes but they're actually not
-
-and and then what we do is we group you
-
-know like codes now across icd-9 and
-
-icd-10 and icd-10-cm codes to you know a
-
-given fee code and and so all the type 1
-
-codes come together which is not obvious
-
-from the icd-9 coding group system and
-
-then each of those also define ranges of
-
-control groups in addition to the feed
-
-groupings or other groupings in the US
-
-there's some the AHRQ has released some
-
-software that groups things into about
-
-300 diseases tree wasps is another thing
-
-you can also use raw ICD codes for
-
-instance that gives you a challenge
-
-across of course mapping between icd-9
-
-and icd-10 and you can do many other
-
-things survey data has been run across
-
-the UK biobank and other things that
-
-I've talked about like the procedures so
-
-here's another example fee wasps driven
-
-by on EHR data looking at imputed HLA
-
-types into the two and four digit types
-
-of HLA and you can see you know quickly
-
-it highlights the fact that there are
-
-different associations between class one
-
-and class two HLA alleles and what helps
-
-you think about the range of
-
-associations and and overall I think
-
-there was a hundred or so significant
-
-associations most of which were known
-
-and a few of new ones but what's more
-
-interesting as by doing in a single
-
-population you can actually look across
-
-those phenotypes
-
-and and then look for pleiotropy and see
-
-you know if you adjust in condition on
-
-one and the other do you see you know
-
-that they're that they're truly
-
-independent associations and you can
-
-also see we can a given HLA type that
-
-you know one two HLA types that may put
-
-you
-
-similarly at risk for rheumatoid
-
-arthritis it may had differential effect
-
-for your risk on type one diabetes for
-
-instance and so so that is a tool that
-
-you know you can rapidly explore using
-
-this kind of technique an important
-
-aspect is validating its efficacy and so
-
-one of the early things we did using our
-
-icd-9 codes across the emerge was
-
-replicating known associations in the G
-
-wasps catalog we found eighty-six
-
-phenotypes that were could be
-
-represented in the electronic health
-
-record and a number of snips about seven
-
-hundred and fifty overall snip phenotype
-
-pairs overall we replicated in two
-
-hundred ten of them across the number of
-
-disease classifications and sixty-six
-
-percent of those for which we were
-
-adequately powered in this population of
-
-thirteen thousand people as well as
-
-vying some novel associations on the top
-
-of which we replicated it also allows us
-
-to actually compare the effect size so
-
-here you might you see something that
-
-you would expect to see in that that the
-
-effect sizes from the the\--why studies
-
-are typically a little bit lower than
-
-what's in the G wasps catalogue now some
-
-of that's probably due to the winners
-
-curse but some of it's also due to the
-
-phenotype being not quite as accurate
-
-and it helps you think about the ones
-
-that where you have the most error so
-
-the most common error and it was really
-
-I universally type one diabetes is often
-
-miss code in fact ninety six percent of
-
-the time we found type one diabetics had
-
-type two diagnosis codes and so so you
-
-know it made it it made it and the
-
-reverse is true fifty six percent of the
-
-time so so it caused a lot of inaccuracy
-
-in the type 1 diabetes phenotype and we
-
-had trouble replicating some of those
-
-snips and we've actually instituted
-
-methods to fix that problem and we can
-
-recover those associations so here's
-
-here's a way you can use fee wasps in
-
-concert with eg wasps so we did a GYN
-
-emerge looking at longitudinal risk of
-
-heart of a CO disease on a statin
-
-and found variants that are tied to
-
-expression of lipoprotein a were
-
-associated with that outcome as a
-
-longitudinal analysis and that risk is
-
-increased for those that have you know
-
-kind of ideal cholesterol levels at less
-
-than 70 so we looked at a loss of this
-
-lowest locus and you know as you'd
-
-expect you see coronary atherosclerosis
-
-near the top and and fortunately we see
-
-most of the phenotypes are ones we would
-
-expect to see which gets that the
-
-question of if you were to target this
-
-with a medication you know what
-
-potential effects would you see and so
-
-one of the things that's interesting and
-
-wouldn't have been on a radar screen is
-
-this point over here which is not quite
-
-statistically significance was lung
-
-cancer so you know this is a relatively
-
-small population from 13,000 people as
-
-it's explored more maybe that will turn
-
-out to be true or not but it is a rapid
-
-tool for highlighting especially when
-
-you think about the scale you could buy
-
-a bank I mentioned mapping these to
-
-icd-10 and icd-10-cm codes just shows a
-
-little bit of a process and the
-
-vocabularies and systems that we used in
-
-the process with some manual validation
-
-it is in what we call it's still in beta
-
-form but you can see it covers about 90%
-
-of the billed ICD codes in the UK
-
-biobank
-
-and amongst the 10% that aren't there
-
-most of those are not actual disease
-
-codes only a small fraction those
-
-represent true disease codes and we did
-
-an evaluation at using our data with
-
-icd-9 and icd-10 codes in terms of fee
-
-wasps and you can see that the effect
-
-sizes between this pandas population was
-
-essentially the same for these two known
-
-associations with that snip so I want to
-
-give a few examples actually Kristen
-
-showed this earlier doing a fee wass in
-
-the UK biobank and just tons of
-
-Association associated with atrial
-
-fibrillation genetic risk score for afib
-
-and and I when they condition for the
-
-phenotypes the cardiovascular phenotypes
-
-essentially those associations went away
-
-and but it shows the power of a huge
-
-population to show lots of things you
-
-expect to see here's another one for
-
-systolic blood pressure on a
-
-a large G wasit was done across the
-
-million veteran program as well as the
-
-UK biobank and just a number number of
-
-associations showing up with systolic
-
-blood pressure they also did with
-
-diastolic blood pressure and pulse
-
-pressure to show that some of these
-
-phenotypes overlap and you see
-
-phenotypes that are not exactly
-
-associated with a cardiovascular disease
-
-in here coming out as well
-
-endocrine being one of the more common
-
-ones here's a resource Kristen also
-
-talked about the sage approach - I'm use
-
-saddle point approximation - I created
-
-an efficient and accurate way of
-
-calculating these kind of results at
-
-scale to the UK biobank they have
-
-produced a website where you can explore
-
-those phenotypes calculated using the
-
-same approaches for fee codes across the
-
-UK biobank and this just shows a
-
-particular a-fib snip in that website
-
-and the URL there is there at the bottom
-
-so you know we've talked about this and
-
-and and in looking at individual
-
-phenotypes I want to spend the last few
-
-minutes talking about phenotypes in
-
-clusters and how we think of them so if
-
-you think about a Mendelian disease is
-
-is a classic example that are often
-
-syndromic presenting with many different
-
-features and those features you know are
-
-what we may bill in the electronic
-
-medical record as physicians but it
-
-doesn't necessarily represent you you
-
-know the the disease is not always
-
-recognized or you know may be recognized
-
-later into the disease course as we you
-
-know heard about earlier with
-
-hemochromatosis and so through the
-
-online Mendelian inheritance and man
-
-resource and the linked human type human
-
-phenotype ontology you know we can go
-
-from a Mendelian disease to a list of
-
-features of that disease which have a
-
-vocabulary behind them and then so so
-
-our lab mapped those hpo features to fee
-
-codes so basically allowing you to
-
-translate oh men features into EHR
-
-phenotypes and then similar to a
-
-polygenic risk or you know creating a
-
-phenotype risk or that that looks
-
-similar in process so aggregating
-
-Phoenix
-
-by their weights I'm to produce the
-
-score for individual and essentially you
-
-can crank this out across anything for
-
-which you have a map and do it at scale
-
-so let's look at the Cystic Fibrosis a
-
-number of features from omen and each of
-
-those is mapped to a human phenotype
-
-ontology code and so I'm using our fee
-
-code ontology of around 1,800 phenotypes
-
-and you can map the ones that line up
-
-fairly well to the CF they're not all
-
-exact matches some are better matches
-
-and others and then some that we don't
-
-have in the HR which you know we're
-
-familiar with and so let's play that out
-
-on a couple individuals hypothetical
-
-different conditions I mentioned they're
-
-weighted so features like bronchiectasis
-
-have a higher weight than features like
-
-asthma and so when you go across this
-
-you know individuals get a different
-
-score and what you find is you can
-
-separate case in the controls 460
-
-fibrosis
-
-you know just using the features of
-
-disease so we're not using the disease
-
-label but in this example we use
-
-manually validated at cases versus
-
-controls who don't have any evidence of
-
-the disease in the in the text record
-
-and we see a very significant result and
-
-we've actually done this for 15 other
-
-diseases now and in in every case except
-
-for one we've seen very strong
-
-separation between cases and controls
-
-the one exception is phenylketonuria
-
-which as you know in the u.s. is on
-
-essentially every newborn screening test
-
-and if you avoid and feel an exposure
-
-you don't actually see the you know the
-
-manifestations of the disease so it sort
-
-of gives you a test of the effectiveness
-
-and newborn screening in removing the
-
-features of Z's in the population
-
-because they generally do not have
-
-elevated scores so we turn this on a
-
-population of 21,000 people that had
-
-eczema rate genotyping and looked at
-
-6000 variants that were rare at at 1%
-
-level or less and we found 18
-
-significant Association most of which
-
-were novel and we were able to change
-
-the ACMG clinical interpretations for
-
-eight of these variants towards likely
-
-pathogenic or pathogenic and so so this
-
-using our population as a paradigm that
-
-I think can be explored with larger rich
-
-phenotype populations such as what is in
-
-the UK biobank so I want to end and with
-
-represent a recognition of some of the
-
-many people contributing to this work
-
-and the middle row is probably the most
-
-important row as as the folks actually
-
-doing the work thank you very much
-
-\[Applause\]
+So I want to end with a recognition of some of the many people contributing to this work. The middle row is probably the most important row, as these are the folks actually doing the work. Thank you very much.
 
 ------------------------------------------------------------------------
 
@@ -718,7 +60,7 @@ doing the work thank you very much
 
 **Lea Davis:**
 
-...and the biobank that\'s attached to them at Vanderbilt. And so, this opened up a newer area of investigation for me -- something that I've been interested in for a long time but hadn't had the resources to investigate. And so, that's basically using EHR-based \[electronic health records-based\] genomic approaches to try to better understand the relationship between mental health and physical health. That's the story that I'm going to be talking to you about today. So, if I can advance my slides\... oh, there we go. Okay.
+...and the biobank that's attached to them at Vanderbilt. And so, this opened up a newer area of investigation for me -- something that I've been interested in for a long time but hadn't had the resources to investigate. And so, that's basically using EHR-based \[electronic health records-based\] genomic approaches to try to better understand the relationship between mental health and physical health. That's the story that I'm going to be talking to you about today. So, if I can advance my slides\... oh, there we go. Okay.
 
 So this relationship between mental health and physical health is well-known -- that it's important. In one of the nice summary statements about the importance of this, it comes from the World Health Organization. On their website, they state that there is no health without mental health. And it's been documented for some time that poor mental health is a risk factor for a number of physical conditions, particularly chronic conditions. People with severe psychiatric illness are at a much higher risk of experiencing chronic physical conditions, and vice versa -- people with chronic physical conditions are also at risk of declining mental health. And so, I've actually come to think about this much like a disparity, in fact, that people with severe psychiatric illness experience these kinds of healthcare disparities. Oh, there we go. So, this is really sort of punctuated by the observation that the lifespan for people with severe psychiatric illness -- schizophrenia, bipolar disorder -- but also neuropsychiatric disorders like autism spectrum disorders and cognitive impairment, on average, the lifespan is shortened by 10 to 12 and a half years. It's thought that this is due to many possible reasons. One being a difference in access to healthcare -- related to employment and insurance issues here in the States. And that's certainly been shown to play a role, particularly for psychiatric illnesses such as schizophrenia, where there's a much higher rate of homelessness.
 
@@ -734,9 +76,9 @@ Okay, and so, like many of us in this field, this is also an area of personal in
 
 So, while, on the whole, this has been an understudied area, there have been a few areas of focus, particularly related to cardiovascular disease and cerebrovascular disease. And in recent years, there have been some really large meta-analyses looking at the prevalence and cumulative incidence of cardiovascular disease in people with severe psychiatric illness, primarily bipolar disorder, schizophrenia, and major depression. This is actually a recent paper with a meta-analysis of, I think, 92 studies that had an impressive sample size: over three million patients with one of those three disorders and over a hundred million controls, where they \[study authors\] investigated the increased risk of both cardiovascular disease and cerebrovascular disease in these populations. And so, basically, the take-home is that there is a significantly increased risk for both diseases, cerebrovascular and cardiovascular disease. This risk persists even after adjusting for some of the health behaviors that may be related to the incidence of disease, so things like smoking, poor diet, or BMI.
 
-So based on these epidemiological studies that are just now starting to be published, we're also interested in asking the same kinds of questions and better understanding the relationship between mental and physical health using our EHR. In particular, we want to understand if there is some shared biology; if it\'s the case that poor mental health causes poor physical health or that poor physical health causes poor mental health. Really, our model is that it's going to be all of the above. But understanding what the primary risk factors are for each type of chronic disease and where their shared biology is, yeah, I think this is going to be an important area of research.
+So based on these epidemiological studies that are just now starting to be published, we're also interested in asking the same kinds of questions and better understanding the relationship between mental and physical health using our EHR. In particular, we want to understand if there is some shared biology; if it's the case that poor mental health causes poor physical health or that poor physical health causes poor mental health. Really, our model is that it's going to be all of the above. But understanding what the primary risk factors are for each type of chronic disease and where their shared biology is, yeah, I think this is going to be an important area of research.
 
-Another question that we have is: Do these relationships between mental health and physical health transcend our diagnostic boundaries? Is it really the case that it\'s just people with severe psychiatric illness or diagnosable neurodevelopmental disorders who are at risk? Or is it the case that the risk is continuous? That actually, across the entire spectrum of genetic risk for these traits, that there's also an increased risk for these chronic health conditions?
+Another question that we have is: Do these relationships between mental health and physical health transcend our diagnostic boundaries? Is it really the case that it's just people with severe psychiatric illness or diagnosable neurodevelopmental disorders who are at risk? Or is it the case that the risk is continuous? That actually, across the entire spectrum of genetic risk for these traits, that there's also an increased risk for these chronic health conditions?
 
 And then, are there particular health conditions for which people with developmental disabilities and severe psychiatric illness are at high risk? So there's been a lot of work done on cardiovascular disease and cerebrovascular disease, and I think actually a fair bit of work on type 2 diabetes. But, outside of those primary chronic health conditions, there really hasn't been much, and so we really want to look  phenome-wide at these relationships.
 
@@ -744,13 +86,13 @@ And then finally, we want to see if this can help us understand the best point o
 
 **Facilitator:** Don't forget to unmute yourself if you have one. And I mean, one short question. To move to the first slide here, so this is the shortening of the lifespan for severe psychiatric diseases, and so the one thing that was... not missing on this list is suicide. So, big toll to the psychiatric disease here, is it not the main cause for that, or...?
 
-**Lea Davis:** No it isn\'t, actually. It\'s definitely a contributory cause, but actually, the primary causes are chronic health conditions. Suicide is definitely an increased risk in this population, absolutely. But it doesn\'t account.
+**Lea Davis:** No it isn't, actually. It's definitely a contributory cause, but actually, the primary causes are chronic health conditions. Suicide is definitely an increased risk in this population, absolutely. But it doesn't account.
 
 **Facilitator:** So, you also mentioned already, being in facilities, being in, like, prisons, etc. So, are there other comparisons between, for example, also the US and Europe? Are there comparisons between Caucasians and other ancestries? Do you have any idea here already?
 
 **Lea Davis:** Honestly, the literature is pretty scant, so I'm not sure if that's really been investigated systematically and with sufficient sample size. It really hasn't been. I mean, I think most of the papers looking at these associations have been published from the '90s and on, so there's not the kind of 80-year body of literature like there is for cardiovascular disease and in healthy populations. So, yeah, I guess the short answer is I'm not sure that it's been systematically investigated.
 
-**Facilitator:** Interesting. Do others have some questions? It says that there are two or three \[individuals\] on the call that are not muted. So again, if you\'re on the call and not muted, please mute yourselves. I can\'t right now.
+**Facilitator:** Interesting. Do others have some questions? It says that there are two or three \[individuals\] on the call that are not muted. So again, if you're on the call and not muted, please mute yourselves. I can't right now.
 
 **Lea Davis:** So, we believe that EHR-based genomic approaches are actually a great way of investigating several of these questions that we have. So, the EHR, the electronic health record, allows us to investigate the relationships between phenotypes, and the biobank that we have also facilitates investigation of the genetic relationships between these phenotypes. And so, we can then also compare the genetic correlations to the phenotypic correlations to better understand, you know, where there are environmental risk factors that contribute to the phenotypic relationships and genetic risk factors that contribute to the genetic relationships between traits. And it also allows us to utilise the polygenic architecture of these complex traits and develop quantitative models, so we're not necessarily relying on diagnostic categories but we can look at how genetic risk as a quantitative trait is related to risk for various phenotypes.
 
@@ -768,7 +110,7 @@ And so, we have now somewhere around 270,000 DNA samples that have been collecte
 
 **Facilitator:** Okay. And so, how many of these 50,000 are psychiatric patients?
 
-**Lea Davis:** Um, how many of the 50,000 have psychiatric codes? I\'m not exactly sure. Yeah, I actually don't have access yet to all 50,000 samples. It's not enriched for psychiatric codes, that. But we\'ve... So, you know, the genotyping data, it\'s actually a large project. Eventually, we'll have a 100,000 people genotyped. And so, the data is coming through in waves, and we actually were involved in pushing several of the psychiatric diagnoses through, but we haven't gotten those genotype samples yet. So, they\'re, yeah...
+**Lea Davis:** Um, how many of the 50,000 have psychiatric codes? I'm not exactly sure. Yeah, I actually don't have access yet to all 50,000 samples. It's not enriched for psychiatric codes, that. But we've... So, you know, the genotyping data, it's actually a large project. Eventually, we'll have a 100,000 people genotyped. And so, the data is coming through in waves, and we actually were involved in pushing several of the psychiatric diagnoses through, but we haven't gotten those genotype samples yet. So, they're, yeah...
 
 **Facilitator:** Right. Where are they genotyped right now?
 
@@ -786,15 +128,15 @@ And so, we have now somewhere around 270,000 DNA samples that have been collecte
 
 **Lea Davis:** Okay, so, as I mentioned before, we were very interested in taking advantage of the fact that most complex traits have a complex genetic architecture with a measurable polygenic component. So we can look at how the polygenic risk for all kinds of psychiatric disorders is also related to disease status for other chronic health conditions. So I think probably everybody on the call is familiar with this approach, but just in case, one of the methods that we're using is basically to calculate polygenic risk scores for everybody in our biobank. So, using some kind of large discovery GWAS and taking the effect sizes from that GWAS to create a linear weighted sum of the number of risk alleles. And then looking at how those polygenic risk scores segregate cases from controls across a number of different phenotypes phenome-wide.
 
-So we started with actually investigating this in both psychiatric disorders and in some of the previously published chronic health conditions. And so, I am starting with showing you coronary artery disease polygenic risk scores that are significantly associated with the EHR definition for coronary artery disease. So here we took the beta weights from the CARDIoGRAMplusC4D Consortium study, which had about 60,000 cases and 123,000 controls, and applied it to a small subset of our MEGA data target sample, just to make sure that indeed, coronary artery disease, as defined in carefully ascertained research samples, was related to the EHR diagnosis for coronary artery disease. And so, this included covariates median age across the EHR, sex, the top 10 PCs \[principal components\], and actually it\'s not listed here, but also genotyping batch. So you can see that our polygenic risk score accounted for almost 3 percent of the variance in CAD diagnosis within our EHR.
+So we started with actually investigating this in both psychiatric disorders and in some of the previously published chronic health conditions. And so, I am starting with showing you coronary artery disease polygenic risk scores that are significantly associated with the EHR definition for coronary artery disease. So here we took the beta weights from the CARDIoGRAMplusC4D Consortium study, which had about 60,000 cases and 123,000 controls, and applied it to a small subset of our MEGA data target sample, just to make sure that indeed, coronary artery disease, as defined in carefully ascertained research samples, was related to the EHR diagnosis for coronary artery disease. And so, this included covariates median age across the EHR, sex, the top 10 PCs \[principal components\], and actually it's not listed here, but also genotyping batch. So you can see that our polygenic risk score accounted for almost 3 percent of the variance in CAD diagnosis within our EHR.
 
 So, this was encouraging. And we actually applied this model also to the lipid traits that have been studied by the Global Lipids Consortium -- so HDL, LDL, and triglycerides. And we tried to model the relationship, the known relationships between those risk factors and coronary artery disease. Oops, so I'm going to take just a short methodological detour here because one of the other things that's come to my attention in working with the Department for Biomedical Informatics, you know, often, when I present polygenic analyses, I get the question from people who do a lot of machine learning, "Where is your feature selection step?" Right? So, in your genome-wide association study, training the weights, but then, how do you know which SNPs to include in your model and the target data? And typically, really, what we often do is just work across a number of thresholds, and, you know, see how the R^2^ might change if we include just the genome-wide significant SNPs or, you know, everything at a p-value of less than 0.5 or less than 1. And so, kind of investigate across different thresholds.
 
 But we wondered, really, how well we would do if we actually took a training set and used it to select a threshold for including SNPs in the polygenic risk score, and then applied it to a validation set. Because this is actually, you know, I think, ultimately what we would do. Really, just out of curiosity we looked at that now. The slide is a little busy but I will walk you through it.. We have our discovery GWAS phenotypes in the first column and the target phenotype in the second column. So the discovery GWAS was either the Global Lipids Consortium for HDL, LDL, or triglycerides. Can you guys see my cursor there?
 
-**Facilitator:** We can, we definitely can, but there is someone not muted in the background. Not sure if this is this one person who is not muted or if it\'s you, Lea, I\'m not sure.
+**Facilitator:** We can, we definitely can, but there is someone not muted in the background. Not sure if this is this one person who is not muted or if it's you, Lea, I'm not sure.
 
-**Lea Davis:** No, it's not me. I heard it, too. It\'s okay.
+**Lea Davis:** No, it's not me. I heard it, too. It's okay.
 
 **Facilitator:** But we see your cursor, yes.
 
@@ -802,21 +144,21 @@ But we wondered, really, how well we would do if we actually took a training set
 
 \[Note: There are noises in the background of the call due to an individual not being muted, 24:39 to 25:14\]
 
-**Facilitator:** Gerome, if you hear us, please mute yourself! I don\'t have the claim to power. They can\'t hear us.
+**Facilitator:** Gerome, if you hear us, please mute yourself! I don't have the claim to power. They can't hear us.
 
 **Lea Davis:** Yeah. \[laughs lightly\] So we had a training sample of about 9,000 people, a validation sample of about 16,000 people. And so, you can see the p-value threshold that was the best fit in the training sample, the number of SNPs that was included in that best fit, the adjusted R^2^ value, or the proportion of variance explained. And the p-value for that...
 
 \[Note: There are noises in the background of the call due to an individual not being muted, 25:35 to 25:55\]
 
-**Lea Davis:** Sorry, it\'s hard to...
+**Lea Davis:** Sorry, it's hard to...
 
 **Facilitator:** I mean, they seem to be like they don't have the speaker on, they don't even listen, so it's a little bit annoying. So please, everybody, again, here, if you hear us, please mute yourself or just, if you're not listening, just leave the call. That's fine as well.
 
-**Lea Davis:** Okay, so we used the same threshold that was identified in the training sample to define the PRS in the validation sample. There's a, you'll notice, there\'s a different number of SNPs included, and we think that this is because the training sample was on the Omni \[genotyping\] platform and the validation sample was on the MEGA platform, even though they were both imputed to the same reference panel, and they're both European populations. The MEGA sample seems to have better overlap with the original discovery GWAS, and so the R^2^ for, you know, both the training and validation samples, particularly for the lipid traits, are really pretty impressive and, and actually start to approach the SNP-based heritability, for, in particular, for HDL.
+**Lea Davis:** Okay, so we used the same threshold that was identified in the training sample to define the PRS in the validation sample. There's a, you'll notice, there's a different number of SNPs included, and we think that this is because the training sample was on the Omni \[genotyping\] platform and the validation sample was on the MEGA platform, even though they were both imputed to the same reference panel, and they're both European populations. The MEGA sample seems to have better overlap with the original discovery GWAS, and so the R^2^ for, you know, both the training and validation samples, particularly for the lipid traits, are really pretty impressive and, and actually start to approach the SNP-based heritability, for, in particular, for HDL.
 
-And so, I\'ve put an asterisk here because the p-value threshold in the training sample was actually the same as the best-fit p-value threshold in the validation sample. So, I can pause there for any questions. We were actually kind of surprised that there were any traits where the best-fit threshold was the same across multiple samples. And so, I think this is actually really interesting and potentially indicating that we're starting to approach, kind of, maximum information for HDL and LDL in our GWAS.
+And so, I've put an asterisk here because the p-value threshold in the training sample was actually the same as the best-fit p-value threshold in the validation sample. So, I can pause there for any questions. We were actually kind of surprised that there were any traits where the best-fit threshold was the same across multiple samples. And so, I think this is actually really interesting and potentially indicating that we're starting to approach, kind of, maximum information for HDL and LDL in our GWAS.
 
-Right, in the interest of time, I'll just move on. So, we took the same best-fit thresholds and polygenic scores developed from them, and applied them in a pheWAS analysis. So what you\'re looking at here is a Manhattan plot from our pheWAS where, along the x-axis, we have, kind of, classified phenotypes, and along the y-axis, the -log10 of the p-value for the PRS. The direction of the arrow indicates the direction of risk. So, if there were higher polygenic risk scores among cases, you\'ll see an up arrow, versus control, you'll see a down arrow. So, this pheWAS was for LDL, sorry, for HDL, and we see a protective effect of HDL on type 2 diabetes. And this has been previously shown. So, this was a good proof-of-concept.
+Right, in the interest of time, I'll just move on. So, we took the same best-fit thresholds and polygenic scores developed from them, and applied them in a pheWAS analysis. So what you're looking at here is a Manhattan plot from our pheWAS where, along the x-axis, we have, kind of, classified phenotypes, and along the y-axis, the -log10 of the p-value for the PRS. The direction of the arrow indicates the direction of risk. So, if there were higher polygenic risk scores among cases, you'll see an up arrow, versus control, you'll see a down arrow. So, this pheWAS was for LDL, sorry, for HDL, and we see a protective effect of HDL on type 2 diabetes. And this has been previously shown. So, this was a good proof-of-concept.
 
 We did a similar type of analysis for our LDL polygenic risk score, where, again, we see a strong association with dyslipidemias and coronary artery disease. So these are also known associations. Interestingly, so I don't have it here in this presentation, but there is, the phenotypic correlations between LDL and the diseases tested in our phenome-wide analysis were much stronger. So, we saw lots of different phenotypes associated with the measured LDL, but these are the only phenotypes that are associated with genetically predicted LDL.
 
@@ -838,31 +180,31 @@ We were also interested in seeing if there was a difference between males and fe
 
 **Lea Davis:** Well, what time is it?
 
-**Facilitator:** Sorry, we have still another 17 minutes? But let\'s leave another 5 minutes to the end at least. So you have good... 10 to 12 minutes?
+**Facilitator:** Sorry, we have still another 17 minutes? But let's leave another 5 minutes to the end at least. So you have good... 10 to 12 minutes?
 
 **Lea Davis:** Okay, alright. Okay, great. So, since we were primarily interested in following up the associations between polygenic risk for loneliness and the coronary artery disease codes, we focused in on the males and looked there at the association after adjusting for, again, MDD or BMI. And so, again, we see that myocardial infarction remains significantly associated after adjusting for either BMI or MDD, and actually also remains associated after adjusting for both MDD and BMI. And so this, I think, now provides a really nice substrate for a Mendelian randomisation analysis as well.
 
 The second part here is actually just an introduction to some of the work that we have planned. And so I wanted to just briefly go over it and invite any ideas or collaborations if people are particularly interested in certain biomarkers for phenotypes that they're studying. So, within the EHR, we have access to actually thousands of labs, but many of those are kind of unique, special snowflakes, so they may have only been ordered on, you know, a small handful of patients.
 
-So, when we start looking at labs that have a larger sample size, it turns out we have about 350 labs with over a thousand individuals. And actually, I should say that all of these labs have at least a thousand observations. So, if we say that we have 350 labs with at least a thousand individuals and at least a thousand observations, then it means everyone has been measured at least once. But then, we\'ve got a larger number of labs where we have a smaller number of individuals but a larger number of observations per individual. And so, this data is also, you know, really rich for looking at longitudinal associations between the relationship with, you know, psychiatric illness and changes over time in various biomarkers. So in total, we have about 500 labs with at least a hundred people, at least a thousand observations.
+So, when we start looking at labs that have a larger sample size, it turns out we have about 350 labs with over a thousand individuals. And actually, I should say that all of these labs have at least a thousand observations. So, if we say that we have 350 labs with at least a thousand individuals and at least a thousand observations, then it means everyone has been measured at least once. But then, we've got a larger number of labs where we have a smaller number of individuals but a larger number of observations per individual. And so, this data is also, you know, really rich for looking at longitudinal associations between the relationship with, you know, psychiatric illness and changes over time in various biomarkers. So in total, we have about 500 labs with at least a hundred people, at least a thousand observations.
 
 So, this work... Sorry, this data source really has not been utilised very much in the EHR space, partially because it's really messy data. So it's taken us close to two years actually to really carefully QC \[quality control\] all of the labs that had sufficient sample size. It's also challenging because, again, it's a hospital population, and so, you know, a lot of the times, the labs are being drawn because somebody is actually sick. And so, this can be a challenge to interpretation. But, at the same time, the fact that we have the entire EHR allows us to investigate the relationship between diagnoses and changes in lab values.
 
-Some of the benefits of using this data are that we have a really large sample size that is really rich for clinical data. So it\'s longitudinal. We\'ve got over 20 years\' worth of data. And we can, as I\'ve mentioned a couple times now, test the effects of many possible mediating and moderating variables. And then, we can also go into the charts themselves and validate by chart review. So, developing tools to both QC and visualise this data has been a really tremendous effort by Peter Straub, a programmer in my lab. So he has developed a Shiny app and a whole set of tools that we\'re actually planning on making publicly available. And we\'ll be able to make the summary data for all these different labs available, so that we can look at how they vary by age, by sex, by race, and that groups with other bio banks and labs, you know, can locally also download these tools and apply them to their data.
+Some of the benefits of using this data are that we have a really large sample size that is really rich for clinical data. So it's longitudinal. We've got over 20 years' worth of data. And we can, as I've mentioned a couple times now, test the effects of many possible mediating and moderating variables. And then, we can also go into the charts themselves and validate by chart review. So, developing tools to both QC and visualise this data has been a really tremendous effort by Peter Straub, a programmer in my lab. So he has developed a Shiny app and a whole set of tools that we're actually planning on making publicly available. And we'll be able to make the summary data for all these different labs available, so that we can look at how they vary by age, by sex, by race, and that groups with other bio banks and labs, you know, can locally also download these tools and apply them to their data.
 
-And this is sort of the concept map for what we would eventually like to do. So this is, you know, that we would take, you know, the beta values from GWAS of many psychiatric illnesses, calculate polygenic risk scores across everybody in BioVU, and then look at how these risk scores are related to median values in, you know, hundreds of routinely collected labs. And, as I mentioned before, we can also use longitudinal models to see how they\'re related to change in lab values over time.
+And this is sort of the concept map for what we would eventually like to do. So this is, you know, that we would take, you know, the beta values from GWAS of many psychiatric illnesses, calculate polygenic risk scores across everybody in BioVU, and then look at how these risk scores are related to median values in, you know, hundreds of routinely collected labs. And, as I mentioned before, we can also use longitudinal models to see how they're related to change in lab values over time.
 
-So we've started doing this a little bit for some of these traits that I've been talking about so far. So this is just focusing in again on HDL, LDL, and triglycerides, and looking at how genetic risk scores for coronary artery disease, loneliness, or major depression is associated with median lab values. And so, in each of these plots, we\'re looking at the R^2^ values, the proportion of variance explained in HDL, LDL, and triglycerides, on the y-axis. And then, the discovery GWAS p-value threshold on the x-axis. So that we can see kind of across the board how well do, you know, the MDD risk scores, CAD risk scores, and loneliness risk scores predict HDL, LDL, and triglyceride levels. And so, interestingly, we see that,  for HDL, our loneliness risk scores actually tend to outperform our CAD risk scores. And for LDL, you know, it looks like there is some differences, but I don\'t think these are actually really meaningful because below 0.1% variance \[explained\], it\'s not, not a significant association between the risk score and the median value. And then, in our triglyceride analysis, we do see the CAD risk score outperforming the loneliness risk score, which is what we would kind of think about, maybe intuitively expect. But the loneliness risk score does actually significantly predict triglyceride levels as well.
+So we've started doing this a little bit for some of these traits that I've been talking about so far. So this is just focusing in again on HDL, LDL, and triglycerides, and looking at how genetic risk scores for coronary artery disease, loneliness, or major depression is associated with median lab values. And so, in each of these plots, we're looking at the R^2^ values, the proportion of variance explained in HDL, LDL, and triglycerides, on the y-axis. And then, the discovery GWAS p-value threshold on the x-axis. So that we can see kind of across the board how well do, you know, the MDD risk scores, CAD risk scores, and loneliness risk scores predict HDL, LDL, and triglyceride levels. And so, interestingly, we see that,  for HDL, our loneliness risk scores actually tend to outperform our CAD risk scores. And for LDL, you know, it looks like there is some differences, but I don't think these are actually really meaningful because below 0.1% variance \[explained\], it's not, not a significant association between the risk score and the median value. And then, in our triglyceride analysis, we do see the CAD risk score outperforming the loneliness risk score, which is what we would kind of think about, maybe intuitively expect. But the loneliness risk score does actually significantly predict triglyceride levels as well.
 
-So, like I\'ve said a couple of times... Sorry. We also are interested in testing the mediating effects of these quantitative traits and the moderating effects of sex and medications, and other diagnoses on these relationships as well. So this is kind of our... an example of a general model we're interested in testing---the relationship between polygenic liability and disease diagnosis, that may be, again, mediated through quantitative traits.
+So, like I've said a couple of times... Sorry. We also are interested in testing the mediating effects of these quantitative traits and the moderating effects of sex and medications, and other diagnoses on these relationships as well. So this is kind of our... an example of a general model we're interested in testing---the relationship between polygenic liability and disease diagnosis, that may be, again, mediated through quantitative traits.
 
-So, kind of, our future interests are to mine this lab data for potential biomarkers for neuropsychiatric disorders, using genetic risk scores from our publicly available GWAS data. And I should say that, you know, we don\'t think it\'s likely that we will identify a biomarker for, you know, major depression out of all of these routinely collected labs, but that actually, we may identify several quantitative traits that together may be predictive of anindividual's genetic risk for major depression or schizophrenia, for example. We also are really excited about using bi-directional Mendelian randomisation analyses to better understand some of these possible causal mechanisms. And to compare the phenotypic correlations with the genetic correlations, to try to identify comorbidities that may actually be more of a consequence of environment than of genetic causes---which, you know, we\'re also equally interested in understanding.
+So, kind of, our future interests are to mine this lab data for potential biomarkers for neuropsychiatric disorders, using genetic risk scores from our publicly available GWAS data. And I should say that, you know, we don't think it's likely that we will identify a biomarker for, you know, major depression out of all of these routinely collected labs, but that actually, we may identify several quantitative traits that together may be predictive of anindividual's genetic risk for major depression or schizophrenia, for example. We also are really excited about using bi-directional Mendelian randomisation analyses to better understand some of these possible causal mechanisms. And to compare the phenotypic correlations with the genetic correlations, to try to identify comorbidities that may actually be more of a consequence of environment than of genetic causes---which, you know, we're also equally interested in understanding.
 
-So, I think that is it! I\'ll wrap up with an acknowledgement of everybody in my lab, a really great group of people to work with and wonderful students. And the work of the Lonely Consortium has just been a phenomenal collaboration that, I think, has yielded some really interesting results. And so, I think, with that I conclude and I hope there is some time for questions.
+So, I think that is it! I'll wrap up with an acknowledgement of everybody in my lab, a really great group of people to work with and wonderful students. And the work of the Lonely Consortium has just been a phenomenal collaboration that, I think, has yielded some really interesting results. And so, I think, with that I conclude and I hope there is some time for questions.
 
-**Facilitator:** Thanks so much, Lea. Fabulous presentation, really, it\'s a lot of data that is coming, therefore, it\'s really exciting that you\'re diving into that with full speed here. So is there... I mean, we have, like, around 30 people on the call. They probably have questions and they don\'t know how to unmute themselves. I still have questions, but I don't want to always step in, so... Did I hear somebody? Not yet. So, okay, so, Lea, I still have two or three more short questions, more on the technical side. There are two things here. So, first of all. Because you\'re speaking about, like, longitudinal stuff, because you have multiple measurements from the same individuals here. But also, is there a chance to actually, given the fact you might have seen some people with especially high polygenic scores for schizophrenia also. Is there a chance to get in touch with them \[the patients\] again on the next visit or so? Or is this something so enormous there\'s no chance to get in contact with these individuals again?
+**Facilitator:** Thanks so much, Lea. Fabulous presentation, really, it's a lot of data that is coming, therefore, it's really exciting that you're diving into that with full speed here. So is there... I mean, we have, like, around 30 people on the call. They probably have questions and they don't know how to unmute themselves. I still have questions, but I don't want to always step in, so... Did I hear somebody? Not yet. So, okay, so, Lea, I still have two or three more short questions, more on the technical side. There are two things here. So, first of all. Because you're speaking about, like, longitudinal stuff, because you have multiple measurements from the same individuals here. But also, is there a chance to actually, given the fact you might have seen some people with especially high polygenic scores for schizophrenia also. Is there a chance to get in touch with them \[the patients\] again on the next visit or so? Or is this something so enormous there's no chance to get in contact with these individuals again?
 
-**Lea Davis:** No, they\'re, yeah, it's completely a de-identified dataset. Yeah, there is also a what's called the research derivative, so we work with the synthetic derivative because we're also working with the genetic data. If we were to restrict ourselves just to the phenotype associations, we could apply for access to the research derivative, which is an identified dataset. But even then, I think there are rules---I don't know that we could actually recontact patients. And there's no, although I don't understand why this is the case, you can't work with genetic data in the identified environment.
+**Lea Davis:** No, they're, yeah, it's completely a de-identified dataset. Yeah, there is also a what's called the research derivative, so we work with the synthetic derivative because we're also working with the genetic data. If we were to restrict ourselves just to the phenotype associations, we could apply for access to the research derivative, which is an identified dataset. But even then, I think there are rules---I don't know that we could actually recontact patients. And there's no, although I don't understand why this is the case, you can't work with genetic data in the identified environment.
 
 **Facilitator:** Is this special to Vanderbilt or is this general to the US?
 
@@ -870,29 +212,29 @@ So, I think that is it! I\'ll wrap up with an acknowledgement of everybody in my
 
 **Facilitator:** Very interesting, and a little bit sad, of course, because that would have been the gold example for that. And so, the other issue---a little bit more on the technical side---I mean, we all know that, like, especially polygenic risk scores are relatively sensitive to sample overlap. So how is... is there any chance for you? How are you dealing with this issue?
 
-**Lea Davis:** Yeah, you know, it's a good question. And we've been thinking about this a lot. So, there's a method... I can't remember the first author's name now, but I think it came from Peter Visscher\'s group, to... In the context that we're using, where we have some individual-level data and GWAS summary statistics. They've published an approach to actually first just check to see if there is, yeah, what the probability of overlap actually is. Everything up until now, I have to be honest, is based on just the knowledge that no investigators have contributed actively from Vanderbilt to these GWAS. But I mean, we haven't yet done the careful checking to make sure that there's no sample overlap. But that is on our list.
+**Lea Davis:** Yeah, you know, it's a good question. And we've been thinking about this a lot. So, there's a method... I can't remember the first author's name now, but I think it came from Peter Visscher's group, to... In the context that we're using, where we have some individual-level data and GWAS summary statistics. They've published an approach to actually first just check to see if there is, yeah, what the probability of overlap actually is. Everything up until now, I have to be honest, is based on just the knowledge that no investigators have contributed actively from Vanderbilt to these GWAS. But I mean, we haven't yet done the careful checking to make sure that there's no sample overlap. But that is on our list.
 
-**Facilitator:** Yeah, I think it\'s something that you need to think about.
+**Facilitator:** Yeah, I think it's something that you need to think about.
 
-**Lea Davis:** Yeah, absolutely. Yeah, it\'s, it's really something that, I think, we have to just actually bake into the pipeline. And we're also part of a collaboration with other biobank sites through the eMERGE Network, where we're doing a similar kind of thing---you know, replicating these polygenic pheWAS associations in other biobanks. And so, we're really trying to develop a, you know, robust pipeline for doing that across several EHR environments. And one of the things we need to make sure to build into the pipeline is this kind of checking.
+**Lea Davis:** Yeah, absolutely. Yeah, it's, it's really something that, I think, we have to just actually bake into the pipeline. And we're also part of a collaboration with other biobank sites through the eMERGE Network, where we're doing a similar kind of thing---you know, replicating these polygenic pheWAS associations in other biobanks. And so, we're really trying to develop a, you know, robust pipeline for doing that across several EHR environments. And one of the things we need to make sure to build into the pipeline is this kind of checking.
 
-**Facilitator:** Yeah, I mean, especially within \[the\] PGC, it's good for just testing reasons, try to see if we see some unexpected overlap there, and if we don't, then this gives you a little bit more security that there isn\'t, and that it isn\'t like, suddenly 200 cases coming up that were shared from somebody else to \[the\] PGC, something that you need to be super careful \[about\] with all the other phenotypes. At least in \[the\] PGC, with everything in place, we could test. We could test that even without, you know, we have the checksum method where we can do it without sharing the genotype. So, it's something that could be done on a relatively low level.
+**Facilitator:** Yeah, I mean, especially within \[the\] PGC, it's good for just testing reasons, try to see if we see some unexpected overlap there, and if we don't, then this gives you a little bit more security that there isn't, and that it isn't like, suddenly 200 cases coming up that were shared from somebody else to \[the\] PGC, something that you need to be super careful \[about\] with all the other phenotypes. At least in \[the\] PGC, with everything in place, we could test. We could test that even without, you know, we have the checksum method where we can do it without sharing the genotype. So, it's something that could be done on a relatively low level.
 
 **Lea Davis:** So, in a phenome-wide type of analysis, how would you then, basically, for each pheWAS category, conduct a GWAS and check all of those sumstat relationships? Because it's also possible that we have, let's say, somebody with schizophrenia who doesn't actually have the diagnosis in *our* electronic health record. Right? They have a diagnosis of type 2 diabetes in our health record, but maybe they've been included in a GWAS somewhere else. So, I think...you know, I mean...
 
-**Facilitator:** Exactly, that\'s why I would be very interested to see, like, to check on the summary statistics level works for, like, a significant overlap for, for... if you have the same phenotype. I think you're raising exactly the right questions that, I think, if you want to be really sure, you need to really test it on a genotype level, right?
+**Facilitator:** Exactly, that's why I would be very interested to see, like, to check on the summary statistics level works for, like, a significant overlap for, for... if you have the same phenotype. I think you're raising exactly the right questions that, I think, if you want to be really sure, you need to really test it on a genotype level, right?
 
 **Lea Davis:** Yeah.
 
 **Facilitator:** And then... But I think that at least, if you can do this, like, with a couple of these consortia. You can, at least, mean that if there's something unexpected or something expected, and I think this already provides some support here. And maybe when you actually see this on the summary statistics level, when you see actual significant overlap there, find it somewhere. Then you probably want to go there, ask these guys, "Can we actually test this on genotype level? Who are these individuals?" Is this actually correct? I think we can test this on a couple of different levels.
 
-**Lea Davis:** Yeah, yeah, that's... that\'s a good idea. And that's basically what we wanted to start with---was just to see, first, like, do we see any evidence of overlap? And then, if we do, you know, how should we go about dealing with it?
+**Lea Davis:** Yeah, yeah, that's... that's a good idea. And that's basically what we wanted to start with---was just to see, first, like, do we see any evidence of overlap? And then, if we do, you know, how should we go about dealing with it?
 
-**Facilitator:** I mean, to be honest, the overlap cannot be really, really big because then it's so quick. We'll see really exploding R^2^ values that's really impressive. Even if, like, you have a small data set, like couple hundred individuals, in our big meta-analysis, all of these, it's just 300 cases in the meta-analysis, the R^2^ are exploding. So, it is probably... Definitely... If there is something, it\'s definitely very small. Of course, even this small thing can have this small impact on these... that seemed to fit so well, right?
+**Facilitator:** I mean, to be honest, the overlap cannot be really, really big because then it's so quick. We'll see really exploding R^2^ values that's really impressive. Even if, like, you have a small data set, like couple hundred individuals, in our big meta-analysis, all of these, it's just 300 cases in the meta-analysis, the R^2^ are exploding. So, it is probably... Definitely... If there is something, it's definitely very small. Of course, even this small thing can have this small impact on these... that seemed to fit so well, right?
 
 **Lea Davis:** Yeah. So, do you have an intuition of, like, what you expect if there's an overlap of, say, you know, a dozen people? You know, like a really small overlap?
 
-**Facilitator:** No, this is always something that I really wanted to test. Yeah, somebody wants to go for it? Please do so. \[laughs\] No, I don't have that intuition. I have these experiences that if there\'s like a couple hundred overlap, it's really, it\'s really strong. So much surprise... surprisingly strong, really. That's why I'm always careful about this. It's not that you see, like, R^2^ that\'s just jumping a little bit around, it's really exploding. And so, that's why I think... My hunch is that even, like, a dozen or 20 could have a small impact, not big---I mean, some of your p-values are really just passing this phenome-wide threshold there, right? So that's why, especially for these cases... But yeah, let\'s keep this up, this discussion, and I'm very happy to be a part of it.
+**Facilitator:** No, this is always something that I really wanted to test. Yeah, somebody wants to go for it? Please do so. \[laughs\] No, I don't have that intuition. I have these experiences that if there's like a couple hundred overlap, it's really, it's really strong. So much surprise... surprisingly strong, really. That's why I'm always careful about this. It's not that you see, like, R^2^ that's just jumping a little bit around, it's really exploding. And so, that's why I think... My hunch is that even, like, a dozen or 20 could have a small impact, not big---I mean, some of your p-values are really just passing this phenome-wide threshold there, right? So that's why, especially for these cases... But yeah, let's keep this up, this discussion, and I'm very happy to be a part of it.
 
 **Lea Davis:** Yeah, and so, and for anybody on the call who's interested in looking at particular phenotypes, and we've now pheWAS polygenic risk scores for all of the publicly available summary statistics from \[the\] PGC. And so, anybody who's interested in talking more about what schizophrenia looks like or what bipolar looks like, or whatever, please feel free to get in touch with me, because I would love to kind of have more folks to discuss these with.
 

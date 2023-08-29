@@ -5,3 +5,43 @@ title: "Software Tutorials: Mendelian Randomization (Video Transcript)"
 **Title**: Examine causality using Mendelian randomization
 
 **Presenter(s)**: Jie Zheng
+
+**Jie Zheng**:
+
+Thank you for the invitation from the World Congress of Psychiatric Genetics 2021 conference. I appreciated all the support from the conference organizers. My name is Jie, and I'm a research fellow from the MRC Integrative Epidemiology Unit at the University of Bristol. Today, I'm going to present how to examine causality using Mendelian randomization.
+
+Mendelian randomization is mother nature's randomized control trial. Segregation of alleles at mitosis mimics the random allocation of individuals to the drug and placebo arms of a randomized control trial. If the number of disease events is lower in the drug arm, we conclude that the drug, by its protein target, was effective for reducing disease risk. Similarly, if we see fewer disease cases in the genotype AA subgroup, we conclude that the genotype, by its protein target, reduces disease risk.
+
+A major advantage of animal studies is that they are much cheaper and safer to run than randomized control trials.
+
+How does the method actually work? In Mendelian randomization, we use genetic polymorphisms or SNPs to proxy for the protein or other exposure of interest. We have two effect estimates: the effect of the SNP on the protein in a protein GWAS and the effect of the SNP on disease in a disease GWAS. GWAS, also called genome-wide association study, measures the association between hundreds of thousands to millions of SNPs across the genome with a trait of interest, typically in very large sample collections. Thousands of such studies have been published in the past 10 years.
+
+In Mendelian randomization, we combine the SNP-protein and the SNP-disease effect estimates to infer the effect of the protein on disease. In the example, the protein level decreased by 0.5 units per g allele in the protein GWAS, and disease risk increased by 42 percent per g allele in the disease GWAS, using the ratio method. We take the ratio between the two estimates to infer the effect of the protein on disease. The latter is the odds ratio of disease per unit increase in the protein and can be interpreted as a 50 percent lower disease risk for each unit decrease in the protein.
+
+Causal inference using Mendelian randomization requires the following assumptions to be true: First, the SNP truly affects the protein. Second, the SNP affects disease only through the protein. And third, the SNP is not associated with confounders.
+
+MR can be used to rapidly evaluate the potential downstream consequences of pharmaceutical interventions, including:
+
+1\. Prediction of on-target beneficial effects.
+
+2\. Prediction of on-target side effects.
+
+3\. Opportunities for drug repurposing.
+
+To support large-scale causal inference, Mendelian randomization, we developed the MR-Base platform and the TwoSampleMR R package. The MR-Base platform is both a database of GWAS summary statistics and an analytical platform for Mendelian randomization.
+
+As an example of applying the MR-Base platform, we studied the causal relationship between proteins and diseases. Proteins are direct targets for most drugs and therefore have high priority for drug development. Using the MR-Base platform, we are now able to estimate the causal effects of thousands of proteins on hundreds of human diseases and risk factors using Mendelian randomization.
+
+This large-scale Mendelian randomization study identified over 200 robust protein-disease associations, covering a wide range of disease areas, including psychiatric diseases, cardiometabolic diseases, autoimmune diseases, and cancers. This analysis also validated eight approved drugs for the same indication being investigated in existing clinical trials.
+
+Moreover, we systematically compare the MR estimates with clinical trial effects. We found that it is considerably more likely to predict drug trial success if a protein-disease pair shows MR and co-localization evidence.
+
+To improve reproducibility, we made our protein-disease association results available through the MP-GraphDB platform. The MP-GraphDB platform is an analytical platform and database that aims to support data mining in epidemiology.
+
+Within the platform, we are able to query the protein we are interested in, the outcome we are interested in, or even the SNP we are interested in, and the platform will return the graphical results and the MR results in a table.
+
+In addition, we recently upgraded the MR-Base database into a centralized GWAS summary database. The new database is now launched as the IU OpenGWAS platform. Till now, the new platform provides summary stats for over 40,000 phenotypes.
+
+To further extend the usage of GWAS summary statistics, we developed this ecosystem within the IU OpenGWAS project. The ecosystem includes both a database and analytical tools, which could be accessed by a few R packages, such as IU-GWAS and IU-GWASUtils. These packages could be used to support all types of genetic analysis using GWAS summary statistics, including LD score regression, fine mapping, and genetic co-localization.
+
+Hope the ecosystem could make your research life easier. This is the end of my presentation about examining causality using Mendelian randomization. Thank you for your attention.

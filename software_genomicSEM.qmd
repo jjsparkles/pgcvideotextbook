@@ -20,3 +20,5 @@ embed_url("https://www.youtube.com/watch?v=tBWkC2wCYuA")
 Link to video transcript [here](software_genomicSEM_transcript.qmd).
 
 [Link to tutorial scripts and datasets](https://utexas.app.box.com/s/nmkyfd17lq0aux2vuo735ohy00tl74qt).
+
+For more information and tutorials on Genomic SEM see [Chapter 9.3](chapter9.qmd#sec-section3).

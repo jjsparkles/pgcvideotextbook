@@ -8,6 +8,60 @@ title: "Software Tutorials: Gene Set Identification (Video Transcript)"
 
 **Presenter(s)**: Christiaan de Leeuw
 
+**Christiaan de Leeuw**:
+
+Welcome to this tutorial on the use of MAGMA, our tool for gene and gene-set analysis of GWAS data. During this tutorial, I will give you a brief overview of how to get started with running a basic MAGMA analysis.
+
+A full MAGMA analysis consists of three separate steps. First is the annotation step, which serves to map SNPs \[single nucleotide polymorphism\] onto genes. Second is the gene analysis step, in which, for every annotated gene, an association p-value is computed from the GWAS \[genome-wide association study\] input data, as well as a gene-gene correlation matrix. And third is the gene-set analysis step, which computes competitive gene-set p-values for each gene set in the input from the gene analysis output.
+
+The GWAS input data can be provided to MAGMA in one of two ways. First, you can use raw genotype data in binary PLINK format, which can optionally include separate covariate or input files to be used for the analysis. The second option is to use previously computed SNP summary statistics in combination with genotype reference data. A number of additional files are needed for the analysis as well. For the annotation step, both SNP and gene location files must be provided. For SNP locations, in most cases, the most convenient option is to simply use the BIN files from the PLINK genome data that you will use in step 2. Gene location files with Entrez gene IDs can be found on the MAGMA site \[https://ctg.cncr.nl/software/magma\], but you can also construct and use your own gene location files if needed. For the gene analysis step, as noted, when using GWAS summary statistics for input, you need to provide reference genotype data as well. A common choice for this is to use a 1000 Genomes reference data, and ready-to-use PLINK format file sets for this data, for different ancestries, can be found on the MAGMA site. Finally, for the gene-set analysis step, a file defining the gene sets to be analysed is needed. Which gene sets are best to use for the bundle and research question you aim to answer? A good general-purpose source of gene sets is MSigDB. This contains a broad range of different gene collections, including Gene Ontology terms and collections of canonical pathways. These are suitable for general gene-set analysis.
+
+The MAGMA program itself, alongside documentation and auxiliary files, can be found on the MAGMA site, shown on the screen. MAGMA is a command-line program and does not need to be installed. To run it, just download the archive for your specific operating system and extract the MAGMA executable to the folder you will be running your analysis from. If you are using a Linux system, it is possible that the standard Linux version of MAGMA is not compatible with your Linux distribution. In this case, it is recommended that you try the statically compiled version of MAGMA instead. If this also doesn't work, you can also compile the program from source on your system. To do so, simply download and unzip the source code archive and run the \`make\` command shown on the screen. This will create a MAGMA executable binary for your system, which can be used in the same way as the pre-compiled versions.
+
+Before you begin, make sure you have downloaded all the files you need, including the MAGMA binary issue. You are now ready to run the annotation step, which will create a file mapping SNPs to genes. To do so, we will use the following command:
+
+The \`\--snp-loc\` and \`\--gene-loc\` flags specify SNP and gene location files to use, and the \`\--out\` flag specifies the prefix of the output files. This will produce the annotation file as well as a corresponding log file you can use for later reference.
+
+By default, the annotation will map SNPs to a gene if they fall inside the transcription region of that gene, as defined by the gene location file. However, you can use the \`window\` modifier for the \`\--annotate\` flag shown here to additionally include SNPs within the specified distances in kilobases upstream and downstream of the transcription region.
+
+Generally, using your PLINK BIM file for these applications will be most convenient, but you can use a different file as well. In this case, you need a plain text file with no header and with three columns: SNP ID, chromosome, and base pair position, in that order, as shown here.
+
+Similarly, you can create and use your own gene location files as well, as needed. These should have the same format as the first four columns in the gene location files provided on the MAGMA site and as shown on screen here as well: gene ID, chromosome, and transcription start and stop site, in that order. The fifth column containing the strand alignment of the gene is only required when you are annotating using an asymmetric window around the gene.
+
+For the annotation step, two things are crucial when selecting the input files. First, both the SNP and gene location files must be in reference to the same human genome build. As such, always use SNP locations from files for which you are certain of the build. Note, however, that the SNP locations are only used during this annotation step, so SNP locations in the GWAS input files for the later gene analysis step are not used.
+
+Second, the SNP and gene IDs used in these location files need to be of the same type as those used in the input files in the later analysis steps. As such, for example, if you have gene definition files that use Ensembl gene IDs, you should use gene location files with Ensembl IDs in this step as well.
+
+To run a gene analysis using raw GWAS data as input, we will use the command shown on screen now:
+
+The \`\--bfile\` flag is used to specify the file prefix of the PLINK dataset, while the option of \`\--covar\` flag specifies a file with covariates we want to include. By default, all the covariates in the file will be used, but it is possible to have MAGMA include only a subset of those as well. With the \`\--gene-annot\` flag, we specify the step-to-gene mapping file we created in the previous step. The runtime of gene analysis in MAGMA will depend on both the sample size and the number of SNPs included in the analysis. The dataset I'm using for this demonstration is very small, and so the analysis completes very quickly. But for larger modern datasets, it will take rather longer. However, a batch mode is available that can split the analysis into smaller pieces, which can then be run in parallel. Moreover, if you only need gene analysis output and are not planning to perform any gene-set analysis, you can use a \`\--genes-only\` flag to omit computing the gene-gene correlation matrix. This will speed up the analysis as well.
+
+Once the analysis is complete, MAGMA will produce two output files in addition to the log file. The first is the .gene.raw file, which is the output file that will be needed for running gene-set analysis in the next step. The second is the .genes.out file. This is the main results file for a gene analysis. The exact columns included in this file can vary somewhat depending on the analysis settings, but it will look very similar to the file shown here. Note that the gene p-values provided in the output here are raw p-values, and you will still need to apply any multiple testing correction yourself.
+
+Running gene analysis with GWAS summary statistics is done in a very similar way, and it requires an input file of the kind I'm showing on screen now. The only two columns that are required to be in your summary statistics file are the SNP ID column and the SNP p-value column, the first two columns in the file here. However, ideally, you should have a sample size column for the sample size per SNP in the file as well. It is not necessary to remove other columns in the file, so output files from most SNP analysis software can directly be used as input for MAGMA.
+
+The command to run this analysis looks like this:
+
+The \`\--bfile\` flag is now used to specify the reference genetic data, and the \`\--pval\` flag is used for the summary statistics file. With the \`use\` modifier, you can tell MAGMA which columns contain SNP ID and p-value, in that order. And the \`\--ncol\` modifier defines a sample size column.
+
+As with the raw data analysis, the runtime for this type of analysis will vary depending on the data and settings you use. As before, the batch mode and genes-only setting can be used to reduce the total time needed for the analysis. Finally, if you have no sample size column available for your summary statistics, the global sample size for the data can be specified instead with the \`\--N\` modifier for the \`\--pval\` flag, as highlighted on screen now.
+
+In addition to those demonstrated now, there are various other options available for the MAGMA gene analysis. These include the batch and genes-only modes already mentioned, as well as options for meta-analysis, rare variant burden scoring, and various others. Please consult the manual for a more detailed description of all available options and settings for the MAGMA gene analysis.
+
+With the gene analysis complete, we are now ready to run the gene-set analysis. To do so, we also need our gene-set definition file, which should be formatted like this. In this file, each line defines a separate gene set. The first value on the line is the name of the gene set, this is followed by a whitespace-separated list of gene IDs mapped to that set. In the example here, we are using Entrez gene IDs, but as stated before, any type of gene ID is permissible.
+
+To actually run the analysis, we will use this command:
+
+The \`\--gene-results\` flag is used to specify the gene results file that we obtained in the previous step, with the \`\--set-annot\` flag specifying the gene-set definition file to use. The gene-set analysis will usually be very quick regardless of the input data, since it doesn't depend on the sample size of the GWAS data.
+
+The main output file produced by the analysis is the one with the .gsa.out suffix, which looks like this. Note that each gene set is analysed separately, and the p-value for each of the gene sets is therefore independent of which other sets were analysed in the same MAGMA run.
+
+As in the gene analysis, the p-values here are raw p-values and thus still need to be corrected for multiple testing. However, if there are any gene sets that are significant after Bonferroni correction for the total number of gene sets in the input, an additional .gsa.set.genes.outfile will be created for each of the significant gene sets. This file shows the gene-level results for all the genes in that set, which can be useful for further interpretation of significant results.
+
+The gene-set analysis we performed now is just a basic competitive gene-set analysis, but MAGMA allows for a number of more complex analyses as well. This includes the analysis of continuous gene-level information, such as, for example, tissue-specific gene expression levels; joint and conditional analysis models which allow for correction of gene-cell associations for the effects of overlapping gene sets; and gene-set interaction analysis to test whether genetic associations are due to specific combinations of gene sets rather than individual sets.
+
+This concludes this MAGMA tutorial. More information on the different analyses offered by MAGMA can be found in the MAGMA manual and various published articles. See the website for more details. You can also always contact me by email should you have any questions or run into any issues when using MAGMA.
+
 ------------------------------------------------------------------------
 
 # H-MAGMA {#sec-video2}
@@ -16,521 +70,59 @@ title: "Software Tutorials: Gene Set Identification (Video Transcript)"
 
 **Presenter(s)**: Nancy Y.A. Sey, University of North Carolina at Chapel Hill
 
-Introduction
+**Nancy Sey**:
 
-hi everyone my name is Nancy and today
+Hi everyone, my name is Nancy, and today I'll be talking to you about annotating genetic variants to target genes using Hi-C coupled MAGMA, or H-MAGMA for short.
 
-I'll be talking to you about annotating
+*Background*
 
-genetic variants to Target genes using
+So, before I get started, I would just like to credit doctors Christian and Danielle for developing MAGMA Gene Set Analysis. MAGMA is widely used in our field, and this is for various reasons, with a few being that the tool is pretty revolutionary in that it's aided in making sense of GWAS findings by identifying the target genes of genetic variants identified from GWAS. Additionally, MAGMA is very easy to use, in that you do not have to be computationally savvy to use the tool. Also, it is very efficient compared to other tools in the field, so it takes a very short time to run MAGMA. However, despite all of these benefits, there are a few limitations to the tool. Namely, MAGMA relies on positional mapping to link variants to target genes. We know from prior studies that the gene regulatory landscape is complex, and it's therefore possible for variants, especially non-coding variants, to interact with and regulate distal genes. Additionally, the regulatory landscape can be tissue or cell type-specific, so we have to take into account the tissue or cell type that's most relevant to the trait or disease that we're interested in understanding. So, these two limitations served as the foundation for developing Hi-C coupled MAGMA, or H-MAGMA for short. So, H-MAGMA complements MAGMA by using Hi-C data.
 
-high C corporate magma or hmagmap for
+*Materials*
 
-short
+As mentioned previously, H-MAGMA complements MAGMA, so the materials needed to run H-MAGMA are the same as the ones needed to run MAGMA, with the only difference being the gene-to-variant annotation file. In this tutorial, I will walk you through how to generate the H-MAGMA annotation file, which links non-coding variants to their target genes using Hi-C interactions. So again, I will just walk you through how to generate the annotation file for H-MAGMA.
 
-Background
+*Required Files*
 
-so before I get started I would just
+The materials needed to run H-MAGMA are similar to the ones needed to run MAGMA, with the only difference being the annotation file. To generate the H-MAGMA annotation file, you need a few other files. Namely, you need BED files for gene exon and promoter coordinates. Additionally, you need a Hi-C dataset in the BEDPE file format. You will also need an ancestry reference genome, and for the sake of this protocol, we'll be using the European ancestry. Once you have the annotation file generated, you need GWAS summary statistics to run H-MAGMA.
 
-like to credit doctors um Christian and
+So again, the focus of this tutorial will be on Steps A and B, which walks you through how to generate the H-MAGMA variant annotation file.
 
-Danielle for developing magma Gene set
+*Step 1: Load Libraries and Required Data*
 
-analysis
+So, I have broken the annotation files into seven different steps, with code for each step provided as part of this recording. So, the first step is to load your libraries and all required data into a work directory. The next step is to read in your exon and promoter BED files and create genomic range objects for the exons and promoters using the exon and promoter coordinates from GENCODE version 26. Once you have this loaded and the genomic range object generated, you will save them as an R file. Similarly, you would generate a genomic range object for all SNPs using the reference genome from the European ancestry, and you will also save this as an R file in the work directory for later use.
 
-so magma is widely used in our field and
+*Step 2: Overlap SNPs to Genes*
 
-this is for various reasons with a few
+In the following step, we will overlap SNPs to genes, starting with the exonic SNPs. As a reminder, the exonic SNPs are assigned to your target genes using positional mapping, and this is because they are more likely to impact the genes in which they reside. To assign the exonic SNPs to your target genes, we will overlap the gene range objects for exons with the genomic range objects for SNPs that were created in Steps 2 and 3, respectively. Similarly, we will also overlap the genomic range object for promoters with the genomic range object that was created for the SNPs. Once you have both genomic range objects created for the exons and the promoters, these will be saved as an R file for later use.
 
-being that the tool is pretty
+*Intergenic SNPs*
 
-revolutionary in that it's aided in
+So, after we've assigned the exonic and promoter SNPs to their target genes, there will be a subset of SNPs that do not overlap with either. These are known as the intergenic or intronic SNPs. In the following steps, I will walk you through how to match those SNPs to your target genes using high C interaction, as shown in this diagram.
 
-making sense of guas Finance by
+To achieve this, we will first identify those intergenic and intronic SNPs and save them as an R file. Then, we will load our Hi-C data. For the sake of this tutorial, we'll be using Hi-C data from the adult brain as an example. Once you load the Hi-C data in the BED Plink format, you will generate a genomic range object for it.
 
-identifying the target genes of genetic
+Next, we will find SNPs that physically interact with exons and SNPs that physically interact with promoters using these set of codes. Similarly, we will also find SNPs that physically interact with promoter regions.
 
-variants identified from guas
+Then, we will combine those genomic range objects for the exons and the promoters to retrieve unique items. Lastly, we will overlap the intergenic and intronic SNPs with Hi-C data to identify their target genes.
 
-additionally magma is very easy to use
+Once we have all these SNPs - the exonic, the promoter, the intergenic, and the intronic SNPs - mapped to your target genes, the last few codes that I will show you in Step 7 will be used to generate the annotation file that is compatible with MAGMA. To achieve this, we will structure the annotation file so that it has the genes in the Ensembl format, the chromosomal location, and followed by the SNPs that are assigned to each particular gene. Following these seven steps, you will have your H-MAGMA variant-to-gene annotation file that can be used to run H-MAGMA for any trait or disease. With this, you can run H-MAGMA for any trait. Here, I will use an example using Parkinson's disorder as an example. So, this is the portion of the MAGMA code where you place your H-MAGMA variant-to-gene annotation file.
 
-in that you do not have to be
+*Output Files*
 
-computationally Savvy to use the tool
+Here, I am showing you one of the output files that you get from running HMAGMA. This is the 'genes.out' file. With this file, you can actually extract the significant genes at various false discovery rate (FDR) thresholds for downstream analysis.
 
-also it is very efficient compared to
+*Limitations*
 
-other tools in the field so it's it
+As I mentioned previously in the beginning of this tutorial, MAGMA has transformed the field of psychiatric genetics, and with H-MAGMA, we can address some of its limitations. However, it is important to note that there are still some persistent limitations that aren't addressed using H-MAGMA. Namely, the directionality of effect. Even though HMAGMA can assign SNPs to their target genes using high C data, we do not know whether the variants are upregulating or downregulating the gene. To address this, you can use various eQTL datasets to analyze the directionality of effect.
 
-takes a very short time to run magma
+Additionally, we know that not all SNPs are actually implicated in a trait or disease, so you need to do further functional validation to prune down the list of genes. Also, we know that the sample size of a GWAS greatly impacts the number of target genes that is identifiable, so H-MAGMA also suffers from this. And lastly, the lack of diversity in genetic studies. Most of the analysis that we've done with HMAGMA has mostly been from European ancestry. However, it's important to note that you can also run H-MAGMA for other ancestries.
 
-however despite all of these benefits
+*Conclusion*
 
-there are a few limitations to the tool
+So, with that, in the last slide here, I would just like to acknowledge where we currently are with H-MAGMA. Previously, we have generated H-MAGMA for brain tissues, including adult and fetal brain. We have also added various cell-type-specific annotation files, including cortical, iPSC-derived neurons, and iPSC-derived astrocytes, as well as midbrain dopaminergic neurons. However, H-MAGMA is more versatile than just brain-related cells. To expand its use, we have created additional annotation files for 28 different cell and tissue types to allow other researchers to use the tool. These cell types are listed here, and most of all these annotation files can be derived from our GitHub page.
 
-namely magma relies on positional
-
-mapping to link variants to Target genes
-
-we know from prior studies that the gene
-
-regulatory landscape is complex and it's
-
-therefore possible for variants
-
-especially non-coin invariants to
-
-interact with and regulate the install
-
-genes so additionally
-
-um the regulatory landscape can be
-
-tissue or cell type specific so we have
-
-to take into account the tissue or cell
-
-type that's most relevant to the trait
-
-or disease that we're interested in
-
-understanding
-
-so these two limitations served as the
-
-foundation for developing High c-coupled
-
-magma or H magma for short
-
-so H magma complements magma by using
-
-high C data
-
-Materials
-
-so as mentioned previously um H magma
-
-complements magma so the materials are
-
-needed to run H magma are the same as
-
-the ones needed to run magma where the
-
-only difference being the gene2 variant
-
-annotation file so in this tutorial I
-
-will walk you through how to generate
-
-The hmac muscativic annotation file
-
-which links non-coding um variants to
-
-their target genes using high C
-
-interaction
-
-so again I will um just walk you through
-
-how to generate The annotation file for
-
-hmagma
-
-Required files
-
-so the materials needed to run hmagma
-
-are similar to the ones needed to run
-
-magma with the only difference being The
-
-annotation file so to generate the H
-
-magma annotation file you need a few
-
-other files namely you need bed files
-
-for Gene Exxon and promoter coordinates
-
-Additionally you need a high C data set
-
-in the bedp file format you will also
-
-need an ancestry reference genome and
-
-for the sake of this protocol we'll be
-
-using the European ancestry
-
-and once you have The annotation file
-
-generated you need a Gua summary
-
-statistics to run hmagmap
-
-so again um the focus of this tutorial
-
-will be on Steps A and B which walks you
-
-through how to generate the hmag margin
-
-to variant annotation file
-
-Step 1 Load libraries and required data
-
-so I have broken The annotation files
-
-into seven different steps with code for
-
-each step provided as part of this
-
-recording
-
-so the first step is to load your
-
-libraries and all required data into a
-
-work directory
-
-the next step is to read in your Exon
-
-and promoter batch files and create
-
-genomic range objects for the Exxon and
-
-promoter using the Exxon and promoter
-
-coordinates from gen code version 26.
-
-once you have this loaded and the
-
-g-range object generated you will save
-
-then as an R file
-
-so similarly um you would generate a
-
-genomic range object for all Snips using
-
-the reference genome from the European
-
-ancestry and you will save you also save
-
-this as an R file in the work directory
-
-for later use
-
-Step 2 Overlap Snips to Gene
-
-so in the following step um we will
-
-overlap Snips to Gene starting with the
-
-Exotic snips
-
-so as a reminder the Exotic Snips are
-
-assigned to your target genes using
-
-positional mapping and this is because
-
-they are more likely to impact the genes
-
-in which they reside
-
-so to assign the Exotic Snips to your
-
-target genes we will overlap the gene
-
-range for objects for Exon with
-
-engineering objects for Snips that was
-
-created in steps two and three
-
-respectively
-
-so similarly we will also overlap the
-
-g-range object for promoters with the
-
-g-range object that was created for the
-
-snips
-
-so once you have both g-range objects
-
-created for the exons and the promoters
-
-um these will be saved as an R file for
-
-later use
-
-Intergenic Snips
-
-foreign so after um after we've assigned
-
-the Exotic and promoter snaps to their
-
-target genes there will be a subset of
-
-snips that do not overlap with either so
-
-these are known as the intergenic or the
-
-intronic Snips so in the following steps
-
-I will walk you through how to match
-
-those Snips to your target jeans using
-
-high C interaction and this is shown
-
-here in this diagram
-
-so to achieve this we will first
-
-identify those in intergenic and
-
-intronic Snips and save them as an R
-
-file
-
-then we will load our high C data so for
-
-the sake of this tutorial we'll be using
-
-high C data from the adult brain as an
-
-example
-
-so once you load the high C data in the
-
-bedpie format you will generate a
-
-g-range object for it
-
-so we will next find snip.physically
-
-interact with excellence and with these
-
-set of codes similarly we will also find
-
-snip that physically interact with
-
-promoter with the promoter regions
-
-so next we will combine those g-range
-
-outlets for the exons and the promoters
-
-to retrieve a unique um with to retrieve
-
-unique items
-
-so lastly we will overlap the intergenic
-
-and the intronic Snips with high C to
-
-identify their target genes
-
-so once we have all these Snips um
-
-namely the exonic the promoter the
-
-intergenic and the intronic Snips map to
-
-your target genes
-
-um the last few codes that I will show
-
-you in Step seven will be used to
-
-generate The annotation file that is
-
-compatible with Magma
-
-so to achieve this we will structure The
-
-annotation file so that it has the genes
-
-in The Ensemble format the chromosomal
-
-location and followed by the Snips that
-
-is assigned to each particular Gene
-
-so this is how you you will have um so
-
-following these seven steps you will
-
-have your hmac vibrant to Gene
-
-annotation file that can be used to run
-
-each magma for any trait or disease
-
-so with this um you can run hmadmav for
-
-any trade um so for here I will I'll use
-
-an example using p um Parkinson's
-
-disorder as an example
-
-so this is the portion of the magma um
-
-file the magma code that you place your
-
-hmag margin to variant annotation file
-
-Output files
-
-so here I am showing you one of the
-
-output files that you get from running
-
-hmagma so this is the dot genes.out file
-
-so with this file um you can actually
-
-extract the significant genes at various
-
-FDR thresholds for Downstream analysis
-
-Limitations
-
-so as I mentioned previously in the
-
-beginning of this tutorial magma has
-
-transformed the field of psychiatric
-
-genetics and with each magma we can
-
-address some of its limitations
-
-however it is important to note that
-
-there are still some pendant limitations
-
-that aren't addressed using H magma
-
-namely the directionality of effect so
-
-even though H magma can assign Snips to
-
-their target genes I'm using higher C
-
-data we do not know whether the Snips
-
-the variants are upregulating the gene
-
-or they are doing regular down
-
-regulating the gene so to address this
-
-you can use various eqtl data sets to
-
-to analyze the directionality of effect
-
-additionally we know that not all not
-
-all Snips are actually implicated in a
-
-trait or disease so you need to do
-
-further functional validation to further
-
-prune down the list of genes
-
-and then we also know that the sample
-
-size of a g was greatly impacts the
-
-number of Target genes that is
-
-identifiable so this H magma also
-
-suffers from this
-
-and lastly
-
-um lack of diversity in genetic studies
-
-most of the analysis that we've done
-
-with h magma has mostly been from
-
-European ancestry however it's important
-
-to note that you can also run H magma
-
-for other ancestries
-
-Conclusion
-
-so with that um in the last slide here I
-
-would just like to acknowledge where we
-
-currently are with h magma so previously
-
-we have generated H magma for brain
-
-tissues including adult and Fetal brain
-
-we have also added various salty
-
-specific annotation files including
-
-cortical
-
-ipsc derived neurons and ipsc derived
-
-astrocytes as well as midbrain
-
-endopliminergic neurons however H magma
-
-is more versatile than just brain
-
-related cells so to expand the two we
-
-have created additional annotation files
-
-for 28 different cells and tissue types
-
-to allow other researchers to use the
-
-tool
-
-and these cell types um are listed here
-
-and
-
-most of all of these annotations files
-
-can be drum can be derived from our
-
-GitHub page
-
-and with that I would just like to thank
-
-my lab as well as my funding sources
-
-additionally I'll be hosting um a q a
-
-section
-
-um on October 15 2021 at 3 45 PM Eastern
-
-Standard Time so if you have any
-
-questions or you would just like to say
-
-hi please drop by to see um and ask any
-
-questions thank you
+And with that, I would just like to thank my lab as well as my funding sources. Additionally, I'll be hosting a Q&A section on October 15, 2021, at 3:45 PM Eastern Standard Time. So, if you have any questions or you would just like to say hi, please drop by to see and ask any questions. Thank you.
 
 ------------------------------------------------------------------------
 
@@ -540,25 +132,23 @@ questions thank you
 
 **Presenter(s)**: Zac Gerring, Eske Derks
 
-thank you for attending my talk entitled e-magma an eqtl-informed method to identify risk genes using genome-wide association studies summary statistics magma was initially developed to extract biological insights from g-was by linking risk variants to their nearby genes
+Thank you for attending my talk entitled 'eMAGMA: An eQTL-Informed Method to Identify Risk Genes Using Genome-Wide Association Studies Summary Statistics'. MAGMA was initially developed to extract biological insights from GWAS by linking risk variants to their nearby genes. The method assigns single nucleotide polymorphism (SNP) associations to gene-level associations while correcting for confounding factors such as gene length, minor allele frequency, and gene density. While MAGMA is a reliable and commonly used tool, there is room for alternative approaches for how SNPs are assigned to genes. For example, conventional MAGMA assigns SNPs to the nearest gene, which is not always the most accurate approach. Non-coding SNPs can affect the expression of distal genes known as Expression Quantitative Trait Loci (eQTL). eMAGMA, or H-MAGMA, is a modified version of conventional MAGMA that leverages tissue-specific eQTL information to assign SNPs to genes.
 
-the method assigns single nucleotide polymorphism associations to gene level associations while correcting the confounding factors such as gene length minor allele frequency and gene density while magma is a reliable and commonly used tool there is room for alternative approaches for how snips are assigned to genes for example conventional magma assigns snips to the nearest gene which is not always the most accurate approach non-coding snips can affect the expression of distal genes known as expression quantitative trait loci eqtr magma or heat magma is a modified version of conventional magma that leverages tissue specific eqtl information to assign snips to genes the genotype tissue expression project or gtex is an ongoing effort to build a public resource to study tissue-specific gene expression and regulation the current version of gtex contains samples collected from 53 non-disease tissue sites across nearly 1 000 individuals including 13 brain tissues from around 200 individuals
+The Genotype-Tissue Expression Project (GTEx) is an ongoing effort to build a public resource to study tissue-specific gene expression and regulation. The current version of GTEx contains samples collected from 53 non-disease tissue sites across nearly 1,000 individuals, including 13 brain tissues from around 200 individuals. This diagram gives an example of how GTEx can be used for the functional interpretation of genome-wide association signals. The eQTL annotation from various tissues can be used to propose one or more potential causal genes whose regulation is either tissue-shared (shown in green) or tissue-specific (shown in yellow) for a trait-associated variant. These associations would not be identified by assigning SNPs to genes based on proximity alone.
 
-this diagram gives an example of how gtex can be used for the functional interpretation of genome-wide association signals the expression quantitative quantitative trait losse annotation from various tissues can be used to propose one or more potential causal genes whose regulation is either tissue shared shown in green or tissue specific shown in yellow for a
+eMAGMA largely adopts the MAGMA pipeline, which consists of three broad steps: gene annotation to assign SNPs to genes, gene analysis to compute gene-based p-values, and gene-level analysis to test the enrichment of gene-based results in curated gene sets. eMAGMA only modifies the annotation step. This is achieved by mapping significant eQTLs from GTEx to nearby genes in a tissue-specific manner. Rather than a single annotation file containing the mappings of SNPs to genes, eMAGMA uses 48 annotation files, one for each tissue in GTEx. After running gene annotation, eMAGMA generates all intermediary files required for the gene-level analysis.
 
-trait associated variant these associations would not be identified assigning snips to genes based on proximity alone e magma largely adopts the magma pipeline which consists of three broad steps gene annotation to assign snips to genes gene analysis to compute gene-based p-values and gene-level analysis to test the enrichment of gene-based results in curated gene sets e-magma only modifies the annotation step this is achieved by mapping significant eqtls from gtex to nearby genes in a tissue-specific manner rather than a single annotation file containing the mappings of snipster genes e-magma uses 48 annotation files one for each tissue and gtex after running gene annotation e-magman generates all intermediary files required for the gene level analysis
+This slide shows the basic code for each step of conventional MAGMA with alterations for eMAGMA outlined by red boxes. In the gene annotation step, the SNP location file is altered to include significant eQTLs for one of 48 tissues in GTEx. The tissue-specific eQTL annotation files are used in the gene analysis to generate gene-based p-values. In addition to generating gene-based p-values, we also generate intermediary or raw files for gene set and biological pathway analysis.
 
-this slide shows the basic code for each step of conventional magma with alterations for e-magma outlined by red boxes in the gene annotation step the snip location file is altered to include significant eqtls for one of 48 tissues in gtx the tissue-specific eqtail annotation files are used in the gene analysis to generate gene-based p-values in addition to generating gene-based p-values we also generate intermediary or raw files for the gene set and biological pathway analysis
+We tested the performance of eMAGMA against other gene-based approaches, including conventional MAGMA, AS-PAS, FUSION, and summary-based Mendelian randomization, using a simulation experiment. The simulations use SNP genotype information from the QIMR Adult Twin Study. We excluded non-founders, SNPs with more than one percent missingness, and SNPs with a minor allele frequency of less than 0.05. We only analyzed SNPs on chromosome 1. This resulted in 7,138 SNPs with around 60,000 SNPs. eQTL information was derived from GTEx whole blood, which included some 650,000 eQTL-gene combinations for around 8,200 genes. Phenotypes were simulated using GCTA using gender type and eQTL reference data from chromosome 1. Only genes with at least one significant eQTL were included in the analysis, giving 651 genes. We performed 10 simulations per gene, and gene-based association analyses on the 6,510 generated phenotypes were performed using PLINK. We corrected the results for the number of genes in the eQTL reference set.
 
-we tested the performance of e magma against other gene-based approaches including conventional magma aspertic scan fusion and summary based mendelian randomization using a simulation experiment the simulations use snip genotype information from the qimr adult twin study we excluded non-founders snips with more than one percent missingness and snips with a minor alarm frequency of less than 0.05 and we only analyze snips on chromosome this resulted in 7138nbc with around 60 000 snips eqt information was derived from gtx whole blood which included some 650 000 eqtl gene combinations for around 8200 genes phenotypes were simulated using gcta using gender type and eqtl reference data from chromosome 1. only genes with at least one significant ukchel were included in the analysis giving 651 genes and we performed 10 simulations per gene gbos on the 6510 generated phenotypes were performed using plink and we corrected the results for the number of genes in the eqtl reference set
+We first evaluated the type 1 error rate across methods by calculating the proportion of genes that were significant in the absence of a true association between eQTLs and phenotypic values. The figure on the left shows that all methods had good control of the type 1 error rate. We subsequently evaluated the statistical power to detect associations at a gene level for varying levels of phenotypic variance explained by eQTLs. We assessed the proportion of significant associations relative to both the total number of causal genes (in Figure A) and when accounting for the total number of causal genes included in each method (shown in Figure B). eMAGMA performed well across different proportions of variance explained by gene expression. After correcting for the number of genes included in each gene-based method, eMAGMA still outperformed the other approaches.
 
-we first evaluated the type 1 error rate across methods by calculating the proportion of genes that were significant in the absence of a true association between eqtls and phenotypic values the figure on the left shows all methods had good control of the type 1 error rate we subsequently evaluated statistical power to detect associations at a gene level for varying levels of phenotypic variants explained by uqtls we assess the proportion of significant associations relative to both the total number of causal genes in figure a and when accounting for the total number of causal genes included in each method shown in figure b e magmat have performed all methods across different proportions of variants explained by gene expression after correcting for the number of genes included in each gene based method e magma is still outperformed the other approaches
+We estimated statistical power as a function of the number of eQTLs per gene with one percent phenotypic variance explained by eQTLs. Power significantly increased with the number of eQTLs per gene, as shown in this figure. It should be noted that there was a significant association between the number of eQTLs per gene and statistical power for all methods. However, eMAGMA was less sensitive to the number of eQTLs compared to the other approaches.
 
-we estimated statistical power as a function of the number of eqtls per gene with one percent phenotypic variants explained by eqtls power significantly increased with the number of eqtls per gene as shown in this figure \[Music\] it should be noted that there was a significant association between the number of ekgles per gene and statistical power for all methods however e magma was less sensitive to the number of eqtls compared to the other approaches
+We compared three gene-based methods: eMAGMA, conventional MAGMA, and the TWAS approach AS-PAS. Using GWAS for major depressive disorder, AS-PAS identified 137 genes (shown in the red circle), eMAGMA identified 99 genes (green circle), and AS-PAS identified 57 genes (blue). A total of 16 genes were identified across all three methods. The figure on the right shows AS-PAS minus log term p-values on the y-axis and eMAGMA p-values on the x-axis, with the color of the points indicating the tissue for which the gene-based association was found. As you can see, there is good overlap between eMAGMA and AS-PAS, and the overlap included established risk genes such as ANK3 and TMEM106B.
 
-we compared three gene-based methods e magma conventional magma and the t-was approach aspertic scan using g-wasps for major depressive disorder shown in the red circle identified 137 genes e magma the results of which are shown on the green circle identified 99 genes and desperadic scan shown in blue identified 57 genes a total of 16 genes were identified across all three methods the figure on the right shows aspertic scan minus log term p values on the y axis and e magma p-values on the x-axis with the color of the points indicating the tissue for which the gene-based dissociation was found as you can see there is good overlap between e-magma and esperidic scan and the overlap included established risk genes such as any gr-1 and team m106b
-
-in conclusion e-magnet is an equity home formed extension to conventional magma and can be applied to any trait with g1 summary statistics e-magma map maintains appropriate controls with type 1 error rate while outperforming other methods in detecting causal associations a tutorial and input files can be found using the following github repository thank you
+In conclusion, eMAGMA is an eQTL-informed extension to conventional MAGMA and can be applied to any trait with GWAS summary statistics. eMAGMA maintains appropriate controls with the type 1 error rate while outperforming other methods in detecting causal associations. A tutorial and input files can be found using the following GitHub repository. Thank you.
 
 ------------------------------------------------------------------------
 
@@ -567,6 +157,8 @@ in conclusion e-magnet is an equity home formed extension to conventional magma 
 **Title**: How to run pathway specific Polygenic Risk Scores
 
 **Presenter(s)**: Judit García-González
+
+**Judit García-González**:
 
 Hello, my name is Judit García-González and I'm a postdoctoral fellow at the Icahn School of Medicine at Mount Sinai. Today, I will walk you through how to run pathway-specific polygenic risk scores, a tool that has been recently developed in the Polygenic Lab, either by Paul O'Reilly.
 
