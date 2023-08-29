@@ -88,7 +88,7 @@
     "href": "software_cnvs.html",
     "title": "CNVs",
     "section": "",
-    "text": "CNV Analysis\n\nThis video by Dr. Howrigan explains copy number variation: what is a copy number variant, and how is it detected in genetic data. Additionally, examples of CNV analyses demonstrate what a CNV file format looks like, as well as output from CNV analyses, and how to perform CNV burden and association testing on that data.\nThe paper referenced in this talk:\nMarshall CR, Howrigan DP, et al. Contribution of copy number variants to schizophrenia from a genome-wide study of 41,321 subjects. Nat Genet. 2017 Jan;49(1):27-35. doi: 10.1038/ng.3725. Epub 2016 Nov 21.\n\nTitle: How to Run Copy Number Variation (CNV) analysis\nPresenter(s): Daniel Howrigan\nLevel: Intermediate\nLength: 20:03\n\n\n\n\n\n\n\n\n\nLink to video transcript here.\nLink to PLINK1.9 and PLINK2.0 website."
+    "text": "This video by Dr. Howrigan explains copy number variation: what is a copy number variant, and how is it detected in genetic data. Additionally, examples of CNV analyses demonstrate what a CNV file format looks like, as well as output from CNV analyses, and how to perform CNV burden and association testing on that data.\nThe paper referenced in this talk:\nMarshall CR, Howrigan DP, et al. Contribution of copy number variants to schizophrenia from a genome-wide study of 41,321 subjects. Nat Genet. 2017 Jan;49(1):27-35. doi: 10.1038/ng.3725. Epub 2016 Nov 21.\n\nTitle: How to Run Copy Number Variation (CNV) analysis\nPresenter(s): Daniel Howrigan\nLevel: Intermediate\nLength: 20:03\n\n\n\n\n\n\n\n\n\nLink to video transcript here.\nLink to PLINK1.9 and PLINK2.0 website."
   },
   {
     "objectID": "chapter10.6_transcript.html",

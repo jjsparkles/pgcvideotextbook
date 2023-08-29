@@ -2,8 +2,6 @@
 title: "CNVs"
 ---
 
-# CNV Analysis
-
 > This video by Dr. Howrigan explains copy number variation: what is a copy number variant, and how is it detected in genetic data. Additionally, examples of CNV analyses demonstrate what a CNV file format looks like, as well as output from CNV analyses, and how to perform CNV burden and association testing on that data.
 >
 > The paper referenced in this talk:
