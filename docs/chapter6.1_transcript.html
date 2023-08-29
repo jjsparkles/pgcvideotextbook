@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>PGC Video Textbook - Chapter 6: Polygenic Risk Scores (Video Transcript)</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">PGC Video Textbook</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html" rel="" target="">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./contact.html" rel="" target="">
+ <span class="menu-text">Contact us</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://pgc.unc.edu/" rel="" target="">
+ <span class="menu-text">PGC Website</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Chapter 6: Polygenic Risk Scores (Video Transcript)</li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./pgc_logo_website_v3.jpeg" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main">
+    <div class="dropdown">
+      <a href="" title="" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label=""><i class="bi bi-github"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="">
+            Source code
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="">
+            Report a bug
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./welcome.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome to the PGC Video Textbook!</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./toc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Table of Contents</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Chapters</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 1: Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 2: The Genome</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 3: Technologies</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 4: Study designs</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 5: GWAS analysis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 6: Polygenic Scores</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 7: Ancestry-Specific Analyses and Considerations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 8: Post-GWAS bioinformatics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter9.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 9: Advanced Topics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 10: Other Considerations</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Software Tutorials</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_cnvs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CNVs</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_conditional.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Conditional Analysis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_datasets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Datasets</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_ewas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">EWAS</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_geneset.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Gene Set Identification</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_gwas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">GWAS</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_genomicSEM.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Genomic SEM</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_MR.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mendelian Randomization</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_mtag.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">MTAG</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_prs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">PRS</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_correlation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SNP Heritability and Genetic Correlation</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Additional Resources</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Glossary</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./resources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tools/Software Resources</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./addreading.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Additional Reading</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://pgc.unc.edu/for-researchers/download-results/" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">PGC Summary Statistics</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">6.1 Introduction</a>
+  <ul class="collapse">
+  <li><a href="#sec-video1" id="toc-sec-video1" class="nav-link" data-scroll-target="#sec-video1">Polygenic Risk Scores</a></li>
+  <li><a href="#sec-video2" id="toc-sec-video2" class="nav-link" data-scroll-target="#sec-video2"><em>What is a Polygenic Risk Score?</em></a></li>
+  </ul></li>
+  <li><a href="#polygenic-risk-scores-in-detail" id="toc-polygenic-risk-scores-in-detail" class="nav-link" data-scroll-target="#polygenic-risk-scores-in-detail">6.2 Polygenic Risk Scores: In detail</a>
+  <ul class="collapse">
+  <li><a href="#sec-video3" id="toc-sec-video3" class="nav-link" data-scroll-target="#sec-video3">Polygenic Risk Scores</a></li>
+  <li><a href="#sec-video4" id="toc-sec-video4" class="nav-link" data-scroll-target="#sec-video4">Polygenic Scoring Methods: Comparison and Implementation</a></li>
+  <li><a href="#sec-video5" id="toc-sec-video5" class="nav-link" data-scroll-target="#sec-video5">Polygenic risk scores: PGS comparison</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Chapter 6: Polygenic Risk Scores (Video Transcript)</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<hr>
+<section id="introduction" class="level1">
+<h1>6.1 Introduction</h1>
+<section id="sec-video1" class="level2">
+<h2 class="anchored" data-anchor-id="sec-video1">Polygenic Risk Scores</h2>
+<p><strong>Title</strong>: Polygenic Risk Scores</p>
+<p><strong>Presenter(s)</strong>: Center for Personalized Medicine, Oxford University</p>
+<p>Our genes provide valuable insight into our family history, our ancestry, and also our health. As we learn more about our DNA, we identify new opportunities for healthcare. One such opportunity comes from using polygenic risk scores. In this video, you will learn what a polygenic risk score is, see how they can be used in healthcare, and find out how you can participate in research studies that use them.</p>
+<p>Polygenic risk scores: Why might you care about whatever they are? Knowing our risk of developing particular diseases can be a really powerful way to help us live healthier lives. Imagine you knew that you were at a high risk of having a heart attack. That’s pretty clear motivation to do something about it, such as changing your diet or taking risk-lowering medication. But how could you know that you’re at a high risk?</p>
+<p>A major risk factor for common diseases such as heart disease, cancer, and diabetes is our own genetic makeup. New studies show that we can now analyze an individual’s genes and actually measure that risk using something called polygenic risk scores.</p>
+<p>Our genes vary from person to person; it’s why we’re not all the same. But some of these genetic differences can contribute to our risk of complex diseases. There are a few rare diseases that are caused by changes in a single gene, but we now know that for the most common diseases such as heart disease and diabetes, it’s often not just one or two of these genetic changes that are important; it’s many of them, each having a small effect on the polygenic risk (hence poly (“many”) genic (“to do with genes”) risk scores - scoring a risk.</p>
+<p>Scientists have compared DNA among gigantic groups of people with and without disease and have identified thousands of genetic variations that influence risk for hundreds of diseases. This important reference DNA from the studies can then be compared with individual patients’ DNA to calculate their risk.</p>
+<p>So, how could polygenic risk scores actually help you? A doctor’s usual assessment of a patient might indicate one course of action, but when armed with a polygenic risk score, a different approach may become the better way to go. These scores could help doctors better identify specific medicines or therapies a patient is likely to respond well to, or whether they’re likely to benefit from earlier screening for specific cancers. And because our genes don’t change, as more of these variations are identified, your polygenic risk scores can be updated without having any more tests. Also, remember this same genetic information can be used to give you a polygenic risk score for lots of different diseases.</p>
+<p>So, we’re stuck with the genes we have all throughout our lives. But even when they do mean our polygenic risk score of a particular disease is high, that doesn’t mean our fate is sealed. There’s lots we all can and should do to reduce our overall risk of disease, particularly if our polygenic risk is high. For example, patients with a high polygenic risk of type 2 diabetes can significantly reduce their overall risk through exercise and eating a healthy diet.</p>
+<p>So, what’s next? Well, you can see how much promise polygenic risk scores have, but there’s still work to be done. Further studies are needed to assess the clinical impact of PRS in improving the diagnosis, treatment, or prevention of specific diseases. Also, studies must be extended to cover a wider global population. But already, polygenic risk scores are a promising new tool. By taking them into consideration along with other risk factors, they have the potential to help us live longer, healthier, and happier lives.</p>
+<p>To learn more about polygenic risk scores and how you can take part in research studies involving PRS, please visit us at cpm.well.ox.ac.uk/prs.</p>
+<hr>
+</section>
+<section id="sec-video2" class="level2">
+<h2 class="anchored" data-anchor-id="sec-video2"><em>What is a Polygenic Risk Score?</em></h2>
+<p><strong>Title</strong>: What is a polygenic risk score?</p>
+<p><strong>Presenter(s)</strong>: Till Andlauer, PhD (Boehringer Ingelheim)</p>
+<p><strong>Till Andlauer</strong>:</p>
+<p>In this video, I’m going to introduce you to polygenic risk scores (PRS), also often now called only polygenic scores (PGS) because you can also calculate them on quantitative traits like, for example, brain volumes.</p>
+<p><em>Polygenic disorders</em></p>
+<p>All complex common disorders are polygenic. If you want to quantify genetic risk for a complex disorder, you thus have to assess the effects of many genetic variants at the same time. The basis for a PRS is a GWAS, and there’s a separate video explaining what that is.</p>
+<p><em>Calculating PRS</em></p>
+<p>For the calculation of PRS, this GWAS is considered the discovery or training dataset. The GWAS effect sizes are used as the weights when calculating a PRS. To get stable effect size estimates, you need GWAS generated on large samples, as, for example, conducted by the PGC. But there’s one problem: neighboring variants are correlated, because they get inherited together and thus show similar associations. The SNP density could thus bias the PRS. At any given locus, classical PRS thus only use the variant with the lowest p-value. Correlated SNPs are removed using a method called LD clumping.</p>
+<p><em>LD clumping</em></p>
+<p>How many SNPs to use? That’s a difficult question. You might only want to use the SNPs that show, genome-wide significance - 44 in this study on depression. But what about these ones here? Are they not relevant? Likely, they would get significant if a larger sample size was used for the GWAS. Therefore, typically p-values of 0.05 or 0.01 are used as thresholds for the calculation of classical PRS.</p>
+<p><em>Other methods</em></p>
+<p>In recent years, many other methods have been published that use Bayesian regression frameworks to model the linkage disequilibrium and thereby calculate LD-corrected weights. These methods, like LDpred, PRS-CS, and SBayesR, they have been benchmarked in a recent manuscript, and they perform much better than classical PRS.</p>
+<p>No matter how you choose your weights, the next step is always the same. For each SNP, you multiply the weight by the number of effect alleles. If “A” is the effect allele, then the multiplication factor would be “0” in this case, here “1”, and here “2”. You do this multiplication for each SNP, and you sum over all variants to get a single score. A PRS by itself, for a single person, is just an arbitrary number that cannot be interpreted well.</p>
+<p>In order to be able to interpret the PRS, you need a large group of people that share the same ancestry and possibly even the same socio-demographic background among each other and with the people used for the training GWAS. Only with this group, you’re able to interpret the PRS of an individual relative to that group. And if you calculate PRS for many people, you will see that the scores follow a normal distribution. The PRS of a single individual may then map to a lower, an average, or a higher percentile within that distribution.</p>
+<p>Patients suffering from a disorder will, on average, have higher PRS for that disorder than healthy controls, but only on average. Individual-level risk predictions from PRS thus have a very poor sensitivity and specificity. Basically, you can only say anything about the people mapping to the lowest or highest percentiles; they have significantly lower or higher risk for the disorder. And for everyone in between, you can’t say much.</p>
+<p>You can, however, get fairly good predictions if you contrast the extreme ends of the distribution, but the odds ratios achieved are, of course, still much lower than for monogenic disorders. Nevertheless, PRS can be used for risk stratification to identify people at high risk that might need more medical attention.</p>
+<p><em>Applications</em></p>
+<p>In research, PRS have many highly useful applications. From the assessment of the polygenic risk load for common variants in families, especially affected by psychiatric disorders, to the genetic characterization of bipolar disorder subtypes, and of course, many, many more. Also, many reviews and methods articles on PRS have been published recently, and you will easily find a lot of material to keep on reading.</p>
+<hr>
+</section>
+</section>
+<section id="polygenic-risk-scores-in-detail" class="level1">
+<h1>6.2 Polygenic Risk Scores: In detail</h1>
+<section id="sec-video3" class="level2">
+<h2 class="anchored" data-anchor-id="sec-video3">Polygenic Risk Scores</h2>
+<p><strong>Title</strong>: Polygenic Risk Scores</p>
+<p><strong>Presenter(s)</strong>: Adrian Campos, PhD (Regeneron)</p>
+<p><strong>Adrian Campos</strong>:</p>
+<p>Hello, my name is Adrian Campos and today I’m going to talk to you about polygenic risk scores for the Boulder Workshop 2021. Special thanks to Sarah Medland, Lucia Colodro Conde, and Baptiste Couvy Douchesne, for all the input for preparing these slides.</p>
+<p><em>Outline</em></p>
+<p>This is the layout for today’s talk. We’re going to start with a brief introduction on GWAS and allele effect sizes. Then I will give a brief overview of what a PRS is and how it’s calculated with the graphical example. After that, we will discuss which variants to include and how to account for linkage disequilibrium when estimating a polygenic risk score. We will discuss the more traditional approach named clumping and thresholding which is widely used in the area. Then we will discuss some applications for polygenic risk scores, other methods for polygenic risk scores and a brief summary at the end.</p>
+<p><em>GWAS</em></p>
+<p>So without further ado, let me get out of the picture and let’s start with this talk. As we have previously seen, a Genome Wide Association Study (GWAS) allows us to identify which genetic variants are linked to a trait of interest. A GWAS allows us to identify not only which genetic variants are linked to a trait of interest, but also their effect size. If we imagine, for example, this to be a height GWAS and we focus on the highlighted genetic variant, we would identify an effect size of two centimeters per copy of G allele. So the effect size of this variant would be approximately 2, which is also the slope of a linear regression between the mean height and the genotype groups. What this basically means is that if we had access to a new sample with genotype data and height data, we would expect AG individuals to be an average 2 centimeters taller than AA individuals and two centimeters shorter than GG individuals. But we know that complex traits like height, are highly polygenic. There are many genetic variants that contribute to the phenotype. Furthermore, we know that common variants have a small effect size and that the example that we were using was an exaggeration. This would cause this single loci-based prediction to be basically useless. However, we can combine the information that we gain from several genetic variants to estimate an overall score and gain a better estimate of the trait. This is essentially what a PRS does.</p>
+<p>Now let’s keep using this example to understand what a PRS really is. In our previous example, we started by focusing on this genetic variant. Which had an effect size of two centimeters per [copy of the] G allele. So if we were to score this participant based on this genetic variant, we would sum 0 given that he has no copies of the G allele. The same would be true for all participants that are homozygous for the A allele at this [locus]. Participants that are heterozygous at this [locus], have one copy of the G allele. So in order to score them we multiply 2, which is the effect size times the number of copies of the G allele, which is one. Finally, we score participants with two copies of the effect [allele] by two times the effect size, which also happens to be two in this example. For polygenic risk scores we want to aggregate the information of several genetic variants. So now let’s focus on another one. This one has an effect size of minus one per effect allele. Following the same process, we would score participants by weighting the number of copies of the T allele they have, times the effect size of that allele. So in this example, participants with a TT genotype will have a score of minus two for this [locus]. Participants with a CT genotype will have a score of minus one and participants with the reference CC Genotype will have a 0. We can do that for a third genetic variant. This one has an effect size of 0.5 per G allele. Again, we proceed to score this [locus] by multiplying the effect size times the number of copies of the effect allele. We can repeat this process, including all other variants and sum across all loci. These will give you an estimate of the polygenic risk for the trait of interest.</p>
+<p>So a working definition of polygenic risk score is a weighted sum of alleles which quantifies the effect of several genetic variants on an individual’s phenotype. As a word of caution, the sample for which PRS will be calculated should be independent from that of the discovery GWAS. That means there has to be no sample overlap between the sample with which you calculated the effect sizes for the variants, and the sample in which you were calculating a polygenic risk score. Although in this example we have focused on a quantitative trait, which is height, it is important to mention that polygenic risk scores can also be used to calculate the genetic risk for a disease or a binary trait. It is important to remember that genetic material is organized on two complementary strands of DNA, which is made up by nucleotide bases. These bases are four: basically A T C G, but they are complementary to each other. That means that if one of the strands has an A, the other strand will have a T in the position that is complementary to that A. The same is true for C and G. Whenever the reference and alternative alleles of a genetic variant are not complementary to each other, we can tell which strand they came from. However, when the reference and alternative alleles are complementary to each other, it is hard to tell which of the strands we are actually measuring and therefore which is the effect allele. That can have severe consequences on polygenic risk scores. Sometimes it is possible to solve this ambiguity using information on allele frequency, but this can be tricky if the allele frequencies are close to 0.5. Now we’re going to discuss how to decide which variants to include for a PRS, and also how to account for linkage disequilibrium. I know that I previously said that we should repeat including all the other variants and sum across all loci. However, there are things to consider. The first one is that we know that there are many GWAS that are underpowered. That means that there are many more true associations that those that are reaching genome wide significance. The second one is that linkage disequilibrium creates a correlation structure within the variants and it is important to use independent SNPs for polygenic risk scores, or to account for their correlation somehow. To do this, we try to identify near independent SNPs using a method called clumping. Clumping basically selects all the SNP are significant at a certain P value threshold and forms clumps of SNPs within a certain distance to the index SNP only if they are in LD with the index SNP.</p>
+<p>After clumping, genetic variants are approximately independent, but there’s still a question of whether we [should] include only genetic variants that reach genome wide significance, or do we relax the P value threshold for including them? One solution is to calculate many PRS, including more and more variants, by becoming more lenient on the P value threshold that we use to filter them out. Here is an example of eight P value thresholds, starting with the most strict, which would be just genome wide significant variants, all the way to the most relaxed which would be including all variants. After “solving” the problem of which genetic variants to include, the polygenic risk score can proceed as we previously saw and then we will end up with a set of scores that depict the genetic liability or the genetic risk. in an independent [population] (sample) for a certain trait of interest, then we can perform PRS-trait association analysis. For this, it is important to think about your sample. If it is a family based sample like a twin registry, it is important to adjust for relatedness. If it is homogeneous in terms of ancestry, even then it is always a good idea to adjust for genetic principal components to make sure you’re getting rid of population stratification effects. It’s also important to think whether the target sample matches the GWAS [sample] ancestry, because there are known issues of portability between ancestries.</p>
+<p>Then you also have to consider your trait of interest. Is it continuous? Then you can use a linear regression to perform PRS-trait association. If it is binary, you can rely on logistic or probit regressions and if it is ordinal, you will have to find something like a cumulative linked model or cumulative linked mixed models for family based samples. Always remember that there are potential confounders of the trait and of the discovery GWAS and you have to think about them and adjust for them. Before performing a polygenic risk score analysis is important to keep in mind that the power of PRS depends on the power of the GWAS that will be used to estimate the PRS. In this example. The same target sample was used to calculate polygenic risk scores for depression. And they are comparing the variance explained [by] a polygenic risk score based on the first MDD PRS by the PGC and a subsequent update; and what they found is that there was a substantial increase on variance explained which was sample size dependent. The clumping and thresholding approach allows us to explore the pattern of variance explained and its relationship to the number of genetic variants that we are including. For example, here we can see that using the most strict cutoff is not having a significant variance explained, and the more variants we include, the more variance explained we are getting. This is a typical pattern [of a GWAS] of a PRS. constructed from a GWAS that was that still not fully powered upon a fully powered GWAS we expected a pattern were including just the genomewide SNPs performs really well in terms of variance explained and then when we start including more and more noisy SNPs, we are losing variance explained.</p>
+<p><em>Applications</em></p>
+<p>Now we will discuss some of the applications for polygenic risk scores. I have listed here some of them, but I think you can use your imagination and think of others. The first one is something very typical. To test for the GWAS association and quantify variance explained. It is basically a safety check in a genome wide association study where you want to demonstrate that your GWAS is really predictive of the trait of interest. Polygenic risk scores can also be used for risk stratification, which would be identifying people to test later for a specific disease. That should reduce the burden to a health service system. It can also help in clinical diagnosis of rare diseases. We can also use polygenic risk scores for testing genetic overlap between traits. For example, is a genetic risk for depression predictive of cardiovascular disease and vice versa?</p>
+<p>We could also think of using PRS for trait imputation when a trait is not measured. For example, if you wanted to impute a smoking phenotype in a [population] sample. This is obviously imperfect and dependent on the heritability of the trait, but it might start gaining traction as polygenic risk scores become more and more predictive of the trait of interest. As there are many more GWASes of treatment response and they’re gaining power, personalized treatment based on polygenic risk scoring could become a reality. And basically any hypothesis where you rely on a genetic risk or a genetic liability. There’s been many publications where polygenic risk scores are used to examine gene by environment interactions.</p>
+<p><em>Software</em></p>
+<p>So far we have discussed the traditional clumping and thresholding approach. However, there are other methods that are worth mentioning. But first, let me mention the software that you can use to calculate clumping and thresholding polygenic risk scores. The first one is PLINK [and PLINK2]. The second one is PRSice2, and then there is an R library called bigsnpR which contains not only clumping and thresholding, but many other options. There are other types of PRS which we will discuss briefly like LDpred2, which is implemented in bigsnpR BbaseR which is implemented in GCTB. Lasso sum and lasso sum two, which are implemented also in bigsnpR and there’s PRS-CS, and JAMPred. Which I believe are standalone software, but I’m not quite sure. All of these methods share a common motivation, which is to substitute the clumping step with something more elegant. We basically want to approximate the effect sizes that we would obtain if we would have run a multiple linear regression GWAS. That is, a GWAS that simultaneously estimated the joint effects of all the SNPs. The problem is that we cannot do that. So what we do in a GWAS is we run m regressions. And we obtain the SNP ‘marginal’ effect sizes, that is, the effect size of each SNP without taking into account the correlation with other SNPs. And the lack of adjustment for these correlation is obvious from the Manhattan plots having these well defined towers.</p>
+<p>To solve this problem, we need to find a method that approximates the multiple linear regression results based on the GWAS summary statistics. There are many methods that implement estimating the multiple regression, SNP effect sizes, and we really don’t have time to cover them all in detail. So today I’m going to quickly mention some of them, and then I’m going to give a couple of details in the two that I considered the most commonly being used in the area, which is LDPred2 and SBayesR. LDpred2 is implemented in bigsnpR, and it uses a Gibbs sampler to estimate the joint SNP effects. SBayesR is implemented in GCTB and it estimates the joint SNP effects using Bayesian, multiple regression. Lasso sum and lasso sum two are also implemented in bigsnpR and they are based on performing a penalized regression that basically shrinks the SNP effect sizes. Then there’s PRS-CS, which also uses a Bayesian regression to estimate the joint SNP effects and then JAMPred, which uses a two step Bayesian regression framework. In SBayesR they combine a likelihood function that connects the joint effect sizes with the GWAS summary statistics coupled with a finite mixture of normal distribution priors Underlying the marker [variant] effects. This basically means that we are modeling the SNP effect sizes as a mixture of normal distributions with mean zero and different variances. This is typically done using four normal distributions all with mean zero and distinct variances. The first one is variance of zero, which basically captures all the SNPs with a 0 effect, and then from there we allow increasing values of effect sizes to exist in this model. What this does then is performing Markov chain Monte Carlo Gibbs sampling for the model parameters which are basically: The joint effect sizes, the probabilities of the mixture components and error terms. Of course, the parameter that is of our main interests are those joint effect sizes that then we can use [for] as effect sizes or weights in our polygenic risk score analysis.</p>
+<p><em>LDPRED II</em></p>
+<p>LDpred2 is a recent update to LDpred, which was a method that also derived an expectation of the joint effects given the ‘marginal effects’ and the correlation (LD) between SNPs. This method assumes that there is a proportion P of causal variants on that trait of interest, and then assumes that the joint effect sizes are normally distributed with mean zero and variance proportional to the heritability of the trait. Importantly, the proportion of causal variants and the heritability of the trait are estimated independently, at least in the classical approach and for P there is a grid of values that are explored, whereas for heritability or SNP based heritability, it is estimated using LD score regression. Then it uses a Bayesian Gibbs sampler to also estimate the joint effect sizes for the GWAS. However, LDpred2 adds 2 new models to the traditional LDpred approach. The first one estimates P and the heritability from the model. Instead of testing several values and using LD score regression. This is useful because before P and h2 squared were estimated through a validation data set and this new approach which is called ‘LDPred2 auto’, doesn’t require this intermediate validation data set anymore. And there is another one called LDpred2 sparse which allows for effect sizes to be exactly 0, which would be similar to the first mixture component of SBayesR. LDPred2 is also good for modeling long range linkage disequilibrium such as that that is found near the HLA region. Other methods rely on removing these regions to account for this problem. However this method (it’s authors) adequately points out that these regions are important for certain traits, and that removing them would reduce power in them.</p>
+<p><em>Key take home messages</em></p>
+<p>As key take home messages, these approach is usually perform better than, or at least as well as, clumping and thresholding; and when they don’t, it is important to be weary as sometimes the models don’t converge and they might fail silently. Performing better PRS is still an area of active research and there is a clear battle between complexity and power versus scalability and ease of use. There’s many publications comparing across these methods, so try to read them and pick one that best fits your needs.</p>
+<p><em>Summary</em></p>
+<p>So in summary: A polygenic risk score is a weighted sum of alleles. It’s basically a tool that estimates the genetic liability or risk to traits. It can be done for both quantitative and binary traits. Before performing PRS, it is essential to have quality controlled your GWAS (discovery) summary statistics. To have quality controlled the (target) genotype dataset and to be wary of the potentially problematic ambiguous SNPs. Furthermore, practically you find that you need to match the SNP identifiers between your GWAS data and the genotype data. Remember that discovery and target samples need to be independent and to consider statistical power before starting any analysis. When using polygenic risk scores do remember to be aware of related individuals in the sample and to properly adjust for them. As well as for population stratification. Also consider that differences in ancestry might underlie differences in predictive ability of a polygenic risk score and always be wary of jumping too fast to conclusions. Always consider potential biases in the discovery GWAS and in the target sample.</p>
+<p><em>Further reading</em></p>
+<p>If you’re interested, here are some further reading on polygenic risk scores. Some of these are historical papers that mark the milestones of actually achieving polygenic prediction in complex traits, and some of them are discussion on the possible biases and the different methods that exist for polygenic risk scoring. And that’s it for the intro to polygenic risk scores. Thank you and see you next time.</p>
+<hr>
+</section>
+<section id="sec-video4" class="level2">
+<h2 class="anchored" data-anchor-id="sec-video4">Polygenic Scoring Methods: Comparison and Implementation</h2>
+<p><strong>Title</strong>: Polygenic Scoring Methods: Comparison and Implementation</p>
+<p><strong>Presenter(s)</strong>: Oliver Pain, PhD (King’s College London)</p>
+<p><strong>Oliver Pain</strong>:</p>
+<p>Hello, my name is Oliver Pain, and I’m a postdoctoral researcher working with Professor Cathryn Lewis at King’s College London. Today, I’ll be talking about polygenic scoring methods, comparing various methods to one another, and also describing resources we’ve developed for the calculation of polygenic scores for research and clinical purposes. I have no conflicts of interest to declare. My presentation is split into three sections. First, I’ll give a brief introduction to polygenic scoring, then describe our work comparing different polygenic scoring methods, and finally introduce an easy and reliable pipeline for polygenic scoring that we’ve developed, called GenoPredPipe.</p>
+<p>So first, a brief introduction to polygenic scoring. A polygenic score is a way of summarizing an individual’s genetic risk or propensity for a given outcome, typically calculated based on an individual’s genetic variation and genome-wide association studies summary statistics referred to as GWAS sumstats. Polygenic scores are a useful research tool and can also be useful for personalized medicine, as their predictive utility increases.</p>
+<p>For polygenic scoring, the GWAS summary statistics are typically processed to identify variants overlapping with the target sample, account for linkage disequilibrium between variants, and adjust the GWAS effect sizes to optimize the signal-to-noise ratio in the GWAS summary statistics. Therefore, an individual’s polygenic score can vary due to the genetic variants considered and the allele frequency and linkage disequilibrium estimates used to adjust the GWAS sumstats. Often, in research, these factors vary depending on the target sample, using the intersective variance between the target sample and the GWAS and using estimates of linkage disequilibrium and allele frequency from the target sample itself. Now, this isn’t ideal, and an alternative strategy is to use a reference standardised approach, whereby a common set of variants is considered for all target samples, and the linkage and allele frequency estimates are derived using a common ancestry-matched reference sample. This reference standardised approach is advantageous when using polygenic scores in both clinical and research contexts, as it allows polygenic scores to be calculated for a single individual, and it avoids variation in an individual’s polygenic score due to target sample-specific properties, which might influence the result.</p>
+<p>Now, I’ll be presenting our work comparing polygenic scoring methods. This table shows the leading polygenic scoring methods as reported in the literature.</p>
+<p>The pT+clump approach is the traditional approach, whereby LD-based clumping is used to remove the linkage disequilibrium between lead variants and GWAS, and a range of p-value thresholds are used to select the variants considered. The others are more recently developed methods that use LD estimates to jointly model the effect of genetic variants and typically perform shrinkage to account for the different genetic architectures.</p>
+<p>Like the p-value thresholding approach, several of the newer methods apply multiple shrinkage parameters to optimise the polygenic score. When multiple parameters are used, a validation procedure such as 10-fold cross-validation is required to avoid overfitting, whereby the variance explained estimate is artificially high due to trying many different p-value thresholds or shrinkage parameters.</p>
+<p>In contrast, some methods provide a pseudo-validation approach, whereby the optimal parameter is estimated based on the GWAS summary statistics alone, not requiring a validation sample. Another approach that doesn’t require a validation sample is to assume an infinitesimal genetic architecture. Though, this approach works best for highly polygenic phenotypes.</p>
+<p>A third option is to model multiple polygenic scores based on a range of parameters, using methods such as elastic net to account for the correlation between the polygenic scores.</p>
+<p>We compared methods using a range of outcomes measured in two target samples: UK Biobank and the Twins Early Development Study, referred to as TEDS. We used two samples to ensure our results are not target sample-specific, and we selected the traits on the right as they have well-powered publicly available GWAS and represent a range of genetic architectures.</p>
+<p>As I described previously, we used the reference standardised approach when calculating the polygenic scores. LD and allele frequencies were estimated using two reference samples of differing sample size to evaluate the importance of reference sample size across methods. And these reference samples were the European subsets of 1000 Genomes Phase 3 and an independent random subset of 10,000 European UK Biobank participants. HapMap 3 variants were used throughout as these variants are typically well captured by genome-wide arrays, after imputation, provide good coverage of the genome, and also reduce the computation times.</p>
+<p>Several methods already provide LD matrices, including only HapMap 3 variants, for use with their software. In line with the reference standardized approach, the predictive utility of each polygenic score approach was evaluated based on the Pearson correlation between the observed outcome and predicted values. The statistical significance of differences between predicted and observed correlations was determined using the Williams test, which accounts for the correlation between predictions from each method.</p>
+<p>This figure shows the average performance of each method compared to the best pT+clump polygenic score, as identified using 10-fold cross-validation. The transparent points in the figure show the results for each target phenotype separately. I’m only showing the results based on the UK Biobank target sample when using the 1000 Genomes reference as the results were highly concordant when using TEDS or the larger reference. When comparing methods that you use 10-fold cross-validation [for] to optimise parameters (shown in red), you can see that the best methods are LDpred2, lassosum, and PRScs. All outperform the pT+clump approach, providing a 16 to 18% relative improvement in prediction.</p>
+<p>LDpred2 showed further nominally significant improvements over lassosum and PRScs on average.</p>
+<p>When comparing methods that use a pseudo-validation approach or [an] infinitesimal model (not requiring a validation sample), highlighted in blue and purple, you can see that PRScs and DBSLMM methods perform well, providing at least a 5% relative improvement over the other pseudo-validation methods. PRScs is better than DBSLMM, providing a 4% relative improvement over DBSLMM. It’s worth mentioning that SBayesR’s performance improved when using a larger LD reference on average then doing as well as DBSLMM.</p>
+<p>When comparing the pseudo-validated PRScs performance to 10-fold cross-validation results in red, the PRScs polygenic score performs only 3% worse than the best polygenic score identified by 10-fold cross-validation for any other method, and performs better than the pT+clump approach for all phenotypes tested, highlighting the reliability of this approach.</p>
+<p>The multi-PRS approach, shown in green, which uses an elastic net model to model multiple polygenic scores based on a range of p-value thresholds or shrinkage parameters, consistently outperforms the single best polygenic score selected by 10-fold cross-validation, shown in red, with the largest improvement for the pT+clump approach, of 13%.</p>
+<p>Lastly, we tested whether fitting polygenic scores across multiple methods improved prediction, and we found it did to a small degree, though the computational burden is obviously substantial because then you have to run all of the methods. In terms of runtime, these methods vary substantially. This graph shows the number of minutes to run the method on chromosome 22 alone, without any parallel computing. You can see the PRScs and LDpred2 take a lot longer than other methods. However, since our study, LDpred2 developers have substantially improved the efficiency of their software, halving the runtime, moving that down to around here, just under 25 minutes for chromosome 22. It’s worth noting that the time taken for PRScs when using a single shrinkage parameter is one-fifth of the time shown here, meaning its pseudo-validation approach is actually reasonably quick. DBSLMM is by far the fastest of the newer methods, taking just a few minutes when run genome-wide without any parallel computing, which is impressive considering how well it performed against other methods in terms of prediction.</p>
+<p>Something I wanted to highlight is that when using SBayesR, I’ve been using the robust parameterisation option available in the newest version of SBayesR. As I found SBayesR was not converging properly for some GWAS, using this robust parameterisation was [the] most reliable and did not make the SBayesR performance worse, except for depression, using the smaller 1000 Genomes European reference, you can see this here in the figure.</p>
+<p>The second point is that since our published study, I’ve also compared PRScs methods using GWAS summary statistics for 17 different phenotypes derived using only the UK Biobank sample, avoiding possible quality control issues that occur from large-scale meta-analyses. The results are highly concordant with the results when using the largest publicly available meta-GWAS results, which is reassuring that our findings are reliable. However, the performance of SBayesR did improve again, highlighting that SBayesR is especially sensitive to GWAS quality than other methods. But when the quality is good, SBayesR performs very well and appears to be the best method in this analysis.</p>
+<p>We were also interested to see whether one particular method did better when predicting across ancestries, as some methods might highlight causal genetic effects better than others. Using the same 17 GWAS I briefly mentioned on the previous slide within the UK Biobank sample alone, I’ve tested the performance of PRS methods across populations. So, using the European GWAS but predicting in non-European subsets of the UK Biobank. As you can see, the results are very similar in each population, with the best method identified in a European target sample also being the best method in the non-European target sample.</p>
+<p>So, the advice for future research regarding polygenic score methods is: for optimal prediction, we recommend modeling multiple parameters from LDpred2, lassosum, or PRScs. But if you’re looking for a simpler option, for looking at genetic overlap perhaps, I’d recommend using the PRScs pseudo-validation method, also referred to as its “fully Bayesian” method. Alternatively, if you need to compute polygenic scores for many GWAS or have limited time or computer power, then DBSLMM is a fast and good alternative. Although SBayesR does very well when the GWAS summary statistics quality is good, its sensitivity to that quality means it doesn’t always perform well when using the largest meta-GWAS results.</p>
+<p>Okay, so now I’m going to move on to the last section of my talk, which describes our recently developed pipeline for polygenic scoring called GenoPredPipe. So, most of the work I’ve just presented is contained in the study shown in the top left, where we also described the reference standardised approach polygenic scoring. In the study, we provide a schematic representation of this reference standardised approach shown in the figure on the right. Whereby, target genetic data is first imputed, if it hasn’t been already; then, only HapMap 3 variants are retained, as these are typically well-imputed and provide decent coverage of the genome. And then, the sample is split into ancestral superpopulations determined by comparison to the 1000 Genomes phase three reference. And lastly, polygenic scores are then calculated based on GWAS summary statistics processed in advance using a GWAS ancestry-matched reference.</p>
+<p>Now, when we were carrying out this study and writing the code for the reference standardised approach, we wanted to ensure the results were fully reproducible, and we wanted to develop a resource that other researchers could use to calculate reference standardised polygenic scores. So, we used a combination of R Markdown, Git, GitHub, and GitHub Pages to create a publicly available website containing a series of readable documents describing the code and results of our various studies.</p>
+<p>The website is called GenoPred as it focuses on genotype-based prediction. And there is a QR code here if you’d like to take a look. And I’ll now briefly show you the website. [https://opain.github.io/GenoPred/] So, this is the homepage of the website, which shows a list of the pages available. I’ll now click on the link describing how to prepare the reference data for the reference standardised approach. At the top, it provides some information and then lists the required software below that. And then, it goes through each step, one by one, with code chunks for users to use to reproduce results or create their own data.</p>
+<p>Now, whilst we think this is a great resource for others to see what we’ve done and replicate the results, you can see there are many steps and many separate code chunks to follow, making its use quite lengthy and possibly prone to user error. So, I’ve recently written all of the steps to calculate reference standardized polygenic scores into a pipeline using Snakemake, along with what is called a Conda environment, which will automatically download and install all of the required software, meaning it’ll create fully reproducible results. The pipeline just requires three input files. First, a list of GWAS summary statistics that you want to use, indicating the population in which they were derived, and optionally, information regarding the distribution of the phenotype in the general population (i.e., prevalence or mean and standard deviation). Then, you provide a list of target samples you want to compute polygenic scores for, with the pipeline currently accepting PLINK1 binaries (say, BED, BIM, FAM) or BGEN files and also the 23andMe format. Lastly, you’ll need a file called config.yaml, which describes the location of the GWAS and target list files. Then, actually running the whole pipeline just takes a single line of code. I provided some test data for new users to experiment with, which can be downloaded. And then step two, here, is where the pipeline is actually run. Just writing snakemake, then two parameters indicating the computational resources you want to use and that you want to use [the] Conda environment, and then the name of the output that you want. In this example, I’m requesting the final output, which is an R Markdown report of the ancestry identification and polygenic score results for all target samples which involves running the full pipeline.</p>
+<p>Here is an updated version of the schematic I showed you earlier, based on what is implemented in the GenoPred pipeline. The only difference is that at the end, now we generate a report summarizing the results of the ancestry identification and polygenic scoring. I’ll show you these reports briefly now.</p>
+<p>This is the report produced to describe the results of a single individual. First, there are some descriptives about the number of SNPs [single nucleotide polymorphisms] before and after imputation and the number of reference SNPs available. Then, the report describes the results of the ancestry identification analysis, first showing the probability of being from each subpopulation in the 1000 Genomes reference. In this example, the individual has a probability of almost 100% of being from a European population. You can also see the individual’s position on the first few reference-projected principal components relative to the 1000 Genomes population I’m showing now, and the target individual in this case is that black circle.</p>
+<p>Then, the individual’s ancestry is broken down into more specific populations within the assigned superpopulation. In this case, showing the individual was most similar to the Great British population and individuals broadly from Northern and Western Europe. And at the bottom, it shows the individual’s polygenic scores, in this case for body mass index and cardiovascular disease, showing the results in relative terms compared to an ancestry-matched reference. And then, in absolute terms for improved interpretation, by considering the variance explained by the polygenic scores and the distribution of the phenotype in the general population.</p>
+<p>Then, this is an example of the report produced to summarise the results for a sample of individuals. Again, starting with some descriptives about the overlap with the reference SNPs, then showing the number of individuals assigned to each superpopulation using a hardcore threshold of 50%, with the underlying probabilities shown as a histogram below. Again, you can see the position of these individuals on projected principal components compared to the 1000 Genomes reference. And then, each individual is assigned to specific populations within each assigned superpopulation. I’ll skip past these, though, and show you the polygenic scores, which are summarised at the bottom, just simply using histograms to show the distribution of polygenic scores for each population and GWAS.</p>
+<p>So, I’ll conclude with why I think people should use this pipeline. First, it performs ancestry classification, which is really important, as non-Europeans are often discarded from studies, and as sample sizes increase, usable non-European populations can be identified and analysed. Also, it’s important to consider the ancestry of an individual when calculating the polygenic score. Second, it provides reference-standardised polygenic scores, which are scaled according to an ancestry-matched reference and are independent of any target sample-specific properties, which is useful for research and clinical prediction purposes. Third, it can efficiently implement any of the top-performing polygenic scoring methods using a single line of code, saving time and reducing user error. Fourth, it’s been tried and tested. I’ve put UK Biobank through it and other samples, and compared the PRS to the observed phenotypes, assuring me that it’s working as it should. Finally, it’s well-documented online and produces fully reproducible results, both of which are important for progressing science. I’m showing the QR code again for the GenoPred website on the right. Please do check it out if you’re interested.</p>
+<p>Lastly, I’d like to thank my amazing colleagues for their help with this work, in particular, Cathryn for her brilliant supervision throughout. Thank you for listening.</p>
+<hr>
+</section>
+<section id="sec-video5" class="level2">
+<h2 class="anchored" data-anchor-id="sec-video5">Polygenic risk scores: PGS comparison</h2>
+<p><strong>Title</strong>: Polygenic risk scores: PGS comparison</p>
+<p><strong>Presenter(s)</strong>: Guiyan Ni, PhD (Institute for Molecular Bioscience, University of Queensland)</p>
+<p><strong>Guiyan Ni</strong>:</p>
+<p>Welcome! The topic of this video is how to run polygenic risk score comparison. Until now, we have already watched individual talks on PRScs, LDpred2, SBayesR, and other methods. I believe you all have a good understanding of polygenic scores and each of those methods.</p>
+<p>So, these slides here are just to set up the scene, to make sure that we are on the same page. A polygenic risk score of an individual is a weighted sum of the counts of risk alleles. Based on the GWAS summary statistical results, the basic method for polygenic risk score is p-value clumping and thresholding. This method is simple, but it doesn’t fully model different genetic architectures. So, there are many new methods trying to model the genetic architecture for the trait of interest. For example, using different parameters in the Bayesian regression, like LDpred-infinitesimal model, LDpred2, SBayesC, PRScs, and SBayesR. And also, methods like lassosum are using the LASSO regression. MegaPRS is another method that runs on different priors. For example, if it runs on a prior using a mixture of four normal distributions, it will be the same as SBayesR, or similar. And if a SNP has a contribution to the phenotype variance, then it will be similar to LDpred infinitesimal model or *SBLUP. It can also run a prior like BOLT-LMM and can also run lassosum regression. So, the difference between MegaPRS and other methods is that the expected per-SNP [single nucleotide polymorphism] heritability can vary by LD and minor allele frequency. So, in this talk, we will compare all those methods. And we know that when a method is proposed, [the method creators] already compared it with other methods. But the fundamental question we are trying to answer here is: Which method should we use in the PGC data?</p>
+<p>Then we use the cross-validation. We want a cohort out of cross-validation to answer this question and to compare the performance of different methods. Here’s the toy example showing, for the cross-validation, each cell here is one cohort, and the pink cell is for the discovery cohort, and the green cell is for the target cohort.</p>
+<p>In the first round of the analysis, we’re using the four pink discovery cohorts as a discovery set, and then we assess the performance of each method in the target sample. And then we repeat this process in each of those cells, each of those cohorts serves as a target cohort. If it’s needed by the method, we have another cohort that will serve as a tuning sample to select the optimal hyperparameters.</p>
+<p>So, in the real data analysis, we use the GWAS summary statistics from Schizophrenia 2 [PGC Schizophrenia GWAS data freeze 2] as a discovery sample, and all those data we actually have access to through a service, through the cohort, where the individual-level genotype is available. We use each of them as a target sample. For the tuning cohort, we use these four cohorts in turn to tune the hyperparameters. And then, we can predict the polygenic score into each of the target samples.</p>
+<p>Here, we used a few statistics to measure the performance of different methods. One is AUC [area under the ROC curve], another one is the proportion explained in the liability scale, and the third one is the odds ratio. I will go through each of them to show how to calculate each of those statistics.</p>
+<p>So, let’s first start with AUC. Here’s a toy example on how to calculate AUC by hand. So, AUC is actually short for the area under the ROC [receiver operating characteristic] curve, which is shaded by the pink here. The ROC curve is made by plotting the true positive rate against the false positive rate at each possible cutoff. So, what does that mean? It means, assume that this is the density plot for the polygenic score in the control sample, and here is for the case samples. This vertical line is the current cutoff. In this case, this graph can be divided into four groups: true negative, false negative, false positive, and true positive. And then we can calculate the proportion of each group, and then we can calculate the true positive rates and the false positive rates, which are the coordinates used in the ROC curve. So, in the current cutoff we use here, it means that we have roughly about 17% of cases that are correctly classified as cases, and then there are about 10% of controls that are erroneously classified as cases, which gives us the coordinates for this dot here. And then, as we vary this vertical line (this cutoff), we will get this ROC curve, as shown in this slide here. And this, you see, is the first statistic we use to measure the performance of different methods.</p>
+<p>And the second one is variance explained in the liability scale when using ascertained case-control studies. So, this variance is a function of variance explained in the observed scale, this <em>R<sup>2</sup></em> observed in a case-control study, and another two parameters, <em>C</em> and theta (<em>θ</em>). The variance explained on the observed scale is actually a function of two likelihoods, from the null model and the full model, which is designed in these two equations.</p>
+<p>And this parameter <em>C</em> is a function of <em>K</em>, <em>z</em>, and <em>P</em>. This <em>K</em> parameter is actually the proportion of the population that is diseased, this also means the prevalence of the disease. The <em>z</em> parameter is the density at this threshold <em>t</em> here, and this curve is a standard normal distribution. And the <em>P</em> is the proportion of cases in your GWAS results or in your case-control study. And the <em>θ</em> parameter is a function of the same <em>K</em>, <em>z</em>, <em>t</em>, and threshold <em>t</em>, but with a different combination.</p>
+<p>So, in these slides, I just give the final result of how to calculate the variance explained in the liability scale. The full derivation of this equation can be found in this reference.</p>
+<p>The third statistic is called the odds ratio. An odds ratio is a ratio between two odds, where an odd is a probability of being a case over the probability of being a control.</p>
+<p>So here’s a toy example showing how to calculate the odds ratio by hand. Let’s say that we are ordering the individuals based on their polygenic risk score from the lowest to highest, and we are interested in the odds ratio between the 10th decile and the 1st decile. So, with a number of cases and controls shown in this table, the odds of being the case in the 1st decile, it is 23 over a 103. And odds being the case in the 10th decile, it’s 83 divided by the 40. The odds ratio between the two deciles is 9.3. This value means that when we order individuals based on their polygenic score, the individuals in the top 10%, or in the 10th decile, have 9.3 times higher odds of being a case compared to the individuals in the bottom 10%. And this odds ratio can be easily estimated from the logistic regression using the logit link function.</p>
+<p>So, using the one cohort strategy, we can access the AUC, variance explained, and also the odds ratio for each of those target cohorts. Here’s the result for AUC and variance explained for each method, and different colors here stand for different methods we used. The y-axis here is the AUC difference compared to the p+T, which is a benchmark we used. And as you can see, with different validation cohorts, there are lots of variations. And that’s why we think our comparison is more robust compared to other comparisons when they [researchers] only use one target cohort.</p>
+<p>If we summarise these bar plots by each group by method, we can observe this bar plot. The y-axis here is AUC, and each of the groups stands for each of the methods we compared. And each of the bars in each of the groups stands for a different tuning cohort we used.And we noticed that the methods that have formally modeled different genetic architecture actually have quite similar performance. This is because the genetic architecture of psychiatric disorders is quite polygenic.</p>
+<p>If we look at the results for Alzheimer’s disease, which is less polygenic compared to psychiatric disorders, we will observe a big difference across different methods. And then we also observed a similar pattern for variance explained in the liability scale and the odds ratio between the top 10 percent and bottom 10 percent, also the odds ratio between the top 10% and medium. But we observed that LDpred2, SBayesR, and MegaPRS rank the highest among most of the comparisons.</p>
+<p>To summarise, in this talk, I showed how to calculate AUC, variance explained in the liability scale, and also the odds ratio by hand. And based on the comparisons we made, we observed that for psychiatric disorders, which are very polygenic, all the methods perform similarly, but some rank higher than others, for example, LDpred2, SBayesR, and MegaPRS.</p>
+<p>The results I show here are part of this study, which was recently published. In this paper, we also did the comparison for major depression and also other sensitivity analyses. We also provide the code to run each method and for each comparison, as well as each of the statistics used for comparison.</p>
+<p>With this, I would like to give a big thank you to Professor Naomi Wray, who always gave me huge support whenever I needed, and thanks to all other PCC members. And thank you all.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          // default icon
+          link.classList.add("external");
+      }
+    }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

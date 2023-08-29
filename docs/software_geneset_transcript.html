@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>PGC Video Textbook - Software Tutorials: Gene Set Identification (Video Transcript)</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">PGC Video Textbook</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html" rel="" target="">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./contact.html" rel="" target="">
+ <span class="menu-text">Contact us</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://pgc.unc.edu/" rel="" target="">
+ <span class="menu-text">PGC Website</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Software Tutorials: Gene Set Identification (Video Transcript)</li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./pgc_logo_website_v3.jpeg" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main">
+    <div class="dropdown">
+      <a href="" title="" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label=""><i class="bi bi-github"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="">
+            Source code
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="">
+            Report a bug
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./welcome.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome to the PGC Video Textbook!</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./toc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Table of Contents</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Chapters</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 1: Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 2: The Genome</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 3: Technologies</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 4: Study designs</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 5: GWAS analysis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 6: Polygenic Scores</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 7: Ancestry-Specific Analyses and Considerations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 8: Post-GWAS bioinformatics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter9.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 9: Advanced Topics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chapter 10: Other Considerations</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Software Tutorials</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_cnvs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CNVs</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_conditional.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Conditional Analysis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_datasets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Datasets</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_ewas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">EWAS</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_geneset.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Gene Set Identification</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_gwas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">GWAS</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_genomicSEM.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Genomic SEM</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_MR.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mendelian Randomization</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_mtag.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">MTAG</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_prs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">PRS</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software_correlation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SNP Heritability and Genetic Correlation</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Additional Resources</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Glossary</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./resources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tools/Software Resources</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./addreading.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Additional Reading</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://pgc.unc.edu/for-researchers/download-results/" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">PGC Summary Statistics</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#sec-video1" id="toc-sec-video1" class="nav-link active" data-scroll-target="#sec-video1">MAGMA</a></li>
+  <li><a href="#sec-video2" id="toc-sec-video2" class="nav-link" data-scroll-target="#sec-video2">H-MAGMA</a></li>
+  <li><a href="#sec-video3" id="toc-sec-video3" class="nav-link" data-scroll-target="#sec-video3">E-MAGMA</a></li>
+  <li><a href="#sec-video4" id="toc-sec-video4" class="nav-link" data-scroll-target="#sec-video4">PRSet</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Software Tutorials: Gene Set Identification (Video Transcript)</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="sec-video1" class="level1">
+<h1>MAGMA</h1>
+<p><strong>Title</strong>: Gene- and gene-set analysis in MAGMA</p>
+<p><strong>Presenter(s)</strong>: Christiaan de Leeuw</p>
+<p><strong>Christiaan de Leeuw</strong>:</p>
+<p>Welcome to this tutorial on the use of MAGMA, our tool for gene and gene-set analysis of GWAS data. During this tutorial, I will give you a brief overview of how to get started with running a basic MAGMA analysis.</p>
+<p>A full MAGMA analysis consists of three separate steps. First is the annotation step, which serves to map SNPs [single nucleotide polymorphism] onto genes. Second is the gene analysis step, in which, for every annotated gene, an association p-value is computed from the GWAS [genome-wide association study] input data, as well as a gene-gene correlation matrix. And third is the gene-set analysis step, which computes competitive gene-set p-values for each gene set in the input from the gene analysis output.</p>
+<p>The GWAS input data can be provided to MAGMA in one of two ways. First, you can use raw genotype data in binary PLINK format, which can optionally include separate covariate or input files to be used for the analysis. The second option is to use previously computed SNP summary statistics in combination with genotype reference data. A number of additional files are needed for the analysis as well. For the annotation step, both SNP and gene location files must be provided. For SNP locations, in most cases, the most convenient option is to simply use the BIN files from the PLINK genome data that you will use in step 2. Gene location files with Entrez gene IDs can be found on the MAGMA site [https://ctg.cncr.nl/software/magma], but you can also construct and use your own gene location files if needed. For the gene analysis step, as noted, when using GWAS summary statistics for input, you need to provide reference genotype data as well. A common choice for this is to use a 1000 Genomes reference data, and ready-to-use PLINK format file sets for this data, for different ancestries, can be found on the MAGMA site. Finally, for the gene-set analysis step, a file defining the gene sets to be analysed is needed. Which gene sets are best to use for the bundle and research question you aim to answer? A good general-purpose source of gene sets is MSigDB. This contains a broad range of different gene collections, including Gene Ontology terms and collections of canonical pathways. These are suitable for general gene-set analysis.</p>
+<p>The MAGMA program itself, alongside documentation and auxiliary files, can be found on the MAGMA site, shown on the screen. MAGMA is a command-line program and does not need to be installed. To run it, just download the archive for your specific operating system and extract the MAGMA executable to the folder you will be running your analysis from. If you are using a Linux system, it is possible that the standard Linux version of MAGMA is not compatible with your Linux distribution. In this case, it is recommended that you try the statically compiled version of MAGMA instead. If this also doesn’t work, you can also compile the program from source on your system. To do so, simply download and unzip the source code archive and run the `make` command shown on the screen. This will create a MAGMA executable binary for your system, which can be used in the same way as the pre-compiled versions.</p>
+<p>Before you begin, make sure you have downloaded all the files you need, including the MAGMA binary issue. You are now ready to run the annotation step, which will create a file mapping SNPs to genes. To do so, we will use the following command:</p>
+<p>The `--snp-loc` and `--gene-loc` flags specify SNP and gene location files to use, and the `--out` flag specifies the prefix of the output files. This will produce the annotation file as well as a corresponding log file you can use for later reference.</p>
+<p>By default, the annotation will map SNPs to a gene if they fall inside the transcription region of that gene, as defined by the gene location file. However, you can use the `window` modifier for the `--annotate` flag shown here to additionally include SNPs within the specified distances in kilobases upstream and downstream of the transcription region.</p>
+<p>Generally, using your PLINK BIM file for these applications will be most convenient, but you can use a different file as well. In this case, you need a plain text file with no header and with three columns: SNP ID, chromosome, and base pair position, in that order, as shown here.</p>
+<p>Similarly, you can create and use your own gene location files as well, as needed. These should have the same format as the first four columns in the gene location files provided on the MAGMA site and as shown on screen here as well: gene ID, chromosome, and transcription start and stop site, in that order. The fifth column containing the strand alignment of the gene is only required when you are annotating using an asymmetric window around the gene.</p>
+<p>For the annotation step, two things are crucial when selecting the input files. First, both the SNP and gene location files must be in reference to the same human genome build. As such, always use SNP locations from files for which you are certain of the build. Note, however, that the SNP locations are only used during this annotation step, so SNP locations in the GWAS input files for the later gene analysis step are not used.</p>
+<p>Second, the SNP and gene IDs used in these location files need to be of the same type as those used in the input files in the later analysis steps. As such, for example, if you have gene definition files that use Ensembl gene IDs, you should use gene location files with Ensembl IDs in this step as well.</p>
+<p>To run a gene analysis using raw GWAS data as input, we will use the command shown on screen now:</p>
+<p>The `--bfile` flag is used to specify the file prefix of the PLINK dataset, while the option of `--covar` flag specifies a file with covariates we want to include. By default, all the covariates in the file will be used, but it is possible to have MAGMA include only a subset of those as well. With the `--gene-annot` flag, we specify the step-to-gene mapping file we created in the previous step. The runtime of gene analysis in MAGMA will depend on both the sample size and the number of SNPs included in the analysis. The dataset I’m using for this demonstration is very small, and so the analysis completes very quickly. But for larger modern datasets, it will take rather longer. However, a batch mode is available that can split the analysis into smaller pieces, which can then be run in parallel. Moreover, if you only need gene analysis output and are not planning to perform any gene-set analysis, you can use a `--genes-only` flag to omit computing the gene-gene correlation matrix. This will speed up the analysis as well.</p>
+<p>Once the analysis is complete, MAGMA will produce two output files in addition to the log file. The first is the .gene.raw file, which is the output file that will be needed for running gene-set analysis in the next step. The second is the .genes.out file. This is the main results file for a gene analysis. The exact columns included in this file can vary somewhat depending on the analysis settings, but it will look very similar to the file shown here. Note that the gene p-values provided in the output here are raw p-values, and you will still need to apply any multiple testing correction yourself.</p>
+<p>Running gene analysis with GWAS summary statistics is done in a very similar way, and it requires an input file of the kind I’m showing on screen now. The only two columns that are required to be in your summary statistics file are the SNP ID column and the SNP p-value column, the first two columns in the file here. However, ideally, you should have a sample size column for the sample size per SNP in the file as well. It is not necessary to remove other columns in the file, so output files from most SNP analysis software can directly be used as input for MAGMA.</p>
+<p>The command to run this analysis looks like this:</p>
+<p>The `--bfile` flag is now used to specify the reference genetic data, and the `--pval` flag is used for the summary statistics file. With the `use` modifier, you can tell MAGMA which columns contain SNP ID and p-value, in that order. And the `--ncol` modifier defines a sample size column.</p>
+<p>As with the raw data analysis, the runtime for this type of analysis will vary depending on the data and settings you use. As before, the batch mode and genes-only setting can be used to reduce the total time needed for the analysis. Finally, if you have no sample size column available for your summary statistics, the global sample size for the data can be specified instead with the `--N` modifier for the `--pval` flag, as highlighted on screen now.</p>
+<p>In addition to those demonstrated now, there are various other options available for the MAGMA gene analysis. These include the batch and genes-only modes already mentioned, as well as options for meta-analysis, rare variant burden scoring, and various others. Please consult the manual for a more detailed description of all available options and settings for the MAGMA gene analysis.</p>
+<p>With the gene analysis complete, we are now ready to run the gene-set analysis. To do so, we also need our gene-set definition file, which should be formatted like this. In this file, each line defines a separate gene set. The first value on the line is the name of the gene set, this is followed by a whitespace-separated list of gene IDs mapped to that set. In the example here, we are using Entrez gene IDs, but as stated before, any type of gene ID is permissible.</p>
+<p>To actually run the analysis, we will use this command:</p>
+<p>The `--gene-results` flag is used to specify the gene results file that we obtained in the previous step, with the `--set-annot` flag specifying the gene-set definition file to use. The gene-set analysis will usually be very quick regardless of the input data, since it doesn’t depend on the sample size of the GWAS data.</p>
+<p>The main output file produced by the analysis is the one with the .gsa.out suffix, which looks like this. Note that each gene set is analysed separately, and the p-value for each of the gene sets is therefore independent of which other sets were analysed in the same MAGMA run.</p>
+<p>As in the gene analysis, the p-values here are raw p-values and thus still need to be corrected for multiple testing. However, if there are any gene sets that are significant after Bonferroni correction for the total number of gene sets in the input, an additional .gsa.set.genes.outfile will be created for each of the significant gene sets. This file shows the gene-level results for all the genes in that set, which can be useful for further interpretation of significant results.</p>
+<p>The gene-set analysis we performed now is just a basic competitive gene-set analysis, but MAGMA allows for a number of more complex analyses as well. This includes the analysis of continuous gene-level information, such as, for example, tissue-specific gene expression levels; joint and conditional analysis models which allow for correction of gene-cell associations for the effects of overlapping gene sets; and gene-set interaction analysis to test whether genetic associations are due to specific combinations of gene sets rather than individual sets.</p>
+<p>This concludes this MAGMA tutorial. More information on the different analyses offered by MAGMA can be found in the MAGMA manual and various published articles. See the website for more details. You can also always contact me by email should you have any questions or run into any issues when using MAGMA.</p>
+<hr>
+</section>
+<section id="sec-video2" class="level1">
+<h1>H-MAGMA</h1>
+<p><strong>Title</strong>: Annotating Genetic Variants to Target Genes Using H-MAGMA</p>
+<p><strong>Presenter(s)</strong>: Nancy Y.A. Sey, University of North Carolina at Chapel Hill</p>
+<p><strong>Nancy Sey</strong>:</p>
+<p>Hi everyone, my name is Nancy, and today I’ll be talking to you about annotating genetic variants to target genes using Hi-C coupled MAGMA, or H-MAGMA for short.</p>
+<p><em>Background</em></p>
+<p>So, before I get started, I would just like to credit doctors Christian and Danielle for developing MAGMA Gene Set Analysis. MAGMA is widely used in our field, and this is for various reasons, with a few being that the tool is pretty revolutionary in that it’s aided in making sense of GWAS findings by identifying the target genes of genetic variants identified from GWAS. Additionally, MAGMA is very easy to use, in that you do not have to be computationally savvy to use the tool. Also, it is very efficient compared to other tools in the field, so it takes a very short time to run MAGMA. However, despite all of these benefits, there are a few limitations to the tool. Namely, MAGMA relies on positional mapping to link variants to target genes. We know from prior studies that the gene regulatory landscape is complex, and it’s therefore possible for variants, especially non-coding variants, to interact with and regulate distal genes. Additionally, the regulatory landscape can be tissue or cell type-specific, so we have to take into account the tissue or cell type that’s most relevant to the trait or disease that we’re interested in understanding. So, these two limitations served as the foundation for developing Hi-C coupled MAGMA, or H-MAGMA for short. So, H-MAGMA complements MAGMA by using Hi-C data.</p>
+<p><em>Materials</em></p>
+<p>As mentioned previously, H-MAGMA complements MAGMA, so the materials needed to run H-MAGMA are the same as the ones needed to run MAGMA, with the only difference being the gene-to-variant annotation file. In this tutorial, I will walk you through how to generate the H-MAGMA annotation file, which links non-coding variants to their target genes using Hi-C interactions. So again, I will just walk you through how to generate the annotation file for H-MAGMA.</p>
+<p><em>Required Files</em></p>
+<p>The materials needed to run H-MAGMA are similar to the ones needed to run MAGMA, with the only difference being the annotation file. To generate the H-MAGMA annotation file, you need a few other files. Namely, you need BED files for gene exon and promoter coordinates. Additionally, you need a Hi-C dataset in the BEDPE file format. You will also need an ancestry reference genome, and for the sake of this protocol, we’ll be using the European ancestry. Once you have the annotation file generated, you need GWAS summary statistics to run H-MAGMA.</p>
+<p>So again, the focus of this tutorial will be on Steps A and B, which walks you through how to generate the H-MAGMA variant annotation file.</p>
+<p><em>Step 1: Load Libraries and Required Data</em></p>
+<p>So, I have broken the annotation files into seven different steps, with code for each step provided as part of this recording. So, the first step is to load your libraries and all required data into a work directory. The next step is to read in your exon and promoter BED files and create genomic range objects for the exons and promoters using the exon and promoter coordinates from GENCODE version 26. Once you have this loaded and the genomic range object generated, you will save them as an R file. Similarly, you would generate a genomic range object for all SNPs using the reference genome from the European ancestry, and you will also save this as an R file in the work directory for later use.</p>
+<p><em>Step 2: Overlap SNPs to Genes</em></p>
+<p>In the following step, we will overlap SNPs to genes, starting with the exonic SNPs. As a reminder, the exonic SNPs are assigned to your target genes using positional mapping, and this is because they are more likely to impact the genes in which they reside. To assign the exonic SNPs to your target genes, we will overlap the gene range objects for exons with the genomic range objects for SNPs that were created in Steps 2 and 3, respectively. Similarly, we will also overlap the genomic range object for promoters with the genomic range object that was created for the SNPs. Once you have both genomic range objects created for the exons and the promoters, these will be saved as an R file for later use.</p>
+<p><em>Intergenic SNPs</em></p>
+<p>So, after we’ve assigned the exonic and promoter SNPs to their target genes, there will be a subset of SNPs that do not overlap with either. These are known as the intergenic or intronic SNPs. In the following steps, I will walk you through how to match those SNPs to your target genes using high C interaction, as shown in this diagram.</p>
+<p>To achieve this, we will first identify those intergenic and intronic SNPs and save them as an R file. Then, we will load our Hi-C data. For the sake of this tutorial, we’ll be using Hi-C data from the adult brain as an example. Once you load the Hi-C data in the BED Plink format, you will generate a genomic range object for it.</p>
+<p>Next, we will find SNPs that physically interact with exons and SNPs that physically interact with promoters using these set of codes. Similarly, we will also find SNPs that physically interact with promoter regions.</p>
+<p>Then, we will combine those genomic range objects for the exons and the promoters to retrieve unique items. Lastly, we will overlap the intergenic and intronic SNPs with Hi-C data to identify their target genes.</p>
+<p>Once we have all these SNPs - the exonic, the promoter, the intergenic, and the intronic SNPs - mapped to your target genes, the last few codes that I will show you in Step 7 will be used to generate the annotation file that is compatible with MAGMA. To achieve this, we will structure the annotation file so that it has the genes in the Ensembl format, the chromosomal location, and followed by the SNPs that are assigned to each particular gene. Following these seven steps, you will have your H-MAGMA variant-to-gene annotation file that can be used to run H-MAGMA for any trait or disease. With this, you can run H-MAGMA for any trait. Here, I will use an example using Parkinson’s disorder as an example. So, this is the portion of the MAGMA code where you place your H-MAGMA variant-to-gene annotation file.</p>
+<p><em>Output Files</em></p>
+<p>Here, I am showing you one of the output files that you get from running HMAGMA. This is the ‘genes.out’ file. With this file, you can actually extract the significant genes at various false discovery rate (FDR) thresholds for downstream analysis.</p>
+<p><em>Limitations</em></p>
+<p>As I mentioned previously in the beginning of this tutorial, MAGMA has transformed the field of psychiatric genetics, and with H-MAGMA, we can address some of its limitations. However, it is important to note that there are still some persistent limitations that aren’t addressed using H-MAGMA. Namely, the directionality of effect. Even though HMAGMA can assign SNPs to their target genes using high C data, we do not know whether the variants are upregulating or downregulating the gene. To address this, you can use various eQTL datasets to analyze the directionality of effect.</p>
+<p>Additionally, we know that not all SNPs are actually implicated in a trait or disease, so you need to do further functional validation to prune down the list of genes. Also, we know that the sample size of a GWAS greatly impacts the number of target genes that is identifiable, so H-MAGMA also suffers from this. And lastly, the lack of diversity in genetic studies. Most of the analysis that we’ve done with HMAGMA has mostly been from European ancestry. However, it’s important to note that you can also run H-MAGMA for other ancestries.</p>
+<p><em>Conclusion</em></p>
+<p>So, with that, in the last slide here, I would just like to acknowledge where we currently are with H-MAGMA. Previously, we have generated H-MAGMA for brain tissues, including adult and fetal brain. We have also added various cell-type-specific annotation files, including cortical, iPSC-derived neurons, and iPSC-derived astrocytes, as well as midbrain dopaminergic neurons. However, H-MAGMA is more versatile than just brain-related cells. To expand its use, we have created additional annotation files for 28 different cell and tissue types to allow other researchers to use the tool. These cell types are listed here, and most of all these annotation files can be derived from our GitHub page.</p>
+<p>And with that, I would just like to thank my lab as well as my funding sources. Additionally, I’ll be hosting a Q&amp;A section on October 15, 2021, at 3:45 PM Eastern Standard Time. So, if you have any questions or you would just like to say hi, please drop by to see and ask any questions. Thank you.</p>
+<hr>
+</section>
+<section id="sec-video3" class="level1">
+<h1>E-MAGMA</h1>
+<p><strong>Title</strong>: E-MAGMA: an eQTL-informed method to identify risk genes using genome-wide association study summary statistics</p>
+<p><strong>Presenter(s)</strong>: Zac Gerring, Eske Derks</p>
+<p>Thank you for attending my talk entitled ‘eMAGMA: An eQTL-Informed Method to Identify Risk Genes Using Genome-Wide Association Studies Summary Statistics’. MAGMA was initially developed to extract biological insights from GWAS by linking risk variants to their nearby genes. The method assigns single nucleotide polymorphism (SNP) associations to gene-level associations while correcting for confounding factors such as gene length, minor allele frequency, and gene density. While MAGMA is a reliable and commonly used tool, there is room for alternative approaches for how SNPs are assigned to genes. For example, conventional MAGMA assigns SNPs to the nearest gene, which is not always the most accurate approach. Non-coding SNPs can affect the expression of distal genes known as Expression Quantitative Trait Loci (eQTL). eMAGMA, or H-MAGMA, is a modified version of conventional MAGMA that leverages tissue-specific eQTL information to assign SNPs to genes.</p>
+<p>The Genotype-Tissue Expression Project (GTEx) is an ongoing effort to build a public resource to study tissue-specific gene expression and regulation. The current version of GTEx contains samples collected from 53 non-disease tissue sites across nearly 1,000 individuals, including 13 brain tissues from around 200 individuals. This diagram gives an example of how GTEx can be used for the functional interpretation of genome-wide association signals. The eQTL annotation from various tissues can be used to propose one or more potential causal genes whose regulation is either tissue-shared (shown in green) or tissue-specific (shown in yellow) for a trait-associated variant. These associations would not be identified by assigning SNPs to genes based on proximity alone.</p>
+<p>eMAGMA largely adopts the MAGMA pipeline, which consists of three broad steps: gene annotation to assign SNPs to genes, gene analysis to compute gene-based p-values, and gene-level analysis to test the enrichment of gene-based results in curated gene sets. eMAGMA only modifies the annotation step. This is achieved by mapping significant eQTLs from GTEx to nearby genes in a tissue-specific manner. Rather than a single annotation file containing the mappings of SNPs to genes, eMAGMA uses 48 annotation files, one for each tissue in GTEx. After running gene annotation, eMAGMA generates all intermediary files required for the gene-level analysis.</p>
+<p>This slide shows the basic code for each step of conventional MAGMA with alterations for eMAGMA outlined by red boxes. In the gene annotation step, the SNP location file is altered to include significant eQTLs for one of 48 tissues in GTEx. The tissue-specific eQTL annotation files are used in the gene analysis to generate gene-based p-values. In addition to generating gene-based p-values, we also generate intermediary or raw files for gene set and biological pathway analysis.</p>
+<p>We tested the performance of eMAGMA against other gene-based approaches, including conventional MAGMA, AS-PAS, FUSION, and summary-based Mendelian randomization, using a simulation experiment. The simulations use SNP genotype information from the QIMR Adult Twin Study. We excluded non-founders, SNPs with more than one percent missingness, and SNPs with a minor allele frequency of less than 0.05. We only analyzed SNPs on chromosome 1. This resulted in 7,138 SNPs with around 60,000 SNPs. eQTL information was derived from GTEx whole blood, which included some 650,000 eQTL-gene combinations for around 8,200 genes. Phenotypes were simulated using GCTA using gender type and eQTL reference data from chromosome 1. Only genes with at least one significant eQTL were included in the analysis, giving 651 genes. We performed 10 simulations per gene, and gene-based association analyses on the 6,510 generated phenotypes were performed using PLINK. We corrected the results for the number of genes in the eQTL reference set.</p>
+<p>We first evaluated the type 1 error rate across methods by calculating the proportion of genes that were significant in the absence of a true association between eQTLs and phenotypic values. The figure on the left shows that all methods had good control of the type 1 error rate. We subsequently evaluated the statistical power to detect associations at a gene level for varying levels of phenotypic variance explained by eQTLs. We assessed the proportion of significant associations relative to both the total number of causal genes (in Figure A) and when accounting for the total number of causal genes included in each method (shown in Figure B). eMAGMA performed well across different proportions of variance explained by gene expression. After correcting for the number of genes included in each gene-based method, eMAGMA still outperformed the other approaches.</p>
+<p>We estimated statistical power as a function of the number of eQTLs per gene with one percent phenotypic variance explained by eQTLs. Power significantly increased with the number of eQTLs per gene, as shown in this figure. It should be noted that there was a significant association between the number of eQTLs per gene and statistical power for all methods. However, eMAGMA was less sensitive to the number of eQTLs compared to the other approaches.</p>
+<p>We compared three gene-based methods: eMAGMA, conventional MAGMA, and the TWAS approach AS-PAS. Using GWAS for major depressive disorder, AS-PAS identified 137 genes (shown in the red circle), eMAGMA identified 99 genes (green circle), and AS-PAS identified 57 genes (blue). A total of 16 genes were identified across all three methods. The figure on the right shows AS-PAS minus log term p-values on the y-axis and eMAGMA p-values on the x-axis, with the color of the points indicating the tissue for which the gene-based association was found. As you can see, there is good overlap between eMAGMA and AS-PAS, and the overlap included established risk genes such as ANK3 and TMEM106B.</p>
+<p>In conclusion, eMAGMA is an eQTL-informed extension to conventional MAGMA and can be applied to any trait with GWAS summary statistics. eMAGMA maintains appropriate controls with the type 1 error rate while outperforming other methods in detecting causal associations. A tutorial and input files can be found using the following GitHub repository. Thank you.</p>
+<hr>
+</section>
+<section id="sec-video4" class="level1">
+<h1>PRSet</h1>
+<p><strong>Title</strong>: How to run pathway specific Polygenic Risk Scores</p>
+<p><strong>Presenter(s)</strong>: Judit García-González</p>
+<p><strong>Judit García-González</strong>:</p>
+<p>Hello, my name is Judit García-González and I’m a postdoctoral fellow at the Icahn School of Medicine at Mount Sinai. Today, I will walk you through how to run pathway-specific polygenic risk scores, a tool that has been recently developed in the Polygenic Lab, either by Paul O’Reilly.</p>
+<p>So, first of all, it’s important to know what are and why it’s interesting to use pathway polygenic risk scores. For that, I’m going to use one example that most of you might be familiar with, which is the PGC2 GWAS [Psychiatric Genomics Consortium genome-wide association study based on the second data freeze] for schizophrenia.</p>
+<p>So, we know that psychiatric disorders like schizophrenia have complex aetiologies, where different environmental and genetic factors contribute to the liability of these traits. When we talk about genetic factors, we can imagine that GWAS is a composite of signals, where each signal might represent functional roots to disease. For example, there might be some genomic regions that harbour genetic variants associated with abnormal synaptic pruning. There might be other regions that are associated with biological pathways and processes related to immune activation, and other regions in the genome that pick up signals associated with cannabis consumption.</p>
+<p>The idea behind pathway-specific polygenic scores is that, instead of aggregating effects across the entire genome, we will aggregate them across relevant pathways. And because we are separating the genetic contribution of a trait, accounting for the genomic structure, we hope that pathway polygenic scores might be more useful for patient stratification or to investigate the disease heterogeneity. Because now, one single individual, instead of having one single polygenic score, will have as many scores as pathways we investigate.</p>
+<p>So, to calculate these pathway scores, I will walk you through the tool PRSet, which is an extension of the PRSice software, which uses a clumping and p-value thresholding method. It’s important to know that the pathways can be any type of gene set that reflects the encoding of different biological functions. So, this tool is quite flexible to define pathways. PRSice, as well as the newest version of PRSet, have been developed by Dr Sam Choi, and you can find the software and the manual on this website: precise.info.</p>
+<p>[This website link does not work, but the PRSice and PRSet guides are still available online: https://choishingwan.github.io/PRSice/]</p>
+<p>On the website, you will find a quick start guide on how to download it, as well as some more detail about the available commands and how the method works.</p>
+<p>So, how to use PRSet? PRSet is very similar to PRSice in terms of use, where we need as an input the GWAS summary statistics and individual-level data for genotype and phenotype. But for PRSet, we also require information about the pathways or gene sets that we want to use. As I said, the tool is quite flexible; pathways can be defined in a variety of ways, including pathways defined by existing canonical databases like Gene Ontology or Reactome, but also by experimental perturbations or some functional outputs, like gene co-expression or protein-protein interactions.</p>
+<p>So, I’ll go into a bit more detail on the different input options that are available to define pathways. One is using GMT and GTF files using the commands --msigdb and --gtf. The commands that are for PRSet will be shown in green.</p>
+<p>So, MSigDB [Molecular Signatures Database] will contain information related to pathways, so that is the genes that form each pathway. You will need a [GMT] file where each pathway is specified in a different row, with all the units that compose that pathway. Then, the GTF file will contain the position coordinates for each gene. So, in general, GTF files contain different features, and by default, PRSet uses the features exon, gene, protein_coding, or CDS. But this can be modified with the command --feature.</p>
+<p>The second option that can be used is a BED file. In this case, you will need to include one BED file per pathway. So, if you want to include multiple pathways, then BED files can be included, separated by a comma. In the BED file, three columns are required, and those are: chromosome name, start position, and end position.</p>
+<p>One important thing to know when using BED files is that they are indexed differently from PLINK files. So, whereas PLINK files are 1-based, BED files are 0-based.</p>
+<p>So, you can see in this example that we have a sequence of nucleotides, and, whereas for 1-based indexing, one nucleotide is one position, the 0-based indexing will use a range around each nucleotide. So you will need to subtract -1 in the 0-based indexing for the BED files.</p>
+<p>The input option three is a SNP [single-nucleotide polymorphism] list, so similar as the BED files, each pathway will be a different file, and they can be separated by a comma, as in this example here.</p>
+<p>When you download PRSice for PRSet, there is some toy data that you can use, and these are the commands that you can use: you define the GWAS, your target sample. In this case, I’m using the first option to define the pathways. Then, you can set the number of permutations that you want to run and also the name of the output.</p>
+<p>So, after walking you through the input, we can see a step-by-step of how PRSet calculates the pathway polygenic scores. To do that, I will compare it with the genome-wide PRS.</p>
+<p>So, whereas for the genome-wide PRS, you clump and p-value threshold for given r<sup>2</sup> and linkage disequilibrium, for pathway PRS, this will be done for each pathway separately. Then, similarly, whereas with the genome-wide PRS, each individual will have only one polygenic score, for pathway PRS, each individual will have <em>k</em> scores, for <em>k</em> number of pathways.</p>
+<p>For the results, whereas for genome-wide PRS, what is reported is the association measured, which is the phenotype variance explained by the genome-wide PRS. In the case of the pathway PRS, there will be the same, i.e., the association of phenotype variance explained by each pathway PRS. But you can also report enrichment of GWAS signal in the pathway, which is based on R<sup>2</sup> of the pathways.</p>
+<p>So, I’ll go a bit into more detail about these two different methods that PRSet can output. So, when we are talking about association, what PRSet will output is the self-contained p-value. It’s just the regression of the phenotype on pathway PRS and covariates. So, pathways that have many genes, containing SNPs that are associated with the phenotype, are highlighted here in pink, and those will be significant. But it’s important to note that for these results, the self-contained p-value does not account for pathway size. And for example, a large pathway will be more likely to be significant because it’s easier to have a larger number of SNPs associated with the phenotype.</p>
+<p>But the second output that we can have is this enrichment, that will be output as competitive p-value. This is resulting from a permutation procedure, and this will test whether a pathway is more associated with the phenotype compared to null pathways that have the same size. So, in this case, with the competitive p-value, we’ll be accounting for the size of each pathway.</p>
+<p>In this plot, I’ll illustrate how we calculate this competitive p-value that accounts for the pathway size. We can imagine a pathway A that has some SNPs in the genic region of the pathway, and for which we will calculate an observed p-value. Then, we will calculate as many null pathways as permutations we run, and these null pathways will have the same number of false clumped SNPs as pathway A, but these SNPs will be randomly allocated. So, we will obtain a distribution of null p-values. Because its power will give us a p-value of the association, the competitive p-value will be defined as the number of tests under the null that have a p-value smaller than our observed p-value + 1, divided by the number of tests performed + 1.</p>
+<p>So, this is how the competitive p-values are calculated. This approach and this output is similar to the type of enrichment analysis that are performed by MAGMA and LD Score regression, but pathway PRS have the advantage that they provide individual-level data that can be used for other applications.</p>
+<p>So, let’s see how the output of PRSet looks like. Similar to PRSice, for every PRSet run, we will have a log file, with extension .log, and this will contain the commands used for the analysis and all the information regarding the filtering, the fields that were selected, etc.</p>
+<p>Then, we will have another file, with extension .precise, and this will contain the polygenic model for each pathway across thresholds. So, in this case, I was running only the threshold 1, which contains all the SNPs. But you can see that there is information for each pathway: the R<sup>2</sup>, the self-contained p-value, coefficient for the regression, standard error, and the number of SNPs. You will always see this base pathway, which is the background pathway used for the competitive p-value calculation.</p>
+<p>Then, we have the .best file, which will give us the scores for each individual and each pathway. So here, each row will be one individual, and then the score for each pathway will be indicated in a separate column. So, there will be as many columns as pathways you are using. In this case, we see four examples from the KEGG [Kyoto Encyclopedia of Genes and Genomes] database. If you wanted all the scores at all p-value thresholds, because this .best file will report only the one with the best p-value threshold, you can use the command --all.</p>
+<p>Finally, we will have another file with extension .summary that will have the information of the best model fit of each phenotype pathway. And in this case, each pathway will be a row. And then, it will contain, again, information on the R<sup>2</sup>, null p-value, coefficient, and also this competitive p-value that I was talking about, that will indicate the enrichment of this pathway compared to other pathways of similar size.</p>
+<p>Finally, I would like to leave some heads up and useful commands. So, for example, some commands that might be useful for the user is the window size, which is like, for example, if you are defining SNPs that are within a gene, you can extend that window. And so, you can include some number of N bases to the 3’ region of each gene or to the 5’ region of each gene. You can also exclude SNPs that are within a certain range with a command --x-range. So, for example, the MHC [major histocompatibility] complex or the <em>APOE</em> region if you want to do some Alzheimer’s analysis and you want to exclude that one.</p>
+<p>If you want to improve the computational efficiency of PRSet, you can parallelise the process using the --thread command. You can also speed up a little bit of PRSet at the expense of an increase in memory using the --ultra command. Additionally, you can use the --keep and the --extract commands to exclude individuals or SNPs from the analysis.</p>
+<p>If you are doing permutations to calculate the competitive p-values, this can be computationally intensive. So, it might be useful to adjust for the covariates like sex or age beforehand on your phenotype and then use the residuals as the phenotype because this will speed up the process.</p>
+<p>So, this was this quick introduction to PRSet. Thank you for listening. If there is anything that is not here or you have any questions, there is a Q&amp;A session on the 15th of October at 11:30, and this is the Zoom meeting ID. So, I’ll be happy to clarify or answer any questions. Thank you.</p>
+<p>[Please note that this is an archival recording and the information about the meeting pertains to a past event.]</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          // default icon
+          link.classList.add("external");
+      }
+    }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
