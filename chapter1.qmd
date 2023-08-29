@@ -2,14 +2,10 @@
 title: "Chapter 1: Introduction"
 ---
 
-------------------------------------------------------------------------
-
 > *Chapter goals:*
 >
 > 1.  *Gain a basic understanding of psychiatric genetics and genome-wide association studies.*
->
 > 2.  *Understand the recent history of psychiatric genetics.*
->
 > 3.  *Gain insight into the current state of psychiatric disorder research.*
 
 ## 1.1 What are psychiatric disorders? {#sec-section1}
