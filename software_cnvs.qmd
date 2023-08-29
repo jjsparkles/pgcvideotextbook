@@ -4,6 +4,12 @@ title: "CNVs"
 
 # CNV Analysis
 
+> This video by Dr. Howrigan explains copy number variation: what is a copy number variant, and how is it detected in genetic data. Additionally, examples of CNV analyses demonstrate what a CNV file format looks like, as well as output from CNV analyses, and how to perform CNV burden and association testing on that data.
+>
+> The paper referenced in this talk:
+>
+> Marshall CR, Howrigan DP, *et al*. **Contribution of copy number variants to schizophrenia from a genome-wide study of 41,321 subjects**. *Nat Genet*. 2017 Jan;49(1):27-35. doi: 10.1038/ng.3725. Epub 2016 Nov 21.
+
 **Title**: How to Run Copy Number Variation (CNV) analysis
 
 **Presenter(s)**: Daniel Howrigan
@@ -18,3 +24,5 @@ embed_url("https://www.youtube.com/watch?v=Lg2k2BEQIy4")
 ```
 
 Link to video transcript [here](chapter9.1_transcript.qmd).
+
+Link to [PLINK1.9](https://www.cog-genomics.org/plink/) and [PLINK2.0](https://www.cog-genomics.org/plink/2.0/) website.
