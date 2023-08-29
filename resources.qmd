@@ -24,6 +24,7 @@ Below is a table listing various software and other tools that are commonly used
     9.  Fine-mapping
     10. Conditional analyses
     11. EWAS
+    12. Mendelian Randomization
 5.  WGS and WES analysis
     1.  Raw count QC
     2.  Preprocessing
