@@ -2,7 +2,11 @@
 title: "Genomic SEM"
 ---
 
-## Genomic SEM Tutorial
+> In the following video, Dr. Grotzinger demonstrates how to run Genomic Structural Equation Modeling (Genomic SEM) using psychiatric traits as examples. The first part of the practical discusses how to estimate a user-specified model using genome-wide estimates, and the second half shows how to incorporate individual SNP effects for various multivariate methods.
+>
+> Description of Genomic SEM from Dr. Grotzinger:
+
+> > "Genomic SEM is a general framework for modeling genetic covariance matrices produced by methods like LD score regression to then estimate any number of structural equation models that can be used to test hypotheses about the processes that gave rise to the data that we observe. It only requires your summary statistics, and those summary statistics can come from samples with unknown and varying degrees of sample overlap. What that means is that you can now estimate models for really rare traits that you would not otherwise observe in the same sample."
 
 **Title**: Genomic SEM Tutorial
 

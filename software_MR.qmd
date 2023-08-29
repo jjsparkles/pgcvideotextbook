@@ -2,6 +2,8 @@
 title: "Mendelian Randomization"
 ---
 
+> In the following video, Dr. Zheng gives a brief introduction into the concept of Mendelian Randomization (MR) and how it can be used to examine causality in genetics.
+
 **Title**: Examine causality using Mendelian randomization
 
 **Presenter(s)**: Jie Zheng
@@ -14,3 +16,9 @@ title: "Mendelian Randomization"
 library("vembedr")
 embed_url("https://www.youtube.com/watch?v=_MJLRM7xjug")
 ```
+
+Link to the video transcript [here](software_MR_transcript.qmd).
+
+Link to [MR-Base website](https://www.mrbase.org/).
+
+Link to [TwoSampleMR R package](https://mrcieu.github.io/TwoSampleMR/) documentation.
