@@ -4,7 +4,7 @@ title: "Software Tutorials: PRS (Video Transcript)"
 
 ------------------------------------------------------------------------
 
-# Comparison of PRS methods {#sec-video1}
+# Comparison of PRS Methods {#sec-video1}
 
 **Title**: Comparison of PRS methods
 
@@ -54,9 +54,9 @@ And with this, I would like to give a big thank you to Professor Naomi Wray, who
 
 **Presenter(s)**:
 
--   Tian Ge, PhD (Broad Institute)
+-   Tian Ge, PhD (Center for Genomic Medicine, Mass General Research Institute)
 
--   Yunfeng Ruan, PhD (Broad Institute)
+-   Yunfeng Ruan, PhD (Stanley Center for Psychiatric Research, Broad Institute of MIT and Harvard)
 
 **Yunfeng Ruan**:
 
@@ -82,11 +82,11 @@ Then in the testing data, you calculate the final result.  With the knowledge o
 
 ------------------------------------------------------------------------
 
-## PRS in Ancestrally-diverse Populations {#sec-video3}
+## PRS in Ancestrally-Diverse Populations {#sec-video3}
 
 **Title**: PRS-CSx: Improving Cross-Population Polygenic Prediction using Coupled Continuous Shrinkage Priors
 
-**Presenter(s)**: Tian Ge, PhD (Broad Institute)
+**Presenter(s)**: Tian Ge, PhD (Center for Genomic Medicine, Mass General Research Institute)
 
 **Host:**
 
@@ -298,7 +298,7 @@ So, this is almost the end of it. If you want to get more information about PRSi
 
 **Presenter(s)**: Florian Privé, PhD (National Centre for Register-Based Research, Aarhus University)
 
-**\[Florian Privé\]**
+**Florian Privé:**
 
 Hello, my name is Florian Privé. I'm a postdoc at Aarhus University, and I will be talking today in this tutorial video about how to compute a polygenic score using LDpred2. This video was made for the PGC Day at the WCPG 2021.
 
@@ -336,7 +336,7 @@ And then if you look at the correlation with the final estimate, final predictio
 
 # SBayesR {#sec-video6}
 
-**Content coming soon!**
+***Content coming soon!***
 
 **Title**: How to run SBayesR
 
@@ -348,17 +348,17 @@ And then if you look at the correlation with the final estimate, final predictio
 
 **Title**: Estimating Vertical Transmission and Genetic Nurture using Polygenic Scores
 
-**Presenter(s)**:
+**Presenter(s)**: Jared Balbona, PhD (Institute for Behavioral Genetics, University of Colorado Boulder)
 
--   Jared Balbona, PhD (Institute for Behavioral Genetics, University of Colorado Boulder)
+**Coauthor(s)**:
 
 -   Yongkang Kim, PhD (Janssen Pharmaceutical Companies of Johnson & Johnson)
 
--   Matthew Keller, PhD (University of Colorado, Boulder)
+-   Matthew Keller, PhD (Institute for Behavioral Genetics, University of Colorado Boulder)
 
 **Jared Balbona**:
 
-All right, hi everyone. Uh, thank you all for watching. Uh, so my name is Jared Balbona, and today I'll be talking about a project on estimating vertical transmission and genetic nurture using polygenic scores. This is a project I've been working on with Matt Keller and Yongkang Kim here at the University of Colorado Boulder, and it's one that I'm very excited about. So without further ado, I will start with a brief overview.
+All right, hi everyone. Thank you all for watching. So my name is Jared Balbona, and today I'll be talking about a project on estimating vertical transmission and genetic nurture using polygenic scores. This is a project I've been working on with Matt Keller and Yongkang Kim here at the University of Colorado Boulder, and it's one that I'm very excited about. So without further ado, I will start with a brief overview.
 
 As you all know, parents and offspring resemble one another in a variety of ways. One of the most commonly used examples of this, at least in our field, is that highly educated parents tend to have highly educated offspring. So there are a couple of different explanations for the similarity between parents and kids. The first and perhaps most obvious of which is shared genetic effects. So, the parent has a strong genetic predisposition for higher education, which she transmits to her daughter, giving her daughter that same predisposition. However, we can consider an alternative explanation in which being highly educated itself influences how parents raise their child. So, for example, a highly educated parent may be more likely to encourage a positive attitude towards schoolwork or to read to their child -- all these different behaviors that collectively could have a potential influence on the child's education level down the line.
 

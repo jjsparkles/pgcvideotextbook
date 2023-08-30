@@ -2,11 +2,11 @@
 title: "Chapter 7: Trans-ancestry analysis (Video Transcript)"
 ---
 
-# 7.1: Cross-ancestry analysis {#sec-video1}
+# 7.1: Cross-Ancestry Analysis {#sec-video1}
 
 **Title**: Cross-ancestry PTSD and Polygenic Findings, and the Cross-Population SIG of the PGC
 
-**Presenter(s)**: Laramie Duncan, PhD (Stanford University)
+**Presenter(s)**: Laramie Duncan, PhD (Department of Psychiatry and Behavioral Sciences, Stanford University)
 
 **Caroline Nievergelt:**
 
@@ -22,7 +22,7 @@ Okay, great. Thanks so much, Caroline. I really appreciate this opportunity to p
 
 And the reason that we're talking about PGC PTSD is that, actually, compared to most large-scale GWAS, our samples were relatively diverse. So, as you can see here, we actually had a minority of European ancestry participants, and we had a rather large sample of African Americans, as well as some Latino/Hispanic individuals. This is again for the first wave of PTSD analyses within the PGC.
 
-At the time when I made this figure, I looked at the other large psychiatric GWAS. And like the rest of medical genetics, we can see that most samples are of European ancestry. The samples that aren\'t of European ancestry across medical genetics tend to be from East Asian populations. So, despite the fact that PGC PTSD does have greater representation of more populations, it's important to note that it's still not reflective of world ancestry.
+At the time when I made this figure, I looked at the other large psychiatric GWAS. And like the rest of medical genetics, we can see that most samples are of European ancestry. The samples that aren't of European ancestry across medical genetics tend to be from East Asian populations. So, despite the fact that PGC PTSD does have greater representation of more populations, it's important to note that it's still not reflective of world ancestry.
 
 But nevertheless, in conducting these analyses, the fact that we had these more diverse samples necessitated modifications to our analysis. And so, when we approached this problem, we did what anyone does: we thought about what might be appropriate, talked to experts, and tried a number of different analysis approaches. And there were a lot of modifications that were necessary.
 
@@ -44,17 +44,17 @@ So, in summary regarding polygenic scores, the performance is worse for non-Euro
 
 But getting to a bigger picture question, I think that the question a lot of us have on our minds is, what do we do about the substantial underrepresentation of most populations in genetic studies? So, this gets me to my last topic. And at first, or as a point of background information, there are many potential solutions to this problem, and I know that many researchers within the PGC have been working in this area for a considerable time. And so we are just mentioning one additional approach. But, you now, if I had more time, I would mention other efforts that have been ongoing. Something that we did, with Hailiang Huang, who is now junior faculty in Mark Daly's group at the Broad, is that we started a cross-population special interest group within the PGC, with the goals of improving the applicability of genetic results, conducting analyses, and supporting the involvement of researchers from different parts of the world.
 
-In one of our very first meetings, Roseann Peterson had a really great idea to write a best practices paper describing the ways in which genetic analyses ought to be modified for samples of diverse ancestry, in particular admixed samples and mixtures of different samples. Some of the topics addressed in this paper include specific recommendations for how to modify quality control steps, which parameters should be modified and how and why. As well, there are recommendations for imputation and how to analyse samples that are GWAS or a mixed model context. And this is absolutely a huge team effort, and I want to just say thank you to this group. I think that the reason such a best practices paper doesn\'t already exist is that there isn't really any one person in the world who could have written a best practices paper. It's thanks to the analysts in this group especially, that have expertise in particular areas, that we were able to cover these different components of analysis and really write about the various approaches, and what are the pros and cons are for taking one approach over another. So that\'s what\'s in this best practices paper.
+In one of our very first meetings, Roseann Peterson had a really great idea to write a best practices paper describing the ways in which genetic analyses ought to be modified for samples of diverse ancestry, in particular admixed samples and mixtures of different samples. Some of the topics addressed in this paper include specific recommendations for how to modify quality control steps, which parameters should be modified and how and why. As well, there are recommendations for imputation and how to analyse samples that are GWAS or a mixed model context. And this is absolutely a huge team effort, and I want to just say thank you to this group. I think that the reason such a best practices paper doesn't already exist is that there isn't really any one person in the world who could have written a best practices paper. It's thanks to the analysts in this group especially, that have expertise in particular areas, that we were able to cover these different components of analysis and really write about the various approaches, and what are the pros and cons are for taking one approach over another. So that's what's in this best practices paper.
 
 Hailiang spoke to an editor at *Cell*, and they were very interested in this paper. They suggested that we present it as a primer, so that's the current format of the paper. We'll be submitting it on Monday, so that's our first work product. The special interest group is open to anyone; it's technically within the stats group. If you're interested, we have meetings on the first Wednesday of the month at 1:00 p.m. currently. You can get in touch with us. Thanks to all these groups for their incredible collaborative efforts. So, thank you.
 
 ------------------------------------------------------------------------
 
-# 7.2: Ancestry-specific PRS {#sec-video3}
+# 7.2: Ancestry-Specific PRS {#sec-video3}
 
 **Title**: Clinical use of current polygenic risk scores may exacerbate health disparities
 
-**Presenter(s)**: Alicia Martin, PhD (Broad Institute)
+**Presenter(s)**: Alicia Martin, PhD (The Broad Institute of MIT and Harvard)
 
 **Caroline Nievergelt**:
 

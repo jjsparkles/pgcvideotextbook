@@ -192,13 +192,13 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 4: Study designs</span></a>
+ <span class="menu-text">Chapter 4: Study Designs</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter5.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 5: GWAS analysis</span></a>
+ <span class="menu-text">Chapter 5: GWAS Analysis</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -216,7 +216,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter8.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 8: Post-GWAS bioinformatics</span></a>
+ <span class="menu-text">Chapter 8: Post-GWAS Bioinformatics</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -351,10 +351,10 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#statistics-of-the-interaction-term" id="toc-statistics-of-the-interaction-term" class="nav-link active" data-scroll-target="#statistics-of-the-interaction-term">Statistics of the Interaction Term</a>
   <ul class="collapse">
-  <li><a href="#sec-video1" id="toc-sec-video1" class="nav-link" data-scroll-target="#sec-video1">Dummy variables: interaction terms explanation</a></li>
-  <li><a href="#sec-video2" id="toc-sec-video2" class="nav-link" data-scroll-target="#sec-video2">Continuous variables: interaction term interpretation</a></li>
+  <li><a href="#sec-video1" id="toc-sec-video1" class="nav-link" data-scroll-target="#sec-video1">Dummy Variables: Interaction Terms Explanation</a></li>
+  <li><a href="#sec-video2" id="toc-sec-video2" class="nav-link" data-scroll-target="#sec-video2">Continuous Variables: Interaction Term Interpretation</a></li>
   </ul></li>
-  <li><a href="#sec-video3" id="toc-sec-video3" class="nav-link" data-scroll-target="#sec-video3">Gene environment interaction in psychiatric genetics</a></li>
+  <li><a href="#sec-video3" id="toc-sec-video3" class="nav-link" data-scroll-target="#sec-video3">Gene-Environment Interaction in Psychiatric Genetics</a></li>
   </ul>
 </nav>
     </div>
@@ -382,9 +382,9 @@ ul.task-list li input[type="checkbox"] {
 <section id="statistics-of-the-interaction-term" class="level1">
 <h1>Statistics of the Interaction Term</h1>
 <section id="sec-video1" class="level2">
-<h2 class="anchored" data-anchor-id="sec-video1">Dummy variables: interaction terms explanation</h2>
+<h2 class="anchored" data-anchor-id="sec-video1">Dummy Variables: Interaction Terms Explanation</h2>
 <p><strong>Title</strong>: Dummy variables: interaction terms explanation</p>
-<p><strong>Presenter(s)</strong>: Ben Lambert, PhD (College of Engineering, Mathematics, and Pyshical Sciences, University of Exeter)</p>
+<p><strong>Presenter(s)</strong>: Ben Lambert, PhD (College of Engineering, Mathematics and Physical Sciences, University of Exeter)</p>
 <p><strong>Ben Lambert</strong>:</p>
 <p>So, let’s think back to our example we had in the last video. Let’s say we were interested in how wage rates varied between, let’s say, male and female individuals. So, the idea is that we regress wage on, let’s say, now that we sort of implicitly assume that we have all these other variables. We’re not going to include them explicitly. We’re just going to have alpha plus, let’s say, beta 1 times the number of years of education plus beta 2 times our sort of sex variable. Our sex variable takes on the value of 1 if the individual is female and it takes on a value of 0 if the individual is male. But then we included a further term, which was, let’s say, beta 2 3 where we multiplied sex times education. So, the idea is that we have collected all these variables across our individuals or in the population or in our sample, rather, and we have included a multiplicative term in our regression specification. So, what does this multiplicative term mean? How do we interpret this beta 3?</p>
 <p>Well, let’s think about again what this average wage rate would be for a female and compare it with the average wage rate for a male. The average wage rate for a female, if they had a given number of years of education, would be alpha plus beta 1 times the number of years of education which they had, plus, well, this sex variable now takes on the value of 1, so I’ve just got plus beta 2, and now our sex variable here is taking on a value of 1 as well, so I’ve got plus beta 3 times the number of years of education. Okay, and then we can sort of simplify this. If we should have noticed that our alpha and our beta 2 are those constants here, so you’re writing those both the stars of the model, we get sort of alpha plus beta 2, let’s say. And then we recognize that we have essentially got two education terms, we’ve got this one and this one, so I could simplify these as well by writing them or by combining them. I just get beta 1 plus beta 3 times the number of years of education. Okay, so that’s for the female case.</p>
@@ -394,9 +394,9 @@ ul.task-list li input[type="checkbox"] {
 <hr>
 </section>
 <section id="sec-video2" class="level2">
-<h2 class="anchored" data-anchor-id="sec-video2">Continuous variables: interaction term interpretation</h2>
+<h2 class="anchored" data-anchor-id="sec-video2">Continuous Variables: Interaction Term Interpretation</h2>
 <p><strong>Title</strong>: Continuous variables: interaction term interpretation</p>
-<p><strong>Presenter(s)</strong>: Ben Lambert, PhD (College of Engineering, Mathematics, and Pyshical Sciences, University of Exeter)</p>
+<p><strong>Presenter(s)</strong>: Ben Lambert, PhD (College of Engineering, Mathematics and Physical Sciences, University of Exeter)</p>
 <p><strong>Ben Lambert</strong>:</p>
 <p>Hi there! In this video, I wanted to explain the interpretation when we have two continuous variables multiplied together in a regression model. Okay, so let’s think about a particular example. Let’s say we were trying to explain a company’s level of sales, but we’re trying to do that in terms of the effective price and the effect of advertising. Yes, this might be the company’s level of advertising spend, and this is just the company’s price set for a particular product. So, traditional theory would expect us to have a downward-sloping demand curve. We would expect beta 1 to be less than zero because if you lower the price, then sales increase. And we would expect that if we spend more on advertising, then sales tend to be higher as well. So, we’ve got beta 1 being less than 0 and beta 2 being greater than zero.</p>
 <p>But let’s say we included a third term here, which is beta 3, and now included the product of price and the company’s spend on advertising. What interpretation can we actually give to this beta 3? Well, let’s think about this in two different situations. Let’s say that the company was spending a hundred thousand on advertising, and let’s think about what the company’s expected sales would be under that situation. The idea is that the company’s level of sales we would expect if advertising was 100 would be equal to alpha plus beta 1 times the price plus now we’re going to get 100 times beta 2 for this third term and then we’re going to get plus 100 times beta 2 3 times the price.</p>
@@ -407,11 +407,11 @@ ul.task-list li input[type="checkbox"] {
 </section>
 </section>
 <section id="sec-video3" class="level1">
-<h1>Gene environment interaction in psychiatric genetics</h1>
+<h1>Gene-Environment Interaction in Psychiatric Genetics</h1>
 <p><strong>Title</strong>: Gene-environment interaction analysis</p>
-<p><strong>Presenter(s)</strong>: Kenny Westerman, PhD (Broad Institute)</p>
+<p><strong>Presenter(s)</strong>: Kenny Westerman, PhD (Broad Institute of Harvard and MIT)</p>
 <p><strong>Kenny Westerman</strong>:</p>
-<p>Uh, yeah, so I’m a little bit daunted by the scope of presenting in general on gene-environment interaction analysis because there’s so much that can be encompassed here. But I’ll do my best to provide a broad overview and I’m happy to go into any of the topics in more depth.</p>
+<p>Yeah, so I’m a little bit daunted by the scope of presenting in general on gene-environment interaction analysis because there’s so much that can be encompassed here. But I’ll do my best to provide a broad overview and I’m happy to go into any of the topics in more depth.</p>
 <p><em>Outline</em></p>
 <p>All right, so to start off here, I’ll generally present this in three chunks. Here we can start with gene-environment interactions in general: what are they, why are we interested in them, and how might we go about assessing or measuring them? The second part will involve a little bit of investigation into why statistical power is a particular issue for gene-environment interactions (GxE) and talk about some of the opportunities for addressing those and improving power. Lastly, part three will be a bit of a grab bag of some additional topics that are relevant and potentially interesting for future investigation.</p>
 <p><em>Phenylketonuria: a high-impact gene- environment interaction</em></p>

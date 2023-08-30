@@ -1,5 +1,5 @@
 ---
-title: "Chapter 8: Post-GWAS bioinformatics"
+title: "Chapter 8: Post-GWAS Bioinformatics"
 ---
 
 > *Chapter goals:*
@@ -37,7 +37,7 @@ Link to video transcript [here](chapter8.1_transcript.qmd).
 
 **Title**: Genetic Correlation and Partitioning
 
-**Presenter(s)**: Patrick Turley, PhD (Massachusetts General Hospital)
+**Presenter(s)**: Patrick Turley, PhD (Analytic and Translational Genetics Unit, The Broad Institute of Harvard and MIT)
 
 **Level**: Beginner friendly
 
@@ -98,7 +98,7 @@ Link to FUMA [Website](https://fuma.ctglab.nl/), [GitHub](https://github.com/Kyo
 
 ------------------------------------------------------------------------
 
-# 8.4 Gene set analysis {#sec-section4}
+# 8.4 Gene Set Analysis {#sec-section4}
 
 > This video by Dr. Posthuma is the same from Section 8.3, giving an overview of gene set analysis in MAGMA.
 
@@ -122,15 +122,15 @@ Link to video transcript [here](chapter8.3_transcript.qmd#sec-video1).
 
 ------------------------------------------------------------------------
 
-# 8.5 Fine-mapping {#sec-section5}
+# 8.5 Fine-Mapping {#sec-section5}
 
 > In this video, Dr. Finucane gives a comprehensive introduction to fine-mapping of genetic loci to determine potential causal variants, including discussing posterior inclusion probabilities (PIPs) and credible sets, and gives examples of different fine-mapping methods such as FINEMAP, SuSiE, Caviar, and DAP-G.
 
 **Title**: Introduction to fine-mapping methods
 
-**Presenter(s)**: Hilary Finucane, PhD (Broad Institute)
+**Presenter(s)**: Hilary Finucane, PhD (Broad Institute of Harvard and MIT)
 
-**Level**: Beginner friendly
+**Level**: Beginner/Intermediate
 
 **Length**: 52:12
 
@@ -201,7 +201,7 @@ Link to video transcript [here](chapter8.6_transcript.qmd#sec-video2).
 
 **Title**: Introduction to expression (e)QTL & their role in connecting QTL to genes and molecular networks.
 
-**Presenter(s)**: Laura Saba, PhD (University of Colorado)
+**Presenter(s)**: Laura Saba, PhD (Department of Pharmaceutical Sciences, University of Colorado)
 
 **Level**: Intermediate (the content will be easier to follow by those who already went through some introductory materials on GWAS and gene expression)
 
@@ -218,13 +218,13 @@ Link to video transcript [here](chapter8.6_transcript.qmd#sec-video3).
 
 **Title**: Linking SNPs with genes in GWAS.
 
-**Level**: Intermediate (the content will be easier to follow by those who already went through some introductory materials on GWAS and gene expression)
-
 **Presenter(s)**:
 
--   Luke O'Connor, PhD (Broad Institute)
+-   Luke O'Connor, PhD (Department of Biomedical Informatics, Harvard Medical School)
 
--   Dan Weiner, PhD (Broad Institute)
+-   Dan Weiner, PhD (Broad Institute of Harvard and MIT)
+
+**Level**: Intermediate (the content will be easier to follow by those who already went through some introductory materials on GWAS and gene expression)
 
 **Length**: 47:52
 
@@ -245,7 +245,7 @@ Link to video transcript [here](chapter8.6_transcript.qmd#sec-video4).
 
 **Title**: Understanding GWAS mechanisms with Transcriptome-Wide Association Studies
 
-**Presenter(s)**: Sasha Gusev, PhD (Dana-Farber Cancer Institute)
+**Presenter(s)**: Sasha Gusev, PhD (Dana-Farber Cancer Institute, Harvard Medical School)
 
 **Level**: Intermediate (the content will be easier to follow by those who already went through some introductory materials on GWAS and gene expression)
 
@@ -262,7 +262,7 @@ Link to video transcript [here](chapter8.7_transcript.qmd#sec-video1).
 
 **Title**: PGC TWAS Primer
 
-**Presenter(s)**: Sasha Gusev, PhD (Dana-Farber Cancer Institute)
+**Presenter(s)**: Sasha Gusev, PhD (Dana-Farber Cancer Institute, Harvard Medical School)
 
 **Level**: Beginner to Intermediate
 
@@ -285,7 +285,7 @@ Link to [FUSION TWAS website](http://gusevlab.org/projects/fusion/).
 
 **Title**: PheWAS: Discovering gene-disease associations
 
-**Presenter(s)**: Joshua Denny, PhD (All of Us Research Program)
+**Presenter(s)**: Joshua Denny, MD, MS (All of Us Research Program)
 
 **Level**: Intermediate
 
@@ -302,7 +302,7 @@ Link to video transcript [here](chapter8.8_transcript.qmd#sec-video1).
 
 **Title**: Using EHR-based genomic approaches to understand the relationship between mental and physical health
 
-**Presenter(s)**: Lea Davis, PhD (Vanderbilt University)
+**Presenter(s)**: Lea Davis, PhD (Department of Medicine, Vanderbilt University Medical Center)
 
 **Level**: Intermediate
 

@@ -36,7 +36,7 @@ To learn more about polygenic risk scores and how you can take part in research 
 
 **Title**: What is a polygenic risk score?
 
-**Presenter(s)**: Till Andlauer, PhD (Boehringer Ingelheim)
+**Presenter(s)**: Till Andlauer, PhD (Department of Computational Biology and Digital Sciences, Boehringer Ingelheim)
 
 **Till Andlauer**:
 
@@ -130,11 +130,13 @@ If you're interested, here are some further reading on polygenic risk scores. So
 
 ------------------------------------------------------------------------
 
+# 6.3: Methods
+
 ## Polygenic Scoring Methods: Comparison and Implementation {#sec-video4}
 
 **Title**: Polygenic Scoring Methods: Comparison and Implementation
 
-**Presenter(s)**: Oliver Pain, PhD (King's College London)
+**Presenter(s)**: Oliver Pain, PhD (Social, Genetic, and Developmental Psychiatry Centre, King's College London)
 
 **Oliver Pain**:
 

@@ -2,9 +2,7 @@
 title: "Chapter 4.3: Genetic Study Designs (Video Transcript)"
 ---
 
-# Twin studies {sec-video1}
-
-**Title**: What are "Twin studies"?
+**Title**: What are "Twin Studies"?
 
 **Presenter(s)**: OpenLearn from the Open University
 
@@ -17,11 +15,3 @@ In twin studies, it is possible to separate out these different influences by co
 So, identical twins share all their genes and their share environmental influences. Differences between these twins can thus be only due to non-shared environmental influences. If both identical and non-identical twins resemble each other closely, this must be due to shared environmental influences. If identical twins resemble each other more closely than non-identical twins, then it gives us a clue that genetic factors must play a role.
 
 So, twin studies can provide clues on the relative importance of genes and environment, and thus provide information on where the balance lies between nature and nurture.
-
-------------------------------------------------------------------------
-
-# Choosing the Right Design {sec-video2}
-
-**Title**: Choosing the Right Study Design in Genetic Epidemiology
-
-**Presenter(s)**: Duncan Thomas, PhD (Department of Population and Public Health Sciences, University of Southern California)

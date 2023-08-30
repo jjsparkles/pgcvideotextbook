@@ -37,7 +37,7 @@ Link to video transcript [here](chapter6.1_transcript.qmd#sec-video1).
 
 **Title**: Polygenic Risk Scores
 
-**Presenter(s)**: Till Andlauer, PhD (Boehringer Ingelheim)
+**Presenter(s)**: Till Andlauer, PhD (Department of Computational Biology and Digital Sciences, Boehringer Ingelheim)
 
 **Level**: Beginner friendly
 
@@ -79,7 +79,7 @@ Link to video transcript [here](chapter6.1_transcript.qmd#sec-video3).
 
 **Title**: Polygenic Scoring Methods: Comparison and Implementation
 
-**Presenter(s)**: Oliver Pain, PhD (King's College London)
+**Presenter(s)**: Oliver Pain, PhD (Social, Genetic, and Developmental Psychiatry Centre, King's College London)
 
 **Level**: Intermediate
 

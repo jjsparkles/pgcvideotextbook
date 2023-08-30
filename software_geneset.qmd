@@ -2,8 +2,6 @@
 title: "Gene Set Identification"
 ---
 
-------------------------------------------------------------------------
-
 # MAGMA {#sec-section1}
 
 **Title**: Gene- and gene-set analysis in MAGMA
@@ -48,11 +46,9 @@ Link to video transcript [here](software_geneset_transcript.qmd#sec-video2).
 
 **Title**: E-MAGMA: an eQTL-informed method to identify risk genes using genome-wide association study summary statistics
 
-**Presenter(s)**:
+**Presenter(s)**: Zac Gerring, PhD (Translational Neurogenomics, QIMR Berghofer Medical Research Institute)
 
--   Zac Gerring, PhD (Translational Neurogenomics, QIMR Berghofer Medical Research Institute)
-
--   Eske Derks, PhD (Translational Neurogenomics, QIMR Berghofer Medical Research Institute)
+**Coauthor(s)**: Eske Derks, PhD (Translational Neurogenomics, QIMR Berghofer Medical Research Institute)
 
 **Level**: Intermediate
 

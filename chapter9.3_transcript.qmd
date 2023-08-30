@@ -96,7 +96,7 @@ What genomic SEM does is it uses the principles of structural equation modeling 
 
 **Title**: GenomicSEM: Input/Explaining how S and V are estimated and what they are
 
-**Presenter(s)**: Michel Nivard, PhD (Department of Biological Psychology, VU Amsterdam)
+**Presenter(s)**: Michel Nivard, PhD (Deptartment of Biological Psychology, Vrije Universiteit Amsterdam)
 
 **Michel Nivard**:
 
@@ -148,11 +148,11 @@ Now that sounds really hard and complex and computationally it is luckily others
 
 ------------------------------------------------------------------------
 
-# Examples on the Genomic SEM wiki {#sec-video4}
+# Examples on the Genomic SEM Wiki {#sec-video4}
 
 **Title**: Working through examples on the Genomic SEM wiki one by one: munge, ldsc, usermodel functions
 
-**Presenter(s)**: Michel Nivard, PhD (Department of Biological Psychology, VU Amsterdam)
+**Presenter(s)**: Michel Nivard, PhD (Deptartment of Biological Psychology, Vrije Universiteit Amsterdam)
 
 **Michel Nivard**:
 

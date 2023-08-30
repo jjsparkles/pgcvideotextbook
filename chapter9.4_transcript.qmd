@@ -6,11 +6,11 @@ title: "Chapter 9.4: Interactions with Environmental Factors (Video Transcript)"
 
 # Statistics of the Interaction Term
 
-## Dummy variables: interaction terms explanation {#sec-video1}
+## Dummy Variables: Interaction Terms Explanation {#sec-video1}
 
 **Title**: Dummy variables: interaction terms explanation
 
-**Presenter(s)**: Ben Lambert, PhD (College of Engineering, Mathematics, and Pyshical Sciences, University of Exeter)
+**Presenter(s)**: Ben Lambert, PhD (College of Engineering, Mathematics and Physical Sciences, University of Exeter)
 
 **Ben Lambert**:
 
@@ -26,11 +26,11 @@ So, we can sort of think about what these cross terms mean in our regression spe
 
 ------------------------------------------------------------------------
 
-## Continuous variables: interaction term interpretation {#sec-video2}
+## Continuous Variables: Interaction Term Interpretation {#sec-video2}
 
 **Title**: Continuous variables: interaction term interpretation
 
-**Presenter(s)**: Ben Lambert, PhD (College of Engineering, Mathematics, and Pyshical Sciences, University of Exeter)
+**Presenter(s)**: Ben Lambert, PhD (College of Engineering, Mathematics and Physical Sciences, University of Exeter)
 
 **Ben Lambert**:
 
@@ -46,15 +46,15 @@ So, beta 3 generally, what does it mean? What have we learned from considering t
 
 ------------------------------------------------------------------------
 
-# Gene environment interaction in psychiatric genetics {#sec-video3}
+# Gene-Environment Interaction in Psychiatric Genetics {#sec-video3}
 
 **Title**: Gene-environment interaction analysis
 
-**Presenter(s)**: Kenny Westerman, PhD (Broad Institute)
+**Presenter(s)**: Kenny Westerman, PhD (Broad Institute of Harvard and MIT)
 
 **Kenny Westerman**:
 
-Uh, yeah, so I'm a little bit daunted by the scope of presenting in general on gene-environment interaction analysis because there's so much that can be encompassed here. But I'll do my best to provide a broad overview and I'm happy to go into any of the topics in more depth.
+Yeah, so I'm a little bit daunted by the scope of presenting in general on gene-environment interaction analysis because there's so much that can be encompassed here. But I'll do my best to provide a broad overview and I'm happy to go into any of the topics in more depth.
 
 *Outline*
 

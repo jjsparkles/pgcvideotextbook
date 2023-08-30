@@ -22,7 +22,7 @@ title: "Chapter 9: Advanced Topics"
 
 **Title**: How to run Copy Number Variation (CNV) analysis
 
-**Presenter(s)**: Daniel Howrigan, PhD (Broad Institute)
+**Presenter(s)**: Daniel Howrigan, PhD (Broad Institute of Harvard and MIT)
 
 **Level**: Intermediate
 
@@ -98,7 +98,7 @@ Link to video transcript [here](chapter9.3_transcript.qmd#sec-video2).
 
 **Title**: GenomicSEM: Input/Explaining how S and V are estimated and what they are
 
-**Presenter(s)**: Michel Nivard, PhD (Department of Biological Psychology, VU Amsterdam)
+**Presenter(s)**: Michel Nivard, PhD (Deptartment of Biological Psychology, Vrije Universiteit Amsterdam)
 
 **Level**: Intermediate
 
@@ -115,7 +115,7 @@ Link to video transcript [here](chapter9.3_transcript.qmd#sec-video3).
 
 **Title**: Working through examples on the Genomic SEM wiki one by one: munge, ldsc, usermodel functions
 
-**Presenter(s)**: Michel Nivard, PhD (Department of Biological Psychology, VU Amsterdam)
+**Presenter(s)**: Michel Nivard, PhD (Deptartment of Biological Psychology, Vrije Universiteit Amsterdam)
 
 **Level**: Intermediate
 
@@ -174,7 +174,7 @@ Link to video transcript [here](chapter9.3_transcript.qmd#sec-video6).
 
 **Title**: Dummy variables: interaction terms explanation
 
-**Presenter(s)**: Ben Lambert, PhD (College of Engineering, Mathematics, and Pyshical Sciences, University of Exeter)
+**Presenter(s)**: Ben Lambert, PhD (College of Engineering, Mathematics and Physical Sciences, University of Exeter)
 
 **Level**: Beginner friendly
 
@@ -191,7 +191,7 @@ Link to video transcript [here](chapter9.4_transcript.qmd#sec-video1).
 
 **Title**: Continuous variables: interaction term interpretation
 
-**Presenter(s)**: Ben Lambert, PhD (College of Engineering, Mathematics, and Pyshical Sciences, University of Exeter)
+**Presenter(s)**: Ben Lambert, PhD (College of Engineering, Mathematics and Physical Sciences, University of Exeter)
 
 **Level**: Beginner friendly
 
@@ -208,7 +208,7 @@ Link to video transcript [here](chapter9.4_transcript.qmd#sec-video2).
 
 **Title**: Gene-environment interaction analysis
 
-**Presenter(s)**: Kenny Westerman, PhD (Broad Institute)
+**Presenter(s)**: Kenny Westerman, PhD (Broad Institute of Harvard and MIT)
 
 **Level**: Intermediate (content will be easier to those with a statistical genetics background)
 
@@ -223,7 +223,7 @@ Link to video transcript [here](chapter9.4_transcript.qmd#sec-video3).
 
 ------------------------------------------------------------------------
 
-# 9.5 Family-based analysis {#sec-section5}
+# 9.5 Family-Based Analysis {#sec-section5}
 
 > In this video Dr. Maes describes univariate (one phenotype) methods of Twin modeling to determine familial genetic and environmental traits using OpenMx software.
 
@@ -252,11 +252,7 @@ Link to [OpenMx software](https://openmx.ssri.psu.edu/).
 
 **Title**: Pharmacogenomics knowledge for personalized medicine
 
-**Presenter(s)**:
-
--   Michelle Whirl-Carrillo, PhD (Stanford University School of Medicine)
-
--   Cristina Rodriguez-Antona, PhD (CNIO, Spanish National Cancer Research Centre)
+**Presenter(s)**: Michelle Whirl-Carrillo, PhD (Department of Biomedical Data Science, Stanford University School of Medicine)
 
 **Level**: Intermediate
 

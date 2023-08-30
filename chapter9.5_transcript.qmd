@@ -1,5 +1,5 @@
 ---
-title: "Chapter 9.5: Family-based analysis (Video Transcript)"
+title: "Chapter 9.5: Family-Based Analysis (Video Transcript)"
 ---
 
 **Title**: Univariate/MonoPhenotype Twin Modeling in OpenMx

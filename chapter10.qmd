@@ -31,7 +31,7 @@ Link to video transcript [here](chapter10.1_transcript.qmd).
 
 **Title**: Predicting the likelihood of future psychiatric disorders: a closer look, and some cautions.
 
-**Presenter(s)**: Howard Edenberg, PhD (Department of Medical and Molecular Genetics, Indiana University School of Medicine)
+**Presenter(s)**: Howard Edenberg, PhD (Department of Biochemistry and Molecular Biology, Indiana University School of Medicine)
 
 **Level**: Beginner
 
@@ -50,7 +50,7 @@ Link to video transcript [here](chapter10.2_transcript.qmd).
 
 **Title**: Small effect sizes
 
-**Presenter(s)**: Howard Edenberg, PhD (Department of Medical and Molecular Genetics, Indiana University School of Medicine)
+**Presenter(s)**: Howard Edenberg, PhD (Department of Biochemistry and Molecular Biology, Indiana University School of Medicine)
 
 **Level**: Beginner
 
@@ -67,7 +67,7 @@ Link to video transcript [here](chapter10.3_transcript.qmd).
 
 # 10.4 Language in Genetics Research {#sec-section4}
 
-**Content coming soon!**
+***Video Content coming soon!***
 
 **Presenter(s)**:
 
@@ -81,7 +81,7 @@ Link to video transcript [here](chapter10.3_transcript.qmd).
 
 # 10.5 Equitable Collaboration for LMIC Researchers {#sec-section5}
 
-**Content coming soon!**
+***Video Content coming soon!***
 
 ------------------------------------------------------------------------
 
@@ -101,3 +101,5 @@ embed_url("https://www.youtube.com/watch?v=bxCV2Z5i_yI&t=8s")
 ```
 
 Link to video transcript [here](chapter10.6_transcript.qmd).
+
+Link to the [GDPR text](https://gdpr-info.eu/).

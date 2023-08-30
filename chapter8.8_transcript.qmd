@@ -4,11 +4,11 @@ title: "Chapter 8.9: PheWAS (Video Transcript)"
 
 ------------------------------------------------------------------------
 
-# PheWAS: Discovering gene-disease associations {#sec-video1}
+# PheWAS: Discovering Gene-Disease Associations {#sec-video1}
 
 **Title**: PheWAS: Discovering gene-disease associations
 
-**Presenter(s)**: Joshua Denny, PhD (All of Us Research Program)
+**Presenter(s)**: Joshua Denny, MD, MS (All of Us Research Program)
 
 **Joshua Denny**:
 
@@ -54,7 +54,7 @@ So I want to end with a recognition of some of the many people contributing to t
 
 **Title**: Using EHR-based genomic approaches to understand the relationship between mental and physical health
 
-**Presenter(s)**: Lea Davis, PhD (Vanderbilt University)
+**Presenter(s)**: Lea Davis, PhD (Department of Medicine, Vanderbilt University Medical Center)
 
 \[the recording starts mid-sentence\]
 

@@ -2,11 +2,11 @@
 title: "Chapter 3.2: Next Generation Sequencing (Video Transcript)"
 ---
 
-# *How to sequence the human genome* {#sec-video1}
+# *How to Sequence the Human Genome* {#sec-video1}
 
 **Title**: How to sequence the human genome
 
-**Presenter(s)**: Mark J. Kiel, PhD (Universidade Federal de São Paulo, Brazil)
+**Presenter(s)**: Mark J. Kiel, MD, PhD (Genomenon)
 
 **Mark Kiel**:
 
@@ -32,7 +32,7 @@ So, the next step is to decipher what the sequence means, how your genome and my
 
 ------------------------------------------------------------------------
 
-# *Next Generation Sequencing: A Step-by-Step Guide to DNA Sequencing* {sec-video2}
+# *Next Generation Sequencing: A Step-by-Step Guide to DNA Sequencing* {#sec-video2}
 
 **Title**: Next Generation Sequencing: A Step-by-Step Guide to DNA Sequencing
 

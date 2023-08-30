@@ -6,7 +6,7 @@ title: "SNP Heritability and Genetic Correlation"
 
 **Title**: LAVA Tutorial
 
-**Presenter(s)**: Josefin Werme
+**Presenter(s)**: Josefin Werme, MSc (Department of Complex Trait Genetics, Vrije Universiteit Amsterdam)
 
 **Level**: Intermediate
 
@@ -25,7 +25,7 @@ Link to video transcript [here](software_correlation_transcript.qmd#sec-video1).
 
 **Title**: Estimating SNP-based heritability with GCTA-GREML
 
-**Presenter(s)**: Jian Yang
+**Presenter(s)**: Jian Yang, PhD (Queensland Brain Institute, The University of Queensland)
 
 **Level**: Intermediate
 
@@ -44,7 +44,7 @@ Link to video transcript [here](software_correlation_transcript.qmd#sec-video2).
 
 **Title**: Tracking 12 years of genetic architecture estimates of schizophrenia
 
-**Presenter(s)**: Naomi Wray
+**Presenter(s)**: Naomi Wray, PhD, FAA, FAHMS (Department of Psychiatry and Big Data Institute, University of Oxford; Molecular Bioscience (IMB) and Queensland Brain Institute within the University of Queensland, Brisbane, Australia)
 
 **Level**: Beginner
 

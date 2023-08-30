@@ -4,15 +4,15 @@ title: "5.1 Quality Control (Video Transcript)"
 
 ------------------------------------------------------------------------
 
-# Quality control: Introduction {#sec-video1}
+# Quality Control: Introduction {#sec-video1}
 
 **Title**: Quality control
 
-**Presenter(s)**:
+**Presenter(s)**: Katrina Grasby, PhD (The Psychiatric Genetics Group, QIMR Berghofer Medical Research Institute)
 
--   Katrina Grasby, PhD (QIMR Berghofer Medical Research Institute)
+**Coauthor(s)**: Lucía Colodro Conde, PhD (The Psychiatric Genetics Group, QIMR Berghofer Medical Research Institute)
 
--   Lucía Colodro Conde, PhD (QIMR Berghofer Medical Research Institute)
+**Katrina Grasby**:
 
 Thanks for joining me for this session on Quality Control. In this recording I'm going to be talking about the quality control or QC steps that we apply to genetic data. So this is in the very early stages of a study. We've collected our DNA, it's being transformed into data. We're going to clean that data up and then we will impute and then we can do our statistical analyses. So there's many points in a study that will be applying QC, but these steps that we'll be discussing here and in the tutorial, are the quality control steps that we apply to our genetic data.
 
@@ -70,7 +70,7 @@ So these are going to be out checklist for our key steps in QC that will be runn
 
 **Title**: How to run Quality Control on Genome-Wide Genotyping Data
 
-**Presenter(s)**: Jonathan Coleman, PhD (King's College London)
+**Presenter(s)**: Jonathan Coleman, PhD (Social, Genetic, and Developmental Psychiatry Centre, King's College London)
 
 **Jonathan Coleman**:
 

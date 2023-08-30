@@ -12,11 +12,13 @@ title: "Chapter 7: Ancestry-Specific Analyses and Considerations"
 >
 > 4.  *Understand cross-ancestry methods for GWAS and post-GWAS analyses*
 
-# Chapter 7.1: Cross-ancestry analysis {#sec-section1}
+# Chapter 7.1: Cross-Ancestry Analysis {#sec-section1}
+
+> In this video, Dr. Duncan reviews the PGC PTSD freeze 1 trans-ancestry meta-analysis. She then discusses the differences in findings across ancestries and limitations of polygenic scoring across ancestries.
 
 **Title**: Cross-ancestry PTSD and Polygenic Findings, and the Cross-Population SIG of the PGC
 
-**Presenter(s)**: Laramie Duncan, PhD (Stanford University)
+**Presenter(s)**: Laramie Duncan, PhD (Department of Psychiatry and Behavioral Sciences, Stanford University)
 
 **Level**: Beginner friendly
 
@@ -33,11 +35,13 @@ Link to video transcript [here](chapter7_transcript.qmd#sec-video1).
 
 ------------------------------------------------------------------------
 
-# Chapter 7.2: Ancestry-specific PRS {#sec-section2}
+# Chapter 7.2: Ancestry-Specific PRS {#sec-section2}
+
+> Dr. Alicia Martin discusses how to calculate polygenic risk scores and the differences in PRS accuracy across ancestries. She explains why there are discrepancies across ancestries and next steps to reduce disparities.
 
 **Title**: Clinical use of current polygenic risk scores may exacerbate health disparities
 
-**Presenter(s)**: Alicia Martin, PhD (Broad Institute)
+**Presenter(s)**: Alicia Martin, PhD (The Broad Institute of MIT and Harvard)
 
 **Level**: Beginner friendly
 
@@ -53,6 +57,8 @@ Link to video transcript [here](chapter7_transcript.qmd#sec-video2).
 ------------------------------------------------------------------------
 
 # Chapter 7.3: Local Ancestry and Admixed Populations {#sec-section3}
+
+> Dr. Elizabeth Atkinson describes her Tractor method, which determines local ancestry for tracts in admixed individuals. This method can allow for Local Ancestry (LA) tracts to be incorporated in GWAS analysis. 
 
 **Title**: Tractor: A framework enabling the well-calibrated genomic analysis of psychiatric traits across admixed populations
 

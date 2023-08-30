@@ -12,7 +12,7 @@ title: "MTAG"
 
 **Title**: Multi-trait Analysis of GWAS (MTAG)
 
-**Presenter(s)**: Patrick Turley, PhD (Massachusetts General Hospital)
+**Presenter(s)**: Patrick Turley, PhD (Analytic and Translational Genetics Unit, The Broad Institute of Harvard and MIT)
 
 **Level**: Intermediate
 

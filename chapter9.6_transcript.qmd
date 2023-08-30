@@ -4,11 +4,7 @@ title: "Chapter 9.6: Therapeutic Implications"
 
 **Title**: Pharmacogenomics knowledge for personalized medicine
 
-**Presenter(s)**:
-
--   Michelle Whirl-Carrillo, PhD (Stanford University School of Medicine)
-
--   Cristina Rodriguez-Antona, PhD (CNIO, Spanish National Cancer Research Centre)
+**Presenter(s)**: Michelle Whirl-Carrillo, PhD (Department of Biomedical Data Science, Stanford University School of Medicine)
 
 **Cristina Rodriguez-Antona \[Host\]:**
 

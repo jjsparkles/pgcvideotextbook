@@ -8,7 +8,7 @@ title: "Chapter 3: Technologies"
 >
 > 2.  *Gain introductory knowledge of Next Generation Sequencing (NGS), and implementation of this technology to sequence DNA.*
 
-## 3.1 SNP array genotyping {#sec-section1}
+## 3.1 SNP Array Genotyping {#sec-section1}
 
 > This video by Dr. Mészáros is focused on understanding the SNP chip technology: how SNP chips work and why they are useful.
 
@@ -33,11 +33,11 @@ Powerpoint slides for this video are available [here](https://github.com/Genomic
 
 > This section gives an introduction to Next Generation Sequencing. The first video by Dr. Kiel gives a very brief introduction to the concept of DNA sequencing, and how nucleotide bases are "read" from the DNA. The second video from ClevaLab gives a more detailed view of Next Generation Sequencing, how it differs from Sanger sequencing, and the different steps involved in sequencing a DNA sample with NGS methods, including library preparation, Sequencing by Synthesis and the sequencing reaction, cluster generation from fragments, indexing, filtering, mapping, and demultiplexing the reads.
 
-### *How to sequence the human genome*
+### *How to Sequence the Human Genome*
 
 **Title**: How to sequence the human genome
 
-**Presenter(s)**: Mark J. Kiel, PhD (Universidade Federal de São Paulo, Brazil)
+**Presenter(s)**: Mark J. Kiel, MD, PhD (Genomenon)
 
 **Length**: 5:04
 

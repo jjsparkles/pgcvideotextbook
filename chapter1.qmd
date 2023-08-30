@@ -8,13 +8,13 @@ title: "Chapter 1: Introduction"
 > 2.  *Understand the recent history of psychiatric genetics.*
 > 3.  *Gain insight into the current state of psychiatric disorder research.*
 
-## 1.1 What are psychiatric disorders? {#sec-section1}
+## 1.1 What are Psychiatric Disorders? {#sec-section1}
 
 > The video below from the Broad Institute gives a very brief overview of Psychiatric disorder genetics.
 
 **Title**: Psychiatric Disorders
 
-**Presenter(s)**: Broad Institute
+**Presenter(s)**: Broad Institute of MIT and Harvard
 
 **Level**: Beginner
 
@@ -35,7 +35,7 @@ Link to video transcript [here](chapter1.1_transcript.qmd).
 
 **Title**: What is a genome-wide association study?
 
-**Presenter(s)**: Till Andlauer, PhD (Boehringer Ingelheim)
+**Presenter(s)**: Till Andlauer, PhD (Department of Computational Biology and Digital Sciences, Boehringer Ingelheim)
 
 **Level**: Beginner
 
@@ -86,15 +86,15 @@ Link to video transcript [here](chapter1.3_transcript.qmd#sec-part2).
 
 ------------------------------------------------------------------------
 
-## 1.4 Psychiatric genomics: State-of-the-science {#sec-section4}
+## 1.4 Psychiatric Genomics: State-of-the-Science {#sec-section4}
 
-> Below are videos describing the current state of psychiatric research. These are state-of-the-science videos for psychiatric disorders, which were recorded for the PGC by early career researchers, with accompanying papers in *Psychological Medicine* (Vol 51, issue 13).
+> Below are videos describing the current state of psychiatric research. These are state-of-the-science videos for psychiatric disorders, which were recorded for the PGC by early career researchers, with accompanying papers in [*Psychological Medicine* (Vol 51, issue 13)](https://www.cambridge.org/core/journals/psychological-medicine/issue/F270E99C61D43EABAA4DFEF0CA154B06).
 
 ### The Psychiatric Genomics Consortium
 
 **Title**: PGC: Future Perspectives
 
-**Presenter(s)**: Patrick Sullivan, MD, FRANZCP (Department of Psychiatry, University of North Carolina at Chapel Hill)
+**Presenter(s)**: Patrick Sullivan, MD, FRANZCP (Department of Genetics, Department of Psychiatry, University of North Carolina at Chapel Hill)
 
 **Length**: 33:33
 
@@ -115,11 +115,13 @@ Link to video transcript [here](chapter1.4_transcript.qmd#sec-psychgen).
 
 -   Joanna Martin, PhD (Division of Psychological Medicine and Clinical Neurosciences, Cardiff University School of Medicine)
 
+**Coauthor(s)**:
+
 -   Christie Burton, PhD (Department of Psychiatry, Hospital for Sick Children, University of Toronto)
 
 -   Isabell Brikell, PhD (Department of Medical Epidemiology and Biostatistics, Karolinska Institutet)
 
--   Nina Roth Mota, PhD (Radboud University Medical Centre)
+-   Nina Roth Mota, PhD (Department of Human Genetics, Radboud University Medical Center, Donders Institute for Brain, Cognition and Behaviour)
 
 **Length**: 14:24
 
@@ -144,15 +146,19 @@ See [Dementia](chapter1.qmd#sec-dementia)
 
 **Presenter(s)**:
 
--   Helga Ask, PhD (Department of Mental Disorders, Norwegian Institute of Public Health)
-
--   Rosa Cheesman, PhD (University of Oslo)
+-   Kirstin Purves, PhD (Our Future Health)
 
 -   Daniel Levey, PhD (Department of Psychiatry, Yale University School of Medicine)
 
--   Kristin Purves, PhD (King's College London)
+-   Rosa Cheesman, PhD (Department of Psychology, University of Oslo)
+
+**Coauthor(s)**:
+
+-   Helga Ask, PhD (Department of Mental Disorders, Norwegian Institute of Public Health)
 
 -   Heike Weber, PhD (Department of Psychiatry, Psychosomatic Medicine and Psychotherapy, Goethe-Universität Frankfurt am Main)
+
+-   Eshim S. Jami, PhD (Department of Clinical Education and Health Psychology, University College London)
 
 **Length**: 11:32
 
@@ -175,6 +181,16 @@ Link to video transcript [here](chapter1.4_transcript.qmd#sec-anxiety).
 
 -   Anna Starnawska, PhD (Department of Biomedicine, Aarhus University)
 
+-   Maria Niarchou, PhD (Department of Medicine, Vanderbilt University)
+
+**Coauthor(s)**:
+
+-   Mohammed Uddin, PhD (Mohammed Bin Rashid University of Medicine and Health Sciences, College of Medicine, Dubai)
+
+-   Celia van der Merwe, PhD (Analytic and Translatoinal Genetics Unit, Broad Institute of MIT and Harvard)
+
+-   Varun Warrier, PhD (Autism Research Centre, University of Cambridge)
+
 **Length**: 16:42
 
 ```{r, echo=FALSE}
@@ -186,15 +202,13 @@ Link to video transcript [here](chapter1.4_transcript.qmd#sec-asd).
 
 ------------------------------------------------------------------------
 
-### *Bipolar disorder*
+### *Bipolar Disorder*
 
 **Title**: Genetics of Bipolar Disorder
 
-**Presenter(s)**:
+**Presenter(s)**: Brandon Coombes, PhD (Division of Computational Biology, Department of Quantitative Health Sciences, Mayo Clinic)
 
--   Brandon Coombes, PhD (Division of Computational Biology, Department of Quantitative Health Sciences, Mayo Clinic)
-
--   Kevin O'Connell, PhD (University of Oslo)
+**Coauthor(s)**: Kevin O'Connell, PhD (NORMENT Centre, Institute of Clinical Medicine, University of Oslo)
 
 **Length**: 16:35
 
@@ -205,13 +219,17 @@ embed_url("https://youtu.be/Z4e0SagGncY")
 
 Link to video transcript [here](chapter1.4_transcript.qmd#sec-bipolar).
 
+Paper referenced in the talk:
+
+> O'Connell KS, Coombes BJ. **Genetic contributions to bipolar disorder: current status and future directions**. *Psychol Med*. 2021 Oct;51(13):2156-2167. doi: [10.1017/S0033291721001252](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8477227/).
+
 ------------------------------------------------------------------------
 
 ### *Dementia* {#sec-dementia}
 
 **Title**: Genetic Risk for Dementia
 
-**Presenter(s)**: Malia Rumbaugh, MS (Indiana University-Purdue University Indianapolis)
+**Presenter(s)**: Malia Rumbaugh, MS (Department of Medical and Molecular Genetics, Indiana University-Purdue University Indianapolis)
 
 **Length**: 58:02 (Frontotemporal dementia starts at 17:55)
 
@@ -230,17 +248,19 @@ Link to video transcript [here](chapter1.4_transcript.qmd#sec-dementia).
 
 **Presenter(s)**:
 
--   Hunna Watson, PhD (Department of Psychiatry, University of North Carolina at Chapel Hill)
+-   Helena Davies, MSc (Social, Genetic, and Developmental Psychiatry Centre, King's College London)
 
 -   Alish Palmos, PhD (Social, Genetic, and Developmental Psychiatry Centre, King's College London)
 
--   Avina Hunjan, PhD (Social, Genetic, and Developmental Psychiatry Centre, King's College London)
+-   Zeynep Yilmaz, PhD (National Centre for Register-based Research, Aarhus University)
+
+**Coauthor(s)**:
+
+-   Hunna Watson, PhD (Department of Psychiatry, University of North Carolina at Chapel Hill)
 
 -   Jessica Baker, PhD (Center of Excellence for Eating Disorders, University of North Carolina at Chapel Hill)
 
--   Zeynep Yilmaz, PhD (Aarhus University)
-
--   Helena Davies, MSc (Social, Genetic, and Developmental Psychiatry Centre, King's College London)
+-   Avina Hunjan, PhD (Social, Genetic, and Developmental Psychiatry Centre, King's College London)
 
 **Length**: 21:30
 
@@ -253,25 +273,25 @@ Link to video transcript [here](chapter1.4_transcript.qmd#sec-eatingdisorders).
 
 ------------------------------------------------------------------------
 
-### *Major depression*
+### *Major Depression*
 
 **Title**: Major Depressive Disorder: Introduction and General Epidemiology
 
 **Presenter(s)**:
 
--   Kim Kendall, PhD (Cardiff University)
+-   Kimberley Kendall, MD, PhD (Division of Psychological Medicine and Clinical Neurosciences, Cardiff University)
 
--   Evelien Van Assche, MD, PhD (Department of Psychiatry, University of Münster)
-
--   Till Andlauer, PhD (Boehringer Ingelheim)
-
--   Karmel Choi, PhD (Massachusetts General Hospital)
-
--   Jurgen Luykx, MD, PhD (University Medical Center Utrecht)
+-   Lu Yi, PhD (Department of Medical Epidemiology and Biostatistics, Karolinska Institutet)
 
 -   Eva Schulte, MD, PhD (Institute of Psychiatric Phenomics and Genomics, University of Munich)
 
--   Yi Lu, PhD (Karolinska Institutet)
+-   Till Andlauer, PhD (Department of Computational Biology and Digital Sciences, Boehringer Ingelheim)
+
+-   Jurgen Luykx, MD, PhD (Human Neurogenetics Unit, University Medical Center Utrecht)
+
+-   Karmel Choi, PhD (Department of Psychiatry, Massachusetts General Hospital)
+
+-   Evelien Van Assche, MD, PhD (Department of Psychiatry, University of Münster)
 
 **Length**: 32:13
 
@@ -290,6 +310,14 @@ Link to video transcript [here](chapter1.4_transcript.qmd#sec-mdd).
 
 **Presenter(s)**: Christie Burton, PhD (Department of Psychiatry, Hospital for Sick Children, University of Toronto)
 
+**Coauthor(s)**:
+
+-   Behrang Mahjani, PhD (Department of Psychiatry, Icahn School of Medicine at Mount Sinai)
+
+-   Katharina Bey, PhD (Clinic and Polyclinic for Psychiatry and Psychotherapy, University Hospital Bonn)
+
+-   Julia Boberg, PhD (Department of Clinical Neuroscience, Karolinska Institutet)
+
 **Length**: 15:28
 
 ```{r, echo=FALSE}
@@ -301,7 +329,7 @@ Link to video transcript [here](chapter1.4_transcript.qmd#sec-ocd).
 
 ------------------------------------------------------------------------
 
-### *Post-traumatic Stress Disorder*
+### *Post-Traumatic Stress Disorder*
 
 **Title**: Posttraumatic Stress Disorder: From Gene Discovery to Disease Biology
 
@@ -324,15 +352,17 @@ Link to video transcript [here](chapter1.4_transcript.qmd#sec-ptsd).
 
 **Presenter(s)**:
 
--   Kaarina Kowalec, PhD (University of Manitoba)
+-   Kaarina Kowalec, PhD (College of Pharmacy, University of Manitoba)
 
--   Niran Okewole, PhD (Neuropsychiatric Hospital Aro)
+-   Adeniran Okewole, MBBS, FWACP, FMCPsy (Department of Clinical Services, Neuropsychiatric Hospital Aro)
 
--   Sophie Legge, PhD (Cardiff University)
+-   Sathish Periyasamy, PhD (Queensland Centre for Mental Health Research, The University of Queensland, University of Queensland)
 
 -   Marcos Santoro, PhD (Departamento de Bioquímica, Universidade Federal de São Paulo, Brazil)
 
--   Sathish Periyasamy, PhD (University of Queensland)
+-   Sophie Legge, PhD (Division of Psychological Medicine and Clinical Neurosciences, Cardiff University)
+
+**Coauthor(s)**: Arsalan Arsalan, MD (Department of Pharmacy, University of Peshawar, Pakistan)
 
 **Length**: 29:52
 
@@ -345,7 +375,7 @@ Link to video transcript [here](chapter1.4_transcript.qmd#sec-schizophrenia).
 
 ------------------------------------------------------------------------
 
-### *Shared genetic architecture*
+### *Shared Genetic Architecture*
 
 **Title**: Shared Genetic Architecture across Psychiatric Disorders
 
@@ -368,7 +398,7 @@ Link to video transcript [here](chapter1.4_transcript.qmd#sec-sharedgenetic).
 
 **Presenter(s)**:
 
--   Joseph Deak, PhD (Yale University School of Medicine)
+-   Joseph Deak, PhD (Department of Psychiatry, Yale University School of Medicine)
 
 -   Emma Johnson, PhD (Department of Psychiatry, Washington University in St. Louis School of Medicine)
 
@@ -380,6 +410,10 @@ embed_url("https://www.youtube.com/watch?v=NdOR9NxMH2Q")
 ```
 
 Link to video transcript [here](chapter1.4_transcript.qmd#sec-sud).
+
+Paper referenced in the talk:
+
+> Deak JD, Johnson EC. **Genetics of substance use disorders: a review**. *Psychol Med*. 2021 Oct;51(13):2189-2200. doi: [10.1017/S0033291721000969](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8477224/)
 
 ------------------------------------------------------------------------
 
@@ -395,7 +429,7 @@ Link to video transcript [here](chapter1.4_transcript.qmd#sec-sud).
 
 -   Douglas Ruderfer, PhD (Division of Genetic Medicine, Vanderbilt University)
 
--   Niamh Mullins, PhD (Department of Genetics and Genomic Sciences, Icahn School of Medicine at Mount Sinai)
+-   Niamh Mullins, PhD (Department of Psychiatry, Icahn School of Medicine at Mount Sinai)
 
 **Length**: 58:54
 
@@ -412,7 +446,7 @@ Link to video transcript [here](chapter1.4_transcript.qmd#sec-suicide).
 
 **Title**: Genetics of Tourette Syndrome
 
-**Presenter(s)**: Matt Halvorsen, PhD (University of North Carolina at Chapel Hill School of Medicine)
+**Presenter(s)**: Matt Halvorsen, PhD (Department of Genetics, University of North Carolina School of Medicine)
 
 **Length**: 15:23
 

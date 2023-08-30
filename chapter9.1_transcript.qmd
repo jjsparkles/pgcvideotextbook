@@ -4,7 +4,7 @@ title: "Chapter 9.1: Copy Number Variation (Video Transcript)"
 
 **Title**: How to run Copy Number Variation (CNV) analysis
 
-**Presenter(s)**: Daniel Howrigan, PhD (Broad Institute)
+**Presenter(s)**: Daniel Howrigan, PhD (Broad Institute of Harvard and MIT)
 
 **Daniel Howrigan**:
 

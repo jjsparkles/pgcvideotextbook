@@ -4,7 +4,7 @@ title: "Chapter 1.2: Epidemiology (Video Transcript)"
 
 **Title**: What is a genome-wide association study?
 
-**Presenter(s)**: Till Andlauer, PhD (Boehringer Ingelheim)
+**Presenter(s)**: Till Andlauer, PhD (Department of Computational Biology and Digital Sciences, Boehringer Ingelheim)
 
 **Till Andlauer**:
 

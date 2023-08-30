@@ -192,13 +192,13 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 4: Study designs</span></a>
+ <span class="menu-text">Chapter 4: Study Designs</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter5.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 5: GWAS analysis</span></a>
+ <span class="menu-text">Chapter 5: GWAS Analysis</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -216,7 +216,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter8.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chapter 8: Post-GWAS bioinformatics</span></a>
+ <span class="menu-text">Chapter 8: Post-GWAS Bioinformatics</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -352,7 +352,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#sec-video1" id="toc-sec-video1" class="nav-link active" data-scroll-target="#sec-video1">Genomic Structural Equation Modeling: A Brief Introduction</a></li>
   <li><a href="#sec-video2" id="toc-sec-video2" class="nav-link" data-scroll-target="#sec-video2">Short Primer on Structural Equation Modeling (SEM) in Lavaan</a></li>
   <li><a href="#sec-video3" id="toc-sec-video3" class="nav-link" data-scroll-target="#sec-video3">GenomicSEM: Input</a></li>
-  <li><a href="#sec-video4" id="toc-sec-video4" class="nav-link" data-scroll-target="#sec-video4">Examples on the Genomic SEM wiki</a></li>
+  <li><a href="#sec-video4" id="toc-sec-video4" class="nav-link" data-scroll-target="#sec-video4">Examples on the Genomic SEM Wiki</a></li>
   <li><a href="#sec-video5" id="toc-sec-video5" class="nav-link" data-scroll-target="#sec-video5">Multivariate GWAS in Genomic SEM</a></li>
   <li><a href="#sec-video6" id="toc-sec-video6" class="nav-link" data-scroll-target="#sec-video6">Using Genomic SEM to Understand Psychiatric Comorbidity</a></li>
   </ul>
@@ -430,7 +430,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="sec-video3" class="level1">
 <h1>GenomicSEM: Input</h1>
 <p><strong>Title</strong>: GenomicSEM: Input/Explaining how S and V are estimated and what they are</p>
-<p><strong>Presenter(s)</strong>: Michel Nivard, PhD (Department of Biological Psychology, VU Amsterdam)</p>
+<p><strong>Presenter(s)</strong>: Michel Nivard, PhD (Deptartment of Biological Psychology, Vrije Universiteit Amsterdam)</p>
 <p><strong>Michel Nivard</strong>:</p>
 <p>What goes into genomic SEM before you can actually fit a structural equation model. So it’s basically a class on how the sausage&nbsp; is made, right? So some of these things are details that are good as background, Good for you to understand, once you use genomic SEM. But basically stuff that’s largely handled by internal functions of genomic SEM. So it means you don’t have to do anything like this by hand. And to discuss what goes into genomic SEM, it’s good to discuss two other things. Namely, what kind of information goes into a structural equation model in general? Right. You can use raw data, but you could also use the covariance matrix of the raw data to fit the structural equation model or a regression model, as we’ll see in the example. And it’s good to discuss what LD score regression is exactly. It’s a very commonly used technique to estimate genetic co-variance and or heritability. And it actually is one of the main ways genomic SEM can estimate from raw GWAS data. So raw, summary statistics, the genetic covariance between traits and the heritabilities, which you can then use to fit a structural equation model too. Okay.</p>
 <p>So first we’ll discuss what kind of information goes into a structural equation model and, show you that basically you can either use raw data to get a structural equation model to work, but you can also use the covariance matrix of that raw data. And that’s an important conceptual step, right?&nbsp; Because if you understand that you can later understand why we can fit structural equation models while we don’t observe any raw data in genomic SEM. And with raw data, I mean, phenotypic observations. We don’t observe those at all in genomic SEM. The only thing that goes in is the GWAS summary data.</p>
@@ -458,9 +458,9 @@ ul.task-list li input[type="checkbox"] {
 <hr>
 </section>
 <section id="sec-video4" class="level1">
-<h1>Examples on the Genomic SEM wiki</h1>
+<h1>Examples on the Genomic SEM Wiki</h1>
 <p><strong>Title</strong>: Working through examples on the Genomic SEM wiki one by one: munge, ldsc, usermodel functions</p>
-<p><strong>Presenter(s)</strong>: Michel Nivard, PhD (Department of Biological Psychology, VU Amsterdam)</p>
+<p><strong>Presenter(s)</strong>: Michel Nivard, PhD (Deptartment of Biological Psychology, Vrije Universiteit Amsterdam)</p>
 <p><strong>Michel Nivard</strong>:</p>
 <p>Hi, and welcome to this tutorial on genomic SEM, and specifically a tutorial on fitting genomic SEM models without an individual SNP effect. And today’s video is on how to perform those models. We also have written a Wiki page on GitHub. Right, so, navigate to Github.com/GenomicSEM/GenomicSEM, then click on the header Wiki. And you’ll find a number of tutorial pages, or pages with instructions, on how to perform analyses in GenomicSEM, and actually, the third chapter of the Wiki is about models without individual SNP effects. And that’s what we’re discussing in this video, and actually, we’re running the code from this tutorial.</p>
 <p>Right, and what the code will do, it will first download GWAS summary data for a number of psychiatric disorders: specifically bipolar, schizophrenia, depression, PTSD, and anxiety disorder. We’ll clean those summary statistics. In the sense that, we’ll take them from their format as they’re uploaded by the authors, and those formats, can vary quite a bit between authors and groups, and put them into a single uniform format. This step, we call “munging”.</p>

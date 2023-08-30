@@ -10,19 +10,21 @@ title: "Table of Contents"
 >
 > [1.2: Epidemiology](chapter1.qmd#sec-section2)
 >
-> [1.3 History](chapter1.qmd#sec-section3)
+> [1.3: History](chapter1.qmd#sec-section3)
 >
-> [1.4 Psychiatric Genomics: State-of-the-Science](chapter1.qmd#sec-section4)
+> [1.4: Psychiatric Genomics: State-of-the-Science](chapter1.qmd#sec-section4)
 
 #### [Chapter 2: The Genome](chapter2.qmd)
 
-> [2.1: Organization of the genome](chapter2.qmd#sec-section1)
+> [2.1: Organisation of the genome](chapter2.qmd#sec-section1)
 >
 > [2.2: Types of genetic variation](chapter2.qmd#sec-section2)
 >
 > [2.3: Evolutionary signatures](chapter2.qmd#sec-section3)
 >
 > [2.4: Linkage disequilibrium](chapter2.qmd#sec-section4)
+>
+> [2.5: Genome References](chapter2.qmd#sec-section5)
 
 #### [Chapter 3: Technologies](chapter3.qmd)
 
@@ -30,7 +32,7 @@ title: "Table of Contents"
 >
 > [3.2: Next Generation Sequencing](chapter3.qmd#sec-section2)
 
-#### [Chapter 4: Study designs](chapter4.qmd)
+#### [Chapter 4: Study Designs](chapter4.qmd)
 
 > [4.1: Epidemiological study design](chapter4.qmd#sec-section1)
 >
@@ -38,7 +40,7 @@ title: "Table of Contents"
 >
 > [4.3: Genetic study designs](chapter4.qmd#sec-section3)
 
-#### [Chapter 5: GWAS analysis](chapter5.qmd)
+#### [Chapter 5: GWAS Analysis](chapter5.qmd)
 
 > [5.1: Genotyping Quality Control](chapter5.qmd#sec-section1)
 >
@@ -52,7 +54,7 @@ title: "Table of Contents"
 
 > [6.1: Polygenic Risk Scores](chapter6.qmd)
 
-#### [Chapter 7: Ancestry-specific analysis](chapter7.qmd)
+#### [Chapter 7: Ancestry-Specific Analysis](chapter7.qmd)
 
 > [7.1: Cross-ancestry analysis](chapter7.qmd#sec-section1)
 >
@@ -92,15 +94,15 @@ title: "Table of Contents"
 >
 > [9.6: Therapeutic Implications](chapter9.qmd#sec-section6)
 
-#### [Chapter 10: Other considerations](chapter10.qmd)
+#### [Chapter 10: Other Considerations](chapter10.qmd)
 
 > [10.1: A Career in Psychiatric Genetics](chapter10.qmd#sec-section1)
 >
 > [10.2: Caution in Genetic Prediction](chapter10.qmd#sec-section2)
 >
-> [10.3 Small Effect Sizes](chapter10.qmd#sec-section3)
+> [10.3: Small Effect Sizes](chapter10.qmd#sec-section3)
 >
-> [10.6 GDPR for Dummies](chapter10.qmd#sec-section6)
+> [10.6: GDPR for Dummies](chapter10.qmd#sec-section6)
 
 #### Software tutorials
 
@@ -131,5 +133,3 @@ title: "Table of Contents"
 #### [Glossary](glossary.qmd)
 
 #### [Software Resources](resources.qmd)
-
-#### [Additional Reading](addreading.qmd)

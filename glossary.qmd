@@ -14,6 +14,7 @@ Below are common terms and acronyms used within this book and across the field o
 | Allele                                         |            |                   |
 | Antisense                                      |            |                   |
 | **A**rea **u**nder the ROC **c**urve (**AUC**) |            |                   |
+| Assembly (Genome)                              |            |                   |
 | Autosome                                       |            |                   |
 
 ------------------------------------------------------------------------
@@ -25,7 +26,7 @@ Below are common terms and acronyms used within this book and across the field o
 | Base pair             |     |     |
 | Biallelic (SNP)       |     |     |
 | Bonferroni adjustment |     |     |
-|                       |     |     |
+| Build (Genome)        |     |     |
 
 ------------------------------------------------------------------------
 
@@ -40,6 +41,7 @@ Below are common terms and acronyms used within this book and across the field o
 | Codon                                                              |     |     |
 | Common variant                                                     |     |     |
 | Congenital                                                         |     |     |
+| Contig                                                             |     |     |
 | **C**opy **DNA** (**cDNA**)                                        |     |     |
 | **C**opy **N**umber **V**ariant (CNV)                              |     |     |
 | Crossover                                                          |     |     |
@@ -239,6 +241,8 @@ Below are common terms and acronyms used within this book and across the field o
 
 |                                                      |     |     |
 |------------------------------------------------------|-----|-----|
+| Scaffold                                             |     |     |
+|                                                      |     |     |
 | Sensitivity                                          |     |     |
 | **S**ingle **N**ucleotide **P**olymorphism (**SNP**) |     |     |
 | **S**ingle **N**ucleotide **V**ariant (**SNV**)      |     |     |

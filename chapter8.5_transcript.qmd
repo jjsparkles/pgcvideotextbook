@@ -1,10 +1,10 @@
 ---
-title: "Chapter 8.5: Fine-mapping (Video Transcript)"
+title: "Chapter 8.5: Fine-Mapping (Video Transcript)"
 ---
 
 **Title**: Introduction to fine-mapping methods
 
-**Presenter(s)**: Hilary Finucane, PhD (Broad Institute)
+**Presenter(s)**: Hilary Finucane, PhD (Broad Institute of Harvard and MIT)
 
 **Sarah \[Host\]**:
 

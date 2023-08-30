@@ -130,11 +130,9 @@ And with that, I would just like to thank my lab as well as my funding sources. 
 
 **Title**: E-MAGMA: an eQTL-informed method to identify risk genes using genome-wide association study summary statistics
 
-**Presenter(s)**:
+**Presenter(s)**: Zac Gerring, PhD (Translational Neurogenomics, QIMR Berghofer Medical Research Institute)
 
--   Zac Gerring, PhD (Translational Neurogenomics, QIMR Berghofer Medical Research Institute)
-
--   Eske Derks, PhD (Translational Neurogenomics, QIMR Berghofer Medical Research Institute)
+**Coauthor(s)**: Eske Derks, PhD (Translational Neurogenomics, QIMR Berghofer Medical Research Institute)
 
 **Zac Gerring**:
 

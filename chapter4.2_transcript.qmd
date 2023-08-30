@@ -4,9 +4,9 @@ title: "Chapter 4.2: Confounding, Chance, and Bias (Video Transcript)"
 
 ## Confounding, Chance, and Bias
 
-**Title**: Confounding, chance, and bias
+**Title**: Confounding, Chance, and Bias
 
-**Presenter(s)**: Cochrane Austria, Department for Evidence-based Medicine and Evaluation, Danube University Krems
+**Presenter(s)**: Cochrane Austria (Department for Evidence-based Medicine and Evaluation, Danube University Krems)
 
 The goal of clinical studies is to investigate the efficacy and safety of treatments. They leave room for three important sources of error that could lead to false study results: confounding, chance, and bias. Confounders confuse us in interpreting study results and may lead us to infer incorrect conclusions about cause and effect relationships. For example, in one study, we observed that those who drink a lot of coffee are at an increased risk for coronary heart disease. Is coffee dangerous for heart health, or could another factor be responsible for this relationship? In our example, smoking is responsible for the observed relationship. Smoking is a risk factor for coronary heart disease, and people who smoke tend to be people who drink a lot of coffee. So, taking the confounder, smoking, not into account, one would draw the wrong conclusion that drinking coffee is a risk factor for heart disease. We are dealing with the confounder.
 

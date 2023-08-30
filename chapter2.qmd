@@ -12,7 +12,7 @@ title: "Chapter 2: The Genome"
 >
 > 3.  *Understand the concept of linkage disequilibrium, including an overview of more advanced techniques for measuring this.*
 
-## 2.1 Organization of the genome {#sec-section1}
+## 2.1 Organisation of the Genome {#sec-section1}
 
 > The following video from HMX Genetics gives a brief overview of the human genome: What is DNA? How is DNA organized? How is DNA regulated? What are genes?
 
@@ -31,7 +31,7 @@ Link to video transcript [here](chapter2.1_transcript.qmd).
 
 ------------------------------------------------------------------------
 
-## 2.2 Genetic variation {#sec-section2}
+## 2.2 Genetic Variation {#sec-section2}
 
 > This section introduces a brief overview on genetic variation. The video below from Precision Health gives an introduction to two types of genetic variation: Single Nucleotide Polymorphisms (SNPs) and Copy Number Variants (CNVs).
 
@@ -50,7 +50,7 @@ Link to video transcript [here](chapter2.2_transcript.qmd).
 
 ------------------------------------------------------------------------
 
-## 2.3 Evolutionary signatures {#sec-section3}
+## 2.3 Evolutionary Signatures {#sec-section3}
 
 > This section describes how genetic variation is introduced into populations. The first video by Dr. Pamment gives a brief overview of the different events that can occur to introduce genetic variation, including mutations, crossing over, independent assortment, and random fertilization. The second video from Dr. Schaffner gives a greater in-depth look at genetic variation introduced through natural selection and gives the specifics of those selection processes.
 
@@ -75,7 +75,7 @@ Link to video transcript [here](chapter2.3_transcript.qmd#sec-origins).
 
 **Title**: MPG Primer: Natural selection & human genetic variation
 
-**Presenter(s)**: Stephen Schaffner, PhD (Broad Institute)
+**Presenter(s)**: Stephen Schaffner, PhD (Infectious Disease and Microbiome Program, Broad Institute of Harvard and MIT)
 
 **Length**: 54:09
 
@@ -88,11 +88,11 @@ Link to video transcript [here](chapter2.3_transcript.qmd#sec-selection).
 
 ------------------------------------------------------------------------
 
-## 2.4 Linkage disequilibrium {#sec-section4}
+## 2.4 Linkage Disequilibrium {#sec-section4}
 
 > This section of videos from Dr. Mészáros dives deep into the concept of linkage disequilibrium: what it is, how it affects and why it is important to genetics and genetic analyses, advanced methods of calculating linkage disequilibrium, and the different types of LD measures.
 
-### What is linkage disequilibrium?
+### What is Linkage Disequilibrium?
 
 **Title**: What is linkage disequilibrium?
 
@@ -109,7 +109,7 @@ Link to video transcript [here](chapter2.4_transcript.qmd#sec-video1).
 
 ------------------------------------------------------------------------
 
-### Measuring linkage disequilibrium
+### Measuring Linkage Disequilibrium
 
 **Title**: How to measure linkage disequilibrium?
 
@@ -126,7 +126,7 @@ Link to video transcript [here](chapter2.4_transcript.qmd#sec-video2).
 
 ------------------------------------------------------------------------
 
-### (Advanced) Measuring linkage disequilibrium
+### (Advanced) Measuring Linkage Disequilibrium
 
 **Title**: How to measure linkage disequilibrium? (ADVANCED)
 
@@ -143,7 +143,7 @@ Link to video transcript [here](chapter2.4_transcript.qmd#sec-video3).
 
 ------------------------------------------------------------------------
 
-### Computing linkage disequilibrium
+### Computing Linkage Disequilibrium
 
 **Title**: Compute linkage disequilibrium (Part 1)
 
@@ -160,11 +160,13 @@ Link to video transcript [here](chapter2.4_transcript.qmd#sec-video4).
 
 ------------------------------------------------------------------------
 
-## 2.5 Genome References
+## 2.5 Genome References {#sec-section5}
+
+> In the following videos, we get an introduction into genome references, how they are created and how they are useful in genomic research. In the first video, Dr. Patel explains how human reference genomes are created, defines genome builds or assemblies, and explains the differences between different reference versions. In the second video, Dr. Wain explains the importance of knowing which genome assembly was used for various genomics assays in order to accurately identify variants, genes, and transcripts.
 
 **Title**: What is hg19/hg38? All you need to know about human reference genomes
 
-**Presenter(s)**: Khushbu Patel, PhD, DABCC (Children's Hospital of Philadelphia)
+**Presenter(s)**: Khushbu Patel, PhD, DABCC (Core Lab, Chemistry Laboratory, Children's Hospital of Philadelphia)
 
 **Length**: 11:58
 
@@ -189,3 +191,15 @@ embed_url("https://www.youtube.com/watch?v=pg6IjH4Oits")
 ```
 
 Link to video transcript [here](chapter2.5_transcript.qmd#sec-section2).
+
+Links:
+
+-   [UCSC genome browser](http://genome.ucsc.edu)
+
+-   [NIH NCBI Variation Viewer](https://www.ncbi.nlm.nih.gov/variation/view)
+
+-   [ExAC](http://exac.broadinstitute.org)/[gnomAD](http://gnomad.broadinstitute.org)
+
+-   [NHLBI Exome Sequencing Project](http://evs.gs.washington.edu/EVS/) (ESP)
+
+-   [Database of Genomic Variants](http://dgv.tcag.ca/dgv/app/home)

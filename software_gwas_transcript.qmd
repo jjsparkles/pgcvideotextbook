@@ -2,7 +2,7 @@
 title: "Software Tutorials: GWAS (Video Transcript)"
 ---
 
-# Genome-wide Association Studies in PLINK {#sec-video1}
+# Genome-Wide Association Studies in PLINK {#sec-video1}
 
 **Title**: Genome-wide Association Studies
 
@@ -60,7 +60,7 @@ All right, so this is a Manhattan plot. And this is the QQ plot. You can tell th
 
 **Title**: How to run quality control on genome-wide genotyping data
 
-**Presenter(s)**: Jonathan Coleman, PhD (King's College London)
+**Presenter(s)**: Jonathan Coleman, PhD (Social, Genetic, and Developmental Psychiatry Centre, King's College London)
 
 **Jonathan Coleman:**
 
@@ -118,7 +118,7 @@ Thank you very much for listening. I'm doing a Q&A at 9:30 EST. Otherwise, pleas
 
 ------------------------------------------------------------------------
 
-# Tractor: GWAS with admixed individuals {#sec-video3}
+# Tractor: GWAS with Admixed Individuals {#sec-video3}
 
 **Title**: Tractor: Enabling GWAS in admixed cohorts
 
@@ -178,7 +178,7 @@ Great! So with that, I hope that this was helpful. Thanks so much again for your
 
 **Title**: Genotype calling/imputation on the cloud: MoChA pipleine
 
-**Presenter(s)**: Giulio Genovese, PhD (Program in Medical and Population Genetics, Broad Institute)
+**Presenter(s)**: Giulio Genovese, PhD (Program in Medical and Population Genetics, Broad Institute of Harvard and MIT)
 
 **Giulio Genovese:**
 
@@ -224,11 +224,11 @@ With that, I would like to acknowledge the many people who have helped in develo
 
 ------------------------------------------------------------------------
 
-# SAIGE: Family-based GWAS {#sec-video5}
+# SAIGE: Family-Based GWAS {#sec-video5}
 
 **Title**: Genetic association studies in large-scale biobanks and cohorts: Scalable and Accurate Implementation of GEneralized mixed model (SAIGE)
 
-**Presenter(s)**: Wei Zhou, PhD (Broad Institute)
+**Presenter(s)**: Wei Zhou, PhD (Analytic and Translational Genetics Unit, The Broad Institute of Harvard and MIT)
 
 **Wei Zhou:**
 

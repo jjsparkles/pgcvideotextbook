@@ -1,5 +1,5 @@
 ---
-title: "Chapter 4: Study designs"
+title: "Chapter 4: Study Designs"
 ---
 
 > *Chapter goals:*
@@ -10,7 +10,7 @@ title: "Chapter 4: Study designs"
 >
 > 3.  *Gain insight into different types of genetic study designs and how to select study designs that are appropriate to your research goals.*
 
-## 4.1 Epidemiological study design {#sec-section1}
+## 4.1 Epidemiological Study Design {#sec-section1}
 
 > This video by Drs. Appuhamy and Clark gives an overview of different epidemiological study designs, covering the basics of the study types: ecological study, case series, cross-sectional study, case-control study, cohort study, interventional study, systematic review, and meta-analysis.
 
@@ -33,9 +33,9 @@ Link to video transcript [here](chapter4.1_transcript.qmd).
 
 > This section includes a video from Cochrane Austria that provides a fairly comprehensive overview of potential sources of error for clinical and genetic studies. The video discusses \"what is confounding?\", different types of confounders, and how to deal with confounding, chance and random error, and different types of biases: selection bias, performance bias, measurement bias, and attrition bias. 
 
-**Title**: Confounding, chance, and bias
+**Title**: Confounding, Chance, and Bias
 
-**Presenter(s)**: Cochrane Austria, Department for Evidence-based Medicine and Evaluation, Danube University Krems
+**Presenter(s)**: Cochrane Austria (Department for Evidence-based Medicine and Evaluation, Danube University Krems)
 
 **Length**: 9:50
 
@@ -48,11 +48,9 @@ Link to video transcript [here](chapter4.2_transcript.qmd).
 
 ------------------------------------------------------------------------
 
-## 4.3 Genetic study designs {#sec-section3}
+## 4.3 Genetic Study Designs {#sec-section3}
 
-> This section explores different types of genetic study designs, starting first with a video from OpenLearn on twin studies and how studies of twins allow for detection and distinguishing of genetic- versus environmentally- affected traits. The second video from Dr. Thomas
-
-### Twin studies
+> This section explores different types of genetic study designs, starting with a video from OpenLearn on twin studies and how studies of twins allow for detection and distinguishing of genetic- versus environmentally- affected traits.
 
 **Title**: What are "Twin studies"?
 
@@ -66,17 +64,3 @@ embed_url("https://www.youtube.com/watch?v=BTYCv1ObZrI&t=1s")
 ```
 
 Link to video transcript [here](chapter4.3_transcript.qmd#sec-video1).
-
-------------------------------------------------------------------------
-
-### Choosing the Right Study Design in Genetic Epidemiology
-
-**Title**: Choosing the Right Study Design in Genetic Epidemiology
-
-**Presenter(s)**: Duncan Thomas, PhD (Department of Population and Public Health Sciences, University of Southern California)
-
-**Length**: 34:31
-
-Link to video [here](https://hstalks.com/t/25/choosing-the-right-study-design-in-genetic-epidemi/).
-
-Link to video transcript [here](chapter4.3_transcript.qmd#sec-video2).

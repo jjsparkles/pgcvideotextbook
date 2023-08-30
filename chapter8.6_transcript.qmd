@@ -150,7 +150,7 @@ I'll just end here with the slide containing different resources to follow up on
 
 **Title**: Introduction to expression (e)QTL & their role in connecting QTL to genes and molecular networks.
 
-**Presenter(s)**: Laura Saba, PhD (University of Colorado)
+**Presenter(s)**: Laura Saba, PhD (Department of Pharmaceutical Sciences, University of Colorado)
 
 **Laura Saba**:
 
@@ -404,9 +404,9 @@ And finally, you know, I have a great group in my lab. We have some funding from
 
 **Presenter(s)**:
 
--   Luke O'Connor, PhD (Broad Institute)
+-   Luke O'Connor, PhD (Department of Biomedical Informatics, Harvard Medical School)
 
--   Dan Weiner, PhD (Broad Institute)
+-   Dan Weiner, PhD (Broad Institute of Harvard and MIT)
 
 **Sarah \[Host\]**:
 

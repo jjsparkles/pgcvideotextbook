@@ -1,5 +1,5 @@
 ---
-title: "Chapter 5: GWAS analysis"
+title: "Chapter 5: GWAS Analysis"
 ---
 
 > *Chapter goals:*
@@ -22,15 +22,13 @@ title: "Chapter 5: GWAS analysis"
 >
 > The first video by Drs. Grasby and Colodro Conde provides a brief introduction to the logic of the steps of QC (how genetic data are generated for subsequent QC, briefly what each step of the QC does, and why these steps are useful and necessary for future analyses of cleaned-up data. The second video by Dr. Coleman is a nice QC guide which provides overviews of dealing with missingness, relatedness, and population stratification. The third video from Dr. Demirkan provides key steps of QC for the GWAS data, similar to the first two videos, but it additionally discusses steps of quality controlling imputed data and factors affecting imputation (starting at 25:57).
 
-## Quality control: Introduction
+## Quality Control: Introduction
 
 **Title**: Quality control
 
-**Presenter(s)**:
+**Presenter(s)**: Katrina Grasby, PhD (The Psychiatric Genetics Group, QIMR Berghofer Medical Research Institute)
 
--   Katrina Grasby, PhD (QIMR Berghofer Medical Research Institute)
-
--   Lucía Colodro Conde, PhD (QIMR Berghofer Medical Research Institute)
+**Coauthor(s)**: Lucía Colodro Conde, PhD (The Psychiatric Genetics Group, QIMR Berghofer Medical Research Institute)
 
 **Level**: Beginner friendly
 
@@ -49,7 +47,7 @@ Link to video transcript [here](chapter5.1_transcript.qmd#sec-video1).
 
 **Title**: How to run Quality Control on Genome-Wide Genotyping Data
 
-**Presenter(s)**: Jonathan Coleman, PhD (King's College London)
+**Presenter(s)**: Jonathan Coleman, PhD (Social, Genetic, and Developmental Psychiatry Centre, King's College London)
 
 **Level**: Beginner friendly
 
@@ -116,7 +114,7 @@ Link to video transcript [here](chapter5.2_transcript.qmd#sec-video1).
 
 **Title**: Imputation\
 \
-**Presenter(s)**: Sarah Medland, PhD (Queensland Institute of Medical Research)
+**Presenter(s)**: Sarah Medland, PhD (The Psychiatric Genetics Group, Queensland Institute of Medical Research)
 
 **Level**: Beginner friendly
 

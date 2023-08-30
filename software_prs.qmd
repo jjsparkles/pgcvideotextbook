@@ -4,7 +4,7 @@ title: "PRS"
 
 ------------------------------------------------------------------------
 
-# Comparison of PRS methods {#sec-section1}
+# Comparison of PRS Methods {#sec-section1}
 
 **Title**: Comparison of PRS methods
 
@@ -31,9 +31,9 @@ Link to video transcript [here](software_prs_transcript.qmd#sec-video1).
 
 **Presenter(s)**:
 
--   Tian Ge, PhD (Broad Institute)
+-   Tian Ge, PhD (Center for Genomic Medicine, Mass General Research Institute)
 
--   Yunfeng Ruan, PhD (Broad Institute)
+-   Yunfeng Ruan, PhD (Stanley Center for Psychiatric Research, Broad Institute of MIT and Harvard)
 
 **Level**: Intermediate
 
@@ -48,11 +48,11 @@ Link to video transcript [here](software_prs_transcript.qmd#sec-video2).
 
 ------------------------------------------------------------------------
 
-## PRS in Ancestrally-diverse Populations
+## PRS in Ancestrally-Diverse Populations
 
 **Title**: PRS-CSx: Improving Cross-Population Polygenic Prediction using Coupled Continuous Shrinkage Priors
 
-**Presenter(s)**: Tian Ge, PhD (Broad Institute)
+**Presenter(s)**: Tian Ge, PhD (Center for Genomic Medicine, Mass General Research Institute)
 
 **Level**: Intermediate
 
@@ -109,6 +109,8 @@ Link to video transcript [here](software_prs_transcript.qmd#sec-video4).
 
 # SBayesR {#sec-section5}
 
+> *\[Note\]: At the moment the video input does not have sound. We are working on getting a working version up very soon!*
+
 **Title**: How to run SBayesR
 
 **Presenter(s)**: Jian Zeng, PhD (Institute for Molecular Bioscience, University of Queensland)
@@ -130,13 +132,13 @@ Link to video transcript [here](software_prs_transcript.qmd#sec-video6).
 
 **Title**: Estimating Vertical Transmission and Genetic Nurture using Polygenic Scores
 
-**Presenter(s)**:
+**Presenter(s)**: Jared Balbona, PhD (Institute for Behavioral Genetics, University of Colorado Boulder)
 
--   Jared Balbona, PhD (Institute for Behavioral Genetics, University of Colorado Boulder)
+**Coauthor(s)**:
 
 -   Yongkang Kim, PhD (Janssen Pharmaceutical Companies of Johnson & Johnson)
 
--   Matthew Keller, PhD (University of Colorado, Boulder)
+-   Matthew Keller, PhD (Institute for Behavioral Genetics, University of Colorado Boulder)
 
 **Level**: Intermediate
 

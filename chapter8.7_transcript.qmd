@@ -6,7 +6,7 @@ title: "Chapter 8.8: TWAS (Video Transcript)"
 
 **Title**: Understanding GWAS mechanisms with Transcriptome-Wide Association Studies
 
-**Presenter(s):** Sasha Gusev, PhD (Dana-Farber Cancer Institute)
+**Presenter(s):** Sasha Gusev, PhD (Dana-Farber Cancer Institute, Harvard Medical School)
 
 **Sasha Gusev**:
 
@@ -84,7 +84,7 @@ And so with that, I'll conclude. I hope I've been able to convince you at the ve
 
 **Title**: PGC TWAS Primer
 
-**Presenter(s)**: Sasha Gusev, PhD (Dana-Farber Cancer Institute)
+**Presenter(s)**: Sasha Gusev, PhD (Dana-Farber Cancer Institute, Harvard Medical School)
 
 **Sasha Gusev**:
 
