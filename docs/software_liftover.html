@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>PGC Video Textbook - Chapter 10.3: Small Effect Sizes (Video Transcript)</title>
+<title>PGC Video Textbook - Genome Builds</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -58,6 +58,7 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<link href="site_libs/vembedr-0.1.5/css/vembedr.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="styles.css">
@@ -108,7 +109,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Chapter 10.3: Small Effect Sizes (Video Transcript)</li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./software_cnvs.html">Software Tutorials</a></li><li class="breadcrumb-item"><a href="./software_liftover.html">Genome Builds</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -274,7 +275,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./software_liftover.html" class="sidebar-item-text sidebar-link">
+  <a href="./software_liftover.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Genome Builds</span></a>
   </div>
 </li>
@@ -351,14 +352,20 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#liftover-between-genome-builds" id="toc-liftover-between-genome-builds" class="nav-link active" data-scroll-target="#liftover-between-genome-builds">Liftover Between Genome Builds</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Chapter 10.3: Small Effect Sizes (Video Transcript)</h1>
+<h1 class="title">Genome Builds</h1>
 </div>
 
 
@@ -373,21 +380,26 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p><strong>Title</strong>: Small effect sizes</p>
-<p><strong>Presenter(s)</strong>: Howard Edenberg, PhD (Department of Biochemistry and Molecular Biology, Indiana University School of Medicine)</p>
-<p><strong>Howard Edenberg</strong>:</p>
-<p>A brief note about small effect sizes.</p>
-<p>Hi. I’m Howard Edenberg from Indiana University. [These are my personal views.]</p>
-<p>Psychiatric and substance use disorders are complex genetic disorders. The risk is affected by both genes and the environment. Neither works alone, and they interact, sometimes in very complex ways. No single genetic variant causes a complex trait such as a psychiatric or substance use disorder. Variations affecting many genes contribute to variations in physiology and these in turn contribute to variations in risk for the disorder, the course of the disorder, and the response to treatments.</p>
-<p>Genome wide association studies (GWAS) are currently the best approach to identifying individual genetic variations that contribute to the risk of these and many other disorders. GWAS are unbiased analyses testing common variations across the genome to determine if they affect a trait. But because only about half of the total risk is contributed by genetic variation and that part is distributed among hundreds to thousands of genes, the effects of any one common variant are typically very small. So very large studies are needed to find these variants.</p>
-<p>Since the effect of any one variant is very small, why bother to find them? Some have argued that discovering variants of such small effects is not helpful. &nbsp;I’ll argue here that they’re wrong. What we want to do is to reliably identify the hundreds of variants that contribute to risk even though each individual variant contributes only a tiny amount. There’s much we can learn from this. There are some immediate uses of GWAS findings. The overall patterns of association can help predict part of the risk for the disorder through polygenic risk scores. They can show if traits are genetically related. They can examine potential causality by Mendelian Randomization. And they can help explain heterogeneity in many cases, if there are different patterns of variants among different people with the same overall disorder.</p>
-<p>What else can we do once we’ve discovered many variants of small effect? The genetic variants and the pattern of them can lead us into biology. They can show us which genes are involved and which pathways are involved. These lead us into the physiology of the disorders and that in turn can lead us to better diagnosis, to rational drug discovery, and to personalized medicine, all of which I think will be very valuable.</p>
-<p>The effect of a drug on a pathway is not limited by the effect size of the variant that led us to discover the pathway that’s important in the disorder. Even if the variant is rare or the effect size of the variant is very small, if it leads us to a biological pathway, that pathway can be targeted by drugs that have a very large effect. The impact of a drug upon a pathway is in no way limited by the effect size of the variants that led us to understand the role of the pathway.</p>
-<p>So I, for one, continue to think that using large GWAS to identify variants and genes that contribute to the risk for these and other disorders will prove of great value. Perhaps not immediately, but in the long run. Without such knowledge we’re really flying blind when we look for new treatments.</p>
-<p>Some thoughts about translating genome-wide association findings into new therapeutics for psychiatry have been discussed in a review article published a few years ago that’s worth looking into. [PMID: 27786187. PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5676453/">PMC5676453</a>]</p>
-<p>Thanks for paying attention. Goodbye.</p>
+<section id="liftover-between-genome-builds" class="level1">
+<h1>Liftover Between Genome Builds</h1>
+<p><strong>Title</strong>: Liftover to Map Genomic Coordinates Between Genome Builds with Rtracklayer Bioconductor Package</p>
+<p><strong>Presenter(s)</strong>:</p>
+<p><strong>Level</strong>: Intermediate</p>
+<p><strong>Length</strong>: 1:06:40</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="vembedr">
+<div>
+<iframe src="https://www.youtube.com/embed/942WLiy3eb4" width="533" height="300" frameborder="0" allowfullscreen="" data-external="1"></iframe>
+</div>
+</div>
+</div>
+</div>
+<p>Link to video transcript here.</p>
+<p>Link to <a href="https://bioconductor.org/packages/release/bioc/html/rtracklayer.html">Rtracklayer Bioconductor package</a> and <a href="https://kasperdanielhansen.github.io/genbioconductor/html/rtracklayer_Import.html">GitHub</a>.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

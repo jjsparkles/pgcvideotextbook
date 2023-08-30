@@ -6,7 +6,7 @@ title: "Table of Contents"
 
 #### [Chapter 1: Introduction](chapter1.qmd)
 
-> [1.1: What are psychiatric disorders?](chapter1.qmd#sec-section1)
+> [1.1: What are Psychiatric Disorders?](chapter1.qmd#sec-section1)
 >
 > [1.2: Epidemiology](chapter1.qmd#sec-section2)
 >
@@ -16,29 +16,29 @@ title: "Table of Contents"
 
 #### [Chapter 2: The Genome](chapter2.qmd)
 
-> [2.1: Organisation of the genome](chapter2.qmd#sec-section1)
+> [2.1: Organisation of the Genome](chapter2.qmd#sec-section1)
 >
-> [2.2: Types of genetic variation](chapter2.qmd#sec-section2)
+> [2.2: Types of Genetic Variation](chapter2.qmd#sec-section2)
 >
-> [2.3: Evolutionary signatures](chapter2.qmd#sec-section3)
+> [2.3: Evolutionary Signatures](chapter2.qmd#sec-section3)
 >
-> [2.4: Linkage disequilibrium](chapter2.qmd#sec-section4)
+> [2.4: Linkage Disequilibrium](chapter2.qmd#sec-section4)
 >
 > [2.5: Genome References](chapter2.qmd#sec-section5)
 
 #### [Chapter 3: Technologies](chapter3.qmd)
 
-> [3.1: SNP array genotyping](chapter3.qmd#sec-section1)
+> [3.1: SNP Array Genotyping](chapter3.qmd#sec-section1)
 >
 > [3.2: Next Generation Sequencing](chapter3.qmd#sec-section2)
 
 #### [Chapter 4: Study Designs](chapter4.qmd)
 
-> [4.1: Epidemiological study design](chapter4.qmd#sec-section1)
+> [4.1: Epidemiological Study Design](chapter4.qmd#sec-section1)
 >
 > [4.2: Confounding, Chance, and Bias](chapter4.qmd#sec-section2)
 >
-> [4.3: Genetic study designs](chapter4.qmd#sec-section3)
+> [4.3: Genetic Study Designs](chapter4.qmd#sec-section3)
 
 #### [Chapter 5: GWAS Analysis](chapter5.qmd)
 
@@ -46,9 +46,9 @@ title: "Table of Contents"
 >
 > [5.2: Imputation](chapter5.qmd#sec-section2)
 >
-> [5.3: Association testing](chapter5.qmd#sec-section3)
+> [5.3: Association Testing](chapter5.qmd#sec-section3)
 >
-> [5.4: Meta-analysis](chapter5.qmd#sec-section4)
+> [5.4: Meta-Analysis](chapter5.qmd#sec-section4)
 
 #### [Chapter 6: Polygenic Scores](chapter6.qmd)
 
@@ -56,23 +56,23 @@ title: "Table of Contents"
 
 #### [Chapter 7: Ancestry-Specific Analysis](chapter7.qmd)
 
-> [7.1: Cross-ancestry analysis](chapter7.qmd#sec-section1)
+> [7.1: Cross-Ancestry Analysis](chapter7.qmd#sec-section1)
 >
-> [7.2: Ancestry-specific PRS](chapter7.qmd#sec-section2)
+> [7.2: Ancestry-Specific PRS](chapter7.qmd#sec-section2)
 >
-> [7.3: Local ancestry and Admixed populations](chapter7.qmd#sec-section3)
+> [7.3: Local Ancestry and Admixed Populations](chapter7.qmd#sec-section3)
 
 #### [Chapter 8: Post-GWAS Bioinformatics](chapter8.qmd)
 
 > [8.1: SNP Heritability](chapter8.qmd#sec-section1)
 >
-> [8.2: Genetic correlations and partitioned LDSC](chapter8.qmd#sec-section2)
+> [8.2: Genetic Correlations and Partitioned LDSC](chapter8.qmd#sec-section2)
 >
-> [8.3: Gene-association analysis](chapter8.qmd#sec-section3)
+> [8.3: Gene-Association Analysis](chapter8.qmd#sec-section3)
 >
-> [8.4: Gene-set analysis](chapter8.qmd#sec-section4)
+> [8.4: Gene-Set Analysis](chapter8.qmd#sec-section4)
 >
-> [8.5: Fine-mapping](chapter8.qmd#sec-section5)
+> [8.5: Fine-Mapping](chapter8.qmd#sec-section5)
 >
 > [8.6: Quantitative Trait Loci (QTLs)](chapter8.qmd#sec-section6)
 >
@@ -90,7 +90,7 @@ title: "Table of Contents"
 >
 > [9.4: Interactions with Environmental Factors](chapter9.qmd#sec-section4)
 >
-> [9.5: Family-based analysis](chapter9.qmd#sec-section5)
+> [9.5: Family-Based Analysis](chapter9.qmd#sec-section5)
 >
 > [9.6: Therapeutic Implications](chapter9.qmd#sec-section6)
 
@@ -101,6 +101,10 @@ title: "Table of Contents"
 > [10.2: Caution in Genetic Prediction](chapter10.qmd#sec-section2)
 >
 > [10.3: Small Effect Sizes](chapter10.qmd#sec-section3)
+>
+> [10.4: Language in Genetics Research](chapter10.qmd#sec-section4)
+>
+> [10.5: Equitable Collaboration for LMIC Researchers](chapter10.qmd#sec-section5)
 >
 > [10.6: GDPR for Dummies](chapter10.qmd#sec-section6)
 
@@ -117,6 +121,8 @@ title: "Table of Contents"
 > [Epigenome-Wide Association Studies](software_ewas.qmd)
 >
 > [Gene Set Identification](software_geneset.qmd)
+>
+> [Genome Builds](software_liftover.qmd)
 >
 > [Genome-Wide Association Studies](software_gwas.qmd)
 >

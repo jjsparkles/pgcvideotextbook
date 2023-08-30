@@ -1,0 +1,22 @@
+---
+title: "Genome Builds"
+---
+
+# Liftover Between Genome Builds
+
+**Title**: Liftover to Map Genomic Coordinates Between Genome Builds with Rtracklayer Bioconductor Package
+
+**Presenter(s)**:
+
+**Level**: Intermediate
+
+**Length**: 1:06:40
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=942WLiy3eb4")
+```
+
+Link to video transcript here.
+
+Link to [Rtracklayer Bioconductor package](https://bioconductor.org/packages/release/bioc/html/rtracklayer.html) and [GitHub](https://kasperdanielhansen.github.io/genbioconductor/html/rtracklayer_Import.html).

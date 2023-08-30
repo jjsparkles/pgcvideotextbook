@@ -52,9 +52,9 @@ Each video is embedded into the textbook webpage, and a link to the video transc
 >
 > [5.2: Imputation](chapter5.qmd#sec-section2)
 >
-> [5.3: Association testing](chapter5.qmd#sec-section3)
+> [5.3: Association Testing](chapter5.qmd#sec-section3)
 >
-> [5.4: Meta-analysis](chapter5.qmd#sec-section4)
+> [5.4: Meta-Analysis](chapter5.qmd#sec-section4)
 
 #### [Chapter 6: Polygenic Scores](chapter6.qmd)
 
@@ -62,23 +62,23 @@ Each video is embedded into the textbook webpage, and a link to the video transc
 
 #### [Chapter 7: Ancestry-Specific Analysis](chapter7.qmd)
 
-> [7.1: Cross-ancestry analysis](chapter7.qmd#sec-section1)
+> [7.1: Cross-Ancestry Analysis](chapter7.qmd#sec-section1)
 >
-> [7.2: Ancestry-specific PRS](chapter7.qmd#sec-section2)
+> [7.2: Ancestry-Specific PRS](chapter7.qmd#sec-section2)
 >
-> [7.3: Local ancestry and Admixed populations](chapter7.qmd#sec-section3)
+> [7.3: Local Ancestry and Admixed Populations](chapter7.qmd#sec-section3)
 
 #### [Chapter 8: Post-GWAS Bioinformatics](chapter8.qmd)
 
 > [8.1: SNP Heritability](chapter8.qmd#sec-section1)
 >
-> [8.2: Genetic correlations and partitioned LDSC](chapter8.qmd#sec-section2)
+> [8.2: Genetic Correlations and Partitioned LDSC](chapter8.qmd#sec-section2)
 >
-> [8.3: Gene-association analysis](chapter8.qmd#sec-section3)
+> [8.3: Gene-Association Analysis](chapter8.qmd#sec-section3)
 >
-> [8.4: Gene-set analysis](chapter8.qmd#sec-section4)
+> [8.4: Gene-Set Analysis](chapter8.qmd#sec-section4)
 >
-> [8.5: Fine-mapping](chapter8.qmd#sec-section5)
+> [8.5: Fine-Mapping](chapter8.qmd#sec-section5)
 >
 > [8.6: Quantitative Trait Loci (QTLs)](chapter8.qmd#sec-section6)
 >
@@ -96,7 +96,7 @@ Each video is embedded into the textbook webpage, and a link to the video transc
 >
 > [9.4: Interactions with Environmental Factors](chapter9.qmd#sec-section4)
 >
-> [9.5: Family-based analysis](chapter9.qmd#sec-section5)
+> [9.5: Family-Based Analysis](chapter9.qmd#sec-section5)
 >
 > [9.6: Therapeutic Implications](chapter9.qmd#sec-section6)
 
@@ -107,6 +107,10 @@ Each video is embedded into the textbook webpage, and a link to the video transc
 > [10.2: Caution in Genetic Prediction](chapter10.qmd#sec-section2)
 >
 > [10.3: Small Effect Sizes](chapter10.qmd#sec-section3)
+>
+> [10.4: Language in Genetics Research](chapter10.qmd#sec-section4)
+>
+> [10.5: Equitable Collaboration for LMIC Researchers](chapter10.qmd#sec-section5)
 >
 > [10.6: GDPR for Dummies](chapter10.qmd#sec-section6)
 
@@ -123,6 +127,8 @@ Each video is embedded into the textbook webpage, and a link to the video transc
 > [Epigenome-Wide Association Studies](software_ewas.qmd)
 >
 > [Gene Set Identification](software_geneset.qmd)
+>
+> [Genome Builds](software_liftover.qmd)
 >
 > [Genome-Wide Association Studies](software_gwas.qmd)
 >
