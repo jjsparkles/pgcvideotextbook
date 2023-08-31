@@ -27,23 +27,27 @@ Howard Edenberg
 
 Lachlan Gilchrist
 
+**Kelleigh Hogan**: Statistical and Research Data Analyst, Department of Psychiatry, University of California San Diego, La Jolla, CA, USA
+
 Laura M. Huckins
 
-**Jessica Johnson MPH**: Data Scientist, Department of Psychiatry, University of North Carolina at Chapel Hill, Chapel Hill, NC, USA
+![Jessica Johnson MPH: Data Scientist, Department of Psychiatry, University of North Carolina at Chapel Hill, Chapel Hill, NC, USA](Jessica Johnson.jpeg){fig-align="center" width="286"}
 
 Michelle Kamp
 
-**Hannah Kennedy PhD**: PostDoctoral Researcher, Department of Psychological Medicine, University of Otago, Christchurch, New Zealand
+![Hannah Kennedy PhD: PostDoctoral Researcher, Department of Psychological Medicine, University of Otago, Christchurch, New Zealand](Hannah Kennedy.jpg){fig-align="center" width="286"}
 
-**Ada P. Kępińska PhD**: PostDoctoral Researcher, Departments of Psychiatry and Genetics and Genomic Sciences, The Seaver Autism Center for Research and Treatment, Icahn School of Medicine at Mount Sinai, New York, NY, USA
+![Ada P. Kępińska PhD: PostDoctoral Researcher, Departments of Psychiatry and Genetics and Genomic Sciences, The Seaver Autism Center for Research and Treatment, Icahn School of Medicine at Mount Sinai, New York, NY, USA](Ada_Kepinska.jpeg){fig-align="center" width="286"}
 
-Cathryn Lewis
+![Cathryn Lewis PhD: Professor, Social, Genetic and Developmental Psychiatry Centre, King's College London, London, UK](Cathryn Lewis.jpg){fig-align="center" width="286"}
 
 Chris Lo
 
 Grace D. Lutter
 
 Adam Maihofer
+
+**Elizabeth Mikita** **MPH**: Research Data Analyst, Department of Psychiatry, University of California San Diego, La Jolla, CA, USA
 
 Caroline Nievergelt
 
@@ -55,7 +59,7 @@ Kayla Townsley
 
 Tim Van Der Es
 
-Jiayi Xu
+![Jiayi Xu PhD: Associate Research Scientist, Department of Psychiatry, Yale University School of Medicine, New Haven, CT, USA](Jiayi Xu.jpg){fig-align="center" width="286"}
 
 ------------------------------------------------------------------------
 

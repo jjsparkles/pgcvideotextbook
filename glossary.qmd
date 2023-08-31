@@ -8,123 +8,121 @@ Below are common terms and acronyms used within this book and across the field o
 
 # A
 
-| Term                                           | Definition | Reference chapter |
-|------------------------------------------------|------------|-------------------|
-| Admixture                                      |            |                   |
-| Allele                                         |            |                   |
-| Antisense                                      |            |                   |
-| **A**rea **u**nder the ROC **c**urve (**AUC**) |            |                   |
-| Assembly (Genome)                              |            |                   |
-| Autosome                                       |            |                   |
+| Term                                           | Definition                                                                                                                                                        | Reference chapter |
+|------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|
+| Admixture                                      | Genetic ancestry that comes from distinct populations                                                                                                             |                   |
+| Allele                                         | Variant forms of a gene that occupy a specific position on a chromosome.                                                                                          |                   |
+| Antisense                                      | A molecule or strand of nucleic acid that is complementary to a specific RNA sequence, often used in gene regulation.                                             |                   |
+| **A**rea **u**nder the ROC **c**urve (**AUC**) | A measure of a classifier's ability to distinguish between classes in a binary classification problem. AUC is between 0.5 (no prediction) and 1 (full prediction) |                   |
+| Assembly (Genome)                              |                                                                                                                                                                   |                   |
+| Autosome                                       | Any chromosome that is not a sex chromosome, responsible for carrying genetic information unrelated to sex determination.                                         |                   |
 
 ------------------------------------------------------------------------
 
 # B
 
-|                       |     |     |
-|-----------------------|-----|-----|
-| Base pair             |     |     |
-| Biallelic (SNP)       |     |     |
-| Bonferroni adjustment |     |     |
-| Build (Genome)        |     |     |
+|                       |                                                                                                                                                                 |     |
+|-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|
+| Base pair             | The fundamental unit of DNA and RNA, consisting of two nucleotides held together by hydrogen bonds.                                                             |     |
+| Biallelic (SNP)       | Single Nucleotide Polymorphism with two possible alleles at a specific genomic position.                                                                        |     |
+| Bonferroni adjustment | Statistical correction to account for multiple hypothesis testing, by applying a p-value correction that corrects for the number of statistical tests performed |     |
+| Build (Genome)        |                                                                                                                                                                 |     |
 
 ------------------------------------------------------------------------
 
 # C
 
-|                                                                    |     |     |
-|--------------------------------------------------------------------|-----|-----|
-| Candidate Gene study                                               |     |     |
-| Chromatin                                                          |     |     |
-| **Ch**romatin **I**mmunoprecipitation **Seq**uencing (**ChIPseq**) |     |     |
-| Chromosome                                                         |     |     |
-| Codon                                                              |     |     |
-| Common variant                                                     |     |     |
-| Congenital                                                         |     |     |
-| Contig                                                             |     |     |
-| **C**opy **DNA** (**cDNA**)                                        |     |     |
-| **C**opy **N**umber **V**ariant (CNV)                              |     |     |
-| Crossover                                                          |     |     |
+|                                                                    |                                                                                                |     |
+|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------|-----|
+| Candidate Gene Study                                               | Research focusing on specific genes to determine their association with a trait or disease.    |     |
+| Chromatin                                                          | Complex of DNA, RNA, and proteins forming the chromosome's structure.                          |     |
+| **Ch**romatin **I**mmunoprecipitation **Seq**uencing (**ChIPseq**) | Technique to identify DNA regions bound by specific proteins using antibodies.                 |     |
+| Chromosome                                                         | Thread-like structure in cells containing DNA and genes.                                       |     |
+| Codon                                                              | Three-nucleotide sequence in mRNA that encodes a specific amino acid during protein synthesis. |     |
+| Common variant                                                     | Frequently occurring genetic variant in a population.                                          |     |
+| Congenital                                                         | Present at birth, often referring to medical conditions or traits.                             |     |
+| Contig                                                             |                                                                                                |     |
+| **C**opy **DNA** (**cDNA**)                                        | DNA synthesized from an mRNA template, used in molecular biology research.                     |     |
+| **C**opy **N**umber **V**ariant (CNV)                              | Variation in the number of copies of a DNA segment between individuals.                        |     |
+| Crossover                                                          | Exchange of genetic material between homologous chromosomes during meiosis.                    |     |
 
 ------------------------------------------------------------------------
 
 # D
 
-|             |     |     |
-|-------------|-----|-----|
-| Deletion    |     |     |
-|             |     |     |
-| Duplication |     |     |
-|             |     |     |
+|             |                                                                       |     |
+|-------------|-----------------------------------------------------------------------|-----|
+| Deletion    | Removal of a segment of DNA, leading to the loss of genetic material. |     |
+| Duplication | Copying of a DNA segment, resulting in extra genetic material.        |     |
 
 ------------------------------------------------------------------------
 
 # E
 
-|                                                         |     |     |
-|---------------------------------------------------------|-----|-----|
-| Effect estimate                                         |     |     |
-| Elastic Net Regression                                  |     |     |
-| Enhancer                                                |     |     |
-| Epidemiology                                            |     |     |
-| Epigenetics                                             |     |     |
-| Epigenome                                               |     |     |
-| **E**pigenome-**W**ide **A**ssociation **S**tudy (EWAS) |     |     |
-| Epistasis                                               |     |     |
-| Exome                                                   |     |     |
-| Exon                                                    |     |     |
+|                                                         |                                                                                                           |     |
+|---------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|-----|
+| Effect estimate                                         | Statistical measurement of the impact of a factor on an outcome in research (e.g. odds ratio, beta value) |     |
+| Elastic Net Regression                                  | Statistical learning method combining Lasso and Ridge regressions to select relevant variables            |     |
+| Enhancer                                                | DNA region influencing gene transcription.                                                                |     |
+| Epidemiology                                            | Study of the patterns and causes of disease and health in populations.                                    |     |
+| Epigenetics                                             | Study of heritable changes in gene expression not involving alterations in DNA sequence.                  |     |
+| Epigenome                                               | Overall epigenetic modifications in an organism's DNA.                                                    |     |
+| **E**pigenome-**W**ide **A**ssociation **S**tudy (EWAS) | Investigation of epigenetic variations associated with traits or diseases acros the genome                |     |
+| Epistasis                                               | Interaction between different genetic variants affecting a trait's expression.                            |     |
+| Exome                                                   | The portion of the genome containing protein-coding genes.                                                |     |
+| Exon                                                    | Part of a gene that will form mRNA. Some exons are coding, with information for making a protein.         |     |
 
 ------------------------------------------------------------------------
 
 # F
 
-|                                            |     |     |
-|--------------------------------------------|-----|-----|
-| **F**alse **D**iscovery **R**ate (**FDR**) |     |     |
-| FASTA file                                 |     |     |
-| Frameshift mutation                        |     |     |
+|                                            |                                                                                                                                                                        |     |
+|--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|
+| **F**alse **D**iscovery **R**ate (**FDR**) | Method for correction for multiple testing, by defining an acceptable false discovery rate - proportion of falsely identified significant results in multiple testing. |     |
+| FASTA file                                 | Format for representing nucleotide or amino acid sequences in bioinformatics.                                                                                          |     |
+| Frameshift mutation                        | Insertion or deletion altering the reading frame during translation.                                                                                                   |     |
 
 ------------------------------------------------------------------------
 
 # G
 
-|                                                          |     |                        |
-|----------------------------------------------------------|-----|------------------------|
-| **G**ene-**E**nvironment Interaction (**GxE**)           |     |                        |
-| Genetic Correlation                                      |     |                        |
-| Genome                                                   |     |                        |
-| Genomic Inflation factor (lamda)                         |     |                        |
-| Genotype                                                 |     |                        |
-| **G**enome-**W**ide **A**ssociation **S**tudy (**GWAS**) |     | Chapter 1.2; Chapter 5 |
+|                                                          |                                                                                           |                                                                                                                    |
+|----------------------------------------------------------|-------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
+| **G**ene-**E**nvironment Interaction (**GxE**)           | Joint effect of genetic and environmental factors on traits.                              |                                                                                                                    |
+| Genetic Correlation                                      | Proportion of variance that two traits share from common genetic causes                   |                                                                                                                    |
+| Genome                                                   | Complete set of genetic material in an organism.                                          |                                                                                                                    |
+| Genomic Inflation factor (lamda)                         | Measure of inflation in test statistics due to population stratification.                 |                                                                                                                    |
+| Genotype                                                 | Genetic makeup of an individual at a specific locus.                                      |                                                                                                                    |
+| **G**enome-**W**ide **A**ssociation **S**tudy (**GWAS**) | Investigation of genetic variants across the genome to identify associations with traits. | [Chapter 1.2](chapter1.qmd#sec-section2); [Chapter 5](chapter5.qmd); [Software Tutorial: GWAS](software_gwas.qmd)  |
 
 ------------------------------------------------------------------------
 
 # H
 
-|                                                  |     |     |
-|--------------------------------------------------|-----|-----|
-| Haplotype                                        |     |     |
-| **H**ardy-**W**einberg **E**quilibrium (**HWE**) |     |     |
-| Heterogeneity                                    |     |     |
-| Heterozygosity                                   |     |     |
-| Histone modification                             |     |     |
-| Homozygosity                                     |     |     |
-| Horizontal pleiotropy                            |     |     |
-| Hyperparameters                                  |     |     |
+|                                                  |                                                                                   |     |
+|--------------------------------------------------|-----------------------------------------------------------------------------------|-----|
+| Haplotype                                        | Set of alleles on a single chromosome inherited together.                         |     |
+| **H**ardy-**W**einberg **E**quilibrium (**HWE**) | Model predicting allele frequencies remain constant in a non-evolving population. |     |
+| Heterogeneity                                    | Variability or diversity in a population or dataset.                              |     |
+| Heterozygosity                                   | Possessing different alleles at a specific genetic locus.                         |     |
+| Histone modification                             | Chemical alteration of histone proteins influencing gene expression.              |     |
+| Homozygosity                                     | Possessing identical alleles at a specific genetic locus.                         |     |
+| Horizontal pleiotropy                            | Situation in which a genetic variant affects multiple traits independently.       |     |
+| Hyperparameters                                  | Parameters set before a machine learning algorithm runs.                          |     |
 
 ------------------------------------------------------------------------
 
 # I
 
-|                                          |     |     |
-|------------------------------------------|-----|-----|
-| **I**dentity-**b**y-**d**ecent (**IBD**) |     |     |
-| Imputation                               |     |     |
-| INFO score                               |     |     |
-| Insertion                                |     |     |
-| **In**sertion/**Del**etion (**Indel**)   |     |     |
-| Intergenic                               |     |     |
-| Intron                                   |     |     |
+|                                          |                                                                     |     |
+|------------------------------------------|---------------------------------------------------------------------|-----|
+| **I**dentity-**b**y-**d**ecent (**IBD**) | Shared ancestry for a specific genomic region between individuals.  |     |
+| Imputation                               | Predicting missing genetic information based on known data.         |     |
+| INFO score                               | Measure of imputation quality for genetic variants                  |     |
+| Insertion                                | Addition of a DNA segment into a genome.                            |     |
+| **In**sertion/**Del**etion (**Indel**)   | Genetic variation involving insertions or deletions of nucleotides. |     |
+| Intergenic                               | DNA regions between genes.                                          |     |
+| Intron                                   | Region of DNA between the exons in a gene                           |     |
 
 ------------------------------------------------------------------------
 
@@ -134,133 +132,128 @@ Below are common terms and acronyms used within this book and across the field o
 
 # K
 
-|               |     |     |
-|---------------|-----|-----|
-| Kilobase (Kb) |     |     |
-| Kinship       |     |     |
-|               |     |     |
+|               |                                                                     |     |
+|---------------|---------------------------------------------------------------------|-----|
+| Kilobase (Kb) | Unit of length used in molecular biology, equal to 1000 base pairs. |     |
+| Kinship       | Genetic relatedness between individuals.                            |     |
 
 ------------------------------------------------------------------------
 
 # L
 
-|                                         |     |     |
-|-----------------------------------------|-----|-----|
-| Lasso regression                        |     |     |
-| **LD Sc**ore Regression (**LDSC**)      |     |     |
-| Linkage                                 |     |     |
-| **L**inkage **d**isequilibrium (**LD**) |     |     |
-| Locus                                   |     |     |
-|                                         |     |     |
+|                                         |                                                                                |     |
+|-----------------------------------------|--------------------------------------------------------------------------------|-----|
+| Lasso regression                        | Regression method promoting sparsity in feature selection.                     |     |
+| **LD Sc**ore Regression (**LDSC**)      | Technique to estimate genetic correlation from genome-wide summary statistics. |     |
+| Linkage                                 | Physical proximity of genetic loci on a chromosome.                            |     |
+| **L**inkage **d**isequilibrium (**LD**) | Non-random association of alleles at two or more loci.                         |     |
+| Locus                                   | Specific position on a chromosome.                                             |     |
 
 ------------------------------------------------------------------------
 
 # M
 
-|                          |     |     |
-|--------------------------|-----|-----|
-| Manhattan plot           |     |     |
-| Mendelian Randomization  |     |     |
-| Messenger RNA (mRNA)     |     |     |
-| Methylation              |     |     |
-| Microbiome               |     |     |
-| Minor allele frequency   |     |     |
-| Missense mutation        |     |     |
-| Mitochondrial DNA (mDNA) |     |     |
-| Mosaicism                |     |     |
+|                          |                                                                                                                                   |     |
+|--------------------------|-----------------------------------------------------------------------------------------------------------------------------------|-----|
+| Manhattan plot           | Graph showing results of association tests in a genome-wide analysis, where x-axis is genomic position, y-axis is -log10(p-value) |     |
+| Mendelian Randomization  | Method using genetic variants as instrumental variables to infer causality.                                                       |     |
+| Mendelian Trait          |                                                                                                                                   |     |
+| Messenger RNA (mRNA)     | RNA molecule transcribed from DNA and carrying protein-coding information.                                                        |     |
+| Methylation              | Addition of a methyl group to DNA, often affecting gene expression.                                                               |     |
+| Microbiome               | Community of microorganisms in a specific environment.                                                                            |     |
+| Minor allele frequency   | Frequency of the less common allele at a genetic locus in a population.                                                           |     |
+| Missense mutation        | Point mutation altering a codon, resulting in a different amino acid.                                                             |     |
+| Mitochondrial DNA (mDNA) | DNA located in mitochondria, inherited maternally.                                                                                |     |
+| Mosaicism                | Presence of genetically distinct cell populations within an organism.                                                             |     |
 
 ------------------------------------------------------------------------
 
 # N
 
-|                   |     |     |
-|-------------------|-----|-----|
-|                   |     |     |
-| Nagelkerke P      |     |     |
-| Nonsense mutation |     |     |
-| Nucleosome        |     |     |
-| Null hypothesis   |     |     |
+|                   |                                                         |     |
+|-------------------|---------------------------------------------------------|-----|
+| Nagelkerke P      | Measure of explained variance in logistic regression.   |     |
+| Nonsense mutation | Point mutation leading to a premature stop codon.       |     |
+| Nucleosome        | DNA wrapped around histone proteins, forming chromatin. |     |
+| Null hypothesis   | Hypothesis stating no significant effect or difference. |     |
 
 ------------------------------------------------------------------------
 
 # O
 
-|                     |     |     |
-|---------------------|-----|-----|
-| Observational study |     |     |
-| Odds ratio          |     |     |
-| Open Reading Frame  |     |     |
+|                     |                                                           |     |
+|---------------------|-----------------------------------------------------------|-----|
+| Observational study | Research investigating associations without intervention. |     |
+| Odds ratio          | Measure of association in case-control studies.           |     |
+| Open Reading Frame  | DNA sequence potentially encoding a protein.              |     |
 
 ------------------------------------------------------------------------
 
 # P
 
-|                                                             |     |     |
-|-------------------------------------------------------------|-----|-----|
-| Pedigree                                                    |     |     |
-| Phasing                                                     |     |     |
-| Phenome                                                     |     |     |
-| **Phe**nome-**w**ide **A**ssociation **S**tudy (**pheWAS**) |     |     |
-| Phenotype                                                   |     |     |
-| Pleiotropy                                                  |     |     |
-| Point mutation                                              |     |     |
-| **P**olygenic **R**isk **S**core (**PRS**)                  |     |     |
-| Polygenic trait                                             |     |     |
-| Polymorphism                                                |     |     |
-| Population stratification                                   |     |     |
-| Power (Genomic)                                             |     |     |
-| Power analysis                                              |     |     |
-| Precision Medicine                                          |     |     |
-| **P**rincipal **C**omponent **A**nalysis (**PCA**)          |     |     |
-| Proband                                                     |     |     |
-| Promoter                                                    |     |     |
+|                                                             |                                                                                                 |     |
+|-------------------------------------------------------------|-------------------------------------------------------------------------------------------------|-----|
+| Pedigree                                                    | Family tree showing genetic relationships.                                                      |     |
+| Phasing                                                     | Determining the parental origin of alleles in an individual.                                    |     |
+| Phenome                                                     | Complete set of an individual's traits and characteristics.                                     |     |
+| **Phe**nome-**w**ide **A**ssociation **S**tudy (**pheWAS**) | Exploration of genetic variants across multiple traits.                                         |     |
+| Phenotype                                                   | Observable traits and characteristics of an individual.                                         |     |
+| Pleiotropy                                                  | Single gene influencing multiple traits.                                                        |     |
+| Point mutation                                              | Single nucleotide change in DNA.                                                                |     |
+| **P**olygenic **R**isk **S**core (**PRS**)                  | Combined effect of multiple genetic variants on a trait.                                        |     |
+| Polygenic trait                                             | Trait influenced by multiple genes.                                                             |     |
+| Polymorphism                                                | Genetic variation within a population.                                                          |     |
+| Population stratification                                   | Population substructure leading to confounding in genetic studies.                              |     |
+| Power (Genomic)                                             | Probability of detecting an effect in a study.                                                  |     |
+| Power analysis                                              | Calculating required sample size based on desired statistical power, and effect size estimates. |     |
+| Precision Medicine                                          | Tailoring medical treatment to an individual's genetic and health characteristics.              |     |
+| **P**rincipal **C**omponent **A**nalysis (**PCA**)          | Dimensionality reduction technique, used to control for population stratification.              |     |
+| Proband                                                     | Index individual in a genetic study.                                                            |     |
+| Promoter                                                    | DNA region controlling gene transcription initiation.                                           |     |
 
 ------------------------------------------------------------------------
 
 # Q
 
-|        |     |     |
-|--------|-----|-----|
-| qqplot |     |     |
-|        |     |     |
-|        |     |     |
+|                                                 |                                                                                                        |     |
+|-------------------------------------------------|--------------------------------------------------------------------------------------------------------|-----|
+| **Q**uantile-**q**uantile **plot** (**qqplot**) | Plot showing how observed test statistics in a genome-wide analysis depart from expected distribution. |     |
 
 ------------------------------------------------------------------------
 
 # R
 
-|              |     |     |
-|--------------|-----|-----|
-| R^2^         |     |     |
-| Rare variant |     |     |
-| REF/ALT      |     |     |
+|              |                                                                               |     |
+|--------------|-------------------------------------------------------------------------------|-----|
+| R^2^         | Coefficient of determination indicating the proportion of variance explained. |     |
+| Rare variant | Infrequently occurring genetic variant in a population.                       |     |
+| REF/ALT      | Reference and alternative alleles at a genetic locus.                         |     |
 
 ------------------------------------------------------------------------
 
 # S
 
-|                                                      |     |     |
-|------------------------------------------------------|-----|-----|
-| Scaffold                                             |     |     |
-|                                                      |     |     |
-| Sensitivity                                          |     |     |
-| **S**ingle **N**ucleotide **P**olymorphism (**SNP**) |     |     |
-| **S**ingle **N**ucleotide **V**ariant (**SNV**)      |     |     |
-| SNP Heritability (h^2^~SNP~)                         |     |     |
-| Specificity                                          |     |     |
-| Structural variant                                   |     |     |
+|                                                      |                                                     |     |
+|------------------------------------------------------|-----------------------------------------------------|-----|
+| Scaffold                                             |                                                     |     |
+| Sensitivity                                          | True positive rate in diagnostic testing.           |     |
+| **S**ingle **N**ucleotide **P**olymorphism (**SNP**) | Single base-pair variation in DNA sequence.         |     |
+| **S**ingle **N**ucleotide **V**ariant (**SNV**)      | Single base-pair genetic variation, including SNPs. |     |
+| SNP Heritability (h^2^~SNP~)                         | Proportion of trait variance explained by SNPs.     |     |
+| Specificity                                          | True negative rate in diagnostic testing.           |     |
+| Structural variant                                   | Genetic variation involving larger DNA segments.    |     |
 
 ------------------------------------------------------------------------
 
 # T
 
-|                                                 |     |     |
-|-------------------------------------------------|-----|-----|
-| Transcriptome                                   |     |     |
-| Transcriptomic Imputation                       |     |     |
-| **T**ranscriptomic **R**isk **S**core (**TRS**) |     |     |
-| Type I error                                    |     |     |
-| Type II error                                   |     |     |
+|                                                 |                                                                                                                        |     |
+|---------------------|--------------------------|--------------------------|
+| Transcriptome                                   | Total RNA                                                                                                              |     |
+| Transcriptomic Imputation                       | The process of predicting missing gene expression data using available information.                                    |     |
+| **T**ranscriptomic **R**isk **S**core (**TRS**) | A score calculated from transcriptomic data to assess the risk of a specific outcome.                                  |     |
+| Type I error                                    | False positive result in hypothesis testing, where a null hypothesis is incorrectly rejected.                          |     |
+| Type II error                                   | False negative result in hypothesis testing, where a null hypothesis is incorrectly accepted. Type II error = 1-power. |     |
 
 ------------------------------------------------------------------------
 
@@ -270,29 +263,36 @@ Below are common terms and acronyms used within this book and across the field o
 
 # V
 
-|                                           |     |     |
-|-------------------------------------------|-----|-----|
-| Variant                                   |     |     |
-| Variance explained                        |     |     |
-| **V**ariant **C**all **F**ormat (**VCF**) |     |     |
-| Vertical pleiotropy                       |     |     |
+|                                           |                                                                                                  |     |
+|-------------------------------------------|--------------------------------------------------------------------------------------------------|-----|
+| Variant                                   | A specific form of a genetic locus differing from the reference sequence.                        |     |
+| Variance explained                        | The portion of trait variability accounted for by a given factor, often a genetic variant.       |     |
+| **V**ariant **C**all **F**ormat (**VCF**) | A standard file format for storing genetic variant information.                                  |     |
+| Vertical pleiotropy                       | Situation in which a genetic variant affects multiple traits due to a shared biological pathway. |     |
 
 ------------------------------------------------------------------------
 
 # W
 
-|                                               |     |     |
-|-----------------------------------------------|-----|-----|
-| **W**hole **E**xome **S**equencing (**WES**)  |     |     |
-| **W**hole **G**enome **S**equencing (**WGS**) |     |     |
-|                                               |     |     |
+|                                               |                                                                         |     |
+|-----------------------------------------------|-------------------------------------------------------------------------|-----|
+| **W**hole **E**xome **S**equencing (**WES**)  | Technique for sequencing only the protein-coding regions of the genome. |     |
+| **W**hole **G**enome **S**equencing (**WGS**) | Method for sequencing an individual's entire genome.                    |     |
 
 ------------------------------------------------------------------------
 
 # XYZ
 
-|          |     |     |
-|----------|-----|-----|
-| X-linked |     |     |
-|          |     |     |
-|          |     |     |
+|          |                                                                                          |     |
+|----------|------------------------------------------------------------------------------------------|-----|
+| X-linked | Genetic trait located on the X chromosome, leading to sex-specific inheritance patterns. |     |
+
+\*This Glossary was constructed with the help of [ChatGPT](https://chat.openai.com/chat).
+
+> OpenAI. (2023). *ChatGPT* (Mar 14 version) \[Large language model\]. <https://chat.openai.com/chat>
+
+For other glossaries of genetic terms, please see:
+
+-   [NHGRI Glossary](https://www.genome.gov/genetics-glossary)
+
+-   [Genetics Education Programme](https://www.genomicseducation.hee.nhs.uk/glossary/)
