@@ -1,3 +1,5 @@
 ---
 title: "Contact Us"
 ---
+
+Please feel free to contact us at [pgc.analytics1\@gmail.com](mailto:pgc.analytics1@gmail.com) with any feedback or questions you may have about the content of this textbook. This textbook is a living document, and we plan to update and add content as new methods and material are available. Please let us know if you have any material that you believe would be relevant for this textbook or if there is any content you would like to see in the future!

@@ -19,6 +19,6 @@ embed_url("https://www.youtube.com/watch?v=_MJLRM7xjug")
 
 Link to the video transcript [here](software_MR_transcript.qmd).
 
-Link to [MR-Base website](https://www.mrbase.org/).
+Link to [EPIGraphDB](https://www.epigraphdb.org/) and [MR-Base website](https://www.mrbase.org/).
 
 Link to [TwoSampleMR R package](https://mrcieu.github.io/TwoSampleMR/) documentation.
