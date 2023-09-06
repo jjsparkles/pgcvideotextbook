@@ -6,7 +6,7 @@ title: "Genome Builds"
 
 **Title**: Liftover to Map Genomic Coordinates Between Genome Builds with Rtracklayer Bioconductor Package
 
-**Presenter(s)**:
+**Presenter(s)**: Saniya Khullar (Biostatistics and Medical Informatics, School of Medicine and Public Health, University of Wisconsin-Madison)
 
 **Level**: Intermediate
 

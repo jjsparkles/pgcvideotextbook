@@ -6,6 +6,8 @@ Here, we've pulled videos from our PGC experts to give a comprehensive overview 
 
 Each video is embedded into the textbook webpage, and a link to the video transcript has been provided below the video.
 
+------------------------------------------------------------------------
+
 ### Table of Contents:
 
 #### [**Welcome and Introduction**](welcome.qmd)
