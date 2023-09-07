@@ -21,6 +21,8 @@ We hope that this Psychiatric Genomics Consortium Video Training Textbook fills 
 
 # The Video Textbook Team
 
+In alphabetical order:
+
 ![**Laura Huckins PhD**: Associate Professor, Department of Psychiatry, Yale University School of Medicine, New Haven, CT, USA](Laura_Huckins.jpeg){fig-align="center" width="286"}
 
 ![**Jessica Johnson MPH**: Data Scientist, Department of Psychiatry, University of North Carolina at Chapel Hill, Chapel Hill, NC, USA](Jessica Johnson.jpeg){fig-align="center" width="286"}
@@ -31,7 +33,7 @@ We hope that this Psychiatric Genomics Consortium Video Training Textbook fills 
 
 ![**Cathryn Lewis PhD**: Professor, Social, Genetic and Developmental Psychiatry Centre, King's College London, London, UK](Cathryn Lewis.jpg){fig-align="center" width="286"}
 
-![**Grace D. Lutter**: Department of Genetics, University of North Carolina at Chapel Hill, Chapel Hill, NC, USA](Grace Lutter.jpg){fig-align="center" width="286"}
+![**Grace D. Lutter**: Social/Clinical Research Specialist, Department of Genetics, University of North Carolina at Chapel Hill, Chapel Hill, NC, USA](Grace Lutter.jpg){fig-align="center" width="286"}
 
 ![**Elizabeth Mikita MPH**: Research Data Analyst, Department of Psychiatry, University of California San Diego, La Jolla, CA, USA](Elizabeth Mikita.jpg){fig-align="center" width="286"}
 
