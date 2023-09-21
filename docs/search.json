@@ -249,7 +249,7 @@
     "href": "chapter4.html#sec-section2",
     "title": "Chapter 4: Study Designs",
     "section": "4.2 Confounding, Chance, and Bias",
-    "text": "4.2 Confounding, Chance, and Bias\n\nThis section includes a video from Cochrane Austria that provides a fairly comprehensive overview of potential sources of error for clinical and genetic studies. The video discusses \"what is confounding?\", different types of confounders, and how to deal with confounding, chance and random error, and different types of biases: selection bias, performance bias, measurement bias, and attrition bias. \n\nTitle: Confounding, Chance, and Bias\nPresenter(s): Cochrane Austria (Department for Evidence-based Medicine and Evaluation, Danube University Krems)\nLength: 9:50\n\n\n\n\n\n\n\n\n\nLink to video transcript here."
+    "text": "4.2 Confounding, Chance, and Bias\n\nThis section includes a video from Cochrane Austria that provides a fairly comprehensive overview of potential sources of error for clinical and genetic studies. The video discusses “what is confounding?”, different types of confounders, and how to deal with confounding, chance and random error, and different types of biases: selection bias, performance bias, measurement bias, and attrition bias. \n\nTitle: Confounding, Chance, and Bias\nPresenter(s): Cochrane Austria (Department for Evidence-based Medicine and Evaluation, Danube University Krems)\nLength: 9:50\n\n\n\n\n\n\n\n\n\nLink to video transcript here."
   },
   {
     "objectID": "chapter4.html#sec-section3",
@@ -690,7 +690,7 @@
     "href": "chapter8.html",
     "title": "Chapter 8: Post-GWAS Bioinformatics",
     "section": "",
-    "text": "Chapter goals:\n\nBe able to define SNP heritability and understand how it is calculated\nUnderstand the concept of “missing” heritability and explanations for why it is “missing”\nUnderstand methods of determining genetic overlap through calculations of genetic correlation"
+    "text": "Chapter goals:\n\nBe able to define SNP heritability and understand how it is calculated\nUnderstand the concept of “missing” heritability and explanations for why it is “missing”\nUnderstand methods of determining genetic overlap through calculations of genetic correlation\nUnderstand methods for performing gene-trait association tests, and methods for defining gene sets and gene set enrichment.\nUnderstand the concept of fine-mapping and tools for performing fine-mapping of GWAS loci.\nBe able to define expression quantitative trait loci (eQTL) and methods for eQTL detection.\nUnderstand conceptually transcriptome- and phenome-wide association studies and methods for performing them."
   },
   {
     "objectID": "chapter8.html#magma",

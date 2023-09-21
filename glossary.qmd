@@ -74,14 +74,14 @@ Below are common terms and acronyms used within this book and across the field o
 
 # G
 
-|                                                          |                                                                                           |                                                                                                                    |
-|----------------------------------------------------------|-------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| **G**ene-**E**nvironment Interaction (**GxE**)           | Joint effect of genetic and environmental factors on traits.                              |                                                                                                                    |
-| Genetic Correlation                                      | Proportion of variance that two traits share from common genetic causes                   |                                                                                                                    |
-| Genome                                                   | Complete set of genetic material in an organism.                                          |                                                                                                                    |
-| Genomic Inflation factor (lamda)                         | Measure of inflation in test statistics due to population stratification.                 |                                                                                                                    |
-| Genotype                                                 | Genetic makeup of an individual at a specific locus.                                      |                                                                                                                    |
-| **G**enome-**W**ide **A**ssociation **S**tudy (**GWAS**) | Investigation of genetic variants across the genome to identify associations with traits. | [Chapter 1.2](chapter1.qmd#sec-section2); [Chapter 5](chapter5.qmd); [Software Tutorial: GWAS](software_gwas.qmd)  |
+|                                                          |                                                                                           |                                                                                                                   |
+|----------------------------------------------------------|-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
+| **G**ene-**E**nvironment Interaction (**GxE**)           | Joint effect of genetic and environmental factors on traits.                              |                                                                                                                   |
+| Genetic Correlation                                      | Proportion of variance that two traits share from common genetic causes                   |                                                                                                                   |
+| Genome                                                   | Complete set of genetic material in an organism.                                          |                                                                                                                   |
+| Genomic Inflation factor (lamda)                         | Measure of inflation in test statistics due to population stratification.                 |                                                                                                                   |
+| Genotype                                                 | Genetic makeup of an individual at a specific locus.                                      |                                                                                                                   |
+| **G**enome-**W**ide **A**ssociation **S**tudy (**GWAS**) | Investigation of genetic variants across the genome to identify associations with traits. | [Chapter 1.2](chapter1.qmd#sec-section2); [Chapter 5](chapter5.qmd); [Software Tutorial: GWAS](software_gwas.qmd) |
 
 # H
 
@@ -210,7 +210,7 @@ Below are common terms and acronyms used within this book and across the field o
 # T
 
 |                                                 |                                                                                                                        |     |
-|---------------------|--------------------------|--------------------------|
+|-------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|-----|
 | Transcriptome                                   | Total RNA                                                                                                              |     |
 | Transcriptomic Imputation                       | The process of predicting missing gene expression data using available information.                                    |     |
 | **T**ranscriptomic **R**isk **S**core (**TRS**) | A score calculated from transcriptomic data to assess the risk of a specific outcome.                                  |     |

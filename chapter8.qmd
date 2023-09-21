@@ -9,10 +9,18 @@ title: "Chapter 8: Post-GWAS Bioinformatics"
 > 2.  *Understand the concept of "missing" heritability and explanations for why it is "missing"*
 >
 > 3.  *Understand methods of determining genetic overlap through calculations of genetic correlation*
+>
+> 4.  *Understand methods for performing gene-trait association tests, and methods for defining gene sets and gene set enrichment.*
+>
+> 5.  *Understand the concept of fine-mapping and tools for performing fine-mapping of GWAS loci.*
+>
+> 6.  *Be able to define expression quantitative trait loci (eQTL) and methods for eQTL detection.*
+>
+> 7.  *Understand conceptually transcriptome- and phenome-wide association studies and methods for performing them.*
 
 # 8.1 SNP Heritability {#sec-section1}
 
-> In this video by Dr. Price, we get a comprehensive overview of heritability, as defined through twin studies and SNP heritability as defined with genetic analyses. The video touches on the idea of \"missing\" heritability, with a comprehensive delve into possible explanations for missing heritability, and how to measure heritability through different methods.
+> In this video by Dr. Price, we get a comprehensive overview of heritability, as defined through twin studies and SNP heritability as defined with genetic analyses. The video touches on the idea of "missing" heritability, with a comprehensive delve into possible explanations for missing heritability, and how to measure heritability through different methods.
 
 **Title**: Heritability and SNP Heritability
 

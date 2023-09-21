@@ -31,7 +31,7 @@ Link to video transcript [here](chapter4.1_transcript.qmd).
 
 ## 4.2 Confounding, Chance, and Bias {#sec-section2}
 
-> This section includes a video from Cochrane Austria that provides a fairly comprehensive overview of potential sources of error for clinical and genetic studies. The video discusses \"what is confounding?\", different types of confounders, and how to deal with confounding, chance and random error, and different types of biases: selection bias, performance bias, measurement bias, and attrition bias. 
+> This section includes a video from Cochrane Austria that provides a fairly comprehensive overview of potential sources of error for clinical and genetic studies. The video discusses "what is confounding?", different types of confounders, and how to deal with confounding, chance and random error, and different types of biases: selection bias, performance bias, measurement bias, and attrition bias. 
 
 **Title**: Confounding, Chance, and Bias
 
