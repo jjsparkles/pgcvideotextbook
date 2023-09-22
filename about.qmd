@@ -23,6 +23,10 @@ We hope that this Psychiatric Genomics Consortium Video Training Textbook fills 
 
 In alphabetical order:
 
+![**Anna Docherty PhD**: Associate Professor, Department of Psychiatry, University of Utah School of Medicine, Salt Lake City, UT, USA](AnnaDocherty.jpg){fig-align="center" width="286"}
+
+![**Howard J. Edenberg PhD**: Distinguished Professor, Departments of Biochemistry and Molecular Biology and Medical and Molecular Genetics, Indiana University School of Medicine, Indianapolis, IN, USA](Edenberg Howard.jpg){fig-align="center" width="286"}
+
 ![**Laura Huckins PhD**: Associate Professor, Department of Psychiatry, Yale University School of Medicine, New Haven, CT, USA](Laura_Huckins.jpeg){fig-align="center" width="286"}
 
 ![**Jessica Johnson MPH**: Data Scientist, Department of Psychiatry, University of North Carolina at Chapel Hill, Chapel Hill, NC, USA](Jessica%20Johnson.jpeg){fig-align="center" width="286"}
@@ -37,13 +41,11 @@ In alphabetical order:
 
 ![**Elizabeth Mikita MPH**: Research Data Analyst, Department of Psychiatry, University of California San Diego, La Jolla, CA, USA](Elizabeth%20Mikita.jpg){fig-align="center" width="286"}
 
-![**Kayla Townsley MSc**: PhD Student, Department of Genetics and Genomic Sciences, Icahn School of Medicine at Mount Sinai, New York, NY, USA](kayla-townsley_headshot.jpg){fig-align="center" width="286"}
+![**Caroline Nievergelt PhD**: Professor, Department of Psychiatry, University of California San Diego, La Jolla, CA, USA](Nievergelt.jpg){fig-align="center" width="286"}
+
+![**Kayla Townsley Bs**: PhD Candidate, Departments of Neuroscience and Genetics and Genomic Sciences, The Graduate School of Biomedical Sciences, Icahn School of Medicine at Mount Sinai, New York, NY, USA](kayla-townsley_headshot.jpg){fig-align="center" width="286"}
 
 ![**Jiayi Xu PhD**: Associate Research Scientist, Department of Psychiatry, Yale University School of Medicine, New Haven, CT, USA](Jiayi%20Xu.jpg){fig-align="center" width="286"}
-
-**Anna Docherty**
-
-**Howard Edenberg**
 
 **Lachlan Gilchrist MSc**: PhD Student, Social, Genetic and Developmental Psychiatry Centre, King's College London, London, UK
 
@@ -51,11 +53,9 @@ In alphabetical order:
 
 **Michelle Kamp**
 
-**Chris Lo**
+**Chris Lo:** PhD Student, Social, Genetic and Developmental Psychiatry Centre, King's College London, London, UK
 
 **Adam Maihofer**
-
-**Caroline Nievergelt**
 
 **Oliver Pain**
 
@@ -66,3 +66,18 @@ In alphabetical order:
 ------------------------------------------------------------------------
 
 # About the Psychiatric Genomics Consortium
+
+### The Psychiatric Genomics Consortium
+
+**Title**: PGC: Future Perspectives
+
+**Presenter(s)**: Patrick Sullivan, MD, FRANZCP (Department of Genetics, Department of Psychiatry, University of North Carolina at Chapel Hill)
+
+**Length**: 33:33
+
+```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=ZhqMgazsRXM")
+```
+
+Link to video transcript [here](chapter1.4_transcript.qmd#sec-psychgen).
