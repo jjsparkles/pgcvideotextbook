@@ -81,3 +81,5 @@ embed_url("https://www.youtube.com/watch?v=ZhqMgazsRXM")
 ```
 
 Link to video transcript [here](chapter1.4_transcript.qmd#sec-psychgen).
+
+[PGC Website](https://pgc.unc.edu/)
