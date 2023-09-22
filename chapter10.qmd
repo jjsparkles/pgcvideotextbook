@@ -2,8 +2,6 @@
 title: "Chapter 10: Other Considerations"
 ---
 
-Chapter goals:
-
 # 10.1 A Career in Psychiatric Genetics {#sec-section1}
 
 **Title**: How does Genetics Affect our Mental Health?
