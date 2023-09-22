@@ -83,6 +83,14 @@ Link to video transcript [here](chapter10.3_transcript.qmd).
 
 ***Video Content coming soon!***
 
+Please check out these papers in the meantime:
+
+-   Fatumo, S., Chikowore, T., Choudhury, A. *et al.* (2022): A roadmap to increase diversity in genomic studies. *Nat Med* **28**, 243--250 <https://doi.org/10.1038/s41591-021-01672-4>
+
+-   Palk A, Illes J, Thompson PM, Stein DJ (2020): Ethical issues in global neuroimaging genetics collaborations. NeuroImage 221: 117208: <https://doi.org/10.1016/j.neuroimage.2020.117208>
+
+-   S.R. Carroll, I. Garba, R. Plevel, D. Small-Rodriguez, V.Y. Hiratsuka, M. Hudson, N.A. Garrison (2022): Using Indigenous Standards to Implement the CARE Principles: Setting Expectations through Tribal Research Codes. Front Genet, 13 Article 823309: <https://doi.org/10.3389/fgene.2022.823309>
+
 ------------------------------------------------------------------------
 
 # 10.6 GDPR for Dummies: A Survival Guide for Genetics Research {#sec-section6}
