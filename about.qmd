@@ -45,7 +45,11 @@ In alphabetical order:
 
 ![**Caroline Nievergelt PhD**: Professor, Department of Psychiatry, University of California San Diego, La Jolla, CA, USA](Nievergelt.jpg){fig-align="center" width="286"}
 
+![**Carina Seah MS**: MD PhD Candidate, Department of Genetics and Genomic Sciences, Icahn School of Medicine at Mount Sinai, New York, NY](CarinaSeah.jpeg){fig-align="center" width="286"}
+
 ![**Kayla Townsley Bs**: PhD Candidate, Departments of Neuroscience and Genetics and Genomic Sciences, The Graduate School of Biomedical Sciences, Icahn School of Medicine at Mount Sinai, New York, NY, USA](kayla-townsley_headshot.jpg){fig-align="center" width="286"}
+
+![**Tim Van Der Es Msc**: PhD Student, Social, Genetic and Developmental Psychiatry Centre, King's College London, London, UK](TimvanderEs.jpeg){fig-align="center" width="286"}
 
 ![**Jiayi Xu PhD**: Associate Research Scientist, Department of Psychiatry, Yale University School of Medicine, New Haven, CT, USA](Jiayi%20Xu.jpg){fig-align="center" width="286"}
 
@@ -58,10 +62,6 @@ In alphabetical order:
 **Adam Maihofer**
 
 **Oliver Pain**
-
-**Carina Seah**
-
-**Tim Van Der Es**
 
 ------------------------------------------------------------------------
 
