@@ -2,7 +2,7 @@
 title: "MTAG"
 ---
 
-> In this video Dr. Turley gives a comprehensive introduction to Multi-Trait Analysis of GWAS, or MTAG. The video discusses the theory behind combining different but correlated traits\' GWAS and the benefits and considerations of doing this. This video goes fairly deep into the mathematical models underlying this method.
+> In this video Dr. Turley gives a comprehensive introduction to Multi-Trait Analysis of GWAS, or MTAG. The video discusses the theory behind combining different but correlated traits' GWAS and the benefits and considerations of doing this. This video goes fairly deep into the mathematical models underlying this method.
 >
 > You can read more about this method here:
 >

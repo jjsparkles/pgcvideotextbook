@@ -2,7 +2,23 @@
 title: "Chapter 10: Other Considerations"
 ---
 
+> *Chapter goals:*
+>
+> 1.  *Gain insight into different career paths in psychiatric genetics*
+>
+> 2.  *Understand the limitations of genetic prediction*
+>
+> 3.  *Understand how small effect sizes in genetic studies are still beneficial for understanding disease etiology.*
+>
+> 4.  *Understand what biological essentialism is, how it impacts medicine and science, exacerbates health disparities and perpetuates discrimination.*
+>
+> 5.  *Understand the importance of diversity in genetic studies, how to include and protect vulnerable populations in genetic studies, and how to conduct equitable collaborative research with low- or middle-income countries (LMIC).*
+>
+> 6.  *Gain insight into the structure and rules of the European General Data Protection Regulation (GDPR), why it is important, and how to navigate the guidelines for scientific research.*
+
 # 10.1 A Career in Psychiatric Genetics {#sec-section1}
+
+> In this video, Drs. Lewis and Curmi discuss different genetics topics, careers in psychiatric genetics, and the future of psychiatric genetics, from both data/research and clinical viewpoints.
 
 **Title**: How does Genetics Affect our Mental Health?
 
@@ -27,6 +43,8 @@ Link to video transcript [here](chapter10.1_transcript.qmd).
 
 # 10.2 Caution in Genetic Prediction {#sec-section2}
 
+> In this brief video, Dr. Edenberg discusses the limitations of genetic prediction, specifically polygenic risk scores, in the field of psychiatry.
+
 **Title**: Predicting the likelihood of future psychiatric disorders: a closer look, and some cautions.
 
 **Presenter(s)**: Howard Edenberg, PhD (Department of Biochemistry and Molecular Biology, Indiana University School of Medicine)
@@ -45,6 +63,8 @@ Link to video transcript [here](chapter10.2_transcript.qmd).
 ------------------------------------------------------------------------
 
 # 10.3 Small Effect Sizes {#sec-section3}
+
+> In this video, Dr. Edenberg briefly discusses the benefits of studying genetic variants with small effect sizes in genome-wide association studies, and how understanding how common variants contribute to disease risk, despite having very small effect sizes, still leads to better understanding of disease.
 
 **Title**: Small effect sizes
 
@@ -92,6 +112,8 @@ Please check out these papers in the meantime:
 ------------------------------------------------------------------------
 
 # 10.6 GDPR for Dummies: A Survival Guide for Genetics Research {#sec-section6}
+
+> In this video, Heidi Bentzen gives a comprehensive overview of the European General Data Protection Regulation (GDPR): the purpose of the GDPR, and how to ensure that your research is compliant with GDPR statutes.
 
 **Title**: GDPR for dummies: A survival guide for genetics research
 
