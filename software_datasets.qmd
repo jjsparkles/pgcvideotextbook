@@ -8,7 +8,7 @@ title: "Datasets"
 >
 > The PsychENCODE consortium is composed of many academic institutions whose goal is the generation of large-scale genomic data (gene expression and regulation) from individuals with psychiatric disorders across different brain regions. This includes generation of both bulk and single-cell RNA sequencing, ChIPseq, Hi-C, ATACseq, and other measures of chromatin activity for multiple brain regions across different developmental stages.
 >
-> The **G**e**nom**e **A**ggregation **D**atabase, or gnomAD,
+> The **G**e**nom**e **A**ggregation **D**atabase, or gnomAD, is a large reference of human genetic variation from whole exome data.
 
 # FinnGen {#sec-section1}
 
